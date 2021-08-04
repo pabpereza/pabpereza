@@ -1,6 +1,6 @@
 ### Hello there 👋
-My name is Pablo Pérez-Aradros, I´m a cibersecurity consultant, specialized in development process as DevSecOps. Also I love the development and sysadmin part.
-Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializado en el procesos de desarrollo como DevSecOps. Tambien me encanta el desrrollo de software y la administración de sistemas.
+EN -> My name is Pablo Pérez-Aradros, I´m a cibersecurity consultant, specialized in development process as DevSecOps. Also I love the development and sysadmin part.
+ES -> Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializado en el procesos de desarrollo como DevSecOps. Tambien me encanta el desrrollo de software y la administración de sistemas.
 
 - 🔭 Actualmente estoy trabajando en [SSHTeam](https://sshteam.com)
 

@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Actualizar subrepositorioes
+name: Actualizar subrepositorios
 
 # Controls when the workflow will run
 on:
@@ -25,7 +25,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Update all subdirectories
-        run: | 
+        run: |
+          git config --global user.name "pabpereza"
+          git config --global user.email "pabloperezaradros@gmail.com"
           git submodule update --recursive --remote
           git add --all
           git commit -a -m "Actualizados los subrepositorios"

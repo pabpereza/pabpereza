@@ -30,5 +30,6 @@ jobs:
           git config --global user.email "pabloperezaradros@gmail.com"
           git submodule update --recursive --remote
           git add --all
-          git commit -m "Actualizados los subrepositorios"
+          git commit --allow-empty -m "Actualizados los subrepositorios"
+          git push
 

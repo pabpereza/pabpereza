@@ -17,7 +17,7 @@ Este es mi canal de [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcG
 <a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pabpereza" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="pabpereza" height="30" width="40" /></a>
 <a href="https://discord.gg/https://discord.com/invite/rtw2rwgbZS" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.com/invite/rtw2rwgbZS" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>

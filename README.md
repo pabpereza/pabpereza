@@ -9,6 +9,8 @@ ES -> Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad espe
 
 - 🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
 
+## Este repositorio sirve como íncide de los contenidos y recursos que genero para youtube.
+
 ### YOUTUBE
 Este es mi canal de [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA), **no dudes en crear Issues en este repositorio para sugerir nuevos temas y videos para el canal y la comunidad de Riojakers.**
 

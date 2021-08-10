@@ -4,3 +4,6 @@
 [submodule "defensive/kali-in-docker"]
 	path = defensive/kali-in-docker
 	url = https://github.com/pabpereza/kali-in-docker
+[submodule "docker-utils"]
+	path = docker-utils
+	url = https://github.com/pabpereza/docker-utils

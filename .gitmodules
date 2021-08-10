@@ -7,3 +7,9 @@
 [submodule "docker-utils"]
 	path = docker-utils
 	url = https://github.com/pabpereza/docker-utils
+[submodule "defensive/defensive-zip-bomb-web-server"]
+	path = defensive/defensive-zip-bomb-web-server
+	url = https://github.com/pabpereza/defensive-zip-bomb-web-server.git
+[submodule "docker/docker-utils"]
+	path = docker/docker-utils
+	url = https://github.com/pabpereza/docker-utils.git

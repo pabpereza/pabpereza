@@ -10,7 +10,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializ
 - 🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
 
 
-#### Esta documentación se puede ver en formato web aquí: [Pabpereza](https://pabpereza.github.com/pabpereza)
+#### Esta documentación se puede ver en formato web aquí: [Pabpereza](https://pabpereza.github.io/pabpereza)
 
 
 ### Youtube

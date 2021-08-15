@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+### HELLO THERE 👋
+My name is Pablo Pérez-Aradros, I´m a cibersecurity consultant, specialized in development process as DevSecOps. Also I love the development and sysadmin part.\
+ 
+Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializado en procesos de desarrollo como DevSecOps. Tambien me encanta el desarrollo de software y la administración de sistemas.
 
-You can use the [editor on GitHub](https://github.com/pabpereza/pabpereza/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- 🔭 Actualmente estoy trabajando en [SSHTeam](https://sshteam.com)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- 👯 Estoy buscando mas colaboración para nuestra comunidad de [Riojakers](https://riojakers.com)
 
-### Markdown
+- 🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+#### Esta documentación se puede ver en formato web aquí: [Pabpereza](https://pabpereza.github.com)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### YOUTUBE
+**Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.**
 
-1. Numbered
-2. List
+Este es mi canal de [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA), **no dudes en crear Issues en este repositorio para sugerir nuevos temas y videos para el canal y la comunidad de Riojakers.**
 
-**Bold** and _Italic_ and `Code` text
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pabpereza" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="pabpereza" height="30" width="40" /></a>
+<a href="https://discord.gg/https://discord.com/invite/rtw2rwgbZS" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.com/invite/rtw2rwgbZS" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" height="30" width="40" /></a>
+</p>
 
-[Link](url) and ![Image](src)
-```
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.jenkins.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pabpereza/pabpereza/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

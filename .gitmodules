@@ -1,15 +1,3 @@
-[submodule "docker/kali-in-docker"]
-	path = docker/kali-in-docker
-	url = https://github.com/pabpereza/kali-in-docker
-[submodule "defensive/kali-in-docker"]
-	path = defensive/kali-in-docker
-	url = https://github.com/pabpereza/kali-in-docker
-[submodule "docker-utils"]
-	path = docker-utils
-	url = https://github.com/pabpereza/docker-utils
-[submodule "defensive/defensive-zip-bomb-web-server"]
-	path = defensive/defensive-zip-bomb-web-server
-	url = https://github.com/pabpereza/defensive-zip-bomb-web-server.git
-[submodule "docker/docker-utils"]
-	path = docker/docker-utils
-	url = https://github.com/pabpereza/docker-utils.git
+[submodule "themes/docsy"]
+	path = themes/docsy
+	url = https://github.com/google/docsy

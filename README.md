@@ -4,14 +4,13 @@ My name is Pablo Pérez-Aradros, I´m a cibersecurity consultant, specialized in
 Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializado en procesos de desarrollo como DevSecOps. Tambien me encanta el desarrollo de software y la administración de sistemas.
 
 
-#### Toda mi documentación se puede ver en formato web aquí: [pabpereza.dev](https://pabpereza.dev)
+#### Toda la documentación de este repositorio se puede ver más comodamente en formato web aquí: [pabpereza.dev](https://pabpereza.dev)
 
 
 ### Youtube
-**Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.**
+Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.
+https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA
 
-
-### Índice de contenidos
 
 
 ![Pablo's GitHub stats](https://github-readme-stats.vercel.app/api?username=pabpereza&show_icons=true&theme=dracula)

@@ -14,6 +14,8 @@ Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializ
 ### Índice de contenidos
 
 
+![Pablo's GitHub stats](https://github-readme-stats.vercel.app/api?username=pabpereza&show_icons=true&theme=dracula)
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

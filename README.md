@@ -3,6 +3,11 @@ My name is Pablo Pérez-Aradros, I´m a cibersecurity consultant, specialized in
  
 Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializado en procesos de desarrollo como DevSecOps. Tambien me encanta el desarrollo de software y la administración de sistemas.
 
+- 🔭 Actualmente estoy trabajando en [SSHTeam](https://sshteam.com)
+
+- 👯 Estoy buscando mas colaboración para nuestra comunidad de [Riojakers](https://riojakers.com)
+
+- 🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
 
 
 ### Página personal [pabpereza.dev](https://pabpereza.dev)

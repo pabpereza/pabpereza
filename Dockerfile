@@ -1,3 +1,7 @@
-FROM klakegg/hugo:ext-alpine
+FROM nginx:alpine
 
-RUN apk add git
+WORKDIR /usr/share/nginx/html
+
+RUN rm -fr * .??*
+
+COPY /public .

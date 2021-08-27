@@ -1,5 +1,5 @@
 ---
-title: Community
+title: Comunidad 
 menu:
   main:
     weight: 40

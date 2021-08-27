@@ -5,9 +5,9 @@ Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializ
 
 
 
-### Página personal
+### Página personal [pabpereza.dev](https://pabpereza.dev)
 #### Toda la documentación de este repositorio se puede ver más comodamente en formato web aquí: [pabpereza.dev](https://pabpereza.dev)
-&nspc
+
 
 ### Youtube
 Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.

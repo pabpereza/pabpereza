@@ -14,13 +14,15 @@ Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializ
 ### Página personal [pabpereza.dev](https://pabpereza.dev)
 #### Toda la documentación de este repositorio se puede ver más comodamente en formato web aquí: [pabpereza.dev](https://pabpereza.dev)
 
+<br>
 
 ### Youtube
 Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.
 https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA
 
+<br>
 
-
+### GitHub
 ![Pablo's GitHub stats](https://github-readme-stats.vercel.app/api?username=pabpereza&show_icons=true&theme=dracula)
 
 

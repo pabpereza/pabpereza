@@ -27,7 +27,6 @@ jobs:
         # uses: JimCronqvist/action-ssh@1c03e01b4ac39da814b45cfd2924c2df0ff1396f
         uses: JimCronqvist/action-ssh@0.1.1
         with:
-          command: ./${{ secrets.PATH }}/deploy.sh
+          command: .${{ secrets.PATH }}/deploy.sh
           hosts: ${{ secrets.USER }}@${{ secrets.HOST }}:22
           privateKey: ${{ secrets.KEY }}
-          debug: true

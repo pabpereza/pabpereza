@@ -30,4 +30,4 @@ jobs:
           command: ./${{ secrets.PATH }}/deploy.sh
           hosts: ${{ secrets.USER }}@${{ secrets.HOST }}:22
           privateKey: ${{ secrets.KEY }}
-
+          debug: true

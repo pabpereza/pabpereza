@@ -1,4 +1,5 @@
 rm -rf public/
+git pull
 HUGO_ENV="production" /snap/bin/hugo --gc || exit 1
 docker build . -t pab-web
 docker rm -f pab-web

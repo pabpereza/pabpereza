@@ -23,11 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Create Key
-        run: echo "${{ secrets.KEY }}" > secret_id
-      - name: Debug
-        run: ls
+        run: echo "${{ secrets.KEY }}" > id_rsa
+
       - name: Send command
-        run: ssh -i secret_id ${{ secrets.USER }}@${{ secrets.HOST }} "cd ${{ secrets.PATH }}; sh deploy.sh"
+        run: ssh -i id_rsa ${{ secrets.USER }}@${{ secrets.HOST }} "cd ${{ secrets.PATH }}; sh deploy.sh"
        
 
  

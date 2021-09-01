@@ -22,14 +22,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: ssh-pipeline
-        # You may pin to the exact commit or the version.
-        # uses: cross-the-world/ssh-pipeline@7f022867934a210af826af99ef80d96f03a094d5
-        uses: cross-the-world/ssh-pipeline@v1.2.0
+      - name: ssh-scp-ssh-pipelines
+  # You may pin to the exact commit or the version.
+  # uses: cross-the-world/ssh-scp-ssh-pipelines@78e864b4890087a58248ff39320406971ca88b89
+        uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
         with:
           # ssh remote host
           host: ${{ secrets.HOST }}
           port: 22
           user: ${{ secrets.USER }}
           pass: ${{ secrets.PASS }}
-          script: cd ${{ secrets.PATH }} && hugo && docker build . -t pab-web && docker rm -f pab-web && docker run --name pab-web pab-web & docker network connect web pab-web
+          first_ssh: cd ${{ secrets.PATH }} && hugo && docker build . -t pab-web && docker rm -f pab-web && docker run --name pab-web pab-web & docker network connect web pab-web

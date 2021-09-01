@@ -22,14 +22,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: ssh-scp-ssh-pipelines
-  # You may pin to the exact commit or the version.
-  # uses: cross-the-world/ssh-scp-ssh-pipelines@78e864b4890087a58248ff39320406971ca88b89
-        uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
+      - name: SSH Execute Commands
+        # You may pin to the exact commit or the version.
+        # uses: JimCronqvist/action-ssh@1c03e01b4ac39da814b45cfd2924c2df0ff1396f
+        uses: JimCronqvist/action-ssh@0.1.1
         with:
-          # ssh remote host
-          host: ${{ secrets.HOST }}
-          port: 22
-          user: ${{ secrets.USER }}
-          pass: ${{ secrets.PASS }}
-          first_ssh: cd ${{ secrets.PATH }} && hugo && docker build . -t pab-web && docker rm -f pab-web && docker run --name pab-web pab-web & docker network connect web pab-web
+          # Command(s) to execute on the remote server.
+          command: cd ${{ secrets.PATH }} && hugo && docker build . -t pab-web && docker rm -f pab-web && docker run --name pab-web pab-web & docker network connect web pab-web
+          # Hostname or IP address of the remote server(s). Separate multiple servers with a blank space. Example: 'user@mydomain.com:22 user@otherdomain.com:2222'
+          hosts: ${{ secrets.USER }}@${{ secrets.HOST }}
+          # The private key (id_rsa) content for authenticating to the SSH server(s). Recommended to store it as a GitHub Secret.
+          privateKey: ${{ secrets.KEY }}
+

@@ -27,10 +27,7 @@ jobs:
         # uses: JimCronqvist/action-ssh@1c03e01b4ac39da814b45cfd2924c2df0ff1396f
         uses: JimCronqvist/action-ssh@0.1.1
         with:
-          # Command(s) to execute on the remote server.
-          command: cd ${{ secrets.PATH }} && hugo && docker build . -t pab-web && docker rm -f pab-web && docker run --name pab-web pab-web && docker network connect web pab-web
-          # Hostname or IP address of the remote server(s). Separate multiple servers with a blank space. Example: 'user@mydomain.com:22 user@otherdomain.com:2222'
+          command: ./${{ secrets.PATH }}/deploy.sh
           hosts: ${{ secrets.USER }}@${{ secrets.HOST }}:22
-          # The private key (id_rsa) content for authenticating to the SSH server(s). Recommended to store it as a GitHub Secret.
           privateKey: ${{ secrets.KEY }}
 

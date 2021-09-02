@@ -3,11 +3,8 @@ title: "Blog"
 linkTitle: "Blog"
 menu:
   main:
-    weight: 30
+    weight: 25
 ---
 
-
-This is the **blog** section. It has two categories: News and Releases.
-
-Files in these directories will be listed in reverse chronological order.
+Esta es la sección de blog. Tiene dos categorías principales: Entradas y noticias. También puedes utilizar las etiquetas o el buscador para navegar sobretodo el contenido.
 

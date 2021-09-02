@@ -1,8 +1,8 @@
 
 ---
-title: "New Releases"
-linkTitle: "Releases"
-weight: 20
+title: "Entradas"
+linkTitle: "Entradas"
+weight: 15 
 ---
 
 

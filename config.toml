@@ -167,7 +167,7 @@ enable = false
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-	name = "User mailing list"
+	name = "Perfil profesional en linkedin"
 	url = "https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/"
 	icon = "fab fa-linkedin"
         desc = "Sígueme para las últimas novedades"
@@ -183,7 +183,7 @@ enable = false
 	icon = "fab fa-github"
         desc = "Aquí es donde se desarrolla"
 [[params.links.developer]]
-	name = "Developer mailing list"
+	name = "Correo personal"
 	url = "mailto:pabloperezaradros@gmail.com"
 	icon = "fa fa-envelope"
         desc = "Envíame un email"

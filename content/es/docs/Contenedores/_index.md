@@ -1,9 +1,9 @@
 ---
-title: "Concepts"
-linkTitle: "Concepts"
+title: "Contenedores"
+linkTitle: "Contenedores"
 weight: 4
 description: >
-  What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+    Sección que agrupa los conocimientos sobre tecnologías de contenedores como docker, kubernetes... etc.
 ---
 
 {{% pageinfo %}}

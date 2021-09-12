@@ -13,7 +13,7 @@ The front matter specifies the date of the blog post, its title, a short descrip
 ## Including images
 
 
-
+****
 The front matter of this post specifies properties to be assigned to all image resources:
 
 

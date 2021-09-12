@@ -25,7 +25,7 @@ pygmentsUseClasses = false
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
 # See https://help.farbox.com/pygments.html
-pygmentsStyle = "tango"
+pygmentsStyle = "monokai"
 
 # Configure how URLs look like per section.
 [permalinks]
@@ -47,7 +47,7 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-#id = "UA-00000000-0"
+id = "G-TNJCP3H7RQ"
 
 # Language configuration
 
@@ -66,7 +66,7 @@ weight = 1
       unsafe = true
   [markup.highlight]
       # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
-      style = "tango"
+      style = "dracula"
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
       # guessSyntax = "true"
 
@@ -114,23 +114,27 @@ github_project_repo = "https://github.com/pabpereza/pabpereza"
 github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-#gcs_engine_id = "d72aa9b2712488cc3"
+# gcs_engine_id = "d72aa9b2712488cc3"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+algolia_docsearch = false 
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true 
 
 # Aditional menu items
 [[menu.main]]
-  name = "GitHub"
+  name = ""
   weight = "100"
   url = "https://github.com/pabpereza"
+  pre = "<i class='fab fa-github'></i>"
+  post = ""
 [[menu.main]]
-  name = "Youtube"
+  name = ""
   weight = "105"
   url = "https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA"
+  pre = "<i class='fab fa-youtube'></i>"
+  post = ""
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
@@ -138,11 +142,11 @@ prism_syntax_highlighting = false
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
+sidebar_menu_compact = false 
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-sidebar_search_disable = false
+sidebar_search_disable = false 
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
 navbar_logo = true
 # Set to true to disable the About link in the site footer
@@ -155,14 +159,14 @@ footer_about_disable = true
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = '¡Me alegra escucharlo!. Por favor, <a href="https://github.com/USERNAME/REPOSITORY/issues/new">ayudanos a mejorar</a>.'
-no = 'Siento oirlo. Por favor, <a href="https://github.com/USERNAME/REPOSITORY/issues/new">ayudanos a mejorar</a>.'
+yes = '¡Me alegra escucharlo!. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
+no = 'Siento oirlo. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
-enable = false
+enable = true 
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.

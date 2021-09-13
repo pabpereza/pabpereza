@@ -124,17 +124,15 @@ offlineSearch = true
 
 # Aditional menu items
 [[menu.main]]
-  name = ""
+  name = "GH"
   weight = "100"
   url = "https://github.com/pabpereza"
-  pre = "<i class='fab fa-github'></i>"
-  post = ""
+  pre = "<i class='fab fa-youtube'></i>"
 [[menu.main]]
-  name = ""
+  name = "YT"
   weight = "105"
   url = "https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA"
   pre = "<i class='fab fa-youtube'></i>"
-  post = ""
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
@@ -166,7 +164,7 @@ no = 'Siento oirlo. Por favor, <a href="https://github.com/pabpereza/pabpereza/i
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
-enable = true 
+enable = false 
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.

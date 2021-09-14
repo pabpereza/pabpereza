@@ -20,3 +20,7 @@ Las nuevas versiones tendrán ciertas restricciones que forzarán a algunas empr
 Las empresas que tengan más de 250 empleados o unos ingresos anuales de 10 millones de dólares deberán utilizar los planes profesionales, de equipos o de empresa.
 
 
+### ¿Qué alternativas tengo?
+Estas nuevas políticas solo afecta a la versión de Docker Desktop, es decir, a la versión de Windows y Mac. En linux se utiliza Docker Engine al cuál no se le aplican estas restricciones.
+
+Además, docker no es la única forma de contruir conteneores. Existen otras tecnologías como Podman o Buildah que también nos permiten construir imágenes sin requerir un docker engine aunque estas también solo estan disponibles en Linux.

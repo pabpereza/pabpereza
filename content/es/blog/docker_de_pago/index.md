@@ -19,7 +19,7 @@ Planes de precios de Docker
 Con el precio, todo hay que decirlo, ganamos muchas funcionalidades como SSO, escaneos de seguridad, builds en la nube, colaboración entre equipos... etc. Podéis ver una lista completa de las funcionalidades en la [página de Docker](https://www.docker.com/pricing).
 
 ### ¿Quién tiene que pagar?
-Las empresas que tengan **más de 250 empleados o unos ingresos anuales de 10 millones de dólares** deberán utilizar los planes profesionales, de equipos o de empresa. Para dar margen a mediadas y grandes empresas, que son las principales afectadas, se dará un periodo de gracia hasta el 31 de Enero de 2022.
+Las empresas que tengan **más de 250 empleados o unos ingresos anuales de 10 millones de dólares** deberán utilizar los planes profesionales, de equipos o de empresa. Para dar margen a medianas y grandes empresas, las principales afectadas, se dará un periodo de gracia hasta el 31 de Enero de 2022.
 
 Seguirá siendo totalmente gratuito en los siguientes casos:
 

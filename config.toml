@@ -124,11 +124,6 @@ offlineSearch = true
 
 # Aditional menu items
 [[menu.main]]
-  name = "GitHub"
-  weight = "100"
-  url = "https://github.com/pabpereza"
-  pre = "<i class='fab fa-youtube'></i>"
-[[menu.main]]
   name = "Youtube"
   weight = "105"
   url = "https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA"

@@ -20,6 +20,7 @@ Tiene unas limitaciones de uso mensual pero nos podemos logear con una cuenta gr
 
 Podemos utilizar esta herramienta simplemente escribiendo:
 
-``` bash
+
+```bash 
 docker scan <nombre de la imagen>
 ```

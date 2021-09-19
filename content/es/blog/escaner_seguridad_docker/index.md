@@ -3,7 +3,7 @@ date: 2021-09-19
 title: "Analizar la seguridad de las imágenes de Docker"
 linkTitle: "Analizar seguridad docker"
 description: ""
-
+tags: [docker, seguridad]
 ---
 
 En anteriores vídeos he hablado acerca de la seguridad a la hora de crear imágenes pero hay un aspecto más crítico y fundamental que se suele obviar al construir imágenes. Estas, contienen software en forma de librerías del sistema que también pueden ser vulnerables. Pero, ¿como podemos revisar esa seguridad?

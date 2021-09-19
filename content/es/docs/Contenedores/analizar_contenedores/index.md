@@ -2,6 +2,7 @@
 title: "Analizar seguridad"
 linkTitle: ""
 weight: 4
+tags: [docker, seguridad]
 description: >
     Herramientas que nos permiten analizar la seguridad en nuestros contenedores.
 ---

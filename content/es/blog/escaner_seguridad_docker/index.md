@@ -20,7 +20,7 @@ Existen multitud de herramientas que pueden ser útiles para analizar la segurid
 * Anchore
 * Clair
 
-Para este vídeo y para evitar instalar nada, hemos utilizado el escáner que viene incorporado con Docker en las últimas versiones. Se puede ejecutar con el siguiente comando:
+Para este vídeo y evitar instalar nada, hemos utilizado el escáner que viene incorporado con Docker en las últimas versiones. Se puede ejecutar con el siguiente comando:
 
 ```bash
 docker scan <nombre de la imagen>

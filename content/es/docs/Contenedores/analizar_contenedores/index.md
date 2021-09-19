@@ -14,12 +14,11 @@ Los contenedores nos han permitido la facilidad y comodidad de empaquetar nuestr
 ## Herramientas
 
 ### Snyk - Docker Desktop
-Es sin duda una de las más desconocidad dada su reciente implementación en la plataforma de Docker pero dada su integración nativa y que no es necesario realizar instalaciones adicionales es una herramienta adecuada.
+Es sin duda una de las más desconocidas dada su reciente implementación en la plataforma de Docker pero, dada su integración nativa y que no es necesario realizar instalaciones adicionales, es una herramienta más que adecuada.
 
-Tiene unas limitaciones de uso mensual pero nos podemos logear con una cuenta gratuita para ampliarlo. [Snyk](https://snyk.io/).
+Tiene unas limitaciones de uso mensual pero podemos iniciar sesión con una cuenta gratuita para ampliarlo. [Snyk](https://snyk.io/).
 
 Podemos utilizar esta herramienta simplemente escribiendo:
-
 
 ```bash 
 docker scan <nombre de la imagen>

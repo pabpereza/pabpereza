@@ -3,6 +3,7 @@ title = "Pabpereza"
 
 enableRobotsTXT = true
 
+
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
 
@@ -16,7 +17,12 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+[taxonomies]
+tag = "tags"
+
+[params.taxonomy]
+taxonomyCloud = ["tags"] # set taxonomyCloud = [] to hide taxonomy clouds
+taxonomyCloudTitle = ["Etiquetas"] # if used, must have same lang as taxonomyCloud
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -43,6 +49,7 @@ latexDashes = true
 resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
+
 
 [services]
 [services.googleAnalytics]
@@ -130,7 +137,7 @@ offlineSearch = true
   pre = "<i class='fab fa-youtube'></i>"
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
-prism_syntax_highlighting = false
+prism_syntax_highlighting = false 
 
 # User interface configuration
 [params.ui]

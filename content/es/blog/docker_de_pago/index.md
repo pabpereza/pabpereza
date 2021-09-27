@@ -2,8 +2,8 @@
 date: 2021-09-12
 title: "¿Docker desktop de pago?"
 linkTitle: "Docker desktop de pago"
-description: "Analizamos los últimos cambios de Docker Desktop, como afectarán al usuario y las posibles alternativas."
 tags: [docker, noticia]
+description: "Analizamos los últimos cambios de Docker Desktop, como afectarán al usuario y las posibles alternativas."
 ---
 
 La empresa Docker anunció la semana pasada los cambios en su modelo de negocio empresarial y **sus nuevos planes de subscripción para empresas**.

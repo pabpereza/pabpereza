@@ -9,7 +9,7 @@ other = "Previo"
 other = "Siguiente"
 
 [ui_read_more]
-other = "Contiuar leyendo"
+other = "Visitar página"
 
 [ui_search]
 other = "Buscar"
@@ -36,20 +36,20 @@ other = "Última modificación"
 [post_edit_this]
 other = "Editar esta página"
 [post_create_child_page]
-other = "Create child page"
+other = "Crear una página hija"
 [post_create_issue]
 other = "Notificar una incidencia con la documentanción"
 [post_create_project_issue]
-other = "Notificar una incidencia en un proyecto"
+other = "Notificar una incidencia en proyecto"
 [post_posts_in]
 other = "Añadir entrada"
 
 # Print support
 [print_printable_section]
-other = "This the multi-page printable view of this section."
+other = "Esta es la vista imprimible multipágina de la sección"
 [print_click_to_print]
-other = "Click here to print"
+other = "Haz clic aquí para imprimir"
 [print_show_regular]
-other = "Return to the regular view of this page"
+other = "Volver a la vista por defecto de la web"
 [print_entire_section]
-other = "Print entire section"
+other = "Imprimir la sección completa"

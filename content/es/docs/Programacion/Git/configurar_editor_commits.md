@@ -1,10 +1,10 @@
 ---
-title: "Configuración
+title: "Configuración"
 linkTitle: "Configuracion"
 weight: 4
 tags: [git, configuracion]
 description: >
-    Configurar el editor por defecto que Git utiliza para los commits
+    Configuraciones básicas y esenciales
 ---
 
 # Elegir el editor de commit por defecto

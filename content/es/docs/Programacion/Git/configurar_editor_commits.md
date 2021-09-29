@@ -21,7 +21,7 @@ git config --global core.editor "nano"
 ```
 
 ## Configurar identidad
-Si es la primera vez que utilizamos git en un sistema, al hacer un commit, el obligatorio que este quere registrado con el nombre y email de un usuario. Se puede configurar con los siguientes comandos:
+Si es la primera vez que utilizamos git en un sistema, al hacer un commit, es obligatorio que este quere registrado con el nombre y email de un usuario. Se puede configurar con los siguientes comandos:
 ```bash
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com

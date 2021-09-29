@@ -1,6 +1,6 @@
 ---
-title: "Editor de commits por defecto"
-linkTitle: "Editor de commits por defecto"
+title: "Configuración
+linkTitle: "Configuracion"
 weight: 4
 tags: [git, configuracion]
 description: >

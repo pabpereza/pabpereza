@@ -26,5 +26,3 @@ Si es la primera vez que utilizamos git en un sistema, al hacer un commit, es ob
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
-
-

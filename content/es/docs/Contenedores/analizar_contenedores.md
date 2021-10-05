@@ -11,8 +11,6 @@ description: Herramientas que nos permiten analizar la seguridad en nuestros con
 Los contenedores nos han permitido la facilidad y comodidad de empaquetar nuestras aplicaciones y servicios, y también nos permiten asegurar que se ejecuten de forma segura. Sin embargo, las imágenes se contruyen con muchos componentes de terceros sobre los que no tenemos visibilidad. Para esta labor tenemos diferentes herramientas que nos ayudan a analizar la seguridad de nuestros contenedores.
 
 
-
-
 ## Herramientas
 
 ### Snyk - Docker Desktop

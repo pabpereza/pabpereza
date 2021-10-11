@@ -17,6 +17,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+# Taxonomies
 [taxonomies]
 tag = "tags"
 
@@ -50,9 +51,6 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-# Taxonomies
-[taxonomies]
-tag = "tags"
 
 [services]
 [services.googleAnalytics]

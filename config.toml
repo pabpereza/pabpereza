@@ -50,6 +50,9 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
+# Taxonomies
+[taxonomies]
+tag = "tags"
 
 [services]
 [services.googleAnalytics]

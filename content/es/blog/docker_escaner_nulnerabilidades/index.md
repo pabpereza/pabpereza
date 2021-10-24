@@ -26,5 +26,5 @@ Para este vídeo y evitar instalar nada, hemos utilizado el escáner que viene i
 docker scan <nombre de la imagen>
 ```
 
-Iré documentado el uso de diferentes herramientas de análisis de seguridad en la siguiente pagína de la documentación:
+Iré documentando el uso de diferentes herramientas de análisis de seguridad en la siguiente pagína de la documentación:
 [Escaneo de seguridad en contenedores](/docs/contenedores/analizar_contenedores/)

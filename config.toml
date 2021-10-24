@@ -19,10 +19,11 @@ enableMissingTranslationPlaceholders = true
 
 [taxonomies]
 tag = "tags"
+categories = "categories"
 
 [params.taxonomy]
-taxonomyCloud = ["tags"] # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloudTitle = ["Etiquetas"] # if used, must have same lang as taxonomyCloud
+taxonomyCloud = ["tags","categories"] # set taxonomyCloud = [] to hide taxonomy clouds
+taxonomyCloudTitle = ["Etiquetas","Categorías"] # if used, must have same lang as taxonomyCloud
 
 # Highlighting config
 pygmentsCodeFences = true

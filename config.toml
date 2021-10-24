@@ -17,6 +17,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+# Taxonomies
 [taxonomies]
 tag = "tags"
 categories = "categories"

@@ -26,14 +26,14 @@ El planteamiento es similar al de Docker Desktop, gestiona automáticamente la i
 Panel de control de rancher desktop en Mac
 {{< /imgproc >}}
 
-Si has visto el vídeo Rancher Desktot, al menos en Windows, tiene algunos pequeños errores. Cabe recordar que su estado de desarrollo es pre-release y es normal que durante sus betas encontremos 
+Si has visto el vídeo Rancher Desktop, al menos en Windows, tiene algunos pequeños errores. Cabe recordar que su estado de desarrollo es pre-release y es normal que durante sus betas encontremos 
 errores que nos impidan utilizarlo a día de hoy.
 
 ## La alternativa definitiva
 Como ya comentaba, una solución 100% efectiva es instalar docker en una máquina virtual de linux. Esto lo podríamos hacer manualmente pero, puestos a hacerlo, mejor hacerlo bien.
 
-Un viejo compañero con alias [Yohnah](https://github.com/Yohnah) en Github ha creado un repositorio y una máquina virtual preparada para desplegar automáticamente con Vagrant. 
-La máquina virtual viene con docker instalado y listo para funcionar. Toda la guía aquí:
+Un viejo compañero con alias [Yohnah](https://github.com/Yohnah) en Github ha creado un repositorio con automatismos y una máquina virtual preparada para desplegar automáticamente con Vagrant.
+La máquina virtual viene con docker instalado y listo para funcionar, además, el automatismo deja el host configurado para que utilice el docker engine de la máquina virtual de una forma similar a la que lo hace docker desktop. Toda la guía aquí:
 https://github.com/Yohnah/Docker
 
 ¡Hasta el siguiente!

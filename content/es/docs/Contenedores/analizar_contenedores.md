@@ -24,7 +24,7 @@ Podemos utilizar esta herramienta simplemente escribiendo:
 docker scan <imagen>
 ```
 
-Otra forma de utilizarla, es con el parámetro "--dependency-tree", el cuál muestra todo el arborl
+Otra forma de utilizarla, es con el parámetro "--dependency-tree", el cuál muestra todo el árbol
 de dependencias de la images.
 ```bash
 docker scan --dependency-tree <imagen>

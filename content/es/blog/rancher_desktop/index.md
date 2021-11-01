@@ -15,12 +15,12 @@ Rancher Desktop se posiciona como una alternativa a tener en cuenta. Dentro víd
 
 ## ¿Qué es rancher desktop?
 Si vienes del mundo de kubernetes seguro que Rancher te es familiar. Este es una plataforma de kubernetes con una capa de gestión 
-persado en la facilidad de despliegue y gestión de clústers.
+pensado en la facilidad de despliegue y gestión de clústers.
 
-En esta ocasión, rancher destkop es una forma de acercarse a los desarrolladores y competir directamente con docker en el escritorio.
+En esta ocasión, rancher desktop es una forma de acercarse a los desarrolladores y competir directamente con docker en el escritorio.
 
 ## ¿Qué aporta?
-El planteamiento es similar al de Docker Desktop, gestiona automáticamente la instalación de una interfaz de usario, el engine de contenedores (containerd), k3s (la misma técnología que utiliza rancher para kubernetes), kubectl... etc y todo este paquete en una instalación sencilla.
+El planteamiento es similar al de Docker Desktop, gestiona automáticamente la instalación de una interfaz de usario, el engine de contenedores (containerd), k3s (la misma tecnología que utiliza rancher para kubernetes), kubectl... etc y todo este paquete en una instalación sencilla.
 
 {{< imgproc rancher_desktop_panel Fit "700x450" >}}
 Panel de control de rancher desktop en Mac

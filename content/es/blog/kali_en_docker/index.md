@@ -16,7 +16,7 @@ Pero como todo, tiene sus grandes inconvenientes. Las imágenes de docker no tie
 En la [propia página](https://www.kali.org/get-kali/) de Kali se puede ver la comparativa completa con todas sus opciones:
 
 {{< imgproc kali_en_docker Fit "700x450" >}}
-Comparativa de las distintas opciones de Kali en Docker.
+Comparativa de las distintas opciones de Kalilinux.
 {{< /imgproc >}}
 
 

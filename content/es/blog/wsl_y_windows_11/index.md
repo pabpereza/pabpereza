@@ -22,7 +22,7 @@ En el vídeo analizo las principales ventajas que ofrece y alguna que otra desve
 * Montaje del sistema de archivos. Aunque el acceso es más lento al ser dos sistemas de archivos diferentes, windows nos monta nuestro home (c:/users/pablo) en cada uno de los subsistemas. 
 * Integración de los sistemas de archivos de las distribuciones en el explorador de windows.
 
-{{< imgproc wsl Fit "700x450" >}}
+{{< imgproc wslpic Fit "700x450" >}}
 Integración de los sistemas de archivos de las distribuciones en el explorador de windows.
 {{< /imgproc >}}
 

@@ -11,7 +11,7 @@ Aunque existen otras alternativas como Buildah o Podman, estas, solo funcionan s
 Windows o Mac y pensais en montar una máquina Linux quizá prefiráis usar docker engine por la familiaridad que no usar otras herramientas.
 
 Rancher Desktop se posiciona como una alternativa a tener en cuenta. Dentro vídeo <i class='fa fa-film'></i>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LmKN4NvpR-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="90%" height="415" src="https://www.youtube.com/embed/LmKN4NvpR-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ¿Qué es rancher desktop?
 Si vienes del mundo de kubernetes seguro que Rancher te es familiar. Este es una plataforma de kubernetes con una capa de gestión 

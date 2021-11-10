@@ -8,7 +8,7 @@ tags: [docker, seguridad]
 
 En anteriores vídeos he hablado acerca de la seguridad a la hora de crear imágenes pero hay un aspecto más crítico y fundamental que se suele obviar al construir imágenes. Estas, contienen software en forma de librerías del sistema que también pueden ser vulnerables. Pero, ¿como podemos revisar esa seguridad?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XmGEMOgI9-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="90%" height="415" src="https://www.youtube.com/embed/XmGEMOgI9-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## ¿Qué riesgos de seguridad hay en las imágenes de Docker?

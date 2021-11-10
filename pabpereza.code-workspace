@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "content/es/docs"
+		},
+		{
+			"path": "content/es/blog"
+		}
+	],
+	"remoteAuthority": "wsl+Ubuntu-20.04",
+	"settings": {}
+}

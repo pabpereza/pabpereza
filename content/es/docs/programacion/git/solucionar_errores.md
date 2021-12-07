@@ -36,7 +36,17 @@ ver como cambiar el editor de texto que git usará para estas labores.
 
 ### Añadir archivo al último commit
 Podría pasar también, que te hubieras dejado de añadir un archivo al último commit. Es cierto que podrías crear un nuevo commit pero queda más limpio si corriges el anterior.
-Para ello
+Para ello añadiríamos el o los archivos que nos hubieramos dejado en el anterior commit usando el comando "add":
+```bash
+git add <fichero>
+```
+
+Y luego, volveríamos a repetir el "ammend":
+
+``` bash
+git commit --amend
+```
+Esto nos permitiría añadir el archivo los archivos omitidos en el commit anterior y corregir el mensaje si fuera necesario.
 
 WIP (WORK IN PROGRESS)
 

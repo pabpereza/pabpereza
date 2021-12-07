@@ -48,6 +48,75 @@ git commit --amend
 ```
 Esto nos permitiría añadir el archivo los archivos omitidos en el commit anterior y corregir el mensaje si fuera necesario.
 
-WIP (WORK IN PROGRESS)
+
+## Reset - Revertir cambios de un commit
+Que pasaría si hacemos lo contrario que en punto anterior, en vez de añadir un archivo, lo queremos eliminar. Muchas veces por error incluimos en el 
+repositorio un archivo que no queríamos dado que contienen secretos o información importante.
+
+### Borrar del stage area
+Si solo lo hemos mandado al "stage" area, podríamos quitarlo de ahí con el siguiente comando:
+```bash
+git reset <fichero a eliminar>
+```
+### Revertir un commit
+En caso de haberlo añadido al "stage area" y haber hecho un commit, podríamos revertir el cambio con el siguiente comando:
+```bash
+git reset --soft HEAD~1 #Revertir el último commit
+git reset <archivo a eliminar> #Resturar el archivo del commiteado por error
+rm <archivo a eliminar> #Eliminar el archivo del repositorio
+git commit #Hacer el commit
+```
+Esto revertirá el último commit, eliminará el archivo y añadira un nuevo commit en su lugar.
+
+
+### Volver a un estado anterior tras muchos cambios
+Podría pasar, ya en el peor de los casos, que hubieramos hecho muchos cambios mal y quisieramos volver a un estado anterior.
+Primero podríamos consultar el historial de commits con el comando "log" o "reflog" y ver la referencia del commit al que queremos volver:
+```bash
+git log
+git reflog
+```
+
+Con la referencia del commit al que queremos volver, podemos revertir el commit con el siguiente comando:
+```bash
+git reset HEAD@{Referencia}
+```
+
+### Volver al último commit rápidamente
+Para volver al último commit sin tener que consultar el historial, podemos usar el comando "reset" con el parámetro "--hard":
+```bash
+git reset --hard HEAD
+```
+
+
+## Branch - Errores en ramas 
+En este apartado veremos los errores más comunes que pueden ocurrir en las ramas.
+
+### Nombre de rama equivocado
+Es frecuente que con las prisas escribamos el nombre de una rama con un nombre equivocado. Aquí la solución es simple, dentro del comando branch esta
+el parámetro "-m" que nos permite cambiar el nombre de la rama:
+```bash
+git branch -m nombre-rama-equivocada nombre-rama-correcta
+```
+
+### Commit a la rama principal
+Podríamos hacer sin querer un commit en la rama principal, por ejemplo, main cuando nuestro sistema de organización es hacer ramas distintas para 
+cada característica nueva que se desarrolla o trabajar primero en develop y luego integrar los cambios en main.
+
+En varios pasos podríamos crear una rama con todos los cambios que acabamos de generar y luego, en el siguiente paso, resetear la rama principal
+al commit anterior:
+```bash
+git branch nombre-rama-nueva-con-los-cambios #Creamos una rama con los cambios
+git reset HEAD~ --hard #Reseteamos la rama principal al commit anterior
+git checkout nombre-rama-nueva-con-los-cambios #Cambiamos a la rama nueva
+```
+En el último paso, nos cambiaríamos a la rama nueva para seguir trabajando con los cambios habiendo dejado limpia la rama principal.
+
+
+
+
+
+
+
 
 

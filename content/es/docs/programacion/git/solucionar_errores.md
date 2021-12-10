@@ -13,8 +13,9 @@ código a lo largo de infinidad de versiones y cambios generados por múltiples 
 Es normal y frecuente en estos procesos equivocarnos, como por ejemplo, escribir el mensaje
 que no era en un commit, olvidarse de añadir algún archivo en un commit o añadir el que no querías... etc.
 
-Por suerte, para todos ellos hay solución y veremos diferentes comandos que git ofrece para rreglar errores.
+Por suerte, para todos ellos hay solución y veremos diferentes comandos que git ofrece para arreglar errores.
 
+Vamos a ir viendo las diferentes opciones agrupadas por comandos:
 
 ## Ammend - Enmendar el commit más reciente
 Esta opción trabaja en conjunto con el comando commit y es una manera práctica de modificar el commit más
@@ -112,11 +113,19 @@ git checkout nombre-rama-nueva-con-los-cambios #Cambiamos a la rama nueva
 ```
 En el último paso, nos cambiaríamos a la rama nueva para seguir trabajando con los cambios habiendo dejado limpia la rama principal.
 
+## Eliminar secretos tanto en local como en remoto
+En este apartado veremos como eliminar los secretos de un repositorio local o remoto. Es 
+muy frecuente sin querer introducir tokens o contraseñas en un repositorio. Aunque los borremos posteriormente,
+estos, se mantendrán en el historial de git.
 
-
-
-
-
+Podemos borrar un archivo de toda la historia con el siguiente comando:
+```bash
+ git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch ARCHIVO-SENSIBLE" \
+  --prune-empty --tag-name-filter cat -- --all
+  git push --force --verbose --dry-run
+  git push --force
+```
 
 
 

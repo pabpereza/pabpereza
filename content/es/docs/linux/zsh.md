@@ -63,7 +63,6 @@ Estas funcionalidades no vienen por defecto pero si podemos intalar los plugins 
 
 Los podríamos instalar respectivamente con los siguientes comandos:
 ```
-```
 #Instalar autocompletado
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 

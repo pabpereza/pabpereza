@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "0e6d60f44f841981",
+    "id": "bb72ddef24fd5cde",
     "type": "split",
     "children": [
       {
-        "id": "ca831dc1592c7f53",
+        "id": "c369c837907d7754",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/es/search.md",
+            "file": "contenedores/analizar_contenedores.md",
             "mode": "source",
             "source": false
           }
@@ -19,15 +19,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8d235761e7be85cc",
+    "id": "2a5327c76eb57521",
     "type": "split",
     "children": [
       {
-        "id": "28d46f07274c4832",
+        "id": "e8804a402fa7725d",
         "type": "tabs",
         "children": [
           {
-            "id": "7ac98b19e1449d1d",
+            "id": "cac48af8b98b75ee",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,12 +35,12 @@
             }
           },
           {
-            "id": "f60b25fb1e613fac",
+            "id": "97d80213108aad98",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,30 +53,41 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 253
   },
   "right": {
-    "id": "765295813b8a6e70",
+    "id": "875d7560ec007aed",
     "type": "split",
     "children": [
       {
-        "id": "1a6a71bb429217ab",
+        "id": "886b34379ea838bc",
         "type": "tabs",
         "children": [
           {
-            "id": "7c0c74367d892182",
+            "id": "1655b2fdce5766a9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/es/search.md",
+                "file": "contenedores/analizar_contenedores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "8da3c070f4c0f1c2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           }
@@ -84,13 +95,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "ca831dc1592c7f53",
+  "active": "c369c837907d7754",
   "lastOpenFiles": [
-    "content/es/search.md",
-    "content/es/docs/contenedores/fundamentos.md",
-    "content/es/main-background.jpeg"
+    "contenedores/analizar_contenedores.md",
+    "programacion/git/claves_ssh.md",
+    "programacion/git/index_lock.md",
+    "programacion/git/_index.md",
+    "programacion/git/configurar_editor_commits.md",
+    "programacion/git/solucionar_errores.md",
+    "pentesting/reconocimiento/SNMP.md",
+    "contenedores/fundamentos.md",
+    "blog.md",
+    "_index.md"
   ]
 }

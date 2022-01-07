@@ -1,0 +1,4 @@
+div[data-path$='_']{
+	display: none;
+}
+

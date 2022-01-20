@@ -21,7 +21,6 @@ El soporte de los namescaces o espacios de nombres aísla la vista que tiene una
 
 Como resumen, se lanza un proceso aislado con todas las dependencias necesarias para que funcione.
 
-
 # Arquitectura de Docker
 Hemos hablado de procesos y contenedores, pero esto es solo una pequeña pieza de todos los objetos que conforman Docker a día de hoy.
 

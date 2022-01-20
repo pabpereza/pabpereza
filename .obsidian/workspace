@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "0e6d60f44f841981",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca831dc1592c7f53",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/es/search.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8d235761e7be85cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "28d46f07274c4832",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ac98b19e1449d1d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f60b25fb1e613fac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "765295813b8a6e70",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a6a71bb429217ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c0c74367d892182",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/es/search.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ca831dc1592c7f53",
+  "lastOpenFiles": [
+    "content/es/search.md",
+    "content/es/docs/contenedores/fundamentos.md",
+    "content/es/main-background.jpeg"
+  ]
+}

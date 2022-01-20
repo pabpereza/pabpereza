@@ -1,4 +1,3 @@
-
 ---
 title: "Index lock"
 linkTitle: "Index lock"
@@ -9,18 +8,18 @@ description: >
 ---
 
 Git tiene un sistema de funcionamiento muy estricto para evitar conflictos y ayudarnos a mantener nuestro bien versionado.
-Para ello, solo a un proceso realziar cambios a la vez para mantener la integridad de la información.
+Para ello, solo a un proceso realziar cambios a la vez para mantener la integridad de la informaciÃ³n.
 
 Cuando realizamos cualquier tarea en git, un commit, push, pull... este genera un archivo llamado "index.lock" y lo guarda
 dentro de la carpeta ".git" en la raiz del repositorio.
 
-Este archivo bloquea el repositorio ante cualquier otro acceso o proceso simultáneo que quiera realizar cambios. En algunos casos,
-poco frecuentes, puede pasar que una acción o tarea nunca termine ( por fallo del SO u otros) y el repositorio se quede bloqueado.
+Este archivo bloquea el repositorio ante cualquier otro acceso o proceso simultï¿½neo que quiera realizar cambios. En algunos casos,
+poco frecuentes, puede pasar que una acciÃ³n o tarea nunca termine ( por fallo del SO u otros) y el repositorio se quede bloqueado.
 
-Si tenemos claro lo que estamos haciendo, podríamos borrar simplemente este archivo con el comando:
+Si tenemos claro lo que estamos haciendo, podrÃ­amos borrar simplemente este archivo con el comando:
 ``` bash
 rm .git/index.lock
 ```
 
-Así de simple conseguiríamos quitar el bloqueo de git pero *atención* que no tengamos otro proceso ejecutando alguna tarea sobre git
-o podríamos corromper datos del repositorio.
+AsÃ­ de simple conseguirÃ­amos quitar el bloqueo de git pero *atenciï¿½n* que no tengamos otro proceso ejecutando alguna tarea sobre git
+o podrÃ­amos corromper datos del repositorio.

@@ -27,14 +27,6 @@ categories = "categories"
 taxonomyCloud = ["tags","categories"] # set taxonomyCloud = [] to hide taxonomy clouds
 taxonomyCloudTitle = ["Etiquetas","Categorías"] # if used, must have same lang as taxonomyCloud
 
-# Highlighting config
-pygmentsCodeFences = true
-pygmentsUseClasses = false
-# Use the new Chroma Go highlighter in Hugo.
-pygmentsUseClassic = true
-#pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
-pygmentsStyle = "dracula"
 
 # Configure how URLs look like per section.
 [permalinks]

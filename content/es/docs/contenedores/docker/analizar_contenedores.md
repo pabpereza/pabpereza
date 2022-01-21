@@ -20,13 +20,13 @@ Tiene unas limitaciones de uso mensual pero podemos iniciar sesión con una cuen
 
 Podemos utilizar esta herramienta simplemente escribiendo:
 
-```bash 
+``` bash 
 docker scan <imagen>
 ```
 
 Otra forma de utilizarla, es con el parámetro "--dependency-tree", el cuál muestra todo el árbol
 de dependencias de la images.
-```bash
+``` bash
 docker scan --dependency-tree <imagen>
      ├─ ca-certificates @ 20200601~deb10u1
      │  └─ openssl @ 1.1.1d-0+deb10u3

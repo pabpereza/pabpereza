@@ -17,9 +17,9 @@ Este archivo bloquea el repositorio ante cualquier otro acceso o proceso simult�
 poco frecuentes, puede pasar que una acción o tarea nunca termine ( por fallo del SO u otros) y el repositorio se quede bloqueado.
 
 Si tenemos claro lo que estamos haciendo, podríamos borrar simplemente este archivo con el comando:
-``` bash
+``` shell
 rm .git/index.lock
 ```
 
-Así de simple conseguiríamos quitar el bloqueo de git pero *atenci�n* que no tengamos otro proceso ejecutando alguna tarea sobre git
+Así de simple conseguiríamos quitar el bloqueo de git pero *atención* que no tengamos otro proceso ejecutando alguna tarea sobre git
 o podríamos corromper datos del repositorio.

@@ -19,14 +19,14 @@ En esta guía explico como configurar zsh a mis gustos personales, (en este víd
 
 ## Instalación de requisitos
 Con el siguiente comando podéis instalar todos los requisitos necesarios para instalar zsh:
-```
+``` shell
 apt install curl zsh
 ```
 
 
 ## Instalación de ohmyzsh
 Ahora que tenemos instalado zsh podemos instalar el plugin de ohmyzsh:
-```
+``` shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -38,7 +38,7 @@ Recuerda que todas las configuraciones que hagas en zsh se guardarán en el arch
 
 ### Tema
 Se puede editar el tema de zsh en el parámentro `ZSH_THEME`: del fichero `.zshrc`. Por ejemplo:
-```
+``` conf
 ZSH_THEME="robbyrussell"
 ```
 Así se cambia al tema por defecto de ohmyzsh.
@@ -46,13 +46,13 @@ Así se cambia al tema por defecto de ohmyzsh.
 
 ### Plugins
 Para añadir un plugin a zsh, debemos añadirlo en la sección `plugins` del fichero `.zshrc` separados por espacios. Por ejemplo:
-```
+``` conf
 plugins=(git sudo docker z )
 ```
 
 ### Recargar cambios
 Recuerda que cada vez que modifiques el fichero .zshrc tendras que cargar de nuevo la configuración con el comando:
-```
+``` shell
 source ~/.zshrc
 ```
 
@@ -62,7 +62,7 @@ Estas funcionalidades no vienen por defecto pero si podemos intalar los plugins 
 [highlight](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 Los podríamos instalar respectivamente con los siguientes comandos:
-```
+``` shell
 #Instalar autocompletado
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
@@ -72,7 +72,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 Los podríamos activar añadiéndolos en el parámetro de plugins en el fichero `.zshrc`:
-```
+``` conf
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 ```
 

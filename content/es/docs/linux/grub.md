@@ -16,12 +16,12 @@ Para configuraciones con múltiples sistemas operativos esta bien que haya ciert
 usando solo linux no veo necesidad de demorar el tiempo de arranque.
 
 Esta configuración se puede editar en el fichero:
-```
+``` conf
 /etc/default/grub
 ```
 
 Cambiando el parámetro "GRUB_TIMEOUT" por el valor que deseemos:
-```
+``` conf
 GRUB_DEFAULT=0 
 GRUB_TIMEOUT=5 # <-- CAMBIAR POR EL VALOR QUE QUIERAS
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`

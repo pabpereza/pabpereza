@@ -27,7 +27,7 @@ ramas o herramientas.
 
 ### Uso básico
 Supón que acabas de terminar un commit y quieres modificar su mensaje porque has puesto lo que no debías. Podrías ejecutar esto:
-``` bash
+``` shell
 git commit --amend
 ```
 
@@ -38,13 +38,13 @@ ver como cambiar el editor de texto que git usará para estas labores.
 ### Añadir archivo al último commit
 Podría pasar también, que te hubieras dejado de añadir un archivo al último commit. Es cierto que podrías crear un nuevo commit pero queda más limpio si corriges el anterior.
 Para ello añadiríamos el o los archivos que nos hubieramos dejado en el anterior commit usando el comando "add":
-```bash
+``` shell
 git add <fichero>
 ```
 
 Y luego, volveríamos a repetir el "ammend":
 
-``` bash
+``` shell
 git commit --amend
 ```
 Esto nos permitiría añadir el archivo los archivos omitidos en el commit anterior y corregir el mensaje si fuera necesario.
@@ -56,12 +56,12 @@ repositorio un archivo que no queríamos dado que contienen secretos o informaci
 
 ### Borrar del stage area
 Si solo lo hemos mandado al "stage" area, podríamos quitarlo de ahí con el siguiente comando:
-```bash
+``` shell
 git reset <fichero a eliminar>
 ```
 ### Revertir un commit
 En caso de haberlo añadido al "stage area" y haber hecho un commit, podríamos revertir el cambio con el siguiente comando:
-```bash
+``` shell
 git reset --soft HEAD~1 #Revertir el último commit
 git reset <archivo a eliminar> #Resturar el archivo del commiteado por error
 rm <archivo a eliminar> #Eliminar el archivo del repositorio
@@ -73,19 +73,19 @@ Esto revertirá el último commit, eliminará el archivo y añadira un nuevo com
 ### Volver a un estado anterior tras muchos cambios
 Podría pasar, ya en el peor de los casos, que hubieramos hecho muchos cambios mal y quisieramos volver a un estado anterior.
 Primero podríamos consultar el historial de commits con el comando "log" o "reflog" y ver la referencia del commit al que queremos volver:
-```bash
+``` shell
 git log
 git reflog
 ```
 
 Con la referencia del commit al que queremos volver, podemos revertir el commit con el siguiente comando:
-```bash
+``` shell
 git reset HEAD@{Referencia}
 ```
 
 ### Volver al último commit rápidamente
 Para volver al último commit sin tener que consultar el historial, podemos usar el comando "reset" con el parámetro "--hard":
-```bash
+``` shell
 git reset --hard HEAD
 ```
 
@@ -96,7 +96,7 @@ En este apartado veremos los errores más comunes que pueden ocurrir en las rama
 ### Nombre de rama equivocado
 Es frecuente que con las prisas escribamos el nombre de una rama con un nombre equivocado. Aquí la solución es simple, dentro del comando branch esta
 el parámetro "-m" que nos permite cambiar el nombre de la rama:
-```bash
+```shell
 git branch -m nombre-rama-equivocada nombre-rama-correcta
 ```
 
@@ -106,7 +106,7 @@ cada característica nueva que se desarrolla o trabajar primero en develop y lue
 
 En varios pasos podríamos crear una rama con todos los cambios que acabamos de generar y luego, en el siguiente paso, resetear la rama principal
 al commit anterior:
-```bash
+``` shell
 git branch nombre-rama-nueva-con-los-cambios #Creamos una rama con los cambios
 git reset HEAD~ --hard #Reseteamos la rama principal al commit anterior
 git checkout nombre-rama-nueva-con-los-cambios #Cambiamos a la rama nueva
@@ -119,7 +119,7 @@ muy frecuente sin querer introducir tokens o contraseñas en un repositorio. Aun
 estos, se mantendrán en el historial de git.
 
 Podemos borrar un archivo de toda la historia con el siguiente comando:
-```bash
+``` shell
  git filter-branch --force --index-filter \
   "git rm --cached --ignore-unmatch ARCHIVO-SENSIBLE" \
   --prune-empty --tag-name-filter cat -- --all

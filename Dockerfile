@@ -1,10 +1,3 @@
-FROM nginx:alpine
+FROM klakegg/hugo:ext-alpine
 
-WORKDIR /usr/share/nginx/html
-
-RUN rm -fr * .??* && mkdir /cache
-
-COPY conf/nginx.conf  /etc/nginx/nginx.conf
-COPY conf/default.conf /etc/nginx/conf.d/default.conf 
-
-COPY /public .
+RUN apk add git

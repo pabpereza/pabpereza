@@ -36,17 +36,21 @@ other = "Última modificação"
 [post_edit_this]
 other = "Editar essa página"
 [post_create_child_page]
-other = "Create child page"
+other = "Criar uma subpágina"
 [post_create_issue]
 other = "Relatar um problema de documentação"
 [post_create_project_issue]
 other = "Relatar um problema no projeto"
 [post_posts_in]
 other = "Posts em"
+[post_reading_time]
+other = "minute read"
+[post_less_than_a_minute_read]
+other = "less than a minute"
 
 # Print support
 [print_printable_section]
-other = "This the multi-page printable view of this section."
+other = "This is the multi-page printable view of this section."
 [print_click_to_print]
 other = "Click here to print"
 [print_show_regular]

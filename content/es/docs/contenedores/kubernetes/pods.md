@@ -13,12 +13,12 @@ para usar un contenedor en Kubernetes.
 
 ## Crear un pod
 Especificaremos el nombre que le queremos asignar a ese pod y la imagen que utilizaremos.
-```
+``` shell
 kubectl run <nom_pod> --image=<imagen>
 ```
 
 ## Ver un pod
-```
+``` shell
 kubectl get pods # Listar todos los pods en el cluster
 kubectl get pods <nom_pod> # Listar el pod especificado
 kubectl describe pods <nom_pod> # Describe el pod nginx
@@ -26,7 +26,7 @@ kubectl describe pods <nom_pod> --yaml  # Nos devuelve todo el manifiesto del po
 ```
 
 Al hacer un describe del pod veríamos la siguiente salida:
-```
+``` yaml
 Name:         nginx
 Namespace:    default
 Priority:     0
@@ -81,7 +81,7 @@ Events:
 
 
 ## Destruir un pod
-```
+``` shell
 kubectl delete pod nginx
 ```
 

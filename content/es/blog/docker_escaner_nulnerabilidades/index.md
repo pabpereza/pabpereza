@@ -22,7 +22,7 @@ Existen multitud de herramientas que pueden ser útiles para analizar la segurid
 
 Para este vídeo y evitar instalar nada, hemos utilizado el escáner que viene incorporado con Docker en las últimas versiones. Se puede ejecutar con el siguiente comando:
 
-```bash
+``` bash
 docker scan <nombre de la imagen>
 ```
 

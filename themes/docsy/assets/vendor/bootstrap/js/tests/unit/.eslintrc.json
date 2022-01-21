@@ -1,6 +1,7 @@
 {
   "extends": [
-    "../../../.eslintrc.json"
+    "../../../.eslintrc.json",
+    "plugin:qunit/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": 5,
@@ -25,7 +26,9 @@
     "no-var": "off",
     "object-shorthand": "off",
     "prefer-arrow-callback": "off",
+    "prefer-rest-params": "off",
     "prefer-template": "off",
-    "prefer-rest-params": "off"
+    "unicorn/prefer-add-event-listener": "off",
+    "unicorn/prefer-spread": "off"
   }
 }

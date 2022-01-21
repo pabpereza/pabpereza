@@ -5,21 +5,21 @@ const browsers = {
   safariMac: {
     base: 'BrowserStack',
     os: 'OS X',
-    os_version: 'High Sierra',
+    os_version: 'Catalina',
     browser: 'Safari',
     browser_version: 'latest'
   },
   chromeMac: {
     base: 'BrowserStack',
     os: 'OS X',
-    os_version: 'High Sierra',
+    os_version: 'Catalina',
     browser: 'Chrome',
     browser_version: 'latest'
   },
   firefoxMac: {
     base: 'BrowserStack',
     os: 'OS X',
-    os_version: 'High Sierra',
+    os_version: 'Catalina',
     browser: 'Firefox',
     browser_version: 'latest'
   },
@@ -63,6 +63,13 @@ const browsers = {
     os: 'ios',
     os_version: '11.0',
     device: 'iPhone X',
+    real_mobile: true
+  },
+  iphone12: {
+    base: 'BrowserStack',
+    os: 'ios',
+    os_version: '14.0',
+    device: 'iPhone 12',
     real_mobile: true
   },
   pixel2: {

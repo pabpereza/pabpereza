@@ -2,7 +2,7 @@
 title: "Pods"
 linkTitle: "Pods"
 weight: 10 
-tags: [kubernetes, pods]
+tags: [kubernetes, devops]
 description: "Pods, la unidad base de todo el sistema de contenedores, son una unidad de ejecución de contenedores. Podemos crear una instancia de un contenedor, y luego ejecutarlo. Podemos ejecutar un contenedor en una instancia de Kubernetes, o en una instancia de Docker."
 ---
 
@@ -85,3 +85,6 @@ Events:
 kubectl delete pod nginx
 ```
 
+## Problemas de los pods
+No saben restaurarse ni replicarse a si mismos. Necesitan de alguien que gestione estos procesos. Para esto se utilizan otro tipo de elementos:
+[Replicasets](replicasets.md)

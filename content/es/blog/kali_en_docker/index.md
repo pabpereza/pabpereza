@@ -21,9 +21,8 @@ Comparativa de las distintas opciones de Kalilinux.
 
 
 # Vídeos explicativos
+{{< youtube yvfXt7Ndrvc >}}
 
-<iframe width="660" height="315" src="https://www.youtube.com/embed/yvfXt7Ndrvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube qnsi1cnTK3A >}}
 
-<iframe width="660" height="315" src="https://www.youtube.com/embed/qnsi1cnTK3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="660" height="315" src="https://www.youtube.com/embed/sVJ4iocUods" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube sVJ4iocUods >}}

@@ -18,6 +18,5 @@ procesos de desarrollo es muy habitual que se cometan ciertos errores al trabaja
 En este vídeo comento los que considero más comunes pero no dudes en contribuir si se te ocurre algún error que no se haya explicado.
 Todos los comandos los puedes encontrar en la [documentación]( /docs/programacion/git/solucionar_errores) por escrito. Para todo lo demás, dentro vídeo:
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/9sK_is8ufbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+{{< youtube 9sK_is8ufbk >}}
 

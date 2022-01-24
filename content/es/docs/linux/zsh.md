@@ -13,8 +13,7 @@ Adaptarlo a nuestras necesidades y potenciar sus utilidades de caja me parece vi
 horas delante de una interfaz de comandos.
 
 En esta guía explico como configurar zsh a mis gustos personales, (en este vídeo tenéis todo el proceso más detallado):
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/cyK89jHB9JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube cyK89jHB9JA >}}
 
 
 ## Instalación de requisitos
@@ -54,8 +53,8 @@ source <ubicación del archivo antigen.zsh>
 Para configurar un plugin podemos usar el comando 'antigen bundle' y para seleccionar un tema se usa el comando 'antigen theme'.
 
 Por ejemplo:
-``` conf
-# Deficnición de plugins
+``` shell 
+# Definición de plugins
 antigen bundle git
 antigen bundle git-prompt
 

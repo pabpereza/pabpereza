@@ -53,8 +53,8 @@ source <ubicación del archivo antigen.zsh>
 Para configurar un plugin podemos usar el comando 'antigen bundle' y para seleccionar un tema se usa el comando 'antigen theme'.
 
 Por ejemplo:
-``` conf
-# Deficnición de plugins
+``` shell 
+# Definición de plugins
 antigen bundle git
 antigen bundle git-prompt
 

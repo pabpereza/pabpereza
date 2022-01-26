@@ -2,7 +2,7 @@
 title: "Fundamentos"
 linkTitle: "Fundamentos"
 weight: 1
-tags: [docker, contenedores, fundamentos]
+tags: [docker, contenedores ]
 description: "Primera entrada del curso de docker hablando sobre sus fundamentos."
 ---
 

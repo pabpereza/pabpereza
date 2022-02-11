@@ -1,4 +1,7 @@
 {
 	"git.postCommitCommand": "sync",
-	"cSpell.language": "en,es-ES"
+	"cSpell.language": "en,es-ES",
+	"workbench.editorAssociations": {
+		"*.svg": "hediet.vscode-drawio-text",
+	}
 }

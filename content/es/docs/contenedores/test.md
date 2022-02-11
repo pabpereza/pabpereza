@@ -6,4 +6,5 @@ tags: ["test"]
 description: test 
 ---
 
-![Chart](./test.drawio.png)
+
+{{< figure src="test.drawio.svg" caption="">}}

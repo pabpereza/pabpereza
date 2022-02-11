@@ -6,4 +6,4 @@ tags: ["test"]
 description: test 
 ---
 
-![Chart](test.drawio.svg)
+![Chart](test.drawio.png)

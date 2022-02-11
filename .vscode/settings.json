@@ -1,3 +1,4 @@
 {
-	"git.postCommitCommand": "sync"
+	"git.postCommitCommand": "sync",
+	"cSpell.language": "en,es-ES"
 }

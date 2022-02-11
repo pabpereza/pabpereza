@@ -3,7 +3,7 @@ title: "Pods"
 linkTitle: "Pods"
 weight: 10 
 tags: [kubernetes, devops]
-description: "Pods, la unidad base de todo el sistema de contenedores, son una unidad de ejecución de contenedores. Podemos crear una instancia de un contenedor, y luego ejecutarlo. Podemos ejecutar un contenedor en una instancia de Kubernetes, o en una instancia de Docker."
+description: ""
 ---
 
 Los pods se son una unidad de ejecución de contenedores, concretamente la unidad más 

@@ -24,7 +24,7 @@ docker search [nombre_contenedor]
  
 ## Instalar una imagen
 ``` shell
-docker pull [nombre_imágen]
+docker pull [nombre_imagen]
 ```
  
 ## Listar imágenes instaladas
@@ -32,7 +32,7 @@ docker pull [nombre_imágen]
 docker images
 ```
 
-## Ver imágenes ejecutandose
+## Ver imágenes ejecutándose
 ``` shell
 docker ps
 ```
@@ -62,7 +62,7 @@ docker run -i -t oldlts:latest /bin/bash
  
 ## Para iniciar un contenedor en modo demonio
 ``` shell
-docker run -d [identificador_imágen]
+docker run -d [identificador_imagen]
 ```
  
  
@@ -71,7 +71,7 @@ docker run -d [identificador_imágen]
 docker ps -a
 ```
  
-## Hay dos maneras de poner en marcha el contenedor a través del mismo comando, pudiéndose utilizar su identificador (CONTAINDER ID) o su nombre (NAMES).
+## Hay dos maneras de poner en marcha el contenedor a través del mismo comando, pudiéndose utilizar su identificador (CONTAINER ID) o su nombre (NAMES).
 ``` shell
 docker start ef7e107e0aae
 ```
@@ -79,7 +79,7 @@ docker start ef7e107e0aae
 docker start lonely_wing
 ```
  
-## Si se quiere acceder  (attach, que se podría traducir por adjuntar o unir) al contendor se puede recurrir a una de estas dos opciones.
+## Si se quiere acceder  (attach, que se podría traducir por adjuntar o unir) al contenedor se puede recurrir a una de estas dos opciones.
 ``` shell
 docker attach ef7e107e0aae
 ```

@@ -96,7 +96,7 @@ kubectl rollout status deployment nginx-deployment
 
 Este comando nos devolvería paso a paso la actualización del deployment:
 ```yaml
-Waiing for deployment "nginx-deployment" rollout to finish: 1 out of 3 new replicas have been updated...
+Waiting for deployment "nginx-deployment" rollout to finish: 1 out of 3 new replicas have been updated...
 Waiting for deployment "nginx-deployment" rollout to finish: 1 out of 3 new replicas have been updated...
 Waiting for deployment "nginx-deployment" rollout to finish: 1 out of 3 new replicas have been updated...
 Waiting for deployment "nginx-deployment" rollout to finish: 2 out of 3 new replicas have been updated...
@@ -107,7 +107,7 @@ Waiting for deployment "nginx-deployment" rollout to finish: 1 old replicas are 
 deployment "nginx-deployment" successfully rolled out
 ```
 
-Si el despliege ya ha terminado no se mostrará este proceso de actualización. Aun así, podremos consultarlo
+Si el despliegue ya ha terminado no se mostrará este proceso de actualización. Aun así, podremos consultarlo
 en el registro de eventos usando el comando:
 ```shell
 kubectl describe deployment nginx-deployment
@@ -160,7 +160,7 @@ Se podría hacer con el comando:
 kubectl rollout undo deployment nginx-deployment
 ```
 
-Este comando hace un rollback a la versión anterior del deployment. También podríamos especifiacarle
+Este comando hace un rollback a la versión anterior del deployment. También podríamos especificarle
 una versión específica:
 ```shell
 kubectl rollout undo deployment nginx-deployment --to-revision=1

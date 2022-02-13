@@ -80,6 +80,7 @@ kubectl get endpoints
 ## Tipos de servicios
 
 La jerarquía de los servicios es la siguiente:
+
 ![Jerarquía de servicios](/docs/contenedores/kubernetes/services.drawio.svg)
 
 

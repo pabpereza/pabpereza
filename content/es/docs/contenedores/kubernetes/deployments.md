@@ -165,4 +165,3 @@ una versión específica:
 ```shell
 kubectl rollout undo deployment nginx-deployment --to-revision=1
 ```
-

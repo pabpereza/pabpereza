@@ -8,37 +8,48 @@ description:
 
 
 ## Acceder a MySQL
-
+Sin especificar credendciales:
 ```bash
 mysql # Sin login
 ```
 
+Con usuario y contraseña (la password la pide por pantalla):
 ```bash
 mysql -u root -p # Con usuario y contraseña
 ```
 
-## Consultar base de datos
+## Bases de datos
 
+Mostrar todas:
 ```sql
 show databases;
 ```
 
-## Crear base de datos
-
+Crear base de datos:
 ```sql
-create database mibbdd;
+create database <base de datos>;
 ```
 
-## Consultar tablas
+Borrar base de datos:
+```sql
+drop database <base de dator>;
+```
 
+## Tablas
+
+Consultar tablas:
 ```sql
 show tables;
 ```
 
-## Crear tabla
-
+Describir los atributos de una tabla:
 ```sql
-mysql> CREATE TABLE mitabla(
+DESCRIBE <tabla>;
+```
+
+Crear tabla:
+```sql
+mysql> CREATE TABLE <tabla>(
          id MEDIUMINT NOT NULL AUTO_INCREMENT,
          nombre CHAR(30) NOT NULL,
          edad INTEGER(30),
@@ -46,10 +57,9 @@ mysql> CREATE TABLE mitabla(
          PRIMARY KEY (id) );
 ```
 
-## Insertar datos
-
+Insertar datos:
 ```sql
-INSERT INTO mitabla (nombre, edad, salario) VALUES
+INSERT INTO <tabla> (nombre, edad, salario) VALUES
 ("Pedro", 24, 21000),
         ("Maria", 26, 24000),
         ("Juan", 28, 25000),
@@ -59,8 +69,23 @@ INSERT INTO mitabla (nombre, edad, salario) VALUES
         ("Susana", 45, 39000);
 ```
 
-## Salir de MySql
+Actualizar datos:
+```sql
+UPDATE <tabla> SET nombre = "Pedro" WHERE id = 1;
+```
 
+Obtener datos:
+```sql
+SELECT * FROM <tabla>;
+```
+
+Borrar datos:
+```sql
+DELETE FROM <tabla> WHERE id = 1;
+``` 
+
+## Salir de MySql
+Para salir del cli interactivo de mysql se puede usar la opción `quit` o `exit`.
 ```sql
 exit;
 ```

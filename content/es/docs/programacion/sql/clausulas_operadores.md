@@ -1,7 +1,7 @@
 ---
 title: "Cláusulas y operadores"
 linkTitle: "Cláusulas y operadores"
-weight: 
+weight: 20
 tags: [database, sql]
 description:  
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Comandos generales"
 linkTitle: "Comandos generales"
-weight: 
+weight: 10
 tags: [database, sql]
 description:  
 ---

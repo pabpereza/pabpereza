@@ -3,7 +3,7 @@ title: "Deployments"
 linkTitle: "Deployments"
 weight: 40 
 tags: [kubernetes, deployments]
-description: "Elementos de configuración que permiten la creación de una aplicación de una sola instancia."
+description: ""
 ---
 
 Los [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) son elementos de configuración que permiten la creación de una aplicación de una sola instancia.

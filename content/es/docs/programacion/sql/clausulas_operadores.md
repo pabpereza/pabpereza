@@ -131,11 +131,11 @@ Nos permiten agrupar registros por un campo.
 
 | Operador | Función           |
 | -------- | ----------------- |
-| COUNT    | Cuenta los registros que cumplan con la condición           |
-| SUM      | Suma los valores de un campo           |
-| MAX      | Devuelve el valor máximo de un campo           |
-| MIN      | Devuelve el valor mínimo de un campo           |
-| AVG      | Devuelve la media de un campo           |
+| COUNT()    | Cuenta los registros que cumplan con la condición           |
+| SUM()      | Suma los valores de un campo           |
+| MAX()      | Devuelve el valor máximo de un campo           |
+| MIN()      | Devuelve el valor mínimo de un campo           |
+| AVG()      | Devuelve la media de un campo           |
 
 Algunos ejemplos:
 ```sql
@@ -146,3 +146,28 @@ SELECT MIN(precio) FROM tabla;
 SELECT AVG(precio) FROM tabla;
 ```
 
+### Operadores de texto
+Nos permiten manipular textos de las consultas.
+
+| Operador | Función           |
+| -------- | ----------------- |
+| CONCAT()    | Concatena dos o más cadenas de texto           |
+| SUBSTRING() | Extrae una subcadena de una cadena de texto           |
+| LENGTH()    | Devuelve la longitud de una cadena de texto           |
+| UCASE()     | Convierte una cadena de texto a mayúsculas           |
+| LCASE()     | Convierte una cadena de texto a minúsculas           |
+
+### Operadores de fecha
+Nos permiten manipular fechas de las consultas.
+
+| Operador | Función           |
+| -------- | ----------------- |
+| DATE()    | Convierte una fecha a una cadena de texto           |
+| DATE_FORMAT() | Convierte una fecha a un formato de cadena de texto           |
+| NOW()     | Devuelve la fecha actual           |
+| YEAR()    | Devuelve el año de una fecha           |
+| MONTH()   | Devuelve el mes de una fecha           |
+| DAY()     | Devuelve el día de una fecha           |
+| HOUR()    | Devuelve la hora de una fecha           |
+| MINUTE()  | Devuelve los minutos de una fecha           |
+| SECOND()  | Devuelve los segundos de una fecha           |

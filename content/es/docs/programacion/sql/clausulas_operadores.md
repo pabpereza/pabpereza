@@ -16,6 +16,7 @@ Estas consultas tienen diferentes cláusulas:
 * `ORDER BY`: Ordena los registros por un atributo.
 * `GROUP BY`: Agrupa los registros por un atributo.
 * `LIMIT`: Limita el número de registros a devolver.
+* `HAVING`: Selecciona los registros que cumplan con una condición. Opera sobre los registros agrupados.
 
 
 La siguiente consulta devolvería todos los registros de la tabla `tabla`.
@@ -47,6 +48,11 @@ La siguiente consulta devolvería los primeros 5 registros de la tabla `tabla`.
 ```sql
 SELECT * FROM tabla LIMIT 5;
 ```
+
+Ejemplo having:
+```sql
+SELECT * FROM tabla GROUP BY nombre HAVING COUNT(*) > 1;
+```
 ---
 
 ## Operadores
@@ -56,18 +62,18 @@ Los operadores nos permiten establecer condiciones en las consultar, modificarla
 ### Operadores de comparación
 Existen diferentes operadores de comparación que nos permiten comparar dos valores.
 
-| Operador | Función           |
-| -------- | ----------------- |
-| <        | Menor que         |
-| >        | Mayor que         |
-| <>       | Distinto de       |
-| =        | Igual a           |
-| <=       | Menor o igual que |
-| >=       | Mayor o igual que |
-| IN	   | Dentro de (filas de tabla)         |
-| NOT IN   | Fuera de (filas de tabla)         |
-| BETWEEN  | Entre (valores numéricos)         |
-| LIKE     | Contiene (valor de cadena)        |
+| Operador | Función                    |
+| -------- | -------------------------- |
+| <        | Menor que                  |
+| >        | Mayor que                  |
+| <>       | Distinto de                |
+| =        | Igual a                    |
+| <=       | Menor o igual que          |
+| >=       | Mayor o igual que          |
+| IN       | Dentro de (filas de tabla) |
+| NOT IN   | Fuera de (filas de tabla)  |
+| BETWEEN  | Entre (valores numéricos)  |
+| LIKE     | Contiene (valor de cadena) |
 
 Algunos ejemplos:
 ```sql
@@ -85,10 +91,10 @@ SELECT * FROM table WHERE precio BETWEEN 10 AND 20; /*Selecciona todos los regis
 ### Comparación de cadenas
 Concretamente el comando `LIKE` nos permite buscar dentro de una cadena de texto. Este comando se aplica a los campos de tipo `varchar` o `char`. Se apoya en los siguientes operadores:
 
-| Operador | Función           |
-| -------- | ----------------- |
-| %        | Comodín, representa cualquier cadena de 0 o más caracteres          |
-| _        | Representa a un único caracter cualquiera          |
+| Operador | Función                                                    |
+| -------- | ---------------------------------------------------------- |
+| %        | Comodín, representa cualquier cadena de 0 o más caracteres |
+| _        | Representa a un único caracter cualquiera                  |
 
 
 Combinando el `LIKE` con el `%` o con el `_` podemos buscar por palabras completas o parciales.
@@ -109,11 +115,11 @@ Nos permiten establecer condiciones en las consultas. También nos permite agrup
 
 Los operadores lógicos son:
 
-| Operador | Función           |
-| -------- | ----------------- |
-| AND      | Y                 |
-| OR       | O                 |
-| NOT      | No                |
+| Operador | Función |
+| -------- | ------- |
+| AND      | Y       |
+| OR       | O       |
+| NOT      | No      |
 
 Algunos ejemplos:
 ```sql
@@ -129,13 +135,13 @@ SELECT * FROM tabla WHERE (nombre LIKE '%Pedro%' AND precio < 10) OR precio > 20
 ### Operadores de agrupación
 Nos permiten agrupar registros por un campo.
 
-| Operador | Función           |
-| -------- | ----------------- |
-| COUNT()    | Cuenta los registros que cumplan con la condición           |
-| SUM()      | Suma los valores de un campo           |
-| MAX()      | Devuelve el valor máximo de un campo           |
-| MIN()      | Devuelve el valor mínimo de un campo           |
-| AVG()      | Devuelve la media de un campo           |
+| Operador | Función                                           |
+| -------- | ------------------------------------------------- |
+| COUNT()  | Cuenta los registros que cumplan con la condición |
+| SUM()    | Suma los valores de un campo                      |
+| MAX()    | Devuelve el valor máximo de un campo              |
+| MIN()    | Devuelve el valor mínimo de un campo              |
+| AVG()    | Devuelve la media de un campo                     |
 
 Algunos ejemplos:
 ```sql
@@ -146,28 +152,3 @@ SELECT MIN(precio) FROM tabla;
 SELECT AVG(precio) FROM tabla;
 ```
 
-### Operadores de texto
-Nos permiten manipular textos de las consultas.
-
-| Operador | Función           |
-| -------- | ----------------- |
-| CONCAT()    | Concatena dos o más cadenas de texto           |
-| SUBSTRING() | Extrae una subcadena de una cadena de texto           |
-| LENGTH()    | Devuelve la longitud de una cadena de texto           |
-| UCASE()     | Convierte una cadena de texto a mayúsculas           |
-| LCASE()     | Convierte una cadena de texto a minúsculas           |
-
-### Operadores de fecha
-Nos permiten manipular fechas de las consultas.
-
-| Operador | Función           |
-| -------- | ----------------- |
-| DATE()    | Convierte una fecha a una cadena de texto           |
-| DATE_FORMAT() | Convierte una fecha a un formato de cadena de texto           |
-| NOW()     | Devuelve la fecha actual           |
-| YEAR()    | Devuelve el año de una fecha           |
-| MONTH()   | Devuelve el mes de una fecha           |
-| DAY()     | Devuelve el día de una fecha           |
-| HOUR()    | Devuelve la hora de una fecha           |
-| MINUTE()  | Devuelve los minutos de una fecha           |
-| SECOND()  | Devuelve los segundos de una fecha           |

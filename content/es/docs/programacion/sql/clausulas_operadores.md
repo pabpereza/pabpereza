@@ -55,6 +55,7 @@ SELECT * FROM tabla GROUP BY nombre HAVING COUNT(*) > 1;
 ```
 ---
 
+
 ## Operadores
 Los operadores nos permiten establecer condiciones en las consultar, modificarlas o agruparlos.
 
@@ -94,7 +95,7 @@ Concretamente el comando `LIKE` nos permite buscar dentro de una cadena de texto
 | Operador | Función                                                    |
 | -------- | ---------------------------------------------------------- |
 | %        | Comodín, representa cualquier cadena de 0 o más caracteres |
-| _        | Representa a un único caracter cualquiera                  |
+| _        | Representa a un único carácter cualquiera                  |
 
 
 Combinando el `LIKE` con el `%` o con el `_` podemos buscar por palabras completas o parciales.
@@ -152,3 +153,18 @@ SELECT MIN(precio) FROM tabla;
 SELECT AVG(precio) FROM tabla;
 ```
 
+## Subconsultas
+
+A veces, para realizar alguna operación de consulta, necesitamos los datos devueltos por otra 
+consulta.
+
+Una subconsulta, que no es más que una sentencia SELECT dentro de otra SELECT. 
+
+Las subconsultas son aquellas sentencias SELECT que forman parte de una cláusula WHERE de 
+una sentencia SELECT anterior. Una subconsulta consistirá en incluir una declaración SELECT 
+como parte de una cláusula WHERE. 
+
+Un ejemplo de subconsultas:
+```sql
+SELECT apellido FROM empleados WHERE oficio = (SELECT oficio FROM empleados WHERE apellido ='gil');
+```

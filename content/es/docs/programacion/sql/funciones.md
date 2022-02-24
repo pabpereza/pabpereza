@@ -7,7 +7,7 @@ description:
 ---
 
 ## Funciones en consultas de selección
-Estas se utilizan para manipular y filtar los datos que se devuelven en una consulta. Se pueden usar en las cláusulas `WHERE` y `HAVING` pero lo más común es usarlas en las cláusulas `SELECT`.
+Estas se utilizan para manipular y filtrar los datos que se devuelven en una consulta. Se pueden usar en las cláusulas `WHERE` y `HAVING` pero lo más común es usarlas en las cláusulas `SELECT`.
 Esta consulta de ejemplo nos permitiría obtener el salario redondeado de todos los empleados y modificando la salida (sin alterar el registro de la basa de datos):
 ```sql
 SELECT nombre, ROUND(salario) FROM empleados;

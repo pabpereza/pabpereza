@@ -3,5 +3,11 @@
 	"cSpell.language": "en,es-ES",
 	"workbench.editorAssociations": {
 		"*.svg": "hediet.vscode-drawio-text",
-	}
+	},
+	"cSpell.words": [
+		"LCASE",
+		"subconsulta",
+		"subconsultas",
+		"varchar"
+	]
 }

@@ -8,7 +8,7 @@ description:
 
 
 ## Acceder a MySQL
-Sin especificar credendciales:
+Sin especificar credenciales:
 ```bash
 mysql # Sin login
 ```
@@ -32,7 +32,7 @@ create database <base de datos>;
 
 Borrar base de datos:
 ```sql
-drop database <base de dator>;
+drop database <base de datos>;
 ```
 
 ## Tablas
@@ -50,7 +50,7 @@ DESCRIBE <tabla>;
 Crear tabla:
 ```sql
 mysql> CREATE TABLE <tabla>(
-         id MEDIUMINT NOT NULL AUTO_INCREMENT,
+         id CLAVE NOT NULL AUTO_INCREMENT,
          nombre CHAR(30) NOT NULL,
          edad INTEGER(30),
          salario INTEGER(30),

@@ -2,7 +2,7 @@
 title: "Comandos docker"
 linkTitle: "Comandos docker"
 weight: 1 
-tags: [cheatsheet, docker, contenedores]
+tags: [ docker, contenedores]
 description: >
    "Guía de comandos generales de docker" 
 ---

@@ -2,7 +2,7 @@
 title: "Deployments"
 linkTitle: "Deployments"
 weight: 40 
-tags: [kubernetes, deployments]
+tags: [kubernetes, devops]
 description: ""
 ---
 

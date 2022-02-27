@@ -2,7 +2,7 @@
 title: "Escáneres de vulnerabilidades"
 linkTitle: ""
 weight: 4
-tags: [docker, seguridad]
+tags: [docker, seguridad, vulnerabilidades]
 description: Herramientas que nos permiten analizar la seguridad en nuestros contenedores.
 ---
 

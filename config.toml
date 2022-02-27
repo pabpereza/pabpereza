@@ -121,7 +121,7 @@ offlineSearch = true
 prism_syntax_highlighting = true 
 
 
-# Aditional menu items
+# Additional menu items
 [[menu.main]]
   name = ""
   weight = "110"
@@ -157,7 +157,7 @@ footer_about_disable = true
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = '¡Me alegra escucharlo!. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
-no = 'Siento oirlo. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
+no = 'Siento oírlo. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -176,7 +176,7 @@ enable = false
 	name ="Twitter"
 	url = "https://twitter.com/pabpereza"
 	icon = "fab fa-twitter"
-        desc = "Sigueme para las últimas novedades"
+        desc = "Sígueme para las últimas novedades"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"

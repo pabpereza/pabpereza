@@ -16,14 +16,14 @@ SELECT nombre, ROUND(salario) FROM empleados;
 
 ### Funciones aritméticas
 Nos permiten realizar operaciones aritméticas sobre los valores de los campos.
-| Operador | Función               |
-| -------- | --------------------- |
-| ABS()    | Valor absoluto        |
-| ROUND()  | Redondea              |
-| FLOOR()  | Redondea hacia abajo  |
-| CEIL()   | Redondea hacia arriba |
-| SQRT()   | Raíz cuadrada         |
-| POWER()  | Potencia              |
+| Operador   | Función                                                                   |
+| ---------- | ------------------------------------------------------------------------- |
+| ABS()      | Valor absoluto                                                            |
+| ROUND(n,d) | Redondea el valor "n" con con el número de decimales especificados en "d" |
+| FLOOR()    | Redondea hacia abajo                                                      |
+| CEIL()     | Redondea hacia arriba                                                     |
+| SQRT()     | Raíz cuadrada                                                             |
+| POWER()    | Potencia                                                                  |
 
 ### Funciones de cadenas de texto
 Nos permiten manipular textos de las consultas.

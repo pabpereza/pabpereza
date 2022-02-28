@@ -31,10 +31,9 @@ SELECT * FROM tabla WHERE id = 1;
 ```
 
 Ejemplo order by:
-La siguiente consulta devolvería todos los registros la tabla `tabla` ordenados por el `id` de forma descendente, también podría usarte el `ASC` para ordenarlas de forma ascendent
+Por defecto, `ORDER BY` devolvería todos los registros la tabla `tabla` ordenados por el `id` de forma ascendente (sin especificar nada), también podría usarte el `DESC` para ordenarlas de forma ascendent
 ```sql
 SELECT * FROM tabla ORDER BY id DESC;
-SELECT * FROM tabla ORDER BY id ASC;
 ```
 
 Ejemplo group by:

@@ -3,8 +3,7 @@ title: "Zsh"
 linkTitle: "Zsh"
 weight: 15 
 tags: [shell, zsh, terminal, productividad]
-description: >
-   Como potenciar tu terminal con zsh y ohmyzsh 
+description: 
 ---
 
 En lo personal me encanta el terminal y en lo profesional lo veo indispensable para ciertas tareas.

@@ -3,8 +3,7 @@ title: "Grub"
 linkTitle: "Grub"
 weight: 10 
 tags: [linux, grub ]
-description: >
-    Todo lo que tenga que ver con el cargador de arranque Grub
+description: 
 ---
 
 GNU GRUB es un cargador de arranque múltiple, desarrollado por el proyecto GNU que nos permite elegir qué Sistema Operativo arrancar de los instalados. Se usa principalmente en sistemas operativos GNU/Linux.

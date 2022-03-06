@@ -2,7 +2,7 @@
 title: "Grub"
 linkTitle: "Grub"
 weight: 10 
-tags: [linux, grub, arranque]
+tags: [linux, grub ]
 description: >
     Todo lo que tenga que ver con el cargador de arranque Grub
 ---

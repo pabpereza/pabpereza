@@ -18,7 +18,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializ
 
 ### Youtube
 Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.
-https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA
+https://www.youtube.com/c/Pabpereza
 
 **No dudes en dejar un issue en este repositorio para sugerir nuevos temas, dudas o cualquier cosa que se te ocurra.**
 

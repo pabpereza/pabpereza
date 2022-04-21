@@ -20,6 +20,7 @@ kubectl run <nom_pod> --image=<imagen>
 ## Ver un pod
 ``` shell
 kubectl get pods # Listar todos los pods en el cluster
+kubectl get pods -o wide  # Listar los pods en una tabla más amplia
 kubectl get pods <nom_pod> # Listar el pod especificado
 kubectl describe pods <nom_pod> # Describe el pod nginx
 kubectl describe pods <nom_pod> --yaml  # Nos devuelve todo el manifiesto del pod
@@ -78,6 +79,7 @@ Events:
   Normal  Created    37s   kubelet            Created container nginx
   Normal  Started    37s   kubelet            Started container nginx
 ```
+
 
 
 ## Destruir un pod

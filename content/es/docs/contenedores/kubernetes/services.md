@@ -76,6 +76,11 @@ También podríamos listar todos los endpoints del namespace con el commando:
 kubectl get endpoints
 ```
 
+Podríamos abreviar el comando anterior (con `ep`) y a la vez consultar específicamente el endpoint de un servicio:
+```shell
+kubectl get ep nginx-service
+```
+
 
 ## Tipos de servicios
 
@@ -122,3 +127,17 @@ spec:
 Este tipo también crea una IP del cluster, pero en este caso también abre un puerto a la red externa.
 
 ### LoadBalancer
+Sirve para exporner servicios a través de la red externa. Podría ser utilizado para exporner servicios web, servicios de bases de datos, etc.
+
+Se podría definir un servicio de tipo LoadBalancer con el siguiente comando para un deploymnet específico:
+```shell
+kubectl expose deployment nginx-deployment --type=LoadBalancer
+```
+
+
+## Borrar endpoints
+Podemos borrar un endpoint con el comando:
+```shell
+kubectl delete endpoint nginx
+kubectl delete ep nginx # Podemos abreviar el comando anterior
+```

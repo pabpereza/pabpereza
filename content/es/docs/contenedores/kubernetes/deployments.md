@@ -55,6 +55,13 @@ NAME                            READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment                3       3            3           2m
 ```
 
+## Crear un deployment con comandos
+También podemos crear un deployment con una sola instancia con el comando:
+```shell
+kubectl create deployment nginx --image=nginx
+```
+
+
 ## Actualizar un deployment
 Supongamos que queremos actualizar el deployment para que gestione una nueva imagen, concretamente, las de nginx basadas en alpine. El yaml de configuración quedaría así:
 ```yaml
@@ -126,6 +133,11 @@ Events:
   Normal  ScalingReplicaSet  4m     deployment-controller  Scaled down replica set nginx-deployment-59c46f7dff to 0
   ```
 
+## Escalar un deployment
+Podemos escalar el deployment con el comando:
+```shell
+kubectl scale deployment nginx-deployment --replicas=5
+```
 
 
 ## Historial de un deployment

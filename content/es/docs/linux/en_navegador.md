@@ -1,6 +1,6 @@
 ---
 title: "En navegador"
-linkTitle: "en navegador"
+linkTitle: "En navegador"
 weight: 25
 tags: [linux]
 description:  

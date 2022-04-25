@@ -1,6 +1,6 @@
 ---
-title: "Cláusulas y operadores"
-linkTitle: "Cláusulas y operadores"
+title: "Consultas y cláusulas"
+linkTitle: "Consultas y cláusulas"
 weight: 20
 tags: [database, sql]
 description:  

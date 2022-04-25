@@ -46,3 +46,8 @@ Para borrar datos, podemos usar el comando DELETE.
 ```sql
 DELETE FROM <tabla> WHERE <condiciones>;
 ```
+
+Por ejemplo:
+```sql
+DELETE FROM persona WHERE id = 1;
+```

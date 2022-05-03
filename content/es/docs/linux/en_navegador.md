@@ -86,4 +86,3 @@ sudo passwd <usuario>
 ```
 Seguidamente se nos pedirá la nueva contraseña para el usuario (si os pide la anterior por defecto es *abc* como el usuario). Las próximas veces que entréis al contenedor a través del navegador os pedirá la contraseña para conectarse. 
 
-## Forma manual y desglosado 

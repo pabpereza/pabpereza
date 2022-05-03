@@ -48,6 +48,7 @@ Nos permiten manipular fechas de las consultas.
 | NOW()         | Devuelve la fecha actual                            |
 | YEAR()        | Devuelve el año de una fecha                        |
 | MONTH()       | Devuelve el mes de una fecha                        |
+| QUARTER()       | Devuelve el trimestre del año de una fecha                        |
 | DAY()         | Devuelve el día de una fecha                        |
 | HOUR()        | Devuelve la hora de una fecha                       |
 | MINUTE()      | Devuelve los minutos de una fecha                   |

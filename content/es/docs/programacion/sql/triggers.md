@@ -58,5 +58,17 @@ END;
 
 En el cuerpo podemos definir variables, condiciones, sentencias SQL, etc.
 
-#TODO: Ejemplos de disparadores con variables
+Por ejemplo, un disparador en el que consultamos y almacenamos en variables datos de otras tablas:
+```sql
+CREATE TRIGGER tr_insert_persona AFTER INSERT ON persona FOR EACH ROW
+BEGIN
+	DECLARE nombre_mascota VARCHAR(50);
+
+	SET nombre_mascota = (SELECT nombre FROM mascotas WHERE id = NEW.id);
+
+	INSERT INTO persona_mascota (id, nombre, edad, fecha_nacimiento, ) VALUES (NEW.id, nombre_mascota, NEW.edad, NEW.fecha_nacimiento);
+END;
+```
+
+
 #TODO: Diferencias entre NEW y OLD...

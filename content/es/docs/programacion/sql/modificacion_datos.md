@@ -27,6 +27,31 @@ Por ejemplo:
 INSERT INTO persona (nombre, edad, salario) VALUES ('Juan', 30, 1000);
 ```
 
+Las inserciones se podrían realizar con subconsultas, como por ejemplo, con un select anidado:
+```sql
+INSERT INTO persona (nombre, edad, salario) VALUES ( 'Juan', 30, (SELECT salario FROM persona WHERE nombre = 'Juan') );
+```
+
+## Insert con select - Insertar datos con select
+Para insertar datos con un select, podemos usar el comando INSERT con la siguiente sintaxis:
+``` sql
+INSERT INTO <tabla> (<atributos>) SELECT <valores> FROM <tabla>;
+```
+
+Esto nos permitiría insertar datos de una tabla en otra, por ejemplo:
+```sql
+INSERT INTO persona (nombre, edad, salario) SELECT nombre, edad, salario FROM persona;
+```
+
+También podríamos combinar datos procedentes del SELECT con datos estáticos introducidos manualmente:
+```sql
+INSERT INTO persona (nombre, edad, salario) SELECT nombre, edad, 1600, FROM persona WHERE nombre = 'Juan';
+```
+
+O hacer operaciones con datos procedentes del SELECT, como por ejemplo, duplicarle el salario a Juan:
+```sql
+INSERT INTO persona (nombre, edad, salario) SELECT nombre, edad, salario * 2 FROM persona WHERE nombre = 'Juan';
+```
 
 ## Update - Modificar datos
 Para modificar datos, podemos usar el comando UPDATE.

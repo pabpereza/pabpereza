@@ -54,15 +54,19 @@ INSERT INTO persona (nombre, edad, salario) SELECT nombre, edad, salario * 2 FRO
 ```
 
 ## Update - Modificar datos
-Para modificar datos, podemos usar el comando UPDATE.
-
+Para modificar datos, podemos usar el comando UPDATE. Cabe destacar el uso del WHERE para especificar que valores queremos actualizar, si no lo especificamos, se actualizarán todos los datos de la tabla. La sintaxis es la siguiente:
 ```sql
 UPDATE <tabla> SET <atributos> = <valores> WHERE <condiciones>;
 ```
 
-Por ejemplo:
+Por ejemplo, para modificar un atributo de una tabla:
 ```sql
 UPDATE persona SET nombre = 'Pedro' WHERE id = 1;
+```
+
+También podríamos actualizar múltiples valores de una fila separándolos por comas:
+```sql
+UPDATE persona SET nombre = 'Pedro', edad = 30 WHERE id = 1;
 ```
 
 ## Delete - Borrar datos

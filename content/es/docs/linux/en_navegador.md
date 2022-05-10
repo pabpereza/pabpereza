@@ -13,7 +13,7 @@ El objetivo de esta guía es explicar como ejecutar una distribución linux en t
 Normalmente este tipo de sistemas funcionan en linux gracias a un proyecto llamado Apache Guacamole. Esta es una herramienta de conexión remota que permite hacer de cliente para conectarse a un sistema a través de RDP o VNC.
 
 Este es el esquema de lo que vamos a hacer:
-![Jerarquía de servicios](/docs/linux/en_navegador.drawio.svg)
+![Jerarquía de servicios](/docs/linux/guacamole_linux.drawio.svg)
 
 El objetivo es que nuestro contenedor lance un servicio de VNC o RDP que no esté expuesto y por otra parte un servidor de Apache Guacamole que exponha un servidor web al que podemos conectarnos con el navegador web. Desde esta página podremos gestionar entornos remotos y por debajo otro servicio hace de cliente contra estos entornos remotos.
 

@@ -23,7 +23,7 @@ Nos permiten realizar operaciones aritméticas sobre los valores de los campos.
 | FLOOR()    | Redondea hacia abajo                                                      |
 | CEIL()     | Redondea hacia arriba                                                     |
 | SQRT()     | Raíz cuadrada                                                             |
-| POWER()    | Potencia                                                                  |
+| POW()    | Potencia, ejemplo POW(x,y) el valor x elevado a el exponente y 			|
 
 ### Funciones de cadenas de texto
 Nos permiten manipular textos de las consultas.

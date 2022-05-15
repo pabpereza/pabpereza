@@ -1,7 +1,7 @@
 ---
 title: "Trigger o disparador"
 linkTitle: "Triggers o disparadores"
-weight: 60
+weight: 70
 tags: [sql, database]
 description:  
 ---
@@ -28,8 +28,9 @@ La sintaxis de un disparador es la siguiente:
 ```sql
 CREATE TRIGGER <name> <time> <evento> 
 ON <nombre_tabla> FOR EACH ROW 
-<orden> 
+BEGIN
 <cuerpo>
+END;
 ``` 
 
 Por ejemplo:

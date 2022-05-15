@@ -57,7 +57,7 @@ CLOSE <nombre_cursor>;
 Pero si quisieramos leer todos los valores de un cursor, lo normal es hacer un bucle para no estar repitiendo la misma operación tantas veces como filas tenga el cursor.
 
 
-## Con repeat until - hasta que
+### Con repeat until - hasta que
 Para leer valores hasta un momento específico, podemos usar el comando `REPEAT UNTIL`. Vamos a suponer en este caso que queremos sumar el precio de los 5 primeros resultados de un `SELECT`.
 
 ```sql
@@ -78,7 +78,7 @@ END REPEAT;
 CLOSE cursor1;
 ```
 
-## Con loop - todos los valores
+### Con loop - todos los valores
 Para leer todos los valores de un cursor, podemos usar el comando `LOOP`. Vamos a suponer en este caso que queremos sumar el precio de todos los resultados de un `SELECT`. Para ello, podemos usar el comando `LOOP`. Aún así, tenemos que ayudar a nuestro programa para que sepa cuando termina de leer los valores. Para ello, utilizamos un `HANDLER` para saber cuando no hay valores y utilizar una variable auxiliar para decirle al programa que salga del `LOOP`.
 
 Cuando el handler detecta que no hay valores, el `HANDLER` añade a la variable auxiliar el valor `1`. Como el bucle `LOOP` al principio de la sentencia comprueba si la variable `auxiliar` es igual a uno, saldría del programa gracias a la intrucción `LEAVE <nombre del bucle>`.

@@ -177,3 +177,15 @@ una versión específica:
 ```shell
 kubectl rollout undo deployment nginx-deployment --to-revision=1
 ```
+
+
+## Pausar y reanudar un deployment
+Podemos pausar un deployment con el comando:
+```shell
+kubectl rollout pause deployment nginx-deployment
+```
+
+Para reanudar un deployment usaremos el comando:
+```shell
+kubectl rollout resume deployment nginx-deployment
+```

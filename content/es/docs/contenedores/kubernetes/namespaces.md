@@ -80,7 +80,7 @@ Podríamos ejecutar comandos en cualquier namespace añadiendo el parámentro `-
 kubectl get pods --namespace development
 ```
 
-El proceso anterior sería más farragoso, excepto que queramos lanzar un comando puntual en un namespace concreto, es más recomandable utilizar la configuración de contexto de kubectl:
+El proceso anterior sería más farragoso, excepto que queramos lanzar un comando puntual en un namespace concreto, es más recomendable utilizar la configuración de contexto de kubectl:
 ```shell
 kubectl config set-context <nombre-context> --namespace=<nombre-namespace>
 ```

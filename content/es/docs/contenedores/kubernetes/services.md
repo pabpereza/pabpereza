@@ -127,11 +127,24 @@ spec:
 Este tipo también crea una IP del cluster, pero en este caso también abre un puerto a la red externa.
 
 ### LoadBalancer
-Sirve para exporner servicios a través de la red externa. Podría ser utilizado para exporner servicios web, servicios de bases de datos, etc.
+Sirve para exponer servicios a través de la red externa. Podría ser utilizado para exponer servicios web, servicios de bases de datos, etc.
 
-Se podría definir un servicio de tipo LoadBalancer con el siguiente comando para un deploymnet específico:
+Se podría definir un servicio de tipo LoadBalancer con el siguiente comando para un deployment específico:
 ```shell
 kubectl expose deployment nginx-deployment --type=LoadBalancer
+```
+
+## Accediendo a una aplicación con un servicio
+Podríamos crear un servicio vía `kubectl`:
+``` bash
+kubectl expose deployment/nginx --port=80 --type=NodePort
+```
+
+Podemos consultar los servicios con los siguientes comandos:
+```bash
+kubectl get svc # Listar todos los servicios
+
+kubectl get svc nginx -o yaml # Listar un servicio concreto
 ```
 
 

@@ -1,5 +1,5 @@
 ---
-date: 2021-12-30  
+date: 2022-08-09  
 title: "Potencia powershell"
 linkTitle: "Potencia powershell"
 tags: [ powershell , terminal]
@@ -28,7 +28,7 @@ indispensables, como:
 * Personalizacion con múltiples temas
 
 Dentro vídeo:
-{{< youtube  >}} -->> #TODO Actualizar
+{{< youtube kWIesAUhLAg >}} 
 
 
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09  
+date: 2022-08-09
 title: "Potencia powershell"
 linkTitle: "Potencia powershell"
 tags: [ powershell , terminal]

@@ -8,6 +8,9 @@ description:
 
 Página oficial: [Oh My Posh](https://ohmyposh.dev/)
 
+Aquí tenéis también el video tutorial:
+{{< youtube kWIesAUhLAg >}} 
+
 ## Instalación 
 El módulo de oh my posh se puede instalar desde la documentación de este enlace:
 [Instalación en windows](https://ohmyposh.dev/docs/installation/windows)

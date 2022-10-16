@@ -6,7 +6,7 @@ tags: [linux]
 description:  
 ---
 
-Hoy en día tenemos aplicación cualquier aplicación la podemos ejecutar en nuestro navegador web. Pero porque tener aplicaciones sueltas si podemos usarlo para acceder a nuestro sistema operativo completo. Es verdad que existen soluciones como Microsoft 365, Horizon y demás, las cuales están enfocadas principalmente en entornos corporativos windows y la mayoría requieren de clientes para poder usarlos.
+Hoy en día cualquier aplicación la podemos ejecutar en nuestro navegador web. Pero, ¿por qué tener aplicaciones sueltas si podemos usarlo para acceder a nuestro sistema operativo completo?. Es verdad que existen soluciones como Microsoft 365, Horizon y demás, las cuales están enfocadas principalmente en entornos corporativos windows y la mayoría requieren de clientes específicos para poder usarlos.
 
 El objetivo de esta guía es explicar como ejecutar una distribución linux en tu navegador. Bueno, siendo sinceros, esto tiene un poco de truco. Efectivamente vamos a conseguir tener acceso a una distribución linux en el navegador, pero realmente no lo esta ejecutando el mismo.
 

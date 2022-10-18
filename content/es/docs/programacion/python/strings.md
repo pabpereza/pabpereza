@@ -92,6 +92,14 @@ x = "Hello World"
 print(x.upper()) # Output: HELLO WORLD
 ```
 
+### Capitalize
+El método `capitalize()` devuelve la cadena de texto con la primera letra en mayúsculas.
+
+```python
+x = "hello world"
+print(x.capitalize()) # Output: Hello world
+```
+
 ### Len
 El método `len()` devuelve la longitud de la cadena de texto.
 

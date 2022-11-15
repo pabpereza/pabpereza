@@ -42,9 +42,11 @@ net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 net.ipv4.ip_forward = 1
 EOF
+
+sysctl --system # Aplica la configuración
 ```
 
-5. Añadir al fichero `/etc/hosts' la IP y el nombre de la máquina. Con esto podremos configurar el cluster con el nombre de la máquina en vez de la IP.
+5. Añadir al fichero `/etc/hosts' la IP y el nombre de la máquina (ATENCIÓN: Pon la IP del nodo master si esta configurando un worker). Con esto podremos configurar el cluster con el nombre de la máquina en vez de la IP.
 ```bash
 echo "<IP> <NOMBRE>" >> /etc/hosts
 ```

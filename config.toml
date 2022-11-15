@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Pabpereza - Desarrollo, DevOps, Seguridad y todo lo demás"
+title = "Pabpereza - DevSecOps"
 
 enableRobotsTXT = true
 
@@ -55,7 +55,7 @@ id = "UA-207587389-1"
 
 [languages]
 [languages.es]
-title = "Pabpereza - Desarrollo, DevOps y Seguridad"
+title = "Pabpereza - DevSecOps"
 description = "Blog, documentación Y vídeos"
 languageName ="Español"
 # Weight used for sorting.

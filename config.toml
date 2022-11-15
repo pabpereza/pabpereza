@@ -55,8 +55,8 @@ id = "UA-207587389-1"
 
 [languages]
 [languages.es]
-title = "Pabpereza"
-description = "Blog y documentación personal"
+title = "Pabpereza - Desarrollo, DevOps, Seguridad y todo lo demás"
+description = "Blog, documentación Y vídeos"
 languageName ="Español"
 # Weight used for sorting.
 weight = 1

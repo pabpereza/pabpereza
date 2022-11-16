@@ -23,7 +23,7 @@ kubectl get pods # Listar todos los pods en el cluster
 kubectl get pods -o wide  # Listar los pods en una tabla más amplia
 kubectl get pods <nom_pod> # Listar el pod especificado
 kubectl describe pods <nom_pod> # Describe el pod nginx
-kubectl describe pods <nom_pod> --yaml  # Nos devuelve todo el manifiesto del pod
+kubectl -n anchore get pods <nom_pod> -o yaml  # Nos devuelve todo el manifiesto del pod
 ```
 
 Al hacer un describe del pod veríamos la siguiente salida:

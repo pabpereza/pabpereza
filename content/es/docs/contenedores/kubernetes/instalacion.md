@@ -148,8 +148,5 @@ El token se puede obtener con el comando `kubeadm token list` lanzado en el nodo
 
 El hash se puede obtener con el siguiente comando de openssl. Lo lanzamos en el nodo maestro:
 ```bash
- openssl x509 -pubkey \
--in /etc/kubernetes/pki/ca.crt | openssl rsa \
--pubin -outform der 2>/dev/null | openssl dgst \
--sha256 -hex | sed 's/ˆ.* //'
+openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
 ```

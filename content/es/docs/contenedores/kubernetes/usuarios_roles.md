@@ -9,6 +9,47 @@ description:
 Por defecto, Kubernetes no tiene usuarios ni roles. Sin embargo, podemos definir usuarios y roles para controlar el acceso a los recursos de Kubernetes.
 
 ## Usuarios
+Normalmente los usuarios se definen en un sistema de autenticación externo, como LDAP, Active Directory, etc. Kubernetes no tiene un sistema de autenticación propio, pero puede integrarse con sistemas de autenticación externos mediante [plugins de autenticación](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#authentication-strategies).
+
+Se pueden definir usuarios de forma manual mediante certificados x509.
+
+### Crear usuario mediante Certificado x509
+Estos pasos se tienen que realizar en un `control plane` de Kubernetes, el cuál, ejecuta el API y es el encargado de validar los certificados x509.
+
+Primero tendremos que crear un par de claves privada y pública. Para ello, ejecutamos el siguiente comando:
+
+```bash
+openssl genrsa -out user.key 2048
+```
+
+A continuación, generamos el certificado x509:
+```bash
+openssl req -new -key user.key -out user.csr -subj "/CN=user/O=group"
+```
+
+Finalmente, firmamos el certificado x509 con la clave privada del `control plane`:
+```bash
+openssl x509 -req -in user.csr -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out user.crt -days 500
+```
+
+Una vez generado el certificado x509, podemos añadirlo al API de Kubernetes. Para ello, ejecutamos el siguiente comando:
+```bash
+kubectl config set-credentials user --client-certificate=user.crt --client-key=user.key --embed-certs=true
+```
+
+Por defecto, este usuario carecerá de permisos para realizar ninguna acción en el cluster. Para asignarle permisos, tendremos que crear asignarle un rol ( a nivel de namespace) o un clusterrole (a nivel de cluster).
+
+Esta asignación de un rol, se realiza mediante rolesbindings ( a nivel de namespace) o clusterrolebindings (a nivel de rol).
+
+
+## Service Accounts - Cuentas de servicio
+Kubernetes crea una cuenta de servicio por defecto para cada namespace. Esta cuenta de servicio se utiliza para acceder a la API de Kubernetes. Podemos crear cuentas de servicio adicionales para acceder a la API de Kubernetes.
+
+```bash
+kubectl create serviceaccount <nombre>
+```
+
+Estas cuentas podríamos asocialas a un `role` mediante objetos `RoleBinding` o `ClusterRoleBinding` como se explica en los siguientes pasos.
 
 
 ## Roles

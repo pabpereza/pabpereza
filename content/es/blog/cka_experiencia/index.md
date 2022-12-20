@@ -1,5 +1,5 @@
 ---
-date: 2022-12-20
+date: 2022-12-21
 title: "CKA: Mi experiencia"
 linkTitle: "CKA: Mi experiencia"
 tags: [kubernetes]

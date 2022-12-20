@@ -48,6 +48,6 @@ También puede ser interesante configurar tmux y vim si tienes alguna personaliz
 ## Conclusión
 En resumen, la certificación CKA te permite sentirte cómodo administrando un cluster de kubernetes. Si tienes conocimientos previos de contenedores y orquestadores, no debería ser un problema. Si no los tienes, te recomiendo que te familiarices con ellos antes de empezar con la certificación. En cualquier caso, aún con la certificación, te encuentras con muchas situaciones en el día a día que no están cubiertas en el temario y que tendrás que investigar por tu cuenta.
 
-Espero que os haya servido de ayuda. Si tenéis cualquier duda, podéis preguntarme por cualquiera de mis redes sociales. Un saludo!
+Espero que os haya servido de ayuda. Si tenéis cualquier duda, podéis preguntarme por cualquiera de mis redes sociales. ¡Un saludo!
 
 

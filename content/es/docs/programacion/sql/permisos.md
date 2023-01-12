@@ -29,6 +29,10 @@ Podemos consultar los permisos de un usuario con el comando `SHOW GRANTS`:
 SHOW GRANTS FOR 'usuario'@'localhost';
 ```
 
+Podríamos consultar los permisos de las tablas desde la "table_priv" de la base de datos "mysql":
+```sql
+SELECT * FROM mysql.table_priv WHERE User = 'usuario' AND Host = 'localhost';
+```
 
 ## Eliminación de permisos
 Para eliminar permisos, utilizamos el comando `REVOKE`:

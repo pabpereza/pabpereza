@@ -1,5 +1,5 @@
 ---
-date: 2022-1-10  
+date: "2022-01-10"
 title: "PowerToys"
 linkTitle: "PowerToys"
 tags: [windows, productividad]

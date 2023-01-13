@@ -28,6 +28,12 @@ Por último, podemos dar permisos para que el usuario afectado pueda gestionar p
 GRANT SELECT, INSERT ON mysql.* TO 'usuario'@'localhost' WITH GRANT OPTION;
 ```
 
+## Permisos sobre vistas
+Podríamos dar permisos a un usuario para que pueda acceder a una vista, sería similar a dar permisos a una tabla:
+```sql
+GRANT SELECT ON base_de_datos.vista TO 'usuario'@'localhost';
+```
+
 
 ## Consultar permisos
 Podemos consultar los permisos de un usuario con el comando `SHOW GRANTS`:
@@ -41,18 +47,12 @@ SELECT * FROM mysql.table_priv WHERE User = 'usuario' AND Host = 'localhost';
 ```
 
 ## Eliminación de permisos
-Para eliminar permisos, utilizamos el comando `REVOKE`:
+Para eliminar permisos, utilizamos el comando `REVOKE`. En mysql, podemos eliminar todos los permisos de un usuario con el siguiente comando:
 ```sql
-REVOKE ALL PRIVILEGES ON *.* FROM 'usuario'@'localhost';
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'usuario'@'localhost';
 ```
 
-También podríamos ser más concretos y eliminar permisos específicos:
+También podemos eliminar permisos específicos:
 ```sql
 REVOKE SELECT, INSERT, UPDATE, DELETE ON <base de datos>.* FROM 'usuario'@'localhost';
 ```
-
-Y por último, limitar los permisos a una tabla en concreto:
-```sql
-REVOKE SELECT, INSERT, UPDATE, DELETE ON base_de_datos.tabla FROM 'usuario'@'localhost';
-```
-

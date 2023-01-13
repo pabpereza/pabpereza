@@ -2,7 +2,7 @@
 title: "Comandos básicos"
 linkTitle: "Comandos básicos"
 weight: 10
-tags: [database, sql]
+tags: [database, mysql]
 description:  
 ---
 

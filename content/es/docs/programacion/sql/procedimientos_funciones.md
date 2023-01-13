@@ -2,7 +2,7 @@
 title: "Procedimientos y funciones"
 linkTitle: "Procedimientos y funciones"
 weight: 80
-tags: [sql]
+tags: [sql, mysql]
 description:  
 ---
 

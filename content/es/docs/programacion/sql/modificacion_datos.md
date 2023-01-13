@@ -2,7 +2,7 @@
 title: "Insert, update y delete"
 linkTitle: "Insert, update y delete"
 weight: 30 
-tags: [sql, database]
+tags: [sql, mysql]
 description:  
 ---
 

@@ -2,7 +2,7 @@
 title: "Exportar e importar"
 linkTitle: "Exportar e importar datos"
 weight: 100 
-tags: [ sql, database]
+tags: [ mysql, database]
 description:  
 ---
 

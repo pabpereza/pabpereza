@@ -2,7 +2,7 @@
 title: "Combinación de tablas. Joins"
 linkTitle: "Combinación de tablas. Joins"
 weight: 50
-tags: [ database, sql ]
+tags: [ database, mysql ]
 description:  
 ---
 

@@ -2,7 +2,7 @@
 title: "Cursores"
 linkTitle: "Cursores"
 weight: 85 
-tags: [sql]
+tags: [mysql]
 description:  
 ---
 

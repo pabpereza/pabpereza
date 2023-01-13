@@ -2,7 +2,7 @@
 title: "Permisos"
 linkTitle: "Permisos"
 weight: 110
-tags: [mysql]
+tags: [sql, mysql]
 description:  
 ---
 
@@ -22,6 +22,12 @@ También podríamos dar permisos específicos a una tabla en concreto:
 ```sql
 GRANT SELECT, INSERT, UPDATE, DELETE ON base_de_datos.tabla TO 'usuario'@'localhost';
 ```
+
+Por último, podemos dar permisos para que el usuario afectado pueda gestionar permisos a otros usuarios:
+```sql 
+GRANT SELECT, INSERT ON mysql.* TO 'usuario'@'localhost' WITH GRANT OPTION;
+```
+
 
 ## Consultar permisos
 Podemos consultar los permisos de un usuario con el comando `SHOW GRANTS`:

@@ -2,7 +2,7 @@
 title: "Funciones en consultas"
 linkTitle: "Funciones en consultas"
 weight: 40
-tags: [ database, sql ]
+tags: [ database, mysql ]
 description:  
 ---
 

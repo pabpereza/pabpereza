@@ -2,6 +2,6 @@
 title: ""
 linkTitle: ""
 weight: 
-tags: []
+tags: [mysql, sql]
 description:  
 ---

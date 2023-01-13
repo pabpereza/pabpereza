@@ -2,7 +2,7 @@
 title: "Consultas y cláusulas"
 linkTitle: "Consultas y cláusulas"
 weight: 20
-tags: [database, sql]
+tags: [database, mysql]
 description:  
 ---
 

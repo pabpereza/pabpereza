@@ -2,7 +2,7 @@
 title: "Trigger o disparador"
 linkTitle: "Triggers o disparadores"
 weight: 70
-tags: [sql, database]
+tags: [mysql, database]
 description:  
 ---
 

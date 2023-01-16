@@ -47,4 +47,13 @@ DROP ALL USERS;
 ```
 
 
+# Bloqueo y desbloqueo de usuarios
+Si en algún momento queremos bloquear a un usuario, podemos hacerlo modificando sus permisos y aplicando el atributo `ACCOUNT LOCK`:
+```sql
+ALTER USER 'usuario'@'localhost' ACCOUNT LOCK;
+```
 
+Podemos desbloquear a un usuario con el comando `UNLOCK ACCOUNT`:
+```sql
+ALTER USER 'usuario'@'localhost' UNLOCK ACCOUNT;
+```

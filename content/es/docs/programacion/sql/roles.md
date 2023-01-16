@@ -35,6 +35,12 @@ Por último, lo podríamos asignar por defecto al usuario:
 SET DEFAULT ROLE 'rol' TO 'usuario'@'localhost';
 ```
 
+## Consultar roles de un usuario
+Podemos consultar los roles de un usuario con el comando `SHOW GRANTS`:
+```sql
+SHOW GRANTS FOR 'usuario'@'localhost';
+```
+
 ## Modificación de roles
 Podemos modificar el nombre de un rol con el comando `RENAME ROLE`:
 ```sql

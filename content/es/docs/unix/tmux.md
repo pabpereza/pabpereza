@@ -1,7 +1,7 @@
 ---
 title: "Tmux"
 linkTitle: "Tmux"
-weight: 30 
+weight: 35 
 tags: [terminal, unix]
 description:  
 ---

@@ -14,7 +14,7 @@ Normalmente este tipo de sistemas funcionan en linux gracias a un proyecto llama
 
 Este es el esquema de lo que vamos a hacer:
 
-![Jerarquía de servicios](/docs/linux/guacamole_linux.drawio.svg)
+![Jerarquía de servicios](/docs/unix/guacamole_linux.drawio.svg)
 
 El objetivo es que nuestro contenedor lance un servicio de VNC o RDP que no esté expuesto y por otra parte un servidor de Apache Guacamole que exponha un servidor web al que podemos conectarnos con el navegador web. Desde esta página podremos gestionar entornos remotos y por debajo otro servicio hace de cliente contra estos entornos remotos.
 

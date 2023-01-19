@@ -11,3 +11,15 @@ En este entrada vamos a ver cómo utilizar [tmux](https://github.com/tmux/tmux/w
 {{< imgproc tmux Fill "700x450"  >}}
 Tmux en acción
 {{< /imgproc >}}
+
+## Instalación
+En la mayoría de distribuciones podemos instalar tmux con el gestor de paquetes de la distribución. Por ejemplo, en Ubuntu:
+```bash
+sudo apt install tmux
+```
+
+En macOS podemos instalarlo con [brew](https://brew.sh/):
+```bash
+brew install tmux
+```
+

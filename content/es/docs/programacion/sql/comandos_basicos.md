@@ -6,7 +6,6 @@ tags: [database, mysql]
 description:  
 ---
 
-
 ## Acceder a MySQL
 Sin especificar credenciales:
 ```bash

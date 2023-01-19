@@ -1,7 +1,7 @@
 ---
 title: "Strings (Cadenas)"
 linkTitle: "Strings"
-weight: 
+weight: 20 
 tags: [python, programación]
 description: Las cadenas en python nos permiten almacenar texto 
 ---

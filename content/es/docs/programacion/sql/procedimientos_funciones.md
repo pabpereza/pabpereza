@@ -55,6 +55,15 @@ BEGIN
 END
 ```
 
+Podemos ejecutar el procedimiento usando la siguiente sintaxis:
+```sql
+CALL <nombre_procedimiento>(<parametro_entrada>, <parametro_salida>)
+```
+
+Por ejemplo, para ejecutar el procedimiento anterior:
+```sql
+CALL procedimiento_ejemplo('Pablo', @edad);
+```
 
 ## Funciones
 Las funciones son rutinas o subprogramas compuestos por un conjunto. Estas siempre tiene un valor de retorno, el cuál, cuyo tipo depende de la declaración de la función con la sintaxis `RETURNS <tipo>` y luego en el cuerpo de la función se devuelve con la instrucción `RETURN <valor>`.
@@ -71,4 +80,22 @@ BEGIN
 END
 ```
 
+Podemos ejecutar la función usando un select: 
+```sql
+SELECT nombre_usuario(1);
+```
 
+
+## Borrado de procedimientos y funciones
+
+Para borrar un procedimiento o función, se utiliza la siguiente sintaxis:
+```sql
+DROP PROCEDURE <nombre_procedimiento>
+DROP FUNCTION <nombre_funcion>
+```
+
+También se puede borrar un procedimiento o función solo si existe:
+```sql
+DROP PROCEDURE IF EXISTS <nombre_procedimiento>
+DROP FUNCTION IF EXISTS <nombre_funcion>
+```

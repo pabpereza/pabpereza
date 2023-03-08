@@ -1,5 +1,5 @@
 ---
-date: 2023-01-26
+date: 2023-03-08
 title: "Aligerar imágenes Docker"
 linkTitle: "Aligerar imágenes Docker"
 tags: [docker]
@@ -14,7 +14,10 @@ En este artículo, vamos a explorar cómo crear imágenes de Docker ligeras para
 
 
 ## Paso 1: Utilizar una imagen base pequeña
-La primera etapa en la creación de una imagen de Docker ligera es elegir una imagen base pequeña. Esto significa elegir una imagen que tenga el menor tamaño posible y solo contenga los componentes esenciales para ejecutar la aplicación. Por ejemplo, si estamos construyendo una aplicación basada en PHP, podemos elegir utilizar una imagen base de PHP en lugar de una imagen base de Ubuntu.
+La primera etapa en la creación de una imagen de Docker ligera es elegir una imagen base pequeña. Esto significa elegir una imagen que tenga el menor tamaño posible y solo contenga los componentes esenciales para ejecutar la aplicación. Por ejemplo, dentro de las imágenes de debian, podemos optar por las versiones con tag "-slim" (debian:11-slim) las cuales traen muchos menos paquetes por defecto.
+
+Otras imágenes que se han vuelto muy populares los últimos años son las de Alpine Linux. Estas tienen un tamaño minúsculo y tienen un sistema de paquetes muy poblado y bien mantenido.
+
 
 ## Paso 2: Eliminar archivos no necesarios
 Una vez que tenemos nuestra imagen base, es importante eliminar cualquier archivo o paquete que no sea necesario para la ejecución de la aplicación. Esto puede incluir documentación, archivos de configuración y aplicaciones adicionales.

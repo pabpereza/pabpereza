@@ -10,20 +10,16 @@ RUN npm install
 COPY . .
 
 # Building the static site
-RUN hugo build
+RUN hugo
 
 
 # Runtime image, based on Nginx
 FROM nginx:1.23.3-alpine
 
-# Setting the working directory as the root of the Nginx server
-WORKDIR /usr/share/nginx/html
-
 # Copying the build output from the builder image
-COPY --from=builder /app/public .
+COPY --from=builder /app/public/ /usr/share/nginx/html 
 
 # Copying the Nginx configuration file
-RUN rm -fr * .??* && mkdir /cache
 COPY conf/nginx.conf  /etc/nginx/nginx.conf
 COPY conf/default.conf /etc/nginx/conf.d/default.conf 
 

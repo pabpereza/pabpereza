@@ -16,6 +16,9 @@ RUN hugo
 # Runtime image, based on Nginx
 FROM nginx:1.23.3-alpine
 
+WORKDIR /usr/share/nginx/html
+RUN rm -fr * .??* && mkdir /cache
+
 # Copying the build output from the builder image
 COPY --from=builder /app/public/ /usr/share/nginx/html 
 

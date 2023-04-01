@@ -23,13 +23,14 @@ footer {
 	--bs-gutter-x: 0px !important;
 }
 
-footer .container-fluid {
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
-	--bs-gutter-x: 0px !important;
+.navbar-brand {
+	padding-left: 3%;
 }
+
+#docsearch {
+ padding-right: 5%;	
+}
+
 
 footer .container-fluid .row {
 	padding-left: 0px !important;

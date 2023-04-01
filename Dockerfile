@@ -14,7 +14,7 @@ RUN npm install -D postcss
 COPY . .
 
 # Building the static site
-RUN hugo
+RUN hugo --minify --gc
 
 
 # Runtime image, based on Nginx

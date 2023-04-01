@@ -13,6 +13,11 @@ Existen casos, ya sea por la complejidad de la aplicación, la cantidad de paque
 En este artículo, vamos a explorar cómo crear imágenes de Docker ligeras para optimizar el rendimiento y la eficiencia en el despliegue de aplicaciones.
 
 
+Por si lo prefieres, puedes ver el vídeo en YouTube:
+
+{{< youtube QVcLTxmcJ8s >}}
+
+
 ## Paso 1: Utilizar una imagen base pequeña
 La primera etapa en la creación de una imagen de Docker ligera es elegir una imagen base pequeña. Esto significa elegir una imagen que tenga el menor tamaño posible y solo contenga los componentes esenciales para ejecutar la aplicación. Por ejemplo, dentro de las imágenes de debian, podemos optar por las versiones con tag "-slim" (debian:11-slim) las cuales traen muchos menos paquetes por defecto.
 

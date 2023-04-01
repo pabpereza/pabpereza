@@ -1,0 +1,11 @@
+{{ with .Site.Params.algolia_docsearch }}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+<script type="text/javascript">
+docsearch({
+  container: '#docsearch',
+  appId: 'MSV5TDX060',
+  indexName: 'fission',
+  apiKey: '301e59c1356fb69977837ee36681babe',
+});
+</script>
+{{ end }}

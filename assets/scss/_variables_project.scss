@@ -4,3 +4,34 @@ Add styles or override variables from the theme here.
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif !important;
+	font-weight:300 !important;
+}
+
+$display1-weight: 500 !default;
+$display2-weight: 100 !default;
+
+$primary: #1f2a43 !default;
+$primary-light: lighten($primary, 90%) !default;
+$secondary: #2d70de !default;
+$light: rgb(255, 255, 255) !default;
+$grey: #888 !default;
+$orange: $secondary;
+
+
+
+/* Menu hover line */
+.td-navbar {
+	.nav-link {
+		font-weight: normal !important;
+		color: #f4f4f4 !important;
+		border-bottom: 1px solid transparent;
+		&:hover {
+			color: #fff !important;
+			border-bottom: 1px solid #E361FD;
+		}
+	}
+}

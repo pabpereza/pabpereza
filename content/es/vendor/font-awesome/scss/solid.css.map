@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;GAGG;AAGH,UAWC;EAVC,WAAW,EAAE,qBAAqB;EAClC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,YAAY,ECLS,KAAK;EDM1B,GAAG,EAAE,mCAAwC;EAC7C,GAAG,EAAE,ySAI6D;AAGpE;IACK;EACH,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG",
+"sources": ["solid.scss","_variables.scss"],
+"names": [],
+"file": "solid.css"
+}

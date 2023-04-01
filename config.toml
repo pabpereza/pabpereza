@@ -130,7 +130,7 @@ unsafe= true
 [[menu.main]]
   name = "Sobre mí"
   weight = "10"
-  url = "/about/"
+  url = "/#about"
   pre = "<i class='fas fa-user'></i>"
 
 [[menu.main]]

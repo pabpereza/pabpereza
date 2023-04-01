@@ -7,7 +7,8 @@ COPY package.json .
 RUN npm install
 
 # Some pre-requisites for the build
-RUN npm install -g postcss-cli autoprefixer
+RUN npm install --save-dev postcss-cli autoprefixer
+RUN npm install -D postcss
 
 # Copying the rest of the files
 COPY . .

@@ -6,6 +6,9 @@ WORKDIR /app
 COPY package.json .
 RUN npm install
 
+# Some pre-requisites for the build
+RUN npm install -g postcss-cli autoprefixer
+
 # Copying the rest of the files
 COPY . .
 

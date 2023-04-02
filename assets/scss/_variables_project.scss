@@ -23,6 +23,7 @@ $orange: $secondary;
 
 
 
+
 /* Menu hover line */
 .td-navbar {
 	.nav-link {
@@ -34,4 +35,8 @@ $orange: $secondary;
 			border-bottom: 1px solid #E361FD;
 		}
 	}
+}
+
+.bg-dark {
+	background-color: #111418 !important;
 }

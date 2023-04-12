@@ -91,7 +91,7 @@ tmux
 
 Si queremos crear una sesión con un nombre, podemos usar el parámetro `-s`:
 ```bash
-tmux -s my_session
+tmux new -s my_session
 ```
 
 Para listar las sesiones que tenemos abiertas, podemos usar el comando `tmux ls`:

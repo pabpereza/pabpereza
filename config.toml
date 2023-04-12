@@ -55,11 +55,12 @@ id = "G-40PL0BKGD3"
 
 [languages]
 [languages.es]
-title = ""
+title = "Pabpereza"
 description = "Blog, documentación y vídeos"
 languageName ="Español"
 # Weight used for sorting.
 weight = 1
+
 
 
 # Everything below this are Site Params
@@ -69,7 +70,7 @@ weight = 1
 section = ["HTML", "print","RSS"]
 
 [params]
-copyright = "The Docsy Authors"
+copyright = "Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
 
 
@@ -187,7 +188,8 @@ footer_about_disable = true
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = false 
+enable = true 
+
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = '¡Me alegra escucharlo!. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
 no = 'Siento oírlo. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'

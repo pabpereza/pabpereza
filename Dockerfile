@@ -13,6 +13,9 @@ RUN npm install -D postcss
 # Copying the rest of the files
 COPY . .
 
+# Updating modules
+RUN hugo mod get -u
+
 # Building the static site
 RUN hugo --minify --gc
 

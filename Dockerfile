@@ -10,13 +10,7 @@ RUN npm install
 RUN npm install --save-dev postcss-cli autoprefixer
 RUN npm install -D postcss
 
-# Copying go.mod and go.sum files to install the dependencies 
-COPY go.* .
-
-# Updating modules
-RUN hugo mod get -u
-
-# Copying the rest of the files
+# Copying go.mod and go.sum files to install the dependencies
 COPY . .
 
 # Building the static site

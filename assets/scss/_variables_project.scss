@@ -40,3 +40,9 @@ $orange: $secondary;
 .bg-dark {
 	background-color: #111418 !important;
 }
+
+
+/* Hide title next to logo */
+.td-navbar .navbar-brand__name {
+    display: none;
+}

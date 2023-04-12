@@ -35,6 +35,9 @@ Tenemos que pensar que solo tenemos que dejar lo esencial para que la aplicació
 ## Paso 3: Utilizar multi-etapas de construcción
 La característica de multi-etapas de construcción de Docker nos permite utilizar varias imágenes en una sola definición de construcción. Esto significa que podemos utilizar una imagen base para compilar nuestra aplicación y luego utilizar otra imagen base más pequeña para desplegar la aplicación. Esto nos permite eliminar cualquier paquete o archivo no necesario utilizado solo en la etapa de compilación.
 
+Tengo una [lista de vídeos en youtube hablando del tema](https://youtube.com/playlist?list=PLQhxXeq1oc2mB6_KY-l_zgWJWZo_ne9MZ) y también [un repositorio con varios ejemplos](https://github.com/pabpereza/multi-stage-containers-examples).
+
+
 
 ## Post-paso 1: Monitorizar el rendimiento de la imagen.
 Algunos errores de optimización no serán visibles hasta que la imagen se ejecute en un entorno de producción. Por lo tanto, es importante monitorizar el rendimiento de la imagen una vez que se haya desplegado en producción. Esto nos permitirá identificar cualquier problema de rendimiento y optimizar la imagen de forma proactiva. 

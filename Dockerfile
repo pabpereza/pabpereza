@@ -17,7 +17,7 @@ COPY . .
 RUN hugo mod get -u
 
 # Building the static site
-RUN hugo --minify --gc
+RUN hugo --minify 
 
 
 # Runtime image, based on Nginx

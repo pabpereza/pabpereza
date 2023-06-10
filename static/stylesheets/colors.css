@@ -116,3 +116,11 @@ a > code {
 .nav-link {
     color: var(--header-footer-foreground);
 }
+
+
+/**********************/
+/* Markmap */
+/**********************/
+.markmap-foreign a {
+    color: #1f2937;
+}

@@ -13,12 +13,12 @@ RUN npm install -D postcss
 # Copying go.mod and go.sum files to install the dependencies
 COPY . .
 
-# Building the static site
-RUN hugo --minify 
-
 # Running personal scripts
 RUN chmod +x ./utils/*.sh
 RUN ./utils/index_diagramgen.sh
+
+# Building the static site
+RUN hugo --minify 
 
 
 # Runtime image, based on Nginx

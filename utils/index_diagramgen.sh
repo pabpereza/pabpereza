@@ -3,11 +3,11 @@
 # This script is used to generate the index diagram for the documentation
 # It list all the folders in the documentation and generate a diagram
 
-# Index path
-index="../content/es/docs/_index.md"
-
 # Documentation path
-docs="../content/es/docs"
+docs="content/es/docs"
+
+# Index path
+index="content/es/docs/_index.md"
 
 # Generate markmap headers in the index
 echo "" >> $index

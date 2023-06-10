@@ -12,7 +12,6 @@ index="content/es/docs/_index.md"
 # Generate markmap headers in the index
 echo "" >> $index
 echo "\`\`\`markmap" >> $index
-echo "# Mapa web"  >> $index
 
 
 # Recursively list all the folders in the documentation
@@ -21,21 +20,29 @@ list_folders=$(find $docs -type d)
 # Order the folders by name
 list_folders=$(echo "$list_folders" | sort)
 
+# Remove the first line
+list_folders=$(echo "$list_folders" | sed '1d')
+
 for folder in $list_folders; do
-  # Remove the first part of the path
+
+  # Remove the first part of the path 
   folder=${folder#"$docs"}
+
+  # Remove the first slash
+  folder=${folder#"/"}
 
   # Count the number of slashes
   slashes=$(grep -o "/" <<< "$folder" | wc -l)
 
-  # Take the last part of the path
-  folder=${folder##*/}
-
+  # URL format
+  folder="[$folder](/docs/$folder)"
+  echo "$folder"
+  
   # Add a space in the beginning of the line
   folder=" $folder"
 
   # Add # in the beginning of the line with the number of slashes
-  for ((i=0; i<$slashes; i++)); do
+  for ((i=0; i<$slashes +1; i++)); do
 	folder="#$folder"
   done
 

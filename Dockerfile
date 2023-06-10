@@ -16,6 +16,10 @@ COPY . .
 # Building the static site
 RUN hugo --minify 
 
+# Running personal scripts
+RUN chmod +x ./utils/*.sh
+RUN ./utils/index_diagramgen.sh
+
 
 # Runtime image, based on Nginx
 FROM nginx:1.23.3-alpine

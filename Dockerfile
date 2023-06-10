@@ -1,4 +1,4 @@
-FROM klakegg/hugo:0.111.3-ext-alpine as builder
+FROM klakegg/hugo:ext-alpine-ci as builder
 
 WORKDIR /app
 

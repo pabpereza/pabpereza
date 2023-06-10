@@ -12,23 +12,24 @@ Toda la documentación de este sitio esta abierta a mejoras y correcciones. En e
 ---
 ---
 
-## Mapa mental de la documentación
+# Mapa mental del sitio
 
 
-```mermaid
-mindmap
-  root((MindMap))
-    Contenedores
-      Docker
-      Kubernetes
-    Pentesting
-      Reconocimiento
-      Escalada de privilegios
-    Programación
-      Bash
-      Git
-      Python
-      SQL
-    Unix
-    Windows
+```markmap
+# Mapa web
+ 
+# contenedores
+## docker
+## kubernetes
+## seguridad
+# pentesting
+## privilegios
+## reconocimiento
+# programacion
+## bash
+## git
+## python
+## sql
+# unix
+# windows
 ```

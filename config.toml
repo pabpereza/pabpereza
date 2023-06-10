@@ -194,6 +194,10 @@ enable = true
 yes = '¡Me alegra escucharlo!. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
 no = 'Siento oírlo. Por favor, <a href="https://github.com/pabpereza/pabpereza/issues/new">ayudanos a mejorar</a>.'
 
+# Activate markmap
+[params.markmap]
+enable = true
+
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter

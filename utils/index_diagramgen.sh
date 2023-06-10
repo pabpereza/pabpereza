@@ -28,14 +28,18 @@ for folder in $list_folders; do
   # Remove the first part of the path 
   folder=${folder#"$docs"}
 
+
   # Remove the first slash
   folder=${folder#"/"}
+  
+  # Take last part of the path
+  alias=${folder##*/}
 
   # Count the number of slashes
   slashes=$(grep -o "/" <<< "$folder" | wc -l)
 
   # URL format
-  folder="[$folder](/docs/$folder)"
+  folder="[$alias](/docs/$folder)"
   echo "$folder"
   
   # Add a space in the beginning of the line

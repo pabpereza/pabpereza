@@ -9,3 +9,26 @@ menu:
 
 Toda la documentación de este sitio esta abierta a mejoras y correcciones. En el sidebar derecho tienes todas las opciones para contribuir. Puede ser que parte del contenido lo haya publicado como entrada del [Blog](/blog/) y no lo encuentres aquí reflejado. 
 
+---
+---
+
+## Mapa mental de la documentación
+
+
+```mermaid
+mindmap
+  root((MindMap))
+    Contenedores
+      Docker
+      Kubernetes
+    Pentesting
+      Reconocimiento
+      Escalada de privilegios
+    Programación
+      Bash
+      Git
+      Python
+      SQL
+    Unix
+    Windows
+```

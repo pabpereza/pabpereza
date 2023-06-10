@@ -35,6 +35,9 @@ for folder in $list_folders; do
   # Take last part of the path
   alias=${folder##*/}
 
+  # Capitalize the first letter
+  alias="$(tr '[:lower:]' '[:upper:]' <<< ${alias:0:1})${alias:1}"
+
   # Count the number of slashes
   slashes=$(grep -o "/" <<< "$folder" | wc -l)
 

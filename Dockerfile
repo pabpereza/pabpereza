@@ -22,7 +22,7 @@ RUN hugo --minify
 
 
 # Runtime image, based on Nginx
-FROM nginx:1.23.3-alpine
+FROM nginx:1.25.1-alpine
 
 WORKDIR /usr/share/nginx/html
 RUN rm -fr * .??* && mkdir /cache

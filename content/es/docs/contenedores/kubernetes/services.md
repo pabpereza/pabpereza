@@ -14,7 +14,7 @@ Los pods en kubernetes son efímeros y cambiaran frecuentemente, con ellos, tamb
 única (también tiene DNS), además de balancear las peticiones entre los pods que están asociados a un servicio.
 
 
-Partiendo del deployment anterior podemos crear un servicio de la misma forma:
+Partiendo del [[deployments]] anterior podemos crear un servicio de la misma forma:
 ```yaml
 
 apiVersion: v1

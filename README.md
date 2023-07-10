@@ -1,6 +1,6 @@
 
 
-![[logo_transparente.png]]
+![](../attachments/logo_transparente.png)
 
 
 # Hello there! 👋
@@ -36,7 +36,6 @@ https://www.youtube.com/c/Pabpereza
     height="500"
     src="https://widget-e9fef4792dd44ab4aa412dd12465d94c.elfsig.ht">
 </iframe>
-
 **No dudes en dejar un issue en este repositorio para sugerir nuevos temas, dudas o cualquier cosa que se te ocurra.**
 
 ### Página personal 

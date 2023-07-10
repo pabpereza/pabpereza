@@ -1,3 +1,7 @@
+---
+cover: "attachments/Aligerar imagenes docker.png"
+---
+
 #blog #docker
 
 En el mundo de la infraestructura como código, Docker se ha convertido en una herramienta esencial para desarrolladores y administradores de sistemas. Una de las ventajas de Docker es la capacidad de crear imágenes ligeras, lo que permite un despliegue rápido y eficiente de aplicaciones. 

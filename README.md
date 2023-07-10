@@ -15,7 +15,8 @@ Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializ
 
 - 🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
 
-<h3 align="left">Connect with me:</h3>
+
+### Connect with me:
 <p align="left">
 <a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pabpereza" height="30" width="40" /></a>    
 <a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="pabpereza" height="30" width="40" /></a>    
@@ -35,6 +36,7 @@ https://www.youtube.com/c/Pabpereza
     height="500"
     src="https://widget-e9fef4792dd44ab4aa412dd12465d94c.elfsig.ht">
 </iframe>
+
 **No dudes en dejar un issue en este repositorio para sugerir nuevos temas, dudas o cualquier cosa que se te ocurra.**
 
 ### Página personal 

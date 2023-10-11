@@ -1,6 +1,6 @@
 
 
-![](https://publish-01.obsidian.md/access/26ef72ed5de6294d298e4eaa1f916f77/attachments/fondo_negro.png)
+![](banner_github.jpg)
 
 
 # Hello there! 👋

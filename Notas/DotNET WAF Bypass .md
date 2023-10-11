@@ -1,2 +1,0 @@
-# DotNET WAF Bypass 
-

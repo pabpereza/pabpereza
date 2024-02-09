@@ -1,9 +1,10 @@
 ---
-date: 2024-01-15
+date: 2024-03-15
 title: "VSCode para toda necesidad"
 slug: "VSCode para toda necesidad"
 tags: [docker]
 authors: pabpereza  
+draft: true
 ---
 
 Visual Studio Code (VSCode) es un editor de código fuente multiplataforma desarrollado por Microsoft. Con una interfaz intuitiva y una gran cantidad de características, VSCode se ha convertido en una herramienta popular entre desarrolladores, administradores de sistemas y cualquier perfil tecnológico que necesite escribir código.

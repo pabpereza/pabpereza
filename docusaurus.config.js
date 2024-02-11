@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Pabpereza',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo_icon.jpeg',
 
   // Set the production url of your site here
   url: 'https://pabpereza.dev',
@@ -25,6 +25,10 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    mermaid: true,
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -44,14 +48,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/pabpereza/pabpereza/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/pabpereza/pabpereza/tree/main/',
           postsPerPage: 3,
           blogSidebarCount: 'ALL'
         },
@@ -67,12 +71,18 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
+      },
       navbar: {
         title: 'Pabpereza',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'docSidebar',
@@ -80,7 +90,12 @@ const config = {
             position: 'left',
             label: 'Documentación',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog', label: 'Blog', position: 'left'
+          },
+          {
+            to: '/portfolio', label: 'Portfolio', position: 'left'
+          },
           {
             href: 'https://github.com/pabpereza/pabpereza',
             label: 'GitHub',
@@ -138,6 +153,33 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+  themes: ['docusaurus-portfolio-theme', '@docusaurus/theme-mermaid'],
+  plugins: [
+    [
+    'docusaurus-portfolio-plugin',
+    {
+      username: 'pabpereza',                  // User's GitHub username
+      path: 'portfolio',                                     // Path in site where page will be served
+      routeBasePath: 'portfolio',
+      pageTitle: 'Portfolio',
+      pageDescription: 'My GitHub Repos',
+      portfolioPageComponent: '@theme/PortfolioPage',
+      userOptions: {
+        fullname: 'Pablo Pérez-Aradros',                                 // Name to be displayed in usercard
+        links: [],                                    // UNIMPLEMENTED: Links to be displayed in usercard
+      },
+      repoOptions: {
+          type: 'public',                                   // Type of repos to be queried
+                                                      // ['all','public','private','forks','sources','member','internal']
+          sort: 'stargazers_count',                                   // Field to sort repos using
+                                                      // ['created','updated','pushed','full_name','size','stargazers_count','watchers_count','forks_count',]
+          direction: 'desc',                              // Direction repos will be sorted in
+                                                      // ['asc','desc']
+          numRepos: 6                  // Number of repos. Default: all.
+      }
+    }
+    ]
+  ],
 };
 
 export default config;

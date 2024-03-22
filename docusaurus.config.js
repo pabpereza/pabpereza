@@ -79,7 +79,7 @@ const config = {
       navbar: {
         title: 'Pabpereza',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Pabpereza site logo',
           src: 'img/logo.png',
         },
         hideOnScroll: true,
@@ -88,13 +88,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Documentación',
+            label: 'Cursos',
           },
           {
             to: '/blog', label: 'Blog', position: 'left'
-          },
-          {
-            to: '/portfolio', label: 'Portfolio', position: 'left'
           },
           {
             href: 'https://github.com/pabpereza/pabpereza',
@@ -155,30 +152,7 @@ const config = {
     }),
   themes: ['docusaurus-portfolio-theme', '@docusaurus/theme-mermaid'],
   plugins: [
-    [
-    'docusaurus-portfolio-plugin',
-    {
-      username: 'pabpereza',                  // User's GitHub username
-      path: 'portfolio',                                     // Path in site where page will be served
-      routeBasePath: 'portfolio',
-      pageTitle: 'Portfolio',
-      pageDescription: 'My GitHub Repos',
-      portfolioPageComponent: '@theme/PortfolioPage',
-      userOptions: {
-        fullname: 'Pablo Pérez-Aradros',                                 // Name to be displayed in usercard
-        links: [],                                    // UNIMPLEMENTED: Links to be displayed in usercard
-      },
-      repoOptions: {
-          type: 'public',                                   // Type of repos to be queried
-                                                      // ['all','public','private','forks','sources','member','internal']
-          sort: 'stargazers_count',                                   // Field to sort repos using
-                                                      // ['created','updated','pushed','full_name','size','stargazers_count','watchers_count','forks_count',]
-          direction: 'desc',                              // Direction repos will be sorted in
-                                                      // ['asc','desc']
-          numRepos: 6                  // Number of repos. Default: all.
-      }
-    }
-    ]
+    
   ],
 };
 

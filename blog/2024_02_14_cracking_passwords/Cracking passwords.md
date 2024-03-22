@@ -1,7 +1,7 @@
 ---
 date: 2024-02-12
-title: Cracking de contraseñas - Hashcat
-slug: aligerar_imagenes_docker
+title: Cracking de contraseñas con Hashcat
+slug: cracking_passwords_hashcat 
 tags: [docker]
 authors: pabpereza 
 ---
@@ -38,8 +38,7 @@ Una vez que un atacante tiene un hash de contraseña, puede utilizar herramienta
 ## Hashcat
 Hashcat es una de las herramientas más avanzadas en recuperación de contraseñas. Puede utilizar diferentes métodos de ataque para descifrar un hash de contraseña, incluyendo ataques de fuerza bruta, ataques de diccionario y otros. Funciona comparando los hashes calculados con los hashes obtenidos, y cuando hay una coincidencia, la contraseña ha sido descifrada.
 
-[Documentación Hashcat](../../docs/Hacking-Pentesting/Hashcat)
-
+[Web oficial de Hashcat](https://hashcat.net/hashcat/)
 
 ## Ejemplos
 Para poner en práctica la herramienta he creado un vídeo en el que muestro cómo crackear diferentes tipos de hashes con diferentes métodos de ataque. 

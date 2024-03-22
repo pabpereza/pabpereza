@@ -19,8 +19,6 @@
     "@docusaurus/theme-mermaid": "^3.1.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
-    "docusaurus-portfolio-plugin": "^1.0.1",
-    "docusaurus-portfolio-theme": "^1.0.2",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

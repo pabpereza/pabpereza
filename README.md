@@ -3,39 +3,73 @@
 ![](banner_github.jpg)
 
 
-# Hello there! 👋
+# Hello there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
 
-My name is Pablo Pérez-Aradros, I´m a cibersecurity consultant, specialized in development process as DevSecOps. Also I love the development and sysadmin part. 
+Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps.
 
-Mi nombre es Pablo Pérez-Aradros, soy un consultor de ciberseguridad especializado en procesos de desarrollo como DevSecOps. Tambien me encanta el desarrollo de software y la administración de sistemas.
-
-- 🔭 Actualmente estoy trabajando en Banco Santander.
-
-- 🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
+  🤝 Comparto continuamente mi conocimiento a través de GitHub y [Youtube](https://www.youtube.com/channel/UCGfKISiN7usAdxvcGivm_OA)
 
 
+---
+
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCGfKISiN7usAdxvcGivm_OA)
+![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCGfKISiN7usAdxvcGivm_OA)
+![GitHub User's stars](https://img.shields.io/github/stars/pabpereza)
+
+---
 
 <p align="center">
-<a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pabpereza" height="30" width="40" style="margin-left:10px" /></a>    
-<a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="pabpereza" height="30" width="40" style="margin-left:10px" /></a>      
-<a href="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" height="30" width="40" style="margin-left:10px"/></a>   
+<a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://i.pinimg.com/originals/73/db/02/73db02344af2f927fd361decc424e8b8.png" alt="pabpereza" height="30" width="40" style="margin-left:10px" /></a>    
+<a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" alt="pabpereza" height="30" width="40" style="margin-left:10px" /></a>      
+<a href="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" alt="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" height="30" width="40" style="margin-left:10px"/></a>   
 <a href="https://www.tiktok.com/@pabpereza" target="blank"><img align="center" src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png"  height="30" width="30" style="margin-left:10px"/></a>   
-<a href="https://www.instagram.com/pabpereza/" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"  height="30" width="30" style="margin-left:10px" /></a>
+<a href="https://www.instagram.com/pabpereza/" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg"  height="30" width="30" style="margin-left:10px" /></a>
 </p>
 
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=pabpereza&show_icons=true&theme=dracula">
-</p>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=pabpereza&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pabpereza&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+</div>
 
-### Youtube
-Este repositorio sirve como índice de los contenidos y recursos que genero para youtube.
-https://www.youtube.com/c/Pabpereza
+###
 
-### Lenguajes y herramientas
-<p align="left"> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.jenkins.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="kubernetes logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="40" alt="flask logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-line.svg" height="40" alt="jenkins logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" height="40" alt="ansible logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40" alt="sqlite logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" alt="redis logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+</div>
 
-**No dudes en dejar un issue en este repositorio para sugerir nuevos temas, dudas o cualquier cosa que se te ocurra.**
+###
 
-### Página personal 
- Toda la documentación de este repositorio se puede ver más cómodamente en formato web aquí: [pabpereza.dev](https://pabpereza.dev)
+<img src="https://raw.githubusercontent.com/pabpereza/pabpereza/output/snake.svg" alt="Snake animation" />
 
+###
+
+###

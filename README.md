@@ -19,8 +19,8 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ---
 
 <p align="center">
-<a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://i.pinimg.com/originals/73/db/02/73db02344af2f927fd361decc424e8b8.png" alt="pabpereza" height="30" width="40" style="margin-left:10px" /></a>    
-<a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" alt="pabpereza" height="30" width="40" style="margin-left:10px" /></a>      
+<a href="https://twitter.com/pabpereza" target="blank"><img align="center" src="https://ww2.freelogovectors.net/wp-content/uploads/2023/07/twitter-x-logo-freelogovectors.net_.png" alt="pabpereza" height="35" width="45" style="margin-left:10px" /></a>    
+<a href="https://www.youtube.com/c/pabpereza" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" alt="pabpereza" height="30" width="40" style="margin-left:2px" /></a>      
 <a href="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" alt="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/" height="30" width="40" style="margin-left:10px"/></a>   
 <a href="https://www.tiktok.com/@pabpereza" target="blank"><img align="center" src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png"  height="30" width="30" style="margin-left:10px"/></a>   
 <a href="https://www.instagram.com/pabpereza/" target="blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg"  height="30" width="30" style="margin-left:10px" /></a>
@@ -57,8 +57,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40" alt="sqlite logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" alt="redis logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
   <img width="12" />

@@ -1,6 +1,6 @@
 
 
-![](banner_github.jpg)
+![](./static/img/banner_github.jpg)
 
 
 # Hello there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
@@ -67,7 +67,3 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ###
 
 <img src="https://raw.githubusercontent.com/pabpereza/pabpereza/output/snake.svg" alt="Snake animation" />
-
-###
-
-###

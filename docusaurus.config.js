@@ -9,8 +9,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Pabpereza',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/logo_icon.jpeg',
+  tagline: 'Blog, cursos y documentación de Pabpereza DevSecOps',
+  favicon: 'img/logo_icon.png',
 
   // Set the production url of your site here
   url: 'https://pabpereza.dev',
@@ -77,25 +77,51 @@ const config = {
         }
       },
       navbar: {
-        title: 'Pabpereza',
-        logo: {
-          alt: 'Pabpereza site logo',
-          src: 'img/logo.png',
-        },
+        title: 'PPZ - Pabpereza',
         hideOnScroll: true,
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Cursos',
+            to: '/docs/cursos', label: 'Cursos', position: 'left'
+          },
+          {
+            to: '/docs/docs', label: 'Docs', position: 'left'
           },
           {
             to: '/blog', label: 'Blog', position: 'left'
           },
           {
+            to: 'https://www.youtube.com/@Pabpereza',
+            position: 'left',
+            label: 'Youtube'
+          },
+          {
             href: 'https://github.com/pabpereza/pabpereza',
-            label: 'GitHub',
+            className: 'header-x-link',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/pabpereza/pabpereza',
+            className: 'header-instagram-link',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/pabpereza/pabpereza',
+            className: 'header-linkedin-link',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/pabpereza/pabpereza',
+            className: 'header-tiktok-link',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/pabpereza/pabpereza',
+            className: 'test',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/pabpereza/pabpereza',
+            className: 'header-github-link',
             position: 'right',
           },
         ],
@@ -150,7 +176,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
-  themes: ['docusaurus-portfolio-theme', '@docusaurus/theme-mermaid'],
+  themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
     
   ],

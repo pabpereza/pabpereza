@@ -1,0 +1,83 @@
+.socialsection {
+  display: block;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.socialsection h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.socialsection p {
+  margin: 0 5rem auto;
+  text-align: center;
+  color: white;
+}
+
+.socialicons {
+  width: 100%;
+  height: auto;
+  display: inline-block ;
+}
+
+.socialicons div {
+  display: inline-block;
+  width: 20%;
+  padding: 5rem;
+}
+
+.icon {
+  height: auto;
+  width: 100%;
+  max-width: 5rem;
+}
+
+@media screen and (min-width: 1300px) {
+  .socialicons {
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .socialsection p {
+    margin: 0 5rem auto;
+    text-align: center;
+    color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 996px) {
+  .socialicons div {
+    display: inline-block;
+    width: 20%;
+    padding: 2rem;
+  }
+
+  .socialsection p {
+    margin: 0 3rem auto;
+    text-align: center;
+    color: white;
+  }
+  
+} 
+
+
+@media screen and (max-width: 570px) {
+  .socialicons div {
+    display: inline-block;
+    width: 20%;
+    padding: 1rem;
+  }
+  .socialsection p {
+    margin: 0 1rem auto;
+    text-align: center;
+    color: white;
+  }
+   
+} 

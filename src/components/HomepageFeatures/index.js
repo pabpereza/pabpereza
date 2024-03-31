@@ -4,42 +4,24 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Desarrollo',
+    path: require('@site/static/img/development.png').default
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'DevOps',
+    path: require('@site/static/img/devops.png').default
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Seguridad',
+    path: require('@site/static/img/security.png').default
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({path, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className="text--center featureImg">
+        <img height="200px" src={path} alt={description} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -53,6 +35,8 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h2>Divulgo principalmente sobre</h2>
+        <p>Creo que enseñando es cuando más he afianzado mis conocimientos, además de ser vocacional claro esta. Actualmente trabajo profesionalmente como SecDevOps, lo cual, me permite combinar mis grandes pasiones dentro de la informática, el desarrollo de software y DevOps.</p>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

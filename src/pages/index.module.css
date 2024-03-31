@@ -8,16 +8,16 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: transparent;
+  color: white;
+}
+
+.heroBanner a {
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+} 

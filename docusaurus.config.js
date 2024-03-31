@@ -96,22 +96,22 @@ const config = {
             label: 'Youtube'
           },
           {
-            href: 'https://github.com/pabpereza/pabpereza',
+            href: 'https://twitter.com/pabpereza',
             className: 'header-x-link',
             position: 'right',
           },
           {
-            href: 'https://github.com/pabpereza/pabpereza',
+            href: 'https://www.instagram.com/pabpereza/',
             className: 'header-instagram-link',
             position: 'right',
           },
           {
-            href: 'https://github.com/pabpereza/pabpereza',
+            href: 'https://www.linkedin.com/in/pablo-p%C3%A9rez-aradros-calvo-516634109/',
             className: 'header-linkedin-link',
             position: 'right',
           },
           {
-            href: 'https://github.com/pabpereza/pabpereza',
+            href: 'https://www.tiktok.com/@pabpereza',
             className: 'header-tiktok-link',
             position: 'right',
           },

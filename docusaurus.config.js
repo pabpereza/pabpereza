@@ -63,7 +63,12 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-40PL0BKGD3',
+          anonymizeIP: true,
+        },
       }),
+
     ],
   ],
 
@@ -179,7 +184,8 @@ const config = {
     }),
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
-   
+    require.resolve('docusaurus-lunr-search'),
+    
   ],
 };
 

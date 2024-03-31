@@ -13,10 +13,11 @@ const config = {
   favicon: 'img/logo_icon.png',
 
   // Set the production url of your site here
-  url: 'https://pabpereza.dev',
+  url: 'https://pabpereza.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/pabpereza/',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -84,7 +85,7 @@ const config = {
             to: '/docs/cursos', label: 'Cursos', position: 'left'
           },
           {
-            to: '/docs/docs', label: 'Docs', position: 'left'
+            to: '/docs/notas', label: 'Notas', position: 'left'
           },
           {
             to: '/blog', label: 'Blog', position: 'left'
@@ -133,12 +134,12 @@ const config = {
             title: 'Contenido',
             items: [
               {
-                label: 'Documentación',
-                to: '/docs/',
+                label: 'Notas',
+                to: '/docs/notas',
               },
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Cursos',
+                to: '/docs/cursos',
               },
             ],
           },
@@ -146,8 +147,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Telegram',
-                href: 'https://t.me/pabperezacom',
+                label: 'Blog',
+                href: '/blog',
               },
               {
                 label: 'GitHub',
@@ -178,7 +179,7 @@ const config = {
     }),
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
-    
+   
   ],
 };
 

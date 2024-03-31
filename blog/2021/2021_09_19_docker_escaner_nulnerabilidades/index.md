@@ -17,7 +17,7 @@ Cuando construimos imágenes de Docker siempre partimos de una imagen base, que 
 ## ¿Que herramientas podemos usar para analizar la seguridad de las imágenes de Docker?
 Existen multitud de herramientas que pueden ser útiles para analizar la seguridad de las imágenes de Docker. Las más destacadas son:
 * Trivy
-* Anchore
+* Grype 
 * Clair
 
 Para este vídeo y evitar instalar nada, hemos utilizado el escáner que viene incorporado con Docker en las últimas versiones. Se puede ejecutar con el siguiente comando:
@@ -27,4 +27,4 @@ docker scan <nombre de la imagen>
 ```
 
 Iré documentando el uso de diferentes herramientas de análisis de seguridad en la siguiente pagína de la documentación:
-[Escaneo de seguridad en contenedores](/docs/contenedores/analizar_contenedores/)
+[Escaneo de seguridad en contenedores](/docs/notas/analizar_contenedores)

@@ -14,7 +14,7 @@ Tanto si te encanta powershell
 como si te ves forzado a usarlo, hay que reconocer quees muy mejorable.
 
 En el anterior vídeo vimos el proceso de potenciar el terminal en entornos unix y linux mediante
-zsh y oh-my-zsh. [Aquí la entrada al blog y enlace al vídeo](/blog/potencia_tu_terminal/)
+zsh y oh-my-zsh. [Aquí la entrada al blog y enlace al vídeo](/blog/2021/2021_12_30_potencia_tu_terminal/index.md)
 
 Para esta ocasión, abordaremos
 el tema en sistemas windows
@@ -33,5 +33,5 @@ https://youtu.be/kWIesAUhLAg
 
 
 ### Todos los comandos del vídeo y enlaces están en la siguiente página:
-**Documentación: [/docs/windows/oh_my_posh/](/docs/windows/oh_my_posh/)**
+**Documentación: [/docs/windows/oh_my_posh/](/docs/notas/oh_my_posh)**
 

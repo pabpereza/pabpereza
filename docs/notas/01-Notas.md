@@ -1,6 +1,6 @@
 ---
-slug: /docs
-title: Documentación
+slug: /notas
+title: Notas
 ---
 
 En esta sección contiene notas y documentación de vídeos de mi canal u otros temas que considero interesantes.

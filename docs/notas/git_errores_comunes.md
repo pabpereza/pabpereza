@@ -24,7 +24,7 @@ Supón que acabas de terminar un commit y quieres modificar su mensaje porque ha
 git commit --amend
 ```
 
-Tras ejecutarlo se nos mostrará el editor de texto seleccionado en git para editar el menaje del último commit. En [esta entrada](../configurar_editor_commits/#elegir-el-editor-de-commit-por-defecto) puedes
+Tras ejecutarlo se nos mostrará el editor de texto seleccionado en git para editar el menaje del último commit. En [esta entrada](/docs/notas/configurar_editor_commits.md) puedes
 ver como cambiar el editor de texto que git usará para estas labores.
 
 

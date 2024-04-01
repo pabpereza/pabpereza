@@ -1,7 +1,7 @@
 ---
 date: 2022-08-08
 title: "Potencia powershell"
-slug: "Potencia powershell"
+slug: "potencia_powershell"
 tags: [ powershell , terminal]
 authors: pabpereza
 ---

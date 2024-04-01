@@ -1,7 +1,7 @@
 ---
 date: "2023-01-10"
 title: "PowerToys"
-slug: "PowerToys"
+slug: "powertoys_windows"
 tags: [windows, productividad]
 authors: pabpereza
 ---

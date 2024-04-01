@@ -1,7 +1,7 @@
 ---
 date: 2021-12-30  
 title: "Potencia tu terminal"
-slug: "Potencia tu terminal"
+slug: "potencia_tu_terminal"
 tags: [bash, zsh, terminal]
 authors: pabpereza
 ---

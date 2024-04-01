@@ -1,6 +1,6 @@
 ---
 title: "Save y Load"
-slug: "Save y load"
+slug: "save_y_load"
 weight: 1 
 tags: [ docker, containers]
 authors: pabpereza >

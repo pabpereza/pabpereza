@@ -1,7 +1,7 @@
 ---
 date: 2022-12-01
 title: "Crea y comparte backups en docker"
-slug: "Crea y comparte backups en docker"
+slug: "crea_y_comparte_backups_en_docker"
 tags: [docker, noticia]
 authors: pabpereza 
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2021-10-24
 title: "La alternativa a Docker que estabas buscando - Rancher Desktop"
-slug: "Rancher Desktop"
+slug: "rancher_desktop"
 tags: [docker,devops]
 authors: pabpereza
 ---

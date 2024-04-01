@@ -1,7 +1,7 @@
 ---
 date: 2022-03-29
 title: "Escalar privilegios en docker"
-slug: "Escalar privilegios en docker"
+slug: "escalar_privilegios_en_docker"
 tags: [docker, privilegios]
 authors: pabpereza 
 ---

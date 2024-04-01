@@ -1,7 +1,7 @@
 ---
 date: "2022-02-27"
 title: "Raspberry Pi Touchscreen 7"
-slug: "raspberry_pi_touchscreen_7_pulgafas"
+slug: "raspberry_pi_touchscreen_7_pulgadas"
 tags: [raspberry]
 authors: pabpereza
 ---

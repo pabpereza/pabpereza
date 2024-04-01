@@ -1,7 +1,7 @@
 ---
 date: 2021-09-19
 title: "Analizar la seguridad de las imágenes de Docker"
-slug: "Analizar seguridad docker"
+slug: "analizar_seguridad_docker"
 authors: pabpereza
 tags: [docker, seguridad]
 ---

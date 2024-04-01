@@ -1,7 +1,7 @@
 ---
 date: 2021-12-12 
 title: "Errores comunes en Git"
-slug: "Errores comunes git"
+slug: "errores_comunes_git"
 tags: [git, errores, video, desarrollo]
 authors: pabpereza
 image: git_banner.png

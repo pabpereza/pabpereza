@@ -1,7 +1,7 @@
 ---
 date: 2021-11-10
 title: "Linux en Windows - Windows Subsystem Linux"
-slug: "Linux en Windows - WSL"
+slug: "linux_en_windows_WSL"
 tags: []
 authors: pabpereza
 ---

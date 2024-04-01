@@ -1,7 +1,7 @@
 ---
 date: 2022-12-21
 title: "CKA: Mi experiencia"
-slug: "CKA: Mi experiencia"
+slug: "CKA_mi_experiencia"
 tags: [kubernetes]
 authors: pabpereza 
 ---

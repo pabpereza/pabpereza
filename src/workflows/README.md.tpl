@@ -8,7 +8,8 @@
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps.
 
 ---
-
+### 📹 Últimos vídeos en mi [canal de Youtube](https://youtube.com/midudev?sub_confirmation=1)
+%{{latest_youtube}}%
 
 ---
 

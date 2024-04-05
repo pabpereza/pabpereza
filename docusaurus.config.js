@@ -90,7 +90,7 @@ const config = {
             to: '/docs/cursos', label: 'Cursos', position: 'left'
           },
           {
-            to: '/docs/notas', label: 'Notas', position: 'left'
+            to: '/docs', label: 'Notas', position: 'left'
           },
           {
             to: '/blog', label: 'Blog', position: 'left'

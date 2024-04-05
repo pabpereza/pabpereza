@@ -1,5 +1,6 @@
 ---
 slug: /cursos
+title: Cursos
 ---
 
 En esta página iré referenciando todos los cursos que genere en mi canal de YouTube. 

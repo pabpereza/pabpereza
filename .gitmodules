@@ -1,3 +1,0 @@
-[submodule "docs/Cursos/docker"]
-	path = docs/Cursos/docker
-	url = git@github.com:pabpereza/curso-docker.git

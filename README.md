@@ -24,10 +24,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
   <img width='25%' src='https://img.youtube.com/vi/aZL3lt7DSVs/mqdefault.jpg' />
 </a>
 
-<a href='https://youtu.be/ld-eeO2y6YI' target='_blank'>
-  <img width='25%' src='https://img.youtube.com/vi/ld-eeO2y6YI/mqdefault.jpg' />
-</a>
-
 </p>
 
 ## Mis cursos gratuitos 

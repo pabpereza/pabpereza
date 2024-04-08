@@ -14,5 +14,5 @@ https://youtu.be/cyK89jHB9JA
 
 
 ### Todos los comandos del vídeo y enlaces estan en la siguiente página:
-**Documentación: [/notas/zsh/](/docs/notas/zsh)**
+**Documentación: [/notas/zsh/](/docs/Notas/zsh)**
 

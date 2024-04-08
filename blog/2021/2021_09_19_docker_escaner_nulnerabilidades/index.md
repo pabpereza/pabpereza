@@ -27,4 +27,4 @@ docker scan <nombre de la imagen>
 ```
 
 Iré documentando el uso de diferentes herramientas de análisis de seguridad en la siguiente pagína de la documentación:
-[Escaneo de seguridad en contenedores](/docs/notas/analizar_contenedores)
+[Escaneo de seguridad en contenedores](/docs/Notas/analizar_contenedores)

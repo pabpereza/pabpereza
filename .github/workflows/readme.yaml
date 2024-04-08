@@ -22,4 +22,10 @@ jobs:
         - name: Run script
           env:
             YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          run: python src/workflows/readme.py
+          run: |
+            python src/workflows/readme.py
+            git config user.name pabpereza 
+            git config user.email pabloperezaradros@gmail.com
+            git add README.md
+            git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update README with latest videos"
+            git push origin master

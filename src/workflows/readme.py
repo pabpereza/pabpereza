@@ -8,7 +8,7 @@ MAX_VIDEOS = 4,
 YOUTUBE_PPZ_CHANNEL_ID = 'UCGfKISiN7usAdxvcGivm_OA'
 YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY') 
 
-def get_latest_youtube_videos(channel_id=YOUTUBE_PPZ_CHANNEL_ID, max_results=5, key=YOUTUBE_API_KEY):
+def get_latest_youtube_videos(channel_id=YOUTUBE_PPZ_CHANNEL_ID, max_results=MAX_VIDEOS, key=YOUTUBE_API_KEY):
   url = f"https://www.googleapis.com/youtube/v3/search?channelId={channel_id}&maxResults={max_results}&key={key}&order=date"
   response = urllib.request.urlopen(url)
   videos = json.loads(response.read())

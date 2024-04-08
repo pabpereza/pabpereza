@@ -13,19 +13,19 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
-  <img width='20%' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
+  <img width='25%' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/-M08_wzbhNc' target='_blank'>
-  <img width='20%' src='https://img.youtube.com/vi/-M08_wzbhNc/mqdefault.jpg' />
+  <img width='25%' src='https://img.youtube.com/vi/-M08_wzbhNc/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/aZL3lt7DSVs' target='_blank'>
-  <img width='20%' src='https://img.youtube.com/vi/aZL3lt7DSVs/mqdefault.jpg' />
+  <img width='25%' src='https://img.youtube.com/vi/aZL3lt7DSVs/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ld-eeO2y6YI' target='_blank'>
-  <img width='20%' src='https://img.youtube.com/vi/ld-eeO2y6YI/mqdefault.jpg' />
+  <img width='25%' src='https://img.youtube.com/vi/ld-eeO2y6YI/mqdefault.jpg' />
 </a>
 
 </div>

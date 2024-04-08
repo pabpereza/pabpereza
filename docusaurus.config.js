@@ -140,7 +140,7 @@ const config = {
             items: [
               {
                 label: 'Notas',
-                to: '/docs/notas',
+                to: '/docs'
               },
               {
                 label: 'Cursos',

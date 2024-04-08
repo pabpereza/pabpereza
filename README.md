@@ -6,10 +6,10 @@
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 
 
 ## Últimos vídeos publicados
-<div style="display:inline-block">
+<p align=center>
 
 <a href='https://youtu.be/aZL4mtPUGuI' target='_blank'>
-  <img width='20%' src='https://img.youtube.com/vi/aZL4mtPUGuI/mqdefault.jpg' />
+  <img width='25%' src='https://img.youtube.com/vi/aZL4mtPUGuI/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
@@ -28,7 +28,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
   <img width='25%' src='https://img.youtube.com/vi/ld-eeO2y6YI/mqdefault.jpg' />
 </a>
 
-</div>
+</p>
 
 ## Mis cursos gratuitos 
 <table>
@@ -65,7 +65,7 @@ Conecta conmigo en:
 </p>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pabpereza&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1&card_width=320" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=pabpereza&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pabpereza&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
 </div>
 

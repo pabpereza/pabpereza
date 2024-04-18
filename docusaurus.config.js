@@ -181,6 +181,13 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      themeConfig: {
+        metadata: [
+          { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, Blog'},
+          { name: 'twitter:card', content: 'summary'},
+          { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
+        ]
+      }
     }),
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [

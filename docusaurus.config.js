@@ -140,11 +140,11 @@ const config = {
             items: [
               {
                 label: 'Notas',
-                to: '/docs'
+                to: '/docs#notas'
               },
               {
                 label: 'Cursos',
-                to: '/docs/cursos',
+                to: '/docs#cursos',
               },
             ],
           },

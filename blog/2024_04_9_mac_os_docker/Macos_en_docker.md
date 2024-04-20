@@ -7,6 +7,8 @@ tags: [macos, docker]
 # Ejecuta Mac OS en Docker
 Te preguntarás el sentido de ejecutar Mac OS en Docker, la respuesta corta es, why not?, la larga es, para probar aplicaciones, para probar configuraciones, para probar scripts, para probar lo que se te ocurra en macos sin tener un macos y de una forma más cómoda y rápida que una máquina virtual. Veamos como hacerlo.
 
+[![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/0.jpg)](https://youtu.be/Xzz8_r48K74)
+
 ## Requisitos
 - Docker
 
@@ -66,7 +68,7 @@ Referencia original: https://github.com/sickcodes/Docker-OSX?tab=readme-ov-file#
 Tenemos que instalar WSL2 y activar la virtualización anidada en WSL. Tengo un vídeo donde explico como hacerlo: [WSL en Windows](https://youtu.be/Xzz8_r48K74)
 
 Para activar la virtualización anidada, tenemos que crear un archivo ".wslconfig" en la carpeta de usuario con el siguiente contenido (por ejemplo, en `C:\Users\usuario\.wslconfig`:
-```bash
+```bash title=".wslconfig"
 [wsl2]
 nestedVirtualization=true
 ```
@@ -94,3 +96,10 @@ docker run -it \
 ```
 
 Así de simple, ya tendríamos ejecutada nuestro contenedor con una máquina virtual de MacOS. También puedes usar el tag pre-instalado
+
+
+Finalmente, solo quedaría instalar el sistema operativo y configurar MacOS a nuestro gusto.
+
+Te dejo el proceso completo en el vídeo de youtube
+
+[![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/0.jpg)](https://youtu.be/Xzz8_r48K74)

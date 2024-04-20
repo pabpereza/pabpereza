@@ -5,8 +5,7 @@ Adaptarlo a nuestras necesidades y potenciar sus utilidades de caja me parece vi
 horas delante de una interfaz de comandos.
 
 En esta guía explico como configurar zsh a mis gustos personales, (en este vídeo tenéis todo el proceso más detallado):
- youtube cyK89jHB9JA 
-
+[![Zsh](https://img.youtube.com/vi/cyK89jHB9JA/0.jpg)](https://www.youtube.com/watch?v=cyK89jHB9JA)
 
 ## Instalación de requisitos
 Con el siguiente comando podéis instalar todos los requisitos necesarios para instalar zsh:

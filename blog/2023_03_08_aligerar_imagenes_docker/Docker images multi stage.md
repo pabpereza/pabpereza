@@ -15,7 +15,7 @@ En este artículo, vamos a explorar cómo crear imágenes de Docker ligeras para
 
 Por si lo prefieres, puedes ver el vídeo en YouTube:
 
-https://youtu.be/QVcLTxmcJ8s 
+[![Aligerar imágenes Docker](https://img.youtube.com/vi/QVcLTxmcJ8s/0.jpg)](https://www.youtube.com/watch?v=QVcLTxmcJ8s)
 
 
 ## Paso 1: Utilizar una imagen base pequeña

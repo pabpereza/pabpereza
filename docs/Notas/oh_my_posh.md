@@ -2,7 +2,7 @@
 Página oficial: [Oh My Posh](https://ohmyposh.dev/)
 
 Aquí tenéis también el video tutorial:
- youtube kWIesAUhLAg  
+ [![Oh My Posh](https://img.youtube.com/vi/kWIesAUhLAg/0.jpg)](https://www.youtube.com/watch?v=kWIesAUhLAg)
 
 ## Instalación 
 El módulo de oh my posh se puede instalar desde la documentación de este enlace:

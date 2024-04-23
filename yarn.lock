@@ -4660,6 +4660,11 @@ get-stream@^6.0.0, get-stream@^6.0.1:
   resolved "https://registry.npmjs.org/get-stream/-/get-stream-6.0.1.tgz"
   integrity sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==
 
+github-buttons@^2.22.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/github-buttons/-/github-buttons-2.28.0.tgz#53b2413d29fa04c20b9c2001532a99e32484a449"
+  integrity sha512-KsCbYiA+MiHO3ytzdGvGt/GNde4GfG9BrrLxxc+ut2snBF9IAjrn2F5mNgHHEXdG/CfFIHOMV8Uxy4LNhxZwUA==
+
 github-slugger@^1.5.0:
   version "1.5.0"
   resolved "https://registry.npmjs.org/github-slugger/-/github-slugger-1.5.0.tgz"
@@ -7789,6 +7794,13 @@ react-fast-compare@^3.2.0:
   version "3.2.2"
   resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
+
+react-github-btn@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-github-btn/-/react-github-btn-1.4.0.tgz#92654107e92658e60dd977c7a92b212f806da78d"
+  integrity sha512-lV4FYClAfjWnBfv0iNlJUGhamDgIq6TayD0kPZED6VzHWdpcHmPfsYOZ/CFwLfPv4Zp+F4m8QKTj0oy2HjiGXg==
+  dependencies:
+    github-buttons "^2.22.0"
 
 react-helmet-async@*, react-helmet-async@^1.3.0:
   version "1.3.0"

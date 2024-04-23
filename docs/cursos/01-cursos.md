@@ -1,4 +1,0 @@
----
-slug: /cursos
-title: Cursos
----

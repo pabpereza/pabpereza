@@ -1,3 +1,7 @@
+---
+title: Docker
+---
+
 # Curso Docker WIP
 
 **¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso.!**

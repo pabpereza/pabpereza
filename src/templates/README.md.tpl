@@ -11,26 +11,10 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Mis cursos gratuitos 
-<table>
-  <thead align="center">
-    <tr border: none;>
-      <td><b>🎓 Cursos</b></td>
-      <td><b>⭐ Stars</b></td>
-      <td><b>📚 Forks</b></td>
-      <td><b>🛎 Issues</b></td>
-      <td><b>📬 Pull requests</b></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/pabpereza/curso-docker"><b>Docker</b></a></td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/pabpereza/curso-docker?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/pabpereza/curso-docker?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Issues" src="https://img.shields.io/github/issues/pabpereza/curso-docker?style=flat-square&labelColor=343b41"/></td>
-      <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/pabpereza/curso-docker?style=flat-square&labelColor=343b41"/></td>
-    </tr>
-  </tbody>
-</table>
+| 🎓 Cursos | 🎥 Youtube | 🔗 Enlace Web | 🛠️ GitHub | 
+| --- | --- | --- | --- | 
+| 🐳 Docker | [Vídeos](https://www.youtube.com/playlist?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0) | [Web](https://pabpereza.dev/docs/cursos/docker)  | [GitHub](https://github.com/pabpereza/curso-docker) | 
+
 
 ## Podcast - TECHarlas
 <p align=center>

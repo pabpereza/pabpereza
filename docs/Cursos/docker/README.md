@@ -14,7 +14,6 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 **Apoya este contenido gratuito dejando una estrella a este repositorio y suscribiéndote a mi canal de Youtube.**
 
-Este cursos está dividido en varios capítulos, cada uno de ellos constará con un vídeo y una entrada en este repositorio. A continuación, te dejo el índice del curso. Hacerlo en capítulos en vez de un único vídeo largo, me permite mantener el contenido actualizado y corregir errores de forma más sencilla, teniendo que volver a grabar vídeos puntuales en vez de todo el curso, cuando cambien algunas funcionalidades, se añadan nuevas o se corrijan errores. 
 
 ## Índice
 También puedes ver este contenido más cómodamente desde mi página web, [pabpereza.dev - Curso Docker:](https://pabpereza.dev/docs/cursos/)
@@ -36,6 +35,7 @@ Introducción:
 * [Docker en producción](#docker-en-producción) WIP
 
 Intermedio-Avanzado:
+* [Límites y control de recursos](#límites-y-control-de-recursos) WIP
 * [Migra tu aplicación a Docker y microservicios](#migra-tu-aplicación) WIP
 * [Dockerfile: Cache y optimización](#dockerfile-cache) WIP
 * [Dockerfile: Multistage build](#dockerfile-multistage-build) WIP

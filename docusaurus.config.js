@@ -187,7 +187,32 @@ const config = {
           { name: 'twitter:card', content: 'summary'},
           { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
         ]
-      }
+      },
+      headTags: [
+        // Declare a <link> preconnect tag
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'preconnect',
+            href: 'https://pabpereza.dev',
+          },
+        },
+        // Declare some json-ld structured data
+        {
+          tagName: 'script',
+          attributes: {
+            type: 'application/ld+json',
+          },
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org/',
+            '@type': 'Organization',
+            name: 'Pabpereza.dev',
+            url: 'https://pabpereza.dev/',
+            logo: 'https://pabpereza.dev/img/logo.png',
+          }),
+        },
+      ],
+
     }),
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [

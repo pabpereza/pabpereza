@@ -4,7 +4,9 @@ title: Docker
 
 # Curso Docker WIP
 
-**¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso.!**
+**¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso!**
+
+![](img/banner_docker.png)
 
 Hola, bienvenidos al curso de Docker completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio. Igual te sirve como repaso o profundización de algunos aspectos si ya tienes experiencia con Docker.
 

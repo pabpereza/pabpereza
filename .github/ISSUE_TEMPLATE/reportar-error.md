@@ -1,6 +1,6 @@
 ---
 name: Reportar error
-about: Genera un reporte para ayudarnos a mejorar
+about: ¿Crees que hay errores en la documentación o el contenido? Ayúdanos a mejorar.
 title: "[ERROR] -  Escribe aquí un título"
 labels: Documentacion
 assignees: pabpereza

@@ -2,6 +2,7 @@
 slug: mac-os-en-docker
 title: Ejecuta Mac OS en Docker
 tags: [macos, docker]
+authors: pabpereza 
 ---
 
 # Ejecuta Mac OS en Docker

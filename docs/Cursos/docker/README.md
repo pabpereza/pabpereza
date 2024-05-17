@@ -26,14 +26,16 @@ Introducción:
 * [Conceptos básicos de Docker](3.Conceptos_basicos.md)
 * [Ejecutar contenedores](4.Ejecutar_un_contenedor.md) WIP
 * [Gestión de contenedores](5.Gestion_de_contenedores.md) WIP
-* [Gestión de imágenes](#gestión-de-imágenes) WIP
+* [Imágenes de contenedor](#gestión-de-imágenes) WIP
 * [Dockerfile](#dockerfile) WIP
 * [Docker build](#docker-build) WIP
 * [Entrypoint y variables de entorno](#entrypoint-y-variables-de-entorno) WIP
+* [Tu primera aplicación en Docker](#tu-primera-aplicación) WIP
 * [Volúmenes en Docker](#volúmenes-en-docker) WIP
 * [Redes en Docker](#redes-en-docker) WIP
 * [Docker Compose](#docker-compose) WIP
 * [Docker Swarm](#docker-swarm) WIP
+* [Docker con Interfaz y VSCode](#docker-en-producción) WIP
 * [Docker en producción](#docker-en-producción) WIP
 
 Intermedio-Avanzado:

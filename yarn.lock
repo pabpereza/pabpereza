@@ -1602,9 +1602,20 @@
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-translations/-/theme-translations-3.2.1.tgz#894f6cb5bb121aa45a4a5f1383b70a8e3ae6a5d9"
   integrity sha512-jAUMkIkFfY+OAhJhv6mV8zlwY6J4AQxJPTgLdR2l+Otof9+QdJjHNh/ifVEu9q0lp3oSPlJj9l05AaP7Ref+cg==
   dependencies:
-    fs-extra "^11.1.1"
-    tslib "^2.6.0"
+    "@mdx-js/mdx" "^3.0.0"
+    "@types/history" "^4.7.11"
+    "@types/react" "*"
+    commander "^5.1.0"
+    joi "^17.9.2"
+    react-helmet-async "^1.3.0"
+    utility-types "^3.10.0"
+    webpack "^5.88.1"
+    webpack-merge "^5.9.0"
 
+"@docusaurus/types@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.2.1.tgz#88ccd4b8fa236628a29c89b8b0f60f0cc4716b69"
+  integrity sha512-n/toxBzL2oxTtRTOFiGKsHypzn/Pm+sXyw+VSk1UbqbXQiHOwHwts55bpKwbcUgA530Is6kix3ELiFOv9GAMfw==
   dependencies:
     "@mdx-js/mdx" "^3.0.0"
     "@types/history" "^4.7.11"
@@ -1616,22 +1627,7 @@
     webpack "^5.88.1"
     webpack-merge "^5.9.0"
 
-"@docusaurus/types@3.3.2", "@docusaurus/types@^3.2.0":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.3.2.tgz#0e17689512b22209a98f22ee80ac56899e94d390"
-  integrity sha512-5p201S7AZhliRxTU7uMKtSsoC8mgPA9bs9b5NQg1IRdRxJfflursXNVsgc3PcMqiUTul/v1s3k3rXXFlRE890w==
-  dependencies:
-    "@mdx-js/mdx" "^3.0.0"
-    "@types/history" "^4.7.11"
-    "@types/react" "*"
-    commander "^5.1.0"
-    joi "^17.9.2"
-    react-helmet-async "^1.3.0"
-    utility-types "^3.10.0"
-    webpack "^5.88.1"
-    webpack-merge "^5.9.0"
-
-"@docusaurus/types@^3.3.2":
+"@docusaurus/types@3.3.2", "@docusaurus/types@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.3.2.tgz#0e17689512b22209a98f22ee80ac56899e94d390"
   integrity sha512-5p201S7AZhliRxTU7uMKtSsoC8mgPA9bs9b5NQg1IRdRxJfflursXNVsgc3PcMqiUTul/v1s3k3rXXFlRE890w==
@@ -4013,10 +4009,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docusaurus-lunr-search@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/docusaurus-lunr-search/-/docusaurus-lunr-search-3.3.2.tgz#23699b899d9275402e3004e1fe6085e1bae4f007"
-  integrity sha512-+TXfiRAwIAaNwME8bBZvC+osfoXjJSNs5BcZu92lIHoWc3Myct4Nw3jU0FMXQCQGQcQ0FgFqMDoh56LPCLVaxQ==
+docusaurus-lunr-search@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/docusaurus-lunr-search/-/docusaurus-lunr-search-3.4.0.tgz#cefb0f8628f629e780451ae042d3cc35f078826f"
+  integrity sha512-GfllnNXCLgTSPH9TAKWmbn8VMfwpdOAZ1xl3T2GgX8Pm26qSDLfrrdVwjguaLfMJfzciFL97RKrAJlgrFM48yw==
   dependencies:
     autocomplete.js "^0.37.0"
     clsx "^1.2.1"

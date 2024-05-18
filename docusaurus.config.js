@@ -186,6 +186,7 @@ const config = {
           { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, Blog'},
           { name: 'twitter:card', content: 'summary'},
           { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
+          { name: 'google-adsense-account', content: 'ca-pub-2204030225179360'},
         ]
       },
       headTags: [

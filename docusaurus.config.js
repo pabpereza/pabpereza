@@ -220,6 +220,13 @@ const config = {
     require.resolve('docusaurus-lunr-search'),
     
   ],
+  scripts: [
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2204030225179360',
+      async: true,
+      crossorigin: 'anonymous',
+    }
+  ],
 };
 
 export default config;

@@ -1,7 +1,7 @@
 ---
 slug: entornos-remotos-gratuitos
 title: Entornos de desarrollo remotos y gratuitos
-tags: [desarrollo, docker, linux, github]
+tags: [desarrollo, docker, linux, github,aws, gitpod]
 authors: pabpereza 
 ---
 

@@ -1,7 +1,7 @@
 ---
 slug: entornos-remotos-gratuitos
 title: Entornos de desarrollo remotos y gratuitos
-tags: [desarrollo, docker, linux, github]
+tags: [desarrollo, docker, linux, github,aws, gitpod]
 authors: pabpereza 
 ---
 
@@ -78,7 +78,7 @@ Dicho AWS, también podremos usar otros servicios como Google Cloud, Azure, Digi
 # Conclusión
 Como has podido ver, hay varias opciones para montar un entorno de desarrollo remoto y gratuito. Personalmente, me quedo con Codespaces, ya que es la opción más sencilla y potente. Además, al estar integrado con Github, es muy fácil de usar y no necesitaremos instalar nada en nuestro equipo ni configurar máquinas virtuales.
 
-Aun así, si prefieres Gitpod o AWS, también son buenas opciones. Gitpod es muy similar a Codespaces, y AWS nos permitirá tener más control y total libertad para hacer lo que queramos, [como montar un proxy](https://youtu.be/-M08_wzbhNc)  (TODO: te dejo link de vídeo ).
+Aun así, si prefieres Gitpod o AWS, también son buenas opciones. Gitpod es muy similar a Codespaces, y AWS nos permitirá tener más control sobre nuestra máquina virtual.
 
 Si aún así, las ves muy limitadas, siempre puedes utilizar una combinación de varios servicios.
 

@@ -35,7 +35,7 @@ Los primero que haremos será descubrir los hosts que están en la red, para ell
 nmap -sn <rango de ips>
 ```
 
-Los ragos en de IPs en nmap, se pueden definir de la siguiente manera.
+Los rangos en de IPs en nmap, se pueden definir de la siguiente manera.
 
 ```bash
 nmap -sn 192.168.1.0-254 # Rango de IPs específico

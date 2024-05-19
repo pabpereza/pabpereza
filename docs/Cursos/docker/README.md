@@ -20,18 +20,18 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 ## Índice
 También puedes ver este contenido más cómodamente desde mi página web, [pabpereza.dev - Curso Docker:](https://pabpereza.dev/docs/cursos/)
 
-Introducción:
+Nivel básico:
 * [Introducción a Docker](1.Introduccion.md)
 * [Instalación y configuración de Docker Desktop](2.Instalacion.md) 
 * [Conceptos básicos de Docker](3.Conceptos_basicos.md)
 * [Ejecutar contenedores](4.Ejecutar_un_contenedor.md) WIP
 * [Gestión de contenedores](5.Gestion_de_contenedores.md) WIP
-* [Imágenes de contenedor](#gestión-de-imágenes) WIP
-* [Dockerfile](#dockerfile) WIP
-* [Docker build](#docker-build) WIP
-* [Entrypoint y variables de entorno](#entrypoint-y-variables-de-entorno) WIP
+* [Imágenes de contenedor](6.Imagenes) WIP
+* [Dockerfile y Docker build](7.Dockerfile_dockerbuild) WIP
+* [Gestión de imágenes y DockerHub](8.Gestion_imagenes) WIP
+* [Entrypoint, argumentos y variables de entorno](9.entrypoint_argumentos_variables_entorno) WIP
 * [Tu primera aplicación en Docker](#tu-primera-aplicación) WIP
-* [Volúmenes en Docker](#volúmenes-en-docker) WIP
+* [Volúmenes y copiar archivos](#volumenes-copiar-archivos) WIP
 * [Redes en Docker](#redes-en-docker) WIP
 * [Docker Compose](#docker-compose) WIP
 * [Docker Swarm](#docker-swarm) WIP

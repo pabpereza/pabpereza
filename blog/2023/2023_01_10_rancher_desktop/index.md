@@ -4,6 +4,7 @@ title: "La alternativa a Docker que estabas buscando - Rancher Desktop"
 slug: "rancher_desktop"
 tags: [docker,devops]
 authors: pabpereza
+image: rancher_desktop_panel.png
 ---
 
 

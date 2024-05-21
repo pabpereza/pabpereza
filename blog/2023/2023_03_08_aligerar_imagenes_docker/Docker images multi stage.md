@@ -3,7 +3,8 @@ date: 2023-03-08
 title: Aligerar imágenes Docker
 slug: aligerar_imagenes_docker
 tags: [docker]
-authors: pabpereza 
+authors: pabpereza
+image: https://img.youtube.com/vi/QVcLTxmcJ8s/0.jpg
 ---
 
 En el mundo de la infraestructura como código, Docker se ha convertido en una herramienta esencial para desarrolladores y administradores de sistemas. Una de las ventajas de Docker es la capacidad de crear imágenes ligeras, lo que permite un despliegue rápido y eficiente de aplicaciones. 

@@ -4,6 +4,7 @@ title: "PowerToys"
 slug: "powertoys_windows"
 tags: [windows, productividad]
 authors: pabpereza
+image: power_toys_banner.jpg
 ---
 
 PowerToys es un conjunto de herramientas de productividad de Microsoft para Windows 10 y 11. Incluye una variedad de utilidades diseñadas para mejorar la experiencia del usuario al trabajar con el sistema operativo.

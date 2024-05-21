@@ -3,7 +3,8 @@ date: 2024-02-12
 title: Cracking de contraseñas con Hashcat
 slug: cracking_passwords_hashcat 
 tags: [docker]
-authors: pabpereza 
+authors: pabpereza
+image: https://img.youtube.com/vi/JgLxzj3MHEo/0.jpg
 ---
 
 ¡Pon a prueba tus contraseñas, secretos y hashes!

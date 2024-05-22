@@ -13,7 +13,8 @@ Lo primero,  es que podremos evitar depender de un dispositivo en concretos, est
 
 Lo único malo es que dependeremos de una conexión a internet, aunque hoy en día, ¿qué no depende de internet?.
 
-Dentro vídeo:https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
+Dentro vídeo:
+https://www.youtube.com/watch?v=CIZhk8FG0Ng
 
 [![Entornos de desarrollo remotos y gratuitos](https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg)](https://www.youtube.com/watch?v=CIZhk8FG0Ng)
 

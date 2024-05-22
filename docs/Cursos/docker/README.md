@@ -24,12 +24,12 @@ Nivel básico:
 * [Introducción a Docker](1.Introduccion.md)
 * [Instalación y configuración de Docker Desktop](2.Instalacion.md) 
 * [Conceptos básicos de Docker](3.Conceptos_basicos.md)
-* [Ejecutar contenedores](4.Ejecutar_un_contenedor.md) WIP
+* [Ejecutar contenedores](4.Ejecutar_un_contenedor.md) 
 * [Gestión de contenedores](5.Gestion_de_contenedores.md) WIP
-* [Imágenes de contenedor](6.Imagenes) WIP
-* [Dockerfile y Docker build](7.Dockerfile_dockerbuild) WIP
-* [Gestión de imágenes y DockerHub](8.Gestion_imagenes) WIP
-* [Entrypoint, argumentos y variables de entorno](9.entrypoint_argumentos_variables_entorno) WIP
+* [Imágenes de contenedor](6.Imagenes.md) WIP
+* [Dockerfile y Docker build](7.Dockerfile_dockerbuild.md) WIP
+* [Gestión de imágenes y DockerHub](8.Gestion_imagenes.md) WIP
+* [Entrypoint, argumentos y variables de entorno](9.entrypoint_argumentos_variables_entorno.md) WIP
 * [Tu primera aplicación en Docker](#tu-primera-aplicación) WIP
 * [Volúmenes y copiar archivos](#volumenes-copiar-archivos) WIP
 * [Redes en Docker](#redes-en-docker) WIP

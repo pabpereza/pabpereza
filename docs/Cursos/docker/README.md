@@ -29,7 +29,7 @@ Nivel básico:
 * [Imágenes de contenedor](6.Imagenes.md) WIP
 * [Dockerfile y Docker build](7.Dockerfile_dockerbuild.md) WIP
 * [Gestión de imágenes y DockerHub](8.Gestion_imagenes.md) WIP
-* [Entrypoint, argumentos y variables de entorno](9.entrypoint_argumentos_variables_entorno.md) WIP
+* [Entrypoint, argumentos y variables de entorno](9.Entrypoint_argumentos_variables_entorno.md) WIP
 * [Tu primera aplicación en Docker](#tu-primera-aplicación) WIP
 * [Volúmenes y copiar archivos](#volumenes-copiar-archivos) WIP
 * [Redes en Docker](#redes-en-docker) WIP

@@ -6,7 +6,10 @@ tags: []
 authors: pabpereza
 ---
 
- El subsistema de linux en windows se introdujo hace unos años en windows 10 pero sus primeras versiones tenían ciertas limitaciones y no acababa de funcionar como se esperaba. Personalmente, con WSL2 y Windows 11 creo que ha llegado a ofrecer el funcionamiento que realmente se esperaba de el. Dentro vídeo:
+ El subsistema de linux en windows se introdujo hace unos años en windows 10 pero sus primeras versiones tenían ciertas limitaciones y no acababa de funcionar como se esperaba. Personalmente, con WSL2 y Windows 11 creo que ha llegado a ofrecer el funcionamiento que realmente se esperaba de el. 
+ <!-- truncate -->
+ 
+ Dentro vídeo:
 https://youtu.be/p04dRcQh2VM 
 
  ## Ventajas y desventajas

@@ -8,6 +8,7 @@ image: git_banner.png
 ---
 
 Hola y bienvenidos a una nueva entrada del blog. En este artículo se explicarán los errores más comunes en git y como solucionarlos.
+<!-- truncate -->
 
 ![](git_banner.png)
 

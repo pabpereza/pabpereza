@@ -8,6 +8,8 @@ authors: pabpereza
 
 ¡Hola! En esta entrada me gustaría contar mi experiencia con la certificación CKA (Certified Kubernetes Administrator) gestionada por la Linux Foundation.
 
+<!-- truncate -->
+
 Todo este último año he dedicado mis esfuerzos, tanto en lo personal como en lo profesional, a profundizar mis conocimientos en contenedores y orquestación de los mismos. Aunque había trabajado previamente con la tecnología, no había tenido la posibilidad de pelearme con sus tripas ni desplegar mi propia infraestructura.
 
 Lo primero es contestar a las preguntas esenciales que personalmente me hice: 

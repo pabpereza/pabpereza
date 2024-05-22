@@ -8,7 +8,7 @@ image: https://img.youtube.com/vi/QVcLTxmcJ8s/0.jpg
 ---
 
 En el mundo de la infraestructura como código, Docker se ha convertido en una herramienta esencial para desarrolladores y administradores de sistemas. Una de las ventajas de Docker es la capacidad de crear imágenes ligeras, lo que permite un despliegue rápido y eficiente de aplicaciones. 
-
+<!-- truncate -->
 Existen casos, ya sea por la complejidad de la aplicación, la cantidad de paquetes instalados o la cantidad de archivos, en los que las imágenes Docker pueden llegar a ser muy pesadas. Esto puede afectar muy negativamente el rendimiento y la eficiencia de los automatismos de construcción, pruebas y despliegue.
 
 En este artículo, vamos a explorar cómo crear imágenes de Docker ligeras para optimizar el rendimiento y la eficiencia en el despliegue de aplicaciones.

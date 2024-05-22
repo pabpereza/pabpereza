@@ -7,6 +7,7 @@ authors: pabpereza
 ---
 
 En docker, podemos utilizar volúmenes para persistir datos incluso cuando los contenedores se destruyen. Estos volúmenes eran complejos de administrar en muchas circunstancias, por lo que docker ha creado una nueva funcionalidad para docker desktop, que nos permite crear backups de los volúmenes y compartirlos con otros usuarios de una forma sencilla.
+<!-- truncate -->
 
 ![Docker backups](https://www.docker.com/wp-content/uploads/2022/09/share-volume-docker.png.webp)
 

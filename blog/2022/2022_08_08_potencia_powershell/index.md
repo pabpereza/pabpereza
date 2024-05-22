@@ -32,6 +32,4 @@ https://youtu.be/kWIesAUhLAg
 
 
 
-### Todos los comandos del vídeo y enlaces están en la siguiente página:
-**Documentación: [/docs/windows/oh_my_posh/](/docs/Notas/oh_my_posh)**
 

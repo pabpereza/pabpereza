@@ -68,7 +68,7 @@ AWS EC2 es un servicio de Amazon que nos permite crear máquinas virtuales en la
 
 Con una cuenta de amazon, podremos crear una instancia de EC2 gratuita siempre que sean las de tipo t2.micro o t3.micro y no superemos las 750 horas al mes. Además, esto solo será durante el primer año, después, tendremos que pagar por el uso de la instancia.
 
-¡Importante! En AWS es obligatorio tener una tarjeta de crédito para poder crear una cuenta, aunque no se nos cobrará nada si no superamos las horas gratuitas. Aun así, es importante tenerlo en cuenta para evitar sorpresas.
+¡Importante! En AWS es obligatorio  configurar un método de pago para poder crear una cuenta, aunque no se nos cobrará nada si no superamos las horas gratuitas. Aun así, es importante tenerlo en cuenta para evitar sorpresas.
 
 Al igual que en los casos anteriores, podremos instalar Docker en nuestra instancia de EC2, y podremos seguir el curso sin problemas.
 

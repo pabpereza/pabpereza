@@ -2,7 +2,8 @@
 slug: entornos-remotos-gratuitos
 title: Entornos de desarrollo remotos y gratuitos
 tags: [desarrollo, docker, linux, github,aws, gitpod]
-authors: pabpereza 
+authors: pabpereza
+image: https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
 ---
 
 # Entornos de desarrollo remotos y gratuitos 
@@ -10,18 +11,11 @@ authors: pabpereza
 
 Lo primero,  es que podremos evitar depender de un dispositivo en concretos, esto es práctico si estamos en un entorno de trabajo donde no podemos instalar software, nos movemos mucho y no podemos llevar con nosotros nuestros ordenadores, o simplemente, no tenemos el hardware necesario para ejecutar ciertas aplicaciones.
 
-Lo único malo es que dependeremos de una conexión a internet, aunque hoy en día, ¿qué no depende de internet? 😅
+Lo único malo es que dependeremos de una conexión a internet, aunque hoy en día, ¿qué no depende de internet?.
 
+Dentro vídeo:https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
 
-[SOLO VIDEO]
-En este vídeo, veremos github codespaces, gitpod y AWS EC2, tres opciones para montar un entorno de desarrollo, sus pros y sus contras. Si conoces alguna otra opción, ¡deja un comentario en el vídeo para que toda la comunidad pueda verlo!
-
-Dentro la intro y pasamos a la práctica.
-
-
-Dentro vídeo:
-#TODO: Insertar vídeo
-
+[![Entornos de desarrollo remotos y gratuitos](https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg)](https://www.youtube.com/watch?v=CIZhk8FG0Ng)
 
 # Opciones
 

@@ -25,7 +25,7 @@ Nivel básico:
 * [Instalación y configuración de Docker Desktop](2.Instalacion.md) 
 * [Conceptos básicos de Docker](3.Conceptos_basicos.md)
 * [Ejecutar contenedores](4.Ejecutar_un_contenedor.md)
-* [Gestión de contenedores](5.Gestion_de_contenedores.md) WIP
+* [Gestión de contenedores](5.Gestion_de_contenedores.md) 
 * [Imágenes de contenedor](6.Imagenes.md) WIP
 * [Dockerfile y Docker build](7.Dockerfile_dockerbuild.md) WIP
 * [Gestión de imágenes y DockerHub](8.Gestion_imagenes.md) WIP

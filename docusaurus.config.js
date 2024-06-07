@@ -90,9 +90,6 @@ const config = {
             to: '/docs', label: 'Cursos', position: 'left'
           },
           {
-            to: '/docs', label: 'Notas', position: 'left'
-          },
-          {
             to: '/blog', label: 'Blog', position: 'left'
           },
           {
@@ -138,10 +135,6 @@ const config = {
           {
             title: 'Contenido',
             items: [
-              {
-                label: 'Notas',
-                to: '/docs'
-              },
               {
                 label: 'Cursos',
                 to: '/docs',

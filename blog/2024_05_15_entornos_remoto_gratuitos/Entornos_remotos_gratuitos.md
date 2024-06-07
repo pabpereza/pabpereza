@@ -9,11 +9,14 @@ image: https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
 # Entornos de desarrollo remotos y gratuitos 
 ¡Hola! A raíz del [curso de Docker que estoy realizando](https://pabpereza.dev/docs/Cursos/docker), algunos me habéis preguntado la posibilidad de seguirlo en Android o dispositivos móviles. Ya sea porque no tengamos un ordenador, los recursos necesarios para instalar docker, o simplemente, por no querer instalarlo en nuestro equipo, quería estudiar varias alternativas para montar un entorno de desarrollo remoto y totalmente gratuito.
 
+<!-- truncate -->
+
 Lo primero,  es que podremos evitar depender de un dispositivo en concretos, esto es práctico si estamos en un entorno de trabajo donde no podemos instalar software, nos movemos mucho y no podemos llevar con nosotros nuestros ordenadores, o simplemente, no tenemos el hardware necesario para ejecutar ciertas aplicaciones.
 
 Lo único malo es que dependeremos de una conexión a internet, aunque hoy en día, ¿qué no depende de internet?.
 
-Dentro vídeo:https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
+Dentro vídeo:
+https://www.youtube.com/watch?v=CIZhk8FG0Ng
 
 [![Entornos de desarrollo remotos y gratuitos](https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg)](https://www.youtube.com/watch?v=CIZhk8FG0Ng)
 
@@ -62,7 +65,7 @@ AWS EC2 es un servicio de Amazon que nos permite crear máquinas virtuales en la
 
 Con una cuenta de amazon, podremos crear una instancia de EC2 gratuita siempre que sean las de tipo t2.micro o t3.micro y no superemos las 750 horas al mes. Además, esto solo será durante el primer año, después, tendremos que pagar por el uso de la instancia.
 
-¡Importante! En AWS es obligatorio tener una tarjeta de crédito para poder crear una cuenta, aunque no se nos cobrará nada si no superamos las horas gratuitas. Aun así, es importante tenerlo en cuenta para evitar sorpresas.
+¡Importante! En AWS es obligatorio  configurar un método de pago para poder crear una cuenta, aunque no se nos cobrará nada si no superamos las horas gratuitas. Aun así, es importante tenerlo en cuenta para evitar sorpresas.
 
 Al igual que en los casos anteriores, podremos instalar Docker en nuestra instancia de EC2, y podremos seguir el curso sin problemas.
 

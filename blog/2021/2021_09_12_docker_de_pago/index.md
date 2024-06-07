@@ -8,6 +8,8 @@ authors: pabpereza
 
 La empresa Docker anunció la semana pasada los cambios en su modelo de negocio empresarial y **sus nuevos planes de subscripción para empresas**.
 
+<!-- truncate -->
+
 Hasta el momento, la empresa ha sabido posicionarse como una de las más importantes en el mundo de la tecnología pero sin generar ningún tipo de ingreso. 
 
 Las nuevas versiones tendrán ciertas restricciones que forzarán a algunas empresas a utilizar las modalidades de pago.

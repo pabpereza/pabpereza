@@ -8,7 +8,7 @@ image: power_toys_banner.jpg
 ---
 
 PowerToys es un conjunto de herramientas de productividad de Microsoft para Windows 10 y 11. Incluye una variedad de utilidades diseñadas para mejorar la experiencia del usuario al trabajar con el sistema operativo.
-
+<!-- truncate -->
 ![](power_toys_banner.jpg)
 
 Una de las herramientas más populares de PowerToys es FancyZones, que permite a los usuarios crear zonas personalizadas en su escritorio para organizar sus ventanas. Esto es especialmente útil para aquellos que trabajan con varias aplicaciones al mismo tiempo y necesitan una manera de organizarlas de manera eficiente.

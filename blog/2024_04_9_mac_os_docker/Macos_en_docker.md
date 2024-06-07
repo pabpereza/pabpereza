@@ -9,6 +9,8 @@ image: https://img.youtube.com/vi/Xzz8_r48K74/0.jpg
 # Ejecuta Mac OS en Docker
 Te preguntarás el sentido de ejecutar Mac OS en Docker, la respuesta corta es, why not?, la larga es, para probar aplicaciones, para probar configuraciones, para probar scripts, para probar lo que se te ocurra en macos sin tener un macos y de una forma más cómoda y rápida que una máquina virtual. Veamos como hacerlo.
 
+<!-- truncate -->
+
 [![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/0.jpg)](https://youtu.be/Xzz8_r48K74)
 
 ## Requisitos

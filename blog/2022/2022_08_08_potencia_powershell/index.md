@@ -12,6 +12,7 @@ en ciertos momentos de mi vida
 he llegado a detestarlo.
 Tanto si te encanta powershell
 como si te ves forzado a usarlo, hay que reconocer quees muy mejorable.
+<!-- truncate -->
 
 En el anterior vídeo vimos el proceso de potenciar el terminal en entornos unix y linux mediante
 zsh y oh-my-zsh. [Aquí la entrada al blog y enlace al vídeo](/blog/2021/2021_12_30_potencia_tu_terminal/index.md)
@@ -32,6 +33,4 @@ https://youtu.be/kWIesAUhLAg
 
 
 
-### Todos los comandos del vídeo y enlaces están en la siguiente página:
-**Documentación: [/docs/windows/oh_my_posh/](/docs/Notas/oh_my_posh)**
 

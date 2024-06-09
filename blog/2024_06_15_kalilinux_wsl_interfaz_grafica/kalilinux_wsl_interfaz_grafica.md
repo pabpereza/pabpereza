@@ -12,6 +12,8 @@ En este vídeo, vamos a ver como ejecutar KaliLinux con interfaz gráfica, así 
 
 ¡Hola! Kalilinux es una de las distribuciones de Linux más populares para realizar pruebas de seguridad y hacking ético. En este tutorial vamos a ver cómo instalar Kali Linux en Windows 10/11 con WSL y con la posibilidad de usar la interfaz gráfica, gracias a la herramienta `win-kex`, windows terminal y WSL.
 
+<!-- truncate -->
+
 Dentro vídeo: TODO
 
 

@@ -4,6 +4,7 @@ title: Ejecuta Mac OS en Docker
 tags: [macos, docker]
 authors: pabpereza 
 image: https://img.youtube.com/vi/Xzz8_r48K74/0.jpg
+date: 2024-04-09
 ---
 
 # Ejecuta Mac OS en Docker

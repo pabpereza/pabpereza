@@ -4,6 +4,7 @@ title: Entornos de desarrollo remotos y gratuitos
 tags: [desarrollo, docker, linux, github,aws, gitpod]
 authors: pabpereza
 image: https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
+date: 2024-05-15
 ---
 
 # Entornos de desarrollo remotos y gratuitos 

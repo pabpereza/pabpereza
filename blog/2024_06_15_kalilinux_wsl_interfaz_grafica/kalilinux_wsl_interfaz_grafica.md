@@ -4,8 +4,8 @@ title: Ejecutar Kali Linux en WSL con interfaz gráfica
 tags: [hacking, wsl, linux, windows, virtualización]
 authors: pabpereza
 image: TODO
-date: 2024-06-15
-draft: true
+date: 2024-06-18
+draft: true 
 ---
 
 # Ejecutar Kali Linux en WSL con interfaz gráfica
@@ -25,12 +25,12 @@ Los requisitos para seguir este tutorial:
 * Windows terminal (recomendado para la interfaz gráfica)
 
 Si no tienes habilitado WSL, puedes seguir este tutorial para habilitarlo:
-[![](https://img.youtube.com/vi/p04dRcQh2VM/0.jpg)](https://www.youtube.com/watch?v=p04dRcQh2VM)
+[![](https://img.youtube.com/vi/p04dRcQh2VM/maxresdefault.jpg)](https://www.youtube.com/watch?v=p04dRcQh2VM)
 
 ## Instalar Kali Linux en WSL
 Para instalar Kali Linux en WSL, debemos ir a la tienda de aplicaciones de Windows y buscar Kali Linux. Una vez instalado, lo abrimos y, la primera vez, se nos pedirá un usuario y contraseña.
 
-Ahora, en el terminal de Kalilinux, vamos a instalar el siguiente paquete. `win-kex` el cual nos permitirá ejecutar la interfaz gráfica de Kali Linux en Windows. 
+Ahora, en el terminal de Kalilinux, vamos a instalar el siguiente paquete: `win-kex` que nos permitirá ejecutar la interfaz gráfica de Kali Linux en Windows. 
 
 ```bash
 sudo apt update

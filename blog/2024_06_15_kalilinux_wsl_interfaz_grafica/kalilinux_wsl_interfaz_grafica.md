@@ -4,7 +4,7 @@ title: Ejecutar Kali Linux en WSL con interfaz gráfica
 tags: [hacking, wsl, linux, windows, virtualización]
 authors: pabpereza
 image: https://img.youtube.com/vi/s780W_kCjd8/maxresdefault.jpg
-date: 2024-06-18
+date: 2024-06-16
 ---
 
 # Ejecutar Kali Linux en WSL con interfaz gráfica

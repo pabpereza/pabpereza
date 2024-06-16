@@ -1,10 +1,8 @@
 ---
-slug: kalilinux-wsl-interfaz-grafica
-title: Ejecutar Kali Linux en WSL con interfaz gráfica 
-tags: [hacking, wsl, linux, windows, virtualización]
+slug: especial-5000-subscriptores 
+title: ¡Especial 5000 subscriptores en Youtube! 
+tags: [youtube, comunidad]
 authors: pabpereza
-image: TODO
-date: TODO
 draft: true
 ---
 

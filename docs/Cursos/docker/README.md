@@ -28,7 +28,7 @@ Nivel básico:
 * [Gestión de contenedores](5.Gestion_de_contenedores.md) 
 * [Imágenes de contenedor](6.Imagenes.md) 
 * [Dockerfile y Docker build](7.Dockerfile_dockerbuild.md) 
-* [Entrypoint, argumentos y variables de entorno](8.Entrypoint_argumentos_variables_entorno.md) TODO
+* [Entrypoint, argumentos y variables de entorno](8.Entrypoint_argumentos_variables_entorno.md)
 * [Gestión de imágenes y DockerHub](9.Gestion_imagenes.md) TODO
 * [Tu primera aplicación en Docker](#tu-primera-aplicación) TODO
 * [Volúmenes y copiar archivos](#volumenes-copiar-archivos) TODO

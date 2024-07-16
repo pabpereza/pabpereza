@@ -3,7 +3,8 @@ slug: entornos-remotos-gratuitos
 title: Entornos de desarrollo remotos y gratuitos
 tags: [desarrollo, docker, linux, github,aws, gitpod]
 authors: pabpereza
-image: https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg
+image: https://img.youtube.com/vi/CIZhk8FG0Ng/maxresdefault.jpg
+date: 2024-05-15
 ---
 
 # Entornos de desarrollo remotos y gratuitos 
@@ -18,7 +19,7 @@ Lo único malo es que dependeremos de una conexión a internet, aunque hoy en d�
 Dentro vídeo:
 https://www.youtube.com/watch?v=CIZhk8FG0Ng
 
-[![Entornos de desarrollo remotos y gratuitos](https://img.youtube.com/vi/CIZhk8FG0Ng/0.jpg)](https://www.youtube.com/watch?v=CIZhk8FG0Ng)
+[![Entornos de desarrollo remotos y gratuitos](https://img.youtube.com/vi/CIZhk8FG0Ng/maxresdefault.jpg)](https://www.youtube.com/watch?v=CIZhk8FG0Ng)
 
 # Opciones
 

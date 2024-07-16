@@ -2,7 +2,7 @@
 title: Docker
 ---
 
-# Curso Docker WIP
+# Curso Docker TODO
 
 **¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso!**
 
@@ -25,32 +25,32 @@ Nivel básico:
 * [Instalación y configuración de Docker Desktop](2.Instalacion.md) 
 * [Conceptos básicos de Docker](3.Conceptos_basicos.md)
 * [Ejecutar contenedores](4.Ejecutar_un_contenedor.md)
-* [Gestión de contenedores](5.Gestion_de_contenedores.md)
-* [Imágenes de contenedor](6.Imagenes.md)
-* [Dockerfile y Docker build](7.Dockerfile_dockerbuild.md) WIP
-* [Gestión de imágenes y DockerHub](8.Gestion_imagenes.md) WIP
-* [Entrypoint, argumentos y variables de entorno](9.entrypoint_argumentos_variables_entorno.md) WIP
-* [Tu primera aplicación en Docker](#tu-primera-aplicación) WIP
-* [Volúmenes y copiar archivos](#volumenes-copiar-archivos) WIP
-* [Redes en Docker](#redes-en-docker) WIP
-* [Docker Compose](#docker-compose) WIP
-* [Docker Swarm](#docker-swarm) WIP
-* [Docker con Interfaz y VSCode](#docker-en-producción) WIP
-* [Docker en producción](#docker-en-producción) WIP
+* [Gestión de contenedores](5.Gestion_de_contenedores.md) 
+* [Imágenes de contenedor](6.Imagenes.md) 
+* [Dockerfile y Docker build](7.Dockerfile_dockerbuild.md) 
+* [Entrypoint, argumentos y variables de entorno](8.Entrypoint_argumentos_variables_entorno.md)
+* [Gestión de imágenes y DockerHub](9.Gestion_imagenes.md) TODO
+* [Tu primera aplicación en Docker](#tu-primera-aplicación) TODO
+* [Volúmenes y copiar archivos](#volumenes-copiar-archivos) TODO
+* [Redes en Docker](#redes-en-docker) TODO
+* [Docker Compose](#docker-compose) TODO
+* [Docker Swarm](#docker-swarm) TODO
+* [Docker con Interfaz y VSCode](#docker-en-producción) TODO
+* [Docker en producción](#docker-en-producción) TODO
 
 Intermedio-Avanzado:
-* [Límites y control de recursos](#límites-y-control-de-recursos) WIP
-* [Migra tu aplicación a Docker y microservicios](#migra-tu-aplicación) WIP
-* [Dockerfile: Cache y optimización](#dockerfile-cache) WIP
-* [Dockerfile: Multistage build](#dockerfile-multistage-build) WIP
-* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile-buildkit) WIP
-* [Docker compose avanzado](#docker-compose-avanzado) WIP
+* [Límites y control de recursos](#límites-y-control-de-recursos) TODO
+* [Migra tu aplicación a Docker y microservicios](#migra-tu-aplicación) TODO
+* [Dockerfile: Cache y optimización](#dockerfile-cache) TODO
+* [Dockerfile: Multistage build](#dockerfile-multistage-build) TODO
+* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile-buildkit) TODO
+* [Docker compose avanzado](#docker-compose-avanzado) TODO
 
 Seguridad:
-* [Analizar vulnerabilidades en las imágenes](#seguridad-imágenes) WIP
-* [Usuarios y permisos en Docker](#usuarios-permisos) WIP
-* [Namespaces, cgroups y seccomp](#namespaces-cgroups-seccomp) WIP
-* [Hardening entornos Docker](#hardening-docker) WIP
+* [Analizar vulnerabilidades en las imágenes](#seguridad-imágenes) TODO
+* [Usuarios y permisos en Docker](#usuarios-permisos) TODO
+* [Namespaces, cgroups y seccomp](#namespaces-cgroups-seccomp) TODO
+* [Hardening entornos Docker](#hardening-docker) TODO
 
 
 

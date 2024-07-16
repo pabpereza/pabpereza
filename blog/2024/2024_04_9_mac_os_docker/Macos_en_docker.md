@@ -3,7 +3,8 @@ slug: mac-os-en-docker
 title: Ejecuta Mac OS en Docker
 tags: [macos, docker]
 authors: pabpereza 
-image: https://img.youtube.com/vi/Xzz8_r48K74/0.jpg
+image: https://img.youtube.com/vi/Xzz8_r48K74/maxresdefault.jpg
+date: 2024-04-09
 ---
 
 # Ejecuta Mac OS en Docker
@@ -11,7 +12,7 @@ Te preguntarás el sentido de ejecutar Mac OS en Docker, la respuesta corta es, 
 
 <!-- truncate -->
 
-[![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/0.jpg)](https://youtu.be/Xzz8_r48K74)
+[![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/maxresdefault.jpg)](https://youtu.be/Xzz8_r48K74)
 
 ## Requisitos
 - Docker
@@ -106,4 +107,4 @@ Finalmente, solo quedaría instalar el sistema operativo y configurar MacOS a nu
 
 Te dejo el proceso completo en el vídeo de youtube
 
-[![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/0.jpg)](https://youtu.be/Xzz8_r48K74)
+[![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/maxresdefault.jpg)](https://youtu.be/Xzz8_r48K74)

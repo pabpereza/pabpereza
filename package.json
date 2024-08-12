@@ -16,7 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.4.0",
     "@docusaurus/preset-classic": "^3.4.0",
-    "@docusaurus/theme-mermaid": "^3.4.0",
+    "@docusaurus/theme-mermaid": "^3.5.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.1.1",
     "docusaurus-lunr-search": "^3.4.0",

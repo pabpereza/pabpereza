@@ -43,6 +43,8 @@ Intermedio-Avanzado:
 * [Dockerfile: Multistage build](#dockerfile-multistage-build) TODO
 * [Dockerfile: Buildx y Multiarquitectura ](#dockerfile-buildkit) TODO
 * [Docker compose avanzado](#docker-compose-avanzado) TODO
+* [Redes avanzado](#redes-avanzado) TODO
+
 
 Seguridad:
 * [Analizar vulnerabilidades en las imágenes](#seguridad-imágenes) TODO

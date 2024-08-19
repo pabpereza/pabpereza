@@ -93,7 +93,7 @@ const config = {
             to: '/blog', label: 'Blog', position: 'left'
           },
           {
-            to: 'https://www.youtube.com/@Pabpereza',
+            to: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
             position: 'left',
             label: 'Youtube'
           },

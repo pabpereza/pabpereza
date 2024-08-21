@@ -67,6 +67,9 @@ const config = {
           trackingID: 'G-40PL0BKGD3',
           anonymizeIP: true,
         },
+        googleTagManager: {
+          containerId: 'GTM-T6W3G6DS',
+        },
       }),
 
     ],
@@ -180,7 +183,12 @@ const config = {
           { name: 'twitter:card', content: 'summary'},
           { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
           { name: 'google-adsense-account', content: 'ca-pub-2204030225179360'},
-        ]
+        ],
+        colorMode: {
+          defaultMode: 'light',
+          disableSwitch: false,
+          respectPrefersColorScheme: false,
+         },
       },
       headTags: [
         // Declare a <link> preconnect tag

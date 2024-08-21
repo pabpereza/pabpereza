@@ -64,7 +64,7 @@ const config = {
           customCss: './src/css/custom.css',
         },
         googleTagManager: {
-          containerId: 'GTM-T6W3G6DS',
+          containerId: 'GTM-NBFV5MMS',
         },
         gtag: {
           trackingID: 'G-40PL0BKGD3',

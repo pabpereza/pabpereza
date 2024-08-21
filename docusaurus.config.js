@@ -63,13 +63,14 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        googleTagManager: {
+          containerId: 'GTM-T6W3G6DS',
+        },
         gtag: {
           trackingID: 'G-40PL0BKGD3',
           anonymizeIP: true,
         },
-        googleTagManager: {
-          containerId: 'GTM-T6W3G6DS',
-        },
+
       }),
 
     ],

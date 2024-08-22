@@ -186,7 +186,6 @@ const config = {
           { name: 'google-adsense-account', content: 'ca-pub-2204030225179360'},
         ],
         colorMode: {
-          defaultMode: 'light',
           disableSwitch: false,
           respectPrefersColorScheme: true,
          },

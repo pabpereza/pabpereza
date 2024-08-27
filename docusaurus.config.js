@@ -63,10 +63,14 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        googleTagManager: {
+          containerId: 'GTM-NBFV5MMS',
+        },
         gtag: {
           trackingID: 'G-40PL0BKGD3',
           anonymizeIP: true,
         },
+
       }),
 
     ],
@@ -93,7 +97,7 @@ const config = {
             to: '/blog', label: 'Blog', position: 'left'
           },
           {
-            to: 'https://www.youtube.com/@Pabpereza',
+            to: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
             position: 'left',
             label: 'Youtube'
           },
@@ -180,7 +184,11 @@ const config = {
           { name: 'twitter:card', content: 'summary'},
           { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
           { name: 'google-adsense-account', content: 'ca-pub-2204030225179360'},
-        ]
+        ],
+        colorMode: {
+          disableSwitch: false,
+          respectPrefersColorScheme: false,
+         },
       },
       headTags: [
         // Declare a <link> preconnect tag

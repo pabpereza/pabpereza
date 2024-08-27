@@ -8,24 +8,24 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Últimos vídeos publicados
 <p align=center>
 
+<a href='https://youtu.be/lQoh9gaEvvc' target='_blank'>
+  <img width='19%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/APgKgrcibvs' target='_blank'>
+  <img width='19%' src='https://img.youtube.com/vi/APgKgrcibvs/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/g9YrJATNqCY' target='_blank'>
+  <img width='19%' src='https://img.youtube.com/vi/g9YrJATNqCY/mqdefault.jpg' />
+</a>
+
 <a href='https://youtu.be/5CNQMeYUBPs' target='_blank'>
   <img width='19%' src='https://img.youtube.com/vi/5CNQMeYUBPs/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ZdfpVNRuaJ0' target='_blank'>
   <img width='19%' src='https://img.youtube.com/vi/ZdfpVNRuaJ0/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/bd8EoJbKmwQ' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/bd8EoJbKmwQ/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/s780W_kCjd8' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/s780W_kCjd8/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/A8oXDTDhZWU' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/A8oXDTDhZWU/mqdefault.jpg' />
 </a>
 
 </p>
@@ -38,6 +38,10 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 
 ## Podcast - TECHarlas
 <p align=center>
+
+<a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
+  <img width='19%' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
+</a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
   <img width='19%' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
@@ -53,10 +57,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 
 <a href='https://youtu.be/JP7iyeiK6dg' target='_blank'>
   <img width='19%' src='https://img.youtube.com/vi/JP7iyeiK6dg/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/EBywodEM8TA' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/EBywodEM8TA/mqdefault.jpg' />
 </a>
 
 </p>

@@ -42,7 +42,6 @@ Limitaciones, con una cuenta gratuita, solo podremos hacer uso de 120 horas al m
 
 Ahora ya podrás hacer cualquier cosa, en cualquier dispositivo, aunque sea un móvil o tablet. Te recomiendo sacarle jugo a tu televisor, conectas teclado y ratón y a programar desde el sofá. ¡Es una gozada, aunque la espalda no lo agradezca! 😅
 
-TODO: Recrear meme pulgares con airplay/samsung dex
 
 
 ## Gitpod

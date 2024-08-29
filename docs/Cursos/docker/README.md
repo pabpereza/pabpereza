@@ -32,20 +32,20 @@ Nivel básico:
 * [Gestión de imágenes y DockerHub](9.Gestion_imagenes.md) 
 * [Volúmenes y copiar archivos](10.Volumenes_y_archivos.md)
 * [Redes en Docker](11.Redes.md)
-* [Docker Compose](12.Docker_compose.md) TODO
+* [Docker Compose](12.Docker_compose.md) 
 * [Docker Swarm](13.Docker_swarm.md) TODO
 * [Docker en producción](14.Docker_en_producción.md) TODO
 * [Tu primera aplicación completa](15.Tu_primera_app.md) TODO
 
 Intermedio-Avanzado:
-* [Límites y control de recursos](#límites-y-control-de-recursos) TODO
-* [Migra tu aplicación a Docker y microservicios](#migra-tu-aplicación) TODO
-* [Dockerfile: Cache y optimización](#dockerfile-cache) TODO
-* [Dockerfile: Multistage build](#dockerfile-multistage-build) TODO
-* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile-buildkit) TODO
-* [Docker compose avanzado](#docker compose-avanzado) TODO
-* [Redes avanzado](#redes-avanzado) TODO
-* [Volumes avanzado](#volumes-avanzado) TODO
+* [Límites y control de recursos](#límites_y_control_de_recursos) TODO
+* [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicación) TODO
+* [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
+* [Dockerfile: Multistage build](#dockerfile_multistage_build) TODO
+* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
+* [Docker compose avanzado](#docker_compose_avanzado) TODO
+* [Redes avanzado](#redes_avanzado) TODO
+* [Volumes avanzado](#volumes_avanzado) TODO
 
 
 Seguridad:

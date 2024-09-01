@@ -3,7 +3,6 @@ slug: instalacion_kubernetes_ubuntu_server_22.04
 title: Instalación de Kubernetes en Ubuntu Server 22.04 LTS 
 tags: [kubernetes, ubuntu]
 authors: pabpereza
-draft: true
 ---
 
 Minimum requirements for practice. 

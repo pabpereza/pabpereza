@@ -187,7 +187,7 @@ const config = {
         ],
         colorMode: {
           disableSwitch: false,
-          respectPrefersColorScheme: false,
+          respectPrefersColorScheme: true,
          },
       },
       headTags: [

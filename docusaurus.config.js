@@ -85,8 +85,6 @@ const config = {
         sidebar: {
           hideable: true,
           autoCollapseCategories: true,
-          collapsed: false
-        }
       },
       navbar: {
         title: 'PPZ - Pabpereza',

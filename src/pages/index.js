@@ -42,8 +42,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello there! - ${siteConfig.title}`}
-      description="Seguridad, DevOps, programación, docker, kubernetes y mucho más">
+      title={`Hello there! - DevOps, seguridad y programación`}
+      description="DevOps, seguridad, programación, docker, kubernetes, sre y mucho más">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

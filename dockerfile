@@ -1,5 +1,5 @@
 # Usar una imagen base de Node.js
-FROM node:18
+FROM node:18 as builder
 
 # Establecer el directorio de trabajo
 WORKDIR /app
@@ -16,8 +16,15 @@ COPY . .
 # Construir el sitio de Docusaurus
 RUN yarn build
 
-# Exponer el puerto en el que la aplicación se ejecuta
-EXPOSE 3000
+RUN ls -la
 
-# Definir el comando para iniciar la aplicación
-CMD ["npm", "run", "serve"]
+# Usar una imagen base de Nginx para servir el sitio estático
+FROM nginx:alpine
+
+# Copiar el sitio estático al contenedor de Nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Exponer el puerto 80
+EXPOSE 80
+
+

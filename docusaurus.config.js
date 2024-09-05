@@ -92,7 +92,7 @@ const config = {
         hideOnScroll: true,
         items: [
           {
-            to: '/docs', label: 'Cursos', position: 'left'
+            to: '/docs/cursos', label: 'Cursos', position: 'left'
           },
           {
             to: '/blog', label: 'Blog', position: 'left'
@@ -142,7 +142,7 @@ const config = {
             items: [
               {
                 label: 'Cursos',
-                to: '/docs',
+                to: '/docs/cursos',
               },
             ],
           },

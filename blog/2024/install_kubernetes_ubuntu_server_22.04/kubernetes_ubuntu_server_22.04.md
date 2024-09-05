@@ -16,6 +16,8 @@ Minimum requirements for practice.
 | Master | k8s-master | 4GB Ram, 2vcpus |
 | Worker | k8s-worker | 4GB Ram, 2vcpus |
 
+<!-- truncate -->
+
 ## 1. Assembly and update of machines
 
 We need to prepare the virtual machines in our favorite hypervisor (virtualbox, vmware, hyper-v, parallels...).

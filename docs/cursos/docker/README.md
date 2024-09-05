@@ -20,7 +20,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 ## Índice
 También puedes ver este contenido más cómodamente desde mi página web, [pabpereza.dev - Curso Docker:](https://pabpereza.dev/docs/cursos/)
 
-Nivel básico:
+### Nivel básico:
 * [Introducción a Docker](101.Introduccion.md)
 * [Instalación y configuración de Docker Desktop](102.Instalacion.md) 
 * [Conceptos básicos de Docker](103.Conceptos_basicos.md)
@@ -37,7 +37,7 @@ Nivel básico:
 * [Tu primera aplicación completa](114.Tu_primera_app.md) TODO
 * [Docker en producción](115.Docker_en_produccion.md) TODO
 
-Intermedio-Avanzado:
+### Intermedio-Avanzado:
 * [Límites y control de recursos](#límites_y_control_de_recursos) TODO
 * [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicación) TODO
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
@@ -48,7 +48,7 @@ Intermedio-Avanzado:
 * [Volumes avanzado](#volumes_avanzado) TODO
 
 
-Seguridad:
+### Seguridad:
 * [Analizar vulnerabilidades en las imágenes](#seguridad-imágenes) TODO
 * [Usuarios y permisos en Docker](#usuarios-permisos) TODO
 * [Namespaces, cgroups y seccomp](#namespaces-cgroups-seccomp) TODO

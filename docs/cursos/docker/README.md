@@ -33,7 +33,7 @@ Nivel básico:
 * [Volúmenes y copiar archivos](110.Volumenes_y_archivos.md)
 * [Redes en Docker](111.Redes.md)
 * [Docker Compose](112.Docker_compose.md) 
-* [Docker Swarm](113.Docker_swarm.md) TODO
+* [Docker Swarm](113.Docker_swarm.md) 
 * [Tu primera aplicación completa](114.Tu_primera_app.md) TODO
 * [Docker en producción](115.Docker_en_produccion.md) TODO
 

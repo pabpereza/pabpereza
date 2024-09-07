@@ -18,7 +18,12 @@ Puede ser que me este poniendo muy sentimental y, seguramente no sea para tanto,
 
 De verdad, ¡GRACIAS!. Parece una tontería, pero cada comentario que he recibido, cada bonita palabra de ánimo, dudas, críticas constructivas... etc. me han ayudado a seguir adelante, a mejorar y a crecer.
 
-Eso y el cachondeo de algunos por TikTok y otras redes (por cierto, en TikTok, empecé hace poco y ya somos 2500 personas), en los cuales me comparáis con John Lennon o Guinxu (un youtuber de desarrollo de videojuegos que me encanta), y si, parezco su versión más vieja pedazo de c***** jajaja.
+Eso y el cachondeo de algunos por TikTok y otras redes (por cierto, en TikTok, empecé hace poco y ya somos más de 2500 personas), en los cuales me comparáis con John Lennon o Guinxu (un youtuber de desarrollo de videojuegos que me encanta), y si, parezco su versión más vieja pedazo de c***** jajaja.
+
+![](cap1.png)
+![](cap2.png)
+![](cap3.png)
+
 
 
 ## ¿Qué viene ahora?
@@ -27,17 +32,6 @@ Si que quiero interaccionar más con la comunidad, estoy haciendo más vídeos c
 Por otra parte, aún estoy terminando el curso de Docker y me gustaría más adelante hacer más vídeos hablando de kubernetes. Tengo muchas ideas, muchas sugerencias pero poco tiempo para llevarlas a cabo.
 
 He sido padre recientemente y mi tiempo ahora es más limitado, aunque se aprende, a la fuerza eso si jeje, a gestionarlo mejor. Aún así, quiero seguir subiendo un vídeo largo semanal, shorts a discreción y algún podcast cada 3 o 4 meses. Sin presiones pero con cierta constancia.
-
-## Ingresos y monetización del canal
-No creé el canal con el fin último de generar dinero, aunque si llegara el momento de poder generar unos ingresos recurrentes que me permitiera dedicar más tiempo a la creación de contenido y a la divulgación, trataría de reinvertirlo en mejorar la calidad y cantidad del contenido.
-
-Ahora sí, por si alguno se lo pregunta, llevo cumpliendo las políticas de youtube para monetizar unos 3 o 4 meses y los ingresos rondan entre 10-15€. Menos es nada. Ese poco dinero lo estoy utilizando en publicidad dentro de youtube para promocionar algunos vídeos y poder llegar a más gente.
-
-Fuera de eso, no tengo patrocinadores, ni colaboraciones, ni nada por el estilo. No me cierro a ello. Pero recalco este punto para que quede claro mi imparcialidad y mi independencia a la hora de hablar de tecnología.
-
-
-## Mi setup y como grabo los vídeos
-Esto se vé mejor en el vídeo.
 
 
 ## Dudas más comunes

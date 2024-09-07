@@ -22,10 +22,10 @@ Pabpereza puede incluir enlaces a servicios y sitios web de terceros que tambié
 
 El usuario tiene la opción de permitir, bloquear o eliminar las cookies instaladas en su dispositivo mediante la configuración de las opciones del navegador web que esté utilizando. A continuación, se facilitan enlaces a las instrucciones de los navegadores más comunes:
 
-	•	Google Chrome: Enlace a instrucciones
-	•	Mozilla Firefox: Enlace a instrucciones
-	•	Safari: Enlace a instrucciones
-	•	Microsoft Edge: Enlace a instrucciones
+	•	Google Chrome: [Enlace a instrucciones](https://support.google.com/chrome/answer/95647?hl=es) 
+	•	Mozilla Firefox: [Enlace a instrucciones](https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias) 
+	•	Safari: [Enlace a instrucciones](https://support.apple.com/es-es/guide/safari/sfri11471/mac) 
+	•	Microsoft Edge: [Enlace a instrucciones](https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) 
 
 5. Aceptación de la Política de Cookies
 

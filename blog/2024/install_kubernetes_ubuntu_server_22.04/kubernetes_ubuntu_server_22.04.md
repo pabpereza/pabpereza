@@ -6,6 +6,13 @@ authors: pabpereza
 date: 2024-09-01
 ---
 
+
+[![Instalación de Kubernetes en Ubuntu Server 22.04 LTS](https://img.youtube.com/vi/y_c_tPXusqM/maxresdefault.jpg)](https://www.youtube.com/watch?v=y_c_tPXusqM)
+
+
+
+<!-- truncate -->
+
 Minimum requirements for practice. 
 
 **⚠️ It is highly recommended to assign fixed IPs to the machines.**
@@ -16,7 +23,6 @@ Minimum requirements for practice.
 | Master | k8s-master | 4GB Ram, 2vcpus |
 | Worker | k8s-worker | 4GB Ram, 2vcpus |
 
-<!-- truncate -->
 
 ## 1. Assembly and update of machines
 

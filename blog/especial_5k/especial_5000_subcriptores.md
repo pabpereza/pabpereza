@@ -3,11 +3,16 @@ slug: especial-5000-subscriptores
 title: ¡Especial 5000 subscriptores en Youtube! 
 tags: [youtube, comunidad]
 authors: pabpereza
-draft: true
+date: 2024-09-07
+image: 5k.jpeg
 ---
 
 # ¡Especial 5000 subscriptores en Youtube!
 ¡Wow! ¡5000 subscriptores en Youtube! No me lo puedo creer. Francamente, cuando empecé a subir vídeos a Youtube no tenía ningún tipo de pretensión. Quería hablar de aquellas cosas que me gustan, que me apasionan y que me divierten. 
+
+![](5k.jpeg)
+
+<!-- truncate -->
 
 Con el tiempo, he ido mejorando la calidad de los vídeos, el contenido y la forma de presentarlo aunque llegado a este punto, una parte de la ilusión inicial se ha transformado en la responsabilidad de ser constante, riguroso y disciplinado. Este reto personal, me ha llevado a aprender mucho, a investigar y a profundizar en temas que de otra forma, no hubiera hecho.
 

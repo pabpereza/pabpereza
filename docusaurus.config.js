@@ -150,7 +150,7 @@ const config = {
             title: 'Legal',
             items: [
               {
-                label: 'Pol´tica de privacidad',
+                label: 'Política de privacidad',
                 to: '/privacidad',
               },
               {

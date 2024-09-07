@@ -38,8 +38,8 @@ Nivel básico:
 * [Docker en producción](115.Docker_en_produccion.md) TODO
 
 Intermedio-Avanzado:
-* [Límites y control de recursos](#límites_y_control_de_recursos) TODO
-* [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicación) TODO
+* [Límites y control de recursos](#limites_y_control_de_recursos) TODO
+* [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicacion) TODO
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
 * [Dockerfile: Multistage build](#dockerfile_multistage_build) TODO
 * [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
@@ -49,7 +49,7 @@ Intermedio-Avanzado:
 
 
 Seguridad:
-* [Analizar vulnerabilidades en las imágenes](#seguridad-imágenes) TODO
+* [Analizar vulnerabilidades en las imágenes](#seguridad-imagenes) TODO
 * [Usuarios y permisos en Docker](#usuarios-permisos) TODO
 * [Namespaces, cgroups y seccomp](#namespaces-cgroups-seccomp) TODO
 * [Hardening entornos Docker](#hardening-docker) TODO

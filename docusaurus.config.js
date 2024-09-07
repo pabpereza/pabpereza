@@ -147,6 +147,23 @@ const config = {
             ],
           },
           {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Pol´tica de privacidad',
+                to: '/privacidad',
+              },
+              {
+                label: 'Polítiva de cookies',
+                to: '/cookies',
+              },
+              {
+                label: 'Aviso legal',
+                to: '/aviso-legal',
+              },
+            ],
+          },
+          {
             title: 'Community',
             items: [
               {

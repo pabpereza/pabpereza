@@ -23,7 +23,7 @@ function Video({videoid, title,description }) {
           </div>
           <div className="text--center padding-horiz--md">
             <Heading as="h3" >{title}...</Heading>
-            <p>{description}...</p>
+             {/* <p>{description}...</p> */}
           </div>
         </a>
     </div>

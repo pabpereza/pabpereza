@@ -27,6 +27,7 @@
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 1rem;
+    font-weight: 500;
   
   }
   .videos p {
@@ -43,10 +44,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
   }
   
-  .featureImg img {
+  .videos img {
     width: 100%;
     height: auto;
     object-fit: cover; /* Escalar la imagen para que cubra todo el contenedor */
+    border-radius: 10px;
   }
   
   

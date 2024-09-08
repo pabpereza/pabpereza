@@ -20,8 +20,6 @@ jobs:
             python-version: 3.10.14
     
         - name: Run script
-          env:
-            YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           run: |
             python src/workflows/readme.py
             git config user.name pabpereza 

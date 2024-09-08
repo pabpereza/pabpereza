@@ -34,7 +34,7 @@ function Video({videoid, title,description }) {
 export default function LastVideos( YOUTUBE_API_KEY) {
  
   return (
-    <section className={styles.features}>
+    <section className={styles.videos}>
       <div className="container">
         <h2>Últimos vídeos de Youtube</h2>
         <p></p>

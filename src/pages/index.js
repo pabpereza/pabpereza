@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import SocialIconsRow from '@site/src/components/Social';
+import LatestVideos from '@site/src/components/LatestVideos';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -46,6 +47,9 @@ export default function Home() {
       description="DevOps, seguridad, programación, docker, kubernetes, sre y mucho más">
       <HomepageHeader />
       <main>
+        <LatestVideos
+         youtubeAPIKey={siteConfig.customFields.youtubeAPIKey}
+        />
         <HomepageFeatures />
         <SocialIconsRow /> 
       </main>

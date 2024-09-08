@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import 'dotenv/config';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,6 +24,11 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'pabpereza', // Usually your GitHub org/user name.
   projectName: 'pabpereza', // Usually your repo name.
+
+  // ENV Variables
+  customFields: {
+    youtubeAPIKey: process.env.YOUTUBE_API_KEY,
+  },
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

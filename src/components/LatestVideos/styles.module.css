@@ -2,7 +2,7 @@
 .features {
     display: flex;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     width: 100%;
     color: white;
   }
@@ -18,11 +18,17 @@
   
   }
   
+  .features h3 {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  
+  }
   .features p {
-    margin: 0rem 5rem auto;
+    margin: 0rem 0rem auto;
     text-align: center;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .featureImg {
@@ -47,7 +53,7 @@
       margin: 0 3rem auto;
       text-align: center;
       color: white;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     
   } 
@@ -59,7 +65,7 @@
       margin: 0 1rem auto;
       text-align: center;
       color: white;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   
      

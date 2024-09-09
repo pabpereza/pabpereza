@@ -98,7 +98,7 @@ const config = {
         hideOnScroll: true,
         items: [
           {
-            to: '/about_me', label: 'Sobre mi', position: 'left'
+            to: '/about_me', label: 'Sobre mí', position: 'left'
           },
           {
             to: '/docs/cursos', label: 'Cursos', position: 'left'

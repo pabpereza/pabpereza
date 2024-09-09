@@ -208,10 +208,10 @@ html.plugin-pages nav {
   font-weight: 600;
 }
 
-.plugin-pages nav a:hover {
+.plugin-pages a:hover {
   color: rgb(36, 36, 36);
 }
 
-.plugin-pages nav a:hover::before {
+.plugin-pages a:hover::before {
   background-color: rgb(36, 36, 36);
 }

@@ -1,0 +1,17 @@
+/* Header */
+header {
+	text-align: center;
+	display: inline-block;
+}
+
+.profileSection {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+.profileSection div {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+}

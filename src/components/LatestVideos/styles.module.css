@@ -11,9 +11,9 @@
   .videos a:hover {
     --ifm-link-hover-color: #e5adfa;
   }
-    
-  a {
-    all: unset;
+  
+  a:hover {
+    text-decoration: none;
   }
 
   .videos h2 {

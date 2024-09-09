@@ -207,3 +207,11 @@ html.plugin-pages nav {
   color: rgb(36, 36, 36);
   font-weight: 600;
 }
+
+.plugin-pages nav a:hover {
+  color: rgb(36, 36, 36);
+}
+
+.plugin-pages nav a:hover::before {
+  background-color: rgb(36, 36, 36);
+}

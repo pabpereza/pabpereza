@@ -1,8 +1,8 @@
 ---
 date: 2023-3-07
-title: Gitleaks, detecta secretos en tu repositorio de git 
-slug: gitleaks_secretos_git_repositorio_detectar 
-tags: [git,seguridad]
+title: Diagramas com código 
+slug: diagramas-como-codigo 
+tags: [devops]
 authors: pabpereza
 image: https://img.youtube.com/vi/Gvt0iRxg99I/maxresdefault.jpg
 ---

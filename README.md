@@ -6,29 +6,34 @@
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 
 
 ## Últimos vídeos publicados
-<p align=center>
+<div align=center style="display: inline-block">
+    <div width='20%'>
+      <a href='https://youtu.be/bvUZuANQdhI' target='_blank'>
+        <img width='100%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
+      </a>
+    </div> 
+    <div width='20%'>
+      <a href='https://youtu.be/oR0nBx5C9DM' target='_blank'>
+        <img width='100%' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
+      </a>
+    </div> 
+    <div width='20%'>
+      <a href='https://youtu.be/lQoh9gaEvvc' target='_blank'>
+        <img width='100%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
+      </a>
+    </div> 
+    <div width='20%'>
+    <a href='https://youtu.be/APgKgrcibvs' target='_blank'>
+      <img width='100%' src='https://img.youtube.com/vi/APgKgrcibvs/mqdefault.jpg' />
+    </a>
+    </div>
+    <div width='20%'>
+      <a href='https://youtu.be/g9YrJATNqCY' target='_blank'>
+        <img width='100%' src='https://img.youtube.com/vi/g9YrJATNqCY/mqdefault.jpg' />
+      </a>
+    </div> 
+</div>
 
-<a href='https://youtu.be/bvUZuANQdhI' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/oR0nBx5C9DM' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/lQoh9gaEvvc' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/APgKgrcibvs' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/APgKgrcibvs/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/g9YrJATNqCY' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/g9YrJATNqCY/mqdefault.jpg' />
-</a>
-
-</p>
 
 ## Mis cursos gratuitos 
 | 🎓 Cursos | 🎥 Youtube | 🔗 Enlace Web | 🛠️ GitHub | 

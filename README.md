@@ -6,7 +6,7 @@
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 
 
 ## Últimos vídeos publicados
-<p align=center>
+<div align=center style="display: inline-block">
 
 <a href='https://youtu.be/bvUZuANQdhI' target='_blank'>
   <img width='19%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
@@ -28,7 +28,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
   <img width='19%' src='https://img.youtube.com/vi/g9YrJATNqCY/mqdefault.jpg' />
 </a>
 
-</p>
+</div>
 
 ## Mis cursos gratuitos 
 | 🎓 Cursos | 🎥 Youtube | 🔗 Enlace Web | 🛠️ GitHub | 

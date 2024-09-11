@@ -9,15 +9,15 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 <p align=center>
 
 <a href='https://youtu.be/bvUZuANQdhI' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/oR0nBx5C9DM' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/lQoh9gaEvvc' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
 </a>
 
 </p>
@@ -29,18 +29,18 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 
 
 ## Podcast - TECHarlas
-<p align=center width='100%'>
+<p align=center>
 
 <a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/csNytM7XFz4' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
 </a>
 
 </p>

@@ -3,7 +3,7 @@ slug: Tu propio registry privado
 title: Registros de contenedores y alternativas a Dockerhub 
 tags: [ contenedores]
 authors: pabpereza
-draft: true
+date: 2024-09-12
 ---
 
 

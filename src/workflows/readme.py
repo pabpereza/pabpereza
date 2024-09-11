@@ -11,7 +11,7 @@ def get_latest_youtube_videos(videos='videos'):
 def generate_youtube_html( video_id):
   return f"""
 <a href='https://youtu.be/{video_id}' target='_blank'>
-  <img width='100%' src='https://img.youtube.com/vi/{video_id}/mqdefault.jpg' />
+  <img height='140px' src='https://img.youtube.com/vi/{video_id}/mqdefault.jpg' />
 </a>
 """
 

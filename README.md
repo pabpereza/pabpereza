@@ -6,59 +6,21 @@
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 
 
 ## Últimos vídeos publicados
-<div align=center style="display: inline-block">
-<<<<<<< HEAD
+<p align=center>
 
 <a href='https://youtu.be/bvUZuANQdhI' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
+  <img width='100%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/oR0nBx5C9DM' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
+  <img width='100%' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/lQoh9gaEvvc' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
+  <img width='100%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
 </a>
 
-<a href='https://youtu.be/APgKgrcibvs' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/APgKgrcibvs/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/g9YrJATNqCY' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/g9YrJATNqCY/mqdefault.jpg' />
-</a>
-
-</div>
-=======
-    <div width='20%'>
-      <a href='https://youtu.be/bvUZuANQdhI' target='_blank'>
-        <img width='100%' src='https://img.youtube.com/vi/bvUZuANQdhI/mqdefault.jpg' />
-      </a>
-    </div> 
-    <div width='20%'>
-      <a href='https://youtu.be/oR0nBx5C9DM' target='_blank'>
-        <img width='100%' src='https://img.youtube.com/vi/oR0nBx5C9DM/mqdefault.jpg' />
-      </a>
-    </div> 
-    <div width='20%'>
-      <a href='https://youtu.be/lQoh9gaEvvc' target='_blank'>
-        <img width='100%' src='https://img.youtube.com/vi/lQoh9gaEvvc/mqdefault.jpg' />
-      </a>
-    </div> 
-    <div width='20%'>
-    <a href='https://youtu.be/APgKgrcibvs' target='_blank'>
-      <img width='100%' src='https://img.youtube.com/vi/APgKgrcibvs/mqdefault.jpg' />
-    </a>
-    </div>
-    <div width='20%'>
-      <a href='https://youtu.be/g9YrJATNqCY' target='_blank'>
-        <img width='100%' src='https://img.youtube.com/vi/g9YrJATNqCY/mqdefault.jpg' />
-      </a>
-    </div> 
-</div>
-
->>>>>>> 79e2c0aba4859651b588767a87d1dbeefbd5b3ac
+</p>
 
 ## Mis cursos gratuitos 
 | 🎓 Cursos | 🎥 Youtube | 🔗 Enlace Web | 🛠️ GitHub | 
@@ -70,23 +32,15 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 <p align=center>
 
 <a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
+  <img width='100%' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
+  <img width='100%' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/csNytM7XFz4' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/y_c_tPXusqM' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/y_c_tPXusqM/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/JP7iyeiK6dg' target='_blank'>
-  <img width='19%' src='https://img.youtube.com/vi/JP7iyeiK6dg/mqdefault.jpg' />
+  <img width='100%' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
 </a>
 
 </p>

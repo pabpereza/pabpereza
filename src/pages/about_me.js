@@ -17,10 +17,12 @@ function AboutmePage() {
                 <div className={styles.profileSection}>
                     <img src="img/perfil-2024-transparent.png" alt="sample"></img> 
                 </div>
-                <div class={styles.profileSection}>
+                <div className={styles.profileSection}>
                     <h1>Pablo Pérez-Aradros</h1>
-                    <h3>REALLY AWESOME WEB DESIGNER</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in.</p>
+                    <h3>Divulgador y eterno aprendiz</h3>
+                    <p>Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web.</p>
+
+                    <p>Actualmente trabajo en el equipo CISO como SecDevOps en el Banco Santander (concretamente en CIB). Si quieres conocer con más detalle mi carrera profesional te recomiendo visitar mi <a href='https://www.linkedin.com/in/pabpereza/' >LinkedIN</a></p>`
                 </div>
             </div>
         </header>

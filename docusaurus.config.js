@@ -122,7 +122,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://www.linkedin.com/in/pablo-p%C3%A9rez-aradros-calvo-516634109/',
+            href: 'https://www.linkedin.com/in/pabpereza/',
             className: 'header-linkedin-link',
             position: 'right',
           },

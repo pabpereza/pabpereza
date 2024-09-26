@@ -16,9 +16,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 **Apoya este contenido gratuito dejando una estrella a este repositorio y suscribiéndote a mi canal de Youtube.**
 
-
 ## Índice
-También puedes ver este contenido más cómodamente desde mi página web, [pabpereza.dev - Curso Docker:](https://pabpereza.dev/docs/cursos/)
 
 ### Nivel básico:
 * [Introducción a Docker](101.Introduccion.md)

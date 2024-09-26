@@ -16,7 +16,7 @@
 
 .features p {
   margin: 0rem 5rem auto;
-  text-align: center;
+  text-align: justify;
   color: white;
   margin-bottom: 2rem;
 }
@@ -41,7 +41,7 @@
 
   .features p {
     margin: 0 3rem auto;
-    text-align: center;
+    text-align: justify;
     color: white;
     margin-bottom: 2rem;
   }

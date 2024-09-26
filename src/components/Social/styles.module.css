@@ -13,7 +13,7 @@
 
 .socialsection p {
   margin: 0 5rem auto;
-  text-align: center;
+  text-align: justify;
   color: white;
 }
 
@@ -61,7 +61,7 @@
 
   .socialsection p {
     margin: 0 3rem auto;
-    text-align: center;
+    text-align: justify;
     color: white;
   }
   
@@ -76,7 +76,7 @@
   }
   .socialsection p {
     margin: 0 1rem auto;
-    text-align: center;
+    text-align: justify;
     color: white;
   }
    

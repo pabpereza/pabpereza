@@ -13,18 +13,31 @@ function AboutmePage() {
     const { siteConfig } = useDocusaurusContext();
     return (
         <header>
-            <div className={styles.profileSection}>
-                <div className={styles.profileSection}>
+            <div className={styles.row}>
+                <div className={styles.col4}>
                     <img src="img/perfil-2024-transparent.png" alt="sample"></img> 
                 </div>
-                <div className={styles.profileSection}>
+                <div className={styles.col8}>
                     <h1>Pablo Pérez-Aradros</h1>
                     <h3>Divulgador y eterno aprendiz</h3>
-                    <p>Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web.</p>
+                    <p>Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la divulgación, a través de mi canal de youtube y mi página web. Siempre he pensado que la mejor forma de aprender es enseñando a los demás. Para mí, todo esto es un ejercicio de autoformación.</p>
 
-                    <p>Actualmente trabajo en el equipo CISO como SecDevOps en el Banco Santander (concretamente en CIB). Si quieres conocer con más detalle mi carrera profesional te recomiendo visitar mi <a href='https://www.linkedin.com/in/pabpereza/' >LinkedIN</a></p>`
+                    <p>Actualmente trabajo en el equipo CISO del Banco Santander (concretamente en CIB). Si quieres conocer con más detalle mi carrera profesional te recomiendo visitar mi <a href='https://www.linkedin.com/in/pabpereza/' target="_blank" >LinkedIN.</a></p>
                 </div>
             </div>
+            <div className={styles.row}>
+                    <div className={styles.col8}>
+                        <h1>Evolución</h1>
+                        <h3>Tecnología y pasión</h3>
+                        <p>Empecé en el mundillo como desarrollador web, luego me cambié hacking ético y, finalmente, los contenedores me enamoraron permitiéndome descubrir la parte DevOps. Sin declinarme por ninguna opción, he aprovechado todo este cocktail para dedicarme al mundo del DevSecOps, en el cual, puedo combinar todas mis pasiones.</p>
+
+                        <p>Por otra parte, este nicho (cuanto menos cambiante), requiere una formación e investigación continua, reto que disfruto y agradezco. Nada como aprender y "cacharrear" con nuevas tecnologías. </p>
+                    </div>
+                    <div className={styles.col4}>
+                        <img src="img/portal_tech.png" alt="sample"></img> 
+                    </div>
+                </div>
+
         </header>
     );
 }

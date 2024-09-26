@@ -1,6 +1,6 @@
 ---
 title: Docker
-image: img/banner_docker.png
+image: https://pabpereza.dev/img/banner_docker.png
 ---
 
 # Curso Docker

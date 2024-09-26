@@ -1,5 +1,6 @@
 ---
 title: Docker
+image: img/banner_docker.png
 ---
 
 # Curso Docker

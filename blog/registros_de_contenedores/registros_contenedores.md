@@ -4,6 +4,7 @@ title: Registros de contenedores y alternativas a Dockerhub
 tags: [ contenedores]
 authors: pabpereza
 date: 2024-09-12
+
 ---
 
 
@@ -29,6 +30,7 @@ Estos son los requisitos mínimos y recomendados, se puede instalar tanto en un 
 | Mem      | 4 GB    | 8 GB        |
 | Disk     | 40 GB   | 160 GB      |
 
+<!-- truncate -->
 
 Para este primer vídeo, vamos a instalar Harbor en un servidor físico con los siguientes requisitos. La distribución de Linux es indiferente mientras soporte Docker Engine.
 * Docker Engine

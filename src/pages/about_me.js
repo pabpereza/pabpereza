@@ -18,7 +18,7 @@ function AboutmePage() {
                     <img src="img/perfil-2024-transparent.png" alt="sample"></img> 
                 </div>
                 <div className={styles.col8}>
-                    <h1>Pablo Pérez-Aradros</h1>
+                    <h2>Pablo Pérez-Aradros</h2>
                     <h3>Divulgador y eterno aprendiz</h3>
                     <p>Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la divulgación, a través de mi canal de youtube y mi página web. Siempre he pensado que la mejor forma de aprender es enseñando a los demás. Para mí, todo esto es un ejercicio de autoformación.</p>
 
@@ -27,7 +27,7 @@ function AboutmePage() {
             </div>
             <div className={styles.row}>
                     <div className={styles.col8}>
-                        <h1>Evolución</h1>
+                        <h2>Evolución</h2>
                         <h3>Tecnología y pasión</h3>
                         <p>Empecé en el mundillo como desarrollador web, luego me cambié hacking ético y, finalmente, los contenedores me enamoraron permitiéndome descubrir la parte DevOps. Sin declinarme por ninguna opción, he aprovechado todo este cocktail para dedicarme al mundo del DevSecOps, en el cual, puedo combinar todas mis pasiones.</p>
 

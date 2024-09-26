@@ -1,12 +1,12 @@
 .socialsection {
   display: block;
   align-items: center;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .socialsection h2 {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   color: white;
 }
@@ -65,6 +65,18 @@
     color: white;
   }
   
+  .socialsection {
+    display: block;
+    align-items: center;
+    padding: 1em 0;
+  }
+  
+  .socialsection h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
 } 
 
 
@@ -79,5 +91,18 @@
     text-align: justify;
     color: white;
   }
+  .socialsection h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  .socialsection {
+    display: block;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+
    
 } 

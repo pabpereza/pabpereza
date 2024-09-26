@@ -4,6 +4,17 @@ html {
 	background-image: (url("/img/fondo.jpg")); ;
 }	
 
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.2em;
+}
 
 header {
 	text-align: center;
@@ -14,10 +25,19 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2.5em;
+	width: 100%;
+	margin: auto;
 }
 
 .col8 {
 	text-align: justify;
+}
+
+@media screen and (min-width: 1300px) {
+    .row {
+        max-width: 1300px;
+		padding: 0em;
+    }
 }
 
 @media (min-width: 992px) {

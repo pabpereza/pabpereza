@@ -1,5 +1,5 @@
 ---
-slug: hadolint-verificar-mejorar-dockerfile
+slug: verifica_mejora_dockerfiles 
 title: Verifica y mejora tus dockerfiles 
 tags: [ dockerfile, docker, contenedores]
 authors: pabpereza

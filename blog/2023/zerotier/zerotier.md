@@ -14,6 +14,8 @@ date: 2023-01-19
 
 ZeroTier es una herramienta de red definida por software (SDN, por sus siglas en inglés) que permite crear redes virtuales seguras, privadas y fáciles de configurar. Funciona como una VPN (Red Privada Virtual), pero con mayor flexibilidad y simplicidad en la configuración. ZeroTier permite conectar dispositivos en diferentes ubicaciones físicas como si estuvieran en la misma red local (LAN), lo que facilita la comunicación entre ellos sin la necesidad de complicadas configuraciones de firewall, NAT o túneles.
 
+<!-- truncate -->
+
 Algunas de las principales características de ZeroTier incluyen:
 
 - **Cifrado extremo a extremo**: Toda la comunicación está cifrada con estándares de alta seguridad.

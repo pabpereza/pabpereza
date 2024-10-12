@@ -1,7 +1,6 @@
 ![](./static/img/banner_github.jpg)
 
 
-
 # Hello there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
 
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 
@@ -32,16 +31,16 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Podcast - TECHarlas
 <p align=center>
 
-<a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
+<a href='https://youtu.be/csNytM7XFz4' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/JP7iyeiK6dg' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/JP7iyeiK6dg/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/csNytM7XFz4' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
 </a>
 
 </p>

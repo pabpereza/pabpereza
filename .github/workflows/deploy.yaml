@@ -10,11 +10,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
+      - name: Login to DockerHub
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u pabpereza --password-stdin
       - uses: docker/build-push-action@master
         with:
           context: .
           push: true
-          tags: pabpereza/pabpereza:latestk
+          tags: pabpereza/pabpereza:latest
   deploy:
     name: Deploy on linux ssh server 
     needs: build

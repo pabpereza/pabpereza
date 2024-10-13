@@ -18,5 +18,5 @@ jobs:
           git pull
           docker build . -t pabpereza/pabpereza:latest
           docker rm -f pabpereza || true
-          docker run -d --name pabpereza/pabpereza:latest
+          docker run -d --name pabpereza pabpereza/pabpereza:latest
           docker network connect web pabpereza

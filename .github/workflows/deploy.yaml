@@ -5,21 +5,25 @@ on:
       - main
 jobs:
   build:
-    name: Build and push Docker images 
-    uses: docker/build-push-action@v6.9.0
-    with:
-      context: .
-      push: true
-      tags: pabpereza/pabpereza:latestk
+    name: Build and push Docker images
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/build-push-action@master
+        with:
+          context: .
+          push: true
+          tags: pabpereza/pabpereza:latestk
   deploy:
     name: Deploy on linux ssh server 
     needs: build
-    uses: appleboy/ssh-action@master
-    with:
-      host: ${{ secrets.SSH_HOST }}
-      username: ${{ secrets.SSH_USER }}
-      key: ${{ secrets.SSH_KEY }}
-      script: |
-        docker pull pabpereza/pabpereza:latest
-        docker rm -f pabpereza || true
-        docker run -d pabpereza/pabpereza:latest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          docker pull pabpereza/pabpereza:latest
+          docker rm -f pabpereza || true
+          docker run -d pabpereza/pabpereza:latest

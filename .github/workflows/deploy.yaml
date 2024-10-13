@@ -33,3 +33,4 @@ jobs:
           docker pull pabpereza/pabpereza:latest
           docker rm -f pabpereza || true
           docker run -d pabpereza/pabpereza:latest
+          docker network connect web pabpereza

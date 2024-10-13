@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy on production server 
 on:
   push:
     branches:

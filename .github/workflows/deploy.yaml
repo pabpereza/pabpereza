@@ -17,8 +17,8 @@ jobs:
           context: .
           push: true
           tags: pabpereza/pabpereza:latest
-          cache-from: type=registry,ref=pabpereza/pabpereza:cache
-          cache-to: type=registry,ref=pabpereza/pabpereza:cache
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
   deploy:
     name: Deploy on linux ssh server 
     needs: build

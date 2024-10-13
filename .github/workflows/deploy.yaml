@@ -1,13 +1,11 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
-    name: Build and push 
+    name: Build and push Docker images 
     uses: docker/build-push-action@v6.9.0
     with:
       context: .

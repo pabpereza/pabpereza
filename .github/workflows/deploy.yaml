@@ -8,6 +8,8 @@ jobs:
     name: Build and push Docker images
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
       - uses: docker/build-push-action@master
         with:
           context: .

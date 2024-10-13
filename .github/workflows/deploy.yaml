@@ -4,24 +4,8 @@ on:
     branches:
       - main
 jobs:
-  build:
-    name: Build and push Docker images
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@master
-      - name: Login to DockerHub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u pabpereza --password-stdin
-      - uses: docker/build-push-action@master
-        with:
-          context: .
-          push: true
-          tags: pabpereza/pabpereza:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
   deploy:
     name: Deploy on linux ssh server 
-    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: appleboy/ssh-action@master
@@ -30,7 +14,9 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          docker pull pabpereza/pabpereza:latest
+          cd ${{ secrets.REPO_PATH }} 
+          git pull
+          docker build . -t pabpereza/pabpereza:latest
           docker rm -f pabpereza || true
           docker run -d --name pabpereza/pabpereza:latest
           docker network connect web pabpereza

@@ -32,5 +32,5 @@ jobs:
         script: |
           docker pull pabpereza/pabpereza:latest
           docker rm -f pabpereza || true
-          docker run -d pabpereza/pabpereza:latest
+          docker run -d --name pabpereza/pabpereza:latest
           docker network connect web pabpereza

@@ -31,16 +31,16 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Podcast - TECHarlas
 <p align=center>
 
+<a href='https://youtu.be/XqbW3tIzftQ' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/XqbW3tIzftQ/mqdefault.jpg' />
+</a>
+
 <a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/csNytM7XFz4' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
 </a>
 
 </p>

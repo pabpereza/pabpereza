@@ -8,3 +8,5 @@ draft: true
 
 
 # VSCode lo tiene TODO 
+
+<!-- truncate -->

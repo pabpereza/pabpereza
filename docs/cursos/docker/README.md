@@ -34,7 +34,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Docker Compose](112.Docker_compose.md) 
 * [Docker Swarm](113.Docker_swarm.md) 
 * [Tu primera aplicación completa](114.Tu_primera_app.md) 
-* [Docker en producción](115.Docker_en_produccion.md) TODO
+* [Docker en producción](115.Docker_en_produccion.md) 
 
 ### Intermedio-Avanzado:
 * [Límites y control de recursos](#limites_y_control_de_recursos) TODO

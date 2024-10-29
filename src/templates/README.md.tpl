@@ -16,7 +16,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 | 🐳 Docker | [Vídeos](https://www.youtube.com/playlist?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0) | [Web](https://pabpereza.dev/docs/cursos/docker)  | [GitHub](https://github.com/pabpereza/pabpereza/tree/main/docs/cursos/docker) | 
 
 
-## Podcast - TECHarlas
+## Podcast y directos
 <p align=center>
 {{ podcast }}
 </p>

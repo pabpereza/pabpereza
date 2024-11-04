@@ -1317,7 +1317,7 @@
     webpack "^5.95.0"
     webpackbar "^6.0.1"
 
-"@docusaurus/core@3.6.0", "@docusaurus/core@^3.5.2":
+"@docusaurus/core@3.6.0", "@docusaurus/core@^3.6.0":
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.6.0.tgz#b23fc7e253a49cc3e5ac9e091354f497cc0b101b"
   integrity sha512-lvRgMoKJJSRDt9+HhAqFcICV4kp/mw1cJJrLxIw4Q2XZnFGM1XUuwcbuaqWmGog+NcOLZaPCcCtZbn60EMCtjQ==

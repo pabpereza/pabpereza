@@ -4,7 +4,7 @@ title: Diagramas com código
 slug: diagramas-como-codigo 
 tags: [devops]
 authors: pabpereza
-image: https://img.youtube.com/vi/Gvt0iRxg99I/maxresdefault.jpg
+image: https://img.youtube.com/vi/Gvt0iRxg99I/sddefault.jpg
 ---
 
 # Crear Diagramas como Código: Integración de DevOps y GitOps
@@ -12,7 +12,7 @@ image: https://img.youtube.com/vi/Gvt0iRxg99I/maxresdefault.jpg
 En el desarrollo de software y la gestión de infraestructuras, la necesidad de documentar y visualizar procesos complejos es crucial. Tradicionalmente, los diagramas eran creados manualmente con herramientas de diseño visual, pero esta práctica puede ser tediosa, propensa a errores y difícil de mantener en proyectos ágiles. **Crear diagramas como código** ha emergido como una solución moderna y eficaz, que no solo se alinea con las filosofías de **DevOps** y **GitOps**, sino que también permite una fácil integración en flujos de trabajo como **Markdown**.
 
 
-[![Crear Diagramas como Código: Integración de DevOps y GitOps](https://img.youtube.com/vi/Gvt0iRxg99I/maxresdefault.jpg)](https://youtu.be/Gvt0iRxg99I)
+[![Crear Diagramas como Código: Integración de DevOps y GitOps](https://img.youtube.com/vi/Gvt0iRxg99I/sddefault.jpg)](https://youtu.be/Gvt0iRxg99I)
 
 <!-- truncate -->
 

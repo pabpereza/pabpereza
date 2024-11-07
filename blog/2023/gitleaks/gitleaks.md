@@ -4,14 +4,14 @@ title: Gitleaks, detecta secretos en tu repositorio de git
 slug: gitleaks_secretos_git_repositorio_detectar 
 tags: [git,seguridad]
 authors: pabpereza
-image: https://img.youtube.com/vi/zHJdDT7XWkc/sddefault.jpg
+image: https://img.youtube.com/vi/zHJdDT7XWkc/maxresdefault.jpg
 ---
 
 # Evita Exponer Secretos en Git y Protege tu Código con Gitleaks
 
 En el desarrollo de software moderno, **Git** se ha convertido en la herramienta fundamental para la gestión de versiones de código. Sin embargo, con su uso, surge un problema crítico de seguridad: la **exposición accidental de secretos** como tokens, claves API, contraseñas o claves SSH dentro de los repositorios. Esto puede abrir la puerta a ataques graves si estos secretos son filtrados y accedidos públicamente. Afortunadamente, herramientas como **Gitleaks** pueden ayudarnos a prevenir esta situación, ofreciendo una capa adicional de seguridad, tanto en entornos locales como en los procesos de CI/CD (integración y entrega continua).
 
-[![Gitleaks, detecta secretos en tu repositorio de git](https://img.youtube.com/vi/zHJdDT7XWkc/sddefault.jpg)](https://youtu.be/zHJdDT7XWkc)
+[![Gitleaks, detecta secretos en tu repositorio de git](https://img.youtube.com/vi/zHJdDT7XWkc/maxresdefault.jpg)](https://youtu.be/zHJdDT7XWkc)
 
 <!-- truncate -->
 

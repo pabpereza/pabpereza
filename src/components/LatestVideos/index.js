@@ -19,7 +19,7 @@ function Video({videoid, title,description }) {
     <div className={clsx('col col--4')}>
         <a href={`https://youtu.be/${videoid}`} target='_blank' className='video-title'>
           <div className="text--center featureImg">
-              <img width='90%' src={`https://img.youtube.com/vi/${videoid}/sddefault.jpg`} />
+              <img width='90%' src={`https://img.youtube.com/vi/${videoid}/maxresdefault.jpg`} />
           </div>
           <div className="text--center padding-horiz--md">
             <Heading as="h3">{title}...</Heading>

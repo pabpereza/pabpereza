@@ -4,14 +4,14 @@ title: Cracking de contraseñas con Hashcat
 slug: cracking_passwords_hashcat 
 tags: [docker]
 authors: pabpereza
-image: https://img.youtube.com/vi/JgLxzj3MHEo/sddefault.jpg
+image: https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg
 ---
 
 ¡Pon a prueba tus contraseñas, secretos y hashes!
 
 Bueno, comenzaremos hablando sobre cómo se utilizan las contraseñas en nuestras actividades cotidianas. Desde el acceso a nuestros correos electrónicos hasta nuestras cuentas bancarias, las contraseñas juegan un papel crucial en la protección de nuestra información personal. Es verdad que todas las grandes compañias están trabajando en un nuevo estándar llamado passkey para que los usuarios finales no manejen credenciales, hablaré más adelante sobre esto. 
 
-[![Cracking passwords with Hashcat](https://img.youtube.com/vi/JgLxzj3MHEo/sddefault.jpg)](https://youtu.be/JgLxzj3MHEo)
+[![Cracking passwords with Hashcat](https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg)](https://youtu.be/JgLxzj3MHEo)
 
 <!-- truncate -->
 
@@ -48,4 +48,4 @@ Hashcat es una de las herramientas más avanzadas en recuperación de contraseñ
 ## Ejemplos
 Para poner en práctica la herramienta he creado un vídeo en el que muestro cómo crackear diferentes tipos de hashes con diferentes métodos de ataque. 
 
-[![Cracking passwords with Hashcat](https://img.youtube.com/vi/JgLxzj3MHEo/sddefault.jpg)](https://youtu.be/JgLxzj3MHEo)
+[![Cracking passwords with Hashcat](https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg)](https://youtu.be/JgLxzj3MHEo)

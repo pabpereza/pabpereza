@@ -4,7 +4,7 @@ title: Aligerar imágenes Docker
 slug: aligerar_imagenes_docker
 tags: [docker]
 authors: pabpereza
-image: https://img.youtube.com/vi/QVcLTxmcJ8s/sddefault.jpg
+image: https://img.youtube.com/vi/QVcLTxmcJ8s/maxresdefault.jpg
 ---
 
 En el mundo de la infraestructura como código, Docker se ha convertido en una herramienta esencial para desarrolladores y administradores de sistemas. Una de las ventajas de Docker es la capacidad de crear imágenes ligeras, lo que permite un despliegue rápido y eficiente de aplicaciones. 
@@ -16,7 +16,7 @@ En este artículo, vamos a explorar cómo crear imágenes de Docker ligeras para
 
 Por si lo prefieres, puedes ver el vídeo en YouTube:
 
-[![Aligerar imágenes Docker](https://img.youtube.com/vi/QVcLTxmcJ8s/sddefault.jpg)](https://www.youtube.com/watch?v=QVcLTxmcJ8s)
+[![Aligerar imágenes Docker](https://img.youtube.com/vi/QVcLTxmcJ8s/maxresdefault.jpg)](https://www.youtube.com/watch?v=QVcLTxmcJ8s)
 
 
 ## Paso 1: Utilizar una imagen base pequeña

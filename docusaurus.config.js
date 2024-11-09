@@ -86,7 +86,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/banner_web.jpg',
+      image: 'img/banner_web.webp',
       docs: {
         sidebar: {
           hideable: true,

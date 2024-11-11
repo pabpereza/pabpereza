@@ -1,4 +1,4 @@
-![](./static/img/banner_slim.webp)
+![](./static/img/banner_github.jpg)
 
 
 # Hello there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 

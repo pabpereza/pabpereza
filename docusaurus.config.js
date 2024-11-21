@@ -112,11 +112,6 @@ const config = {
             label: 'Youtube'
           },
           {
-            href: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
-            className: 'header-youtube-link',
-            position: 'right',
-          },
-          {
             href: 'https://twitter.com/pabpereza',
             className: 'header-x-link',
             position: 'right',
@@ -139,6 +134,11 @@ const config = {
           {
             href: 'https://github.com/pabpereza/pabpereza',
             className: 'test',
+            position: 'right',
+          },
+          {
+            href: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
+            className: 'header-youtube-link',
             position: 'right',
           },
           {

@@ -1,11 +1,10 @@
 ---
-date: 
-title: 
-slug: cracking_passwords_hashcat 
-tags: [docker]
+date: 2024-11-21 
+title: Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker 
+slug: servidor-compartido-npm-proxy-docker 
+tags: [docker, nginx, proxy]
 authors: pabpereza
-image: 
-draft: true
+image: https://img.youtube.com/vi/WCSdh37Z6Wk/maxresdefault.jpg 
 ---
 
 # Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker 

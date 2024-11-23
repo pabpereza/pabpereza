@@ -258,7 +258,7 @@ const config = {
     [
       'docusaurus-graph',
       {
-         docsDir: "blog",
+         docsDir: "docs",
          buildDir: "build",
          sourcesTag: "tags",
          referencesTag: "references",

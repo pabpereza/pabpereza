@@ -1,0 +1,493 @@
+[
+  {
+    "id": "index",
+    "title": "index",
+    "linkTo": [],
+    "referencedBy": [
+      "docker",
+      "noticia"
+    ]
+  },
+  {
+    "id": "docker",
+    "title": "docker",
+    "linkTo": [
+      "index",
+      "index",
+      "index",
+      "index",
+      "index",
+      "index",
+      "index",
+      "Docker images multi stage",
+      "buenas_practicas_docker",
+      "hadoolint_verificar_dockerfiles",
+      "Cracking passwords",
+      "Macos_en_docker",
+      "Entornos_remotos_gratuitos",
+      "secretos_docker",
+      "servidor_compartido_npm_proxy_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "noticia",
+    "title": "noticia",
+    "linkTo": [
+      "index",
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "seguridad",
+    "title": "seguridad",
+    "linkTo": [
+      "index",
+      "index",
+      "index",
+      "gitleaks",
+      "secretos_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "errores_git",
+    "title": "errores_git",
+    "linkTo": [],
+    "referencedBy": [
+      "git",
+      "errores",
+      "video",
+      "desarrollo"
+    ]
+  },
+  {
+    "id": "git",
+    "title": "git",
+    "linkTo": [
+      "errores_git",
+      "gitleaks"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "errores",
+    "title": "errores",
+    "linkTo": [
+      "errores_git"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "video",
+    "title": "video",
+    "linkTo": [
+      "errores_git"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "desarrollo",
+    "title": "desarrollo",
+    "linkTo": [
+      "errores_git",
+      "Entornos_remotos_gratuitos"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "kalilinux",
+    "title": "kalilinux",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "bash",
+    "title": "bash",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "zsh",
+    "title": "zsh",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "terminal",
+    "title": "terminal",
+    "linkTo": [
+      "index",
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "raspberry",
+    "title": "raspberry",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "privilegios",
+    "title": "privilegios",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "powershell",
+    "title": "powershell",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "pentesting",
+    "title": "pentesting",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "kubernetes",
+    "title": "kubernetes",
+    "linkTo": [
+      "index",
+      "kubernetes_ubuntu_server_22"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "windows",
+    "title": "windows",
+    "linkTo": [
+      "index",
+      "kalilinux_wsl_interfaz_grafica"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "productividad",
+    "title": "productividad",
+    "linkTo": [
+      "index"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "devops",
+    "title": "devops",
+    "linkTo": [
+      "index",
+      "diagramas_codigo",
+      "secretos_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "Docker images multi stage",
+    "title": "Docker images multi stage",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "buenas_practicas_docker",
+    "title": "buenas_practicas_docker",
+    "linkTo": [],
+    "referencedBy": [
+      "dockerfile",
+      "docker",
+      "contenedores"
+    ]
+  },
+  {
+    "id": "dockerfile",
+    "title": "dockerfile",
+    "linkTo": [
+      "buenas_practicas_docker",
+      "hadoolint_verificar_dockerfiles"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "contenedores",
+    "title": "contenedores",
+    "linkTo": [
+      "buenas_practicas_docker",
+      "hadoolint_verificar_dockerfiles",
+      "registros_contenedores",
+      "vscode_trucos_ocultos"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "diagramas_codigo",
+    "title": "Crear Diagramas como Código: Integración de DevOps y GitOps",
+    "linkTo": [],
+    "referencedBy": [
+      "devops"
+    ]
+  },
+  {
+    "id": "gitleaks",
+    "title": "Evita Exponer Secretos en Git y Protege tu Código con Gitleaks",
+    "linkTo": [],
+    "referencedBy": [
+      "git",
+      "seguridad"
+    ]
+  },
+  {
+    "id": "hadoolint_verificar_dockerfiles",
+    "title": "Uso de Hadolint para Revisar Buenas Prácticas",
+    "linkTo": [],
+    "referencedBy": [
+      "dockerfile",
+      "docker",
+      "contenedores"
+    ]
+  },
+  {
+    "id": "zerotier",
+    "title": "Guía Completa sobre ZeroTier: Qué es y Cómo Instalar su CLI en Linux",
+    "linkTo": [],
+    "referencedBy": [
+      "redes",
+      "linux"
+    ]
+  },
+  {
+    "id": "redes",
+    "title": "redes",
+    "linkTo": [
+      "zerotier"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "linux",
+    "title": "linux",
+    "linkTo": [
+      "zerotier",
+      "Entornos_remotos_gratuitos",
+      "kalilinux_wsl_interfaz_grafica"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "Cracking passwords",
+    "title": "Cracking passwords",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "Macos_en_docker",
+    "title": "Ejecuta Mac OS en Docker",
+    "linkTo": [],
+    "referencedBy": [
+      "macos",
+      "docker"
+    ]
+  },
+  {
+    "id": "macos",
+    "title": "macos",
+    "linkTo": [
+      "Macos_en_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "Entornos_remotos_gratuitos",
+    "title": "Entornos de desarrollo remotos y gratuitos",
+    "linkTo": [],
+    "referencedBy": [
+      "desarrollo",
+      "docker",
+      "linux",
+      "github",
+      "aws",
+      "gitpod"
+    ]
+  },
+  {
+    "id": "github",
+    "title": "github",
+    "linkTo": [
+      "Entornos_remotos_gratuitos"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "aws",
+    "title": "aws",
+    "linkTo": [
+      "Entornos_remotos_gratuitos"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "gitpod",
+    "title": "gitpod",
+    "linkTo": [
+      "Entornos_remotos_gratuitos"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "kalilinux_wsl_interfaz_grafica",
+    "title": "Ejecutar Kali Linux en WSL con interfaz gráfica",
+    "linkTo": [],
+    "referencedBy": [
+      "hacking",
+      "wsl",
+      "linux",
+      "windows",
+      "virtualización"
+    ]
+  },
+  {
+    "id": "hacking",
+    "title": "hacking",
+    "linkTo": [
+      "kalilinux_wsl_interfaz_grafica"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "wsl",
+    "title": "wsl",
+    "linkTo": [
+      "kalilinux_wsl_interfaz_grafica"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "virtualización",
+    "title": "virtualización",
+    "linkTo": [
+      "kalilinux_wsl_interfaz_grafica"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "secretos_docker",
+    "title": "Secretos en Docker y mejores prácticas",
+    "linkTo": [],
+    "referencedBy": [
+      "secretos",
+      "docker",
+      "seguridad",
+      "devops"
+    ]
+  },
+  {
+    "id": "secretos",
+    "title": "secretos",
+    "linkTo": [
+      "secretos_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "especial_5000_subcriptores",
+    "title": "¡Especial 5000 subscriptores en Youtube!",
+    "linkTo": [],
+    "referencedBy": [
+      "youtube",
+      "comunidad"
+    ]
+  },
+  {
+    "id": "youtube",
+    "title": "youtube",
+    "linkTo": [
+      "especial_5000_subcriptores"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "comunidad",
+    "title": "comunidad",
+    "linkTo": [
+      "especial_5000_subcriptores"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "kubernetes_ubuntu_server_22",
+    "title": "kubernetes_ubuntu_server_22",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "ubuntu"
+    ]
+  },
+  {
+    "id": "ubuntu",
+    "title": "ubuntu",
+    "linkTo": [
+      "kubernetes_ubuntu_server_22"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "servidor_compartido_npm_proxy_docker",
+    "title": "Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker",
+    "linkTo": [],
+    "referencedBy": [
+      "docker",
+      "nginx",
+      "proxy"
+    ]
+  },
+  {
+    "id": "nginx",
+    "title": "nginx",
+    "linkTo": [
+      "servidor_compartido_npm_proxy_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "proxy",
+    "title": "proxy",
+    "linkTo": [
+      "servidor_compartido_npm_proxy_docker"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "registros_contenedores",
+    "title": "Harbor ¿Quieres almacenar tus imágenes de contenedor en tu propio repositorio o registry ?",
+    "linkTo": [],
+    "referencedBy": [
+      "contenedores"
+    ]
+  },
+  {
+    "id": "vscode_trucos_ocultos",
+    "title": "¡Trucos ocultos (o poco conocidos) que seguro que no sabías en VSCODE!",
+    "linkTo": [],
+    "referencedBy": [
+      "contenedores"
+    ]
+  }
+]

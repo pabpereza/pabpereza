@@ -1,6 +1,7 @@
 ---
 title: Docker
 image: https://pabpereza.dev/img/banner_docker.png
+tags: [docker, devops, contenedores]
 ---
 
 # Curso Docker

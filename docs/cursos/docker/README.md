@@ -45,8 +45,14 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
 * [Docker compose avanzado](#docker_compose_avanzado) TODO
 * [Redes avanzado](#redes_avanzado) TODO
-* [Volumes avanzado](#volumes_avanzado) TODO
+* [Volumenes y backups](#volumes_avanzado) TODO
 
+### DevOps:
+* [CI con Docker](#ci_docker) TODO
+* [CD con Docker](#cd_docker) TODO
+* [Monitorización con Docker](#monitorizacion_docker) TODO
+* [Logs y centralización](#logs_docker) TODO
+* [Kubernetes con Docker](#kubernetes_docker) TODO
 
 ### Seguridad:
 * [Analizar vulnerabilidades en las imágenes](#seguridad-imagenes) TODO

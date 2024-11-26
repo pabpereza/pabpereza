@@ -3,7 +3,6 @@ slug: vscode_vale_para_todo
 title: VSCode lo tiene TODO 
 tags: [ contenedores]
 authors: pabpereza
-draft: true
 ---
 
 # ¡15 trucos OCULTOS (o poco conocidos) que seguro que no sabías de VSCODE!
@@ -38,7 +37,7 @@ TODO Añadir contador de funcionalidades y plugins en el vídeo
 * **Diferencias entre ficheros**: Puedes comparar dos ficheros abiertos en VSCode con el comando `Compare Active File With...` o `Ctrl+Alt+D`. Esto te abrirá una nueva ventana con las diferencias entre ambos ficheros, aunque seguro que te ha tocado hacerlo en git para un conflicto, siempre puede darse el caso de que necesites comparar dos ficheros que no están en git.
 
 
-* **Plantillas de código**: Puedes crear plantillas de código para tus proyectos o para tus snippets. Solo tienes que crear un fichero con la extensión .code-snippets y añadir tus plantillas. Luego, solo tienes que escribir el nombre de la plantilla y pulsar tab para que se genere el código. Esto es muy útil para crear plantillas de código que usas a menudo o para crear snippets de código que te ahorren tiempo.
+* **Plantillas de código**: Puedes crear plantillas de código para tus proyectos o para tus snippets. Solo tienes que crear un fichero con la extensión .code-snippets y añadirlo a tus plantillas. Luego, solo tienes que escribir el nombre de la plantilla y pulsar tab para que se genere el código. Esto es muy útil para crear plantillas de código que usas a menudo o para crear snippets de código que te ahorren tiempo.
 
 * **Integración con Jupyter**: Si trabajas con Jupyter, puedes abrir los notebooks directamente en VSCode y trabajar con ellos como si estuvieras en Jupyter. Además, puedes ejecutar las celdas, ver los resultados y exportar el notebook a otros formatos.
 

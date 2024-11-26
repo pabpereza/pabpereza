@@ -255,6 +255,15 @@ const config = {
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
     require.resolve('docusaurus-lunr-search'),
+    [
+      'docusaurus-graph',
+      {
+         docsDir: "docs",
+         buildDir: "build",
+         sourcesTag: "tags",
+         referencesTag: "references",
+      },
+    ],
     
   ],
   scripts: [

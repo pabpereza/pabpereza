@@ -5,14 +5,14 @@ tags: [ contenedores]
 authors: pabpereza
 ---
 
-# ¡15 trucos OCULTOS (o poco conocidos) que seguro que no sabías de VSCODE!
+# ¡Trucos ocultos (o poco conocidos) que seguro que no sabías en VSCODE!
 Me imagino que la gran mayoría conocéis Visual Studio Code, el editor de código de Microsoft. Pero no es solo un editor de código, gracias a sus funcionalidad de caja y sobretodo a un gran mercado de extensiones, podemos convertirlo en una herramienta para casi cualquier cosa.
 
-Vamos a explorar algunas de las funcionalidades y extensiones que más me gustan y que se salen de lo habitual en el día a día de un desarrollador. 
+Vamos a explorar las 15 funcionalidades menos conocidas de esta potente herramienta. ¿Cuántas de ellas conocerás?
 
 <!-- truncate -->
 
-Dentro vídeo: TODO 
+Dentro vídeo: 
 TODO Añadir vídeo
 
 

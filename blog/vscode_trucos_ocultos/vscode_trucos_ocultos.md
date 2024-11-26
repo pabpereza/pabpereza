@@ -12,11 +12,11 @@ Vamos a explorar las 15 funcionalidades menos conocidas de esta potente herramie
 
 <!-- truncate -->
 
-Dentro vídeo: 
-TODO Añadir vídeo
+Dentro vídeo:  https://youtu.be/pItQbWrAifE
+
+[![VSCode lo tiene TODO](https://img.youtube.com/vi/pItQbWrAifE/maxresdefault.jpg)](https://www.youtube.com/watch?v=pItQbWrAifE)
 
 
-TODO Añadir contador de funcionalidades y plugins en el vídeo
 
 ## Funcionalidades de VSCode que no conocías
 

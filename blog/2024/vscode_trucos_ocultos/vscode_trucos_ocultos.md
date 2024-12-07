@@ -3,6 +3,7 @@ slug: vscode_vale_para_todo
 title: VSCode lo tiene TODO 
 tags: [ contenedores]
 authors: pabpereza
+date: 2024-11-18
 ---
 
 # ¡Trucos ocultos (o poco conocidos) que seguro que no sabías en VSCODE!

@@ -7,7 +7,7 @@
   },
   {
     "id": "101",
-    "title": "Introducción",
+    "title": "101",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -159,6 +159,7 @@
     "id": "devops",
     "title": "devops",
     "linkTo": [
+      "README",
       "README"
     ],
     "referencedBy": []
@@ -167,6 +168,7 @@
     "id": "contenedores",
     "title": "contenedores",
     "linkTo": [
+      "README",
       "README"
     ],
     "referencedBy": []
@@ -175,6 +177,22 @@
     "id": "cheatsheet",
     "title": "cheatsheet",
     "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "kubernetes",
+    "title": "kubernetes",
+    "linkTo": [
+      "README"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "sre",
+    "title": "sre",
+    "linkTo": [
+      "README"
+    ],
     "referencedBy": []
   },
   {
@@ -370,14 +388,302 @@
     "referencedBy": []
   },
   {
+    "id": "Unix",
+    "title": "Unix",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "Windows",
+    "title": "Windows",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "contenedores_Seguridad",
+    "title": "contenedores_Seguridad",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "contenedores_docker",
+    "title": "contenedores_docker",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "contenedores_kubernetes",
+    "title": "contenedores_kubernetes",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dev_SQL",
+    "title": "dev_SQL",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dev_bash_utilidades",
+    "title": "dev_bash_utilidades",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dev_git",
+    "title": "dev_git",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dev_python",
+    "title": "dev_python",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "security_global_areas",
+    "title": "security_global_areas",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "seguridad_dotnet",
+    "title": "Secure Coding",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "seguridad_reconocimiento",
+    "title": "seguridad_reconocimiento",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "claves_ssh",
+    "title": "claves_ssh",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "command_injection",
+    "title": "Command Injection",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "configurar_editor_commits",
+    "title": "configurar_editor_commits",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "container_security_tools",
+    "title": "Vulnerability Scanners",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "desactivar_swap",
+    "title": "desactivar_swap",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "donet_path_traversal",
+    "title": "DotNET Path Traversal",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_command_injection",
+    "title": "dotnet_command_injection",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_cryptography",
+    "title": "dotnet_cryptography",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_error_handling",
+    "title": "dotnet_error_handling",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_file_management",
+    "title": "dotnet_file_management",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_insecure_deseralization",
+    "title": "DotNET Insecure Deseralization",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_ldap_injection",
+    "title": "DotNET LDAP Injection",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_session_management",
+    "title": "dotnet_session_management",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_sql_inyection",
+    "title": "Entity Framework",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_waf_bypass",
+    "title": "DotNET WAF Bypass",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "dotnet_xxe",
+    "title": "dotnet_xxe",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "en_navegador",
+    "title": "en_navegador",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "grub",
+    "title": "grub",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "herramientas_busqueda",
+    "title": "herramientas_busqueda",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "http_security_headers",
+    "title": "",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "index_lock",
+    "title": "index_lock",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "insecure_deseralization",
+    "title": "Insecure Deseralization",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "inyeccion_sql",
+    "title": "Inyección SQL",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "nfs",
+    "title": "nfs",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "nmap",
+    "title": "nmap",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
     "id": "notas",
     "title": "notas",
     "linkTo": [],
     "referencedBy": []
   },
   {
+    "id": "oh_my_posh",
+    "title": "oh_my_posh",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "orm",
+    "title": "ORM",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "path_trasversal",
+    "title": "Path Traversal",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "redes",
+    "title": "redes",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "snmp",
+    "title": "snmp",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "solucionar_errores",
+    "title": "solucionar_errores",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "sqlmap",
+    "title": "SQLMap",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "tmux",
+    "title": "tmux",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "trivy",
+    "title": "trivy",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "x_frame_options",
+    "title": "x-frame-options",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
     "id": "zerotier",
     "title": "Zerotier",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "zsh",
+    "title": "zsh",
     "linkTo": [],
     "referencedBy": []
   }

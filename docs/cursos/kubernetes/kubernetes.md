@@ -8,11 +8,11 @@ tags: [kubernetes, devops, sre, contenedores]
 
 **¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso!**
 
-TODO: Banner del curso ![]()
+TODO: Banner del curso 
 
 Hola, bienvenidos al curso de Kubernetes completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio.
 
-Todo el curso, esta disponible en esta lista de youtube: [Curso Kubernetes]()
+Todo el curso, esta disponible en esta lista de youtube: 
 TODO: Lista Youtube Curso Kubernetes
 
 Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás los apuntes y ejemplos de código que vaya mostrando en los vídeos, por lo que también podrías seguirlo sin necesidad de ver los vídeos, aunque en estas entradas no se profundizará tanto. Cuando haya muchas actualizaciones, regrabaré los vídeos para que estén actualizados.

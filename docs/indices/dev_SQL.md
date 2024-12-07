@@ -1,0 +1,16 @@
+#Índice
+
+[[Comandos básicos]]
+[[Clausulas y operadores]]
+[[Insert, update y delete]]
+[[Funciones en consultas]]
+[[Joins - Combinación de tablas]]
+[[Triggers o disparadores]]
+[[Procedimientos y funciones]]
+[[Cifrar y descifrar]]
+[[cursores]]
+[[Exportar e importar]]
+[[usuarios]]
+[[permisos]]
+[[Roles]]
+[[Variables SQL]]

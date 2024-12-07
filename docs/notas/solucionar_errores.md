@@ -1,4 +1,11 @@
+---
+title: Errores comunes en Git
+tags: [git, devops]
+slug: errores_comunes_git
+---
 
+
+# Errores comunes en Git
 
 Git es un sistema muy estricto y metódico diseñado para garantizar la integridad de nuestro
 código a lo largo de infinidad de versiones y cambios generados por múltiples programadores.
@@ -24,7 +31,7 @@ Supón que acabas de terminar un commit y quieres modificar su mensaje porque ha
 git commit --amend
 ```
 
-Tras ejecutarlo se nos mostrará el editor de texto seleccionado en git para editar el menaje del último commit. En [esta entrada](../configurar_editor_commits/#elegir-el-editor-de-commit-por-defecto) puedes
+Tras ejecutarlo se nos mostrará el editor de texto seleccionado en git para editar el menaje del último commit. En [esta entrada](configurar_editor_commits.md#elegir-el-editor-de-commit-por-defecto) puedes
 ver como cambiar el editor de texto que git usará para estas labores.
 
 

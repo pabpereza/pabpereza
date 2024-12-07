@@ -160,7 +160,8 @@
     "title": "devops",
     "linkTo": [
       "README",
-      "README"
+      "kubernetes",
+      "solucionar_errores"
     ],
     "referencedBy": []
   },
@@ -169,7 +170,7 @@
     "title": "contenedores",
     "linkTo": [
       "README",
-      "README"
+      "kubernetes"
     ],
     "referencedBy": []
   },
@@ -177,22 +178,6 @@
     "id": "cheatsheet",
     "title": "cheatsheet",
     "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "kubernetes",
-    "title": "kubernetes",
-    "linkTo": [
-      "README"
-    ],
-    "referencedBy": []
-  },
-  {
-    "id": "sre",
-    "title": "sre",
-    "linkTo": [
-      "README"
-    ],
     "referencedBy": []
   },
   {
@@ -223,6 +208,27 @@
     "id": "jobs",
     "title": "jobs",
     "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "kubernetes",
+    "title": "Curso Kubernetes",
+    "linkTo": [
+      "kubernetes"
+    ],
+    "referencedBy": [
+      "kubernetes",
+      "devops",
+      "sre",
+      "contenedores"
+    ]
+  },
+  {
+    "id": "sre",
+    "title": "sre",
+    "linkTo": [
+      "kubernetes"
+    ],
     "referencedBy": []
   },
   {
@@ -388,18 +394,6 @@
     "referencedBy": []
   },
   {
-    "id": "Unix",
-    "title": "Unix",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "Windows",
-    "title": "Windows",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "contenedores_Seguridad",
     "title": "contenedores_Seguridad",
     "linkTo": [],
@@ -456,6 +450,18 @@
   {
     "id": "seguridad_reconocimiento",
     "title": "seguridad_reconocimiento",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "unix",
+    "title": "unix",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "windows",
+    "title": "windows",
     "linkTo": [],
     "referencedBy": []
   },
@@ -647,8 +653,19 @@
   },
   {
     "id": "solucionar_errores",
-    "title": "solucionar_errores",
+    "title": "Errores comunes en Git",
     "linkTo": [],
+    "referencedBy": [
+      "git",
+      "devops"
+    ]
+  },
+  {
+    "id": "git",
+    "title": "git",
+    "linkTo": [
+      "solucionar_errores"
+    ],
     "referencedBy": []
   },
   {

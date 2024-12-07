@@ -1,0 +1,5 @@
+#Índice
+
+[[variables]]
+[[strings]]
+[[operaciones]]

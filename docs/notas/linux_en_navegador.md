@@ -1,3 +1,11 @@
+---
+title: Linux en tu navegador
+tags: [linux, docker, guacamole]
+slug: linux_en_navegador
+keywords: [linux, docker, guacamole]
+---
+
+
 
 Hoy en día cualquier aplicación la podemos ejecutar en nuestro navegador web. Pero, ¿por qué tener aplicaciones sueltas si podemos usarlo para acceder a nuestro sistema operativo completo?. Es verdad que existen soluciones como Microsoft 365, Horizon y demás, las cuales están enfocadas principalmente en entornos corporativos windows y la mayoría requieren de clientes específicos para poder usarlos.
 

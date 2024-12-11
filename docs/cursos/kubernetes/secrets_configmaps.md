@@ -1,3 +1,10 @@
+---
+id: secrets_configmaps
+title: Secrets y ConfigMaps en Kubernetes
+description: Aprende a gestionar información sensible y configuraciones en Kubernetes mediante Secrets y ConfigMaps.
+---
+
+# Secrets y ConfigMaps en Kubernetes
 
 Kubernetes nos permite compartir información y configuraciones entre el cluster y los distintos recursos de kubernetes.
 

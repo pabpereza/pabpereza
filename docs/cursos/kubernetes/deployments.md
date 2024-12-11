@@ -1,3 +1,11 @@
+---
+title: Deployments en Kubernetes
+description: Aprende a crear, actualizar y gestionar deployments en Kubernetes, incluyendo ejemplos y comandos útiles.
+keywords: [kubernetes, deployments, gestión, actualización, ejemplos]
+sidebar: Deployments
+---
+
+# Deployments en Kubernetes
 
 Los [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) son elementos de configuración que permiten la creación de una aplicación de una sola instancia.
 

@@ -1,3 +1,10 @@
+---
+id: replicasets
+title: ReplicaSets en Kubernetes
+description: Aprende a definir y gestionar ReplicaSets en Kubernetes para asegurar la disponibilidad de tus pods.
+---
+
+# ReplicaSets en Kubernetes
 
 Por debajo de todas las acciones de kubernetes, lo que el motor entiende, son archivos manifiesto que definen el tipo de cada elemento.
 

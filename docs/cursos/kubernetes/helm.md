@@ -1,3 +1,11 @@
+---
+title: Helm en Kubernetes
+description: Guía sobre cómo usar Helm para gestionar, versionar y desplegar múltiples recursos en Kubernetes.
+keywords: [kubernetes, helm, gestión, despliegue, charts]
+sidebar: Helm
+---
+
+# Helm en Kubernetes
 
 Helm es una herramienta que nos permite gestionar, versionar y desplegar múltiples recursos de kubernetes.
 

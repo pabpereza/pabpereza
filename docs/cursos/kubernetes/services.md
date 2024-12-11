@@ -1,3 +1,10 @@
+---
+id: services
+title: Servicios en Kubernetes
+description: Descubre cómo agrupar pods y gestionar el acceso a los recursos mediante servicios en Kubernetes.
+---
+
+# Servicios en Kubernetes
 
 Los servicios en kubernetes son una forma de agrupar pods mediande sus etiquetas o labels y disponer a los usuarios
 el acceso a los recursos que están asociados a ellos.

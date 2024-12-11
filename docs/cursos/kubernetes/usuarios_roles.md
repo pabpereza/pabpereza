@@ -1,3 +1,10 @@
+---
+id: usuarios_roles
+title: Usuarios y Roles en Kubernetes
+description: Aprende a definir y gestionar usuarios y roles en Kubernetes para controlar el acceso a los recursos.
+---
+
+# Usuarios y Roles en Kubernetes
 
 Por defecto, Kubernetes no tiene usuarios ni roles. Sin embargo, podemos definir usuarios y roles para controlar el acceso a los recursos de Kubernetes.
 
@@ -35,13 +42,6 @@ Por defecto, este usuario carecerá de permisos para realizar ninguna acción en
 Esta asignación de un rol, se realiza mediante rolesbindings ( a nivel de namespace) o clusterrolebindings (a nivel de rol).
 
 
-## Service Accounts - Cuentas de servicio
-Kubernetes crea una cuenta de servicio por defecto para cada namespace. Esta cuenta de servicio se utiliza para acceder a la API de Kubernetes. Podemos crear cuentas de servicio adicionales para acceder a la API de Kubernetes.
-
-```bash
-kubectl create serviceaccount <nombre>
-```
-
 Estas cuentas podríamos asocialas a un `role` mediante objetos `RoleBinding` o `ClusterRoleBinding` como se explica en los siguientes pasos.
 
 
@@ -72,6 +72,13 @@ metadata:
   namespace: default
 subjects:
 - kind: User
+  name: jdoe # Nombre del usuario
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role # Este debe ser Role o ClusterRole
+  name: pod-reader # Este debe ser el nombre del rol que queremos asignar
+  apiGroup: rbac.authorization.k8s.io
+```
   name: jdoe # Nombre del usuario
   apiGroup: rbac.authorization.k8s.io
 roleRef:

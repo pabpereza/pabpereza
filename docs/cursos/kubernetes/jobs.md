@@ -1,3 +1,11 @@
+---
+title: Jobs en Kubernetes
+description: Aprende a automatizar tareas en Kubernetes utilizando Jobs, incluyendo ejemplos de sintaxis y configuración.
+keywords: [kubernetes, jobs, automatización, tareas]
+sidebar: Jobs
+---
+
+# Jobs en Kubernetes
 
 Los `Jobs` en kubernetes son una forma de automatizar tareas en kubernetes. A diferencia de los `Pods`, los `Jobs` tienen número de ejecuciones definido y un tiempo de ejecución limitado.
 

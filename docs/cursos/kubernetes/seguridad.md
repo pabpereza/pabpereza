@@ -1,3 +1,10 @@
+---
+id: seguridad
+title: Seguridad en Kubernetes
+description: Aprende sobre la seguridad en Kubernetes, incluyendo autenticación, autorización, y políticas de red.
+---
+
+# Seguridad en Kubernetes
 
 La seguridad en Kubernetes es un tema muy amplio. Podemos agruparlo en varias categorías:
 * Seguridad de accesos e identidades (Autenticación y Autorización)

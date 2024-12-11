@@ -1,3 +1,11 @@
+---
+title: Instalación de Kubernetes
+description: Guía detallada para la instalación de Kubernetes en un cluster de nodos con diferentes motores de contenedores y sistemas operativos.
+keywords: [kubernetes, instalación, cluster, containerd, ubuntu]
+sidebar: Instalación
+---
+
+# Instalación de Kubernetes
 
 La instalación de Kubernetes en un cluster de nodos puede ser un proceso complejo. En esta guía agruparé distintos tutoriales de instalación con distintos motores de contenedores y distintos sistemas operativos.
 

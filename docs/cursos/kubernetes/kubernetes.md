@@ -1,10 +1,11 @@
 ---
-title: Kubernetes 
+description: Curso completo de Kubernetes en español, desde nivel básico hasta intermedio, orientado a la certificación CKA.
+keywords: [kubernetes, curso, devops, sre, contenedores, CKA]
 image: https://pabpereza.dev/img/banner_docker.png
 tags: [kubernetes, devops, sre, contenedores]
 ---
 
-# Curso Kubernetes 
+# Kubernetes 
 
 **¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso!**
 

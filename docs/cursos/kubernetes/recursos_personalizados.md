@@ -1,3 +1,10 @@
+---
+id: recursos_personalizados
+title: Recursos Personalizados en Kubernetes
+description: Aprende a definir y gestionar recursos personalizados en Kubernetes para extender su funcionalidad.
+---
+
+# Recursos Personalizados en Kubernetes
 
 La definición de recursos personalizados o (CRD, Custom Resource Definition) es una de las características más potentes de Kubernetes. Nos permite extender la funcionalidad de Kubernetes añadiendo nuevos tipos de recursos. Estos recursos pueden ser usados por los desarrolladores para definir sus propias abstracciones de alto nivel.
 

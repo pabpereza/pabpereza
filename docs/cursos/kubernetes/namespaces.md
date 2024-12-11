@@ -1,4 +1,6 @@
 
+
+
 ## Namespaces
 Los namespaces son una forma de agrupar y aislar los recursos de kubernetes. Esto permite que podamos segregar los diferentes recursos de una aplicación ( pod, deployment, service, etc) para establecer unas cuotas recursos, políticas de seguridad y configuraciones específicas.
 

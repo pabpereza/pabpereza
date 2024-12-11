@@ -1,3 +1,11 @@
+---
+title: Logs en Kubernetes
+description: Guía sobre cómo acceder y gestionar los logs en Kubernetes, incluyendo integración con herramientas de monitorización.
+keywords: [kubernetes, logs, monitorización, debugging]
+sidebar: Logs
+---
+
+# Logs en Kubernetes
 
 Los logs son una de las herramientas más importantes para entender el comportamiento de una aplicación. Esta información nos permite entender qué está pasando en el sistema y nos ayuda a depurar errores. En este apartado vamos a ver cómo consumir los logs de los contenedores que se ejecutan en Kubernetes y como integrarlos con otras herramientas de monitorización.
 

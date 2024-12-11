@@ -1,3 +1,11 @@
+---
+title: Manifiestos de Kubernetes
+description: Aprende a trabajar con manifiestos de Kubernetes, incluyendo cómo obtener y definir pods en diferentes formatos.
+keywords: [kubernetes, manifiestos, pods, yaml, json]
+sidebar: Manifiestos
+---
+
+# Manifiestos de Kubernetes
 
 Por debajo de todas las acciones de kubernetes, lo que el motor entiende, son archivos manifiesto que definen el tipo de cada elemento.
 

@@ -1,3 +1,11 @@
+---
+title: Ingress Controller en Kubernetes
+description: Aprende a instalar y gestionar un Ingress Controller en Kubernetes para enrutar tráfico externo a los servicios del cluster.
+keywords: [kubernetes, ingress controller, nginx, tráfico, servicios]
+sidebar: Ingress Controller
+---
+
+# Ingress Controller en Kubernetes
 
 El `ingress controller` es un servicio que se ejecuta en un pod y que permite observar los objetos `endpoint`. Cuando un nuevo objeto es creado, `ingress controller` lo detecta y aplica las reglas que tenga definidas para enrutar el tráfico (normalmente HTTP).
 

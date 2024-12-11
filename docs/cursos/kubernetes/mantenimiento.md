@@ -1,3 +1,11 @@
+---
+title: Mantenimiento de Kubernetes
+description: Guía completa sobre cómo realizar el mantenimiento de un cluster de Kubernetes, incluyendo backup de etcd y actualización del cluster.
+keywords: [kubernetes, mantenimiento, backup, etcd, actualización]
+sidebar: Mantenimiento
+---
+
+# Mantenimiento de Kubernetes
 
 El mantenimiento de kubernetes es una tarea que se realiza con frecuencia.
 

@@ -1,3 +1,10 @@
+---
+id: pods
+title: Pods en Kubernetes
+description: Aprende a crear, gestionar y eliminar pods en Kubernetes, la unidad más pequeña de ejecución de contenedores.
+---
+
+# Pods en Kubernetes
 
 Los pods se son una unidad de ejecución de contenedores, concretamente la unidad más 
 pequeña con la que se puede trabajar en kubernetes. Estos son los comandos básicos

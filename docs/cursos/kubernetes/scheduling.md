@@ -1,3 +1,10 @@
+---
+id: scheduling
+title: Scheduling en Kubernetes
+description: Descubre cómo decidir en qué nodo se ejecutan los pods en Kubernetes utilizando etiquetas y políticas de scheduling.
+---
+
+# Scheduling en Kubernetes
 
 La función de scheduling es la que decide qué podemos ejecutar en un nodo. Por ejemplo, podemos decidir en que nodo se ejecuta un pod en base a varios criterios.
 

@@ -1,3 +1,10 @@
+---
+id: roles
+title: Roles en Kubernetes
+description: Aprende a crear, asignar y gestionar roles en Kubernetes para controlar el acceso a los recursos.
+---
+
+# Roles en Kubernetes
 
 Los roles son una forma de agrupar usuarios y darles un conjunto de permisos. Sería una especie de plantilla de permisos que se puede aplicar a un usuario.
 

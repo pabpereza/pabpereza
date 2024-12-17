@@ -25,6 +25,7 @@ La autenticación es el proceso de identificación de un usuario. Kubernetes sop
 La autorización es el proceso de determinar si un usuario tiene permisos para realizar una acción. Kubernetes soporta varios métodos de autorización. Por ejemplo, podemos usar roles y permisos, políticas de RBAC, etc.
 
 Para esta sección, consulta la documentación sobre [[usuarios_roles]] 
+
 #### RBAC (Role Based Access Control)
 RBAC es un método de autorización basado en roles. En este método, definimos roles y permisos. Luego, asignamos los roles a los usuarios. Por ejemplo, podemos definir un rol `admin` con permisos de lectura y escritura. Luego, podemos asignar este rol a un usuario `admin`.
 

@@ -4,7 +4,7 @@ title: Persistent Volumes y Persistent Volume Claims en Kubernetes
 description: Aprende a gestionar almacenamiento persistente en Kubernetes mediante Persistent Volumes y Persistent Volume Claims.
 ---
 
-# Persistent Volumes y Persistent Volume Claims en Kubernetes
+# Volúmenes en Kubernetes
 
 En kubernetes existe la posibilidad de crear volumenes para persistir los datos de los pods. Estos se agrupan en dos objetos:
 * PV: "Persistent Volume", es la declaración de un espacio del host que el cluster va a reservar para su uso.

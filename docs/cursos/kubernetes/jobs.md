@@ -7,12 +7,12 @@ sidebar: Jobs
 
 # Jobs en Kubernetes
 
-Los `Jobs` en kubernetes son una forma de automatizar tareas en kubernetes. A diferencia de los `Pods`, los `Jobs` tienen número de ejecuciones definido y un tiempo de ejecución limitado.
+Los `Jobs` y los `Cronjob` en kubernetes son una forma de automatizar tareas en kubernetes. A diferencia de los `Pods`, los `Jobs` tienen número de ejecuciones definido y un tiempo de ejecución limitado.
 
 Estos recursos se suelen utilizar para tareas de mantenimiento que se ejecutan de forma puntual y recurrente.
 
 
-## Sintaxis básica
+## Job - Sintaxis básica
 Este sería un ejemplo de sintáxis básica de un `Job`:
 ```yaml
 apiVersion: batch/v1
@@ -36,3 +36,24 @@ El parámetro diferenciador del `Jobs` frente a los `Pods` es el `completions`. 
 Si vemos el estado de un `Job` en kubernetes, podemos ver que está en estado `Pending` si no se ha iniciado, `Running` si se está ejecutando y `Succeeded` si se ha terminado con éxito.
 
 
+## Cronjob - Sinatxis básica
+Este sería un ejemplo de sintáxis básica de un `Cronjob`:
+```yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: test-cronjob
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      completions: 5
+      template:
+        spec:
+          containers:
+          - name: test
+            image: busybox
+            command: ["/bin/sleep"]
+            args: ["3"]
+          restartPolicy: Never
+```

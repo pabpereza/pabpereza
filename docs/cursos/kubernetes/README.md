@@ -1,20 +1,20 @@
 ---
-description: Curso completo de Kubernetes en español, desde nivel básico hasta intermedio, orientado a la certificación CKA.
-keywords: [kubernetes, curso, devops, sre, contenedores, CKA]
+title: Kubernetes 
 image: https://pabpereza.dev/img/banner_docker.png
-tags: [kubernetes, devops, sre, contenedores]
+tags: [kubernetes, devops, contenedores]
+keywords: [kubernetes, curso kubernetes, contenedores, devops]
 ---
 
-# Kubernetes 
+# Curso Kubernetes 
 
 **¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso!**
 
-TODO: Banner del curso 
+![](img/banner_docker.png)
 
-Hola, bienvenidos al curso de Kubernetes completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio.
+Hola, bienvenidos al curso de Kubernetes completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio. También sirve como preparación para la certificación CKA de Kubernetes, complementado con la parte de seguridad para la certificación CKS y la parte de desarrollo para la certificación CKAD.
 
-Todo el curso, esta disponible en esta lista de youtube: 
-TODO: Lista Youtube Curso Kubernetes
+Todo el curso, esta disponible en esta lista de youtube:
+TODO: Añadir lista de youtube
 
 Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás los apuntes y ejemplos de código que vaya mostrando en los vídeos, por lo que también podrías seguirlo sin necesidad de ver los vídeos, aunque en estas entradas no se profundizará tanto. Cuando haya muchas actualizaciones, regrabaré los vídeos para que estén actualizados.
 
@@ -22,12 +22,14 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 ## Índice
 
-### Nivel básico - orientado a la certificación CKA (Certified Kubernetes Administrator)
+### Nivel básico:
 * [Introducción a Kubernetes](101.Introduccion.md)
+* 
 
+### Kubernetes para desarrolladores (Específico CKAD)
 
-### Seguridad - orientado a la certificación CKS (Certified Kubernetes Security Specialist):
-TODO
+### Seguridad en Kubernetes (Específico CKS):
+
 
 ## Contribuir
 Si quieres contribuir a este repositorio, puedes hacerlo de varias formas:

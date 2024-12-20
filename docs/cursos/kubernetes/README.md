@@ -9,7 +9,7 @@ keywords: [kubernetes, curso kubernetes, contenedores, devops]
 
 **¡Este curso esta en desarrollo, puedes seguirme aquí o en Youtube para seguir semanalmente las actualizaciones del curso!**
 
-![](img/banner_docker.png)
+TODO: Imagen Banner
 
 Hola, bienvenidos al curso de Kubernetes completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio. También sirve como preparación para la certificación CKA de Kubernetes, complementado con la parte de seguridad para la certificación CKS y la parte de desarrollo para la certificación CKAD.
 
@@ -24,7 +24,8 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 ### Nivel básico:
 * [Introducción a Kubernetes](101.Introduccion.md)
-* 
+* [Arquitectura de Kubernetes](102.Arquitectura.md)
+* [Instalación con kubeadm](103.Instalacion.md) 
 
 ### Kubernetes para desarrolladores (Específico CKAD)
 

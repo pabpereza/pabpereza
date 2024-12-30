@@ -13,7 +13,7 @@ keywords: [docker, curso docker, contenedores, devops]
 
 Hola, bienvenidos al curso de Docker completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio. Igual te sirve como repaso o profundización de algunos aspectos si ya tienes experiencia con Docker.
 
-Todo el curso, esta disponible en esta lista de youtube: [Curso Docker](https://www.youtube.com/playlist?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0)
+Todo el curso, esta disponible en vídeo en esta [LISTA DE YOUTUBE](https://www.youtube.com/playlist?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0).
 
 Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás los apuntes y ejemplos de código que vaya mostrando en los vídeos, por lo que también podrías seguirlo sin necesidad de ver los vídeos, aunque en estas entradas no se profundizará tanto. Cuando haya muchas actualizaciones, regrabaré los vídeos para que estén actualizados.
 

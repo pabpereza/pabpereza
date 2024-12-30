@@ -13,8 +13,7 @@ TODO: Imagen Banner
 
 Hola, bienvenidos al curso de Kubernetes completamente gratuito y en español. Este curso comienza desde cero, dando por hecho que no tienes conocimientos previos hasta alcanzar un nivel intermedio. También sirve como preparación para la certificación CKA de Kubernetes, complementado con la parte de seguridad para la certificación CKS y la parte de desarrollo para la certificación CKAD.
 
-Todo el curso, esta disponible en esta lista de youtube:
-TODO: Añadir lista de youtube
+Todo el curso, esta disponible en vídeo en esta [LISTA DE YOUTUBE](https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma).
 
 Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás los apuntes y ejemplos de código que vaya mostrando en los vídeos, por lo que también podrías seguirlo sin necesidad de ver los vídeos, aunque en estas entradas no se profundizará tanto. Cuando haya muchas actualizaciones, regrabaré los vídeos para que estén actualizados.
 

@@ -59,6 +59,11 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * High Availability y Disaster Recovery
 
 ### Kubernetes para desarrolladores (Específico CKAD):
+* Pods e initContainers
+* Multi-container pods, sidecars, ambassador y adapter
+* CoreDNS, servicios y DNS
+* Service mesh
+* Troubleshooting de aplicaciones
 
 ### Seguridad en Kubernetes (Específico CKS):
 

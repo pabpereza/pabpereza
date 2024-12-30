@@ -23,15 +23,15 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 ## Índice
 
 ### Nivel básico:
-* [Introducción a Kubernetes](101.Introduccion.md)
-* [Arquitectura de Kubernetes](102.Arquitectura.md)
-* [Instalación con kubeadm](103.Instalacion.md)
-* [Intalación sencilla, minikube y k3s](103bis.Instalacion.md) 
-* [Manifiestos de Kubernetes](104.Manifiestos.md)
-* [Pods y contenedores](105.Pods.md)
-* [Namespaces y recursos](106.Namespaces.md)
-* [Deployment y ReplicaSet](107.Deployments.md)
-* [DaemonSet y StatefulSet](108.DDySS.md)
+* [Introducción a Kubernetes](./101.Introduccion.md)
+* [Arquitectura de Kubernetes](./102.Arquitectura.md)
+* [Instalación con kubeadm](./103.Instalacion.md)
+* [Intalación sencilla, minikube y k3s](./103bis.Instalacion.md) 
+* [Manifiestos de Kubernetes](./104.Manifiestos.md)
+* [Pods y contenedores](./105.Pods.md)
+* [Namespaces y recursos](./106.Namespaces.md)
+* [Deployment y ReplicaSet](./107.Deployments.md)
+* [DaemonSet y StatefulSet](./108.DDySS.md)
 * [Jobs y cronjobs](./109.Jobs.md)
 * [Probes y healtchecks](./110.Probes_live_readiness.md)
 * [Rangos y cuotas](./111.Rangos_quotas.md)
@@ -51,13 +51,13 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Perfiles y herramientas visuales](./125.Perfiles_software_dashboard.md)
 
 ### Kubernetes para administradores (Específico CKA):
-* [Mantenimiento, backup y restauración de un clúster]()
-* [Troubleshooting del cluster]()
-* [APIs, TLS y seguridad ]()
-* [Certificados y autenticación]()
-* [Volúmenes y almacenamiento custom]()
-* [CRDs y Operators]()
-* [High Availability y Disaster Recovery]()
+* Mantenimiento, backup y restauración de un clúster
+* Troubleshooting del cluster
+* APIs, TLS y seguridad
+* Certificados y autenticación
+* Volúmenes y almacenamiento custom
+* CRDs y Operators
+* High Availability y Disaster Recovery
 
 ### Kubernetes para desarrolladores (Específico CKAD):
 

@@ -57,6 +57,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * Volúmenes y almacenamiento custom
 * CRDs y Operators
 * High Availability y Disaster Recovery
+* Preparación examen CKA
 
 ### Kubernetes para desarrolladores (Específico CKAD):
 * Pods e initContainers
@@ -64,9 +65,17 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * CoreDNS, servicios y DNS
 * Service mesh
 * Troubleshooting de aplicaciones
+* Preparación examen CKAD
 
 ### Seguridad en Kubernetes (Específico CKS):
-
+* CIS Benchmarks
+* Runtime class
+* Network policies avanzadas
+* Admission controllers
+* Apparmor y Seccomp
+* Falco
+* OPA
+* Preparación examen CKS
 
 
 ## Contribuir

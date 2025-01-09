@@ -6,7 +6,7 @@ tags: [kubernetes]
 authors: pabpereza 
 ---
 
-¡Hola! En esta entrada me gustaría contar mi experiencia con la certificación CKA (Certified Kubernetes Administrator) gestionada por la Linux Foundation.
+¡Hola! En esta entrada me gustaría compartir mi experiencia con la certificación CKA (Certified Kubernetes Administrator) gestionada por la Linux Foundation.
 
 <!-- truncate -->
 

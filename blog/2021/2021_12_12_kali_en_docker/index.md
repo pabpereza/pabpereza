@@ -10,7 +10,7 @@ Unas semanas antes de la creación de esta web había hecho una trilogía de ví
 <!-- truncate -->
 
 # Ventajas y desventajas de utilizar Kalilinux en Docker
-Bueno, yo creo que si conoces la tecnología docker la respuesta es simple. Puedes tener imágenes ligeras, con las herramientas que necesitas, preparadas para ejecutar muy rápidamente. Tambien puedes gestionarlas con un repositorio remoto y transportarlas fácilmente entre distintos entornos.
+Bueno, yo creo que si conoces la tecnología docker la respuesta es simple. Puedes tener imágenes ligeras, con las herramientas que necesitas, preparadas para ejecutar muy rápidamente. También puedes gestionarlas con un repositorio remoto y transportarlas fácilmente entre distintos entornos.
 
 Pero como todo, tiene sus grandes inconvenientes. Las imágenes de docker no tienen acceso directo al hardware y eso puede lastrar un poco el rendimiento, concretamente si necesitamos la tarjeta gráfica en operaciones de computación como el cracking de contraseñas. 
 

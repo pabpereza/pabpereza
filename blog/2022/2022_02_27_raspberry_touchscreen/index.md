@@ -9,7 +9,7 @@ authors: pabpereza
 Las raspberry pi son de las computadoras más versátiles y asequibles que puedes encontrar en el mercado. Además, dada su popularidad, tienen una gran cantidad de software específico (pihole, piretro... etc) que ayudará a darle un sinfín de usos y, por otra parte, tiene muchos accesorios que la potenciarán aún más si cabe.
 <!-- truncate -->
 
-Concretamente me refiero a la pantalla táctil de 7 pulgadas que se puede montar en cualquier raspberry pi. Esta se puede utilizar para crear un consola portátil, control industrial, etc.
+Concretamente me refiero a la pantalla táctil de 7 pulgadas que se puede montar en cualquier raspberry pi. Esta se puede utilizar para crear una consola portátil, control industrial, etc.
 
 ![](raspberry_touchscreen_banner.png)
 

@@ -4,6 +4,7 @@ title: 3 cosas que obsesionan a los DevOps
 tags: [ devpos, ]
 authors: pabpereza
 date: 2024-12-18
+draft: true
 ---
 
 # 3 cosas que obsesionan a los DevOps

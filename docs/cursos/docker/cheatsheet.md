@@ -1,3 +1,6 @@
+---
+keywords: [docker, comandos docker, cheatsheet docker, docker tutorial, docker desde cero, docker para principiantes, docker avanzado, docker en producción, gestión de contenedores, gestión de imágenes, volúmenes docker, redes docker]
+---
 
 Introducir usuario en el grupo docker
 ``` shell

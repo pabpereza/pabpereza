@@ -1,12 +1,12 @@
 ---
 date: 2022-12-01
-title: "Crea y comparte backups en docker"
+title: "Crea y comparte copias de seguridad en docker"
 slug: "crea_y_comparte_backups_en_docker"
 tags: [docker, noticia]
 authors: pabpereza 
 ---
 
-En docker, podemos utilizar volúmenes para persistir datos incluso cuando los contenedores se destruyen. Estos volúmenes eran complejos de administrar en muchas circunstancias, por lo que docker ha creado una nueva funcionalidad para docker desktop, que nos permite crear backups de los volúmenes y compartirlos con otros usuarios de una forma sencilla.
+En docker, podemos utilizar volúmenes para persistir datos incluso cuando los contenedores se destruyen. Estos volúmenes eran complejos de administrar en muchas circunstancias, por lo que docker ha creado una nueva funcionalidad para docker desktop, que nos permite crear copias de seguridad de los volúmenes y compartirlos con otros usuarios de una forma sencilla.
 <!-- truncate -->
 
 ![Docker backups](https://www.docker.com/wp-content/uploads/2022/09/share-volume-docker.png.webp)
@@ -16,7 +16,7 @@ Docker desktop empezó a ofrecer extensiones hace unos meses. Estas extensiones 
 
 [Tengo un vídeo en youtube hablando de las extensiones de docker desktop](https://www.youtube.com/watch?v=6je3tV-_7I0), si quieres saber más sobre ellas. 
 
-En este caso, la extensión que nos interesa es la de **Docker Backup**. Esta extensión nos permite crear backups de los volúmenes de docker y compartirlos con otros usuarios de diferentes formas. Dentro vídeo:
+En este caso, la extensión que nos interesa es la de **Docker Backup**. Esta extensión nos permite crear copias de seguridad de los volúmenes de docker y compartirlos con otros usuarios de diferentes formas. Dentro vídeo:
 
 
 [![Docker backups](https://img.youtube.com/vi/thqgLGMfsGw/maxresdefault.jpg)](https://www.youtube.com/watch?v=thqgLGMfsGw)

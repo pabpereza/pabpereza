@@ -38,7 +38,8 @@ La característica de multi-etapas de construcción de Docker nos permite utiliz
 
 Tengo una [lista de vídeos en youtube hablando del tema](https://youtube.com/playlist?list=PLQhxXeq1oc2mB6_KY-l_zgWJWZo_ne9MZ) y también [un repositorio con varios ejemplos](https://github.com/pabpereza/multi-stage-containers-examples).
 
-
+## Paso 4: Optimización
+La optimización de las imágenes Docker es un proceso continuo. A medida que se desarrollan nuevas versiones de la aplicación, es importante revisar y optimizar las imágenes Docker para asegurarse de que siguen siendo ligeras y eficientes. Esto puede incluir la eliminación de archivos temporales, la compresión de archivos y la eliminación de dependencias no utilizadas.
 
 ## Post-paso 1: Monitorizar el rendimiento de la imagen.
 Algunos errores de optimización no serán visibles hasta que la imagen se ejecute en un entorno de producción. Por lo tanto, es importante monitorizar el rendimiento de la imagen una vez que se haya desplegado en producción. Esto nos permitirá identificar cualquier problema de rendimiento y optimizar la imagen de forma proactiva. 
@@ -64,5 +65,4 @@ Para generar imágenes Docker ligeras, debemos seguir los siguientes pasos:
 * Utilizar una imagen base pequeña, como las versiones slim de debian, las UBI de Red Hat o las imágenes de Alpine.
 * Eliminar archivos no necesarios, como componentes de desarrollo, compiladores, documentación.. etc. Para esto, podemos utilizar herramientas como Dive, tanto desde la línea de comandos como desde docker desktop.
 * Construir una imagen con multi-etapas de construcción.
-
 

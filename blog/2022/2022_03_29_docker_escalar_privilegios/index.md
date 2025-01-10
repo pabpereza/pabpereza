@@ -11,7 +11,7 @@ Los contenedores son procesos aislados que, por defecto, ¿se podrían considera
 <!-- truncate -->
 
 ## Aislados pero no herméticos 
-Tecnologías de contenedores como Docker, LXC, LXD, etc.. permiten a los usuarios lanzar un proceso aislado pero, existen multiples funcionalidades, que podrían comprometer la aplicación en mayor o menor medida.
+Tecnologías de contenedores como Docker, LXC, LXD, etc.. permiten a los usuarios lanzar un proceso aislado pero, existen múltiples funcionalidades, que podrían comprometer la aplicación en mayor o menor medida.
 
 
 En este vídeo trato las principales malas configuraciones que permiten a un atacante escapar de un contenedor:

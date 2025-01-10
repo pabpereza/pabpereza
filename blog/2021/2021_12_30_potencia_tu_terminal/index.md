@@ -6,10 +6,9 @@ tags: [bash, zsh, terminal]
 authors: pabpereza
 ---
 
-Hola y bienvenidos a un nuevo vídeo en el que hablaremos de zsh y un framework llamado oh-my-zsh. Estos te permitirán personalizar el terminal para adaptarlo a tus gustos y necesidades. Espero que después de este vídeo termines amándolo y usándolo más a menudo.
+Hola y bienvenidos a un nuevo video en el que hablaremos de zsh y un framework llamado oh-my-zsh. Estos te permitirán personalizar el terminal para adaptarlo a tus gustos y necesidades. Espero que después de este video termines amándolo y usándolo más a menudo.
 <!-- truncate -->
 
-Dentro vídeo:
+Dentro video:
 https://youtu.be/cyK89jHB9JA 
-
 

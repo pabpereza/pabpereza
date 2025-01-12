@@ -39,7 +39,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Docker en producción](115.Docker_en_produccion.md) 
 
 ### Intermedio-Avanzado:
-* [Límites y control de recursos](#limites_y_control_de_recursos) TODO
+* [Límites y control de recursos](201.Limites_recursos.md) 
 * [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicacion) TODO
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
 * [Dockerfile: Multistage build](#dockerfile_multistage_build) TODO

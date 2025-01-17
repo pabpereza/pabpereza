@@ -15,6 +15,8 @@ Bueno, comenzaremos hablando sobre cómo se utilizan las contraseñas en nuestra
 
 <!-- truncate -->
 
+Puedes verlo en vídeo [aquí](https://youtu.be/JgLxzj3MHEo)
+
 En cualquiera de los casos, maneje o no contraseñas el usuario, los sistemas siempre manejan secretos para validar la autenticación y autorización de un usuario, una llamada a un API o la interacción que sea, a través de tokens de muchos tipos, entre los más destacados, JWT.
 
 Ahora, hablemos sobre cómo se transportan y almacenan las contraseñas durante las llamadas HTTP u otros protocolos. Cuando introduces tu contraseña en un sitio web, esta se transforma en un hash antes de ser enviada, y se almacena en la base de datos del sitio web.

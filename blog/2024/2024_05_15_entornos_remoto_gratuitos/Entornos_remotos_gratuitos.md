@@ -22,9 +22,9 @@ Dentro vídeo:
 https://www.youtube.com/watch?v=CIZhk8FG0Ng
 
 
-# Opciones
+## Opciones
 
-## Github Codespaces
+### Github Codespaces
 Github Codespaces es una herramienta que nos permite crear entornos de desarrollo en la nube, basados en Visual Studio Code. Es una herramienta muy potente, ya que podremos tener un entorno de desarrollo completo, con todas las extensiones que necesitemos, y todo en la nube.
 
 Para poder usar Codespaces, necesitaremos una cuenta de Github y un repositorio público. Si no tenemos un repositorio, podremos crear uno en nuestra cuenta de Github.
@@ -45,7 +45,7 @@ Ahora ya podrás hacer cualquier cosa, en cualquier dispositivo, aunque sea un m
 
 
 
-## Gitpod
+### Gitpod
 Gitpod es una herramienta similar a Codespaces, pero con algunas diferencias. La principal, es que podremos usar Gitpod en cualquier repositorio, no solo en repositorios de Github.
 
 Para usar Gitpod, necesitaremos una cuenta de Github, Gitlab o Bitbucket. Una vez tengamos una cuenta, podremos instalar la extensión de Gitpod en nuestro navegador, y podremos abrir cualquier repositorio.
@@ -61,7 +61,7 @@ Al igual que Codespaces, nos abrirá un entorno de desarrollo en la nube, con Vi
 En cuanto a las limitaciones, con una cuenta gratuita, podremos hacer uso de Gitpod durante 50 horas al mes. Si necesitamos más tiempo, podremos contratar una cuenta de pago.
 
 
-## AWS EC2
+### AWS EC2
 AWS EC2 es un servicio de Amazon que nos permite crear máquinas virtuales en la nube. Podremos crear una máquina virtual con las características que necesitemos, y podremos instalar el software que necesitemos.
 
 Con una cuenta de amazon, podremos crear una instancia de EC2 gratuita siempre que sean las de tipo t2.micro o t3.micro y no superemos las 750 horas al mes. Además, esto solo será durante el primer año, después, tendremos que pagar por el uso de la instancia.
@@ -71,6 +71,19 @@ Con una cuenta de amazon, podremos crear una instancia de EC2 gratuita siempre q
 Al igual que en los casos anteriores, podremos instalar Docker en nuestra instancia de EC2, y podremos seguir el curso sin problemas.
 
 Dicho AWS, también podremos usar otros servicios como Google Cloud, Azure, Digital Ocean, etc. La mayoría de estos servicios tienen una capa gratuita de servicio, así que puedes elegir el proveedor que más te guste.
+
+## Detalles adicionales sobre entornos de desarrollo remotos
+
+### Ventajas de los entornos de desarrollo remotos
+- **Accesibilidad**: Puedes acceder a tu entorno de desarrollo desde cualquier dispositivo con conexión a internet.
+- **Escalabilidad**: Puedes ajustar los recursos de tu entorno de desarrollo según tus necesidades.
+- **Colaboración**: Facilita la colaboración entre equipos distribuidos geográficamente.
+- **Seguridad**: Almacenar tu código y datos en la nube puede ofrecer mayor seguridad y respaldo.
+
+### Desventajas de los entornos de desarrollo remotos
+- **Dependencia de la conexión a internet**: Necesitas una conexión a internet estable para trabajar.
+- **Costos**: Aunque hay opciones gratuitas, los planes de pago pueden ser costosos a largo plazo.
+- **Limitaciones de recursos**: Las opciones gratuitas suelen tener limitaciones en cuanto a recursos y tiempo de uso.
 
 
 # Conclusión
@@ -84,21 +97,3 @@ Si aún así, las ves muy limitadas, siempre puedes utilizar una combinación de
 
 ¡Hasta la próxima! 👋
 
-### Detalles adicionales sobre entornos de desarrollo remotos
-
-#### Ventajas de los entornos de desarrollo remotos
-- **Accesibilidad**: Puedes acceder a tu entorno de desarrollo desde cualquier dispositivo con conexión a internet.
-- **Escalabilidad**: Puedes ajustar los recursos de tu entorno de desarrollo según tus necesidades.
-- **Colaboración**: Facilita la colaboración entre equipos distribuidos geográficamente.
-- **Seguridad**: Almacenar tu código y datos en la nube puede ofrecer mayor seguridad y respaldo.
-
-#### Desventajas de los entornos de desarrollo remotos
-- **Dependencia de la conexión a internet**: Necesitas una conexión a internet estable para trabajar.
-- **Costos**: Aunque hay opciones gratuitas, los planes de pago pueden ser costosos a largo plazo.
-- **Limitaciones de recursos**: Las opciones gratuitas suelen tener limitaciones en cuanto a recursos y tiempo de uso.
-
-### Verificación de enlaces
-- [Curso de Docker](https://pabpereza.dev/docs/cursos/docker)
-- [Perfil de Github](https://github.com/pabpereza)
-- [Repositorio de mi web/perfil](https://github.com/pabpereza/pabpereza)
-- [Seguridad contenedores](https://www.notion.so/Seguridad-contenedores-4b7442b465cd40619e7cc385e2bb3f0b?pvs=21)

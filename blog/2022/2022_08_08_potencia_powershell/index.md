@@ -17,6 +17,10 @@ Para esta ocasión, abordaremos el tema en sistemas Windows utilizando oh-my-pos
 * Información avanzada
 * Personalización con múltiples temas
 
+Dentro vídeo: https://youtu.be/kWIesAUhLAg
+
+[![Potencia PowerShell](https://img.youtube.com/vi/kWIesAUhLAg/maxresdefault.jpg)](https://youtu.be/kWIesAUhLAg)
+
 ### Características de PowerShell
 
 PowerShell es una herramienta poderosa y versátil que ofrece una amplia gama de características para la administración y automatización de sistemas. Algunas de las características más destacadas incluyen:
@@ -49,7 +53,5 @@ Import-Module oh-my-posh
 Set-PoshPrompt -Theme paradox
 ```
 
-### Verificación de enlaces
 
-- [Entrada al blog y enlace al vídeo sobre potenciar el terminal en Unix y Linux](/blog/2021/2021_12_30_potencia_tu_terminal/index.md)
-- [Vídeo sobre potenciar PowerShell](https://youtu.be/kWIesAUhLAg)
+Eso es todo, nos vemos en el siguiente.

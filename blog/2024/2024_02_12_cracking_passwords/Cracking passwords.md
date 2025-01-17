@@ -51,3 +51,6 @@ Hashcat es una de las herramientas más avanzadas en recuperación de contraseñ
 Para poner en práctica la herramienta he creado un vídeo en el que muestro cómo crackear diferentes tipos de hashes con diferentes métodos de ataque. 
 
 [![Cracking passwords with Hashcat](https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg)](https://youtu.be/JgLxzj3MHEo)
+
+
+Nos vemos en el próximo vídeo, ¡hasta luego! 🚀

@@ -4,6 +4,7 @@ title: "CKA: Mi experiencia"
 slug: "CKA_mi_experiencia"
 tags: [kubernetes]
 authors: pabpereza 
+banner: https://images.credly.com/size/680x680/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png
 ---
 
 ¡Hola! En esta entrada me gustaría compartir mi experiencia con la certificación CKA (Certified Kubernetes Administrator) gestionada por la Linux Foundation.
@@ -11,6 +12,8 @@ authors: pabpereza
 <!-- truncate -->
 
 Todo este último año he dedicado mis esfuerzos, tanto en lo personal como en lo profesional, a profundizar mis conocimientos en contenedores y orquestación de los mismos. Aunque había trabajado previamente con la tecnología, no había tenido la posibilidad de pelearme con sus tripas ni desplegar mi propia infraestructura.
+
+![Logo CKA](https://images.credly.com/size/680x680/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png)
 
 Lo primero es contestar a las preguntas esenciales que personalmente me hice: 
 * ¿Por qué elegí esta certificación? Personalmente me interesaba más la certificación CKS, la cuál profundiza en kubernetes desde el punto de vista de seguridad, pero sacarse el CKA primero y asentar los conocimientos base me pareció más razonable. 
@@ -53,23 +56,3 @@ También puede ser interesante configurar tmux y vim si tienes alguna personaliz
 En resumen, la certificación CKA te permite sentirte cómodo administrando un cluster de kubernetes. Si tienes conocimientos previos de contenedores y orquestadores, no debería ser un problema. Si no los tienes, te recomiendo que te familiarices con ellos antes de empezar con la certificación. En cualquier caso, aún con la certificación, te encuentras con muchas situaciones en el día a día que no están cubiertas en el temario y que tendrás que investigar por tu cuenta.
 
 Espero que os haya servido de ayuda. Si tenéis cualquier duda, podéis preguntarme por cualquiera de mis redes sociales. ¡Un saludo!
-
-### Detalles adicionales sobre el proceso de certificación CKA
-
-#### Preparación
-La preparación para la certificación CKA requiere una combinación de estudio teórico y práctica. Es importante familiarizarse con los conceptos clave de Kubernetes, como pods, deployments, services, configmaps, secrets, y más. Además, es fundamental practicar la creación y gestión de estos recursos en un clúster de Kubernetes.
-
-#### Recursos recomendados
-- **Libro oficial de Kubernetes**: Este libro proporciona una guía completa sobre Kubernetes y cubre todos los temas necesarios para la certificación CKA.
-- **Cursos en línea**: Plataformas como Udemy, Coursera y Pluralsight ofrecen cursos específicos para la certificación CKA.
-- **Documentación oficial de Kubernetes**: La documentación oficial es una fuente invaluable de información y debe ser consultada regularmente durante la preparación.
-
-#### Estrategias de estudio
-- **Establecer un horario de estudio**: Dedica tiempo regularmente para estudiar y practicar. La consistencia es clave para retener la información.
-- **Practicar en un entorno real**: Configura un clúster de Kubernetes en tu máquina local o en la nube y practica la creación y gestión de recursos.
-- **Hacer exámenes de práctica**: Realiza exámenes de práctica para familiarizarte con el formato del examen y evaluar tu progreso.
-
-### Verificación de enlaces
-- [Documentación oficial de Kubernetes](https://kubernetes.io/docs/home/)
-- [Plataforma killer.sh](https://killer.sh/)
-- [Plataforma katacoda](https://www.katacoda.com/)

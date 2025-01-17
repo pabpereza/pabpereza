@@ -9,6 +9,8 @@ image: rancher_desktop_panel.png
 
 Ya estuve explicando en este [artículo](/blog/2021/2021_09_12_docker_de_pago/index.md) los nuevos planes de Docker Desktop y cómo afectarían a los usuarios. Aunque existen otras alternativas como Buildah o Podman, estas solo funcionan sobre Linux. Si sois usuarios de Windows o Mac y pensáis en montar una máquina Linux, quizá prefiráis usar Docker Engine por la familiaridad que ofrece en lugar de usar otras herramientas.
 
+<!-- truncate -->
+
 Rancher Desktop se posiciona como una alternativa a tener en cuenta. Dentro vídeo <i class='fa fa-film'></i>
 https://youtu.be/LmKN4NvpR-4 
 

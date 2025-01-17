@@ -109,3 +109,6 @@ Finalmente, solo quedaría instalar el sistema operativo y configurar MacOS a nu
 Te dejo el proceso completo en el vídeo de youtube
 
 [![Ejecuta Mac OS en Docker](https://img.youtube.com/vi/Xzz8_r48K74/maxresdefault.jpg)](https://youtu.be/Xzz8_r48K74)
+
+
+Nos vemos en el siguiente.

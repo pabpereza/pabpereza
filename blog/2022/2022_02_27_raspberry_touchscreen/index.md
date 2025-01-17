@@ -28,6 +28,4 @@ https://youtu.be/eGZvo7AnO_U
 ### Pero, ¿y la carcasa?
 En la pantalla oficial no viene incluida una carcasa que proteja la parte trasera de la pantalla y la Raspberry. Podemos comprarlas por precios entre 10-20€, aunque, si eres maker o tienes una impresora 3D, en la web de [thingiverse](https://www.thingiverse.com/search?q=raspberry+touchscreen+7&type=things&sort=relevant) podrás encontrar una gran variedad de modelos para hacértela tú mismo.
 
-### Verificación de enlaces
-- [Thingiverse - Raspberry Touchscreen 7](https://www.thingiverse.com/search?q=raspberry+touchscreen+7&type=things&sort=relevant)
-- [Video de instalación y configuración](https://youtu.be/eGZvo7AnO_U)
+Nos vemos en el siguiente.

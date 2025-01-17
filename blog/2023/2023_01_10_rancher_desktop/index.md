@@ -12,6 +12,9 @@ Ya estuve explicando en este [artículo](/blog/2021/2021_09_12_docker_de_pago/in
 Rancher Desktop se posiciona como una alternativa a tener en cuenta. Dentro vídeo <i class='fa fa-film'></i>
 https://youtu.be/LmKN4NvpR-4 
 
+[![La alternativa a Docker que estabas buscando - Rancher Desktop](https://img.youtube.com/vi/LmKN4NvpR-4/maxresdefault.jpg)](https://youtu.be/LmKN4NvpR-4)
+
+
 ## ¿Qué es Rancher Desktop?
 Si vienes del mundo de Kubernetes, seguro que Rancher te es familiar. Este es una plataforma de Kubernetes con una capa de gestión pensada en la facilidad de despliegue y gestión de clústers.
 
@@ -36,10 +39,5 @@ Como ya comentaba, una solución 100% efectiva es instalar Docker en una máquin
 
 Un viejo compañero con alias [Yohnah](https://github.com/Yohnah) en Github ha creado un repositorio con automatismos y una máquina virtual preparada para desplegar automáticamente con Vagrant. La máquina virtual viene con Docker instalado y listo para funcionar. Además, el automatismo deja el host configurado para que utilice el Docker Engine de la máquina virtual de una forma similar a la que lo hace Docker Desktop. Toda la guía aquí:
 https://github.com/Yohnah/Docker
-
-### Verificación de enlaces
-- [Artículo sobre Docker de pago](/blog/2021/2021_09_12_docker_de_pago/index.md)
-- [Repositorio de Yohnah en Github](https://github.com/Yohnah/Docker)
-- [Vídeo sobre Rancher Desktop](https://youtu.be/LmKN4NvpR-4)
 
 ¡Hasta el siguiente!

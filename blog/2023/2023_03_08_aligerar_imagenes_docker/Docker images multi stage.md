@@ -38,35 +38,6 @@ La característica de multi-etapas de construcción de Docker nos permite utiliz
 
 Tengo una [lista de vídeos en youtube hablando del tema](https://youtube.com/playlist?list=PLQhxXeq1oc2mB6_KY-l_zgWJWZo_ne9MZ) y también [un repositorio con varios ejemplos](https://github.com/pabpereza/multi-stage-containers-examples).
 
-### Detalles adicionales sobre multi-stage builds
-
-#### ¿Qué son las multi-stage builds?
-Las multi-stage builds son una técnica avanzada de construcción de imágenes Docker que permite utilizar múltiples etapas en un solo Dockerfile. Cada etapa puede tener su propia imagen base y conjunto de instrucciones, lo que permite optimizar el proceso de construcción y reducir el tamaño de la imagen final.
-
-#### Beneficios de las multi-stage builds
-- **Reducción del tamaño de la imagen**: Al utilizar múltiples etapas, puedes eliminar archivos y dependencias innecesarias de la imagen final, lo que reduce su tamaño.
-- **Mejora de la seguridad**: Al eliminar herramientas y dependencias de desarrollo de la imagen final, reduces la superficie de ataque y mejoras la seguridad de la aplicación.
-- **Facilidad de mantenimiento**: Las multi-stage builds permiten mantener un Dockerfile más limpio y organizado, lo que facilita su mantenimiento y actualización.
-
-#### Ejemplo de multi-stage build
-A continuación, se muestra un ejemplo de un Dockerfile que utiliza multi-stage builds para compilar y ejecutar una aplicación Go:
-
-```dockerfile
-# Etapa de compilación
-FROM golang:1.16 AS builder
-WORKDIR /app
-COPY . .
-RUN go build -o myapp
-
-# Etapa final
-FROM alpine:latest
-WORKDIR /app
-COPY --from=builder /app/myapp .
-CMD ["./myapp"]
-```
-
-En este ejemplo, la primera etapa utiliza la imagen base `golang:1.16` para compilar la aplicación Go. La segunda etapa utiliza la imagen base `alpine:latest` para ejecutar la aplicación, copiando solo el binario compilado desde la primera etapa. Esto reduce el tamaño de la imagen final y elimina las dependencias de desarrollo innecesarias.
-
 ## Paso 4: Optimización
 La optimización de las imágenes Docker es un proceso continuo. A medida que se desarrollan nuevas versiones de la aplicación, es importante revisar y optimizar las imágenes Docker para asegurarse de que siguen siendo ligeras y eficientes. Esto puede incluir la eliminación de archivos temporales, la compresión de archivos y la eliminación de dependencias no utilizadas.
 

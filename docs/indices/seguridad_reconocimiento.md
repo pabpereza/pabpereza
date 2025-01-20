@@ -1,4 +1,0 @@
-#Índice
-
-[[nmap]]
-[[SNMP]]

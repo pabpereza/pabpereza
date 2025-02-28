@@ -7,16 +7,16 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Últimos vídeos publicados
 <p align=center>
 
-<a href='https://youtu.be/8q5txsy3PAE' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/8q5txsy3PAE/mqdefault.jpg' />
+<a href='https://youtu.be/8JOfM7HKQ70' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/8JOfM7HKQ70/mqdefault.jpg' />
 </a>
 
-<a href='https://youtu.be/eqxQGmem_bc' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/eqxQGmem_bc/mqdefault.jpg' />
+<a href='https://youtu.be/GaIVr8m0chk' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/GaIVr8m0chk/mqdefault.jpg' />
 </a>
 
-<a href='https://youtu.be/AjPUraHm1rw' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/AjPUraHm1rw/mqdefault.jpg' />
+<a href='https://youtu.be/GuSs-gPF_uM' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/GuSs-gPF_uM/mqdefault.jpg' />
 </a>
 
 </p>
@@ -30,16 +30,16 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Podcast y directos
 <p align=center>
 
+<a href='https://youtu.be/k7U0Hi45ClE' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/k7U0Hi45ClE/mqdefault.jpg' />
+</a>
+
 <a href='https://youtu.be/qg2jc9eSNsE' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/qg2jc9eSNsE/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/XqbW3tIzftQ' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/XqbW3tIzftQ/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
 </a>
 
 </p>

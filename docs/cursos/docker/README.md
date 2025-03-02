@@ -40,13 +40,13 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 ### Intermedio-Avanzado:
 * [Límites y control de recursos](201.Limites_recursos.md) 
-* [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicacion) TODO
+* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
 * [Dockerfile: Multistage build](#dockerfile_multistage_build) TODO
-* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
 * [Docker compose avanzado](#docker_compose_avanzado) TODO
 * [Redes avanzado](#redes_avanzado) TODO
 * [Volumenes y backups](#volumes_avanzado) TODO
+* [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicacion) TODO
 
 ### DevOps:
 * [CI con Docker](#ci_docker) TODO

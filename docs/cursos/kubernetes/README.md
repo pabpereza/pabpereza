@@ -26,7 +26,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Arquitectura de Kubernetes](./102.Arquitectura.md)
 * [Instalación con kubeadm](./103.Instalacion.md)
 * [Intalación sencilla, minikube y k3s](./103bis.Instalacion.md) 
-* [Manifiestos de Kubernetes](./104.Manifiestos.md)
+* [Manifiestos de Kubernetes](./104.Conceptos.md)
 * [Pods y contenedores](./105.Pods.md)
 * [Namespaces y recursos](./106.Namespaces.md)
 * [Deployment y ReplicaSet](./107.Deployments.md)

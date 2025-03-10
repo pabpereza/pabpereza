@@ -40,6 +40,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 ### Intermedio-Avanzado:
 * [Límites y control de recursos](201.Limites_recursos.md) 
+* [Balancear de carga](202.Balanceo_de_carga.md)
 * [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
 * [Dockerfile: Multistage build](#dockerfile_multistage_build) TODO

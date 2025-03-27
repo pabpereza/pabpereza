@@ -38,6 +38,10 @@ curl -sfL https://get.k3s.io | sh -
 
 No hay mucho más que hacer, simplemente esperar a que termine la instalación y ya tendremos nuestro cluster de kubernetes funcionando. Si queremos añadir más nodos al cluster, simplemente tenemos que ejecutar el mismo comando en otras raspberry o dispositivos que queramos añadir al cluster.
 
-## ¿Y que más?
-La verdad que es muy sencillo, pero no vamos a dejar esto tan simple. 
+## ¿Y que más? Instalar addons en K3s
+La verdad que es muy sencillo, pero no vamos a dejar esto tan simple. Añadiremos algunos addons para que nuestro cluster sea más completo y funcional. Por ejemplo, podemos instalar el dashboard de kubernetes, el cual nos permitirá ver el estado de nuestro cluster de una forma más visual.
+
+Para instalar el dashboard, simplemente tenemos que ejecutar el siguiente comando:
+
+```shell
 

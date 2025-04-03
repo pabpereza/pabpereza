@@ -23,8 +23,8 @@
     "docusaurus-lunr-search": "^3.6.1",
     "dotenv": "^16.4.7",
     "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-github-btn": "^1.4.0"
   },
   "devDependencies": {

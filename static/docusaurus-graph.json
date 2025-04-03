@@ -31,8 +31,9 @@
       "113",
       "114",
       "115",
-      "README",
-      "linux_en_navegador"
+      "201",
+      "202",
+      "README"
     ],
     "referencedBy": []
   },
@@ -54,13 +55,13 @@
   },
   {
     "id": "104",
-    "title": "Manifiestos de Kubernetes",
+    "title": "Instalaciones para pocos recursos o entornos de pruebas gratuitos",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "105",
-    "title": "Pods",
+    "title": "Conceptos básicos y kubectl",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -68,7 +69,7 @@
   },
   {
     "id": "106",
-    "title": "106",
+    "title": "Pods",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -76,7 +77,7 @@
   },
   {
     "id": "107",
-    "title": "Deployments en Kubernetes",
+    "title": "Namespaces y contextos",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -84,7 +85,7 @@
   },
   {
     "id": "108",
-    "title": "DaemonSets y StatefulSets en Kubernetes",
+    "title": "Deployments en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -92,7 +93,7 @@
   },
   {
     "id": "109",
-    "title": "Jobs en Kubernetes",
+    "title": "DaemonSets y StatefulSets en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -100,7 +101,7 @@
   },
   {
     "id": "110",
-    "title": "Probes en Kubernetes",
+    "title": "Jobs en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -108,7 +109,7 @@
   },
   {
     "id": "111",
-    "title": "Rangos y Quotas en Kubernetes",
+    "title": "Probes en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -116,7 +117,7 @@
   },
   {
     "id": "112",
-    "title": "Autoscaling en Kubernetes",
+    "title": "Rangos y Quotas en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -124,7 +125,7 @@
   },
   {
     "id": "113",
-    "title": "Servicios en Kubernetes",
+    "title": "Autoscaling en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -132,7 +133,7 @@
   },
   {
     "id": "114",
-    "title": "Ingress Controller en Kubernetes",
+    "title": "Servicios en Kubernetes",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -140,7 +141,23 @@
   },
   {
     "id": "115",
-    "title": "Gateway en Kubernetes",
+    "title": "Ingress Controller en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "201",
+    "title": "Pods y sidecars",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "202",
+    "title": "Docker Buildx y Multiarquitectura",
     "linkTo": [],
     "referencedBy": [
       "docker"
@@ -161,8 +178,7 @@
     "title": "devops",
     "linkTo": [
       "README",
-      "README",
-      "solucionar_errores"
+      "README"
     ],
     "referencedBy": []
   },
@@ -186,24 +202,55 @@
     "title": "kubernetes",
     "linkTo": [
       "101",
-      "111",
+      "102",
+      "105",
+      "106",
+      "107",
       "112",
-      "115",
+      "113",
+      "116",
+      "122",
       "README"
     ],
     "referencedBy": []
   },
   {
-    "id": "103bis",
-    "title": "Instalaciiones simples de Kubernetes",
-    "linkTo": [],
+    "id": "arquitectura",
+    "title": "arquitectura",
+    "linkTo": [
+      "102"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "pods",
+    "title": "pods",
+    "linkTo": [
+      "106"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "namespaces",
+    "title": "namespaces",
+    "linkTo": [
+      "107"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "contextos",
+    "title": "contextos",
+    "linkTo": [
+      "107"
+    ],
     "referencedBy": []
   },
   {
     "id": "rangos",
     "title": "rangos",
     "linkTo": [
-      "111"
+      "112"
     ],
     "referencedBy": []
   },
@@ -211,7 +258,7 @@
     "id": "quotas",
     "title": "quotas",
     "linkTo": [
-      "111"
+      "112"
     ],
     "referencedBy": []
   },
@@ -219,51 +266,54 @@
     "id": "autoscaling",
     "title": "autoscaling",
     "linkTo": [
-      "112"
-    ],
-    "referencedBy": []
-  },
-  {
-    "id": "gateway",
-    "title": "gateway",
-    "linkTo": [
-      "115"
+      "113"
     ],
     "referencedBy": []
   },
   {
     "id": "116",
+    "title": "Gateway en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "gateway"
+    ]
+  },
+  {
+    "id": "gateway",
+    "title": "gateway",
+    "linkTo": [
+      "116"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "117",
     "title": "Secrets y ConfigMaps en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "117",
+    "id": "118",
     "title": "Volúmenes en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "118",
+    "id": "119",
     "title": "Seguridad en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "119",
+    "id": "120",
     "title": "Usuarios y Roles en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "120",
-    "title": "Roles en Kubernetes",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
     "id": "121",
-    "title": "Scheduling en Kubernetes",
+    "title": "Roles en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
@@ -271,17 +321,37 @@
     "id": "122",
     "title": "Scheduling en Kubernetes",
     "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "scheduling",
+      "labels"
+    ]
+  },
+  {
+    "id": "scheduling",
+    "title": "scheduling",
+    "linkTo": [
+      "122"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "labels",
+    "title": "labels",
+    "linkTo": [
+      "122"
+    ],
     "referencedBy": []
   },
   {
     "id": "123",
-    "title": "Logs en Kubernetes",
+    "title": "Scheduling en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
   {
     "id": "124",
-    "title": "Helm en Kubernetes",
+    "title": "Logs en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
@@ -292,14 +362,14 @@
     "referencedBy": []
   },
   {
-    "id": "200",
-    "title": "Recursos Personalizados en Kubernetes",
+    "id": "126",
+    "title": "Helm en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
   {
-    "id": "201",
-    "title": "Pods y sidecars",
+    "id": "200",
+    "title": "Recursos Personalizados en Kubernetes",
     "linkTo": [],
     "referencedBy": []
   },
@@ -378,343 +448,6 @@
   {
     "id": "usuarios",
     "title": "Bloqueo y desbloqueo de usuarios",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "Unix",
-    "title": "Unix",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "Windows",
-    "title": "Windows",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "contenedores_Seguridad",
-    "title": "contenedores_Seguridad",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "contenedores_docker",
-    "title": "contenedores_docker",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "contenedores_kubernetes",
-    "title": "contenedores_kubernetes",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dev_SQL",
-    "title": "dev_SQL",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dev_bash_utilidades",
-    "title": "dev_bash_utilidades",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dev_git",
-    "title": "dev_git",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dev_python",
-    "title": "dev_python",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "indices",
-    "title": "indices",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "security_global_areas",
-    "title": "security_global_areas",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "seguridad_dotnet",
-    "title": "Secure Coding",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "seguridad_reconocimiento",
-    "title": "seguridad_reconocimiento",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "claves_ssh",
-    "title": "claves_ssh",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "command_injection",
-    "title": "Command Injection",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "configurar_editor_commits",
-    "title": "configurar_editor_commits",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "container_security_tools",
-    "title": "Vulnerability Scanners",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "desactivar_swap",
-    "title": "desactivar_swap",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "donet_path_traversal",
-    "title": "DotNET Path Traversal",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_command_injection",
-    "title": "dotnet_command_injection",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_cryptography",
-    "title": "dotnet_cryptography",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_error_handling",
-    "title": "dotnet_error_handling",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_file_management",
-    "title": "dotnet_file_management",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_insecure_deseralization",
-    "title": "DotNET Insecure Deseralization",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_ldap_injection",
-    "title": "DotNET LDAP Injection",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_session_management",
-    "title": "dotnet_session_management",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_sql_inyection",
-    "title": "Entity Framework",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_waf_bypass",
-    "title": "DotNET WAF Bypass",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "dotnet_xxe",
-    "title": "dotnet_xxe",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "grub",
-    "title": "grub",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "herramientas_busqueda",
-    "title": "herramientas_busqueda",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "http_security_headers",
-    "title": "",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "index_lock",
-    "title": "index_lock",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "insecure_deseralization",
-    "title": "Insecure Deseralization",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "inyeccion_sql",
-    "title": "Inyección SQL",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "linux_en_navegador",
-    "title": "linux_en_navegador",
-    "linkTo": [],
-    "referencedBy": [
-      "linux",
-      "docker",
-      "guacamole"
-    ]
-  },
-  {
-    "id": "linux",
-    "title": "linux",
-    "linkTo": [
-      "linux_en_navegador"
-    ],
-    "referencedBy": []
-  },
-  {
-    "id": "guacamole",
-    "title": "guacamole",
-    "linkTo": [
-      "linux_en_navegador"
-    ],
-    "referencedBy": []
-  },
-  {
-    "id": "nfs",
-    "title": "nfs",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "nmap",
-    "title": "nmap",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "notas",
-    "title": "notas",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "oh_my_posh",
-    "title": "oh_my_posh",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "orm",
-    "title": "ORM",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "path_trasversal",
-    "title": "Path Traversal",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "redes",
-    "title": "redes",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "snmp",
-    "title": "snmp",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "solucionar_errores",
-    "title": "Errores comunes en Git",
-    "linkTo": [],
-    "referencedBy": [
-      "git",
-      "devops"
-    ]
-  },
-  {
-    "id": "git",
-    "title": "git",
-    "linkTo": [
-      "solucionar_errores"
-    ],
-    "referencedBy": []
-  },
-  {
-    "id": "sqlmap",
-    "title": "SQLMap",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "tmux",
-    "title": "tmux",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "trivy",
-    "title": "trivy",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "x_frame_options",
-    "title": "x-frame-options",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "zerotier",
-    "title": "Zerotier",
-    "linkTo": [],
-    "referencedBy": []
-  },
-  {
-    "id": "zsh",
-    "title": "zsh",
     "linkTo": [],
     "referencedBy": []
   }

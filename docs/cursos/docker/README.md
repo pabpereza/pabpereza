@@ -3,7 +3,6 @@ title: 🐳 Docker
 image: https://pabpereza.dev/img/banner_docker.png
 tags: [docker, devops, contenedores]
 keywords: [docker, curso docker, contenedores, devops]
-slug: docker
 ---
 
 # Curso Docker

@@ -92,10 +92,18 @@ Bueno, espero que mi experiencia personal os haya sido útil y haya cumplido las
 De la parte más personal extraido los siguientes perfiles, más o menos, por los que he ido pivotando:
 
 -> Desarrollador web y aprendiz de seguridad
--> Pentester
--> SSDLC
+-> Pentester o hacking ético
+-> SSDLC e ISO27001
 -> DevOps
 -> DevSecOps
 
-Se puede transicionar 
+Se puede transicionar muchas veces a lo largo de una carrera profesional, no pasa nada. Lo importante es que, desempeñes el rol que sea, asientes bien las bases.
+
+Si buscas ir a un perfil devsecops, igual la parte de pentesting no te aporta tanto, pero si que es importante en este tipo de roles entender los procesos de una empresa y tener una vision de la seguridad global.
+
+Vamos al grano, si tuviera que empezar ahora como devsecops para llegar a este tipo de perfil creo que hay 3 lineas de estudio muy claras.
+* Desarrollo.
+* DevOps
+* SSDLC
+ 
 

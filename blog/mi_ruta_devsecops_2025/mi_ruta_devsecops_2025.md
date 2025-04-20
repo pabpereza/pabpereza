@@ -1,18 +1,18 @@
 ---
-slug: mi_ruta_devsecops_recomendaciones_2025 
-title: Mi ruta DevSecOps y recomendaciones para empezar en 2025 
-tags: [ ]
+slug: mi_ruta_devsecops_reflexiones_recomendaciones_2025
+title: Mi ruta DevSecOps y aprendizaje personal a fecha de 2025 
+tags: [devsecops, reflexiones]
 authors: pabpereza
 date: 2025-04-15
 draft: true
 ---
 
-# Mi ruta DevSecOps y recomendaciones para empezar en 2025
+# Mi ruta DevSecOps y aprendizaje personal a fecha de 2025
 Hola comunidad, me lo habéis pedido varias personas, ya sea porque os interese como he llegado a donde estoy o que ruta seguir para llegar a ser DevSecOps. Este es mi vídeo (o blog, según donde estes consumiendo esto) más personal hasta la fecha, en el que espero que mi experiencia os pueda servir de ayuda para tomar unas decisiones u otras. 
 
 Primero os quería compartir lo que ha sido mi trayectoria personal y profesional, por si os sirve de experiencia, porque tampoco es la mejor ruta ni la más rápida, pero fue la que por circunstancias de la vida fue eligiendo dentro las opciones que tuve.
 
-En la segunda parte del vídeo, te hablaré de toda la tecnología que aprendí por el camino y como empezaría yo en 2025.
+En la [segunda parte](../devsecops_recomendaciones_2025/devsecops_recomendaciones_2025.md), te hablaré de toda la tecnología que aprendí por el camino y como empezaría yo en 2025.
 
 
 ## Parte 1: Mi trayectoria personal y profesional
@@ -66,7 +66,7 @@ Para 2022, empecé este pequeño proyecto que, además de potenciar mi marca per
 Además, potencié mucho más mi currículum obteniendo varias certicicaciones como la ISO27001 enfocada a auditoría de seguridad y luego el CKA para la parte de Kubernetes.
 
 ### Cambios personales y profesionales
-2023. Un punto de inflexión en mi vida. Tras años de mucho trabajo, pasión y también estrés, se sumaron dos nuevas variables, el inminente nacimiento de mi hijo y la oportunidad de internalizarme en el Banco Santander. Aunque la decisión fue difícil, pude organizarme con mis socios para no dejar la empresa y seguir colaborando con ellos desde un punto de vista más estratégico, organicé mi vida familiar para mudarnos a Madrid, esto fué más duro aún y comenzar una nueva aventura. 
+2023, un punto de inflexión en mi vida. Tras años de mucho trabajo, pasión y también estrés, se sumaron dos nuevas variables, el inminente nacimiento de mi hijo y la oportunidad de internalizarme en el Banco Santander. Aunque la decisión fue difícil, pude organizarme con mis socios para no dejar la empresa y seguir colaborando con ellos desde un punto de vista más estratégico, organicé mi vida familiar para mudarnos a Madrid, esto fué más duro aún y comenzar una nueva aventura. 
 
 También hay momentos en la vida en la que, es ahora o nunca, con un hijo más mayor asentado en una escuela no lo podría haber hecho.
 
@@ -84,26 +84,8 @@ Después de todos estos años de experiencia en el mundo del desarrollo, la segu
 * Empieza ya, no esperes a perfeccionar nada, morirás buscando la perfección sin encontrarla.
 * Piensa a largo plazo, mientras eres joven puedes hacer muchas cosas, luego la vida se complica o no tienes todo el tiempo y las ganas de seguir aprendiendo. Aquí es mi lección más personal, no esperes a tener 30 años y un hijo para sacarte la ingeniería si es que quieres obtenera, te pasará factura a tu salud mental jaja.
 
-Bueno, espero que mi experiencia personal os haya sido útil y haya cumplido las expectativas de todos los que me lo pedíais. Ahora vamos a la parte técnica, que es lo que estaréis deseando algunos.
+Bueno, espero que mi experiencia personal os haya sido útil y haya cumplido las expectativas de todos los que me lo pedíais. Ahora vamos a la parte técnica, la puedes ver en el siguiente video/post: [Ruta SecDevOps 2025](../devsecops_recomendaciones_2025/devsecops_recomendaciones_2025.md).
 
 
 
-## Parte 2: Tecnologías que aprendí y recomendaciones
-De la parte más personal extraido los siguientes perfiles, más o menos, por los que he ido pivotando:
-
--> Desarrollador web y aprendiz de seguridad
--> Pentester o hacking ético
--> SSDLC e ISO27001
--> DevOps
--> DevSecOps
-
-Se puede transicionar muchas veces a lo largo de una carrera profesional, no pasa nada. Lo importante es que, desempeñes el rol que sea, asientes bien las bases.
-
-Si buscas ir a un perfil devsecops, igual la parte de pentesting no te aporta tanto, pero si que es importante en este tipo de roles entender los procesos de una empresa y tener una vision de la seguridad global.
-
-Vamos al grano, si tuviera que empezar ahora como devsecops para llegar a este tipo de perfil creo que hay 3 lineas de estudio muy claras.
-* Desarrollo.
-* DevOps
-* SSDLC
- 
 

@@ -38,7 +38,8 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Tu primera aplicación completa](114.Tu_primera_app.md) 
 * [Docker en producción](115.Docker_en_produccion.md) 
 
-### Intermedio-Avanzado:
+### Nivel intermedio:
+* [Curso de DevOps](../devops/README.md) 
 * [Límites y control de recursos](201.Limites_recursos.md) 
 * [Balancear de carga](#balanceo-carga) TODO
 * [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO

@@ -1,5 +1,5 @@
 ---
-title: ⚓️ Kubernetes 
+title: ⚓️ Kubernetes WIP
 image: https://pabpereza.dev/img/banner_kubernetes.png
 tags: [kubernetes, devops, contenedores]
 keywords: [kubernetes, curso kubernetes, contenedores, devops]

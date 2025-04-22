@@ -9,4 +9,52 @@ draft: true
 ---
 
 # Ruta DevSecOps: Recomendaciones para empezar en 2025
+Ahora sí, la parte más soicitada. ¿Cómo llegar a ser un devops o devsecops en 2025? ¿Qué tecnologías aprender? ¿Qué camino seguir?
 
+Recuerda que esta es la parte 2 y en este primer capítulo te contaba mi historia personal de como llegué yo a este punto. [Entrada del blog](../mi_ruta_devsecops_2025/mi_ruta_devsecops_2025.md)
+
+Por último, matizar que esta es una opinión personal. Cada uno podría tener su propio camino y su propia forma de aprender.
+
+## ¿Qué es DevOps?
+DevOps es una metodología que busca mejorar la colaboración entre los equipos de desarrollo (Dev) y operaciones (Ops) para acelerar la entrega de software y mejorar la calidad del mismo. Se basa en la automatización, la integración continua y la entrega continua (CI/CD), así como en la monitorización y el feedback constante.
+
+Esto permite a las organizaciones responder más rápidamente a las necesidades del mercado y a los cambios en los requisitos de los clientes.
+
+## ¿Qué es DevSecOps?
+DevSecOps es una metodología que integra la seguridad en el ciclo de vida del desarrollo de software (SDLC). Su objetivo es garantizar que la seguridad sea una parte integral del proceso de desarrollo, en lugar de ser un añadido posterior. Esto implica la colaboración entre equipos de desarrollo, operaciones y seguridad para identificar y abordar vulnerabilidades desde las primeras etapas del desarrollo.
+
+## Tecnologías básicas para empezar
+De la parte más personal extraido los siguientes perfiles, más o menos, por los que he ido pivotando:
+
+-> Desarrollador web y aprendiz de seguridad
+-> Pentester
+-> SSDLC
+-> DevOps
+-> DevSecOps
+
+En base a mi experiencia actual, creo que la forma más rápida para llegar a este tipo de perfil sería ir directo a un rol DevOps y, con un poco de experiencia, añadir la parte de seguridad. También en función de las empresas que trabajes, igual esperan de ti un rol que vaya más a la parte de infraestructura cloud y apoyar la parte de IaC (Infrastructure as Code) o como SRE (Site Reliability Engineer) si tienes un perfil más de sysadmin.
+
+En cualquier caso, si te interesa también la seguridad (desde la perspectiva DevSecOps) verás que a corto, es tan simple como aprender a integrar herramientas de seguridad en los pipelines aunque, a largo plazo, si te toca gestionar las vulnerabilidades, planes de remediación, etc. tendrás que tener un conocimiento de seguridad más profundo.
+
+Vamos a comenzar por el desglose del rol de DevOps.
+
+### DevOps
+El rol de DevOps es un perfil que ha ido evolucionando en los últimos años y que, en la actualidad, se ha convertido en uno de los más demandados en el sector tecnológico. Estos serían los conocimientos básicos que deberías tener para empezar:
+* Lenguajes de programación
+* Git
+* CI/CD
+* Contenedores
+* Monitorización
+
+Estos cuatro puntos son esenciales. 
+
+#### Lenguajes de programación
+Recordemos que el DevOps tiene que ayudar a los desarrolladores a automatizar sus tareas y, para ello, es necesario que tengas nociones básicas de programación (y recomendable dominar al menos un lenguaje). Luego es posible que en la empresa en la que trabajes se usen múltiples lenguajes, pero no hace falta dominarlos todos.
+
+Personalmente, 
+
+
+
+## Métodos, certificaciones, FP vs Universidad, bootcamps...
+
+Se puede transicionar 

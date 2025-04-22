@@ -82,7 +82,7 @@ Después de todos estos años de experiencia en el mundo del desarrollo, la segu
 * De cara a clientes y gran empresa, deja todo por escrito, siempre. Puedes confiar en la buena voluntad de las personas cuando todo va bien pero cuando las cosas se complican empiezan los malentendidos y si eres el último mono te acabarás comiendo el marrón.
 * No dejes pasar las oportunidades, la vida te dará pocas. Tampoco esperes a que te las den, sal a buscarlas.
 * Empieza ya, no esperes a perfeccionar nada, morirás buscando la perfección sin encontrarla.
-* Piensa a largo plazo, mientras eres joven puedes hacer muchas cosas, luego la vida se complica o no tienes todo el tiempo y las ganas de seguir aprendiendo. Aquí es mi lección más personal, no esperes a tener 30 años y un hijo para sacarte la ingeniería si es que quieres obtenera, te pasará factura a tu salud mental jaja.
+* Piensa a largo plazo, mientras eres joven puedes hacer muchas cosas, luego la vida se complica o no tienes todo el tiempo y las ganas de seguir aprendiendo. Aquí es mi lección más personal, no esperes a tener 31 años y un hijo para sacarte la ingeniería (estudio u objetivos que tengas en mente), te pasará factura a tu salud mental jaja.
 
 Bueno, espero que mi experiencia personal os haya sido útil y haya cumplido las expectativas de todos los que me lo pedíais. Ahora vamos a la parte técnica, la puedes ver en el siguiente video/post: [Ruta SecDevOps 2025](../devsecops_recomendaciones_2025/devsecops_recomendaciones_2025.md).
 

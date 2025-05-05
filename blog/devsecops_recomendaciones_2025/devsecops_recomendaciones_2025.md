@@ -15,6 +15,8 @@ Recuerda que esta es la parte 2 y en este primer capítulo te contaba mi histori
 
 Por último, matizar que esta es una opinión personal. Cada uno podría tener su propio camino y su propia forma de aprender.
 
+Vamos a ver, una breve introducción a lo que es DevOps, luego veremos las tecnologías básicas para empezar y, por útlimo, hablaremos de los métodos de aprendizaje, certificaciones y demás.
+
 ## ¿Qué es DevOps?
 DevOps es una metodología que busca mejorar la colaboración entre los equipos de desarrollo (Dev) y operaciones (Ops) para acelerar la entrega de software y mejorar la calidad del mismo. Se basa en la automatización, la integración continua y la entrega continua (CI/CD), así como en la monitorización y el feedback constante.
 

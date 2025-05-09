@@ -1,6 +1,6 @@
 ---
 slug: docker_model_ai_mcp 
-title: Ollama killer, ejecutando modelos de IA en Docker Desktop 
+title: ¿Ollama killer?, Modelos de IA en Docker Desktop 
 tags: [docker, ollama, ai, mcp, model]
 authors: pabpereza
 date: 2025-05-9
@@ -10,8 +10,10 @@ keywords: [docker, ollama, ai, mcp, model]
 image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fdocker%2Ffrom-zero-to-local-llm-a-developers-guide-to-docker-model-runner-4oi2&psig=AOvVaw0OxeVpQPesApMjghCYaoUO&ust=1746887149112000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjO9PXLlo0DFQAAAAAdAAAAABAE
 ---
 
-# Ollama killer, ejecutando modelos de IA en Docker Desktop 
-En este artículo, exploraremos cómo ejecutar modelos de IA como Llama o deepseek en Docker Desktop, gracias a la nueva funcionalidad de docker model.
+# ¿Ollama killer?, Modelos de IA en Docker Desktop 
+Sin duda Ollama es la herramienta más popular para ejecutar modelos de IA en local, pero Docker ha lanzado una nueva funcionalidad que permite ejecutar modelos de IA de forma sencilla e integrada en Docker Desktop.
+
+En este artículo, exploraremos cómo ejecutar modelos de IA como Llama o deepseek en Docker Desktop, gracias a la nueva funcionalidad de docker model. ¿Estará a la altura?
 
 Ya estuve hablando de esta funcionalidad durante su fase beta en este vídeo: https://youtu.be/RPrZXQiIy_k
 
@@ -65,7 +67,17 @@ chmod +x run.sh
 ./run.sh
 ```
 
-Este script realiza un pull del modelo necesario y ejecuta las diferentes aplicaciones de chat.
+Este script realiza un pull del modelo necesario y ejecuta las diferentes aplicaciones de chat. Puedes acceder a ellas a través de la siguiente URL: http://localhost:8080, http://localhost:8081 y http://localhost:8082
+
+También puedes editar el modelo a utilizar cambiando los valores del fichero `.env` que por defecto son los siguientes:
+
+```bash
+# Configuration for the LLM service
+LLM_BASE_URL=http://model-runner.docker.internal/engines/llama.cpp/v1
+
+# Configuration for the model to use
+LLM_MODEL_NAME=ai/llama3.2:1B-Q8_0
+```
 
 
 ## Conclusiones

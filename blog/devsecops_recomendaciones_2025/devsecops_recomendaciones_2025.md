@@ -25,7 +25,7 @@ Esto permite a las organizaciones responder más rápidamente a las necesidades 
 ## ¿Qué es DevSecOps?
 DevSecOps es una metodología que integra la seguridad en el ciclo de vida del desarrollo de software (SDLC). Su objetivo es garantizar que la seguridad sea una parte integral del proceso de desarrollo, en lugar de ser un añadido posterior. Esto implica la colaboración entre equipos de desarrollo, operaciones y seguridad para identificar y abordar vulnerabilidades desde las primeras etapas del desarrollo.
 
-## Tecnologías básicas para empezar
+## Tecnologías y conceptos básicas para empezar
 De la parte más personal extraido los siguientes perfiles, más o menos, por los que he ido pivotando:
 
 -> Desarrollador web y aprendiz de seguridad
@@ -38,7 +38,8 @@ En base a mi experiencia actual, creo que la forma más rápida para llegar a es
 
 En cualquier caso, si te interesa también la seguridad (desde la perspectiva DevSecOps) verás que a corto, es tan simple como aprender a integrar herramientas de seguridad en los pipelines aunque, a largo plazo, si te toca gestionar las vulnerabilidades, planes de remediación, etc. tendrás que tener un conocimiento de seguridad más profundo.
 
-Vamos a comenzar por el desglose del rol de DevOps.
+Vamos a comenzar por el desglose del rol de DevOps. También te dejo aquí un diagrama con todas las tecnologías que menciono y que en su mayoría puedes utilizar gratuitamente para aprender.
+![Tecnologías DevSecOps](./devsecops_roadmap_2025.drawio.svg)
 
 ### DevOps
 El rol de DevOps es un perfil que ha ido evolucionando en los últimos años y que, en la actualidad, se ha convertido en uno de los más demandados en el sector tecnológico. Estos serían los conocimientos básicos que deberías tener para empezar:
@@ -48,15 +49,21 @@ El rol de DevOps es un perfil que ha ido evolucionando en los últimos años y q
 * Contenedores
 * Monitorización
 
-Estos cuatro puntos son esenciales. 
+### DevSecOps y SSDLC
+El rol de DevSecOps es una evolución del rol de DevOps, que integra la seguridad en el ciclo de vida del desarrollo de software. Para este rol, además de los conocimientos básicos de DevOps, deberías tener conocimientos en Seguridad en el Desarrollo de Software (SSDLC), que incluye:
+* Threat Modeling
+* SAST
+* SCA
+* DAST
+* RASP
 
-#### Lenguajes de programación
-Recordemos que el DevOps tiene que ayudar a los desarrolladores a automatizar sus tareas y, para ello, es necesario que tengas nociones básicas de programación (y recomendable dominar al menos un lenguaje). Luego es posible que en la empresa en la que trabajes se usen múltiples lenguajes, pero no hace falta dominarlos todos.
+También es importante tener conocimientos de seguridad en áreas específicas como:
+* Seguridad en la nube
+* IAM (Identity and Access Management)
+* Seguridad en contenedores
+* Seguridad en APIs y microservicios
 
-Personalmente, 
 
 
-
-## Métodos, certificaciones, FP vs Universidad, bootcamps...
-
-Se puede transicionar 
+## Certificaciones
+Haré otro capítulo específico para hablar de certificaciones y entorno académico, ¡no olvides suscribirte!

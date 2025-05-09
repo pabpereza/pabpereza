@@ -3,12 +3,11 @@ slug: docker_model_ai_mcp
 title: Ollama killer, ejecutando modelos de IA en Docker Desktop 
 tags: [docker, ollama, ai, mcp, model]
 authors: pabpereza
-date: 2025-05-18
+date: 2025-05-9
 description: 
   En este artículo, exploraremos cómo ejecutar modelos de IA como Llama o deepseek en Docker Desktop, gracias a la nueva funcionalidad de docker model.
 keywords: [docker, ollama, ai, mcp, model]
 image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fdocker%2Ffrom-zero-to-local-llm-a-developers-guide-to-docker-model-runner-4oi2&psig=AOvVaw0OxeVpQPesApMjghCYaoUO&ust=1746887149112000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjO9PXLlo0DFQAAAAAdAAAAABAE
-draft: true
 ---
 
 # Ollama killer, ejecutando modelos de IA en Docker Desktop 

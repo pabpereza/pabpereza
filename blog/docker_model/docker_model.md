@@ -83,7 +83,7 @@ LLM_MODEL_NAME=ai/llama3.2:1B-Q8_0
 ## Conclusiones
 Docker ha lanzado esta nueva funcionalidad que sin duda facilitará la vida a muchos desarrolladores que quieran experimentar con modelos de IA sin necesidad de tener un entorno complejo o complicado.
 
-Si que echo en falta la capacidad de declarar los modelos en el propio compose para orquestar toda el funcionamiento de una aplicación con modelos de IA, pero estoy seguro que esto llegará en un futuro cercano.
+Si que echo en falta poder utilizarlo en Docker Engine sobre servidores linux, pero no dudo en que lo veremos muy pronto. 
 
 Espero que este artículo te haya sido útil y que te animes a probar esta nueva funcionalidad de Docker Desktop.
 

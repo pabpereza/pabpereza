@@ -69,13 +69,6 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        gtag: {
-          trackingID: 'G-40PL0BKGD3',
-          anonymizeIP: true,
-        },
-        googleTagManager: {
-          containerId: 'GTM-NBFV5MMS',
-        },
 
       }),
 
@@ -219,7 +212,6 @@ const config = {
           { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, Blog'},
           { name: 'twitter:card', content: 'summary'},
           { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
-          { name: 'google-adsense-account', content: 'ca-pub-2204030225179360'},
         ],
         colorMode: {
           disableSwitch: false,
@@ -265,13 +257,6 @@ const config = {
       },
     ],
     
-  ],
-  scripts: [
-    {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2204030225179360',
-      async: true,
-      crossorigin: 'anonymous',
-    }
   ],
 };
 

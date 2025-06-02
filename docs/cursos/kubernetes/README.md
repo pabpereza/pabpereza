@@ -7,9 +7,7 @@ tags: [kubernetes, devops, contenedores, certificaciones]
 sidebar_label: ⚓️ Curso Kubernetes
 ---
 
-# Curso Kubernetes Gratuito - De Principiante a Experto 
-
-**🎯 ¡El curso de Kubernetes más completo en español, completamente gratuito!**
+# Curso Kubernetes - De grumete a almirante
 
 **¡Este curso está en desarrollo activo! Sígueme aquí o en Youtube para recibir actualizaciones semanales del curso.**
 

@@ -17,6 +17,9 @@ Por último, matizar que esta es una opinión personal. Cada uno podría tener s
 
 Vamos a ver, una breve introducción a lo que es DevOps, luego veremos las tecnologías básicas para empezar y, por útlimo, hablaremos de los métodos de aprendizaje, certificaciones y demás.
 
+Este es el diagrama que he creado para resumir las tecnologías y conceptos básicos que deberías conocer para empezar en DevSecOps. Lo puedes descargar y utilizar como guía de estudio.
+![DevSecOps Roadmap 2025](./devsecops_roadmap_2025.drawio.svg)
+
 ## ¿Qué es DevOps?
 DevOps es una metodología que busca mejorar la colaboración entre los equipos de desarrollo (Dev) y operaciones (Ops) para acelerar la entrega de software y mejorar la calidad del mismo. Se basa en la automatización, la integración continua y la entrega continua (CI/CD), así como en la monitorización y el feedback constante.
 

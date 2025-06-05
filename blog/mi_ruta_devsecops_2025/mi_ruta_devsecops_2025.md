@@ -4,7 +4,6 @@ title: Mi ruta DevSecOps y aprendizaje personal a fecha de 2025
 tags: [devsecops, reflexiones]
 authors: pabpereza
 date: 2025-04-15
-draft: true
 ---
 
 # Mi ruta DevSecOps y aprendizaje personal a fecha de 2025

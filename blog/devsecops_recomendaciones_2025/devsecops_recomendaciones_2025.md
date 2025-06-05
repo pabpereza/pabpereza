@@ -4,8 +4,7 @@ title: Ruta DevSecOps, recomendaciones para empezar en 2025
 tags: [ devsecops, seguridad, devops]
 keywords: [ devsecops, seguridad, devops, recomendaciones, 2025]
 authors: pabpereza
-date: 2025-04-15
-draft: true
+date: 2025-06-05
 ---
 
 # Ruta DevSecOps: Recomendaciones para empezar en 2025

@@ -30,7 +30,7 @@
 }
 
 html.plugin-pages {
-  background-image: url('/img/fondo.jpg');
+  background-image: url('/img/fondo.webp');
   background-size: cover;
   background-attachment: fixed;
   --ifm-navbar-link-color: white !important;

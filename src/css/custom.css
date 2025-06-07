@@ -196,6 +196,22 @@ html.plugin-pages nav {
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
+/* Diagram icon */
+.header-diagram-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.75 17L9 20l-1 1h-2l-1-1v-2l1-1h2l1 1v.75L12 17l1.25 1.75V19l1 1h2l1-1v-2l-1-1h-2l-1 1v.25L9.75 17zM12 14.5L9.75 17 12 19.5 14.25 17 12 14.5zM18 8l1 1v2l-1 1h-2l-1-1V9l1-1h2zM6 8l1 1v2l-1 1H4l-1-1V9l1-1h2zM12 2l1 1v2l-1 1h-2l-1-1V3l1-1h2zm6 6.5L12 14.5 6 8.5 12 2.5 18 8.5z'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+.header-diagram-link:hover::before {
+  background-color: var(--ifm-navbar-link-hover-color);
+}
+
 .video-title {
   color: white;
   font-size: 1.2rem;

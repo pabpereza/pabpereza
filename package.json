@@ -1,8 +1,7 @@
 {
   "name": "pabpereza",
   "version": "0.0.0",
-  "private": true,
-  "scripts": {
+  "private": true,  "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -11,7 +10,9 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "generate-graph": "node src/workflows/generate-graph-data.js",
+    "prebuild": "npm run generate-graph"
   },
   "dependencies": {
     "@docusaurus/core": "^3.8.0",
@@ -19,12 +20,14 @@
     "@docusaurus/theme-mermaid": "^3.8.0",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
-    "docusaurus-graph": "^2.0.0",
+    "d3": "^7.9.0",
     "docusaurus-lunr-search": "^3.6.1",
     "dotenv": "^16.5.0",
+    "gray-matter": "^4.0.3",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-force-graph-2d": "^1.27.1",
     "react-github-btn": "^1.4.0"
   },
   "devDependencies": {

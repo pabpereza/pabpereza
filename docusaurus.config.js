@@ -98,18 +98,22 @@ const config = {
           },
           {
             to: '/docs/cursos', label: 'Cursos', position: 'left'
-          },
-          {
+          },          {
             to: '/blog', label: 'Blog', position: 'left'
           },
           {
             to: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
             position: 'left',
             label: 'Youtube'
-          },
-          {
+          },          {
             href: 'https://twitter.com/pabpereza',
             className: 'header-x-link',
+            position: 'right',
+          },
+          {
+            to: '/content-graph',
+            className: 'header-diagram-link',
+            'aria-label': 'Diagrama de contenido',
             position: 'right',
           },
           {
@@ -140,6 +144,11 @@ const config = {
           {
             href: 'https://github.com/pabpereza/pabpereza',
             className: 'header-github-link',
+            position: 'right',
+          },
+          {
+            to: '/content-graph',
+            className: 'header-diagram-link',
             position: 'right',
           },
         ],
@@ -250,16 +259,6 @@ const config = {
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
     require.resolve('docusaurus-lunr-search'),
-    [
-      'docusaurus-graph',
-      {
-         docsDir: "docs",
-         buildDir: "build",
-         sourcesTag: "tags",
-         referencesTag: "references",
-      },
-    ],
-    
   ],
 };
 

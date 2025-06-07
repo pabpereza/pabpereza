@@ -1,10 +1,31 @@
 ---
 title: ⚓️ Curso Kubernetes Gratuito - De Principiante a Experto
-description: Curso completo de Kubernetes gratuito en español. Desde conceptos básicos hasta preparación para certificaciones CKA, CKAD y CKS. Incluye ejemplos prácticos y ejercicios.
-image: https://pabpereza.dev/img/banner_kubernetes.png
-keywords: [kubernetes, curso kubernetes, tutorial kubernetes, aprender kubernetes, certificación CKA, certificación CKAD, certificación CKS, contenedores, devops, orquestación, gratuito, español]
-tags: [kubernetes, devops, contenedores, certificaciones]
+description: >-
+  Curso completo de Kubernetes gratuito en español. Desde conceptos básicos
+  hasta preparación para certificaciones CKA, CKAD y CKS. Incluye ejemplos
+  prácticos y ejercicios.
+image: 'https://pabpereza.dev/img/banner_kubernetes.png'
+keywords:
+  - kubernetes
+  - curso kubernetes
+  - tutorial kubernetes
+  - aprender kubernetes
+  - certificación CKA
+  - certificación CKAD
+  - certificación CKS
+  - contenedores
+  - devops
+  - orquestación
+  - gratuito
+  - español
+tags:
+  - kubernetes
+  - devops
+  - contenedores
+  - certificaciones
+  - cursos
 sidebar_label: ⚓️ Kubernetes
+slug: curso_kubernetes_gratuito_de_principiante_a_experto
 ---
 
 # Curso Kubernetes - De grumete a almirante

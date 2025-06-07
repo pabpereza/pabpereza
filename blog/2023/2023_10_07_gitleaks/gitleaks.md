@@ -19,7 +19,7 @@ Dentro vídeo: https://youtu.be/zHJdDT7XWkc
 
 ## ¿Por qué es peligroso almacenar secretos en Git?
 
-Cuando hablamos de **secretos**, nos referimos a cualquier información sensible que podría comprometer la seguridad de una aplicación si cae en manos equivocadas. Esto incluye:
+Cuando hablamos de **secretos**, nos referimos a cualquier información sensible que podría comprometer la seguridad de una aplicación si cae en manos equivocadas. Por ejemplo:
 - **Tokens de acceso** para servicios de terceros (por ejemplo, APIs como Twitter, GitHub, Google Cloud, AWS).
 - **Claves SSH** para acceder a servidores o servicios remotos.
 - **Contraseñas** para bases de datos, aplicaciones o cualquier tipo de autenticación.

@@ -40,8 +40,7 @@ En base a mi experiencia actual, creo que la forma más rápida para llegar a es
 
 En cualquier caso, si te interesa también la seguridad (desde la perspectiva DevSecOps) verás que a corto, es tan simple como aprender a integrar herramientas de seguridad en los pipelines aunque, a largo plazo, si te toca gestionar las vulnerabilidades, planes de remediación, etc. tendrás que tener un conocimiento de seguridad más profundo.
 
-Vamos a comenzar por el desglose del rol de DevOps. También te dejo aquí un diagrama con todas las tecnologías que menciono y que en su mayoría puedes utilizar gratuitamente para aprender.
-![Tecnologías DevSecOps](./devsecops_roadmap_2025.drawio.svg)
+Vamos a comenzar por el desglose del rol de DevOps.
 
 ### DevOps
 El rol de DevOps es un perfil que ha ido evolucionando en los últimos años y que, en la actualidad, se ha convertido en uno de los más demandados en el sector tecnológico. Estos serían los conocimientos básicos que deberías tener para empezar:

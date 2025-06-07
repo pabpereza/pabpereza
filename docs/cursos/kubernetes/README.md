@@ -4,7 +4,7 @@ description: Curso completo de Kubernetes gratuito en español. Desde conceptos 
 image: https://pabpereza.dev/img/banner_kubernetes.png
 keywords: [kubernetes, curso kubernetes, tutorial kubernetes, aprender kubernetes, certificación CKA, certificación CKAD, certificación CKS, contenedores, devops, orquestación, gratuito, español]
 tags: [kubernetes, devops, contenedores, certificaciones]
-sidebar_label: ⚓️ Curso Kubernetes
+sidebar_label: ⚓️ Kubernetes
 ---
 
 # Curso Kubernetes - De grumete a almirante

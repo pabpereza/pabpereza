@@ -160,8 +160,12 @@ const ContentGraph = ({ isFullPage = false }) => {
   };
 
   const handleNodeDoubleClick = (node) => {
-    if (node.url && node.slug) {
-      // Construir la URL usando el slug para una navegación más limpia
+    if (node.category === 'blog' && node.slug) {
+      // Para nodos del blog, usar directamente el slug con la ruta /blog/
+      const blogUrl = `/blog/${node.slug}`;
+      window.open(blogUrl, '_blank');
+    } else if (node.url && node.slug) {
+      // Para otros nodos, construir la URL usando el slug para una navegación más limpia
       const pathParts = node.url.split('/');
       const basePath = pathParts.slice(0, -1).join('/'); // Mantener la ruta base (ej: /docs/cursos/kubernetes)
       const slugUrl = `${basePath}/${node.slug}`;

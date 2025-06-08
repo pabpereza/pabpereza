@@ -11,7 +11,6 @@ keywords:
   - curso docker
   - contenedores
   - devops
-slug: docker
 ---
 
 # Curso Docker

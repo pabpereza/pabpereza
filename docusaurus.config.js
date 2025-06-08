@@ -111,12 +111,6 @@ const config = {
             position: 'right',
           },
           {
-            to: '/content-graph',
-            className: 'header-diagram-link',
-            'aria-label': 'Diagrama de contenido',
-            position: 'right',
-          },
-          {
             href: 'https://www.instagram.com/pabpereza/',
             className: 'header-instagram-link',
             position: 'right',

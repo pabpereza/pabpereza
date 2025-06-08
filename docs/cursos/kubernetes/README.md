@@ -25,7 +25,6 @@ tags:
   - certificaciones
   - cursos
 sidebar_label: ⚓️ Kubernetes
-slug: curso_kubernetes_gratuito_de_principiante_a_experto
 ---
 
 # Curso Kubernetes - De grumete a almirante

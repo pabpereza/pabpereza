@@ -7,7 +7,7 @@
       "category": "docs",
       "description": "",
       "url": "/docs/cursos",
-      "slug": "cursos",
+      "slug": null,
       "val": 10,
       "connected": true
     },
@@ -205,7 +205,7 @@
       "category": "docs",
       "description": "",
       "url": "/docs/cursos/docker",
-      "slug": "docker",
+      "slug": null,
       "val": 10,
       "connected": true
     },
@@ -546,7 +546,7 @@
       "category": "docs",
       "description": "Curso completo de Kubernetes gratuito en español. Desde conceptos básicos hasta preparación para certificaciones CKA, CKAD y CKS. Incluye ejemplos prácticos y ejercicios.",
       "url": "/docs/cursos/kubernetes",
-      "slug": "curso_kubernetes_gratuito_de_principiante_a_experto",
+      "slug": null,
       "val": 10,
       "connected": true
     },

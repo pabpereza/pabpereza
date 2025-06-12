@@ -74,10 +74,10 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 * [🚪 Ingress](./112.Ingress_controller.md) - Exposición de servicios
 * [🎯 Gateway](./113.Gateway.md) - Gateway API moderna
 * [❤️ Probes y healthchecks](./114.Probes_live_readiness.md) - Monitoreo de salud
-* [📊 Rangos y cuotas](./115.Rangos_quotas.md) - Límites de recursos
-* [📈 Autoescalado](./116.Autoscaling.md) - Escalado automático
-* [🔐 Secrets y configmaps](./117.Secrets_configmaps.md) - Gestión de configuración
-* [💾 Almacenamiento](./118.Almacenamiento.md) - Persistent Volumes
+* [🔐 Secrets y configmaps](./115.Secrets_configmaps.md) - Gestión de configuración
+* [💾 Almacenamiento](./116.Almacenamiento.md) - Persistent Volumes
+* [📊 Rangos y cuotas](./117.Rangos_quotas.md) - Límites de recursos
+* [📈 Autoescalado](./118.Autoscaling.md) - Escalado automático
 * [🔒 Seguridad](./119.Seguridad.md) - Fundamentos de seguridad
 * [👤 Usuarios y RBAC](./120.Usuarios.md) - Control de acceso
 * [🎭 Roles y ClusterRoles](./121.Roles.md) - Permisos granulares

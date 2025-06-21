@@ -3,17 +3,25 @@ slug: backups_docker
 title: Backups de Docker 
 tags: [ selfhosting, homelab, kubernetes, raspberry]
 authors: pabpereza
-date: 2025-06-23
+date: 2025-06-21
 description: Aprende a realizar copias de seguridad de tus contenedores Docker y Kubernetes, asegurando la protección de tus datos y configuraciones.
 keywords: [docker, backups, volumes, homelab, kubernetes]
 ---
 
 # 4 formás fáciles de hacer backups en Docker, podman y similares 
-Veamos como gestionar backups en contenedores, estos pueden ser un poco tediosos dada las carencias de herramientas nativas para hacer backups de los contenedores de una forma sencilla. 
+Hola, hoy vamos a ver cómo gestionar backups en contenedores Docker o Podman.
 
-He abogado por lo que considero más limpio, hacer un backup solo de la información que realmente necesitas, es decir, de los volúmenes y no de los contenedores. Si, el comando `docker commit` te permite hacer un backup de un contenedor, pero no es la forma más eficiente de hacerlo. Los contenedores están diseñados para ser efímeros, esa información esta en la imagen del contenedor y, lo que se necesita persistir, es la información que se almacena en los volúmenes.
+Este tema puede ser algo tedioso, especialmente porque no existen herramientas nativas realmente cómodas para hacer backups completos de contenedores.
 
-Por lo tanto, voy a explorar diferentes aproximaciones para hacer backups de apliaciones en contenedores Docker, Podman y similares. Comenzamos de forma específica de aplicación hasta mi favorita, que la dejo para el final, la cuál consiste en utilizar un contenedor auxiliar como almacenamiento de backups. Quédate hasta el final para descubrirla.
+Sin embargo, yo abogo por un enfoque más limpio y eficiente: no se trata de hacer backups de los contenedores, sino de la información que realmente importa, es decir, de los volúmenes.
+
+Sí, el comando docker commit te permite hacer un backup de un contenedor, pero no es ni la forma más práctica ni la más coherente con la filosofía de los contenedores.
+
+Recordemos que los contenedores están diseñados para ser efímeros. La lógica de la aplicación ya está contenida en la imagen del contenedor. Lo que realmente necesitas proteger es la información persistente, que suele estar en volúmenes.
+
+Por eso, en este vídeo te voy a mostrar distintas estrategias para hacer backups de aplicaciones que se ejecutan en contenedores, ya sea con Docker, Podman u otros motores compatibles.
+
+Vamos a ir de lo más específico a lo más flexible, y al final te compartiré mi enfoque favorito: usar un contenedor auxiliar como sistema de backup automatizado. Así que quédate hasta el final si quieres verlo en acción.
 
 
 Para todos los ejemplos, voy a partir de un contenedor de base de datos MySQL, pero puedes aplicar los mismos principios a cualquier otro tipo de contenedor que utilice volúmenes para almacenar datos persistentes. Por si quieres replicar el laboratorio, este contenedor lo he ejecutado con el siguiente comando:
@@ -67,6 +75,12 @@ Luego, restauramos el backup del volumen utilizando el siguiente comando:
 ```bash
 docker run --rm -v mysql-data:/data -v ${PWD}:/backup alpine:latest sh -c "cd /data && tar xzf /backup/mysql-backup.tar.gz"
 ```
+
+Finalmente, iniciamos de nuevo el contenedor de MySQL:
+```bash
+docker start mysql-container
+```
+
 
 ## Usando un contenedor como filesystem 
 ¿Sabías que podías utilizar el sistema de archivos de un contenedor como un repositorio para un backup?. Esta es una de las opciones que más me gusta y que más facilita el almacenamiento en servidores remotos, el versionado y la recuperación de backups.

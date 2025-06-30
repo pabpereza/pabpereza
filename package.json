@@ -22,7 +22,7 @@
     "clsx": "^2.1.1",
     "d3": "^7.9.0",
     "docusaurus-lunr-search": "^3.6.1",
-    "dotenv": "^16.5.0",
+    "dotenv": "^17.0.0",
     "gray-matter": "^4.0.3",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.1.0",

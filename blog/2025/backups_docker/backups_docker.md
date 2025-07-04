@@ -15,6 +15,10 @@ Este tema puede ser algo tedioso, especialmente porque no existen herramientas n
 
 Sin embargo, yo abogo por un enfoque más limpio y eficiente: no se trata de hacer backups de los contenedores, sino de la información que realmente importa, es decir, de los volúmenes.
 
+Dentro vídeo: https://youtu.be/XFg_XPFyw34
+
+[![Backups de Docker](https://img.youtube.com/vi/XFg_XPFyw34/maxresdefault.jpg)](https://youtu.be/XFg_XPFyw34)
+
 Sí, el comando docker commit te permite hacer un backup de un contenedor, pero no es ni la forma más práctica ni la más coherente con la filosofía de los contenedores.
 
 Recordemos que los contenedores están diseñados para ser efímeros. La lógica de la aplicación ya está contenida en la imagen del contenedor. Lo que realmente necesitas proteger es la información persistente, que suele estar en volúmenes.

@@ -61,13 +61,7 @@ Todo el curso estará disponible en vídeo en esta [LISTA DE YOUTUBE](https://yo
 * [Contenedores y orquestación](401.Contenedores.md)
 * [Microservicios y arquitectura](402.Microservicios.md)
 * [Site Reliability Engineering (SRE)](403.SRE.md)
-* [DevOps en la nube](404.Cloud_devops.md)
 
-### 🎯 Nivel Maestro
-* [Casos de estudio reales](501.Casos_estudio.md)
-* [Troubleshooting y resolución de problemas](502.Troubleshooting.md)
-* [Métricas y KPIs de DevOps](503.Metricas.md)
-* [El futuro de DevOps](504.Futuro.md)
 
 ## 🎯 ¿Qué aprenderás?
 
@@ -92,7 +86,6 @@ Al finalizar este curso serás capaz de:
 
 ## 📋 Recursos adicionales
 - [Herramientas esenciales](herramientas.md)
-- [Glosario de términos](glosario.md)
 
 ## 🧭 Rutas de aprendizaje
 

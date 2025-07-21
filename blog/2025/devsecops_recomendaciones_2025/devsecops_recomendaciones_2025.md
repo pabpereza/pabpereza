@@ -20,6 +20,8 @@ Dentro vídeo: https://youtu.be/2MP3DkiiyqE
 
 [![Mi ruta DevSecOps 2025](https://img.youtube.com/vi/2MP3DkiiyqE/maxresdefault.jpg)](https://youtu.be/2MP3DkiiyqE)
 
+<!-- trucate -->
+
 
 Este es el diagrama que he creado para resumir las tecnologías y conceptos básicos que deberías conocer para empezar en DevSecOps. Lo puedes descargar y utilizar como guía de estudio.
 ![DevSecOps Roadmap 2025](./devsecops_roadmap_2025.drawio.svg)

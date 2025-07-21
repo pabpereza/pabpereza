@@ -14,6 +14,7 @@ Si lo prefieres en vídeo, aquí lo tienes en mi canal de Youtube: https://youtu
 
 [![Kubectx y Kubens](https://i.ytimg.com/vi/6lpkb9DM7tk/maxresdefault.jpg)](https://youtu.be/6lpkb9DM7tk)
 
+<!-- trucate -->
 
 ## ¿Qué son Kubectx y Kubens?
 Kubectx y Kubens son dos herramientas de línea de comandos que nos permiten cambiar rápidamente entre contextos y namespaces en Kubernetes. Kubectx nos permite cambiar entre diferentes clusters de Kubernetes, mientras que Kubens nos permite cambiar entre diferentes namespaces dentro de un cluster.

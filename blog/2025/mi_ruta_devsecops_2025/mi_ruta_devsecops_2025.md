@@ -17,7 +17,7 @@ Dentro vídeo: https://youtu.be/-liUjc-GKqQ
 
 [![Mi ruta DevSecOps 2025](https://img.youtube.com/vi/-liUjc-GKqQ/maxresdefault.jpg)](https://youtu.be/-liUjc-GKqQ)
 
-<!-- trucate -->
+<!-- truncate -->
 
 ## Parte 1: Mi trayectoria personal y profesional
 

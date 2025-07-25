@@ -16,7 +16,7 @@ En este artículo, exploraremos cómo ejecutar modelos de IA como Llama o deepse
 
 Ya estuve hablando de esta funcionalidad durante su fase beta en este vídeo: https://youtu.be/RPrZXQiIy_k
 
-<!-- trucate -->
+<!-- truncate -->
 
 Su mayor limitación era una ausencia de interfaz práctica para modelos y que solo funcionaba en Mac. Tras solventar esto, ahora podemos ejecutar modelos de IA en Docker Desktop de forma sencilla y rápida.
 

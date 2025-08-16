@@ -48,9 +48,9 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 
 ### Intermedio-Avanzado:
 * [Límites y control de recursos](201.Limites_recursos.md) 
-* [Dockerfile: Multistage build](202.Buildx_multiarquitectura.md)
+* [Dockerfile: Buildx y Multiarquitectura ](202.Buildx_multiarquitectura.md) 
+* [Dockerfile: Multistage build](#multi-stage_build) TODO
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
-* [Dockerfile: Buildx y Multiarquitectura ](#dockerfile_buildkit) TODO
 * [Docker compose avanzado](#docker_compose_avanzado) TODO
 * [Redes avanzado](#redes_avanzado) TODO
 * [Volumenes y backups](#volumes_avanzado) TODO

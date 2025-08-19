@@ -51,6 +51,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Dockerfile: Buildx y Multiarquitectura ](202.Buildx_multiarquitectura.md) 
 * [Dockerfile: Multistage build](203.Multi_stage_y_distroless.md) 
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
+* [Depurar imágenes ](203.Multi_stage_y_distroless.md) 
 * [Docker compose avanzado](#docker_compose_avanzado) TODO
 * [Redes avanzado](#redes_avanzado) TODO
 * [Volumenes y backups](#volumes_avanzado) TODO

@@ -8,7 +8,7 @@ draft: true
 ---
 
 # Jamás confíes ciegamente en la IA, y menos para tu infrastructura
-Hace un par se semanas, un amigo me escribió frustrado por un problema que tenía en una base de datos de mongodb desplegado con Docker.
+Hace un par se semanas, un amigo me escribió frustrado por un problema que tenía en una base de datos, concreatamente un mongodb desplegado con Docker.
 
 Cada noche su base de datos desaparecía, no se explicaba porqué, pensaba que montaba mal los volúmenes o que no estaba utilizando docker compose como se debía.
 
@@ -59,7 +59,10 @@ Finalmente, volviendo con nuestro caso, al exponerse el mongo de mi amigo a inte
 
 
 ## Seguridad en Docker
-La mayoría de las personas no saben que docker hace un bypass del firewall. ¿Cómo? ¿Esto es normal?. Al menos en Linux (nativo, no en las versiones de Docker Desktop), es como funciona Docker. Por defecto, hace caso omiso de las reglas que podáis aplicar en un firewall tipo ufw de debian/ubuntu o similares.
+La mayoría de las personas no saben que docker hace un bypass del firewall. ¿Cómo? ¿Esto es normal?. Al menos en Linux, es como funciona Docker. Por defecto, hace caso omiso de las reglas que podáis aplicar en un firewall tipo ufw de debian/ubuntu o similares.
+
+![](network_flow.png)
+
 
 Por eso, cuando hacemos un docker run como este:
 ```
@@ -75,7 +78,8 @@ services:
       - "27017:27017"
 ```
 
-Tenemos que tener claro que en Linux, y salvo en las versiones de Docker Desktop, ejecutar así un contenedor implica que abre también ese puesto en el host y lo vincula con el del contenedor. Por consiguiente, también lo estas exponiendo públicamente a internet.
+Tenemos que tener claro que en Linux, y salvo en las versiones de Docker Desktop, ejecutar así un contenedor implica que abre también ese puerto en el host y lo vincula con el del contenedor. Por consiguiente, también lo estas exponiendo públicamente a internet.
+
 
 Tenemos dos formas de solucionarlo, o bien quitamos el mapeo de puertos o lo configuramos adecuadamente para que no esté expuesto. 
 

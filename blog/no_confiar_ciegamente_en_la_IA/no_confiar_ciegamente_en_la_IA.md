@@ -3,8 +3,7 @@ slug: no_confiar_ciegamente_en_la_IA
 title: "No confiar ciegamente en la IA"
 tags: [IA, devops, docker]
 authors: pabpereza
-date: 2025-08-24
-draft: true
+date: 2025-08-20
 ---
 
 # Jamás confíes ciegamente en la IA, y menos para tu infrastructura
@@ -105,9 +104,9 @@ services:
 Una vez que expones el puerto en el host de forma privada, lo más fácil y seguro es enrutar a tus servicios a traves de SSH, ya sea para conectarse a una base de datos o configurar cualquier cosa.
 
 ## Moralejas
-Aunque seamos desarrolladores, nos dediquemos a la parte de datos o simplmente no sepamos mucho de infraestructura, no podemos confiar ciegamente en la IA. No se puede saber de todo, eso esta claro, pero recuerda que la IA no tiene el contexto de todo. Apoyate siempre en compañeros del área devops, sistemas o seguridad si disponéis en la empresa y, si te toca hacer de todo, no dudes en preguntar. 
+Aunque seamos desarrolladores, nos dediquemos a la parte de datos o simplemente no sepamos mucho de infraestructura, no podemos confiar ciegamente en la IA. No se puede saber de todo, eso esta claro, pero recuerda que la IA no tiene el contexto de todo. Apoyate siempre en compañeros del área devops, sistemas o seguridad, si disponéis en la empresa.
 
-Aunque, en el video veremos si le podemos dar ese contexto para saber si se podría haber evitado.
+En el video veremos si le podemos dar ese contexto a la IA para saber si se podría haber evitado.
 
 Nos vemos en el siguiente.
 

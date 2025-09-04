@@ -15,6 +15,11 @@ Tras revisarlo, nos dimos cuenta de que le estaban secuestrando la base de datos
 
 El problema fue que, confiando en el Docker Compose que generó una IA, expuso de forma indebida la base de datos y esto permitió a un ciberdelincuente entrar y robar toda la información.
 
+
+Dentro vídeo: https://www.youtube.com/watch?v=y4ULg8tD8nQ
+
+[![Ver vídeo](https://img.youtube.com/vi/y4ULg8tD8nQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=y4ULg8tD8nQ)
+
 Por suerte, esta base de datos era para una aplicación que empezaba a desarrollar y no había ningún dato sensible, pero podría haber sido muy grave en cualquier otra situación.
 
 Todo esto me dio la idea de hacer este vídeo, compartir la experiencia que tuvo y responder tres preguntas:
@@ -98,6 +103,12 @@ services:
 ```
 
 Una vez que expones el puerto en el host de forma privada, lo más fácil y seguro es enrutar a tus servicios a través de SSH, ya sea para conectarse a una base de datos o configurar cualquier cosa.
+
+## Prompts
+Prueba con un mensaje de este tipo la próxima vez y trata de darle todo el contexto posible que puedas a la IA:
+```txt
+Genera un docker compose para un mongodb, pero asegúrate de que el puerto no esté expuesto públicamente a Internet, ya que solo necesito acceder desde la red local y desde el host.
+```
 
 ## Moralejas
 Aunque seamos desarrolladores, nos dediquemos a la parte de datos o simplemente no sepamos mucho de infraestructura, no podemos confiar ciegamente en la IA. No se puede saber de todo, eso está claro, pero recuerda que la IA no tiene el contexto de todo. Apóyate siempre en compañeros del área de DevOps, sistemas o seguridad, si disponéis de ellos en la empresa.

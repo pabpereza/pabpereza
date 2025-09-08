@@ -1,6 +1,6 @@
 ---
 slug: no_confiar_ciegamente_en_la_IA
-title: "No confiar ciegamente en la IA"
+title: "Jamás confíes ciegamente en la IA, y menos para tu infraestructura"
 tags: [IA, devops, docker]
 authors: pabpereza
 date: 2025-08-20

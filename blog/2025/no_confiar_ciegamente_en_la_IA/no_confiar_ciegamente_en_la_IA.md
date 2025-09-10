@@ -20,6 +20,8 @@ Dentro vídeo: https://www.youtube.com/watch?v=y4ULg8tD8nQ
 
 [![Ver vídeo](https://img.youtube.com/vi/y4ULg8tD8nQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=y4ULg8tD8nQ)
 
+<!--truncate-->
+
 Por suerte, esta base de datos era para una aplicación que empezaba a desarrollar y no había ningún dato sensible, pero podría haber sido muy grave en cualquier otra situación.
 
 Todo esto me dio la idea de hacer este vídeo, compartir la experiencia que tuvo y responder tres preguntas:

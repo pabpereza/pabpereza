@@ -1,0 +1,10 @@
+{
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./",
+  "userIgnoreFilters": [
+    "build/",
+    "src/",
+    "static/",
+    "node_modules/"
+  ]
+}

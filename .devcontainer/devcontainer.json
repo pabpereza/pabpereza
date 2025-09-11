@@ -1,26 +1,73 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+// IDE-Independent Development Container Configuration
+// This devContainer is designed to work with any editor (Vim, NeoVim, Emacs, etc.)
+// and provides a complete development environment without depending on a specific IDE
 {
-	"name": "Node.js",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"name": "IDE-Independent Development Environment",
+	
+	// Use a base image with Node.js and common development tools
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+	
+	// Add features for enhanced development experience
 	"features": {
+		"ghcr.io/devcontainers/features/git:1": {
+			"ppa": true,
+			"version": "latest"
+		},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
-		"ghcr.io/devcontainers/features/node:1": {}
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "20"
+		},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"username": "vscode",
+			"userUid": "automatic",
+			"userGid": "automatic"
+		}
+	},
+
+	// Forward ports for Docusaurus development server and potential debugging
+	"forwardPorts": [3000, 9229, 9230],
+	"portsAttributes": {
+		"3000": {
+			"label": "Docusaurus Dev Server",
+			"onAutoForward": "notify"
+		},
+		"9229": {
+			"label": "Node.js Debug Port"
+		}
+	},
+
+	// Run commands after container creation to set up the development environment
+	"postCreateCommand": ".devcontainer/setup.sh",
+
+	// Install additional packages for CLI development
+	"postStartCommand": "echo 'Development container ready! You can use any editor with this environment.'",
+
+	// Set up environment variables for development
+	"containerEnv": {
+		"NODE_ENV": "development",
+		"EDITOR": "vim"
+	},
+
+	// Mount the workspace and preserve bash history
+	"mounts": [
+		"source=${localWorkspaceFolder}/.devcontainer/.bash_history,target=/home/vscode/.bash_history,type=bind,consistency=cached"
+	],
+
+	// Configure the container for non-root user
+	"remoteUser": "vscode",
+	"updateRemoteUserUID": true,
+
+	// Disable automatic extension installation (IDE-independent)
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
+		}
 	}
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }

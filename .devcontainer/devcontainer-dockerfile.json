@@ -1,0 +1,50 @@
+// IDE-Independent Development Container Configuration (Dockerfile-based)
+// This version uses a custom Dockerfile for maximum control
+// Use this if you prefer a fully custom development image
+{
+	"name": "IDE-Independent Development Environment (Custom)",
+	
+	// Use custom Dockerfile instead of pre-built image
+	"dockerFile": "Dockerfile",
+	
+	// Forward ports for Docusaurus development server and potential debugging
+	"forwardPorts": [3000, 9229, 9230],
+	"portsAttributes": {
+		"3000": {
+			"label": "Docusaurus Dev Server",
+			"onAutoForward": "notify"
+		},
+		"9229": {
+			"label": "Node.js Debug Port"
+		}
+	},
+
+	// Run setup commands after container creation
+	"postCreateCommand": ".devcontainer/setup.sh",
+
+	// Show welcome message on container start
+	"postStartCommand": "echo 'IDE-Independent development container ready! Use any editor you prefer.'",
+
+	// Set up environment variables for development
+	"containerEnv": {
+		"NODE_ENV": "development",
+		"EDITOR": "vim"
+	},
+
+	// Mount the workspace and preserve bash history
+	"mounts": [
+		"source=${localWorkspaceFolder}/.devcontainer/.bash_history,target=/home/vscode/.bash_history,type=bind,consistency=cached"
+	],
+
+	// Configure the container for non-root user
+	"remoteUser": "vscode",
+
+	// Disable automatic extension installation (IDE-independent)
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
+		}
+	}
+}

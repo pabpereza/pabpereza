@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Mount the workspace
+      - ..:/workspace:cached
+      # Mount SSH agent for Git operations
+      - ~/.ssh:/home/vscode/.ssh:ro
+      # Persist shell history
+      - devcontainer-bash-history:/home/vscode/.bash_history
+      # Persist ZSH history
+      - devcontainer-zsh-history:/home/vscode/.zsh_history
+      # Persist vim configuration
+      - devcontainer-vim-config:/home/vscode/.vim
+      # Persist neovim configuration
+      - devcontainer-nvim-config:/home/vscode/.config/nvim
+    ports:
+      # Docusaurus development server
+      - "3000:3000"
+      # Node.js debug ports
+      - "9229:9229"
+      - "9230:9230"
+    environment:
+      - NODE_ENV=development
+      - EDITOR=vim
+    working_dir: /workspace
+    command: sleep infinity
+    # Enable init process for proper signal handling
+    init: true
+
+volumes:
+  devcontainer-bash-history:
+  devcontainer-zsh-history:
+  devcontainer-vim-config:
+  devcontainer-nvim-config:

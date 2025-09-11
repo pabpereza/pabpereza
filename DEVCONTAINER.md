@@ -16,10 +16,10 @@ This project includes a complete IDE-independent development environment that wo
 ### Option 2: Docker Compose (Complete IDE Independence)
 ```bash
 # Start the development environment
-docker-compose -f .devcontainer/docker-compose.yml up -d
+docker compose -f .devcontainer/docker-compose.yml up -d
 
 # Connect to the container
-docker-compose -f .devcontainer/docker-compose.yml exec devcontainer zsh
+docker compose -f .devcontainer/docker-compose.yml exec devcontainer zsh
 
 # Install dependencies and start development
 npm install

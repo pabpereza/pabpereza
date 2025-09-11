@@ -7,14 +7,65 @@ set -e
 
 echo "🚀 Setting up IDE-independent development environment..."
 
+# Function to check if a command exists
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+# Function to install a package if it doesn't exist
+install_if_missing() {
+    if ! command_exists "$1"; then
+        echo "📦 Installing $1..."
+        case "$1" in
+            "rg"|"ripgrep")
+                if ! command_exists rg; then
+                    curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
+                    sudo dpkg -i ripgrep_14.1.0-1_amd64.deb || sudo apt-get install -f -y
+                    rm ripgrep_14.1.0-1_amd64.deb
+                fi
+                ;;
+            "bat")
+                if ! command_exists bat && ! command_exists batcat; then
+                    curl -LO https://github.com/sharkdp/bat/releases/download/v0.24.0/bat_0.24.0_amd64.deb
+                    sudo dpkg -i bat_0.24.0_amd64.deb || sudo apt-get install -f -y
+                    rm bat_0.24.0_amd64.deb
+                fi
+                ;;
+            "exa")
+                if ! command_exists exa; then
+                    curl -LO https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+                    unzip exa-linux-x86_64-v0.10.1.zip
+                    sudo mv bin/exa /usr/local/bin/
+                    rm -rf exa-linux-x86_64-v0.10.1.zip bin
+                fi
+                ;;
+            "fzf")
+                if ! command_exists fzf; then
+                    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+                    ~/.fzf/install --bin --key-bindings --completion --no-update-rc
+                    sudo ln -sf ~/.fzf/bin/fzf /usr/local/bin/fzf
+                fi
+                ;;
+            "nvim")
+                if ! command_exists nvim; then
+                    # Try to install neovim from apt first
+                    sudo apt-get update
+                    sudo apt-get install -y neovim || echo "NeoVim not available via apt, skipping..."
+                fi
+                ;;
+        esac
+    else
+        echo "✅ $1 already installed"
+    fi
+}
+
 # Update package lists
+echo "📦 Updating package lists..."
 sudo apt-get update
 
-# Install essential development tools that work with any editor
+# Install basic tools that should be available
 echo "📦 Installing essential development tools..."
 sudo apt-get install -y \
-    vim \
-    neovim \
     tmux \
     curl \
     wget \
@@ -22,31 +73,66 @@ sudo apt-get install -y \
     tree \
     jq \
     htop \
-    ripgrep \
-    fd-find \
-    bat \
-    exa \
-    fzf \
-    zsh-syntax-highlighting \
-    zsh-autosuggestions
+    2>/dev/null || echo "Some packages may not be available"
+
+# Install modern CLI tools
+echo "📦 Installing modern CLI tools..."
+install_if_missing "rg"
+install_if_missing "bat"
+install_if_missing "exa"
+install_if_missing "fzf"
+install_if_missing "nvim"
+
+# Set up symbolic links if they don't exist
+echo "⚙️  Setting up symbolic links..."
+if command_exists fdfind && ! command_exists fd; then
+    sudo ln -sf /usr/bin/fdfind /usr/local/bin/fd
+fi
+
+if command_exists batcat && ! command_exists bat; then
+    sudo ln -sf /usr/bin/batcat /usr/local/bin/bat
+fi
 
 # Install project dependencies
 echo "📦 Installing project dependencies..."
-npm install
+if [ -f "package.json" ]; then
+    npm install
+else
+    echo "⚠️  No package.json found in current directory"
+fi
 
 # Set up better aliases for CLI development
 echo "⚙️  Setting up development aliases..."
 cat >> ~/.zshrc << 'EOF'
 
 # Development aliases for better CLI experience
-alias ll='exa -la'
-alias la='exa -la'
-alias ls='exa'
-alias cat='batcat'
-alias find='fd'
-alias grep='rg'
-alias vi='nvim'
-alias vim='nvim'
+if command -v exa >/dev/null 2>&1; then
+    alias ll='exa -la'
+    alias la='exa -la'
+    alias ls='exa'
+else
+    alias ll='ls -la'
+    alias la='ls -la'
+fi
+
+if command -v bat >/dev/null 2>&1; then
+    alias cat='bat'
+elif command -v batcat >/dev/null 2>&1; then
+    alias cat='batcat'
+fi
+
+if command -v fd >/dev/null 2>&1; then
+    alias find='fd'
+fi
+
+if command -v rg >/dev/null 2>&1; then
+    alias grep='rg'
+fi
+
+if command -v nvim >/dev/null 2>&1; then
+    alias vi='nvim'
+    alias vim='nvim'
+fi
 
 # Project-specific aliases
 alias dev='npm run start'
@@ -62,7 +148,7 @@ alias gl='git log --oneline'
 
 # Docker aliases (useful for Docker development)
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias dps='docker ps'
 alias di='docker images'
 
@@ -106,10 +192,11 @@ nnoremap <leader>x :x<CR>
 nnoremap <leader>/ :nohlsearch<CR>
 EOF
 
-# Setup basic neovim configuration
-echo "⚙️  Setting up NeoVim configuration..."
-mkdir -p ~/.config/nvim
-cat > ~/.config/nvim/init.vim << 'EOF'
+# Setup basic neovim configuration if neovim is available
+if command_exists nvim; then
+    echo "⚙️  Setting up NeoVim configuration..."
+    mkdir -p ~/.config/nvim
+    cat > ~/.config/nvim/init.vim << 'EOF'
 " Basic NeoVim configuration for development
 set number
 set relativenumber
@@ -152,6 +239,7 @@ autocmd FileType markdown setlocal tabstop=2 shiftwidth=2 expandtab wrap linebre
 " Better completion
 set completeopt=menu,menuone,noselect
 EOF
+fi
 
 # Setup tmux configuration for better terminal multiplexing
 echo "⚙️  Setting up tmux configuration..."
@@ -202,9 +290,9 @@ cat > ~/.welcome.sh << 'EOF'
 echo "🎉 Welcome to your IDE-Independent Development Environment!"
 echo ""
 echo "This devContainer is configured to work with any editor:"
-echo "  • Vim/NeoVim with basic configuration"
+echo "  • Vim$(command -v nvim >/dev/null && echo "/NeoVim") with basic configuration"
 echo "  • tmux for terminal multiplexing"
-echo "  • Modern CLI tools (ripgrep, fd, bat, exa, fzf)"
+echo "  • Modern CLI tools ($(command -v rg >/dev/null && echo "ripgrep, ")$(command -v fd >/dev/null && echo "fd, ")$(command -v bat >/dev/null && echo "bat, ")$(command -v exa >/dev/null && echo "exa, ")$(command -v fzf >/dev/null && echo "fzf"))"
 echo "  • Node.js development environment"
 echo ""
 echo "Available commands:"
@@ -213,13 +301,13 @@ echo "  npm run build  - Build the project"
 echo "  npm run serve  - Serve built project"
 echo ""
 echo "Useful tools installed:"
-echo "  • vim/nvim - Text editors"
+echo "  • vim$(command -v nvim >/dev/null && echo "/nvim") - Text editors"
 echo "  • tmux - Terminal multiplexer"
-echo "  • rg - Fast grep alternative"
-echo "  • fd - Fast find alternative"
-echo "  • bat - Cat with syntax highlighting"
-echo "  • exa - Modern ls replacement"
-echo "  • fzf - Fuzzy finder"
+$(command -v rg >/dev/null && echo "  • rg - Fast grep alternative")
+$(command -v fd >/dev/null && echo "  • fd - Fast find alternative")
+$(command -v bat >/dev/null && echo "  • bat - Cat with syntax highlighting")
+$(command -v exa >/dev/null && echo "  • exa - Modern ls replacement")
+$(command -v fzf >/dev/null && echo "  • fzf - Fuzzy finder")
 echo ""
 echo "Happy coding! 🚀"
 EOF
@@ -228,11 +316,6 @@ chmod +x ~/.welcome.sh
 
 # Add welcome message to shell startup
 echo "~/.welcome.sh" >> ~/.zshrc
-
-# Create development shortcuts
-echo "⚙️  Creating development shortcuts..."
-sudo ln -sf /usr/bin/fdfind /usr/local/bin/fd
-sudo ln -sf /usr/bin/batcat /usr/local/bin/bat
 
 echo "✅ Development environment setup complete!"
 echo "🎯 You can now use any editor with this fully configured development environment."

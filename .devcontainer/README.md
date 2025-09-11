@@ -56,10 +56,10 @@ git clone https://github.com/pabpereza/pabpereza.git
 cd pabpereza
 
 # Start the development container
-docker-compose -f .devcontainer/docker-compose.yml up -d
+docker compose -f .devcontainer/docker-compose.yml up -d
 
 # Connect to the container
-docker-compose -f .devcontainer/docker-compose.yml exec devcontainer zsh
+docker compose -f .devcontainer/docker-compose.yml exec devcontainer zsh
 
 # Install dependencies and start development
 npm install

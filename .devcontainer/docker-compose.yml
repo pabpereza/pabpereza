@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   devcontainer:
     build:
@@ -8,16 +6,16 @@ services:
     volumes:
       # Mount the workspace
       - ..:/workspace:cached
-      # Mount SSH agent for Git operations
-      - ~/.ssh:/home/vscode/.ssh:ro
+      # Mount SSH agent for Git operations (if available)
+      - ~/.ssh:/home/node/.ssh:ro
       # Persist shell history
-      - devcontainer-bash-history:/home/vscode/.bash_history
+      - devcontainer-bash-history:/home/node/.bash_history
       # Persist ZSH history
-      - devcontainer-zsh-history:/home/vscode/.zsh_history
+      - devcontainer-zsh-history:/home/node/.zsh_history
       # Persist vim configuration
-      - devcontainer-vim-config:/home/vscode/.vim
+      - devcontainer-vim-config:/home/node/.vim
       # Persist neovim configuration
-      - devcontainer-nvim-config:/home/vscode/.config/nvim
+      - devcontainer-nvim-config:/home/node/.config/nvim
     ports:
       # Docusaurus development server
       - "3000:3000"

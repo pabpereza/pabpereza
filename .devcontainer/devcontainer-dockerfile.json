@@ -33,11 +33,11 @@
 
 	// Mount the workspace and preserve bash history
 	"mounts": [
-		"source=${localWorkspaceFolder}/.devcontainer/.bash_history,target=/home/vscode/.bash_history,type=bind,consistency=cached"
+		"source=${localWorkspaceFolder}/.devcontainer/.bash_history,target=/home/node/.bash_history,type=bind,consistency=cached"
 	],
 
 	// Configure the container for non-root user
-	"remoteUser": "vscode",
+	"remoteUser": "node",
 
 	// Disable automatic extension installation (IDE-independent)
 	"customizations": {

@@ -25,3 +25,4 @@ Si crees que tu web ha sido afectada, es muy sencillo: entras en [estalapagas.co
 
 La batalla contra la piratería es importante, pero no puede hacerse a costa de tantos daños colaterales. Déjame en los comentarios qué opinas de todo el tema. ¿Crees que La Liga se ha pasado de la raya? ¿O piensas que la comunidad de Internet está exagerando?
 
+No sabremos que pasará pero, citando a su creador, "Cuanto más afectados se sumen, más fuerza haremos. Lo que venga después será sorpresa."

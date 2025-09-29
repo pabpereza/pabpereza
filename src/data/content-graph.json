@@ -1394,8 +1394,8 @@
       "description": "",
       "url": "/blog/hadoolint_verificar_dockerfiles",
       "slug": "hadolint-verificar-mejorar-dockerfile",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/2023/zerotier",
@@ -1561,6 +1561,17 @@
       "slug": "docker_model_ai_mcp",
       "val": 6,
       "connected": false
+    },
+    {
+      "id": "/blog/extensiones_docker",
+      "title": "Las 5 mejores extensiones de Docker para potenciar tu flujo de trabajo",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/extensiones_docker",
+      "slug": "mejores_extensiones_docker_2025",
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/kubectx_kubens",
@@ -2186,6 +2197,11 @@
     {
       "source": "/blog/devsecops_recomendaciones_2025",
       "target": "/blog/mi_ruta_devsecops_2025",
+      "type": "internal_link"
+    },
+    {
+      "source": "/blog/extensiones_docker",
+      "target": "/blog/hadoolint_verificar_dockerfiles",
       "type": "internal_link"
     }
   ]

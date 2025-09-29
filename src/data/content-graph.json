@@ -1519,6 +1519,17 @@
       "connected": false
     },
     {
+      "id": "/blog/aws_local_gratuito_localstack",
+      "title": "AWS en local y gratuito para que aprendas sin sustos y restricciones",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/aws_local_gratuito_localstack",
+      "slug": "aws-local-gratuito-localstack",
+      "val": 6,
+      "connected": false
+    },
+    {
       "id": "/blog/backups_docker",
       "title": "Backups de Docker",
       "type": "content",

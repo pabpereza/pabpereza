@@ -8,6 +8,204 @@
       "description": "",
       "url": "/docs/cursos",
       "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/devops/introduccion",
+      "title": "101.Introduccion",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/introduccion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/cultura",
+      "title": "102.Cultura",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/cultura",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/git_avanzado",
+      "title": "103.Git_avanzado",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/git_avanzado",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/metodologias",
+      "title": "104.Metodologias",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/metodologias",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/infraestructura_codigo",
+      "title": "201.Infraestructura_codigo",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/infraestructura_codigo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/gestion_configuraciones",
+      "title": "202.Gestion_configuraciones",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/gestion_configuraciones",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/monitoreo",
+      "title": "203.Monitoreo",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/monitoreo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/seguridad",
+      "title": "204.Seguridad",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/seguridad",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/cicd_conceptos",
+      "title": "301.CICD_conceptos",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/cicd_conceptos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/pipelines",
+      "title": "302.Pipelines",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/pipelines",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/testing",
+      "title": "303.Testing",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/testing",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/deployment_strategies",
+      "title": "304.Deployment_strategies",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/deployment_strategies",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/contenedores",
+      "title": "401.Contenedores",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/contenedores",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/microservicios",
+      "title": "402.Microservicios",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/microservicios",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/sre",
+      "title": "403.SRE",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/sre",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops",
+      "title": "♾️ DevOps",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/cheatsheet_devops",
+      "title": "cheatsheet_devops",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/cheatsheet_devops",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/devops/herramientas",
+      "title": "herramientas",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/herramientas",
+      "slug": null,
       "val": 10,
       "connected": true
     },
@@ -195,8 +393,19 @@
       "description": "Aprende a crear imágenes multiarquitectura con Docker Buildx, una herramienta que nos permite crear imágenes para distintas arquitecturas de forma sencilla.",
       "url": "/docs/cursos/docker/buildx_y_multiarquitectura",
       "slug": "buildx_y_multiarquitectura_en_docker",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/multistage_y_distroless",
+      "title": "Multi-Stage y Distroless",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear Dockerfiles multi-stage para optimizar la construcción de imágenes en Docker y descubre las ventajas de las imágenes distroless para mejorar la seguridad y reducir el tamaño de tus contenedores.",
+      "url": "/docs/cursos/docker/multistage_y_distroless",
+      "slug": "dockerfiles_multi_stage_y_distroless",
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/docs/cursos/docker",
@@ -364,35 +573,13 @@
       "connected": true
     },
     {
-      "id": "/docs/cursos/kubernetes/health_checks",
-      "title": "Health Checks",
+      "id": "/docs/cursos/kubernetes/healthchecks_y_probes",
+      "title": "Healthchecks y Probes",
       "type": "content",
       "category": "docs",
       "description": "Domina los Health Checks en Kubernetes con Liveness, Readiness y Startup Probes. Asegura la disponibilidad y rendimiento de tus aplicaciones.",
-      "url": "/docs/cursos/kubernetes/health_checks",
+      "url": "/docs/cursos/kubernetes/healthchecks_y_probes",
       "slug": "health_checks_en_kubernetes_liveness_readiness_y_startup_probes",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/kubernetes/rangos_y_quotas",
-      "title": "Rangos y Quotas",
-      "type": "content",
-      "category": "docs",
-      "description": "Aprende a gestionar recursos en Kubernetes con Resource Quotas y Limit Ranges. Controla CPU, memoria y almacenamiento en namespaces con ejemplos prácticos.",
-      "url": "/docs/cursos/kubernetes/rangos_y_quotas",
-      "slug": "resource_quotas_y_limit_ranges_en_kubernetes_gestion_de_recursos",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/kubernetes/autoscaling",
-      "title": "Autoscaling",
-      "type": "content",
-      "category": "docs",
-      "description": "Domina el autoscaling en Kubernetes con HPA, VPA y Cluster Autoscaler. Aprende escalado horizontal y vertical automático para aplicaciones en producción.",
-      "url": "/docs/cursos/kubernetes/autoscaling",
-      "slug": "autoscaling_en_kubernetes_hpa_vpa_y_cluster_autoscaler",
       "val": 10,
       "connected": true
     },
@@ -415,6 +602,28 @@
       "description": "Aprende a gestionar almacenamiento persistente en Kubernetes mediante Persistent Volumes y Persistent Volume Claims. Guía completa con ejemplos prácticos.",
       "url": "/docs/cursos/kubernetes/almacenamiento_persistente",
       "slug": "persistent_volumes_y_persistent_volume_claims_en_kubernetes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/rangos_y_quotas",
+      "title": "Rangos y Quotas",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar recursos en Kubernetes con Resource Quotas y Limit Ranges. Controla CPU, memoria y almacenamiento en namespaces con ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/rangos_y_quotas",
+      "slug": "resource_quotas_y_limit_ranges_en_kubernetes_gestion_de_recursos",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/autoscaling",
+      "title": "Autoscaling",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina el autoscaling en Kubernetes con HPA, VPA y Cluster Autoscaler. Aprende escalado horizontal y vertical automático para aplicaciones en producción.",
+      "url": "/docs/cursos/kubernetes/autoscaling",
+      "slug": "autoscaling_en_kubernetes_hpa_vpa_y_cluster_autoscaler",
       "val": 10,
       "connected": true
     },
@@ -705,6 +914,281 @@
       "connected": false
     },
     {
+      "id": "/docs/cursos/vim/introduccion",
+      "title": "Introducción",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre por qué Vim sigue siendo relevante en 2025 y cómo puede mejorar tu productividad como desarrollador.",
+      "url": "/docs/cursos/vim/introduccion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/instalacion_y_configuracion",
+      "title": "Instalación y configuración",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía completa para instalar y configurar Vim clásico en tu sistema. Aprende a personalizar tu entorno de desarrollo con una configuración básica y optimizada.",
+      "url": "/docs/cursos/vim/instalacion_y_configuracion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/los_modos_de_vim",
+      "title": "Los modos de Vim",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los diferentes modos de Vim: Normal, Insert y Visual. Entiende cómo navegar y editar texto eficientemente.",
+      "url": "/docs/cursos/vim/los_modos_de_vim",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/movimientos_basicos",
+      "title": "Movimientos básicos",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los movimientos fundamentales en Vim: hjkl, navegación por palabras, líneas y pantalla. Domina la navegación para ser más productivo.",
+      "url": "/docs/cursos/vim/movimientos_basicos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/edicion_basica",
+      "title": "Edición básica",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a editar texto en Vim: insertar, borrar, reemplazar y más. Domina la gramática de Vim para editar eficientemente.",
+      "url": "/docs/cursos/vim/edicion_basica",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/comandos_esenciales",
+      "title": "Comandos esenciales",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los comandos esenciales de Vim y crea tu primera configuración personalizada para mejorar tu productividad. Domina el arte de guardar, buscar y navegar archivos eficientemente.",
+      "url": "/docs/cursos/vim/comandos_esenciales",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/movimientos_avanzados",
+      "title": "Movimientos avanzados",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los movimientos avanzados en Vim: palabras, líneas, párrafos y más. Aprende a navegar archivos grandes con precisión y velocidad.",
+      "url": "/docs/cursos/vim/movimientos_avanzados",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/busqueda_y_reemplazo",
+      "title": "Búsqueda y Reemplazo",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina las técnicas de búsqueda y reemplazo en Vim para mejorar tu productividad.",
+      "url": "/docs/cursos/vim/busqueda_y_reemplazo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/buffers_ventanas_y_pestanas",
+      "title": "Buffers, Ventanas y Pestañas",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina la gestión de buffers, ventanas y pestañas en Vim para mejorar tu flujo de trabajo.",
+      "url": "/docs/cursos/vim/buffers_ventanas_y_pestanas",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/registros_y_macros",
+      "title": "Registros y Macros",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a usar registros y macros en Vim para automatizar tareas repetitivas y mejorar tu flujo de trabajo. Domina estas herramientas para alcanzar velocidades de edición profesionales.",
+      "url": "/docs/cursos/vim/registros_y_macros",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/plugins_esenciales",
+      "title": "Plugins esenciales",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a instalar y configurar plugins esenciales en Vim con vim-plug. Mejora tu flujo de trabajo con NERDTree, fzf, vim-airline y más.",
+      "url": "/docs/cursos/vim/plugins_esenciales",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/navegacion_de_archivos",
+      "title": "Navegación de Archivos",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina la navegación de archivos en Vim con Netrw, fzf y más. Aprende a explorar tu sistema de archivos, buscar archivos y configurar tu entorno para una productividad óptima.",
+      "url": "/docs/cursos/vim/navegacion_de_archivos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/configuracion_avanzada",
+      "title": "Configuración Avanzada",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a personalizar Vim para adaptarlo a tus necesidades y mejorar tu flujo de trabajo.",
+      "url": "/docs/cursos/vim/configuracion_avanzada",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/autocompletado_y_herramientas_de_desarrollo",
+      "title": "Autocompletado y Herramientas de Desarrollo",
+      "type": "content",
+      "category": "docs",
+      "description": "Configura autocompletado inteligente y herramientas de desarrollo en Vim para un entorno profesional.",
+      "url": "/docs/cursos/vim/autocompletado_y_herramientas_de_desarrollo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/integracion_con_git",
+      "title": "Integración con Git",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina la integración de Git en Vim con Fugitive y herramientas complementarias para un flujo de trabajo eficiente.",
+      "url": "/docs/cursos/vim/integracion_con_git",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/snippets_y_templates",
+      "title": "Snippets y Templates",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear y usar snippets y templates automáticos en Vim para mejorar tu flujo de trabajo y productividad.",
+      "url": "/docs/cursos/vim/snippets_y_templates",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/dotfiles",
+      "title": "Dotfiles",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar tus dotfiles para un entorno de desarrollo portable, versionado y compartible. Organiza tu configuración de Vim, Tmux, Git y más.",
+      "url": "/docs/cursos/vim/dotfiles",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/trucos_avanzados",
+      "title": "Trucos Avanzados",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre los secretos mejor guardados de Vim. Técnicas ninja que transformarán tu productividad y te harán parecer un mago del terminal.",
+      "url": "/docs/cursos/vim/trucos_avanzados",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/introduccion_a_tmux",
+      "title": "Introducción a Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a usar Tmux para gestionar sesiones persistentes en terminal. Mejora tu productividad con esta herramienta esencial.",
+      "url": "/docs/cursos/vim/introduccion_a_tmux",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/sesiones_ventanas_y_paneles",
+      "title": "Sesiones, Ventanas y Paneles",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar sesiones, ventanas y paneles en Tmux para mejorar tu productividad en la terminal.",
+      "url": "/docs/cursos/vim/sesiones_ventanas_y_paneles",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/configuracion_y_personalizacion",
+      "title": "Configuración y Personalización",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a personalizar Tmux para adaptarlo a tu flujo de trabajo. Configura atajos, apariencia y plugins para maximizar tu productividad.",
+      "url": "/docs/cursos/vim/configuracion_y_personalizacion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/integracion_vim_tmux",
+      "title": "Integración Vim + Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre cómo integrar Vim y Tmux para crear un entorno de desarrollo terminal altamente productivo. Aprende a configurar la navegación, gestionar sesiones y optimizar tu flujo de trabajo.",
+      "url": "/docs/cursos/vim/integracion_vim_tmux",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim",
+      "title": "⚡️ Vim + Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Curso completo de Vim y Tmux para maximizar tu productividad en terminal. Aprende desde lo básico hasta técnicas avanzadas.",
+      "url": "/docs/cursos/vim",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/cheatsheet_tmux",
+      "title": "Cheatsheet Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía rápida de comandos y configuraciones esenciales de Tmux para mejorar tu productividad en terminal.",
+      "url": "/docs/cursos/vim/cheatsheet_tmux",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/cheatsheet_vim",
+      "title": "Cheatsheet Vim",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía rápida de comandos y atajos esenciales de Vim para mejorar tu productividad en el editor.",
+      "url": "/docs/cursos/vim/cheatsheet_vim",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
       "id": "/blog/2021/2021_09_12_docker_de_pago",
       "title": "¿Docker desktop de pago?",
       "type": "content",
@@ -870,17 +1354,6 @@
       "connected": false
     },
     {
-      "id": "/blog/2023/2023_10_07_gitleaks",
-      "title": "Gitleaks, detecta secretos en tu repositorio de git",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/2023/2023_10_07_gitleaks",
-      "slug": "gitleaks_secretos_git_repositorio_detectar",
-      "val": 6,
-      "connected": false
-    },
-    {
       "id": "/blog/buenas_practicas_docker",
       "title": "Verifica y mejora tus dockerfiles",
       "type": "content",
@@ -991,17 +1464,6 @@
       "connected": false
     },
     {
-      "id": "/blog/servidor_compartido_npm_proxy_docker",
-      "title": "Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/servidor_compartido_npm_proxy_docker",
-      "slug": "servidor-compartido-npm-proxy-docker",
-      "val": 6,
-      "connected": false
-    },
-    {
       "id": "/blog/especial_5000_subcriptores",
       "title": "¡Especial 5000 subscriptores en Youtube!",
       "type": "content",
@@ -1057,6 +1519,28 @@
       "connected": false
     },
     {
+      "id": "/blog/backups_docker",
+      "title": "Backups de Docker",
+      "type": "content",
+      "category": "blog",
+      "description": "Aprende a realizar copias de seguridad de tus contenedores Docker y Kubernetes, asegurando la protección de tus datos y configuraciones.",
+      "url": "/blog/backups_docker",
+      "slug": "backups_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/comunidad_vs_la_liga",
+      "title": "Comunidad vs La Liga: El Verdadero Duelo del Fútbol",
+      "type": "content",
+      "category": "blog",
+      "description": "La batalla de la comunidad contra La Liga de fútbol y la libertad de la red en España.",
+      "url": "/blog/comunidad_vs_la_liga",
+      "slug": "comunidad_vs_la_liga",
+      "val": 6,
+      "connected": false
+    },
+    {
       "id": "/blog/devsecops_recomendaciones_2025",
       "title": "Ruta DevSecOps, recomendaciones para empezar en 2025",
       "type": "content",
@@ -1079,6 +1563,17 @@
       "connected": false
     },
     {
+      "id": "/blog/kubectx_kubens",
+      "title": "Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente",
+      "type": "content",
+      "category": "blog",
+      "description": "Aprende a usar Kubectx y Kubens para cambiar de contexto y namespace en Kubernetes de forma rápida y sencilla. Mejora tu flujo de trabajo con estos comandos útiles.",
+      "url": "/blog/kubectx_kubens",
+      "slug": "kubectx_kubens_kubernetes_context",
+      "val": 6,
+      "connected": false
+    },
+    {
       "id": "/blog/mi_ruta_devsecops_2025",
       "title": "Mi ruta DevSecOps y aprendizaje personal a fecha de 2025",
       "type": "content",
@@ -1088,6 +1583,17 @@
       "slug": "mi_ruta_devsecops_reflexiones_recomendaciones_2025",
       "val": 10,
       "connected": true
+    },
+    {
+      "id": "/blog/no_confiar_ciegamente_en_la_IA",
+      "title": "Jamás confíes ciegamente en la IA, y menos para tu infraestructura",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/no_confiar_ciegamente_en_la_IA",
+      "slug": "no_confiar_ciegamente_en_la_IA",
+      "val": 6,
+      "connected": false
     },
     {
       "id": "/blog/raspberry_ip_fija",
@@ -1101,13 +1607,24 @@
       "connected": false
     },
     {
-      "id": "/blog/backups_docker",
-      "title": "Backups de Docker",
+      "id": "/blog/5_trucos_para_construir_node_mas_rapidos",
+      "title": "5 trucos para construir aplicaciones Node más rápido",
       "type": "content",
       "category": "blog",
-      "description": "Aprende a realizar copias de seguridad de tus contenedores Docker y Kubernetes, asegurando la protección de tus datos y configuraciones.",
-      "url": "/blog/backups_docker",
-      "slug": "backups_docker",
+      "description": "Descubre 5 trucos para optimizar la construcción de aplicaciones Node.js, mejorando la velocidad y eficiencia en el desarrollo.",
+      "url": "/blog/5_trucos_para_construir_node_mas_rapidos",
+      "slug": "5_trucos_para_construir_node_mas_rapido",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/docker_vs_podman_rancher",
+      "title": "Docker vs Podman vd Rancher en 2025, ¿cuál es la herramienta definitiva?",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/docker_vs_podman_rancher",
+      "slug": "docker_vs_podman_rancher_2025_quien_ganara",
       "val": 6,
       "connected": false
     },
@@ -1147,13 +1664,93 @@
   ],
   "links": [
     {
-      "source": "/docs/cursos",
+      "source": "/docs/cursos/devops",
       "target": "/docs/cursos/docker",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos",
+      "source": "/docs/cursos/devops",
       "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/introduccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/cultura",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/git_avanzado",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/metodologias",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/infraestructura_codigo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/gestion_configuraciones",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/monitoreo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/cicd_conceptos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/pipelines",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/testing",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/deployment_strategies",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/contenedores",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/microservicios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/sre",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/herramientas",
       "type": "internal_link"
     },
     {
@@ -1282,6 +1879,16 @@
       "type": "internal_link"
     },
     {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/buildx_y_multiarquitectura",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/multistage_y_distroless",
+      "type": "internal_link"
+    },
+    {
       "source": "/docs/cursos/kubernetes/introduccion",
       "target": "/docs/cursos/kubernetes",
       "type": "internal_link"
@@ -1319,6 +1926,16 @@
     {
       "source": "/docs/cursos/kubernetes/services",
       "target": "/docs/cursos/kubernetes/ingress_controller",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/ingress_controller",
+      "target": "/docs/cursos/kubernetes/secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/healthchecks_y_probes",
+      "target": "/docs/cursos/kubernetes/deployments",
       "type": "internal_link"
     },
     {
@@ -1383,17 +2000,7 @@
     },
     {
       "source": "/docs/cursos/kubernetes",
-      "target": "/docs/cursos/kubernetes/health_checks",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/kubernetes",
-      "target": "/docs/cursos/kubernetes/rangos_y_quotas",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/kubernetes",
-      "target": "/docs/cursos/kubernetes/autoscaling",
+      "target": "/docs/cursos/kubernetes/healthchecks_y_probes",
       "type": "internal_link"
     },
     {
@@ -1404,6 +2011,16 @@
     {
       "source": "/docs/cursos/kubernetes",
       "target": "/docs/cursos/kubernetes/almacenamiento_persistente",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/rangos_y_quotas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/autoscaling",
       "type": "internal_link"
     },
     {
@@ -1444,6 +2061,126 @@
     {
       "source": "/docs/cursos/kubernetes",
       "target": "/docs/cursos/kubernetes/dashboards_y_herramientas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/introduccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/instalacion_y_configuracion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/los_modos_de_vim",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/movimientos_basicos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/edicion_basica",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/comandos_esenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/movimientos_avanzados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/busqueda_y_reemplazo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/buffers_ventanas_y_pestanas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/registros_y_macros",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/plugins_esenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/navegacion_de_archivos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/configuracion_avanzada",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/autocompletado_y_herramientas_de_desarrollo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/integracion_con_git",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/snippets_y_templates",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/dotfiles",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/trucos_avanzados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/introduccion_a_tmux",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/sesiones_ventanas_y_paneles",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/configuracion_y_personalizacion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/integracion_vim_tmux",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/cheatsheet_vim",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/cheatsheet_tmux",
       "type": "internal_link"
     },
     {

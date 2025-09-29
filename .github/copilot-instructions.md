@@ -1,27 +1,55 @@
 # GitHub Copilot Instructions
 
-Esta guía proporciona directrices para GitHub Copilot y otros agentes de IA que trabajen en este repositorio de contenido educativo.
+Esta guía proporciona directrices para GitHub Copilot y otros agentes de IA que trabajen en este repositorio de contenido educativo de DevSecOps.
 
-## Principios Generales
+## Arquitectura del Proyecto
 
-- **Claridad**: Prioriza la comprensión sobre la brevedad
-- **Pedagogía**: Explica conceptos complejos de forma simple y progresiva
-- **Consistencia**: Mantén un estilo consistente en toda la documentación
-- **Accesibilidad**: Haz el contenido accesible para diferentes niveles de conocimiento
+Este es un sitio **Docusaurus v3** con:
+- **Build automatizado**: `npm run prebuild` genera el grafo de contenido antes de cada build
+- **Búsqueda**: Utiliza `docusaurus-lunr-search` para indexación
+- **Mermaid**: Soporte para diagramas mediante `@docusaurus/theme-mermaid`
+- **Grafo de contenido**: React Force Graph 2D para visualización de relaciones
 
 ## Estructura de Contenido
 
 ### Blog Posts (`/blog/`)
-- Crear una carpeta por artículo con nombre descriptivo (ej: `introduccion-docker`)
-- Incluir archivo `index.md` con el contenido principal
-- Añadir carpeta `assets/` para imágenes y recursos
-- Usar nombres de archivo descriptivos para las imágenes
+**Organización por años**: `blog/2025/mi_articulo/mi_articulo.md`
+- Usar archivo `.md` con nombre del artículo (NO `index.md`)
+- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
+- Imágenes en la misma carpeta que el artículo
+- **Ejemplo de frontmatter**:
+```yaml
+---
+slug: ruta_devsecops_recomendaciones_2025 
+title: Ruta DevSecOps, recomendaciones para empezar en 2025 
+tags: [devsecops, seguridad, devops]
+keywords: [devsecops, seguridad, devops, recomendaciones, 2025]
+authors: pabpereza
+date: 2025-06-05
+---
+```
 
 ### Documentación de Cursos (`/docs/cursos/`)
-- Organizar por curso y sección (ej: `/docs/cursos/kubernetes/fundamentos/`)
-- Usar numeración para orden de lecciones (ej: `01-introduccion.md`)
-- Incluir índice navegable en cada sección
-- Proporcionar ejemplos prácticos y ejercicios
+**Sistema de numeración específico**: `101.Introduccion.md`, `102.Instalacion.md`, `201.Limites_recursos.md`
+- Series 100: Contenido básico
+- Series 200+: Contenido avanzado
+- Usar `sidebar_label` en frontmatter para navegación
+- Incluir `README.md` como índice principal de cada curso
+
+## Workflow de Desarrollo
+
+### Build System
+- **Prebuild automático**: Ejecuta `generate-graph-data.js` antes de cada build
+- **Comando principal**: `npm run build` (incluye prebuild automático)
+- **Desarrollo local**: `npm start` para servidor de desarrollo
+- **Grafo de contenido**: Se genera automáticamente desde frontmatter
+
+### Scripts críticos
+```bash
+npm run generate-graph    # Genera grafo de relaciones de contenido
+npm run prebuild         # Se ejecuta automáticamente antes del build
+npm start               # Servidor desarrollo con hot reload
+```
 
 ## Estilo de Redacción
 
@@ -84,54 +112,48 @@ Enlaces y referencias para profundizar.
 - Optimiza el tamaño sin perder calidad
 - Incluye imágenes en alta resolución cuando sea necesario
 
+## Contexto DevSecOps
+
+### Enfoque de Contenido
+- **Contenido educativo**: Cursos progresivos desde nivel básico a avanzado
+- **Público objetivo**: Desarrolladores, administradores de sistemas, y profesionales DevOps
+- **Metodología**: Learning by doing con ejemplos prácticos y casos reales
+- **Temas principales**: Docker, Kubernetes, Seguridad, DevOps, CI/CD
+
+### Terminología Específica
+- **DevSecOps**: Integración de seguridad en el ciclo DevOps
+- **Contenedores**: Docker, Podman, seguridad de contenedores
+- **Orquestación**: Kubernetes, Docker Swarm
+- **CI/CD**: Integración y despliegue continuo
+- **Monitorización**: Observabilidad y logging
+
 ## Ejemplos de Contenido de Calidad
 
-### Artículo de Blog
+### Curso Técnico (Estructura Real)
 ```markdown
-# Introducción a Docker: Simplificando el Desarrollo
+---
+title: Curso de Docker desde cero
+sidebar_label: Introducción
+slug: curso_de_docker_desde_cero
+tags: [docker, devops, contenedores]
+---
 
-## ¿Qué es Docker?
+# Introducción a Docker
 
-Docker es como una **caja mágica** que permite empaquetar aplicaciones junto con todas sus dependencias. Imagina que quieres enviar un regalo frágil por correo: lo empaquetas cuidadosamente en una caja con todo lo necesario para que llegue intacto.
+Bienvenido al curso de Docker donde aprenderás desde la instalación hasta la implementación en producción.
 
-> **Definición**: Docker es una plataforma de contenedores que permite crear, distribuir y ejecutar aplicaciones de forma consistente en cualquier entorno.
-
-## ¿Por qué usar Docker?
-
-### 1. Consistencia entre entornos
-- **Problema**: "En mi máquina funciona"
-- **Solución**: Docker garantiza que funcione igual en desarrollo, testing y producción
-
-### 2. Aislamiento de aplicaciones
-Cada contenedor es independiente, como apartamentos en un edificio.
+## ¿Qué aprenderás?
+- Conceptos fundamentales de contenedores
+- Gestión de imágenes y contenedores
+- Docker Compose para aplicaciones multi-contenedor
+- Mejores prácticas de seguridad
 
 ## Tu primer contenedor
-
 ```bash
-# Ejecutar tu primer contenedor
 docker run hello-world
 ```
 
-Este command
-export const UserCard: React.FC<UserCardProps> = ({ user, onUserClick }) => {
-  const handleClick = useCallback(() => {
-    onUserClick(user.id);
-  }, [user.id, onUserClick]);
-
-  return (
-    <div 
-      className="user-card" 
-      onClick={handleClick}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => e.key === 'Enter' && handleClick()}
-    >
-      <img src={user.avatar} alt={`Avatar de ${user.name}`} />
-      <h3>{user.name}</h3>
-      <p>{user.email}</p>
-    </div>
-  );
-};
+Este comando descarga y ejecuta tu primer contenedor...
 ```
 
 ## Recursos Adicionales

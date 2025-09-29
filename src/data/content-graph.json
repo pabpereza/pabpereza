@@ -1519,6 +1519,17 @@
       "connected": false
     },
     {
+      "id": "/blog/alta_disponibilidad_docker_swarm",
+      "title": "Alta Disponibilidad con Docker y Docker Swarm - Guía Completa 2025",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/alta_disponibilidad_docker_swarm",
+      "slug": "alta_disponibilidad_docker_swarm_2025",
+      "val": 6,
+      "connected": false
+    },
+    {
       "id": "/blog/backups_docker",
       "title": "Backups de Docker",
       "type": "content",

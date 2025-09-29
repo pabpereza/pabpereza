@@ -1583,7 +1583,7 @@
     webpack "^5.95.0"
     webpackbar "^6.0.1"
 
-"@docusaurus/core@3.9.1", "@docusaurus/core@^3.8.0":
+"@docusaurus/core@3.9.1", "@docusaurus/core@^3.9.1":
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.9.1.tgz#be4d859464fee8889794d8527f884e931d591f2e"
   integrity sha512-FWDk1LIGD5UR5Zmm9rCrXRoxZUgbwuP6FBA7rc50DVfzqDOMkeMe3NyJhOsA2dF0zBE3VbHEIMmTjKwTZJwbaA==
@@ -1837,7 +1837,7 @@
     tslib "^2.6.0"
     webpack "^5.88.1"
 
-"@docusaurus/preset-classic@^3.8.0":
+"@docusaurus/preset-classic@^3.9.1":
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-3.9.1.tgz#58d86664b5c9779578092556a0e6ae5ccebbd6c0"
   integrity sha512-ZHga2xsxxsyd0dN1BpLj8S889Eu9eMBuj2suqxdw/vaaXu/FjJ8KEGbcaeo6nHPo8VQcBBnPEdkBtSDm2TfMNw==
@@ -1907,7 +1907,7 @@
     tslib "^2.6.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-mermaid@^3.8.0":
+"@docusaurus/theme-mermaid@^3.9.1":
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-mermaid/-/theme-mermaid-3.9.1.tgz#92de20580489e05b3da6716503fda17e5a337a4d"
   integrity sha512-aKMFlQfxueVBPdCdrNSshG12fOkJXSn1sb6EhI/sGn3UpiTEiazJm4QLP6NoF78mqq8O5Ar2Yll+iHWLvCsuZQ==

@@ -14,6 +14,8 @@ Construir imágenes de Docker es fundamental en el pipeline de entrega de softwa
 
 ¿Te suena familiar esa frustración de no entender qué está pasando durante las diferentes etapas del build? ¿Cuál era el valor de ese ARG? ¿Qué archivos se copiaron realmente en la imagen? Si has trabajado con Docker, seguro que has pasado por esto más de una vez.
 
+<!-- truncate -->
+
 La buena noticia es que Docker ha estado mejorando la experiencia de desarrollo con actualizaciones en **Docker Build** (Buildx) y la extensión de **VS Code** (Docker DX). Hoy te voy a mostrar cómo usar la nueva funcionalidad de **Build Debugging** que va a cambiar completamente tu forma de trabajar con Dockerfiles.
 
 Con esta nueva característica de depuración en Buildx, vas a reducir drásticamente el tiempo que pasas arreglando tus builds de Docker. En este artículo aprenderás a configurar el debugger de Buildx en Visual Studio Code, ejecutar paso a paso un build, inspeccionar variables y el sistema de archivos de la imagen, y abrir una shell dentro de la imagen mientras se está construyendo.

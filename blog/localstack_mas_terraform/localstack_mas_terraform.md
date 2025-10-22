@@ -18,6 +18,8 @@ Los puntos que trataremos son:
 * ¿Tiene interfaz gráfica?
 * ¿Qué ofrece la versión Pro de LocalStack?
 * ¿Cómo usar LocalStack con Terraform? 
+  
+<!-- truncate -->
 
 ## ¿Qué necesidad cubre realmente LocalStack?
 LocalStack es una herramienta que simula los servicios de AWS en tu máquina local. Esto es especialmente útil para desarrolladores que quieren probar y desarrollar aplicaciones que utilizan servicios de AWS sin incurrir en costos o depender de una conexión a internet.

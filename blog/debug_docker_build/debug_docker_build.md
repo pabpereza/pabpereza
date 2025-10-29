@@ -9,17 +9,24 @@ draft: true
 ---
 
 # Depurar builds de Docker en VS Code como un profesional
-Construir imágenes de Docker es fundamental en el pipeline de entrega de software para aplicaciones modernas. Es la forma en la que empaquetamos nuestras aplicaciones y servicios para que puedan distribuirse y desplegarse en producción. Aunque el Dockerfile ha sido durante mucho tiempo el estándar para definir imágenes de contenedores, todos sabemos que puede ser un **auténtico quebradero de cabeza** cuando algo falla.
+Construir imágenes de contenedor se ha convertido en un noble arte que, sin ser milenario, ni requerir rituales complejos, si que puede llegar a ser frustrante si no damos con la tecla adecuada. 
 
 ¿Te suena familiar esa frustración de no entender qué está pasando durante las diferentes etapas del build? ¿Cuál era el valor de ese ARG? ¿Qué archivos se copiaron realmente en la imagen? Si has trabajado con Docker, seguro que has pasado por esto más de una vez.
 
+Ni hablar cabe del tiempo que se pierde por el camino haciendo prueba y error.
+
 <!-- truncate -->
 
-La buena noticia es que Docker ha estado mejorando la experiencia de desarrollo con actualizaciones en **Docker Build** (Buildx) y la extensión de **VS Code** (Docker DX). Hoy te voy a mostrar cómo usar la nueva funcionalidad de **Build Debugging** que va a cambiar completamente tu forma de trabajar con Dockerfiles.
+La buena noticia es que Docker ha estado mejorando la experiencia de desarrollo con actualizaciones en **Docker Build** (Buildx) y la extensión de **VS Code** (Docker DX). 
 
-Con esta nueva característica de depuración en Buildx, vas a reducir drásticamente el tiempo que pasas arreglando tus builds de Docker. En este artículo aprenderás a configurar el debugger de Buildx en Visual Studio Code, ejecutar paso a paso un build, inspeccionar variables y el sistema de archivos de la imagen, y abrir una shell dentro de la imagen mientras se está construyendo.
+Además junto con esta funcionalidad, también te voy a hablar del comando `docker debug`, que ya existía desde hace un tiempo pero creo que aún no es muy conocido.
 
-## Configurando Visual Studio Code
+En conjunto, en este vídeo, vamos a aprender a depurar imágenes de Docker en su fase de construcción, previamente a ser ejecutadas y, como no, también en su fase de ejecución.
+
+Vamos con ello.
+
+
+## DockerDX y Visual Studio Code
 
 Para empezar a depurar Dockerfiles en Visual Studio Code necesitas:
 
@@ -45,6 +52,8 @@ En tu archivo `launch.json`, crea una nueva configuración para depurar tu build
 }
 ```
 
+En cualquier caso, si le das al botón de añadir configuración, deberías ver una opción para **Docker: Build** que puedes seleccionar y se añadirá automáticamente a tu archivo `launch.json`.
+
 ## Añadiendo un breakpoint
 Ahora que has completado la configuración, vamos a añadir un **breakpoint** a nuestro Dockerfile. Coloca un breakpoint junto a una de tus instrucciones `RUN` haciendo clic en el margen izquierdo del editor o presionando **F9**. Debería aparecer un círculo indicando que se ha añadido el breakpoint.
 
@@ -52,22 +61,22 @@ Ahora que has completado la configuración, vamos a añadir un **breakpoint** a 
 Ya estamos listos para arrancar el depurador. Selecciona la configuración que creaste y pulsa **F5**. El build debería pausarse en la línea `RUN` donde colocaste el breakpoint.
 
 
-## Funcionalidades de depuración
+### Funcionalidades de depuración
 Ahora te voy a mostrar las tres características principales que proporciona el Buildx Debugger.
 
-### Inspección de variables
+#### Inspección de variables
 Cuando un build está en estado suspendido, puedes examinar cualquier variable que se haya definido. En este ejemplo, al observar el valor de `workdir` del comando ejecutado en el panel izquierdo, podemos ver que el comando no se está ejecutando en la carpeta correcta, ya que habíamos copiado el contenido en `/app`. Podemos arreglar esto añadiendo `WORKDIR /app` antes de la línea `RUN`. También puedes ver variables que han sido definidas tanto por tu imagen como por la imagen base, como `VAR` y `NODE_VERSION`.
 
 
 
 
-### Explorador de archivos
+#### Explorador de archivos
 Además de inspeccionar variables, también puedes examinar la estructura del sistema de archivos para ver qué ya está ahí y qué has copiado. Para archivos de texto, incluso puedes ver su contenido en el campo `data`.
 
 ![Docker Buildx Debug File Explorer](./fileexplorer_docker_build.png)
 
 
-### Depuración interactiva
+#### Depuración interactiva
 Crear el Dockerfile correcto es casi siempre un proceso iterativo. Esto sucede frecuentemente porque el sistema host en el que estás desarrollando tiene pocas similitudes con la imagen que estás construyendo. Piensa en las diferencias entre ejecutar Ubuntu localmente pero intentar construir una imagen de Alpine Linux. Las pequeñas diferencias en los nombres de paquetes generan un montón de idas y venidas entre tu editor y el navegador buscando el nombre correcto. Añades una línea aquí, comentas otra línea allá, ejecutas `docker build` otra vez y cruzas los dedos.
 
 Este proceso iterativo ahora se puede **optimizar enormemente** con la ayuda del depurador. Cuando tu build está en estado suspendido, abre la vista Debug Console y coloca el cursor en el campo de entrada en la parte inferior. Escribe `exec` y pulsa Enter. La vista de Terminal debería abrirse con una shell conectada a la imagen que se está construyendo.
@@ -79,7 +88,7 @@ Esta funcionalidad es un **cambio radical** porque ahora puedes abrir fácilment
 Ten en cuenta que ninguno de los cambios que hagas en la terminal se persiste, esto es puramente para experimentación. En la siguiente figura puedes ver que se creó un archivo cuando el depurador estaba pausado en la línea 3. Cuando el depurador avanzó a la línea 4, el archivo desapareció.
 
 
-## Compose Outline 
+### Compose Outline 
 También nos ayuda en los ficheros de Docker Compose, agrupando los servicios y facilitando la navegación entre ellos.
 
 Podemos buscarlos como en cualquier otro fichero con Ctrl+P y escribiendo el nombre del servicio, como si fueran variables o funciones en un fichero de código.
@@ -91,9 +100,39 @@ Esta vista también muestra la jerarquía de los servicios, lo que facilita la c
 Además, podemos ejecutar servicios individualmente y directamente en esta vista, lo que agiliza el proceso de desarrollo y prueba.
 
 
+## Docker debug 
+
+### Depurar imágenes construidas
+Este comando nos permite depurar imágenes de docker que ya tengamos creadas o bien contenedores que tengamos en ejecución. Para ello, docker ejecuta un contenedor basado en nixOS con todas las herramientas necesarias para depurar la imagen o contenedor que le indiquemos y nos abre una terminal dentro de ese contenedor.
+
+Para el caso de las imágenes, lo que hace es ejecutarla en un contenedor y a su vez, ejecutar esta contenedor de depuración compartiendo el sistema de archivos del contenedor que se ha creado a partir de la imagen que queremos depurar.
+
+De esta forma, podemos inspeccionar el sistema de archivos de la imagen que queremos depurar y ejecutar comandos dentro de ese sistema de archivos.
+
+Lo podemos hacer con el siguiente comando:
+
+```bash
+docker debug <nombre_imagen>
+```
+
+### Depurar contenedores en ejecución
+También podemos depurar contenedores que ya estén en ejecución. En este caso, lo que hace es compartir el sistema de archivos del contenedor en ejecución con el contenedor de depuración.
+
+Para ello, ejecutamos el siguiente comando:
+
+```bash
+docker debug <nombre_contenedor>
+```
+
+### Algunos trucos útiles
+Para ambos casos, el contenedor de depuración tiene varios comandos útiles como:
+* install/uninstall: para instalar o desinstalar paquetes dentro del contenedor de depuración.
+* entrypoint: para visualizar las condiciones de arranque del contenedor.
+* además, en el arranque da información muy útil sobre el contenedor o imagen que estamos depurando.
+
 
 ## Conclusiones
-La nueva funcionalidad de depuración para Docker builds en VS Code es una herramienta que realmente marca la diferencia en tu día a día. Ya no tendrás que hacer ese ciclo interminable de editar → construir → fallar → repetir. Ahora puedes **pausar la construcción**, inspeccionar el estado, abrir una shell y probar comandos directamente en el entorno real.
+La nueva funcionalidad de depuración para Docker builds en VS Code, junto con el comando de `docker debug`, son herramientas que realmente marca la diferencia en tu día a día. Estas te permitirán depurar tus aplicaciones basadas en contenedores tanto en la fase de construcción como en la fase de ejecución. 
 
 Si trabajas con Docker de forma habitual, te recomiendo que actualices tus herramientas y pruebes esta funcionalidad. Te va a ahorrar mucho tiempo y frustración.
 

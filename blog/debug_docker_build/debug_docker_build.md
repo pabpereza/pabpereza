@@ -5,7 +5,6 @@ tags: [docker, vscode, debugging, devops, buildx]
 keywords: [docker, vscode, debugging, depuración, buildx, dockerfile, contenedores, desarrollo]
 authors: pabpereza
 date: 2025-10-28
-draft: true
 ---
 
 # Depurar builds de Docker en VS Code como un profesional

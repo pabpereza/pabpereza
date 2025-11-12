@@ -167,14 +167,14 @@
         </div>
       </div>
 
-      <!-- Cita breve (uso legítimo, <25 palabras) -->
       <blockquote>
         “Si un elemento no aparece en nuestros registros, entonces no existe”.
         <footer>— Maestra bibliotecaria (Episodio II)</footer>
       </blockquote>
 
-      <!-- Panel opcional de escena: establece data-scene con una URL que tengas derecho a usar -->
-      <div class="scene" id="scene" data-caption="Escena de referencia — usa tu propia imagen o GIF con derechos" aria-label="Panel de escena"></div>
+      <div class="scene" id="scene" data-caption="" aria-label="Panel de escena">
+        <img src="https://pabpereza.dev/img/404.gif" alt="Obi-Wan Kenobi buscando en los Archivos Jedi" style="width:100%;height:auto;display:block;" />  
+      </div>
 
       <div class="actions" role="group" aria-label="Acciones">
         <a class="btn" href="https://pabpereza.dev" aria-label="Volver al inicio">⬅ Volver al inicio</a>
@@ -189,17 +189,7 @@
     const rid = (crypto.getRandomValues(new Uint32Array(2)).join('-')); 
     document.getElementById('rid').textContent = rid;
 
-    // Soporte para imagen/GIF de escena vía atributo data-scene del <body>
-    (function(){
-      const url = document.body.getAttribute('data-scene');
-      const caption = document.body.getAttribute('data-caption') || "";
-      if(url){
-        document.documentElement.style.setProperty('--scene-url', `url("https://pabpereza.dev/img/404.git")`);
-        const sc = document.getElementById('scene');
-        sc.setAttribute('data-caption', caption);
-      }
-    })();
-
+  
     // Pequeño easter egg: pulsa "J", "E", "D", "I" para un zumbido de sable
     (function(){
       const seq = ['j','e','d','i'];
@@ -212,12 +202,23 @@
         try{
           if(on){
             ctx = new (window.AudioContext||window.webkitAudioContext)();
-            osc = ctx.createOscillator(); const gain = ctx.createGain();
-            osc.type = 'sawtooth'; osc.frequency.value = 110; // tono grave
-            const lfo = ctx.createOscillator(); const lfoGain = ctx.createGain();
-            lfo.frequency.value = 12; lfoGain.gain.value = 6; lfo.connect(lfoGain).connect(osc.frequency);
-            osc.connect(gain); gain.connect(ctx.destination); gain.gain.value = 0.03;
-            lfo.start(); osc.start();
+
+
+            // Load mp3 file
+            fetch('https://pabpereza.dev/sounds/sable-laser.mp3')
+              .then(response => response.arrayBuffer())
+              .then(arrayBuffer => ctx.decodeAudioData(arrayBuffer))
+              .then(audioBuffer => {
+                osc = ctx.createBufferSource();
+                osc.buffer = audioBuffer;
+                osc.loop = true;
+                const gainNode = ctx.createGain();
+                gainNode.gain.value = 0.2; // volumen
+                osc.connect(gainNode).connect(ctx.destination);
+                osc.start(0);
+              });
+
+
           } else {
             osc?.stop(); ctx?.close();
           }

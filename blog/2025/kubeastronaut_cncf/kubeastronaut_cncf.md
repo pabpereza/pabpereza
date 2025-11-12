@@ -8,43 +8,44 @@ keywords: [kubernetes, cncf, certificación, kubeastronaut, examen, dudas, exper
 ---
 
 # Kubeastronaut, mi experiencia y todas las dudas
-A principios de este año, obtuve el reconocimiento oficial de Kubeastronaut de la CNCF (Cloud Native Computing Foundation). 
+A principios de este año, obtuve el reconocimiento oficial de Kubeastronaut por parte de la CNCF (Cloud Native Computing Foundation).
 
-<img src="kubeastronaut_badge.png" width="300"/>
+![Kubeastronaut logo](./kubeastronaut_badge.png)
 
-Esto implica haber obtenido las certificaciones:
+
+Esto implica haber obtenido las siguientes certificaciones:
 * KCNA - Kubernetes and Cloud Native Essentials
 * CKAD - Certified Kubernetes Application Developer
 * CKA - Certified Kubernetes Administrator
 * KCSA - Kubernetes Security Specialist Associate
 * CKS - Certified Kubernetes Security Specialist
 
-En este artículo, quiero compartir mi experiencia personal al obtener estas certificaciones, el proceso que seguí, los requisitos necesarios y responder a todas las dudas comunes que puedan surgir sobre Kubeastronaut.
+En este artículo quiero compartir mi experiencia personal al obtener estas certificaciones, el proceso que seguí, los requisitos necesarios y responder a todas las dudas comunes que puedan surgir sobre Kubeastronaut.
 
 <!-- truncate -->
 ## ¿Qué es Kubeastronaut?
 
-Kubeastronaut es el reconocimiento más alto que otorga la CNCF a profesionales que demuestran un dominio completo del ecosistema Kubernetes. No es una certificación en sí misma, sino un logro que se obtiene al completar las cinco certificaciones oficiales de Kubernetes. Bueno, miento, no es el alto, también estaría el Golden Kubeastronaut, pero eso ya es otra historia.
+Kubeastronaut es el reconocimiento más alto que otorga la CNCF a profesionales que demuestran un dominio completo del ecosistema Kubernetes. No es una certificación en sí misma, sino un logro que se obtiene al completar las cinco certificaciones oficiales de Kubernetes. Bueno, miento, no es el más alto, también existe el Golden Kubeastronaut, pero eso ya es otra historia.
 
-La verdad es que estas certificaciones están ganando mucha popularidad en la industria y, además de enseñarte cosas nuevas, también pueden abrirte puertas en el ámbito profesional. En cualquier caso, me gustaría entrar una por una, ver cuales son las imprescindibles y resolver todas las dudas que me surgieron a mí cuando comencé este camino.
+La verdad es que estas certificaciones están ganando mucha popularidad en la industria y, además de enseñarte cosas nuevas, también pueden abrirte puertas en el ámbito profesional. En cualquier caso, me gustaría analizar cada una, ver cuáles son las imprescindibles y resolver todas las dudas que me surgieron cuando comencé este camino.
 
 ## Mi camino hacia Kubeastronaut
 
 ### El orden que seguí
 
-Explico el orden en el que obtuve cada certificación y por qué elegí esa progresión específica. Aunque siendo francos, no tenía ninguna estrategia. La que mas me llamaba la atención era el CKS pero esta requiere tenner si o si el CKA. Es el único caso de dependencia entre certificaciones. 
+Explico el orden en el que obtuve cada certificación y por qué elegí esa progresión específica. Aunque, siendo francos, no tenía ninguna estrategia. La que más me llamaba la atención era el CKS, pero esta requiere tener sí o sí el CKA. Es el único caso de dependencia entre certificaciones.
 
-Así que me aventuré por el CKA, luego el CKS y, viendo que el CKAD se orientaba más a la parte de desarrollo, que es a quien doy realmente soporte en mi día a día, pensé que sería incluso más útil que el CKA, aunque comparte muchos temas.
+Así que me aventuré con el CKA, luego el CKS y, viendo que el CKAD se orientaba más a la parte de desarrollo, que es a quien realmente doy soporte en mi día a día, pensé que sería incluso más útil que el CKA, aunque comparten muchos temas.
 
-Tras completar las tres certificaciones principales, me di cuenta que existía este programa de Kubeastronaut. Me eché las manos a la cabeza... porque no sabía que existían el KCNA y el KCSA que, a mi entender, son las introducción teorícas de CKA y el CKS respectivamente.
+Tras completar las tres certificaciones principales, me di cuenta de que existía este programa de Kubeastronaut. Me eché las manos a la cabeza... porque no sabía que existían el KCNA y el KCSA que, a mi entender, son las introducciones teóricas de CKA y CKS respectivamente.
 
-A estas alturas, y aunque sabía que ya no me iban a aportar demasiado, una oferta del black friday me hizo decidirme a hacerlas. Y oye, al final, aquí estamos.
+A estas alturas, y aunque sabía que ya no me iban a aportar demasiado, una oferta del Black Friday me hizo decidirme a hacerlas. Y oye, al final, aquí estamos.
 
 
 ### Orden oficial recomendado
 Aunque no hay un orden oficial obligatorio, la CNCF sugiere comenzar con el KCNA para establecer una base sólida en Kubernetes y tecnologías nativas de la nube. Luego, dependiendo de tus intereses y objetivos profesionales, puedes optar por CKAD o CKA, seguido de KCSA y finalmente CKS para aquellos interesados en la seguridad.
 
-Quedándo así la lista:
+Quedando así la lista:
 1. KCNA
 2. CKAD
 3. CKA
@@ -58,34 +59,35 @@ Salvo que quieras venirte arriba y obtener el reconocimiento, te recomendaría l
 * Si eres administrador de sistemas o ingeniero de DevOps, el CKA viene muy bien.
 * Si te interesa la seguridad en Kubernetes, el CKS es una excelente opción, pero recuerda que necesitas el CKA primero.
 
-¿Recomiendo las opciones teóricas de KCNA y KCSA? Personalmente, ya tenía experiencia en Kubernetes cuando empecé, así que no las necesité. Si no sabes nada, si que pueden darte una buena base para empezar.
+¿Recomiendo las opciones teóricas de KCNA y KCSA? Personalmente, ya tenía experiencia en Kubernetes cuando empecé, así que no las necesité. Si no sabes nada, sí que pueden darte una buena base para empezar.
 
-En cualquier caso, si quieres hacerlas todas, busca las mejores ofetas. También hay un pack para adquirirlas todas en conjunto. En cualquier caso, es bastante dinero, así que estate seguro de tu decisión. Si no lo tienes claro, empieza por una y ve viendo si realmente te aporta valor.
+En cualquier caso, si quieres hacerlas todas, busca las mejores ofertas. También hay un pack para adquirirlas todas en conjunto. Es bastante dinero, así que asegúrate de tu decisión. Si no lo tienes claro, empieza por una y ve viendo si realmente te aporta valor.
 
-He leido muchas veces que las certificaciones tienen un afán recaudatorio. En parte es cierto, sobretodo las teóricas. Pero es verdad que aunque hay muchos recursos en internet, tener un camino estructurado y oficial te puede ahorrar tiempo. Aquí tu verás si prefieres invertir tu tiempo o tu dinero. 
+He leído muchas veces que las certificaciones tienen un afán recaudatorio. No es del todo cierto, aunque sería discutible en las teóricas. Aunque hay muchos recursos en internet, tener un camino estructurado y oficial te puede ahorrar tiempo. Aquí tú verás si prefieres invertir tu tiempo o tu dinero.
+
 
 ## ¿Compro solo el examen o el pack con materiales?
-Siguiendo la reflexión anterior. Cada certificación tiene la opción de pagar solo el examen o pagar un pack que incluye materiales de estudio oficiales.
+Siguiendo la reflexión anterior, cada certificación tiene la opción de pagar solo el examen o pagar un pack que incluye materiales de estudio oficiales.
 
-Si pagas solo por los exámenes, puedes buscar recursos gratuitos o de terceros en internet. Hay muchos blogs, videos y cursos que pueden ayudarte a prepararte sin gastar dinero en materiales oficiales. Como mi curso de Kubernetes que estoy haciendo en [Youtube](https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma). 
+Si pagas solo por los exámenes, puedes buscar recursos gratuitos o de terceros en internet. Hay muchos blogs, vídeos y cursos que pueden ayudarte a prepararte sin gastar dinero en materiales oficiales. Como mi curso de Kubernetes que estoy haciendo en [Youtube](https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma).
 
-En mi caso, compré los materiales para las prácticas CKA, CKS y CKAD, y no me arrepiento. Comparé con lo que vi online y creo que vas más al grano y con prácticas específicas. Si tienes experiencia práctica, seguramente te puedas aventurar solo con el examen.
+En mi caso, compré los materiales para las prácticas de CKA, CKS y CKAD, y no me arrepiento. Comparé con lo que vi online y creo que vas más al grano y con prácticas específicas. Si tienes experiencia práctica, seguramente puedas aventurarte solo con el examen.
 
-Si solo pagas por el derecho al examen, que sepas que también incluye acceso a dos simulacros de examen oficiales, que pueden ser muy útiles para familiarizarte con el formato y la presión del examen real. Sobretodo porque hay que tener cierta agilidad con el teclado y tener claro, o la sintaxis de los objetos o donde buscarla rápidamente en la documentación.
+Si solo pagas por el derecho al examen, debes saber que también incluye acceso a dos simulacros de examen oficiales, que pueden ser muy útiles para familiarizarte con el formato y la presión del examen real. Sobre todo porque hay que tener cierta agilidad con el teclado y tener clara la sintaxis de los objetos o saber dónde buscarla rápidamente en la documentación.
 
-Para todos los que tengáis cero experiencia en Kubernetes, queráis aprender bien las bases y os lo podáis permitir, os recomendaría comprar los materiales oficiales. 
+Para todos los que tengáis cero experiencia en Kubernetes, queráis aprender bien las bases y os lo podáis permitir, os recomendaría comprar los materiales oficiales.
 
 
 ### Tiempo invertido
-En mi caso personal, las certificaciones CKA y CKS me llevaron alrededor de 2-3 meses de ponerme en serio un par de horas diarias. ¡Ojo! Porque esto depende mucho de tu experiencia previa. Yo ya trabajaba en una empresa que usaba kubernetes, tenía bastante experiencia con conetenedores y había hecho un curso de udemy hacía tiempo.
+En mi caso personal, las certificaciones CKA y CKS me llevaron alrededor de 2-3 meses de ponerme en serio un par de horas diarias. ¡Ojo! Porque esto depende mucho de tu experiencia previa. Yo ya trabajaba en una empresa que usaba Kubernetes, tenía bastante experiencia con contenedores y había hecho un curso de Udemy hacía tiempo.
 
-Una vez sacadas estas dos, el CKAD me llevó dos semanas en navidades dándole caña, 3-4 horas diarias. Por último, las teóricas KCNA y KCSA me llevaron una semana cada una, dedicando unas 2 horas diarias.
+Una vez obtenidas estas dos, el CKAD me llevó dos semanas en navidades dándole caña, 3-4 horas diarias. Por último, las teóricas KCNA y KCSA me llevaron una semana cada una, dedicando unas 2 horas diarias.
 
-Mi orden no fué el más ortodoxo, también por el desconocimiento inicial. Por eso creo que este vídeo era necesario. 
+Mi orden no fue el más ortodoxo, también por el desconocimiento inicial. Por eso creo que este vídeo era necesario.
 
-En resumen, en mi caso fueron 2 años de formación dado la disponibilidad que tenía. Sumado a la universidad, aprovechaba los veranos y los festivos para darle empujones a las certificaciones y luego las dejaba aparcadas un tiempo. Si tenéis disponibilidad y constancia, aún sin experiencia previa. En 6 meses o un año podéis tenerlas todas. A un ritmo más relajado, en un par de años.
+En resumen, en mi caso fueron 2 años de formación, dada la disponibilidad que tenía. Sumado a la universidad, aprovechaba los veranos y los festivos para darle empujones a las certificaciones y luego las dejaba aparcadas un tiempo. Si tenéis disponibilidad y constancia, aún sin experiencia previa, en 6 meses o un año podéis tenerlas todas. A un ritmo más relajado, en un par de años.
 
-El tiempo es importante, porque cumplir con los requisitos del kubeastronaut, tienes que tenerlas todas vigentes. Y cada certificación tiene una validez de 2 años desde la fecha de obtención. Además justo el 1 de abril de 2024 cambiaron el criterio, antes de esa fecha, las certificaciones tenían una validez de 3 años.
+El tiempo es importante, porque para cumplir con los requisitos de Kubeastronaut, tienes que tener todas las certificaciones vigentes. Y cada certificación tiene una validez de 2 años desde la fecha de obtención. Además, justo el 1 de abril de 2024 cambiaron el criterio; antes de esa fecha, las certificaciones tenían una validez de 3 años.
 
 
 ### Costes totales
@@ -182,27 +184,27 @@ Mi nota de dificultad personal sería:
 
 Este ranking lo he intentado hacer sin ponderar mi experiencia previa, intentando ser objetivo. Pero claro, cada uno tendrá su propia experiencia y puede variar. Todo el que conozco que la tiene, con un poco de experiencia previa, la ha sacado sin problemas. 
 
-Las teóricas no son dificiles, si requieres entender los conceptos. Concretamente la KCSA al ser la parte de seguridad, tiene conceptos más complejos o nuevos para muchos. Pero vamos, que con estudiar los materiales oficiales, lo puedes sacar sin problemas.
+Las teóricas no son difíciles, solo requieren entender los conceptos. Concretamente la KCSA, al ser la parte de seguridad, tiene conceptos más complejos o nuevos para muchos. Pero vamos, que con estudiar los materiales oficiales, lo puedes sacar sin problemas.
 
-También en su momento me hice con chatgpt tests para que me fuera preguntando mientras conducía. Había que amortizar el tiempo.
+También en su momento me hice con tests de ChatGPT para que me fuera preguntando mientras conducía. Había que amortizar el tiempo.
 
 Un matiz, porque yo hice el orden mal, entonces las teóricas las hice al final. Si las haces al principio, igual te ayudan a entender mejor los conceptos para los prácticos y tu experiencia es más sencilla en general.
 
 
 ### Resto de dudas
-En general, la mayoría quedarían contestadas, principalmente os preocupaba el orden, coste, dificultad o mi experiencia personal. Si tenéis más dudas, podéis dejarlas en los comentarios del vídeo de youtube y con gusto las responderé.
+En general, la mayoría quedarían contestadas, principalmente os preocupaba el orden, coste, dificultad o mi experiencia personal. Si tenéis más dudas, podéis dejarlas en los comentarios del vídeo de YouTube y con gusto las responderé.
 
 ## Sorteo de cupones de descuento
-Por último, y lo que estaríais esperando muchos, voy a sortear dos cupones de descuento del 50% para las principales certificaciones de la CNCF, si, incluidas las del Kubeastronaut.
+Por último, y lo que estaríais esperando muchos, voy a sortear dos cupones de descuento del 50% para las principales certificaciones de la CNCF, sí, incluidas las del Kubeastronaut.
 
-Podeís participar desde cualquier parte del mundo, las bases son las siguientes:
-* Ser suscriptor del canal de youtube
-* Seguirme en instragram [@pabpereza](https://www.instagram.com/pabpereza/)
-* Dejar un comentario en el primer post fijado y mencionando a otra persona.
+Podéis participar desde cualquier parte del mundo, las bases son las siguientes:
+* Ser suscriptor del canal de YouTube
+* Seguirme en Instagram [@pabpereza](https://www.instagram.com/pabpereza/)
+* Dejar un comentario en el primer post fijado mencionando a otra persona.
 
-Si ganas, te enviaré dos cupones para ti y para la persona con la que quieras certificarte para que os podáis apoyar y motivar mutuamente en el proceso de estudio.
+Si ganas, te enviaré dos cupones para ti y para la persona con la que quieras certificarte, para que os podáis apoyar y motivar mutuamente en el proceso de estudio.
 
-Cuantos más comentarios dejéis, más oportunidades tenéis de ganar, aunque solo podrás mencionar una vez a la misma persona. El sorteo se realizará el domingo 16 de noviembre (2025, por si alguien lee esto en el futuro) y anunciaré los ganadores en instragram y youtube.
+Cuantos más comentarios dejéis, más oportunidades tenéis de ganar, aunque solo podrás mencionar una vez a la misma persona. El sorteo se realizará el domingo 16 de noviembre (2025, por si alguien lee esto en el futuro) y anunciaré los ganadores en Instagram y YouTube.
 
 
 

@@ -25,7 +25,8 @@
     body{
       margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Inter, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color:var(--fg); background: radial-gradient(1200px 600px at 70% -20%, #1a2444 0%, #0a0f1d 45%), var(--bg);
-      display:grid; place-items:center; overflow:hidden;
+      display:grid; place-items:center; 
+      overflow-y:auto; overflow-x:hidden; /* permitir scroll vertical */
     }
 
     /* --- Estrellas sencillas --- */
@@ -103,7 +104,8 @@
     /* --- Panel de escena opcional --- */
     .scene{
       position:relative; margin:22px 0 0; border:1px dashed #2b4378; border-radius:14px; min-height:180px; overflow:hidden;
-      background: #0c1430 url(var(--scene-url)) center/cover no-repeat;
+      background: #0c1430 center/cover no-repeat;
+      background-image: var(--scene-url);
     }
     .scene::after{
       content: attr(data-caption);
@@ -169,11 +171,11 @@
 
       <blockquote>
         “Si un elemento no aparece en nuestros registros, entonces no existe”.
-        <footer>— Maestra bibliotecaria (Episodio II)</footer>
+        <footer>— Maestra bibliotecaria (Star Wars: Episodio II)</footer>
       </blockquote>
 
       <div class="scene" id="scene" data-caption="" aria-label="Panel de escena">
-        <img src="https://pabpereza.dev/img/404.gif" alt="Obi-Wan Kenobi buscando en los Archivos Jedi" style="width:100%;height:auto;display:block;" />  
+        <img src="https://pabpereza.dev/img/404.gif" alt="Obi-Wan Kenobi buscando en los Archivos Jedi" style="width:100% ;display:block;" />  
       </div>
 
       <div class="actions" role="group" aria-label="Acciones">
@@ -189,49 +191,96 @@
     const rid = (crypto.getRandomValues(new Uint32Array(2)).join('-')); 
     document.getElementById('rid').textContent = rid;
 
-  
-    // Pequeño easter egg: pulsa "J", "E", "D", "I" para un zumbido de sable
+    // Pequeño easter egg: pulsa "J", "E", "D", "I" para un zumbido de sable (solo una vez)
     (function(){
       const seq = ['j','e','d','i'];
-      let idx = 0; let active = false; let ctx, osc;
-      window.addEventListener('keydown', (e)=>{
+      let idx = 0;
+      let playedOnce = false;
+      let handler;
+
+      function onKey(e){
+        if (playedOnce) return;
         if(e.key.toLowerCase() === seq[idx]){ idx++; } else { idx = 0; }
-        if(idx === seq.length){ idx = 0; active = !active; toggleHum(active); }
-      });
-      function toggleHum(on){
+        if(idx === seq.length){
+          idx = 0;
+          playedOnce = true;
+          playHumOnce();
+          // Quitamos el listener para evitar más trabajo innecesario
+          window.removeEventListener('keydown', handler);
+        }
+      }
+
+      handler = onKey;
+      window.addEventListener('keydown', handler);
+
+      function playHumOnce(){
         try{
-          if(on){
-            ctx = new (window.AudioContext||window.webkitAudioContext)();
-
-
-            // Load mp3 file
-            fetch('https://pabpereza.dev/sounds/sable-laser.mp3')
-              .then(response => response.arrayBuffer())
-              .then(arrayBuffer => ctx.decodeAudioData(arrayBuffer))
-              .then(audioBuffer => {
-                osc = ctx.createBufferSource();
-                osc.buffer = audioBuffer;
-                osc.loop = true;
-                const gainNode = ctx.createGain();
-                gainNode.gain.value = 0.2; // volumen
-                osc.connect(gainNode).connect(ctx.destination);
-                osc.start(0);
-              });
-
-
-          } else {
-            osc?.stop(); ctx?.close();
-          }
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if(!AudioCtx) return;
+          const ctx = new AudioCtx();
+          fetch('https://pabpereza.dev/sounds/sable-laser.mp3')
+            .then(r => r.arrayBuffer())
+            .then(ab => ctx.decodeAudioData(ab))
+            .then(buffer => {
+              const src = ctx.createBufferSource();
+              src.buffer = buffer;
+              src.loop = false; // reproducir una sola vez
+              const gain = ctx.createGain();
+              gain.gain.value = 0.2; // volumen
+              src.connect(gain).connect(ctx.destination);
+              src.start(0);
+              src.onended = () => { try{ ctx.close(); }catch(_){} };
+            })
+            .catch(()=>{ try{ ctx.close(); }catch(_){} });
         }catch(err){ /* audio no disponible */ }
       }
     })();
 
-    // Accesibilidad: mover foco al botón principal si llega por 404 real
-    window.addEventListener('load', ()=>{
-      const btn = document.querySelector('.btn');
-      if(document.referrer) return; // probablemente navegación directa
-      btn?.focus();
-    });
+
+    // Sonido de bienvenida al entrar (intento automático + fallback por interacción)
+    (function(){
+      let played = false;
+      function playHelloThere(){
+        if (played) return;
+        played = true;
+        try{
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (AudioCtx){
+            const ctx = new AudioCtx();
+            fetch('https://pabpereza.dev/sounds/hello-there.mp3')
+              .then(r => r.arrayBuffer())
+              .then(ab => ctx.decodeAudioData(ab))
+              .then(buffer => {
+                const src = ctx.createBufferSource();
+                const gain = ctx.createGain();
+                gain.gain.value = 0.3;
+                src.buffer = buffer;
+                src.connect(gain).connect(ctx.destination);
+                src.start(0);
+                src.onended = () => { try{ ctx.close(); }catch(_){} };
+              })
+              .catch(()=>{ try{ ctx.close(); }catch(_){} });
+          } else {
+            const audio = new Audio('https://pabpereza.dev/sounds/hello-there.mp3');
+            audio.volume = 0.3;
+            audio.play().catch(()=>{});
+          }
+        }catch(_){ /* reproducción no soportada */ }
+      }
+      // Intento al cargar
+      if (document.readyState === 'complete' || document.readyState === 'interactive'){
+        setTimeout(playHelloThere, 0);
+      } else {
+        document.addEventListener('DOMContentLoaded', playHelloThere, { once: true });
+      }
+      // Fallback si el navegador bloquea autoplay
+      const triggerOnce = () => { playHelloThere(); };
+      window.addEventListener('click', triggerOnce, { once: true, passive: true });
+      window.addEventListener('touchstart', triggerOnce, { once: true, passive: true });
+      window.addEventListener('keydown', triggerOnce, { once: true });
+    })();
+
+
   </script>
 
 </body>

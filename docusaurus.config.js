@@ -31,10 +31,12 @@ const config = {
   },
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
 
   // Even if you don't use internationalization, you can use this field to set

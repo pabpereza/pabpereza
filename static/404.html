@@ -97,7 +97,7 @@
     .btn.secondary{ color:#e8e8ff; background:linear-gradient(180deg, #3a4b7a, #2a3a64); box-shadow: 0 8px 22px rgba(0,0,0,.35); border:1px solid #42578c }
 
     /* --- Ilustración sable de luz (SVG) --- */
-    .saber{ width:min(340px, 46vw); height:auto; filter: drop-shadow(0 0 16px rgba(115,224,255,.45)); }
+    .saber{ width:min(450px, 46vw); height:auto; filter: drop-shadow(0 0 16px rgba(115,224,255,.45)); }
     .blade{ transform-origin: left center; animation: hum 2.2s ease-in-out infinite; transition: width 1.2s cubic-bezier(.22,.8,.3,1), filter .6s, fill .4s; }
     /* Estado activado por easter egg: expansión dinámica vía JS + brillo intenso */
     .blade.blade-energized{
@@ -105,6 +105,8 @@
       filter: drop-shadow(0 0 8px #e9d2ff) drop-shadow(0 0 18px #c27dff) drop-shadow(0 0 38px #a23dff) drop-shadow(0 0 70px #7a00ff);
       fill: url(#bladeGradientPurple);
     }
+
+
     @keyframes hum{ 0%,100%{ filter: drop-shadow(0 0 16px var(--glow)) } 50%{ filter: drop-shadow(0 0 30px var(--glow)) } }
     /* Destello de pantalla al energizar */
     .screen-flash{position:fixed;inset:0;pointer-events:none;z-index:999;background:
@@ -169,7 +171,7 @@
         </svg>
         <div>
           <h1 id="title">404 — Archivo no encontrado</h1>
-          <p class="subtitle">Obi‑Wan buscó en los Archivos Jedi y… esto ruta no aparece.</p>
+          <p class="subtitle">Obi‑Wan buscó en los Archivos Jedi y… esta ruta no aparece.</p>
         </div>
       </div>
 

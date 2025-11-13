@@ -237,49 +237,35 @@
     })();
 
 
-    // Sonido de bienvenida al entrar (intento automático + fallback por interacción)
-    (function(){
-      let played = false;
-      function playHelloThere(){
-        if (played) return;
-        played = true;
+    let played = false;
+    function playHelloThere(){
+      if (played) return;
         try{
           const AudioCtx = window.AudioContext || window.webkitAudioContext;
-          if (AudioCtx){
-            const ctx = new AudioCtx();
-            fetch('https://pabpereza.dev/sounds/hello-there.mp3')
-              .then(r => r.arrayBuffer())
-              .then(ab => ctx.decodeAudioData(ab))
-              .then(buffer => {
-                const src = ctx.createBufferSource();
-                const gain = ctx.createGain();
-                gain.gain.value = 0.3;
-                src.buffer = buffer;
-                src.connect(gain).connect(ctx.destination);
-                src.start(0);
-                src.onended = () => { try{ ctx.close(); }catch(_){} };
-              })
-              .catch(()=>{ try{ ctx.close(); }catch(_){} });
-          } else {
-            const audio = new Audio('https://pabpereza.dev/sounds/hello-there.mp3');
-            audio.volume = 0.3;
-            audio.play().catch(()=>{});
-          }
-        }catch(_){ /* reproducción no soportada */ }
-      }
-      // Intento al cargar
-      if (document.readyState === 'complete' || document.readyState === 'interactive'){
-        setTimeout(playHelloThere, 0);
-      } else {
-        document.addEventListener('DOMContentLoaded', playHelloThere, { once: true });
-      }
-      // Fallback si el navegador bloquea autoplay
-      const triggerOnce = () => { playHelloThere(); };
-      window.addEventListener('click', triggerOnce, { once: true, passive: true });
-      window.addEventListener('touchstart', triggerOnce, { once: true, passive: true });
-      window.addEventListener('keydown', triggerOnce, { once: true });
-    })();
-
+          if(!AudioCtx) return;
+          const ctx = new AudioCtx();
+          fetch('https://pabpereza.dev/sounds/hello-there.mp3')
+            .then(r => r.arrayBuffer())
+            .then(ab => ctx.decodeAudioData(ab))
+            .then(buffer => {
+              const src = ctx.createBufferSource();
+              src.buffer = buffer;
+              src.loop = false; // reproducir una sola vez
+              const gain = ctx.createGain();
+              gain.gain.value = 0.2; // volumen
+              src.connect(gain).connect(ctx.destination);
+              src.start(0);
+              src.onended = () => { try{ ctx.close(); }catch(_){} };
+            })
+            .catch(()=>{ try{ ctx.close(); }catch(_){} });
+        played = true;
+      }catch(_){ /* reproducción no soportada */ }
+    }
+    
+    const triggerOnce = () => { playHelloThere(); };
+    window.addEventListener('touchstart', triggerOnce, { once: true, passive: true });
+    window.addEventListener('keydown', triggerOnce, { once: true });
+    window.addEventListener('click', triggerOnce, { once: true, passive: true });
 
   </script>
 

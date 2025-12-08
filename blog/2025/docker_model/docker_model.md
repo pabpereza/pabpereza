@@ -64,7 +64,7 @@ Los tenemos en el siguiente repositorio: https://github.com/docker/hello-genai
 Podemos ejecutar los ejemplos de la siguiente manera:
 
 ```bash
-chmod +x run.sh
+chmod u+x run.sh
 ./run.sh
 ```
 

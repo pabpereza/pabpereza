@@ -7,6 +7,29 @@ on:
     - cron: "10 */24 * * *"
 
 jobs:
+    update_latest_videos:
+        runs-on: ubuntu-latest
+    
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+    
+        - name: Set up Python 3.10
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.10.14
+    
+        - name: Run script
+          env:
+            YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          run: |
+            python src/workflows/latest.py
+            git config user.name pabpereza 
+            git config user.email pabloperezaradros@gmail.com
+            git add src/files/
+            git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update files with latest videos"
+            git push origin main
+
     generate_videos:
         runs-on: ubuntu-latest
     
@@ -27,6 +50,7 @@ jobs:
             git add README.md
             git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update README with latest videos"
             git push origin main
+
     generate_snake:
       permissions:
         contents: write

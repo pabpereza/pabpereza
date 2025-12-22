@@ -7,13 +7,13 @@ on:
     - cron: "10 */24 * * *"
 
 jobs:
-    update_latest_videos:
+    get_latest_content:
         runs-on: ubuntu-latest
     
         steps:
         - name: Checkout repository
           uses: actions/checkout@v2
-    
+
         - name: Set up Python 3.10
           uses: actions/setup-python@v2
           with:
@@ -30,7 +30,8 @@ jobs:
             git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update files with latest videos"
             git push origin main
 
-    generate_videos:
+    generate_readme:
+        needs: get_latest_content
         runs-on: ubuntu-latest
     
         steps:

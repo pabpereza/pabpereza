@@ -19,7 +19,6 @@ TUS TAREAS (OUTPUT REQUERIDO):
      - El contexto del problema en entornos productivos.
      - La solución que propones.
      - Enlace al recurso completo en el primer comentario. 
-
 3. **GUIONES PARA SHORTS/TIKTOK (60 segundos):**
    - Extrae 3 ideas independientes del contenido principal para hacer vídeos verticales.
    - Formato:
@@ -28,6 +27,8 @@ TUS TAREAS (OUTPUT REQUERIDO):
      - 50-60s: "Sígueme para más DevOps" (Loop).
 4. **POST COMUNIDAD YOUTUBE:**
    - Un texto breve (2-3 frases) + Encuesta relacionada con el tema para activar el algoritmo antes o después de publicar el vídeo.
+5. **TITULAR CANALES WHATSAPP/TELEGRAM:**
+   - Un titular corto y llamativo (menos de 10 palabras) que incite a abrir el enlace.
 
 FORMATO DE RESPUESTA:
 

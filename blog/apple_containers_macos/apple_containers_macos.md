@@ -1,6 +1,6 @@
 ---
 slug: apple_containers_macos_overview
-title: "Probando Apple Containers en macOS 26: Primeras impresiones y rendimiento"
+title: "Probando Apple Containers en macOS 26 Primeras impresiones y rendimiento"
 tags: [apple, macos, containers, docker, performance, cli]
 keywords: [apple containers, macos 26, docker vs apple containers, rendimiento, cli, tutorial]
 authors: pabpereza

@@ -5,6 +5,7 @@ tags: [apple, macos, containers, docker, performance, cli]
 keywords: [apple containers, macos 26, docker vs apple containers, rendimiento, cli, tutorial]
 authors: pabpereza
 date: 2025-12-21
+draft: true
 ---
 
 # Probando Apple Containers en macOS 26: Primeras impresiones y rendimiento

@@ -17,6 +17,7 @@ Este es un sitio **Docusaurus v3** con:
 - Usar archivo `.md` con nombre del artículo (NO `index.md`)
 - Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Imágenes en la misma carpeta que el artículo
+- Añadir `draft: true` por defecto hasta revisión final
 - **Ejemplo de frontmatter**:
 ```yaml
 ---
@@ -36,29 +37,19 @@ date: 2025-06-05
 - Usar `sidebar_label` en frontmatter para navegación
 - Incluir `README.md` como índice principal de cada curso
 
-## Workflow de Desarrollo
-
-### Build System
-- **Prebuild automático**: Ejecuta `generate-graph-data.js` antes de cada build
-- **Comando principal**: `npm run build` (incluye prebuild automático)
-- **Desarrollo local**: `npm start` para servidor de desarrollo
-- **Grafo de contenido**: Se genera automáticamente desde frontmatter
-
-### Scripts críticos
-```bash
-npm run generate-graph    # Genera grafo de relaciones de contenido
-npm run prebuild         # Se ejecuta automáticamente antes del build
-npm start               # Servidor desarrollo con hot reload
-```
-
 ## Estilo de Redacción
 
 ### Principios de Escritura
-- Usa un tono conversacional pero profesional
+- Usa un tono conversacional pero profesional con un ligero toque humorístico
 - Explica acrónimos y términos técnicos en su primera aparición
 - Incluye analogías para conceptos complejos
 - Estructura el contenido con subtítulos claros
 - Usa listas y bullets para información concisa
+- Evita párrafos largos; máximo 4-5 líneas
+- Utiliza diagramas en mermaid para ilustrar conceptos técnicos
+- Usa ejemplos de código cuando sea relevante
+- Utiliza analogías y metáforas para facilitar la comprensión
+- El contenido debe estar enfocado al SEO pero sin ser 'clickbait'
 
 ### Progresión Pedagógica
 - Comienza con conceptos básicos antes de avanzar

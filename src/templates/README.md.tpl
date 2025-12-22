@@ -20,8 +20,8 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 {{ podcast }}
 </p>
 
-
 ## Últimas entradas del blog
+{{ posts }}
 
 ---
 <p align="center">

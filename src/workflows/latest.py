@@ -2,9 +2,6 @@ import json
 import urllib.request
 import os
 
-LATEST_ARTICLES= 5,
-MAX_VIDEOS = 5,
-
 YOUTUBE_PPZ_CHANNEL_ID = 'UCGfKISiN7usAdxvcGivm_OA'
 YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY') 
 
@@ -18,7 +15,6 @@ def get_latest_youtube_videos(file='videos',channel_id=YOUTUBE_PPZ_CHANNEL_ID, m
   with open('src/files/' + file +'.json', 'w') as f:
     f.write(json.dumps(videos['items']))
 
-  
 
 if __name__ == '__main__':
   get_latest_youtube_videos()

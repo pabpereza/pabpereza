@@ -46,4 +46,6 @@ assignees: pabpereza
 ## 5. Distribución
 - [ ] Publicar y fijar primer comentario
 - [ ] Push de los archivos al repositorio GitHub
-- [ ] Post en LinkedIn/Twitter
+- [ ] Post en LinkedIn/Twitter/Whatsapp/Telegram
+
+- [ ] OPCIONAL: Extraer shorts y publicarlos

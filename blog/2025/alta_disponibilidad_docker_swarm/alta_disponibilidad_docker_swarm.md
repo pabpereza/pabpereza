@@ -231,6 +231,466 @@ stats refresh 30s
 stats auth admin:secure_password_here
 ```
 
+### HAProxy en Alta Disponibilidad con Keepalived
+
+Para garantizar que el balanceador de carga nunca sea un punto único de fallo, implementaremos **dos instancias de HAProxy con Keepalived** que gestionará una IP virtual flotante (VIP) entre ambos servidores. Si el HAProxy principal falla, Keepalived moverá automáticamente la VIP al servidor secundario.
+
+#### Arquitectura del Setup HA
+
+```mermaid
+graph TB
+    CLIENT[Clientes] --> VIP[IP Virtual: 192.168.1.100]
+    VIP -.-> HAP1[HAProxy Principal<br/>192.168.1.10<br/>MASTER]
+    VIP -.-> HAP2[HAProxy Secundario<br/>192.168.1.11<br/>BACKUP]
+    
+    HAP1 --> APP1[App Instance 1]
+    HAP1 --> APP2[App Instance 2]
+    HAP1 --> APP3[App Instance 3]
+    
+    HAP2 --> APP1
+    HAP2 --> APP2
+    HAP2 --> APP3
+    
+    KA1[Keepalived 1] -.-|VRRP| KA2[Keepalived 2]
+    KA1 -.-> HAP1
+    KA2 -.-> HAP2
+    
+    style VIP fill:#f9f,stroke:#333,stroke-width:4px
+    style HAP1 fill:#9f9,stroke:#333,stroke-width:2px
+    style HAP2 fill:#ff9,stroke:#333,stroke-width:2px
+```
+
+#### Configuración de Keepalived
+
+**En el servidor HAProxy principal (192.168.1.10):**
+
+```bash
+# /etc/keepalived/keepalived.conf (MASTER)
+vrrp_script chk_haproxy {
+    script "/usr/bin/killall -0 haproxy"  # Verifica que HAProxy esté corriendo
+    interval 2                             # Verificar cada 2 segundos
+    weight 2                               # Prioridad
+}
+
+vrrp_instance VI_1 {
+    state MASTER                          # Este es el nodo principal
+    interface eth0                        # Interfaz de red
+    virtual_router_id 51                  # ID único del cluster VRRP
+    priority 101                          # Prioridad (mayor = preferido)
+    advert_int 1                          # Intervalo de anuncio VRRP
+    
+    authentication {
+        auth_type PASS
+        auth_pass secret_password_here    # Contraseña compartida
+    }
+    
+    virtual_ipaddress {
+        192.168.1.100/24                  # IP Virtual flotante
+    }
+    
+    track_script {
+        chk_haproxy                       # Monitorear HAProxy
+    }
+    
+    # Script que se ejecuta cuando este nodo se convierte en MASTER
+    notify_master "/etc/keepalived/notify_master.sh"
+    
+    # Script que se ejecuta cuando este nodo se convierte en BACKUP
+    notify_backup "/etc/keepalived/notify_backup.sh"
+    
+    # Script que se ejecuta cuando se detecta un fallo
+    notify_fault "/etc/keepalived/notify_fault.sh"
+}
+```
+
+**En el servidor HAProxy secundario (192.168.1.11):**
+
+```bash
+# /etc/keepalived/keepalived.conf (BACKUP)
+vrrp_script chk_haproxy {
+    script "/usr/bin/killall -0 haproxy"
+    interval 2
+    weight 2
+}
+
+vrrp_instance VI_1 {
+    state BACKUP                          # Este es el nodo de respaldo
+    interface eth0
+    virtual_router_id 51                  # Mismo ID que el MASTER
+    priority 100                          # Prioridad menor que el MASTER
+    advert_int 1
+    
+    authentication {
+        auth_type PASS
+        auth_pass secret_password_here    # Misma contraseña que el MASTER
+    }
+    
+    virtual_ipaddress {
+        192.168.1.100/24                  # Misma VIP
+    }
+    
+    track_script {
+        chk_haproxy
+    }
+    
+    notify_master "/etc/keepalived/notify_master.sh"
+    notify_backup "/etc/keepalived/notify_backup.sh"
+    notify_fault "/etc/keepalived/notify_fault.sh"
+}
+```
+
+#### Scripts de Notificación
+
+```bash
+#!/bin/bash
+# /etc/keepalived/notify_master.sh
+# Se ejecuta cuando este nodo se convierte en MASTER
+
+TYPE=$1
+NAME=$2
+STATE=$3
+
+echo "$(date) - Transición a MASTER" >> /var/log/keepalived-notify.log
+
+# Notificar a sistema de monitoreo
+curl -X POST https://monitoring.example.com/api/alerts \
+  -H "Content-Type: application/json" \
+  -d "{\"message\":\"HAProxy $(hostname) ahora es MASTER\",\"severity\":\"info\"}"
+
+# Asegurar que HAProxy está corriendo
+systemctl is-active --quiet haproxy || systemctl start haproxy
+```
+
+```bash
+#!/bin/bash
+# /etc/keepalived/notify_backup.sh
+# Se ejecuta cuando este nodo se convierte en BACKUP
+
+echo "$(date) - Transición a BACKUP" >> /var/log/keepalived-notify.log
+
+curl -X POST https://monitoring.example.com/api/alerts \
+  -H "Content-Type: application/json" \
+  -d "{\"message\":\"HAProxy $(hostname) ahora es BACKUP\",\"severity\":\"info\"}"
+```
+
+```bash
+#!/bin/bash
+# /etc/keepalived/notify_fault.sh
+# Se ejecuta cuando se detecta un fallo
+
+echo "$(date) - FALLO detectado" >> /var/log/keepalived-notify.log
+
+curl -X POST https://monitoring.example.com/api/alerts \
+  -H "Content-Type: application/json" \
+  -d "{\"message\":\"FALLO en HAProxy $(hostname)\",\"severity\":\"critical\"}"
+```
+
+**Dar permisos de ejecución a los scripts:**
+
+```bash
+chmod +x /etc/keepalived/notify_*.sh
+```
+
+#### Docker Compose para HAProxy + Keepalived
+
+```yaml
+# docker-compose-haproxy-ha.yml (En ambos servidores)
+version: '3.8'
+
+services:
+  haproxy:
+    image: haproxy:2.8-alpine
+    container_name: haproxy
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+      - ./ssl:/etc/ssl/certs:ro
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8404:8404"  # Stats
+    networks:
+      - backend
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "80"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    sysctls:
+      - net.ipv4.ip_nonlocal_bind=1  # Permite bindear a la VIP
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+
+  keepalived:
+    image: osixia/keepalived:2.0.20
+    container_name: keepalived
+    cap_add:
+      - NET_ADMIN
+      - NET_BROADCAST
+      - NET_RAW
+    network_mode: host
+    volumes:
+      - ./keepalived.conf:/usr/local/etc/keepalived/keepalived.conf:ro
+      - ./notify_scripts:/etc/keepalived:ro
+      - /var/log:/var/log
+    environment:
+      - KEEPALIVED_INTERFACE=eth0
+      - KEEPALIVED_VIRTUAL_IPS=192.168.1.100
+      - KEEPALIVED_UNICAST_PEERS=#PYTHON2BASH:['192.168.1.10', '192.168.1.11']
+      - KEEPALIVED_PRIORITY=101  # Cambiar a 100 en el servidor BACKUP
+    restart: unless-stopped
+    depends_on:
+      - haproxy
+
+networks:
+  backend:
+    driver: bridge
+```
+
+#### Configuración Avanzada de HAProxy con Peers
+
+Para sincronizar el estado entre ambos HAProxy (sticky sessions, rate limiting, etc.), agregamos peers:
+
+```bash
+# haproxy.cfg (En ambos servidores)
+global
+    daemon
+    log stdout local0
+    maxconn 4096
+    
+    # Sincronización entre peers
+    stats socket /var/run/haproxy.sock mode 660 level admin
+    stats timeout 30s
+
+# Configuración de peers para sincronización
+peers haproxy_cluster
+    peer haproxy1 192.168.1.10:1024
+    peer haproxy2 192.168.1.11:1024
+
+defaults
+    mode http
+    timeout connect 5s
+    timeout client 30s
+    timeout server 30s
+    option httplog
+    option dontlognull
+    log global
+
+frontend app_frontend
+    bind *:80
+    bind *:443 ssl crt /etc/ssl/certs/app.pem
+    
+    # Redirigir HTTP a HTTPS
+    redirect scheme https code 301 if !{ ssl_fc }
+    
+    # Health check endpoint
+    monitor-uri /haproxy-health
+    
+    default_backend app_servers
+
+backend app_servers
+    balance roundrobin
+    option httpchk GET /health
+    http-check expect status 200
+    
+    # Sticky sessions con sincronización entre peers
+    stick-table type ip size 1m expire 30m peers haproxy_cluster
+    stick on src
+    
+    # Servidores backend
+    server app1 app1:3000 check inter 10s rise 2 fall 3 maxconn 100
+    server app2 app2:3000 check inter 10s rise 2 fall 3 maxconn 100
+    server app3 app3:3000 check inter 10s rise 2 fall 3 maxconn 100
+
+# Frontend para peers
+frontend peer_frontend
+    bind *:1024
+    default_backend peer_backend
+
+backend peer_backend
+    mode tcp
+    server peer 127.0.0.1:1024
+
+# Estadísticas y monitoreo
+listen stats
+    bind *:8404
+    stats enable
+    stats uri /stats
+    stats refresh 10s
+    stats auth admin:secure_password_here
+    stats admin if TRUE
+```
+
+#### Instalación y Configuración Paso a Paso
+
+**1. Instalar HAProxy y Keepalived en ambos servidores:**
+
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install -y haproxy keepalived
+
+# CentOS/RHEL
+sudo yum install -y haproxy keepalived
+```
+
+**2. Configurar el kernel para permitir binding a IP no local:**
+
+```bash
+# Necesario para que HAProxy pueda bindear a la VIP antes de que esté asignada
+sudo sysctl -w net.ipv4.ip_nonlocal_bind=1
+echo "net.ipv4.ip_nonlocal_bind=1" | sudo tee -a /etc/sysctl.conf
+```
+
+**3. Verificar la configuración:**
+
+```bash
+# Verificar HAProxy
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+
+# Verificar Keepalived
+sudo keepalived -t -f /etc/keepalived/keepalived.conf
+```
+
+**4. Iniciar los servicios:**
+
+```bash
+sudo systemctl enable haproxy keepalived
+sudo systemctl start haproxy keepalived
+```
+
+**5. Verificar el estado:**
+
+```bash
+# Ver logs de Keepalived
+sudo journalctl -u keepalived -f
+
+# Verificar la VIP
+ip addr show eth0
+
+# Ver estado de HAProxy
+echo "show info" | sudo socat stdio /var/run/haproxy.sock
+
+# Ver estadísticas
+curl http://192.168.1.100:8404/stats
+```
+
+#### Pruebas de Failover
+
+```bash
+#!/bin/bash
+# test-failover.sh
+# Script para probar el failover automático
+
+VIP="192.168.1.100"
+INTERVAL=1
+
+echo "Iniciando prueba de failover..."
+echo "Presiona Ctrl+C para detener"
+echo ""
+
+while true; do
+    TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+    RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" http://$VIP/health)
+    
+    if [ "$RESPONSE" = "200" ]; then
+        # Obtener qué servidor está respondiendo
+        SERVER=$(curl -s -I http://$VIP | grep "X-Server" | cut -d' ' -f2)
+        echo "[$TIMESTAMP] ✅ VIP responde: $RESPONSE - Servidor: $SERVER"
+    else
+        echo "[$TIMESTAMP] ❌ VIP no responde o error: $RESPONSE"
+    fi
+    
+    sleep $INTERVAL
+done
+```
+
+**Ejecutar prueba de failover:**
+
+```bash
+# En una terminal, ejecutar el script de monitoreo
+./test-failover.sh
+
+# En otra terminal, simular fallo del HAProxy principal
+ssh 192.168.1.10 "sudo systemctl stop haproxy"
+
+# Observar cómo el tráfico se redirige automáticamente al secundario
+# Luego reiniciar el principal
+ssh 192.168.1.10 "sudo systemctl start haproxy"
+
+# El principal debería recuperar la VIP automáticamente
+```
+
+#### Monitoreo del Cluster HA
+
+Script para verificar el estado del cluster:
+
+```bash
+#!/bin/bash
+# check-ha-status.sh
+
+echo "=== Estado del Cluster HAProxy HA ==="
+echo ""
+
+# Verificar VIP
+echo "1. IP Virtual (VIP):"
+VIP_HOST=$(ip addr show | grep "192.168.1.100" | wc -l)
+if [ $VIP_HOST -gt 0 ]; then
+    echo "   ✅ VIP asignada en este host"
+    ROLE="MASTER"
+else
+    echo "   ⚠️  VIP NO asignada en este host"
+    ROLE="BACKUP"
+fi
+echo ""
+
+# Verificar Keepalived
+echo "2. Keepalived:"
+if systemctl is-active --quiet keepalived; then
+    echo "   ✅ Keepalived corriendo"
+    echo "   Rol: $ROLE"
+else
+    echo "   ❌ Keepalived detenido"
+fi
+echo ""
+
+# Verificar HAProxy
+echo "3. HAProxy:"
+if systemctl is-active --quiet haproxy; then
+    echo "   ✅ HAProxy corriendo"
+    HAPROXY_CONNS=$(echo "show info" | socat stdio /var/run/haproxy.sock | grep "CurrConns" | cut -d: -f2)
+    echo "   Conexiones actuales: $HAPROXY_CONNS"
+else
+    echo "   ❌ HAProxy detenido"
+fi
+echo ""
+
+# Verificar backends
+echo "4. Estado de Backends:"
+echo "show stat" | socat stdio /var/run/haproxy.sock | grep "app_servers" | grep "^app" | while read line; do
+    SERVER=$(echo $line | cut -d',' -f1)
+    STATUS=$(echo $line | cut -d',' -f18)
+    
+    if [ "$STATUS" = "UP" ]; then
+        echo "   ✅ $SERVER: UP"
+    else
+        echo "   ❌ $SERVER: $STATUS"
+    fi
+done
+echo ""
+
+# Verificar peer sync
+echo "5. Sincronización Peers:"
+echo "show peers" | socat stdio /var/run/haproxy.sock | grep "haproxy"
+echo ""
+```
+
 ## 2. Docker Swarm para Alta Disponibilidad
 
 Docker Swarm nos proporciona orquestación nativa con funcionalidades de alta disponibilidad. Si no estás familiarizado con Docker Swarm, revisa nuestra [guía completa de Docker Swarm](/docs/cursos/docker/docker_swarm_orquestacion_de_contenedores_y_escalabilidad).

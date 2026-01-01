@@ -1,5 +1,5 @@
 ---
-slug: docker_vs_podman_rancher_2025_quien_ganara
+slug: docker:_vs_podman_rancher_2025_quien_ganara
 title: Docker vs Podman vd Rancher en 2025, ¿cuál es la herramienta definitiva?
 tags: [ docker, podman, rancher, devops, contenedores ] 
 authors: pabpereza

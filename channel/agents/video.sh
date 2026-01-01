@@ -30,7 +30,7 @@ fi
 # Crear directorio de salida con timestamp
 FILENAME=$(basename "$INPUT_FILE" .md)
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-OUTPUT_DIR="$BASE_DIR/../produccion/${FILENAME}_${TIMESTAMP}"
+OUTPUT_DIR="$BASE_DIR/../production/${FILENAME}_${TIMESTAMP}"
 mkdir -p "$OUTPUT_DIR"
 
 echo -e "${BLUE}🚀 Iniciando flujo de trabajo para: ${FILENAME}${NC}"

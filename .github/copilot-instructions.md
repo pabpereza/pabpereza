@@ -1,6 +1,6 @@
 # GitHub Copilot Instructions
 
-Esta guía proporciona directrices para GitHub Copilot y otros agentes de IA que trabajen en este repositorio de contenido educativo de DevSecOps.
+Esta guía proporciona directrices para que los agentes de IA que trabajen en este repositorio de contenido educativo de DevSecOps.
 
 ## Arquitectura del Proyecto
 
@@ -13,7 +13,7 @@ Este es un sitio **Docusaurus v3** con:
 ## Estructura de Contenido
 
 ### Blog Posts (`/blog/`)
-**Organización por años**: `blog/2025/mi_articulo/mi_articulo.md`
+- IMPORTANTE: Añadr nuevos artículos de blog a la carpeta `blog/.ideas` como borradores iniciales`
 - Usar archivo `.md` con nombre del artículo (NO `index.md`)
 - Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Imágenes en la misma carpeta que el artículo
@@ -30,12 +30,15 @@ authors: pabpereza
 date: 2025-06-05
 ---
 ```
+- Añade la instrucción `<!-- truncate -->` después de la introducción del artículo (después del primer párrafo del artículo, obviando los checklist técnicos) para que Docusaurus genere un resumen automático en la página principal del blog.
+- Si te piden publicar el artículo, mueve la carpeta del artíuclo a la carpeta del año correspondiente, por ejemplo `blog/2025/mi_articulo/` y cambia el frontmatter para quitar `draft: true`
 
 ### Documentación de Cursos (`/docs/cursos/`)
 **Sistema de numeración específico**: `101.Introduccion.md`, `102.Instalacion.md`, `201.Limites_recursos.md`
 - Series 100: Contenido básico
 - Series 200+: Contenido avanzado
 - Usar `sidebar_label` en frontmatter para navegación
+- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Incluir `README.md` como índice principal de cada curso
 
 ## Estilo de Redacción

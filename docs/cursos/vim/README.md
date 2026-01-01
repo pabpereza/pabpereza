@@ -39,36 +39,15 @@ Todo el curso estará disponible en vídeo en esta [LISTA DE YOUTUBE](https://yo
 
 ## 📚 Índice del Curso
 
-### 🚀 Nivel Fundamentos
-* [Introducción: ¿Por qué Vim en 2025?](101.Introduccion.md)
-* [Instalación y configuración inicial](102.Instalacion.md)
-* [Los modos de Vim: Normal, Insert, Visual](103.Modos_vim.md)
-* [Movimientos básicos: h, j, k, l y más](104.Movimientos_basicos.md)
-* [Edición básica: insertar, borrar, reemplazar](105.Edicion_basica.md)
-* [Comandos esenciales y tu primera configuración](106.Comandos_esenciales.md)
+### 🚀 Curso Básico
+* [Introducción a Vim: El Editor Modal](101.Introduccion.md)
+* [Vim + Tmux: El Dúo Dinámico](102.Vim_Tmux.md)
+* [Vim como IDE: Descubriendo AstroNvim](103.Vim_IDE_AstroNvim.md)
+* [Vim dentro de VS Code: Lo mejor de dos mundos](104.Vim_VSCode.md)
 
-### ⚡️ Nivel Productividad
-* [Movimientos avanzados: words, lines, paragraphs](107.Movimientos_avanzados.md)
-* [Búsqueda y reemplazo eficiente](108.Busqueda_reemplazo.md)
-* [Buffers, ventanas y pestañas](109.Buffers_ventanas_tabs.md)
-* [Registros y macros: automatización básica](110.Registros_macros.md)
-* [Plugins esenciales: gestores y primeros plugins](111.Plugins_esenciales.md)
-* [Navegación de archivos y exploración](112.Navegacion_archivos.md)
-
-### 🥷 Nivel Ninja
-* [Configuración avanzada de Vim](201.Vim_avanzado.md)
-* [Autocompletado y herramientas de desarrollo](202.Autocompletado.md)
-* [Git integration: fugitive y herramientas](203.Git_integration.md)
-* [Snippets y templates automáticos](204.Snippets_templates.md)
-* [Dotfiles: gestión de configuraciones](205.Dotfiles.md)
-* [Trucos y tips avanzados](206.Trucos_avanzados.md)
-
-### 🖥️ Tmux: El Multiplexor Terminal
-* [Introducción a Tmux: sesiones persistentes](301.Tmux_introduccion.md)
-* [Sesiones, ventanas y paneles](302.Sesiones_ventanas_paneles.md)
-* [Configuración y personalización de Tmux](303.Configuracion_tmux.md)
-* [Integración Vim + Tmux: el combo perfecto](304.Vim_tmux_integration.md)
-
+### 📝 Cheatsheets
+* [Cheatsheet Vim](cheatsheet_vim.md)
+* [Cheatsheet Tmux](cheatsheet_tmux.md)
 
 ## 🎯 ¿Qué aprenderás?
 

@@ -43,45 +43,10 @@ ZeroTier ofrece un cliente de línea de comandos (CLI) que permite gestionar red
 
 Primero, necesitas agregar el repositorio oficial de ZeroTier a tu sistema para poder instalar el paquete a través de tu gestor de paquetes. Dependiendo de tu distribución, los pasos pueden variar ligeramente.
 
-#### En distribuciones basadas en Debian/Ubuntu
-
-1. Abre la terminal y añade la clave GPG de ZeroTier:
-
-    ```bash
-    curl -s https://pgp.mit.edu/pks/lookup?op=get&search=0x1657198823E52A61 | gpg --import
-    ```
-
-2. Añade el repositorio de ZeroTier a la lista de fuentes de tu sistema:
-
-    ```bash
-    echo "deb http://download.zerotier.com/debian/buster buster main" | sudo tee /etc/apt/sources.list.d/zerotier.list
-    ```
-
-3. Actualiza la lista de paquetes:
-
-    ```bash
-    sudo apt update
-    ```
-
-4. Instala ZeroTier:
-
-    ```bash
-    sudo apt install zerotier-one
-    ```
-
-#### En distribuciones basadas en Red Hat/Fedora
-
-1. Añade el repositorio de ZeroTier:
-
-    ```bash
-    sudo dnf config-manager --add-repo https://download.zerotier.com/redhat/zerotier.repo
-    ```
-
-2. Instala ZeroTier:
-
-    ```bash
-    sudo dnf install zerotier-one
-    ```
+UPDATE 2026: Ahora se puede instalar ZeroTier directamente con el siguiente comando en la mayoría de distribuciones Linux:
+```bash
+curl -s https://install.zerotier.com | sudo bash
+```
 
 ### Paso 2: Iniciar el servicio de ZeroTier
 

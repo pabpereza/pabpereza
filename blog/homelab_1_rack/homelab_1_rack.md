@@ -3,8 +3,7 @@ slug: homelab-1-rack
 title: HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1) 
 tags: [youtube, comunidad, especial, 20k]
 authors: pabpereza
-date: 2026-01-10
-draft: true
+date: 2026-01-07
 ---
 
 # Proyecto Home Lab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)

@@ -6,7 +6,7 @@ authors: pabpereza
 date: 2026-01-07
 ---
 
-# Proyecto Home Lab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)
+# Proyecto HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)
 Hola a todos y bienvenidos. Tenía muchísimas ganas de escribir este post porque, por fin, tengo terminada la primera versión de mi rack.
 
 Hace tiempo que quería alejarme de la dependencia de tantas suscripciones en la nube (OneDrive, iCloud, etc.) y centralizar mis datos. Además, como genero mucho contenido de vídeo para el canal, necesitaba una solución de almacenamiento escalable. Pero, siendo sinceros, la razón principal es **mi gusto personal por el cacharreo**.

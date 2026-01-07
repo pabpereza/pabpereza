@@ -16,6 +16,11 @@ Quería montar un laboratorio en casa para aprovechar todas las Raspberry Pi que
 
 ![Rack terminado](rack10.jpeg)
 
+<!-- truncate -->
+
+Vídeo del montaje: https://youtu.be/OW6xZkSpXmU
+[![Vídeo del montaje](https://img.youtube.com/vi/OW6xZkSpXmU/hqdefault.jpg)](https://youtu.be/OW6xZkSpXmU)
+
 ## ¿Por qué un Rack de 10 pulgadas?
 
 El objetivo era tener algo compacto. No tengo espacio en casa para un armario rack estándar de 19 pulgadas (los gigantes de los CPD), ni tendría equipo suficiente para llenarlo.

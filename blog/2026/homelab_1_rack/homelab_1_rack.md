@@ -19,7 +19,7 @@ Quería montar un laboratorio en casa para aprovechar todas las Raspberry Pi que
 <!-- truncate -->
 
 Vídeo del montaje: https://youtu.be/OW6xZkSpXmU
-[![Vídeo del montaje](https://img.youtube.com/vi/OW6xZkSpXmU/hqdefault.jpg)](https://youtu.be/OW6xZkSpXmU)
+[![Vídeo del montaje](https://img.youtube.com/vi/OW6xZkSpXmU/maxresdefault.jpg)](https://youtu.be/OW6xZkSpXmU)
 
 ## ¿Por qué un Rack de 10 pulgadas?
 

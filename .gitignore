@@ -22,3 +22,7 @@ yarn-error.log*
 
 # Channel
 /channel/production/*
+
+# Python y workflows
+*.pyc
+__pycache__/

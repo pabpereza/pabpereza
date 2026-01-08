@@ -27,14 +27,24 @@ if [ ! -f "$INPUT_FILE" ]; then
     exit 1
 fi
 
-# Crear directorio de salida con timestamp
+# Crear directorio de salida (reutilizar si ya existe)
 FILENAME=$(basename "$INPUT_FILE" .md)
-TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-OUTPUT_DIR="$BASE_DIR/../production/${FILENAME}_${TIMESTAMP}"
-mkdir -p "$OUTPUT_DIR"
+PRODUCTION_DIR="$BASE_DIR/../production"
+
+# Buscar si ya existe una carpeta para este archivo
+EXISTING_DIR=$(find "$PRODUCTION_DIR" -maxdepth 1 -type d -name "${FILENAME}_*" 2>/dev/null | head -1)
+
+if [ -n "$EXISTING_DIR" ]; then
+    OUTPUT_DIR="$EXISTING_DIR"
+    echo -e "${BLUE}📂 Reutilizando carpeta existente: ${OUTPUT_DIR}${NC}"
+else
+    TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+    OUTPUT_DIR="$PRODUCTION_DIR/${FILENAME}_${TIMESTAMP}"
+    mkdir -p "$OUTPUT_DIR"
+    echo -e "${BLUE}📂 Creando nueva carpeta: ${OUTPUT_DIR}${NC}"
+fi
 
 echo -e "${BLUE}🚀 Iniciando flujo de trabajo para: ${FILENAME}${NC}"
-echo -e "${BLUE}📂 Directorio de salida: ${OUTPUT_DIR}${NC}"
 
 # Función para generar el prompt combinado
 generate_prompt() {

@@ -42,10 +42,88 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
   <img height='140px' src='https://img.youtube.com/vi/NZ3Ms-nxQD0/mqdefault.jpg' />
 </a>
 
+<a href='https://youtu.be/8V-Knk76tWs' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/8V-Knk76tWs/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/Rt1RcZqkX-k' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/Rt1RcZqkX-k/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/Ljf0kS9-QHI' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/Ljf0kS9-QHI/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/U87QO6VxReA' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/U87QO6VxReA/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/2MP3DkiiyqE' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/2MP3DkiiyqE/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/BhFWWpecfKE' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/BhFWWpecfKE/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/Hpwf65qjuSU' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/Hpwf65qjuSU/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/k7U0Hi45ClE' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/k7U0Hi45ClE/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/qg2jc9eSNsE' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/qg2jc9eSNsE/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/XqbW3tIzftQ' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/XqbW3tIzftQ/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/UjHVqCXEvHQ' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/UjHVqCXEvHQ/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/ZrLGYSUpDPM' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/ZrLGYSUpDPM/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/csNytM7XFz4' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/csNytM7XFz4/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/y_c_tPXusqM' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/y_c_tPXusqM/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/JP7iyeiK6dg' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/JP7iyeiK6dg/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/EBywodEM8TA' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/EBywodEM8TA/mqdefault.jpg' />
+</a>
+
+<a href='https://youtu.be/XmOsJXA0FU8' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/XmOsJXA0FU8/mqdefault.jpg' />
+</a>
+
 </p>
 
 ## Últimas entradas del blog
-TEST
+- [HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)](https://pabpereza.dev/blog/homelab-1-rack)
+- [apple_containers_macos/apple_containers_macos](https://pabpereza.dev/blog/apple_containers_macos/apple_containers_macos)
+- [Kubeastronaut, mi experiencia y todas las dudas](https://pabpereza.dev/blog/2025/kubeastronaut_cncf/kubeastronaut_cncf)
+- [Depurar builds de Docker en VS Code como un profesional](https://pabpereza.dev/blog/debug_docker_build_vscode)
+- [LocalStack, dudas comunes y cómo usarlo con terraform](https://pabpereza.dev/blog/localstack_terraform_mas_dudas)
+- [Comunidad vs La Liga: El Verdadero Duelo del Fútbol](https://pabpereza.dev/blog/comunidad_vs_la_liga)
+- [Jamás confíes ciegamente en la IA, y menos para tu infraestructura](https://pabpereza.dev/blog/no_confiar_ciegamente_en_la_IA)
+- [Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente](https://pabpereza.dev/blog/kubectx_kubens_kubernetes_context)
+- [Backups de Docker](https://pabpereza.dev/blog/backups_docker)
+- [Ruta DevSecOps, recomendaciones para empezar en 2025](https://pabpereza.dev/blog/ruta_devsecops_recomendaciones_2025)
+
 
 ---
 <p align="center">
@@ -56,12 +134,6 @@ Conecta conmigo en:
 <a href="https://www.tiktok.com/@pabpereza" target="_blank"><img align="center" src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png"  height="30" width="30" style="margin-left:10px"/></a>   
 <a href="https://www.instagram.com/pabpereza/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg"  height="30" width="30" style="margin-left:10px" /></a>
 </p>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pabpereza&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pabpereza&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
-
 
 <img src="https://raw.githubusercontent.com/pabpereza/pabpereza/output/snake.svg" alt="Snake animation" />
 

@@ -16,7 +16,6 @@ TUS TAREAS (OUTPUT REQUERIDO):
 2. **DESCRIPCIÓN OPTIMIZADA (Estructura de Bloques):**
    Genera el texto para la caja de descripción siguiendo esta plantilla exacta:
    - **Párrafo SEO (2 líneas):** Resume el vídeo incluyendo la palabra clave principal en la primera frase.
-   - **Marcadores de Tiempo (Timestamps):** Estima los capítulos basándote en los encabezados del texto recibido (H1, H2, H3). Formato: `00:00 Introducción`.
    - **Enlaces Recomendados:** Genera una lista de 3 placeholders de enlaces relacionados con el tema (ej. Repositorio, Curso relacionado).
 
 3. **ETIQUETAS Y HASHTAGS:**

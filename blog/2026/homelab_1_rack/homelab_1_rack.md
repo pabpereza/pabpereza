@@ -16,6 +16,7 @@ Quería montar un laboratorio en casa para aprovechar todas las Raspberry Pi que
 
 ![Rack terminado](rack10.jpeg)
 
+
 <!-- truncate -->
 
 Vídeo del montaje: https://youtu.be/OW6xZkSpXmU

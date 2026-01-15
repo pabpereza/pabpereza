@@ -45,6 +45,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
+- [Apple Container - La apuesta de Apple por los contenedores nativos en macOS](https://pabpereza.dev/blog/apple_container_analisis_contenedores_macos)
 - [HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)](https://pabpereza.dev/blog/homelab-1-rack)
 - [Kubeastronaut, mi experiencia y todas las dudas](https://pabpereza.dev/blog/2025/kubeastronaut_cncf/kubeastronaut_cncf)
 - [Depurar builds de Docker en VS Code como un profesional](https://pabpereza.dev/blog/debug_docker_build_vscode)
@@ -54,7 +55,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 - [Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente](https://pabpereza.dev/blog/kubectx_kubens_kubernetes_context)
 - [Backups de Docker](https://pabpereza.dev/blog/backups_docker)
 - [Ruta DevSecOps, recomendaciones para empezar en 2025](https://pabpereza.dev/blog/ruta_devsecops_recomendaciones_2025)
-- [¿Ollama killer?, Modelos de IA en Docker Desktop](https://pabpereza.dev/blog/docker_model_ai_mcp)
 
 
 ---

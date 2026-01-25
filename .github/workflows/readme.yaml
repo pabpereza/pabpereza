@@ -22,6 +22,10 @@ jobs:
           env:
             YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           run: |
+            rm -rf src/files/*
+            touch src/files/blog_posts.json
+            touch src/files/videos.json
+            touch src/files/podcasts.json
             python src/workflows/latest.py
             python src/workflows/readme.py
             git config user.name pabpereza 

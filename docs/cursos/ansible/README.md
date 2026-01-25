@@ -9,7 +9,7 @@ tags: [ansible, automatización, devops, iac]
 
 # Curso de Ansible: Automatización IT
 
-![Ansible banner](img/banner_ansible.png)
+<!-- TODO: ![Ansible banner](img/banner_ansible.png) -->
 
 Bienvenido al curso de Ansible donde aprenderás a dominar la automatización de infraestructura, desde los conceptos básicos hasta la creación de roles complejos y el uso de Ansible Tower/AWX.
 

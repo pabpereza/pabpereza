@@ -47,11 +47,11 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Docker en producción](115.Docker_en_produccion.md) 
 
 ### Intermedio-Avanzado:
-* [Límites y control de recursos](201.Limites_recursos.md) 
-* [Dockerfile: Buildx y Multiarquitectura ](202.Buildx_multiarquitectura.md) 
-* [Dockerfile: Multistage build](203.Multi_stage_y_distroless.md) 
+* [Límites y control de recursos](116.Limites_recursos.md) 
+* [Dockerfile: Buildx y Multiarquitectura ](117.Buildx_multiarquitectura.md) 
+* [Dockerfile: Multistage build](118.Multi_stage_y_distroless.md) 
 * [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
-* [Depurar imágenes ](203.Multi_stage_y_distroless.md) 
+* [Depurar imágenes ](118.Multi_stage_y_distroless.md) 
 * [Docker compose avanzado](#docker_compose_avanzado) TODO
 * [Redes avanzado](#redes_avanzado) TODO
 * [Volumenes y backups](#volumes_avanzado) TODO

@@ -18,7 +18,7 @@ Este es un sitio **Docusaurus v3** con:
 - Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Imágenes en la misma carpeta que el artículo
 - Añadir `draft: true` por defecto hasta revisión final
-- Evita usar `:` dentro de los titulo, descriptions o slugs para evitar problemas al contruir docusaurus
+- Evita usar `:` dentro del metadatado de markdown ( title, description, slug, tags... etc)
 - **Ejemplo de frontmatter**:
 ```yaml
 ---

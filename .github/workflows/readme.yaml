@@ -32,7 +32,7 @@ jobs:
             git config user.email pabloperezaradros@gmail.com
             git add src/files/
             git add README.md
-            git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update files with latest videos"
+            git commit -m "[bot] Update files with latest videos" || echo "No changes to commit"
             git push origin main
 
 

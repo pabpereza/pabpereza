@@ -1,0 +1,39 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)",
+      "Glob(./**)",
+      "Grep(./**)",
+      "Read(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Write(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Edit(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Glob(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Grep(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Read(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/.auto-claude/specs/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Write(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/.auto-claude/specs/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Edit(/Users/pabpereza/pabpereza/.auto-claude/worktrees/tasks/001-create-ansible-course-for-pabpereza-channel/.auto-claude/specs/001-create-ansible-course-for-pabpereza-channel/**)",
+      "Read(/Users/pabpereza/pabpereza/.auto-claude/**)",
+      "Write(/Users/pabpereza/pabpereza/.auto-claude/**)",
+      "Edit(/Users/pabpereza/pabpereza/.auto-claude/**)",
+      "Glob(/Users/pabpereza/pabpereza/.auto-claude/**)",
+      "Grep(/Users/pabpereza/pabpereza/.auto-claude/**)",
+      "Bash(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "mcp__context7__resolve-library-id(*)",
+      "mcp__context7__query-docs(*)",
+      "mcp__graphiti-memory__search_nodes(*)",
+      "mcp__graphiti-memory__search_facts(*)",
+      "mcp__graphiti-memory__add_episode(*)",
+      "mcp__graphiti-memory__get_episodes(*)",
+      "mcp__graphiti-memory__get_entity_edge(*)"
+    ]
+  }
+}

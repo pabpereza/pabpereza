@@ -26,3 +26,6 @@ yarn-error.log*
 # Python y workflows
 *.pyc
 __pycache__/
+
+# Auto Claude data directory
+.auto-claude/

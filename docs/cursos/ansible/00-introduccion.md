@@ -412,6 +412,6 @@ Antes de comenzar el módulo 1, ten estos recursos a mano:
 
 Ahora que entiendes qué es Ansible, sus ventajas y cómo se compara con otras herramientas, es hora de ensuciarse las manos.
 
-**➡️ Continúa con:** [Módulo 1: Fundamentos y Arquitectura](101.Fundamentos_arquitectura.md)
+**➡️ Continúa con:** [Módulo 1: Fundamentos y Arquitectura](01-fundamentos.md)
 
 ¡Nos vemos en el próximo módulo! 🎯

@@ -21,15 +21,19 @@ Video pendiente de grabación
 
 ## 📚 Índice del Curso
 
-### Fundamentos
-* [1. Fundamentos y arquitectura](101.Fundamentos_arquitectura.md)
-* [2. Instalación y configuración](102.Instalacion_configuracion.md)
-* [3. Inventarios y comandos ad-hoc](103.Inventarios_adhoc.md)
-* [4. Playbooks y YAML](104.Playbooks_yaml.md)
-* [5. Variables y facts](105.Variables_facts.md)
-* [6. Lógica de control](106.Logica_control.md)
+### Introducción
+* [0. Introducción a Ansible](00-introduccion.md)
 
-### Avanzado y modularidad
-* [7. Roles y modularidad](107.Roles_modularidad.md)
-* [8. Seguridad y templating](108.Seguridad_templating.md)
-* [9. Futuro y tendencias](109.Futuro_tendencias.md)
+### Fundamentos
+* [1. Fundamentos y Arquitectura](01-fundamentos.md)
+* [2. Instalación y Configuración](02-instalacion.md)
+* [3. Inventarios y Comandos Ad-Hoc](03-inventarios.md)
+* [4. Playbooks y YAML](04-playbooks.md)
+* [5. Módulos de Ansible](05-modulos.md)
+* [6. Variables y Facts](06-variables.md)
+
+### Avanzado y Modularidad
+* [7. Roles y Modularidad](07-roles.md)
+* [8. Templates con Jinja2](08-templates.md)
+* [9. Ansible Galaxy y Collections](09-ansible-galaxy.md)
+* [10. Buenas Prácticas](10-buenas-practicas.md)

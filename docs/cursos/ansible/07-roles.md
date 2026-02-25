@@ -1,6 +1,7 @@
 ---
 title: Roles y Modularidad
 sidebar_label: 7. Roles
+sidebar_position: 7
 ---
 
 # Roles y modularidad 📦
@@ -55,6 +56,7 @@ mindmap
 *   **`files/`**: Archivos que se copian tal cual (certificados, imágenes).
 *   **`defaults/`**: Variables con la prioridad **más baja**. Están hechas para ser sobrescritas fácilmente por el usuario del rol.
 *   **`vars/`**: Variables con prioridad alta. Úsalas para constantes que rara vez cambian.
+*   **`meta/`**: Metadatos del rol: información del autor, licencia y **dependencias** de otros roles.
 
 ---
 
@@ -136,7 +138,47 @@ Tu playbook principal (`site.yml`) ahora queda así de minimalista:
 
 ---
 
-## 7.4. Ansible galaxy y collections
+## 7.4. Dependencias entre roles
+
+Los roles pueden depender de otros roles. Por ejemplo, si tu rol `wordpress` necesita que primero esté instalado `mysql` y `php`, puedes declarar estas dependencias en el archivo `meta/main.yml`.
+
+### 🔗 Ejemplo de dependencias
+
+**`roles/wordpress/meta/main.yml`**
+```yaml
+---
+dependencies:
+  - role: mysql
+    vars:
+      mysql_root_password: "secreto123"
+
+  - role: php
+    vars:
+      php_version: "8.1"
+```
+
+### ¿Cómo funciona?
+1.  Cuando ejecutas el rol `wordpress`, Ansible primero ejecuta `mysql` y luego `php`.
+2.  Los roles se ejecutan **solo una vez**, aunque múltiples roles los tengan como dependencia.
+3.  Puedes pasar variables específicas a cada dependencia usando `vars:`.
+
+### Usar roles en playbooks con dependencias
+
+```yaml
+# site.yml
+- hosts: webservers
+  roles:
+    - wordpress  # Automáticamente ejecutará mysql → php → wordpress
+```
+
+### 💡 Buenas prácticas
+*   **No abuses**: Si tienes 10 niveles de dependencias, algo está mal en tu diseño.
+*   **Documenta**: Siempre indica en el README qué roles son prerequisitos.
+*   **Versiona**: Si usas roles de Galaxy, fija las versiones en `requirements.yml`.
+
+---
+
+## 7.5. Ansible galaxy y collections
 
 No reinventes la rueda. Probablemente alguien ya ha creado el rol perfecto para instalar Docker, Kubernetes o MySQL.
 
@@ -177,3 +219,4 @@ ansible-galaxy collection list
 1.  **Divide y vencerás:** Usa roles para separar responsabilidades.
 2.  **Estandariza:** Respeta la estructura de carpetas (`tasks`, `vars`, `templates`) para que cualquiera entienda tu código.
 3.  **Reutiliza:** Antes de escribir código, busca en Ansible Galaxy. Si tienes que escribirlo, hazlo pensando en que sea un rol genérico para el futuro.
+4.  **Declara dependencias:** Usa `meta/main.yml` para especificar qué roles necesita tu rol antes de ejecutarse.

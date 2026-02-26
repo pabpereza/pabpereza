@@ -1047,37 +1047,37 @@
   resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-7.1.1.tgz#15e19737d946559289b915e5dad3b4c28407735e"
   integrity sha512-i1L7noDNxtFyL5DmZafWy1wRVhGehQmzZaz1HiN5e7iylJMSZR7ekOV7NsIqa5qBldlLrsKv4HbgFUVlQrz8Mw==
 
-"@chevrotain/cst-dts-gen@11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@chevrotain/cst-dts-gen/-/cst-dts-gen-11.0.3.tgz#5e0863cc57dc45e204ccfee6303225d15d9d4783"
-  integrity sha512-BvIKpRLeS/8UbfxXxgC33xOumsacaeCKAjAeLyOn7Pcp95HiRbrpl14S+9vaZLolnbssPIUuiUd8IvgkRyt6NQ==
+"@chevrotain/cst-dts-gen@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@chevrotain/cst-dts-gen/-/cst-dts-gen-11.1.1.tgz#4224e0bb05064f7186886b5d9371e6ea9ff29326"
+  integrity sha512-fRHyv6/f542qQqiRGalrfJl/evD39mAvbJLCekPazhiextEatq1Jx1K/i9gSd5NNO0ds03ek0Cbo/4uVKmOBcw==
   dependencies:
-    "@chevrotain/gast" "11.0.3"
-    "@chevrotain/types" "11.0.3"
-    lodash-es "4.17.21"
+    "@chevrotain/gast" "11.1.1"
+    "@chevrotain/types" "11.1.1"
+    lodash-es "4.17.23"
 
-"@chevrotain/gast@11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@chevrotain/gast/-/gast-11.0.3.tgz#e84d8880323fe8cbe792ef69ce3ffd43a936e818"
-  integrity sha512-+qNfcoNk70PyS/uxmj3li5NiECO+2YKZZQMbmjTqRI3Qchu8Hig/Q9vgkHpI3alNjr7M+a2St5pw5w5F6NL5/Q==
+"@chevrotain/gast@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@chevrotain/gast/-/gast-11.1.1.tgz#f2af299cafb9b578912880e28df20f84b8507cab"
+  integrity sha512-Ko/5vPEYy1vn5CbCjjvnSO4U7GgxyGm+dfUZZJIWTlQFkXkyym0jFYrWEU10hyCjrA7rQtiHtBr0EaZqvHFZvg==
   dependencies:
-    "@chevrotain/types" "11.0.3"
-    lodash-es "4.17.21"
+    "@chevrotain/types" "11.1.1"
+    lodash-es "4.17.23"
 
-"@chevrotain/regexp-to-ast@11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@chevrotain/regexp-to-ast/-/regexp-to-ast-11.0.3.tgz#11429a81c74a8e6a829271ce02fc66166d56dcdb"
-  integrity sha512-1fMHaBZxLFvWI067AVbGJav1eRY7N8DDvYCTwGBiE/ytKBgP8azTdgyrKyWZ9Mfh09eHWb5PgTSO8wi7U824RA==
+"@chevrotain/regexp-to-ast@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@chevrotain/regexp-to-ast/-/regexp-to-ast-11.1.1.tgz#a413f59f82590df8d869d7c6233767aff734ba2e"
+  integrity sha512-ctRw1OKSXkOrR8VTvOxrQ5USEc4sNrfwXHa1NuTcR7wre4YbjPcKw+82C2uylg/TEwFRgwLmbhlln4qkmDyteg==
 
-"@chevrotain/types@11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@chevrotain/types/-/types-11.0.3.tgz#f8a03914f7b937f594f56eb89312b3b8f1c91848"
-  integrity sha512-gsiM3G8b58kZC2HaWR50gu6Y1440cHiJ+i3JUvcp/35JchYejb2+5MVeJK0iKThYpAa/P2PYFV4hoi44HD+aHQ==
+"@chevrotain/types@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@chevrotain/types/-/types-11.1.1.tgz#cfae33d6cfb3048a1ad8fc2277ee9fcf3e9252c9"
+  integrity sha512-wb2ToxG8LkgPYnKe9FH8oGn3TMCBdnwiuNC5l5y+CtlaVRbCytU0kbVsk6CGrqTL4ZN4ksJa0TXOYbxpbthtqw==
 
-"@chevrotain/utils@11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@chevrotain/utils/-/utils-11.0.3.tgz#e39999307b102cff3645ec4f5b3665f5297a2224"
-  integrity sha512-YslZMgtJUyuMbZ+aKvfF3x1f5liK4mWNxghFRv7jqRR9C3R3fAOGTTKvxXDa2Y1s9zSbcpuO0cAxDYsc9SrXoQ==
+"@chevrotain/utils@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@chevrotain/utils/-/utils-11.1.1.tgz#ba7608d5d3e358127dc0a89e2be24d131d36f750"
+  integrity sha512-71eTYMzYXYSFPrbg/ZwftSaSDld7UYlS8OQa3lNnn9jzNtpFbaReRRyghzqS7rI3CDaorqpPJJcXGHK+FE1TVQ==
 
 "@colors/colors@1.5.0":
   version "1.5.0"
@@ -2274,12 +2274,12 @@
   dependencies:
     "@types/mdx" "^2.0.0"
 
-"@mermaid-js/parser@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@mermaid-js/parser/-/parser-0.6.3.tgz#3ce92dad2c5d696d29e11e21109c66a7886c824e"
-  integrity sha512-lnjOhe7zyHjc+If7yT4zoedx2vo4sHaTmtkl1+or8BRTnCtDmcTpAjpzDSfCZrshM5bCoz0GyidzadJAH1xobA==
+"@mermaid-js/parser@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@mermaid-js/parser/-/parser-1.0.0.tgz#076d01775f841d7578cdc6b68a428c749120e6b3"
+  integrity sha512-vvK0Hi/VWndxoh03Mmz6wa1KDriSPjS2XMZL/1l19HFwygiObEEoEwSDxOqyLzzAI6J2PU3261JjTMTO7x+BPw==
   dependencies:
-    langium "3.3.1"
+    langium "^4.0.0"
 
 "@noble/hashes@1.4.0":
   version "1.4.0"
@@ -3909,24 +3909,24 @@ cheerio@1.0.0-rc.12:
     parse5 "^7.0.0"
     parse5-htmlparser2-tree-adapter "^7.0.0"
 
-chevrotain-allstar@~0.3.0:
+chevrotain-allstar@~0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/chevrotain-allstar/-/chevrotain-allstar-0.3.1.tgz#b7412755f5d83cc139ab65810cdb00d8db40e6ca"
   integrity sha512-b7g+y9A0v4mxCW1qUhf3BSVPg+/NvGErk/dOkrDaHA0nQIQGAtrOjlX//9OQtRlSCy+x9rfB5N8yC71lH1nvMw==
   dependencies:
     lodash-es "^4.17.21"
 
-chevrotain@~11.0.3:
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-11.0.3.tgz#88ffc1fb4b5739c715807eaeedbbf200e202fc1b"
-  integrity sha512-ci2iJH6LeIkvP9eJW6gpueU8cnZhv85ELY8w8WiFtNjMHA5ad6pQLaJo9mEly/9qUyCpvqX8/POVUTf18/HFdw==
+chevrotain@~11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-11.1.1.tgz#39be6f767cb22cc6a728246995ba906c5c2f2157"
+  integrity sha512-f0yv5CPKaFxfsPTBzX7vGuim4oIC1/gcS7LUGdBSwl2dU6+FON6LVUksdOo1qJjoUvXNn45urgh8C+0a24pACQ==
   dependencies:
-    "@chevrotain/cst-dts-gen" "11.0.3"
-    "@chevrotain/gast" "11.0.3"
-    "@chevrotain/regexp-to-ast" "11.0.3"
-    "@chevrotain/types" "11.0.3"
-    "@chevrotain/utils" "11.0.3"
-    lodash-es "4.17.21"
+    "@chevrotain/cst-dts-gen" "11.1.1"
+    "@chevrotain/gast" "11.1.1"
+    "@chevrotain/regexp-to-ast" "11.1.1"
+    "@chevrotain/types" "11.1.1"
+    "@chevrotain/utils" "11.1.1"
+    lodash-es "4.17.23"
 
 chokidar@^3.5.3, chokidar@^3.6.0:
   version "3.6.0"
@@ -6609,16 +6609,16 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-langium@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/langium/-/langium-3.3.1.tgz#da745a40d5ad8ee565090fed52eaee643be4e591"
-  integrity sha512-QJv/h939gDpvT+9SiLVlY7tZC3xB2qK57v0J04Sh9wpMb6MP1q8gB21L3WIo8T5P1MSMg3Ep14L7KkDCFG3y4w==
+langium@^4.0.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/langium/-/langium-4.2.1.tgz#23e9e12d79778578efa912e3ca8fe313aa61ac17"
+  integrity sha512-zu9QWmjpzJcomzdJQAHgDVhLGq5bLosVak1KVa40NzQHXfqr4eAHupvnPOVXEoLkg6Ocefvf/93d//SB7du4YQ==
   dependencies:
-    chevrotain "~11.0.3"
-    chevrotain-allstar "~0.3.0"
+    chevrotain "~11.1.1"
+    chevrotain-allstar "~0.3.1"
     vscode-languageserver "~9.0.1"
     vscode-languageserver-textdocument "~1.0.11"
-    vscode-uri "~3.0.8"
+    vscode-uri "~3.1.0"
 
 latest-version@^7.0.0:
   version "7.0.0"
@@ -6681,15 +6681,10 @@ locate-path@^7.1.0:
   dependencies:
     p-locate "^6.0.0"
 
-lodash-es@4, lodash-es@^4.17.21:
+lodash-es@4, lodash-es@4.17.23, lodash-es@^4.17.21, lodash-es@^4.17.23:
   version "4.17.23"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.23.tgz#58c4360fd1b5d33afc6c0bbd3d1149349b1138e0"
   integrity sha512-kVI48u3PZr38HdYz98UmfPnXl2DXrpdctLrFLCd3kOx1xUkOmpFPx7gCWWM5MPkL/fD8zb+Ph0QzjGFs4+hHWg==
-
-lodash-es@4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
-  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -7053,13 +7048,13 @@ merge2@^1.3.0, merge2@^1.4.1:
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
 mermaid@>=11.6.0:
-  version "11.12.2"
-  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-11.12.2.tgz#48bbdb9f724bc2191e2128e1403bf964fff2bc3d"
-  integrity sha512-n34QPDPEKmaeCG4WDMGy0OT6PSyxKCfy2pJgShP+Qow2KLrvWjclwbc3yXfSIf4BanqWEhQEpngWwNp/XhZt6w==
+  version "11.12.3"
+  resolved "https://registry.yarnpkg.com/mermaid/-/mermaid-11.12.3.tgz#e150dae69ca291254fb408cf36d001b2efad62bf"
+  integrity sha512-wN5ZSgJQIC+CHJut9xaKWsknLxaFBwCPwPkGTSUYrTiHORWvpT8RxGk849HPnpUAQ+/9BPRqYb80jTpearrHzQ==
   dependencies:
     "@braintree/sanitize-url" "^7.1.1"
     "@iconify/utils" "^3.0.1"
-    "@mermaid-js/parser" "^0.6.3"
+    "@mermaid-js/parser" "^1.0.0"
     "@types/d3" "^7.4.3"
     cytoscape "^3.29.3"
     cytoscape-cose-bilkent "^4.1.0"
@@ -7071,7 +7066,7 @@ mermaid@>=11.6.0:
     dompurify "^3.2.5"
     katex "^0.16.22"
     khroma "^2.1.0"
-    lodash-es "^4.17.21"
+    lodash-es "^4.17.23"
     marked "^16.2.1"
     roughjs "^4.6.6"
     stylis "^4.3.6"
@@ -10233,10 +10228,10 @@ vscode-languageserver@~9.0.1:
   dependencies:
     vscode-languageserver-protocol "3.17.5"
 
-vscode-uri@~3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.8.tgz#1770938d3e72588659a172d0fd4642780083ff9f"
-  integrity sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==
+vscode-uri@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.1.0.tgz#dd09ec5a66a38b5c3fffc774015713496d14e09c"
+  integrity sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==
 
 watchpack@^2.4.4:
   version "2.5.1"

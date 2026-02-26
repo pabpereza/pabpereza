@@ -50,6 +50,8 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
+- [zimaboard2_nas_casero/zimaborad2_nas_casero](https://pabpereza.dev/blog/zimaboard2_nas_casero/zimaborad2_nas_casero)
+- [Cómo entrar en IT en 2026 - realidad, retos y oportunidades](https://pabpereza.dev/blog/entrar_en_it_2026)
 - [Windows en Docker: Cómo ejecutar Windows 11 dentro de un contenedor](https://pabpereza.dev/blog/windows-en-docker-kvm)
 - [Apple Container - La apuesta de Apple por los contenedores nativos en macOS](https://pabpereza.dev/blog/apple_container_analisis_contenedores_macos)
 - [HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)](https://pabpereza.dev/blog/homelab-1-rack)
@@ -58,8 +60,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 - [LocalStack, dudas comunes y cómo usarlo con terraform](https://pabpereza.dev/blog/localstack_terraform_mas_dudas)
 - [Comunidad vs La Liga: El Verdadero Duelo del Fútbol](https://pabpereza.dev/blog/comunidad_vs_la_liga)
 - [Jamás confíes ciegamente en la IA, y menos para tu infraestructura](https://pabpereza.dev/blog/no_confiar_ciegamente_en_la_IA)
-- [Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente](https://pabpereza.dev/blog/kubectx_kubens_kubernetes_context)
-- [Backups de Docker](https://pabpereza.dev/blog/backups_docker)
 
 
 ---

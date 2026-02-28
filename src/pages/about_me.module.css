@@ -1,0 +1,73 @@
+/* Header */
+
+html {
+	background-image: (url("/img/fondo.jpg")); ;
+}	
+
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+header {
+	text-align: center;
+	display: inline-block;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2.5em;
+	width: 100%;
+	margin: auto;
+}
+
+.col8 {
+	text-align: justify;
+}
+
+@media screen and (min-width: 1300px) {
+    .row {
+        max-width: 1300px;
+		padding: 0em;
+    }
+}
+
+@media (min-width: 992px) {
+	.col4 {
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+
+	.col8 {
+		flex: 0 0 60%;
+		max-width: 60%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 1.5em;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.col8, .col4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.col8 {
+		padding: 0em;
+	}
+
+	.row {
+		padding: 2.5em;
+	}
+}
+

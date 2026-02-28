@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Curso Kubernetes - Presentación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Curso Kubernetes</h1>
+        <h3>De Principiante a Experto</h3>
+        <p>Basado en <a href="https://pabpereza.dev/docs/cursos/kubernetes/">pabpereza.dev</a></p>
+        <p><a href="https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma">Ver curso en YouTube</a></p>
+      </section>
+      <section>
+        <h2>Índice del Curso</h2>
+        <ul>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#arquitectura">Arquitectura</a></li>
+          <li><a href="#conceptos">Conceptos básicos y kubectl</a></li>
+          <li><a href="#pods">Pods y contenedores</a></li>
+          <li><a href="#deployments">Deployments y ReplicaSet</a></li>
+          <li><a href="#services">Servicios y Endpoints</a></li>
+          <li><a href="#ingress">Ingress y Exposición</a></li>
+          <li><a href="#jobs">Jobs y CronJobs</a></li>
+          <li><a href="#almacenamiento">Almacenamiento</a></li>
+          <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="#helm">Helm</a></li>
+        </ul>
+      </section>
+      <section id="introduccion">
+        <h2>Introducción a Kubernetes</h2>
+        <ul>
+          <li>¿Qué es Kubernetes?</li>
+          <li>Orquestación de contenedores</li>
+          <li>Certificaciones: CKA, CKAD, CKS</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/101.Introduccion">Ver apartado</a></p>
+      </section>
+      <section id="arquitectura">
+        <h2>Arquitectura de Kubernetes</h2>
+        <ul>
+          <li>Control Plane vs Workers</li>
+          <li>Componentes principales: API Server, etcd, Scheduler, Kubelet</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/102.Arquitectura">Ver apartado</a></p>
+      </section>
+      <section id="conceptos">
+        <h2>Conceptos básicos y kubectl</h2>
+        <ul>
+          <li>Recursos y manifiestos YAML</li>
+          <li>kubectl: herramienta de gestión</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/105.Conceptos">Ver apartado</a></p>
+      </section>
+      <section id="pods">
+        <h2>Pods y contenedores</h2>
+        <ul>
+          <li>Unidad básica de Kubernetes</li>
+          <li>Multi-container pods</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/106.Pods">Ver apartado</a></p>
+      </section>
+      <section id="deployments">
+        <h2>Deployments y ReplicaSet</h2>
+        <ul>
+          <li>Gestión de aplicaciones</li>
+          <li>Rolling updates y rollbacks</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/108.Deployments">Ver apartado</a></p>
+      </section>
+      <section id="services">
+        <h2>Servicios y Endpoints</h2>
+        <ul>
+          <li>Tipos: ClusterIP, NodePort, LoadBalancer, ExternalName</li>
+          <li>Balanceo de carga y descubrimiento</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/111.Services">Ver apartado</a></p>
+      </section>
+      <section id="ingress">
+        <h2>Ingress y Exposición</h2>
+        <ul>
+          <li>Ingress Controller</li>
+          <li>Reglas de enrutamiento HTTP/HTTPS</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/112.Ingress_controller">Ver apartado</a></p>
+      </section>
+      <section id="jobs">
+        <h2>Jobs y CronJobs</h2>
+        <ul>
+          <li>Automatización de tareas</li>
+          <li>Jobs puntuales y programados</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/110.Jobs">Ver apartado</a></p>
+      </section>
+      <section id="almacenamiento">
+        <h2>Almacenamiento</h2>
+        <ul>
+          <li>Persistent Volumes (PV)</li>
+          <li>Persistent Volume Claims (PVC)</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/118.Almacenamiento">Ver apartado</a></p>
+      </section>
+      <section id="seguridad">
+        <h2>Seguridad en Kubernetes</h2>
+        <ul>
+          <li>RBAC y control de acceso</li>
+          <li>Network Policies</li>
+          <li>Pod Security Standards</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/119.Seguridad">Ver apartado</a></p>
+      </section>
+      <section id="helm">
+        <h2>Helm</h2>
+        <ul>
+          <li>Gestión de aplicaciones con charts</li>
+          <li>Despliegues complejos simplificados</li>
+        </ul>
+        <p><a href="/docs/cursos/kubernetes/125.Helm">Ver apartado</a></p>
+      </section>
+      <section>
+        <h2>¡Gracias!</h2>
+        <p>Visita <a href="https://pabpereza.dev">pabpereza.dev</a> para más recursos y cursos.</p>
+        <p><a href="https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma">Curso completo en YouTube</a></p>
+      </section>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+</html>

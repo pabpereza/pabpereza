@@ -1,0 +1,74 @@
+---
+title: "\U0001F4DA Cursos"
+tags:
+  - cursos
+---
+
+import GitHubButton from 'react-github-btn'
+import ContentGraph from '@site/src/components/ContentGraph/ContentGraphWrapper';
+
+# Índice de contenidos
+
+:::note[COLABORA CON ESTE PROYECTO EN GITHUB]
+¡Apoya este contenido gratuito dejando una estrella al repositorio y siguiéndome en Youtube y Github!
+:::
+<GitHubButton href="https://github.com/pabpereza/pabpereza" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star pabpereza/pabpereza on GitHub">Star</GitHubButton>
+<GitHubButton href="https://github.com/pabpereza" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Follow @pabpereza on GitHub">Follow @pabpereza</GitHubButton>
+<GitHubButton href="https://github.com/pabpereza/pabpereza/discussions" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Discuss pabpereza/pabpereza on GitHub">Discuss</GitHubButton>
+<GitHubButton href="https://github.com/pabpereza/pabpereza/issues" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Issue pabpereza/pabpereza on GitHub">Issue</GitHubButton>
+
+
+
+### Cursos
+
+| 🎓 Cursos | 🎥 Youtube | 🔗 Enlace Web | 🛠️ GitHub | 
+| --- | --- | --- | --- | 
+| 🐳 Docker | [Vídeos](https://www.youtube.com/playlist?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0) | [Web](https://pabpereza.dev/docs/cursos/docker)  | [GitHub](https://github.com/pabpereza/pabpereza/tree/main/docs/cursos/docker) | 
+| ⚓️ Kubernetes | [Vídeos](https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma) | [Web](https://pabpereza.dev/docs/cursos/kubernetes) |[GitHub](https://github.com/pabpereza/pabpereza/tree/main/docs/cursos/kubernetes) |
+| ⚡️ Vim + Tmux | [En desarrollo](https://youtube.com/pabpereza) | [Web](https://pabpereza.dev/docs/cursos/vim) | [GitHub](https://github.com/pabpereza/pabpereza/tree/main/docs/cursos/vim) |
+| 🚀 DevOps | [En desarrollo](https://youtube.com/pabpereza) | [Web](https://pabpereza.dev/docs/cursos/devops) | [GitHub](https://github.com/pabpereza/pabpereza/tree/main/docs/cursos/devops) |
+
+### Mapa de Contenido Interactivo
+
+El siguiente diagrama muestra las conexiones entre los diferentes temas y cursos disponibles. Puedes explorar las relaciones entre conceptos y navegar por el contenido de forma visual.
+
+import { useHistory } from '@docusaurus/router';
+
+export const ViewFullGraphButton = () => {
+  const history = useHistory();
+  
+  const handleClick = () => {
+    history.push('/content-graph');
+  };
+  
+  return (
+    <button 
+      onClick={handleClick}
+      style={{
+        backgroundColor: '#000000',
+        color: 'white',
+        border: 'none',
+        padding: '10px 20px',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontSize: '14px',
+        fontWeight: '500',
+        marginBottom: '20px',
+        transition: 'background-color 0.2s ease'
+      }}
+      onMouseOver={(e) => e.target.style.backgroundColor = '#21af90'}
+      onMouseOut={(e) => e.target.style.backgroundColor = '#25c2a0'}
+    >
+      📊 Ver diagrama en pantalla completa
+    </button>
+  );
+};
+
+<ViewFullGraphButton />
+
+<ContentGraph />
+
+:::tip
+Todo el contenido de la web es editable, veras enlaces "Editar esta página" al final de cada página, esto te llevará a github donde podrás proponer cambios y hacer un pull request al repositorio.
+:::
+

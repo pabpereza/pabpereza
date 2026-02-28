@@ -1,0 +1,2274 @@
+{
+  "nodes": [
+    {
+      "id": "/docs/cursos",
+      "title": "📚 Cursos",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/devops/introduccion",
+      "title": "101.Introduccion",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/introduccion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/cultura",
+      "title": "102.Cultura",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/cultura",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/git_avanzado",
+      "title": "103.Git_avanzado",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/git_avanzado",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/metodologias",
+      "title": "104.Metodologias",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/metodologias",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/infraestructura_codigo",
+      "title": "201.Infraestructura_codigo",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/infraestructura_codigo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/gestion_configuraciones",
+      "title": "202.Gestion_configuraciones",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/gestion_configuraciones",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/monitoreo",
+      "title": "203.Monitoreo",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/monitoreo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/seguridad",
+      "title": "204.Seguridad",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/seguridad",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/cicd_conceptos",
+      "title": "301.CICD_conceptos",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/cicd_conceptos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/pipelines",
+      "title": "302.Pipelines",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/pipelines",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/testing",
+      "title": "303.Testing",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/testing",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/deployment_strategies",
+      "title": "304.Deployment_strategies",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/deployment_strategies",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/contenedores",
+      "title": "401.Contenedores",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/contenedores",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/microservicios",
+      "title": "402.Microservicios",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/microservicios",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/sre",
+      "title": "403.SRE",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/sre",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops",
+      "title": "♾️ DevOps",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devops/cheatsheet_devops",
+      "title": "cheatsheet_devops",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/cheatsheet_devops",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/devops/herramientas",
+      "title": "herramientas",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/devops/herramientas",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/introduccion",
+      "title": "Introducción",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende Docker desde cero con este curso completo que cubre todos los aspectos, incluyendo la historia, ventajas, y casos de uso de los contenedores.",
+      "url": "/docs/cursos/docker/introduccion",
+      "slug": "curso_de_docker_desde_cero",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/instalacion",
+      "title": "Instalación",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía completa para instalar Docker Desktop y Docker Engine en diferentes sistemas operativos. Aprende las diferencias entre ambas versiones y cómo configurarlas.",
+      "url": "/docs/cursos/docker/instalacion",
+      "slug": "instalacion_de_docker_desktop_y_docker_engine_explicados",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/conceptos_basicos",
+      "title": "Conceptos básicos",
+      "type": "content",
+      "category": "docs",
+      "description": "Entiende los conceptos básicos de Docker, incluyendo contenedores, imágenes, dockerfiles, y cómo se relacionan entre sí.",
+      "url": "/docs/cursos/docker/conceptos_basicos",
+      "slug": "conceptos_basicos_de_docker_imagenes_contenedores_y_dockerfiles",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/ejecutar_un_contenedor",
+      "title": "Ejecutar un contenedor",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a ejecutar contenedores en Docker utilizando el comando `docker run`. Descubre las opciones más comunes para ejecutar, gestionar y visualizar contenedores en ejecución.",
+      "url": "/docs/cursos/docker/ejecutar_un_contenedor",
+      "slug": "como_ejecutar_un_contenedor_en_docker_comando_docker_run_y_opciones",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/gestion_de_contenedores",
+      "title": "Gestión de contenedores",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar contenedores en Docker con comandos como stop, rm, exec, y otros. Esta parte del curso cubre cómo detener, reiniciar y eliminar contenedores fácilmente.",
+      "url": "/docs/cursos/docker/gestion_de_contenedores",
+      "slug": "gestion_de_contenedores_en_docker_comandos_stop_remove_y_mas",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/imagenes",
+      "title": "Imágenes",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar imágenes de contenedor en Docker, incluyendo cómo descargarlas, eliminarlas y consultar su historial.",
+      "url": "/docs/cursos/docker/imagenes",
+      "slug": "imagenes_de_contenedor_en_docker_pull_search_rmi_prune",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/dockerfiles_y_build",
+      "title": "Dockerfiles y Build",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a construir imágenes utilizando Dockerfiles y Docker Build. Tutorial con ejemplos y mejores prácticas.",
+      "url": "/docs/cursos/docker/dockerfiles_y_build",
+      "slug": "dockerfiles_y_docker_build_construccion_de_imagenes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/entrypoints_y_variables",
+      "title": "Entrypoints y variables",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a utilizar ENTRYPOINT, CMD, argumentos y variables de entorno en Docker para hacer tus contenedores más flexibles y dinámicos.",
+      "url": "/docs/cursos/docker/entrypoints_y_variables",
+      "slug": "entrypoints_argumentos_y_variables_de_entorno_en_docker",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/gestion_de_imagenes",
+      "title": "Gestión de imágenes",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar imágenes en Docker, incluyendo cómo etiquetar, exportar, importar y subir imágenes a Docker Hub.",
+      "url": "/docs/cursos/docker/gestion_de_imagenes",
+      "slug": "gestion_de_imagenes_en_docker_tags_exportar_e_importar",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/volumenes_y_archivos",
+      "title": "Volúmenes y archivos",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar volúmenes, persistencia y montaje de archivos en Docker. Tutorial completo con ejemplos y comandos.",
+      "url": "/docs/cursos/docker/volumenes_y_archivos",
+      "slug": "volumenes_persistencia_y_montaje_de_archivos_en_docker",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/redes",
+      "title": "Redes",
+      "type": "content",
+      "category": "docs",
+      "description": "Las redes en Docker son un tema muy importante, ya que nos permiten conectar contenedores entre sí o aislarlos unos de otros. En este vídeo veremos cómo crear redes, conectar contenedores a redes y los diferentes tipos de redes que podemos usar en Docker.",
+      "url": "/docs/cursos/docker/redes",
+      "slug": "redes_en_docker_como_crear_redes_conectar_contenedores_y_tipos_de_redes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/docker_compose",
+      "title": "Docker Compose",
+      "type": "content",
+      "category": "docs",
+      "description": "Docker compose es una herramienta que nos permite definir y ejecutar aplicaciones formadas por múltiples contenedores. Con Docker compose podemos definir un archivo YAML con la configuración de los servicios que forman nuestra aplicación y luego ejecutarla con un solo comando. Así de simple, vamos a ver cómo funciona.",
+      "url": "/docs/cursos/docker/docker_compose",
+      "slug": "docker_compose_como_definir_y_ejecutar_aplicaciones_con_multiples_contenedores",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/docker_swarm",
+      "title": "Docker Swarm",
+      "type": "content",
+      "category": "docs",
+      "description": "Docker Swarm es una herramienta de orquestación de contenedores que permite darle escalabilidad a nuestras aplicaciones y cubrir las limitaciones de docker compose. Viene incluido en Docker, permite distribuir contenedores en diferentes nodos y gobernarlos de manera centralizada.",
+      "url": "/docs/cursos/docker/docker_swarm",
+      "slug": "docker_swarm_orquestacion_de_contenedores_y_escalabilidad",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/tu_primera_app",
+      "title": "Tu primera app",
+      "type": "content",
+      "category": "docs",
+      "description": "Tu primera app completa en Docker. Crear una aplicación completa en Docker con FastAPI y desplegarla con Docker Compose.",
+      "url": "/docs/cursos/docker/tu_primera_app",
+      "slug": "tu_primera_app_completa_en_docker",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/en_produccion",
+      "title": "En producción",
+      "type": "content",
+      "category": "docs",
+      "description": "Docker en producción. Despliegue de aplicaciones con Docker Compose en producción y buenas prácticas para mejorar la resiliencia y seguridad de nuestras aplicaciones.",
+      "url": "/docs/cursos/docker/en_produccion",
+      "slug": "docker_en_produccion",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/limites_y_recursos",
+      "title": "Límites y recursos",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a limitar y controlar los recursos de tus contenedores Docker para mejorar la eficiencia y seguridad de tus aplicaciones.",
+      "url": "/docs/cursos/docker/limites_y_recursos",
+      "slug": "limites_y_control_de_recursos_en_docker",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/buildx_y_multiarquitectura",
+      "title": "Buildx y Multiarquitectura",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear imágenes multiarquitectura con Docker Buildx, una herramienta que nos permite crear imágenes para distintas arquitecturas de forma sencilla.",
+      "url": "/docs/cursos/docker/buildx_y_multiarquitectura",
+      "slug": "buildx_y_multiarquitectura_en_docker",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/multistage_y_distroless",
+      "title": "Multi-Stage y Distroless",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear Dockerfiles multi-stage para optimizar la construcción de imágenes en Docker y descubre las ventajas de las imágenes distroless para mejorar la seguridad y reducir el tamaño de tus contenedores.",
+      "url": "/docs/cursos/docker/multistage_y_distroless",
+      "slug": "dockerfiles_multi_stage_y_distroless",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker",
+      "title": "🐳 Docker",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/docker",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/docker/cheatsheet",
+      "title": "cheatsheet",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/docker/cheatsheet",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/kubernetes/introduccion",
+      "title": "Introducción",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende qué es Kubernetes, sus beneficios y por qué es esencial para DevOps moderno. Guía completa desde cero con ejemplos prácticos y preparación para certificaciones.",
+      "url": "/docs/cursos/kubernetes/introduccion",
+      "slug": "introduccion_a_kubernetes_guia_completa_para_principiantes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/arquitectura",
+      "title": "Arquitectura",
+      "type": "content",
+      "category": "docs",
+      "description": "Comprende la arquitectura de Kubernetes a fondo - Control Plane, nodos worker, etcd, API server y todos los componentes esenciales con diagramas claros.",
+      "url": "/docs/cursos/kubernetes/arquitectura",
+      "slug": "arquitectura_de_kubernetes_control_plane_y_workers_explicados",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/instalacion_productiva",
+      "title": "Instalación productiva",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía completa para instalar Kubernetes en Ubuntu Server 22.04/24.04 con kubeadm, containerd y docker. Cluster multi-nodo paso a paso desde cero.",
+      "url": "/docs/cursos/kubernetes/instalacion_productiva",
+      "slug": "instalacion_de_kubernetes_cluster_completo_ubuntu_server_con_kubeadm",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/instalaciones_simples_y_playgrounds",
+      "title": "Instalaciones simples y playgrounds",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a instalar Kubernetes en entornos locales y playgrounds gratuitos - Minikube, k3s, Docker Desktop, Rancher Desktop, Play with Kubernetes y más.",
+      "url": "/docs/cursos/kubernetes/instalaciones_simples_y_playgrounds",
+      "slug": "kubernetes_playgrounds_minikube_k3s_docker_desktop_y_entornos_de_prueba",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/manifiestos",
+      "title": "Manifiestos",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los conceptos fundamentales de Kubernetes, cómo usar manifiestos YAML y dominar kubectl desde cero. Guía completa con ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/manifiestos",
+      "slug": "conceptos_basicos_y_kubectl_manifiestos_yaml_en_kubernetes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/pods",
+      "title": "Pods",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende todo sobre Pods en Kubernetes - la unidad básica de ejecución. Cómo crear, gestionar y eliminar pods con ejemplos prácticos y mejores prácticas.",
+      "url": "/docs/cursos/kubernetes/pods",
+      "slug": "pods_en_kubernetes_guia_completa_desde_cero",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/namespaces_y_contextos",
+      "title": "Namespaces y Contextos",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los Namespaces y Contextos en Kubernetes para organizar recursos y aislar aplicaciones. Guía completa con comandos y ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/namespaces_y_contextos",
+      "slug": "namespaces_y_contextos_en_kubernetes_organizacion_y_aislamiento",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/deployments",
+      "title": "Deployments",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina Deployments en Kubernetes - rolling updates, rollbacks, scaling, estrategias de despliegue y gestión completa del ciclo de vida de aplicaciones.",
+      "url": "/docs/cursos/kubernetes/deployments",
+      "slug": "deployments_en_kubernetes_rolling_updates_y_gestion_de_aplicaciones",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/daemonsets_y_statefulsets",
+      "title": "DaemonSets y StatefulSets",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar DaemonSets y StatefulSets en Kubernetes para crear aplicaciones persistentes y distribuidas. Guía completa con ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/daemonsets_y_statefulsets",
+      "slug": "daemonset_y_statefulset_en_kubernetes_guia_completa",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/jobs",
+      "title": "Jobs",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina Jobs y CronJobs en Kubernetes para automatizar tareas batch y programadas. Aprende patrones de ejecución, backoffLimit y configuración avanzada.",
+      "url": "/docs/cursos/kubernetes/jobs",
+      "slug": "jobs_y_cronjobs_en_kubernetes_automatizacion_de_tareas",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/services",
+      "title": "Services",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a exponer aplicaciones en Kubernetes con Services. Domina ClusterIP, NodePort, LoadBalancer y endpoints con ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/services",
+      "slug": "servicios_en_kubernetes_clusterip_nodeport_y_loadbalancer",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/ingress_controller",
+      "title": "Ingress Controller",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende Ingress Controllers en Kubernetes - instalación NGINX Ingress, configuración SSL/TLS, path-based routing y host-based routing con ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/ingress_controller",
+      "slug": "ingress_controller_en_kubernetes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/gateway",
+      "title": "Gateway",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a configurar Gateway API en Kubernetes para gestionar tráfico externo de forma avanzada. Guía completa con ejemplos prácticos y mejores prácticas.",
+      "url": "/docs/cursos/kubernetes/gateway",
+      "slug": "gateway_api_en_kubernetes_configuracion_y_uso",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/healthchecks_y_probes",
+      "title": "Healthchecks y Probes",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los Health Checks en Kubernetes con Liveness, Readiness y Startup Probes. Asegura la disponibilidad y rendimiento de tus aplicaciones.",
+      "url": "/docs/cursos/kubernetes/healthchecks_y_probes",
+      "slug": "health_checks_en_kubernetes_liveness_readiness_y_startup_probes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/secrets_y_configmaps",
+      "title": "Secrets y ConfigMaps",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar configuraciones y datos sensibles en Kubernetes con Secrets y ConfigMaps. Guía completa con ejemplos y mejores prácticas de seguridad.",
+      "url": "/docs/cursos/kubernetes/secrets_y_configmaps",
+      "slug": "secrets_y_configmaps_en_kubernetes_gestion_de_configuracion",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/almacenamiento_persistente",
+      "title": "Almacenamiento persistente",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía completa y práctica sobre los conceptos de almacenamiento en Kubernetes aprovisionamiento estático y dinámico con PV, PVC, StorageClass y el ecosistema CSI. Incluye diagramas, ejemplos YAML y cuotas.",
+      "url": "/docs/cursos/kubernetes/almacenamiento_persistente",
+      "slug": "persistent_volumes_y_persistent_volume_claims_en_kubernetes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/rangos_y_quotas",
+      "title": "Rangos y Quotas",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar recursos en Kubernetes con Resource Quotas y Limit Ranges. Controla CPU, memoria y almacenamiento en namespaces con ejemplos prácticos.",
+      "url": "/docs/cursos/kubernetes/rangos_y_quotas",
+      "slug": "resource_quotas_y_limit_ranges_en_kubernetes_gestion_de_recursos",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/autoscaling",
+      "title": "Autoscaling",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina el autoscaling en Kubernetes con HPA, VPA y Cluster Autoscaler. Aprende escalado horizontal y vertical automático para aplicaciones en producción.",
+      "url": "/docs/cursos/kubernetes/autoscaling",
+      "slug": "autoscaling_en_kubernetes_hpa_vpa_y_cluster_autoscaler",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/seguridad",
+      "title": "Seguridad",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende seguridad en Kubernetes - RBAC, Service Accounts, Network Policies, Pod Security Standards, admission controllers y hardening para certificación CKS.",
+      "url": "/docs/cursos/kubernetes/seguridad",
+      "slug": "seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/usuarios",
+      "title": "Usuarios",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar usuarios, Service Accounts y autenticación en Kubernetes. Configura certificados, tokens y contextos para acceso seguro al cluster.",
+      "url": "/docs/cursos/kubernetes/usuarios",
+      "slug": "usuarios_y_service_accounts_en_kubernetes_gestion_de_identidades",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/rbac",
+      "title": "RBAC",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina RBAC en Kubernetes con Roles, ClusterRoles y RoleBindings. Aprende control de acceso granular y permisos para certificación CKA y seguridad.",
+      "url": "/docs/cursos/kubernetes/rbac",
+      "slug": "rbac_en_kubernetes_roles_clusterroles_y_rolebindings",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/scheduling",
+      "title": "Scheduling",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende scheduling avanzado en Kubernetes con NodeSelector, Node Affinity, Pod Affinity y Anti-Affinity. Controla la ubicación de pods con labels y selectores.",
+      "url": "/docs/cursos/kubernetes/scheduling",
+      "slug": "scheduling_avanzado_en_kubernetes_nodeselector_affinity_y_anti_affinity",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/taints_y_tolerations",
+      "title": "Taints y Tolerations",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina Taints y Tolerations en Kubernetes para controlar dónde se ejecutan los pods. Aprende scheduling avanzado con ejemplos prácticos y casos de uso reales.",
+      "url": "/docs/cursos/kubernetes/taints_y_tolerations",
+      "slug": "taints_y_tolerations_en_kubernetes_control_avanzado_de_scheduling",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/logs",
+      "title": "Logs",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende gestión completa de logs en Kubernetes - kubectl logs, agregación con ELK Stack, Fluentd, troubleshooting y debugging de aplicaciones en producción.",
+      "url": "/docs/cursos/kubernetes/logs",
+      "slug": "logging_en_kubernetes_gestion_de_logs_y_troubleshooting",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/helm",
+      "title": "Helm",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende Helm para Kubernetes - instalación, creación de charts, gestión de releases, valores y plantillas. Simplifica despliegues complejos con el gestor de paquetes.",
+      "url": "/docs/cursos/kubernetes/helm",
+      "slug": "helm_para_kubernetes_gestion_de_aplicaciones_con_charts",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/dashboards_y_herramientas",
+      "title": "Dashboards y Herramientas",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre las mejores herramientas visuales para Kubernetes - Dashboard oficial, k9s, Lens, kubectl plugins y herramientas de administración gráfica.",
+      "url": "/docs/cursos/kubernetes/dashboards_y_herramientas",
+      "slug": "dashboards_y_herramientas_de_kubernetes_kubernetes_dashboard_k9s_lens",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/mantenimiento",
+      "title": "Mantenimiento",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía completa de mantenimiento de clusters Kubernetes. Aprende backup de etcd, actualización de versiones, troubleshooting y operaciones críticas para administradores.",
+      "url": "/docs/cursos/kubernetes/mantenimiento",
+      "slug": "mantenimiento_de_kubernetes_backup_actualizacion_y_troubleshooting",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/kubernetes/recursos_personalizados",
+      "title": "Recursos Personalizados",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear y gestionar Custom Resource Definitions (CRD) en Kubernetes para extender la funcionalidad del cluster con recursos personalizados.",
+      "url": "/docs/cursos/kubernetes/recursos_personalizados",
+      "slug": "custom_resource_definitions_crd_en_kubernetes_recursos_personalizados",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/kubernetes/pods_y_sidecars",
+      "title": "Pods y sidecars",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los patrones multi-container en Kubernetes con Pods y Sidecars. Aprende init containers, ambassador y adapter patterns para aplicaciones avanzadas.",
+      "url": "/docs/cursos/kubernetes/pods_y_sidecars",
+      "slug": "pods_y_sidecars_en_kubernetes_multi_container_patterns",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/kubernetes/almacenamiento",
+      "title": "Almacenamiento",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/kubernetes/almacenamiento",
+      "slug": "kubernetes_almacenamiento",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/kubernetes",
+      "title": "⚓️ Kubernetes",
+      "type": "content",
+      "category": "docs",
+      "description": "Curso completo de Kubernetes gratuito en español. Desde conceptos básicos hasta preparación para certificaciones CKA, CKAD y CKS. Incluye ejemplos prácticos y ejercicios.",
+      "url": "/docs/cursos/kubernetes",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql",
+      "title": "🐬 MySQL",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar bases de datos MySQL desde cero, incluyendo instalación, configuración y administración.",
+      "url": "/docs/cursos/mysql",
+      "slug": "mysql",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/cifrar_descifrar",
+      "title": "cifrar_descifrar",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/cifrar_descifrar",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/clausulas_operadores",
+      "title": "clausulas_operadores",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/clausulas_operadores",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/comandos_basicos",
+      "title": "comandos_basicos",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/comandos_basicos",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/combinacion_joins",
+      "title": "combinacion_joins",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/combinacion_joins",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/cursores",
+      "title": "cursores",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/cursores",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/export_import",
+      "title": "export_import",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/export_import",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/funciones_en_consultas",
+      "title": "funciones_en_consultas",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/funciones_en_consultas",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/modificacion_datos",
+      "title": "modificacion_datos",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/modificacion_datos",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/permisos",
+      "title": "permisos",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/permisos",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/procedimientos_funciones",
+      "title": "procedimientos_funciones",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/procedimientos_funciones",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/sql_variables",
+      "title": "sql_variables",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/sql_variables",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/triggers",
+      "title": "triggers",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/triggers",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/mysql/usuarios",
+      "title": "usuarios",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/cursos/mysql/usuarios",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/cursos/vim/introduccion",
+      "title": "Introducción",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre por qué Vim sigue siendo relevante en 2025 y cómo puede mejorar tu productividad como desarrollador.",
+      "url": "/docs/cursos/vim/introduccion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/instalacion_y_configuracion",
+      "title": "Instalación y configuración",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía completa para instalar y configurar Vim clásico en tu sistema. Aprende a personalizar tu entorno de desarrollo con una configuración básica y optimizada.",
+      "url": "/docs/cursos/vim/instalacion_y_configuracion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/los_modos_de_vim",
+      "title": "Los modos de Vim",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los diferentes modos de Vim: Normal, Insert y Visual. Entiende cómo navegar y editar texto eficientemente.",
+      "url": "/docs/cursos/vim/los_modos_de_vim",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/movimientos_basicos",
+      "title": "Movimientos básicos",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los movimientos fundamentales en Vim: hjkl, navegación por palabras, líneas y pantalla. Domina la navegación para ser más productivo.",
+      "url": "/docs/cursos/vim/movimientos_basicos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/edicion_basica",
+      "title": "Edición básica",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a editar texto en Vim: insertar, borrar, reemplazar y más. Domina la gramática de Vim para editar eficientemente.",
+      "url": "/docs/cursos/vim/edicion_basica",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/comandos_esenciales",
+      "title": "Comandos esenciales",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los comandos esenciales de Vim y crea tu primera configuración personalizada para mejorar tu productividad. Domina el arte de guardar, buscar y navegar archivos eficientemente.",
+      "url": "/docs/cursos/vim/comandos_esenciales",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/movimientos_avanzados",
+      "title": "Movimientos avanzados",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los movimientos avanzados en Vim: palabras, líneas, párrafos y más. Aprende a navegar archivos grandes con precisión y velocidad.",
+      "url": "/docs/cursos/vim/movimientos_avanzados",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/busqueda_y_reemplazo",
+      "title": "Búsqueda y Reemplazo",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina las técnicas de búsqueda y reemplazo en Vim para mejorar tu productividad.",
+      "url": "/docs/cursos/vim/busqueda_y_reemplazo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/buffers_ventanas_y_pestanas",
+      "title": "Buffers, Ventanas y Pestañas",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina la gestión de buffers, ventanas y pestañas en Vim para mejorar tu flujo de trabajo.",
+      "url": "/docs/cursos/vim/buffers_ventanas_y_pestanas",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/registros_y_macros",
+      "title": "Registros y Macros",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a usar registros y macros en Vim para automatizar tareas repetitivas y mejorar tu flujo de trabajo. Domina estas herramientas para alcanzar velocidades de edición profesionales.",
+      "url": "/docs/cursos/vim/registros_y_macros",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/plugins_esenciales",
+      "title": "Plugins esenciales",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a instalar y configurar plugins esenciales en Vim con vim-plug. Mejora tu flujo de trabajo con NERDTree, fzf, vim-airline y más.",
+      "url": "/docs/cursos/vim/plugins_esenciales",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/navegacion_de_archivos",
+      "title": "Navegación de Archivos",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina la navegación de archivos en Vim con Netrw, fzf y más. Aprende a explorar tu sistema de archivos, buscar archivos y configurar tu entorno para una productividad óptima.",
+      "url": "/docs/cursos/vim/navegacion_de_archivos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/configuracion_avanzada",
+      "title": "Configuración Avanzada",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a personalizar Vim para adaptarlo a tus necesidades y mejorar tu flujo de trabajo.",
+      "url": "/docs/cursos/vim/configuracion_avanzada",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/autocompletado_y_herramientas_de_desarrollo",
+      "title": "Autocompletado y Herramientas de Desarrollo",
+      "type": "content",
+      "category": "docs",
+      "description": "Configura autocompletado inteligente y herramientas de desarrollo en Vim para un entorno profesional.",
+      "url": "/docs/cursos/vim/autocompletado_y_herramientas_de_desarrollo",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/integracion_con_git",
+      "title": "Integración con Git",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina la integración de Git en Vim con Fugitive y herramientas complementarias para un flujo de trabajo eficiente.",
+      "url": "/docs/cursos/vim/integracion_con_git",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/snippets_y_templates",
+      "title": "Snippets y Templates",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear y usar snippets y templates automáticos en Vim para mejorar tu flujo de trabajo y productividad.",
+      "url": "/docs/cursos/vim/snippets_y_templates",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/dotfiles",
+      "title": "Dotfiles",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar tus dotfiles para un entorno de desarrollo portable, versionado y compartible. Organiza tu configuración de Vim, Tmux, Git y más.",
+      "url": "/docs/cursos/vim/dotfiles",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/trucos_avanzados",
+      "title": "Trucos Avanzados",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre los secretos mejor guardados de Vim. Técnicas ninja que transformarán tu productividad y te harán parecer un mago del terminal.",
+      "url": "/docs/cursos/vim/trucos_avanzados",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/introduccion_a_tmux",
+      "title": "Introducción a Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a usar Tmux para gestionar sesiones persistentes en terminal. Mejora tu productividad con esta herramienta esencial.",
+      "url": "/docs/cursos/vim/introduccion_a_tmux",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/sesiones_ventanas_y_paneles",
+      "title": "Sesiones, Ventanas y Paneles",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a gestionar sesiones, ventanas y paneles en Tmux para mejorar tu productividad en la terminal.",
+      "url": "/docs/cursos/vim/sesiones_ventanas_y_paneles",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/configuracion_y_personalizacion",
+      "title": "Configuración y Personalización",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a personalizar Tmux para adaptarlo a tu flujo de trabajo. Configura atajos, apariencia y plugins para maximizar tu productividad.",
+      "url": "/docs/cursos/vim/configuracion_y_personalizacion",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/integracion_vim_tmux",
+      "title": "Integración Vim + Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre cómo integrar Vim y Tmux para crear un entorno de desarrollo terminal altamente productivo. Aprende a configurar la navegación, gestionar sesiones y optimizar tu flujo de trabajo.",
+      "url": "/docs/cursos/vim/integracion_vim_tmux",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim",
+      "title": "⚡️ Vim + Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Curso completo de Vim y Tmux para maximizar tu productividad en terminal. Aprende desde lo básico hasta técnicas avanzadas.",
+      "url": "/docs/cursos/vim",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/cheatsheet_tmux",
+      "title": "Cheatsheet Tmux",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía rápida de comandos y configuraciones esenciales de Tmux para mejorar tu productividad en terminal.",
+      "url": "/docs/cursos/vim/cheatsheet_tmux",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/vim/cheatsheet_vim",
+      "title": "Cheatsheet Vim",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía rápida de comandos y atajos esenciales de Vim para mejorar tu productividad en el editor.",
+      "url": "/docs/cursos/vim/cheatsheet_vim",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/notas/devsecops",
+      "title": "devsecops",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/notas/devsecops",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/notas/nfs",
+      "title": "nfs",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/notas/nfs",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/docs/notas",
+      "title": "notas",
+      "type": "content",
+      "category": "docs",
+      "description": "",
+      "url": "/docs/notas",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2021/2021_09_12_docker_de_pago",
+      "title": "¿Docker desktop de pago?",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2021/2021_09_12_docker_de_pago",
+      "slug": "docker_desktop_de_pago",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2021/2021_09_19_docker_escaner_nulnerabilidades",
+      "title": "Analizar la seguridad de las imágenes de Docker",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2021/2021_09_19_docker_escaner_nulnerabilidades",
+      "slug": "analizar_seguridad_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2021/2021_11_10_wsl_y_windows_11",
+      "title": "Linux en Windows - Windows Subsystem Linux",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2021/2021_11_10_wsl_y_windows_11",
+      "slug": "linux_en_windows_WSL",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/errores_git",
+      "title": "Errores comunes en Git",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/errores_git",
+      "slug": "errores_comunes_git",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2021/2021_12_12_kali_en_docker",
+      "title": "Kali en Docker recopilación",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2021/2021_12_12_kali_en_docker",
+      "slug": "kalilinux_en_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2021/2021_12_30_potencia_tu_terminal",
+      "title": "Potencia tu terminal",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2021/2021_12_30_potencia_tu_terminal",
+      "slug": "potencia_tu_terminal",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2022/2022_02_27_raspberry_touchscreen",
+      "title": "Raspberry Pi Touchscreen 7",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2022/2022_02_27_raspberry_touchscreen",
+      "slug": "raspberry_pi_touchscreen_7_pulgadas",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2022/2022_03_29_docker_escalar_privilegios",
+      "title": "Escalar privilegios en docker",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2022/2022_03_29_docker_escalar_privilegios",
+      "slug": "escalar_privilegios_en_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2022/2022_08_08_potencia_powershell",
+      "title": "Potencia PowerShell",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2022/2022_08_08_potencia_powershell",
+      "slug": "potencia_powershell",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2022/2022_08_29_pentesting_desde_contenedor",
+      "title": "Pentesting desde un contenedor",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2022/2022_08_29_pentesting_desde_contenedor",
+      "slug": "pentesting_desde_un_contenedor",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2022/2022_12_01_docker_backups",
+      "title": "Crea y comparte copias de seguridad en docker",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2022/2022_12_01_docker_backups",
+      "slug": "crea_y_comparte_backups_en_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2022/2022_12_21_cka_experiencia",
+      "title": "CKA: Mi experiencia",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2022/2022_12_21_cka_experiencia",
+      "slug": "CKA_mi_experiencia",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2023/2023_01_10_power_toys",
+      "title": "PowerToys",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2023/2023_01_10_power_toys",
+      "slug": "powertoys_windows",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2023/2023_01_10_rancher_desktop",
+      "title": "La alternativa a Docker que estabas buscando - Rancher Desktop",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2023/2023_01_10_rancher_desktop",
+      "slug": "rancher_desktop",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2023/2023_03_08_aligerar_imagenes_docker",
+      "title": "Aligerar imágenes Docker",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2023/2023_03_08_aligerar_imagenes_docker",
+      "slug": "aligerar_imagenes_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/buenas_practicas_docker",
+      "title": "Verifica y mejora tus dockerfiles",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/buenas_practicas_docker",
+      "slug": "verifica_mejora_dockerfiles",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/diagramas_codigo",
+      "title": "Diagramas com código",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/diagramas_codigo",
+      "slug": "diagramas-como-codigo",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2023/gitleaks",
+      "title": "Gitleaks, detecta secretos en tu repositorio de git",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2023/gitleaks",
+      "slug": "gitleaks_secretos_git_repositorio_detectar",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/hadoolint_verificar_dockerfiles",
+      "title": "Verifica y mejora tus dockerfiles",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/hadoolint_verificar_dockerfiles",
+      "slug": "hadolint-verificar-mejorar-dockerfile",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2023/zerotier",
+      "title": "ZeroTier - Qué es y Cómo Instalar su CLI en Linux",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2023/zerotier",
+      "slug": "zerotier-cli-linux-instalacion",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/2024/2024_02_12_cracking_passwords",
+      "title": "Cracking de contraseñas con Hashcat",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/2024/2024_02_12_cracking_passwords",
+      "slug": "cracking_passwords_hashcat",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/Macos_en_docker",
+      "title": "Ejecuta Mac OS en Docker",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/Macos_en_docker",
+      "slug": "mac-os-en-docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/Entornos_remotos_gratuitos",
+      "title": "Entornos de desarrollo remotos y gratuitos",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/Entornos_remotos_gratuitos",
+      "slug": "entornos-remotos-gratuitos",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/kalilinux_wsl_interfaz_grafica",
+      "title": "Ejecutar Kali Linux en WSL con interfaz gráfica",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/kalilinux_wsl_interfaz_grafica",
+      "slug": "kalilinux-wsl-interfaz-grafica",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/secretos_docker",
+      "title": "Secretos en Docker y mejores prácticas",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/secretos_docker",
+      "slug": "secretos_docker_buenas_practicas",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/especial_5000_subcriptores",
+      "title": "¡Especial 5000 subscriptores en Youtube!",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/especial_5000_subcriptores",
+      "slug": "especial-5000-subscriptores",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/kubernetes_ubuntu_server_22.04",
+      "title": "Instalación de Kubernetes en Ubuntu Server 22.04 LTS",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/kubernetes_ubuntu_server_22.04",
+      "slug": "instalacion_kubernetes_ubuntu_server_22.04",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/servidor_compartido_npm_proxy_docker",
+      "title": "Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/servidor_compartido_npm_proxy_docker",
+      "slug": "servidor-compartido-npm-proxy-docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/raspberry_ip_fija",
+      "title": "Raspberry Pi con IP fija",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/raspberry_ip_fija",
+      "slug": "raspberry-ip-fija",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/vscode_trucos_ocultos",
+      "title": "VSCode lo tiene TODO",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/vscode_trucos_ocultos",
+      "slug": "vscode_vale_para_todo",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/backups_docker",
+      "title": "Backups de Docker",
+      "type": "content",
+      "category": "blog",
+      "description": "Aprende a realizar copias de seguridad de tus contenedores Docker y Kubernetes, asegurando la protección de tus datos y configuraciones.",
+      "url": "/blog/backups_docker",
+      "slug": "backups_docker",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/comunidad_vs_la_liga",
+      "title": "Comunidad vs La Liga: El Verdadero Duelo del Fútbol",
+      "type": "content",
+      "category": "blog",
+      "description": "La batalla de la comunidad contra La Liga de fútbol y la libertad de la red en España.",
+      "url": "/blog/comunidad_vs_la_liga",
+      "slug": "comunidad_vs_la_liga",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/debug_docker_build",
+      "title": "Depurar builds de Docker en VS Code como un profesional",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/debug_docker_build",
+      "slug": "debug_docker_build_vscode",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/devsecops_recomendaciones_2025",
+      "title": "Ruta DevSecOps, recomendaciones para empezar en 2025",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/devsecops_recomendaciones_2025",
+      "slug": "ruta_devsecops_recomendaciones_2025",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/blog/docker_model",
+      "title": "¿Ollama killer?, Modelos de IA en Docker Desktop",
+      "type": "content",
+      "category": "blog",
+      "description": "En este artículo, exploraremos cómo ejecutar modelos de IA como Llama o deepseek en Docker Desktop, gracias a la nueva funcionalidad de docker model.",
+      "url": "/blog/docker_model",
+      "slug": "docker_model_ai_mcp",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/kubeastronaut_cncf",
+      "title": "Kubeastronaut, mi experiencia y todas las dudas",
+      "type": "content",
+      "category": "blog",
+      "description": "Mi experiencia obteniendo el certificado Kubeastronaut de la CNCF, el proceso, los requisitos y resolver todas las dudas comunes",
+      "url": "/blog/kubeastronaut_cncf",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/kubectx_kubens",
+      "title": "Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente",
+      "type": "content",
+      "category": "blog",
+      "description": "Aprende a usar Kubectx y Kubens para cambiar de contexto y namespace en Kubernetes de forma rápida y sencilla. Mejora tu flujo de trabajo con estos comandos útiles.",
+      "url": "/blog/kubectx_kubens",
+      "slug": "kubectx_kubens_kubernetes_context",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/localstack_mas_terraform",
+      "title": "LocalStack, dudas comunes y cómo usarlo con terraform",
+      "type": "content",
+      "category": "blog",
+      "description": "Una guía para resolver dudas comunes al usar LocalStack con Terraform y las del vídeo anterior",
+      "url": "/blog/localstack_mas_terraform",
+      "slug": "localstack_terraform_mas_dudas",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/mi_ruta_devsecops_2025",
+      "title": "Mi ruta DevSecOps y aprendizaje personal a fecha de 2025",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/mi_ruta_devsecops_2025",
+      "slug": "mi_ruta_devsecops_reflexiones_recomendaciones_2025",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/blog/no_confiar_ciegamente_en_la_IA",
+      "title": "Jamás confíes ciegamente en la IA, y menos para tu infraestructura",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/no_confiar_ciegamente_en_la_IA",
+      "slug": "no_confiar_ciegamente_en_la_IA",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/raspberry_ip_fija",
+      "title": "3 cosas que obsesionan a los DevOps",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/raspberry_ip_fija",
+      "slug": "3-cosas-que-obsesionan-a-los-devops",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/5_trucos_para_construir_node_mas_rapidos",
+      "title": "5 trucos para construir aplicaciones Node más rápido",
+      "type": "content",
+      "category": "blog",
+      "description": "Descubre 5 trucos para optimizar la construcción de aplicaciones Node.js, mejorando la velocidad y eficiencia en el desarrollo.",
+      "url": "/blog/5_trucos_para_construir_node_mas_rapidos",
+      "slug": "5_trucos_para_construir_node_mas_rapido",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/docker_vs_podman_rancher",
+      "title": "Docker vs Podman vd Rancher en 2025, ¿cuál es la herramienta definitiva?",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/docker_vs_podman_rancher",
+      "slug": "docker_vs_podman_rancher_2025_quien_ganara",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/kubernetes_raspberry",
+      "title": "Kubernetes en Raspberry Pi con K3s",
+      "type": "content",
+      "category": "blog",
+      "description": "Crea tu propio cluster de Kubernetes en Raspberry Pi con K3s, una distribución ligera de Kubernetes que nos permite tener un cluster de Kubernetes en dispositivos con pocos recursos.",
+      "url": "/blog/kubernetes_raspberry",
+      "slug": "kubernetes_raspberry_k3s",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/registros_contenedores",
+      "title": "Registros de contenedores y alternativas a Dockerhub",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/registros_contenedores",
+      "slug": "Tu propio registry privado",
+      "val": 6,
+      "connected": false
+    },
+    {
+      "id": "/blog/tu_propio_homelab",
+      "title": "Crea tu propio homelab en 2025",
+      "type": "content",
+      "category": "blog",
+      "description": "Crea tu propio homelab en 2025",
+      "url": "/blog/tu_propio_homelab",
+      "slug": "tu_propio_homelab",
+      "val": 6,
+      "connected": false
+    }
+  ],
+  "links": [
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/introduccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/cultura",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/git_avanzado",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/metodologias",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/infraestructura_codigo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/gestion_configuraciones",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/monitoreo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/cicd_conceptos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/pipelines",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/testing",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/deployment_strategies",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/contenedores",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/microservicios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/sre",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/herramientas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/conceptos_basicos",
+      "target": "/docs/cursos/docker/introduccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/imagenes",
+      "target": "/docs/cursos/docker/dockerfiles_y_build",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/dockerfiles_y_build",
+      "target": "/docs/cursos/docker/conceptos_basicos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/docker_compose",
+      "target": "/docs/cursos/docker/tu_primera_app",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/docker_compose",
+      "target": "/docs/cursos/docker/en_produccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/docker_compose",
+      "target": "/docs/cursos/docker/ejecutar_un_contenedor",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/docker_compose",
+      "target": "/docs/cursos/docker/redes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/docker_compose",
+      "target": "/docs/cursos/docker/volumenes_y_archivos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/en_produccion",
+      "target": "/docs/cursos/docker/instalacion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/introduccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/instalacion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/conceptos_basicos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/ejecutar_un_contenedor",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/gestion_de_contenedores",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/imagenes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/dockerfiles_y_build",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/entrypoints_y_variables",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/gestion_de_imagenes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/volumenes_y_archivos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/redes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/docker_compose",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/docker_swarm",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/tu_primera_app",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/en_produccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/limites_y_recursos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/buildx_y_multiarquitectura",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/multistage_y_distroless",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/introduccion",
+      "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/introduccion",
+      "target": "/docs/cursos/docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/instalaciones_simples_y_playgrounds",
+      "target": "/docs/cursos/kubernetes/instalacion_productiva",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/pods",
+      "target": "/docs/cursos/kubernetes/deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/daemonsets_y_statefulsets",
+      "target": "/docs/cursos/kubernetes/almacenamiento_persistente",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/daemonsets_y_statefulsets",
+      "target": "/docs/cursos/kubernetes/jobs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/services",
+      "target": "/docs/cursos/kubernetes/manifiestos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/services",
+      "target": "/docs/cursos/kubernetes/ingress_controller",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/ingress_controller",
+      "target": "/docs/cursos/kubernetes/secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/healthchecks_y_probes",
+      "target": "/docs/cursos/kubernetes/deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/almacenamiento_persistente",
+      "target": "/docs/cursos/docker/volumenes_y_archivos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/arquitectura",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/instalacion_productiva",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/instalaciones_simples_y_playgrounds",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/manifiestos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/pods",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/namespaces_y_contextos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/daemonsets_y_statefulsets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/jobs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/services",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/ingress_controller",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/gateway",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/healthchecks_y_probes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/almacenamiento_persistente",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/rangos_y_quotas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/autoscaling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/scheduling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/taints_y_tolerations",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/logs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/helm",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/dashboards_y_herramientas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/introduccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/instalacion_y_configuracion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/los_modos_de_vim",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/movimientos_basicos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/edicion_basica",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/comandos_esenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/movimientos_avanzados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/busqueda_y_reemplazo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/buffers_ventanas_y_pestanas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/registros_y_macros",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/plugins_esenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/navegacion_de_archivos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/configuracion_avanzada",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/autocompletado_y_herramientas_de_desarrollo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/integracion_con_git",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/snippets_y_templates",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/dotfiles",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/trucos_avanzados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/introduccion_a_tmux",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/sesiones_ventanas_y_paneles",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/configuracion_y_personalizacion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/integracion_vim_tmux",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/cheatsheet_vim",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/vim",
+      "target": "/docs/cursos/vim/cheatsheet_tmux",
+      "type": "internal_link"
+    },
+    {
+      "source": "/blog/devsecops_recomendaciones_2025",
+      "target": "/blog/mi_ruta_devsecops_2025",
+      "type": "internal_link"
+    }
+  ]
+}

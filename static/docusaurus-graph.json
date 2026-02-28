@@ -1,0 +1,1116 @@
+[
+  {
+    "id": "cursos",
+    "title": "Índice de contenidos",
+    "linkTo": [
+      "cursos",
+      "README",
+      "README"
+    ],
+    "referencedBy": [
+      "cursos"
+    ]
+  },
+  {
+    "id": "101",
+    "title": "Introducción",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "docker",
+    "title": "docker",
+    "linkTo": [
+      "101",
+      "102",
+      "103",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "201",
+      "202",
+      "README"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "102",
+    "title": "Arquitectura de Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "103",
+    "title": "Instalación de Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "104",
+    "title": "Instalaciones para pocos recursos o entornos de pruebas gratuitos",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "105",
+    "title": "Conceptos básicos y kubectl",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "106",
+    "title": "Pods",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "107",
+    "title": "Namespaces y contextos",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "108",
+    "title": "Deployments en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "109",
+    "title": "DaemonSets y StatefulSets en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "110",
+    "title": "Jobs y CronJobs en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "111",
+    "title": "Servicios en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "112",
+    "title": "Ingress en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "113",
+    "title": "Gateway en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "114",
+    "title": "Probes liveness y readiness en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "115",
+    "title": "Rangos y Quotas en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "201",
+    "title": "Pods y sidecars",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "202",
+    "title": "Docker Buildx y Multiarquitectura",
+    "linkTo": [],
+    "referencedBy": [
+      "docker"
+    ]
+  },
+  {
+    "id": "README",
+    "title": "Curso MySQL WIP",
+    "linkTo": [],
+    "referencedBy": [
+      "docker",
+      "devops",
+      "contenedores",
+      "cursos"
+    ]
+  },
+  {
+    "id": "devops",
+    "title": "devops",
+    "linkTo": [
+      "README",
+      "README"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "contenedores",
+    "title": "contenedores",
+    "linkTo": [
+      "README",
+      "106",
+      "README"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "cheatsheet",
+    "title": "cheatsheet",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "kubernetes",
+    "title": "kubernetes",
+    "linkTo": [
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "126",
+      "200",
+      "200",
+      "201",
+      "README"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "principiantes",
+    "title": "principiantes",
+    "linkTo": [
+      "101"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "introduccion",
+    "title": "introduccion",
+    "linkTo": [
+      "101"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "arquitectura",
+    "title": "arquitectura",
+    "linkTo": [
+      "102"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "componentes",
+    "title": "componentes",
+    "linkTo": [
+      "102"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "instalación",
+    "title": "instalación",
+    "linkTo": [
+      "103"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "ubuntu",
+    "title": "ubuntu",
+    "linkTo": [
+      "103"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "kubeadm",
+    "title": "kubeadm",
+    "linkTo": [
+      "103"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "cluster",
+    "title": "cluster",
+    "linkTo": [
+      "103"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "minikube",
+    "title": "minikube",
+    "linkTo": [
+      "104"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "k3s",
+    "title": "k3s",
+    "linkTo": [
+      "104"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "playground",
+    "title": "playground",
+    "linkTo": [
+      "104"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "desarrollo",
+    "title": "desarrollo",
+    "linkTo": [
+      "104"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "kubectl",
+    "title": "kubectl",
+    "linkTo": [
+      "105"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "manifiestos",
+    "title": "manifiestos",
+    "linkTo": [
+      "105"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "yaml",
+    "title": "yaml",
+    "linkTo": [
+      "105"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "pods",
+    "title": "pods",
+    "linkTo": [
+      "106",
+      "201"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "namespaces",
+    "title": "namespaces",
+    "linkTo": [
+      "107"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "contextos",
+    "title": "contextos",
+    "linkTo": [
+      "107"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "organización",
+    "title": "organización",
+    "linkTo": [
+      "107"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "deployments",
+    "title": "deployments",
+    "linkTo": [
+      "108"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "rolling-updates",
+    "title": "rolling-updates",
+    "linkTo": [
+      "108"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "CKAD",
+    "title": "CKAD",
+    "linkTo": [
+      "108",
+      "110",
+      "112",
+      "201"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "daemonset",
+    "title": "daemonset",
+    "linkTo": [
+      "109"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "statefulset",
+    "title": "statefulset",
+    "linkTo": [
+      "109"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "jobs",
+    "title": "jobs",
+    "linkTo": [
+      "110"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "cronjobs",
+    "title": "cronjobs",
+    "linkTo": [
+      "110"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "automatización",
+    "title": "automatización",
+    "linkTo": [
+      "110"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "services",
+    "title": "services",
+    "linkTo": [
+      "111"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "networking",
+    "title": "networking",
+    "linkTo": [
+      "111",
+      "113"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "exposición",
+    "title": "exposición",
+    "linkTo": [
+      "111"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "ingress",
+    "title": "ingress",
+    "linkTo": [
+      "112"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "nginx",
+    "title": "nginx",
+    "linkTo": [
+      "112"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "load-balancer",
+    "title": "load-balancer",
+    "linkTo": [
+      "112"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "gateway",
+    "title": "gateway",
+    "linkTo": [
+      "113"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "health-checks",
+    "title": "health-checks",
+    "linkTo": [
+      "114"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "monitoring",
+    "title": "monitoring",
+    "linkTo": [
+      "114",
+      "124"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "probes",
+    "title": "probes",
+    "linkTo": [
+      "114"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "resources",
+    "title": "resources",
+    "linkTo": [
+      "115"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "quotas",
+    "title": "quotas",
+    "linkTo": [
+      "115"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "limits",
+    "title": "limits",
+    "linkTo": [
+      "115"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "CKA",
+    "title": "CKA",
+    "linkTo": [
+      "115",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "116",
+    "title": "Autoscaling en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "autoscaling",
+      "HPA",
+      "VPA",
+      "escalado"
+    ]
+  },
+  {
+    "id": "autoscaling",
+    "title": "autoscaling",
+    "linkTo": [
+      "116"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "HPA",
+    "title": "HPA",
+    "linkTo": [
+      "116"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "VPA",
+    "title": "VPA",
+    "linkTo": [
+      "116"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "escalado",
+    "title": "escalado",
+    "linkTo": [
+      "116"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "117",
+    "title": "Secrets y ConfigMaps en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "secrets",
+      "configmaps",
+      "configuración",
+      "seguridad"
+    ]
+  },
+  {
+    "id": "secrets",
+    "title": "secrets",
+    "linkTo": [
+      "117"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "configmaps",
+    "title": "configmaps",
+    "linkTo": [
+      "117"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "configuración",
+    "title": "configuración",
+    "linkTo": [
+      "117"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "seguridad",
+    "title": "seguridad",
+    "linkTo": [
+      "117",
+      "119"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "118",
+    "title": "Volúmenes en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "storage",
+      "volumes"
+    ]
+  },
+  {
+    "id": "storage",
+    "title": "storage",
+    "linkTo": [
+      "118"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "volumes",
+    "title": "volumes",
+    "linkTo": [
+      "118"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "119",
+    "title": "Seguridad en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "seguridad",
+      "RBAC",
+      "CKS",
+      "hardening"
+    ]
+  },
+  {
+    "id": "RBAC",
+    "title": "RBAC",
+    "linkTo": [
+      "119",
+      "121"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "CKS",
+    "title": "CKS",
+    "linkTo": [
+      "119"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "hardening",
+    "title": "hardening",
+    "linkTo": [
+      "119"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "120",
+    "title": "Usuarios y Roles en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "usuarios",
+      "service-accounts",
+      "autenticación",
+      "CKA"
+    ]
+  },
+  {
+    "id": "usuarios",
+    "title": "Bloqueo y desbloqueo de usuarios",
+    "linkTo": [
+      "120"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "service-accounts",
+    "title": "service-accounts",
+    "linkTo": [
+      "120"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "autenticación",
+    "title": "autenticación",
+    "linkTo": [
+      "120"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "121",
+    "title": "Roles en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "RBAC",
+      "roles",
+      "permisos",
+      "CKA"
+    ]
+  },
+  {
+    "id": "roles",
+    "title": "roles",
+    "linkTo": [
+      "121"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "permisos",
+    "title": "permisos",
+    "linkTo": [
+      "121"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "122",
+    "title": "Scheduling en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "scheduling",
+      "affinity",
+      "labels",
+      "CKA"
+    ]
+  },
+  {
+    "id": "scheduling",
+    "title": "scheduling",
+    "linkTo": [
+      "122",
+      "123"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "affinity",
+    "title": "affinity",
+    "linkTo": [
+      "122"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "labels",
+    "title": "labels",
+    "linkTo": [
+      "122"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "123",
+    "title": "Taints y tolerations en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "taints",
+      "tolerations",
+      "scheduling",
+      "CKA"
+    ]
+  },
+  {
+    "id": "taints",
+    "title": "taints",
+    "linkTo": [
+      "123"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "tolerations",
+    "title": "tolerations",
+    "linkTo": [
+      "123"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "124",
+    "title": "Logs en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "logs",
+      "troubleshooting",
+      "monitoring",
+      "CKA"
+    ]
+  },
+  {
+    "id": "logs",
+    "title": "logs",
+    "linkTo": [
+      "124"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "troubleshooting",
+    "title": "troubleshooting",
+    "linkTo": [
+      "124"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "125",
+    "title": "Helm en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "helm",
+      "charts",
+      "package-manager"
+    ]
+  },
+  {
+    "id": "helm",
+    "title": "helm",
+    "linkTo": [
+      "125"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "charts",
+    "title": "charts",
+    "linkTo": [
+      "125"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "package-manager",
+    "title": "package-manager",
+    "linkTo": [
+      "125"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "126",
+    "title": "Perfiles, clientes y dashboards en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "dashboard",
+      "herramientas",
+      "GUI",
+      "administración"
+    ]
+  },
+  {
+    "id": "dashboard",
+    "title": "dashboard",
+    "linkTo": [
+      "126"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "herramientas",
+    "title": "herramientas",
+    "linkTo": [
+      "126"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "GUI",
+    "title": "GUI",
+    "linkTo": [
+      "126"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "administración",
+    "title": "administración",
+    "linkTo": [
+      "126",
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "200",
+    "title": "Recursos Personalizados en Kubernetes",
+    "linkTo": [],
+    "referencedBy": [
+      "kubernetes",
+      "mantenimiento",
+      "backup",
+      "administración",
+      "CKA"
+    ]
+  },
+  {
+    "id": "mantenimiento",
+    "title": "mantenimiento",
+    "linkTo": [
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "backup",
+    "title": "backup",
+    "linkTo": [
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "CRD",
+    "title": "CRD",
+    "linkTo": [
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "recursos-personalizados",
+    "title": "recursos-personalizados",
+    "linkTo": [
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "avanzado",
+    "title": "avanzado",
+    "linkTo": [
+      "200"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "sidecars",
+    "title": "sidecars",
+    "linkTo": [
+      "201"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "multi-container",
+    "title": "multi-container",
+    "linkTo": [
+      "201"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "certificaciones",
+    "title": "certificaciones",
+    "linkTo": [
+      "README"
+    ],
+    "referencedBy": []
+  },
+  {
+    "id": "cifrar_descifrar",
+    "title": "cifrar_descifrar",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "clausulas_operadores",
+    "title": "clausulas_operadores",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "comandos_basicos",
+    "title": "comandos_basicos",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "combinacion_joins",
+    "title": "combinacion_joins",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "cursores",
+    "title": "cursores",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "export_import",
+    "title": "export_import",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "funciones_en_consultas",
+    "title": "funciones_en_consultas",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "modificacion_datos",
+    "title": "modificacion_datos",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "procedimientos_funciones",
+    "title": "procedimientos_funciones",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "sql_variables",
+    "title": "sql_variables",
+    "linkTo": [],
+    "referencedBy": []
+  },
+  {
+    "id": "triggers",
+    "title": "triggers",
+    "linkTo": [],
+    "referencedBy": []
+  }
+]

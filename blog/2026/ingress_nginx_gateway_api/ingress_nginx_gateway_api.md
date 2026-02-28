@@ -87,6 +87,7 @@ Existen múltiples implementaciones. Para una migración desde Ingress NGINX, **
 
 ```bash
 helm install ngf oci://ghcr.io/nginx/charts/nginx-gateway-fabric \
+  --version 2.4.2 \
   --create-namespace \
   -n nginx-gateway
 ```
@@ -96,6 +97,10 @@ Este paso despliega el nuevo controlador sin modificar el Ingress NGINX existent
 ### Paso 3 — Crear GatewayClass y Gateway
 
 **GatewayClass** (la define el equipo de infraestructura):
+
+:::note
+Si instalaste NGINX Gateway Fabric con el chart Helm por defecto (Paso 2), **la GatewayClass ya fue creada automáticamente**. Solo necesitas aplicar este YAML si utilizas una instalación personalizada o quieres cambiar el nombre.
+:::
 
 ```yaml
 apiVersion: gateway.networking.k8s.io/v1
@@ -120,14 +125,52 @@ spec:
   - name: http
     protocol: HTTP
     port: 80
+    allowedRoutes:
+      namespaces:
+        from: All       # permite HTTPRoutes de cualquier namespace
   - name: https
     protocol: HTTPS
     port: 443
     tls:
+      mode: Terminate   # termina TLS en el Gateway (valor por defecto, pero explícito)
       certificateRefs:
       - kind: Secret
         name: tls-secret
         namespace: nginx-gateway
+    allowedRoutes:
+      namespaces:
+        from: All       # permite HTTPRoutes de cualquier namespace
+```
+
+:::tip Importante — `allowedRoutes`
+Por defecto, un Gateway solo acepta HTTPRoutes del **mismo namespace** (`from: Same`). Si tus aplicaciones viven en namespaces distintos al del Gateway (lo habitual en producción), debes configurar `allowedRoutes.namespaces.from: All` o usar `from: Selector` con un selector de labels para un control más granular.
+
+Sin este campo, los HTTPRoutes de otros namespaces quedarán en estado `NotAllowed` y el tráfico no se enrutará.
+:::
+
+:::info Certificado TLS
+El secreto `tls-secret` debe existir en el namespace `nginx-gateway` antes de aplicar este manifiesto. En producción se recomienda usar [cert-manager](https://cert-manager.io/) para la gestión automática de certificados con Let's Encrypt.
+:::
+
+**Redirect HTTP → HTTPS** (opcional pero recomendado en producción):
+
+```yaml
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: http-to-https-redirect
+  namespace: nginx-gateway
+spec:
+  parentRefs:
+  - name: prod-gateway
+    namespace: nginx-gateway
+    sectionName: http
+  rules:
+  - filters:
+    - type: RequestRedirect
+      requestRedirect:
+        scheme: https
+        statusCode: 301
 ```
 
 ### Paso 4 — Migrar recursos Ingress a HTTPRoute
@@ -194,7 +237,11 @@ kubectl apply -f mi-app-httproute.yaml
 kubectl get httproute -A
 ```
 
-El campo `STATUS` debe mostrar `Accepted` y `Programmed`.
+La columna `PROGRAMMED` debe mostrar `True`. Para ver el detalle completo de las condiciones (`Accepted` y `Programmed`):
+
+```bash
+kubectl get httproute mi-app -n produccion -o yaml | grep -A 10 conditions
+```
 
 ### Paso 5 — Validar y retirar el Ingress antiguo
 

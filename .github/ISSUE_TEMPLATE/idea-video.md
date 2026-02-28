@@ -29,13 +29,4 @@ assignees: pabpereza
 ### Referencias / inspiración
 <!-- Links útiles, repositorios, docs, vídeos relacionados... -->
 
-### Posibles sponsors
-<!-- Empresas o herramientas que encajarían como patrocinador (opcional) -->
 
----
-
-**Flujo:**
-- `💡 idea` → en el radar
-- `🔜 próximo` → siguiente en el pipeline (Gandalf activa la tropa)
-- `⚙️ en-progreso` → PR abierta, pipeline activo
-- `✅ publicado` → cerrar issue

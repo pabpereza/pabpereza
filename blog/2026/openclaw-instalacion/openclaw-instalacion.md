@@ -205,6 +205,157 @@ openclaw gateway start
 
 Los cambios en los ficheros del workspace se recogen en la siguiente sesión. Para forzar reload inmediato: `openclaw gateway restart`.
 
+## Bastionado del VPS (si no es tu portátil)
+
+Esta sección es opcional si estás en local. Si has instalado OpenClaw en un VPS público, lo que sigue es lo mínimo para no dejar la puerta abierta. Los bots de internet escanean puertos constantemente — un servidor mal configurado tiene una vida media de horas.
+
+### SSH — el orden importa
+
+El error más común en tutoriales: cambiar el puerto, reiniciar SSH y perder el acceso porque el firewall no estaba actualizado. El orden correcto:
+
+```bash
+# 1. Sube tu clave pública ANTES de cambiar nada
+ssh-copy-id -i ~/.ssh/id_ed25519.pub usuario@ip-vps
+
+# 2. Verifica que entras con clave (sin contraseña)
+ssh -i ~/.ssh/id_ed25519 usuario@ip-vps
+
+# 3. Ahora edita /etc/ssh/sshd_config
+```
+
+En `/etc/ssh/sshd_config`, tres líneas críticas:
+
+```
+Port 2222               # cambia el puerto por defecto
+PermitRootLogin no      # nadie entra como root
+PasswordAuthentication no  # solo clave, nunca contraseña
+PubkeyAuthentication yes
+MaxAuthTries 3
+LoginGraceTime 30
+AllowUsers tu_usuario
+```
+
+**Regla de oro:** nunca cierres la sesión SSH actual hasta verificar desde otra terminal que el nuevo config funciona.
+
+```bash
+# Orden correcto: primero regla en firewall, luego reiniciar SSH
+ufw allow 2222/tcp
+systemctl restart sshd
+
+# Verifica desde OTRA terminal antes de cerrar la sesión actual
+ssh -p 2222 usuario@ip-vps
+```
+
+### Firewall (UFW)
+
+```bash
+apt install ufw -y
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow 2222/tcp      # SSH — tu nuevo puerto, PRIMERO
+ufw allow 80/tcp        # solo si sirves web
+ufw allow 443/tcp       # solo si sirves web
+ufw enable
+ufw status verbose
+```
+
+El puerto del gateway OpenClaw (`3737` por defecto) **no debe abrirse al exterior**. Debe escuchar solo en `127.0.0.1`. Verifica tras la instalación:
+
+```bash
+ss -ltnup | grep 3737
+# Bien:  127.0.0.1:3737  (solo localhost)
+# Mal:   0.0.0.0:3737    (expuesto al exterior)
+```
+
+Si necesitas acceso remoto al gateway, usa un reverse proxy con TLS (Caddy es el más sencillo) o Tailscale para acceso sin puertos públicos.
+
+### Fail2ban
+
+```bash
+apt install fail2ban -y
+```
+
+Crea `/etc/fail2ban/jail.local`:
+
+```ini
+[DEFAULT]
+bantime  = 1h
+findtime = 10m
+maxretry = 5
+
+[sshd]
+enabled  = true
+port     = 2222
+maxretry = 3
+bantime  = 24h
+```
+
+Tres intentos fallidos → ban de 24 horas. Elimina el 99% del ruido de bots de fuerza bruta.
+
+### Actualizaciones automáticas de seguridad
+
+```bash
+apt install unattended-upgrades -y
+dpkg-reconfigure --priority=low unattended-upgrades
+```
+
+En `/etc/apt/apt.conf.d/50unattended-upgrades`, mantén `Automatic-Reboot "false"` — con servicios activos el reinicio debe ser manual y controlado.
+
+### Permisos de ~/.openclaw
+
+El directorio `~/.openclaw` contiene tus credenciales: la API key, el token de Telegram. Nadie más debería poder leerlas:
+
+```bash
+chmod 700 ~/.openclaw
+find ~/.openclaw -type f -name '*.json' -exec chmod 600 {} \;
+find ~/.openclaw -type d -exec chmod 700 {} \;
+```
+
+### Checklist — filmable y copipasteable
+
+```bash
+#!/bin/bash
+echo '=== OpenClaw VPS Security Checklist ==='
+
+# 1. SSH sin password
+grep -q 'PasswordAuthentication no' /etc/ssh/sshd_config \
+  && echo '[OK] SSH password auth disabled' \
+  || echo '[FAIL] SSH password auth still enabled'
+
+# 2. Root login deshabilitado
+grep -q 'PermitRootLogin no' /etc/ssh/sshd_config \
+  && echo '[OK] Root login disabled' \
+  || echo '[FAIL] Root login enabled'
+
+# 3. Firewall activo
+ufw status | grep -q 'Status: active' \
+  && echo '[OK] Firewall active' \
+  || echo '[FAIL] Firewall not active'
+
+# 4. Fail2ban corriendo
+systemctl is-active fail2ban > /dev/null 2>&1 \
+  && echo '[OK] Fail2ban running' \
+  || echo '[WARN] Fail2ban not running'
+
+# 5. Gateway NO expuesto al exterior
+ss -ltnup | grep -q '0.0.0.0:3737' \
+  && echo '[FAIL] Gateway exposed on all interfaces!' \
+  || echo '[OK] Gateway not exposed publicly'
+
+# 6. OpenClaw no corriendo como root
+ps aux | grep openclaw | grep -v grep | grep -q '^root' \
+  && echo '[FAIL] OpenClaw running as root!' \
+  || echo '[OK] OpenClaw not running as root'
+
+# 7. Permisos ~/.openclaw
+PERMS=$(stat -c '%a' ~/.openclaw 2>/dev/null)
+[ "$PERMS" = "700" ] \
+  && echo '[OK] ~/.openclaw permissions 700' \
+  || echo "[WARN] ~/.openclaw permissions: $PERMS (should be 700)"
+```
+
+Verde en todos es el objetivo. Rojo es acción inmediata antes de continuar.
+
 ## Siguientes pasos
 
 Con esto tienes un agente IA personal funcional en tu infraestructura. El siguiente nivel es **arquitectura multiagente**: varios agentes especializados —uno para infraestructura, otro para contenido, otro para el hogar— coordinándose entre ellos desde un único punto de entrada.

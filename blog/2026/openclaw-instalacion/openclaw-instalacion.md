@@ -50,6 +50,12 @@ node --version  # v22.x.x o superior
 
 **API key de tu proveedor de IA.** OpenClaw funciona con Anthropic (Claude), OpenAI, Google Gemini, y modelos locales vía Ollama. Yo uso Claude. El coste es pay-per-use con tu propia key — no hay suscripción a OpenClaw.
 
+:::warning Configura un límite de gasto antes de seguir
+Antes de pegar tu API key en ningún sitio: entra en la consola de tu proveedor y configura un **spending limit mensual** y una alerta de uso. En Anthropic es [console.anthropic.com → Settings → Limits](https://console.anthropic.com). OpenAI y Google tienen el equivalente en sus dashboards.
+
+Si tu máquina se compromete y alguien usa tu key sin control, lo que tienes es una factura de miles de euros. Cinco segundos de configuración para evitar un problema real. Este es el punto que más se ignora en tutoriales.
+:::
+
 **Un canal de mensajería.** El más fácil para empezar es Telegram. Abre BotFather, escribe `/newbot`, sigue los pasos, guarda el token. Dos minutos.
 
 No necesitas Docker, Kubernetes ni servidor dedicado. Tu portátil vale perfectamente.
@@ -62,9 +68,17 @@ Dos opciones equivalentes:
 # Opción 1: script de instalación
 curl -fsSL https://openclaw.ai/install.sh | bash
 
-# Opción 2: npm global
+# Opción 2: npm global (más trazable)
 npm install -g openclaw@latest
 ```
+
+:::tip curl | bash — revisa antes de ejecutar
+Si usas la opción 1, puedes (y deberías) inspeccionar el script antes de ejecutarlo:
+```bash
+curl -fsSL https://openclaw.ai/install.sh  # sin el pipe, solo lo muestra
+```
+El script es open source en GitHub. Si prefieres no ejecutar nada sin revisarlo, usa directamente `npm install`.
+:::
 
 Verificación:
 

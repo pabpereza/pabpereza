@@ -8,7 +8,7 @@ description: "Guía paso a paso para instalar OpenClaw, conectarlo a Telegram y 
 keywords: [openclaw, asistente ia personal, self-hosted, instalar openclaw, telegram bot ia, agente ia local, configuración openclaw]
 ---
 
-Cada día abres ChatGPT, le explicas quién eres, qué haces, qué necesitas. Al día siguiente, vuelta a empezar. Eso tiene nombre: una relación sin memoria. Este post es la guía de instalación de OpenClaw — el gateway self-hosted que convierte cualquier modelo de IA en un asistente que te conoce, vive en tu máquina y puede actuar de verdad.
+Este post es la guía de instalación de OpenClaw — el gateway self-hosted que convierte cualquier modelo de IA en un asistente que te conoce, vive en tu máquina y puede actuar de verdad.
 
 <!-- truncate -->
 
@@ -195,6 +195,6 @@ Los cambios en los ficheros del workspace se recogen en la siguiente sesión. Pa
 
 Con esto tienes un agente IA personal funcional en tu infraestructura. El siguiente nivel es **arquitectura multiagente**: varios agentes especializados —uno para infraestructura, otro para contenido, otro para el hogar— coordinándose entre ellos desde un único punto de entrada.
 
-Ese es el tema del siguiente vídeo: [Monté 8 agentes IA personales con OpenClaw — La Compañía del Anillo](/blog/openclaw-agentes-ia-personales).
+Ese es el tema del siguiente vídeo: [Monté 9 agentes IA personales con OpenClaw — La Compañía del Anillo](/blog/openclaw-agentes-ia-personales).
 
 ¡Hasta la próxima!

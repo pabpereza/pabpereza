@@ -119,15 +119,22 @@ El workspace es `~/.openclaw/workspace/` — una carpeta con ficheros markdown q
 
 ```
 ~/.openclaw/workspace/
-├── SOUL.md       # Personalidad y comportamiento
-├── USER.md       # Información sobre ti
-├── AGENTS.md     # Reglas de operación
-└── TOOLS.md      # Setup local (herramientas, IPs, etc.)
+├── SOUL.md         # Personalidad y comportamiento
+├── USER.md         # Información sobre ti
+├── AGENTS.md       # Reglas de operación
+├── TOOLS.md        # Setup local (herramientas, IPs, etc.)
+├── HEARTBEAT.md    # Checklist de tareas periódicas
+├── MEMORY.md       # Memoria a largo plazo
+└── memory/
+    ├── 2026-03-04.md   # Diario de hoy
+    └── 2026-03-03.md   # Diario de ayer
 ```
+
+Ninguno es obligatorio para que OpenClaw funcione. Sin ellos tienes un modelo genérico. La inversión de configurarlos se recupera en la primera semana.
 
 ### SOUL.md — La personalidad
 
-Define **cómo actúa** el agente. Sin este fichero, cada respuesta empieza con "¡Claro, estaré encantado de ayudarte!". Con él, le dices exactamente cómo quieres que se comporte:
+Define **cómo actúa** el agente, no qué sabe. Sin este fichero, cada respuesta empieza con "¡Claro, estaré encantado de ayudarte!". Con él, le dices exactamente cómo quieres que se comporte:
 
 ```markdown
 ## Core Truths
@@ -157,6 +164,80 @@ El agente lo lee al arrancar para no preguntarte lo básico en cada conversació
 ```
 
 Cuanto más concreto, mejor. El agente tiene contexto desde la primera pregunta.
+
+### AGENTS.md — Las reglas de operación
+
+El manual de cómo se comporta el agente: qué hace al inicio de cada sesión, cómo gestiona la memoria, qué requiere confirmación antes de actuar. La distinción más importante:
+
+```markdown
+## External vs Internal
+
+**Safe to do freely:**
+- Read files, explore, organize, learn
+- Search the web, check calendars
+
+**Ask first:**
+- Sending emails, tweets, public posts
+- Anything that leaves the machine
+- Anything you're uncertain about
+```
+
+Acciones internas: libres. Acciones externas: confirmación. Esa diferencia separa un agente que ayuda de uno que da sustos.
+
+### TOOLS.md — Tu setup local
+
+Tu cheat sheet de entorno: IPs de servidores, nombres de contenedores Docker, alias de SSH, rutas relevantes. Lo que es específico de tu máquina y no encaja en ningún otro fichero. Lo editas cuando cambia tu infraestructura.
+
+```markdown
+### SSH
+- home-server → 192.168.1.100, user: admin
+
+### Containers
+- nginx-prod → el proxy principal, puerto 8080
+```
+
+### HEARTBEAT.md — Tareas periódicas
+
+Si configuras heartbeats en OpenClaw, el agente puede hacer rondas automáticas. `HEARTBEAT.md` define el checklist de cada ronda:
+
+```markdown
+# HEARTBEAT.md
+
+- Revisar correo no leído urgente
+- Comprobar si hay eventos de calendario en las próximas 2h
+- Verificar estado del cluster K3s
+```
+
+Si lo dejas vacío, el agente no hace nada por su cuenta. Útil para automatizar revisiones periódicas sin tener que pedirlas cada vez.
+
+### MEMORY.md — Memoria a largo plazo
+
+No es el log de conversaciones — es la destilación. Decisiones importantes, contexto que no quieres repetir, preferencias que el agente debe recordar siempre. Lo que diferencia un agente que te conoce de verdad de uno que empieza de cero cada semana.
+
+```markdown
+# MEMORY.md
+
+- La API del cluster de producción está detrás de un VPN — siempre confirmar antes de ejecutar comandos destructivos
+- Pablo prefiere respuestas directas, sin preámbulos
+- El proyecto X está en pausa hasta abril
+```
+
+El agente puede actualizarlo por su cuenta cuando aprende algo relevante.
+
+### memory/ — El diario diario
+
+La carpeta `memory/` contiene un fichero por día: `2026-03-04.md`, `2026-03-05.md`. Son las notas en bruto de cada jornada — qué hizo el agente, qué decidiste, qué ocurrió. El agente los lee al arrancar para tener contexto reciente aunque la sesión sea nueva.
+
+Es cómo mantiene continuidad entre días sin depender de que el modelo recuerde nada entre sesiones.
+
+```
+memory/
+├── 2026-03-04.md   ← hoy
+├── 2026-03-03.md   ← ayer
+└── 2026-03-02.md
+```
+
+**Mínimo para empezar:** `SOUL.md` + `USER.md`. El resto lo añades según necesites.
 
 ## Primeras conversaciones
 

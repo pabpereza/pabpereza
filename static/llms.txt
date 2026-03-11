@@ -1,0 +1,180 @@
+# Pabpereza
+
+> Plataforma educativa en español creada por Pablo Pérez-Aradros, especializada en DevOps, ciberseguridad (DevSecOps) y desarrollo. Incluye cursos completos, artículos de blog y documentación técnica. El contenido acompaña a los vídeos del canal de YouTube @Pabpereza.
+
+Pablo Pérez-Aradros es un especialista en ciberseguridad enfocado en DevSecOps, actualmente en el equipo CISO de Banco Santander (CIB). Su filosofía es "Si quieres dominar algo, enséñalo" (Feynman). El sitio web sirve como documentación escrita complementaria a su contenido en vídeo.
+
+## Cursos
+
+- [Curso de Docker desde cero](https://pabpereza.dev/docs/cursos/docker/curso_de_docker_desde_cero): Curso completo de Docker: instalación, imágenes, contenedores, Dockerfiles, redes, volúmenes, Docker Compose, Swarm y producción
+- [Curso de Kubernetes](https://pabpereza.dev/docs/cursos/kubernetes/introduccion_a_kubernetes_guia_completa_para_principiantes): Curso completo de Kubernetes: pods, servicios, deployments, ingress, RBAC, autoscaling, Helm, CRDs, seguridad y mantenimiento
+- [Curso de DevOps](https://pabpereza.dev/docs/cursos/devops/Introduccion): Fundamentos de DevOps: cultura, metodologías, Git, contenedores, microservicios, IaC, CI/CD, testing, monitoreo y SRE
+- [Curso de Ansible](https://pabpereza.dev/docs/cursos/ansible/curso_ansible): Curso de Ansible: instalación, inventarios, variables, módulos, playbooks, roles, templates Jinja2 y buenas prácticas
+- [Curso de MySQL](https://pabpereza.dev/docs/cursos/mysql/mysql): Curso de MySQL: consultas, joins, procedimientos, triggers, cursores, usuarios y permisos
+- [Curso de Vim](https://pabpereza.dev/docs/cursos/vim/introduccion_vim): Vim, tmux, integración con VSCode y configuración como IDE con AstroNvim
+
+## Docker - Lecciones
+
+- [Instalación de Docker](https://pabpereza.dev/docs/cursos/docker/instalacion_de_docker_desktop_y_docker_engine_explicados)
+- [Conceptos básicos: imágenes, contenedores y Dockerfiles](https://pabpereza.dev/docs/cursos/docker/conceptos_basicos_de_docker_imagenes_contenedores_y_dockerfiles)
+- [Comando docker run y opciones](https://pabpereza.dev/docs/cursos/docker/como_ejecutar_un_contenedor_en_docker_comando_docker_run_y_opciones)
+- [Dockerfiles y docker build](https://pabpereza.dev/docs/cursos/docker/dockerfiles_y_docker_build_construccion_de_imagenes)
+- [Multi-stage y Distroless](https://pabpereza.dev/docs/cursos/docker/dockerfiles_multi_stage_y_distroless)
+- [Entrypoints, argumentos y variables de entorno](https://pabpereza.dev/docs/cursos/docker/entrypoints_argumentos_y_variables_de_entorno_en_docker)
+- [Gestión de contenedores](https://pabpereza.dev/docs/cursos/docker/gestion_de_contenedores_en_docker_comandos_stop_remove_y_mas)
+- [Gestión de imágenes: tags, exportar e importar](https://pabpereza.dev/docs/cursos/docker/gestion_de_imagenes_en_docker_tags_exportar_e_importar)
+- [Imágenes: pull, search, rmi, prune](https://pabpereza.dev/docs/cursos/docker/imagenes_de_contenedor_en_docker_pull_search_rmi_prune)
+- [Redes en Docker](https://pabpereza.dev/docs/cursos/docker/redes_en_docker_como_crear_redes_conectar_contenedores_y_tipos_de_redes)
+- [Volúmenes y persistencia](https://pabpereza.dev/docs/cursos/docker/volumenes_persistencia_y_montaje_de_archivos_en_docker)
+- [Docker Compose](https://pabpereza.dev/docs/cursos/docker/docker_compose_como_definir_y_ejecutar_aplicaciones_con_multiples_contenedores)
+- [Límites y control de recursos](https://pabpereza.dev/docs/cursos/docker/limites_y_control_de_recursos_en_docker)
+- [Docker Swarm](https://pabpereza.dev/docs/cursos/docker/docker_swarm_orquestacion_de_contenedores_y_escalabilidad)
+- [Buildx y multiarquitectura](https://pabpereza.dev/docs/cursos/docker/buildx_y_multiarquitectura_en_docker)
+- [Tu primera app completa en Docker](https://pabpereza.dev/docs/cursos/docker/tu_primera_app_completa_en_docker)
+- [Docker en producción](https://pabpereza.dev/docs/cursos/docker/docker_en_produccion)
+- [Cheatsheet Docker](https://pabpereza.dev/docs/cursos/docker/cheatsheet)
+
+## Kubernetes - Lecciones
+
+- [Introducción a Kubernetes](https://pabpereza.dev/docs/cursos/kubernetes/introduccion_a_kubernetes_guia_completa_para_principiantes)
+- [Conceptos básicos y kubectl](https://pabpereza.dev/docs/cursos/kubernetes/conceptos_basicos_y_kubectl_manifiestos_yaml_en_kubernetes)
+- [Arquitectura: Control Plane y Workers](https://pabpereza.dev/docs/cursos/kubernetes/arquitectura_de_kubernetes_control_plane_y_workers_explicados)
+- [Instalación con kubeadm](https://pabpereza.dev/docs/cursos/kubernetes/instalacion_de_kubernetes_cluster_completo_ubuntu_server_con_kubeadm)
+- [Playgrounds: Minikube, K3s, Docker Desktop](https://pabpereza.dev/docs/cursos/kubernetes/kubernetes_playgrounds_minikube_k3s_docker_desktop_y_entornos_de_prueba)
+- [Pods](https://pabpereza.dev/docs/cursos/kubernetes/pods_en_kubernetes_guia_completa_desde_cero)
+- [Pods y Sidecars](https://pabpereza.dev/docs/cursos/kubernetes/pods_y_sidecars_en_kubernetes_multi_container_patterns)
+- [Servicios: ClusterIP, NodePort y LoadBalancer](https://pabpereza.dev/docs/cursos/kubernetes/servicios_en_kubernetes_clusterip_nodeport_y_loadbalancer)
+- [Deployments y Rolling Updates](https://pabpereza.dev/docs/cursos/kubernetes/deployments_en_kubernetes_rolling_updates_y_gestion_de_aplicaciones)
+- [DaemonSet y StatefulSet](https://pabpereza.dev/docs/cursos/kubernetes/daemonset_y_statefulset_en_kubernetes_guia_completa)
+- [Jobs y CronJobs](https://pabpereza.dev/docs/cursos/kubernetes/jobs_y_cronjobs_en_kubernetes_automatizacion_de_tareas)
+- [Ingress Controller](https://pabpereza.dev/docs/cursos/kubernetes/ingress_controller_en_kubernetes)
+- [Gateway API](https://pabpereza.dev/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso)
+- [Namespaces y Contextos](https://pabpereza.dev/docs/cursos/kubernetes/namespaces_y_contextos_en_kubernetes_organizacion_y_aislamiento)
+- [Secrets y ConfigMaps](https://pabpereza.dev/docs/cursos/kubernetes/secrets_y_configmaps_en_kubernetes_gestion_de_configuracion)
+- [Almacenamiento](https://pabpereza.dev/docs/cursos/kubernetes/kubernetes_almacenamiento)
+- [Persistent Volumes y PVCs](https://pabpereza.dev/docs/cursos/kubernetes/persistent_volumes_y_persistent_volume_claims_en_kubernetes)
+- [RBAC: Roles y RoleBindings](https://pabpereza.dev/docs/cursos/kubernetes/rbac_en_kubernetes_roles_clusterroles_y_rolebindings)
+- [Usuarios y Service Accounts](https://pabpereza.dev/docs/cursos/kubernetes/usuarios_y_service_accounts_en_kubernetes_gestion_de_identidades)
+- [Scheduling avanzado: NodeSelector y Affinity](https://pabpereza.dev/docs/cursos/kubernetes/scheduling_avanzado_en_kubernetes_nodeselector_affinity_y_anti_affinity)
+- [Taints y Tolerations](https://pabpereza.dev/docs/cursos/kubernetes/taints_y_tolerations_en_kubernetes_control_avanzado_de_scheduling)
+- [Resource Quotas y Limit Ranges](https://pabpereza.dev/docs/cursos/kubernetes/resource_quotas_y_limit_ranges_en_kubernetes_gestion_de_recursos)
+- [Autoscaling: HPA, VPA y Cluster Autoscaler](https://pabpereza.dev/docs/cursos/kubernetes/autoscaling_en_kubernetes_hpa_vpa_y_cluster_autoscaler)
+- [Health Checks: Liveness, Readiness y Startup Probes](https://pabpereza.dev/docs/cursos/kubernetes/health_checks_en_kubernetes_liveness_readiness_y_startup_probes)
+- [Helm](https://pabpereza.dev/docs/cursos/kubernetes/helm_para_kubernetes_gestion_de_aplicaciones_con_charts)
+- [Custom Resource Definitions (CRD)](https://pabpereza.dev/docs/cursos/kubernetes/custom_resource_definitions_crd_en_kubernetes_recursos_personalizados)
+- [Seguridad y Hardening](https://pabpereza.dev/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices)
+- [Logging y Troubleshooting](https://pabpereza.dev/docs/cursos/kubernetes/logging_en_kubernetes_gestion_de_logs_y_troubleshooting)
+- [Mantenimiento: Backup y Actualización](https://pabpereza.dev/docs/cursos/kubernetes/mantenimiento_de_kubernetes_backup_actualizacion_y_troubleshooting)
+- [Dashboards y Herramientas](https://pabpereza.dev/docs/cursos/kubernetes/dashboards_y_herramientas_de_kubernetes_kubernetes_dashboard_k9s_lens)
+
+## DevOps - Lecciones
+
+- [Introducción a DevOps](https://pabpereza.dev/docs/cursos/devops/Introduccion)
+- [Herramientas DevOps](https://pabpereza.dev/docs/cursos/devops/herramientas)
+- [Cultura DevOps](https://pabpereza.dev/docs/cursos/devops/Cultura)
+- [Metodologías](https://pabpereza.dev/docs/cursos/devops/Metodologias)
+- [Git avanzado](https://pabpereza.dev/docs/cursos/devops/Git_avanzado)
+- [Contenedores](https://pabpereza.dev/docs/cursos/devops/Contenedores)
+- [Microservicios](https://pabpereza.dev/docs/cursos/devops/Microservicios)
+- [Infraestructura como código](https://pabpereza.dev/docs/cursos/devops/Infraestructura_codigo)
+- [Gestión de configuraciones](https://pabpereza.dev/docs/cursos/devops/Gestion_configuraciones)
+- [CI/CD Conceptos](https://pabpereza.dev/docs/cursos/devops/CICD_conceptos)
+- [Pipelines](https://pabpereza.dev/docs/cursos/devops/Pipelines)
+- [Estrategias de despliegue](https://pabpereza.dev/docs/cursos/devops/Deployment_strategies)
+- [Testing](https://pabpereza.dev/docs/cursos/devops/Testing)
+- [Monitoreo](https://pabpereza.dev/docs/cursos/devops/Monitoreo)
+- [Seguridad](https://pabpereza.dev/docs/cursos/devops/Seguridad)
+- [SRE](https://pabpereza.dev/docs/cursos/devops/SRE)
+- [Cheatsheet DevOps](https://pabpereza.dev/docs/cursos/devops/cheatsheet_devops)
+
+## Ansible - Lecciones
+
+- [Introducción a Ansible](https://pabpereza.dev/docs/cursos/ansible/introduccion-ansible)
+- [Instalación](https://pabpereza.dev/docs/cursos/ansible/instalacion)
+- [Fundamentos](https://pabpereza.dev/docs/cursos/ansible/fundamentos)
+- [Inventarios](https://pabpereza.dev/docs/cursos/ansible/inventarios)
+- [Variables](https://pabpereza.dev/docs/cursos/ansible/variables)
+- [Módulos](https://pabpereza.dev/docs/cursos/ansible/modulos)
+- [Playbooks](https://pabpereza.dev/docs/cursos/ansible/playbooks)
+- [Roles](https://pabpereza.dev/docs/cursos/ansible/roles)
+- [Templates Jinja2](https://pabpereza.dev/docs/cursos/ansible/templates-jinja2-ansible)
+- [Ansible Galaxy](https://pabpereza.dev/docs/cursos/ansible/ansible-galaxy)
+- [Buenas prácticas](https://pabpereza.dev/docs/cursos/ansible/buenas-practicas-ansible)
+- [Laboratorios](https://pabpereza.dev/docs/cursos/ansible/labs)
+
+## MySQL - Lecciones
+
+- [Introducción a MySQL](https://pabpereza.dev/docs/cursos/mysql/mysql)
+- [Comandos básicos](https://pabpereza.dev/docs/cursos/mysql/comandos_basicos)
+- [Cláusulas y operadores](https://pabpereza.dev/docs/cursos/mysql/clausulas_operadores)
+- [Funciones en consultas](https://pabpereza.dev/docs/cursos/mysql/funciones_en_consultas)
+- [JOINs](https://pabpereza.dev/docs/cursos/mysql/combinacion_joins)
+- [Modificación de datos](https://pabpereza.dev/docs/cursos/mysql/modificacion_datos)
+- [Exportar e importar](https://pabpereza.dev/docs/cursos/mysql/export_import)
+- [Procedimientos y funciones](https://pabpereza.dev/docs/cursos/mysql/procedimientos_funciones)
+- [Triggers](https://pabpereza.dev/docs/cursos/mysql/triggers)
+- [Cursores](https://pabpereza.dev/docs/cursos/mysql/cursores)
+- [Variables SQL](https://pabpereza.dev/docs/cursos/mysql/sql_variables)
+- [Usuarios](https://pabpereza.dev/docs/cursos/mysql/usuarios)
+- [Permisos](https://pabpereza.dev/docs/cursos/mysql/permisos)
+- [Cifrar y descifrar](https://pabpereza.dev/docs/cursos/mysql/cifrar_descifrar)
+
+## Blog - Artículos
+
+- [Kubeastronaut CNCF](https://pabpereza.dev/blog/2025/kubeastronaut_cncf/kubeastronaut_cncf): Experiencia obteniendo la distinción Kubeastronaut de la CNCF
+- [Mi ruta DevSecOps 2025](https://pabpereza.dev/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025): Reflexiones y recomendaciones para la ruta DevSecOps
+- [Ruta DevSecOps recomendaciones 2025](https://pabpereza.dev/blog/ruta_devsecops_recomendaciones_2025): Recomendaciones actualizadas para DevSecOps
+- [No confiar ciegamente en la IA](https://pabpereza.dev/blog/no_confiar_ciegamente_en_la_IA): Reflexiones sobre confianza en herramientas de IA
+- [Docker Model AI MCP](https://pabpereza.dev/blog/docker_model_ai_mcp): Docker Model Runner y MCP para IA
+- [Apple Container - Contenedores en macOS](https://pabpereza.dev/blog/apple_container_analisis_contenedores_macos): Análisis de Apple Container para macOS
+- [LocalStack + Terraform](https://pabpereza.dev/blog/localstack_terraform_mas_dudas): Uso de LocalStack con Terraform
+- [Entrar en IT en 2026](https://pabpereza.dev/blog/entrar_en_it_2026): Consejos para entrar en el sector IT
+- [CKA - Mi experiencia](https://pabpereza.dev/blog/CKA_mi_experiencia): Experiencia con la certificación CKA de Kubernetes
+- [Aligerar imágenes Docker](https://pabpereza.dev/blog/aligerar_imagenes_docker): Técnicas para reducir el tamaño de imágenes Docker
+- [Analizar seguridad Docker](https://pabpereza.dev/blog/analizar_seguridad_docker): Herramientas para analizar la seguridad en Docker
+- [Backups en Docker](https://pabpereza.dev/blog/backups_docker): Estrategias de backup para contenedores Docker
+- [Cracking passwords con Hashcat](https://pabpereza.dev/blog/cracking_passwords_hashcat): Tutorial de cracking de contraseñas con Hashcat
+- [Debug Docker Build en VSCode](https://pabpereza.dev/blog/debug_docker_build_vscode): Depuración de builds Docker en Visual Studio Code
+- [Diagramas como código](https://pabpereza.dev/blog/diagramas-como-codigo): Herramientas para crear diagramas como código
+- [Docker Desktop de pago](https://pabpereza.dev/blog/docker_desktop_de_pago): Alternativas a Docker Desktop de pago
+- [Entornos remotos gratuitos](https://pabpereza.dev/blog/entornos-remotos-gratuitos): Opciones de entornos de desarrollo remotos gratuitos
+- [Errores comunes en Git](https://pabpereza.dev/blog/errores_comunes_git): Errores frecuentes en Git y cómo solucionarlos
+- [Escalar privilegios en Docker](https://pabpereza.dev/blog/escalar_privilegios_en_docker): Escalada de privilegios en contenedores Docker
+- [Gitleaks - Detectar secretos en Git](https://pabpereza.dev/blog/gitleaks_secretos_git_repositorio_detectar): Uso de Gitleaks para detectar secretos en repositorios
+- [Hadolint - Verificar y mejorar Dockerfiles](https://pabpereza.dev/blog/hadolint-verificar-mejorar-dockerfile): Linting de Dockerfiles con Hadolint
+- [Homelab - Rack](https://pabpereza.dev/blog/homelab-1-rack): Montaje de rack para homelab
+- [Instalación Kubernetes en Ubuntu Server](https://pabpereza.dev/blog/instalacion_kubernetes_ubuntu_server_22.04): Guía de instalación de Kubernetes en Ubuntu Server 22.04
+- [Kali Linux en Docker](https://pabpereza.dev/blog/kalilinux_en_docker): Ejecutar Kali Linux en contenedores Docker
+- [Kali Linux WSL con interfaz gráfica](https://pabpereza.dev/blog/kalilinux-wsl-interfaz-grafica): Kali Linux en WSL con GUI
+- [Kubectx y Kubens](https://pabpereza.dev/blog/kubectx_kubens_kubernetes_context): Gestión de contextos Kubernetes con kubectx y kubens
+- [Linux en Windows con WSL](https://pabpereza.dev/blog/linux_en_windows_WSL): Configuración de WSL en Windows
+- [macOS en Docker](https://pabpereza.dev/blog/mac-os-en-docker): Ejecutar macOS en contenedores Docker
+- [Pentesting desde un contenedor](https://pabpereza.dev/blog/pentesting_desde_un_contenedor): Pentesting usando contenedores Docker
+- [Potencia PowerShell](https://pabpereza.dev/blog/potencia_powershell): Mejoras y trucos para PowerShell
+- [Potencia tu terminal](https://pabpereza.dev/blog/potencia_tu_terminal): Personalización y mejora del terminal
+- [PowerToys Windows](https://pabpereza.dev/blog/powertoys_windows): Utilidades PowerToys para Windows
+- [Rancher Desktop](https://pabpereza.dev/blog/rancher_desktop): Alternativa a Docker Desktop con Rancher Desktop
+- [Raspberry Pi Touchscreen 7 pulgadas](https://pabpereza.dev/blog/raspberry_pi_touchscreen_7_pulgadas): Configuración de pantalla táctil en Raspberry Pi
+- [Raspberry IP fija](https://pabpereza.dev/blog/raspberry-ip-fija): Configurar IP estática en Raspberry Pi
+- [Secretos Docker - Buenas prácticas](https://pabpereza.dev/blog/secretos_docker_buenas_practicas): Gestión segura de secretos en Docker
+- [Servidor compartido con NPM Proxy y Docker](https://pabpereza.dev/blog/servidor-compartido-npm-proxy-docker): Configuración de servidor compartido con Nginx Proxy Manager
+- [Verificar y mejorar Dockerfiles](https://pabpereza.dev/blog/verifica_mejora_dockerfiles): Herramientas para verificar Dockerfiles
+- [VSCode vale para todo](https://pabpereza.dev/blog/vscode_vale_para_todo): Usos avanzados de Visual Studio Code
+- [Windows en Docker con KVM](https://pabpereza.dev/blog/windows-en-docker-kvm): Ejecutar Windows en Docker usando KVM
+- [ZeroTier CLI Linux](https://pabpereza.dev/blog/zerotier-cli-linux-instalacion): Instalación de ZeroTier en Linux
+- [Zimaboard 2 - NAS casero](https://pabpereza.dev/blog/zimaboard2_nas_casero/zimaborad2_nas_casero): Montaje de NAS casero con Zimaboard 2
+
+## Optional
+
+## Notas
+
+- [Notas DevSecOps](https://pabpereza.dev/docs/notas/devsecops): Notas sobre DevSecOps
+- [Notas NFS](https://pabpereza.dev/docs/notas/nfs): Notas sobre NFS
+
+## Páginas
+
+- [Sobre mí](https://pabpereza.dev/about_me): Información sobre Pablo Pérez-Aradros
+- [Política de privacidad](https://pabpereza.dev/privacidad): Política de privacidad del sitio
+- [Política de cookies](https://pabpereza.dev/cookies): Política de cookies
+- [Aviso legal](https://pabpereza.dev/aviso-legal): Aviso legal del sitio
+- [Grafo de contenido](https://pabpereza.dev/content-graph): Visualización interactiva de relaciones entre contenidos

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "ansible-expert": {
+      "source": "personamanagmentlayer/pcl",
+      "sourceType": "github",
+      "computedHash": "759e47e88c3a04f2645fac14e5f3f0c28e6e0322ad2e531d57d230ab18fac926"
+    },
+    "devops-engineer": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "computedHash": "41795f38a0cc207a5336a60313b84df732b5be2ed9215b3a0f8202f9e0e932fe"
+    },
+    "docker-expert": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "76bd52d934142cb8f3861cb37f2a39ad93bf3b03dcbc94a02beaa0544f6dd7c2"
+    },
+    "kubernetes-specialist": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "computedHash": "0201bb26821bd6de6ea341f45da863ef70bba0b44363da72f26b7bf7c86869e9"
+    },
+    "mysql": {
+      "source": "planetscale/database-skills",
+      "sourceType": "github",
+      "computedHash": "6cb0725d61db4940f9eab79436753fe4ecb261f57ae8a08b2ac28676f82cbecc"
+    },
+    "neovim": {
+      "source": "julianobarbosa/claude-code-skills",
+      "sourceType": "github",
+      "computedHash": "ff0e9af9763683f5cc5032b350fa9ce011368ae26b51f04a640cfc3a1f44a40e"
+    }
+  }
+}

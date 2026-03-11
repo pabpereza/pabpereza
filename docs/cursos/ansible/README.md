@@ -37,3 +37,12 @@ Video pendiente de grabación
 * [8. Templates con Jinja2](08-templates.md)
 * [9. Ansible Galaxy y Collections](09-ansible-galaxy.md)
 * [10. Buenas Prácticas](10-buenas-practicas.md)
+
+### Profesional
+* [11. Manejo de Errores](11-manejo-errores.md)
+* [12. Ansible Vault](12-vault.md)
+* [13. Include, Import y Control Avanzado](13-include-import.md)
+* [14. Depuración y Troubleshooting](14-depuracion.md)
+
+### Proyecto Final
+* [15. Proyecto Final - Desplegando NotaStack](15-proyecto-final.md)

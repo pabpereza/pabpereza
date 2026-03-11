@@ -1,7 +1,7 @@
 ---
 title: Laboratorios y Ejercicios Prácticos
 sidebar_label: 💻 Labs
-sidebar_position: 11
+sidebar_position: 15
 ---
 
 # Laboratorios y Ejercicios Prácticos 💻
@@ -248,6 +248,78 @@ Cada módulo del curso tiene ejercicios asociados. Están organizados por dificu
 - Testing y validación
 - Integración con CI/CD
 - Documentación y mantenibilidad
+
+---
+
+### Módulo 11: Manejo de Errores
+**Archivo**: Los ejercicios están incluidos en [11-manejo-errores.md](../11-manejo-errores.md)
+
+**Ejercicios disponibles:**
+- 🟢 Usar `ignore_errors` para tareas opcionales
+- 🟡 Implementar `block/rescue/always` para rollback de despliegues
+- 🟡 Controlar fallos con `failed_when` y `changed_when`
+- 🟡 Validar requisitos con `assert` antes de actuar
+- 🔴 Crear despliegue resiliente con rollback automático
+
+**Qué practicarás:**
+- Manejo estructurado de errores (try/catch/finally)
+- Control fino de qué es un fallo y qué es un cambio
+- Reintentos inteligentes con `retries` y `until`
+- Validaciones previas al despliegue
+
+---
+
+### Módulo 12: Ansible Vault
+**Archivo**: Los ejercicios están incluidos en [12-vault.md](../12-vault.md)
+
+**Ejercicios disponibles:**
+- 🟢 Crear y editar archivos cifrados
+- 🟢 Cifrar variables inline con `encrypt_string`
+- 🟡 Implementar el patrón profesional vars.yml + vault.yml
+- 🟡 Configurar Vault IDs por entorno
+- 🔴 Integrar Vault con sistemas externos de secretos
+
+**Qué practicarás:**
+- Comandos de Ansible Vault (create, edit, view, rekey)
+- Patrón de separación de variables públicas y secretas
+- Múltiples contraseñas por entorno
+- Uso de `no_log` para proteger la salida
+
+---
+
+### Módulo 13: Include, Import y Control Avanzado
+**Archivo**: Los ejercicios están incluidos en [13-include-import.md](../13-include-import.md)
+
+**Ejercicios disponibles:**
+- 🟢 Dividir playbook monolítico en archivos de tareas
+- 🟡 Usar `include_tasks` dinámico para multi-OS
+- 🟡 Crear playbook maestro con `import_playbook`
+- 🟡 Implementar `delegate_to` para zero-downtime deployments
+- 🔴 Orquestar despliegue multi-tier con serial y canary
+
+**Qué practicarás:**
+- Diferencia entre import (estático) e include (dinámico)
+- Delegación de tareas a otros hosts
+- Despliegue en lotes (rolling updates)
+- Tareas asíncronas para operaciones largas
+
+---
+
+### Módulo 14: Depuración y Troubleshooting
+**Archivo**: Los ejercicios están incluidos en [14-depuracion.md](../14-depuracion.md)
+
+**Ejercicios disponibles:**
+- 🟢 Usar niveles de verbosidad para diagnosticar
+- 🟢 Inspeccionar variables con el módulo `debug`
+- 🟡 Simular ejecuciones con `--check` y `--diff`
+- 🟡 Diagnosticar errores comunes de conexión y permisos
+- 🔴 Encontrar y corregir errores en un playbook roto
+
+**Qué practicarás:**
+- Niveles de verbosidad (-v a -vvvv)
+- Módulo debug y registro de variables
+- Herramientas: ansible-config, ansible-inventory, ansible-console
+- Método sistemático de depuración
 
 ---
 

@@ -114,7 +114,6 @@ Si vas a Telegram y mandas un mensaje al bot, responde. En diez minutos, de cero
 Ahora mismo es un agente genérico. No te conoce. Lo arreglamos con el workspace.
 
 ## El workspace: memoria y personalidad
-
 El workspace es `~/.openclaw/workspace/` — una carpeta con ficheros markdown que el agente carga al inicio de cada sesión. No hay que tocar código, solo editar texto.
 
 ```

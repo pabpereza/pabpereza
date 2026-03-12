@@ -24,10 +24,16 @@ Lo que lo diferencia del resto de modalidades:
 |---|---|---|---|
 | **Claude.ai** | ❌ Solo chat | Projects: ✅ | ✅ |
 | **Claude in Chrome** | ✅ Navega, clica, rellena | ❌ | ❌ |
-| **Claude Desktop** | Con connector | ✅ Projects | ✅ MCP |
+| **Claude Desktop** | Con connector (solo modelos 4.5) | ✅ Projects | ✅ MCP |
 | **Claude Code** | ✅ (para dev) | No entre sesiones | ✅ Filesystem/shell |
 
 **La tensión central:** la extensión tiene más autonomía de acción en el navegador, pero menos contexto persistente que Claude.ai. Sin Projects, sin MCP, sin memoria entre sesiones. Cada conversación empieza desde cero.
+
+**Nota sobre Claude Desktop + Chrome:** el conector entre Claude Desktop y la extensión de Chrome solo funciona con modelos Haiku 4.5, Sonnet 4.5 u Opus 4.5. Si tienes seleccionado otro modelo en Desktop, el conector se deshabilita sin aviso claro.
+
+:::warning El panel abierto = Claude ve tu pantalla en continuo
+Cuando el panel lateral de Claude está abierto, la extensión toma screenshots continuos de la pestaña activa — no solo durante tareas activas. Cualquier información visible en tu pantalla (correos, documentos confidenciales, credenciales, datos bancarios) es capturada mientras el panel esté abierto. Anthropic lo dice explícitamente: **"Avoid opening the extension while viewing sensitive information."** Cierra el panel cuando no lo estés usando activamente.
+:::
 
 :::warning Plan Pro = Haiku 4.5
 Este dato no aparece destacado en los tutoriales: con el plan Pro, Claude in Chrome funciona con Haiku 4.5 — el modelo más básico. Para usar Sonnet u Opus en el navegador necesitas plan Max, Team o Enterprise. Comprueba tu plan antes de configurar flujos de trabajo serios.
@@ -79,7 +85,9 @@ Prompt: "Visita estas cinco webs y para cada una extrae: plan de pricing,
 features principales, cómo se posicionan. Devuélvemelo en tabla."
 ```
 
-Claude visita cada web, extrae la información, devuelve la tabla estructurada. Sin copiar y pegar entre pestañas, sin perder el hilo de qué miraste en cada web.
+**Paso previo necesario:** arrastra las pestañas de cada web al tab group de Claude en Chrome. Cuando tienes varias webs agrupadas ahí, Claude puede ver e interactuar con todas a la vez. Sin hacer eso, solo ve la pestaña activa — la demo no funciona igual.
+
+Claude visita cada web del grupo, extrae la información, devuelve la tabla estructurada. Sin copiar y pegar entre pestañas, sin perder el hilo de qué miraste en cada web.
 
 La tabla resultante va directo a Notion, PowerPoint o un export. Lo que antes era una hora de trabajo manual: tres minutos.
 
@@ -143,13 +151,15 @@ Configuración recomendada: conceder permisos site by site según los vayas nece
 
 **3. Comportamiento probabilístico.** No es un automatizador determinístico como un script o Zapier. El mismo prompt puede producir resultados distintos en dos ejecuciones distintas. Para tareas críticas donde el resultado tiene que ser idéntico siempre, una herramienta de automatización clásica es más fiable.
 
-**4. Prompt injection.** Anthropic lo reconoce en su documentación de seguridad. Si navegas webs no confiables con la extensión activa, contenido malicioso en esas webs puede intentar manipular las instrucciones del agente. Con Opus el riesgo se reduce significativamente (~1% de éxito), con Haiku es más relevante.
+**4. Prompt injection.** Anthropic lo reconoce en su documentación de seguridad. Si navegas webs no confiables con la extensión activa, contenido malicioso en esas webs puede intentar manipular las instrucciones del agente. Con Opus 4.5 el riesgo baja a aproximadamente un 1% según los tests internos de Anthropic — esa cifra es específica de Opus 4.5, no de versiones anteriores ni de otros modelos. Con Haiku el riesgo es significativamente mayor.
 
-**5. Sitios bloqueados.** Servicios financieros (banca, brokers), contenido adulto, piratería. No está pensada para gestionar dinero.
+**5. Los filtros de output no son una barrera de seguridad.** La extensión intenta bloquear que Claude devuelva tokens y API keys en casos de inyección exitosa. Pero Anthropic es explícito: *"these filters are not a security boundary."* La primera línea de defensa real son los permisos por dominio: **no concedas permiso de JavaScript a dominios que no controlas**.
 
-**6. Solo Chrome.** Firefox, Edge, Safari: no disponibles.
+**6. Sitios bloqueados.** Servicios financieros (banca, brokers), contenido adulto, piratería. No está pensada para gestionar dinero.
 
-**7. Todavía en beta.** Funcionalidad incompleta, posibles bugs, comportamiento puede cambiar entre versiones.
+**7. Solo Chrome.** Firefox, Edge, Safari: no disponibles.
+
+**8. Todavía en beta.** Funcionalidad incompleta, posibles bugs, comportamiento puede cambiar entre versiones.
 
 ## Cuándo usar cada modalidad
 

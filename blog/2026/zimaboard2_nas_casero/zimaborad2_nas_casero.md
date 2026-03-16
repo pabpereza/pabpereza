@@ -7,6 +7,8 @@ Hoy analizamos la **ZimaBoard 2**. Sobre el papel, promete ser el eslabón perdi
 Vídeo del montaje: https://youtu.be/BhRj8hdtk84
 [![Vídeo del montaje](https://img.youtube.com/vi/BhRj8hdtk84/maxresdefault.jpg)](https://youtu.be/BhRj8hdtk84)
 
+<!-- truncate -->
+
 ## 1. Hardware: Más allá de la estética
 
 Lo primero que impacta es que no parece una placa de desarrollo; parece un producto final. El diseño industrial actúa como un enorme disipador pasivo.

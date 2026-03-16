@@ -12,6 +12,10 @@ Este post es la guía de instalación de OpenClaw — el gateway self-hosted que
 
 <!-- truncate -->
 
+Vídeo del montaje: https://youtu.be/tlJNyFxStDM
+    [![Vídeo del montaje](https://img.youtube.com/vi/tlJNyFxStDM/maxresdefault.jpg)](https://youtu.be/tlJNyFxStDM)
+
+
 ## ¿Qué es OpenClaw y por qué no es solo otro chatbot?
 
 OpenClaw es un **gateway self-hosted open source** (licencia MIT) que se sienta entre tus aplicaciones de mensajería —Telegram, WhatsApp, Discord— y el modelo de IA que elijas. Eres tú quien controla el modelo, el contexto y las herramientas disponibles.
@@ -348,6 +352,5 @@ Tres intentos fallidos → ban de 24 horas. Elimina el 99% del ruido de bots de 
 
 Con esto tienes un agente IA personal funcional en tu infraestructura. El siguiente nivel es **arquitectura multiagente**: varios agentes especializados —uno para infraestructura, otro para contenido, otro para el hogar— coordinándose entre ellos desde un único punto de entrada.
 
-Ese es el tema del siguiente vídeo: [Monté 9 agentes IA personales con OpenClaw — La Compañía del Anillo](/blog/openclaw-agentes-ia-personales).
 
 ¡Hasta la próxima!

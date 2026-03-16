@@ -23,25 +23,11 @@ Pero aquí viene la otra cara de la moneda, te doy tres argumentos por lo que si
 *   **Condiciones laborales:** Incluso con el ajuste de mercado, la flexibilidad y los sueldos siguen siendo muy superiores a la media de otros sectores.
 *   **La paradoja de la barrera:** Que sea difícil de entrar, también te protege una vez que estás dentro.
 
+<!-- truncate -->
 
-<!--sponsor-->
-En este vídeo quiero hablar de la realidad del sector con datos reales de 2026, ver los nichos más interesantes donde empezar y las rutas de aprendizaje viables hoy.
+Vídeo del montaje: https://youtu.be/SH2qMXS4ID4
+[![Vídeo del montaje](https://img.youtube.com/vi/SH2qMXS4ID4/maxresdefault.jpg)](https://youtu.be/SH2qMXS4ID4)
 
-Y sobre este último punto, quiero presentaros el sponsor de este vídeo, TripleTen.
-
-Si sientes que la teoría no es suficiente, TripleTen es un bootcamp intensivo diseñado para aprender una carrera tech desde cero y conseguir tu primer empleo.
-
-Lo elegí para este vídeo porque encaja con la realidad de 2026: aquí aprendes haciendo y construyes tu portafolio desde el primer día, que es exactamente lo que piden las empresas hoy para diferenciarte. Todo el programa es totalmente en español y tienen un historial sólido: han sido el Bootcamp #1 por 4 años consecutivos y el 87% de sus graduados consigue empleo en menos de 6 meses.
-
-De hecho, están tan seguros de su formación que te ofrecen el reembolso del 100% si no consigues trabajo en los 6 meses tras tu graduación. Es una forma muy segura de invertir en tu futuro.
-
-Puedes solicitar una consulta totalmente gratuita con su equipo experto, los cuales te resolverán todas tus dudas sobre el programa y te ayudarán a ver si es adecuado para ti.
-
-Tienes el enlace justo aquí abajo en la descripción y fijado en los comentarios. Además, si usas el código que aparece en pantalla , tendrás un descuento exclusivo del [XX]%. O si lo prefieres, puedes escanear este código QR ahora mismo para acceder a la oferta.
-
-
-
-<!--endsponsor-->
 
 
 ### 1. La realidad del "tapón de juniors": datos que duelen

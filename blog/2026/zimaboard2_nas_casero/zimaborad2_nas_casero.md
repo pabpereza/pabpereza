@@ -1,16 +1,11 @@
-¡Oído cocina! Aquí tienes el artículo técnico definitivo sobre la **ZimaBoard 2**.
-
-He seguido estrictamente la estructura del guion de vídeo (Intro -> Hardware -> Software -> NAS -> Usos Avanzados -> Cierre), pero profundizando en los detalles técnicos (arquitectura Alder Lake-N, buses PCIe, gestión de RAIDs) para que aporte valor extra a quien haya visto el vídeo y quiera "chicha".
-
-Mantenemos el tono *pabpereza*: técnico, directo y sin tonterías.
-
----
-
 # ZimaBoard 2: Análisis a fondo y Guía de Despliegue (Tu homelab en serio)
 
 Si llevas tiempo en el canal, sabes que me encanta el "cacharreo". Pero hay una línea fina entre cacharrear y sufrir. Llevamos años montando servidores en placas ARM, peleándonos con tarjetas SD que mueren los domingos por la tarde y adaptadores USB que se desconectan solos.
 
 Hoy analizamos la **ZimaBoard 2**. Sobre el papel, promete ser el eslabón perdido entre una Raspberry Pi y un servidor rack ruidoso. ¿Es solo diseño *cyberpunk* o hay una bestia x86 debajo del disipador? Vamos a destriparla siguiendo el flujo de trabajo real de un devops.
+
+Vídeo del montaje: https://youtu.be/BhRj8hdtk84
+[![Vídeo del montaje](https://img.youtube.com/vi/BhRj8hdtk84/maxresdefault.jpg)](https://youtu.be/BhRj8hdtk84)
 
 ## 1. Hardware: Más allá de la estética
 

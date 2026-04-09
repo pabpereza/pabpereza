@@ -68,12 +68,23 @@ miniaturas, diagramas, animaciones y assets graficos.
 | 4 | `#FF6B35` | Naranja neon |
 | 5 | `#FF3CAC` | Rosa/magenta neon |
 
-### Cara de Pablo — OBLIGATORIA en los 5 prompts
+### Sujeto — foto adjunta, NO describir a Pablo
+En los 5 prompts **nunca** describas la cara de Pablo ni generes a ninguna persona.
+Cada prompt debe:
+
+1. **Reservar un hueco** en la composicion para el sujeto (izquierda, centro-izquierda,
+   esquina, etc. segun variante).
+2. **Indicar explicitamente** que ese hueco se rellena con la foto adjunta al prompt,
+   con una formula del tipo:
+
 ```
-clean portrait cutout of young dark-haired man with beard,
-neutral/[expresion segun contexto] expression, sharp clean cutout
-against dark background, soft rim lighting
+Place the attached portrait photo (provided alongside this prompt) in the
+[zona reservada] as the reserved subject zone — integrate cleanly with rim
+lighting in [color de acento] to match the scene, do not generate any new person.
 ```
+
+3. El rim light del sujeto siempre coincide con el color de acento del prompt.
+4. Nunca incluir rasgos fisicos, edad, pelo, barba ni expresion del sujeto en el prompt.
 
 ### Composicion base por tipo de video
 - **Concepto tecnico:** cara Pablo un lado + icono/logo tech al otro

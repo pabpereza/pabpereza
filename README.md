@@ -12,16 +12,16 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Últimos vídeos publicados
 <p align=center>
 
+<a href='https://youtu.be/MwnJn9tBaa0' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/MwnJn9tBaa0/mqdefault.jpg' />
+</a>
+
 <a href='https://youtu.be/ANwbs3hlf-U' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/ANwbs3hlf-U/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/BhRj8hdtk84' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/BhRj8hdtk84/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/SH2qMXS4ID4' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/SH2qMXS4ID4/mqdefault.jpg' />
 </a>
 
 </p>
@@ -50,6 +50,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
+- [Migrar de Ingress a Gateway API en Kubernetes sin downtime](https://pabpereza.dev/blog/migrar_ingress_a_gateway_api_kubernetes)
 - [Instala tu propio asistente IA en 10 minutos con OpenClaw](https://pabpereza.dev/blog/openclaw-instalacion-primeros-pasos)
 - [ZimaBoard 2: Análisis a fondo y Guía de Despliegue (Tu homelab en serio)](https://pabpereza.dev/blog/2026/zimaboard2_nas_casero/zimaborad2_nas_casero)
 - [Cómo entrar en IT en 2026 - realidad, retos y oportunidades](https://pabpereza.dev/blog/entrar_en_it_2026)
@@ -59,7 +60,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 - [Kubeastronaut, mi experiencia y todas las dudas](https://pabpereza.dev/blog/2025/kubeastronaut_cncf/kubeastronaut_cncf)
 - [Depurar builds de Docker en VS Code como un profesional](https://pabpereza.dev/blog/debug_docker_build_vscode)
 - [LocalStack, dudas comunes y cómo usarlo con terraform](https://pabpereza.dev/blog/localstack_terraform_mas_dudas)
-- [Comunidad vs La Liga: El Verdadero Duelo del Fútbol](https://pabpereza.dev/blog/comunidad_vs_la_liga)
 
 
 ---

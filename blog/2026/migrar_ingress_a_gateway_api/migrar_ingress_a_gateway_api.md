@@ -1,4 +1,5 @@
---- slug: migrar_ingress_a_gateway_api_kubernetes
+---
+slug: migrar_ingress_a_gateway_api_kubernetes
 title: Migrar de Ingress a Gateway API en Kubernetes sin downtime
 description: Guía práctica para migrar Ingress a Gateway API en Kubernetes paso a paso con ingress2gateway, NGINX Gateway Fabric y convivencia gradual sin cortes
 tags: [kubernetes, gateway-api, ingress, networking, devops, devsecops]

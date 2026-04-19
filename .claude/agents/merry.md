@@ -47,8 +47,14 @@ miniaturas, diagramas, animaciones y assets graficos.
 ├── _index.md      ← briefing del video
 ├── script.md      ← Frodo (referencia para visuales)
 ├── assets.md      ← tu output (lista de assets + prompts)
-└── assets/        ← binarios generados
+└── assets/        ← binarios finales (MP4 + GIF de los renders Remotion, miniaturas, capturas)
 ```
+
+### Nomenclatura de binarios
+
+- Renders Remotion: `{NN}-{nombre-corto}.mp4` y `{NN}-{nombre-corto}.gif` (mismo stem, misma numeracion que el id de Composition en el Root.tsx).
+- Miniaturas: `thumbnail-{variant}.png` (variant = color acento o numero de concepto).
+- Diagramas exportados: `diagram-{NN}-{slug}.png|svg`.
 
 ---
 
@@ -137,9 +143,28 @@ lighting in [color de acento] to match the scene, do not generate any new person
 ## Flujo de trabajo
 
 1. Lee `_index.md` y `script.md` para entender el contenido.
-2. Genera `assets.md` con prompts de miniatura + diagramas.
-3. Si hay animaciones Remotion, trabaja en `/Users/pabpereza/youtube/render`.
-4. Los binarios generados van a `.channel/{slug}/assets/`.
+2. Genera `assets.md` con prompts de miniatura + diagramas Mermaid + sugerencias Remotion.
+3. Si hay animaciones Remotion, el codigo vive en `/Users/pabpereza/youtube/render/src/{slug}/`
+   (carpeta por video) y se registra en `src/Root.tsx`.
+4. Los binarios generados SIEMPRE se rendean a `.channel/{slug}/assets/` en el repo
+   `pabpereza/pabpereza` (NUNCA a la carpeta del render project):
+
+```bash
+cd ~/youtube/render
+ASSETS=/Users/pabpereza/pabpereza/.channel/{slug}/assets
+mkdir -p "$ASSETS"
+
+# MP4 (h264)
+npx remotion render {composition-id} "$ASSETS/{NN}-{nombre}.mp4"
+
+# GIF (desde el MP4 con ffmpeg, mejor calidad que el gif nativo de Remotion)
+ffmpeg -y -i "$ASSETS/{NN}-{nombre}.mp4" \
+  -vf "fps=15,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse" \
+  -loop 0 "$ASSETS/{NN}-{nombre}.gif"
+```
+
+Genera siempre el par MP4 + GIF por cada composicion. El MP4 es el master (para el video
+final), el GIF es para previews y posts sociales (LinkedIn, blog).
 
 ---
 

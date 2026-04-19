@@ -15,9 +15,12 @@ Tu tarea: $ARGUMENTS
 2. Genera `.channel/{slug}/assets.md` con:
    - **5 prompts de miniatura** siguiendo el sistema neo-minimalista (misma composicion, 5 acentos).
    - **Diagramas Mermaid** para los conceptos tecnicos del video.
-   - **Descripcion de animaciones Remotion** si aplica (repo en `~/youtube/render`).
+   - **Descripcion de animaciones Remotion** si aplica (repo en `~/youtube/render`, codigo
+     en `~/youtube/render/src/{slug}/`, registradas en `src/Root.tsx`).
    - **Lista de assets adicionales** necesarios (capturas, iconos, logos).
-3. Los binarios generados van a `.channel/{slug}/assets/`.
+3. Los binarios generados SIEMPRE van a `.channel/{slug}/assets/` en este repositorio
+   (`pabpereza/pabpereza`), nunca a la carpeta del render project. Por cada animacion
+   Remotion se genera el par **MP4 + GIF** con misma numeracion y stem.
 
 ## Sistema de miniaturas
 

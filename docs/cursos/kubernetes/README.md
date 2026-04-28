@@ -53,7 +53,7 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 > Todo el curso está disponible en mi [**CANAL DE YOUTUBE**](https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma), con más de **5 horas de contenido práctico**.
 
 
-**⭐ Apoya este contenido gratuito dejando una estrella a este repositorio y suscribiéndote a mi canal de Youtube.**
+**⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
 # 📚 Índice del Curso
 
@@ -129,7 +129,6 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 1. **⭐ Dale estrella a este repositorio para apoyar el proyecto**
 2. **🔔 Suscríbete al [canal de YouTube](https://www.youtube.com/@Pabpereza?sub_confirmation=1)**
 3. **📖 Comienza con la [Introducción a Kubernetes](./101.Introduccion.md)**
-4. **💬 Únete a la comunidadde [telegram](https://t.me/+mti-dcXs7c1lYjdk)**
 
 
 ---
@@ -142,4 +141,4 @@ Si quieres contribuir a este repositorio, puedes hacerlo de varias formas:
 * Compartiendo y difundiendo el contenido
 * Dejando una estrella para apoyar el contenido
   
-Siéntete libre de abrir una issue o un pull request con tus propuestas. **Apoya mi contenido siguiéndome en Youtube y Github, dando likes en los vídeos y dando una estrella a este repositorio.**
+Siéntete libre de abrir una [issue](https://github.com/pabpereza/pabpereza/issues) o un pull request con tus propuestas. **Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza), [dándome una estrella en GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**

@@ -41,6 +41,14 @@ date: 2025-06-05
 - Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Incluir `README.md` como índice principal de cada curso
 
+### Canal de YouTube (`/.channel/`)
+Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, posts de RRSS, sponsors) viven en `.channel/<slug>/` de este repositorio. **No** buscar en `~/youtube/` ni fuera de este repo.
+
+- Estructura por video: `.channel/<slug>/{research.md, script.md, assets.md, seo.md, social.md, thumbnails/, diagrams/}`
+- Las skills `/research`, `/guion`, `/assets`, `/revision`, `/social`, `/sponsors` operan sobre esta carpeta
+- Para videos ya publicados puede no quedar material provisional; en ese caso partir de la URL de YouTube (transcripción, metadatos) y reconstruir lo que se pida
+- Slug del proyecto = slug del video en YouTube (kebab-case)
+
 ## Skills por Curso
 
 Cuando trabajes en contenido de un curso específico, utiliza la skill correspondiente para obtener contexto experto en la materia:

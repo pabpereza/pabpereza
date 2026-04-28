@@ -35,7 +35,7 @@ Bienvenidos al curso de DevOps más práctico en español. Este curso está dise
 
 Todo el curso estará disponible en vídeo en esta [LISTA DE YOUTUBE](https://youtube.com/playlist?list=PLQhxXeq1oc2k-devops-course).
 
-**Apoya este contenido gratuito dejando una estrella a este repositorio y suscribiéndote a mi canal de Youtube.**
+**⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
 ## 📚 Índice del Curso
 

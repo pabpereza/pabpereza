@@ -1,48 +1,105 @@
 ---
-title: Curso de Ansible - Automatización IT
-sidebar_label: Ansible
-slug: curso_ansible
-description: Aprende a automatizar tu infraestructura con Ansible desde cero. Gestión de configuraciones, despliegues y orquestación sin agentes.
-image: https://pabpereza.dev/img/banner_ansible.png
-tags: [ansible, automatización, devops, iac]
+title: 🤖 Curso Ansible Gratuito - Automatización IT desde Cero
+description: >-
+  Curso completo de Ansible gratuito en español. Desde los fundamentos
+  de la automatización IT hasta integración con Docker, Kubernetes y
+  pipelines CI/CD (Jenkins, GitHub Actions). Con ejemplos prácticos
+  y proyecto final.
+image: 'https://pabpereza.dev/img/banner_ansible.png'
+keywords:
+  - ansible
+  - curso ansible
+  - tutorial ansible
+  - aprender ansible
+  - automatización
+  - infraestructura como código
+  - iac
+  - devops
+  - ansible español
+  - ansible gratuito
+tags:
+  - ansible
+  - devops
+  - automatizacion
+  - iac
+  - cursos
+sidebar_label: 🤖 Ansible
 ---
 
-# Curso de Ansible: Automatización IT
+# Curso Ansible: Automatización IT 🤖
 
-<!-- TODO: ![Ansible banner](img/banner_ansible.png) -->
+**¡Este curso está en desarrollo activo! Sígueme aquí o en YouTube para recibir actualizaciones del curso.**
 
-Bienvenido al curso de Ansible donde aprenderás a dominar la automatización de infraestructura, desde los conceptos básicos hasta la creación de roles complejos y el uso de Ansible Tower/AWX.
+<!-- ![Banner Ansible](img/banner_ansible.png) -->
 
+## 🚀 ¿Qué aprenderás en este curso?
 
+Este curso te lleva desde **cero conocimiento** hasta dominar la automatización con Ansible en entornos reales. Está diseñado para:
 
-:::info Video de Introducción
-Video pendiente de grabación
-:::
+- **Administradores de sistemas** que quieren dejar de hacer tareas a mano
+- **Desarrolladores** que necesitan provisionar entornos repetibles
+- **Profesionales DevOps** que buscan integrar Ansible en su CI/CD
+- **Estudiantes** que empiezan con Infraestructura como Código (IaC)
 
-## 📚 Índice del Curso
+### 🎯 Objetivos del curso
 
-### Introducción
-* [0. Introducción a Ansible](00-introduccion.md)
+Al terminar serás capaz de:
 
-### Fundamentos
-* [1. Fundamentos y Arquitectura](01-fundamentos.md)
-* [2. Instalación y Configuración](02-instalacion.md)
-* [3. Inventarios y Comandos Ad-Hoc](03-inventarios.md)
-* [4. Playbooks y YAML](04-playbooks.md)
-* [5. Módulos de Ansible](05-modulos.md)
-* [6. Variables y Facts](06-variables.md)
+- Diseñar inventarios estáticos y dinámicos para cualquier infraestructura
+- Escribir playbooks idempotentes y reutilizables con roles
+- Gestionar secretos de forma segura con Ansible Vault
+- Desplegar aplicaciones, contenedores y clústeres Kubernetes
+- Integrar Ansible en pipelines de Jenkins y GitHub Actions
+- Aplicar estrategias de despliegue (rolling, blue-green, canary)
 
-### Avanzado y Modularidad
-* [7. Roles y Modularidad](07-roles.md)
-* [8. Templates con Jinja2](08-templates.md)
-* [9. Ansible Galaxy y Collections](09-ansible-galaxy.md)
-* [10. Buenas Prácticas](10-buenas-practicas.md)
+> Todo el curso estará disponible en mi [**CANAL DE YOUTUBE**](https://www.youtube.com/@Pabpereza), un vídeo por capítulo, con explicaciones prácticas y código real.
 
-### Profesional
-* [11. Manejo de Errores](11-manejo-errores.md)
-* [12. Ansible Vault](12-vault.md)
-* [13. Include, Import y Control Avanzado](13-include-import.md)
-* [14. Depuración y Troubleshooting](14-depuracion.md)
+**⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
-### Proyecto Final
-* [15. Proyecto Final - Desplegando NotaStack](15-proyecto-final.md)
+# 📚 Índice del Curso
+
+### 🟢 Bloque I — Fundamentos
+*Pon en marcha tu entorno y comprende la filosofía de Ansible.*
+
+* [🚀 1. Introducción, Fundamentos e Instalación](./101.Introduccion.md) — ¿Qué es Ansible, arquitectura sin agentes y primer entorno
+* [📋 2. Inventarios y Hosts](./102.Inventarios.md) — Estáticos, dinámicos (AWS/Azure/GCP) y comandos ad-hoc
+* [📜 3. Playbooks y YAML](./103.Playbooks.md) — Sintaxis, estructura y ejecución
+* [🧩 4. Módulos e Idempotencia](./104.Modulos_idempotencia.md) — Módulos esenciales y por qué la idempotencia importa
+* [🔀 5. Variables y Control de Flujo](./105.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers
+
+### 🔵 Bloque II — Modularidad y Seguridad
+*Estructura tu código y protege tus secretos.*
+
+* [🎭 6. Roles, Templates y Galaxy](./106.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
+* [🔐 7. Seguridad y Credenciales](./107.Seguridad.md) — Vault, claves SSH y variables sensibles
+
+### 🔴 Bloque III — Ansible en Producción
+*Lleva Ansible al mundo real: contenedores, K8s y CI/CD.*
+
+* [🏭 8. Entornos Reales y Proyecto Final](./108.Entornos_reales.md) — Linux, despliegues, troubleshooting y proyecto NotaStack
+* [🐳 9. Ansible y Contenedores](./109.Contenedores.md) — Docker y Kubernetes con Ansible
+* [🚀 10. Ansible en DevOps y CI/CD](./110.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
+
+## 🎬 Equivalencia con el canal de YouTube
+
+Cada capítulo de este curso corresponde a **un vídeo** en el canal. Diez capítulos, diez vídeos: ni más, ni menos. Esto facilita seguirlo tanto leyendo como viendo, y te permite saltar a cualquier tema sin perder el hilo.
+
+## 🚀 ¡Comienza ahora!
+
+1. **⭐ Dale estrella al repositorio para apoyar el proyecto**
+2. **🔔 Suscríbete al [canal de YouTube](https://www.youtube.com/@Pabpereza?sub_confirmation=1)**
+3. **📖 Empieza con la [Introducción a Ansible](./101.Introduccion.md)**
+
+---
+
+## 🤝 Contribuir
+
+Si quieres contribuir a este repositorio, puedes hacerlo de varias formas:
+
+* Reportando errores
+* Proponiendo mejoras
+* Añadiendo contenido
+* Compartiendo y difundiendo el contenido
+* Dejando una estrella para apoyar el proyecto
+
+Siéntete libre de abrir una issue o un pull request con tus propuestas. **Apoya mi contenido siguiéndome en YouTube y GitHub, dando likes a los vídeos y dejando una estrella en el repositorio.**

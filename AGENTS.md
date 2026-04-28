@@ -1,324 +1,122 @@
-# GitHub Copilot Instructions
+# Specialized Agents and Workflows (Agnostic Version)
 
-Esta guía proporciona directrices para que los agentes de IA que trabajen en este repositorio de contenido educativo de DevSecOps.
-
-## Arquitectura del Proyecto
-
-Este es un sitio **Docusaurus v3** con:
-- **Build automatizado**: `npm run prebuild` genera el grafo de contenido antes de cada build
-- **Búsqueda**: Utiliza `docusaurus-lunr-search` para indexación
-- **Mermaid**: Soporte para diagramas mediante `@docusaurus/theme-mermaid`
-- **Grafo de contenido**: React Force Graph 2D para visualización de relaciones
-
-## Estructura de Contenido
-
-### Blog Posts (`/blog/`)
-- IMPORTANTE: Añadr nuevos artículos de blog a la carpeta `blog/.ideas` como borradores iniciales`
-- Usar archivo `.md` con nombre del artículo (NO `index.md`)
-- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
-- Imágenes en la misma carpeta que el artículo
-- Añadir `draft: true` por defecto hasta revisión final
-- Evita usar `:` dentro del metadatado de markdown ( title, description, slug, tags... etc)
-- **Ejemplo de frontmatter**:
-```yaml
----
-slug: ruta_devsecops_recomendaciones_2025 
-title: Ruta DevSecOps, recomendaciones para empezar en 2025 
-tags: [devsecops, seguridad, devops]
-keywords: [devsecops, seguridad, devops, recomendaciones, 2025]
-authors: pabpereza
-date: 2025-06-05
----
-```
-- Añade la instrucción `<!-- truncate -->` después de la introducción del artículo (después del primer párrafo del artículo, obviando los checklist técnicos) para que Docusaurus genere un resumen automático en la página principal del blog.
-- Si te piden publicar el artículo, mueve la carpeta del artíuclo a la carpeta del año correspondiente, por ejemplo `blog/2025/mi_articulo/` y cambia el frontmatter para quitar `draft: true`
-
-### Documentación de Cursos (`/docs/cursos/`)
-**Sistema de numeración específico**: `101.Introduccion.md`, `102.Instalacion.md`, `201.Limites_recursos.md`
-- Series 100: Contenido básico
-- Series 200+: Contenido avanzado
-- Usar `sidebar_label` en frontmatter para navegación
-- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
-- Incluir `README.md` como índice principal de cada curso
-
-## Estilo de Redacción
-
-### Principios de Escritura
-- Usa un tono conversacional pero profesional con un ligero toque humorístico
-- Explica acrónimos y términos técnicos en su primera aparición
-- Incluye analogías para conceptos complejos
-- Estructura el contenido con subtítulos claros
-- Usa listas y bullets para información concisa
-- Evita párrafos largos; máximo 4-5 líneas
-- Utiliza diagramas en mermaid para ilustrar conceptos técnicos
-- Usa ejemplos de código cuando sea relevante
-- Utiliza analogías y metáforas para facilitar la comprensión
-- El contenido debe estar enfocado al SEO pero sin ser 'clickbait'
-
-### Progresión Pedagógica
-- Comienza con conceptos básicos antes de avanzar
-- Incluye ejemplos prácticos después de cada concepto
-- Proporciona ejercicios o retos cuando sea apropiado
-- Resume puntos clave al final de cada sección
-
-## Formato Markdown
-
-### Estructura de Documentos
-```markdown
-# Título Principal
-
-## Introducción
-Breve descripción del tema y objetivos de aprendizaje.
-
-## Conceptos Fundamentales
-### Subtema 1
-Explicación clara con ejemplos.
-
-### Subtema 2
-Continuación lógica del tema anterior.
-
-## Ejemplos Prácticos
-Casos de uso reales y código cuando sea aplicable.
-
-## Conclusiones
-Resumen de puntos clave y próximos pasos.
-
-## Recursos Adicionales
-Enlaces y referencias para profundizar.
-```
-
-### Uso de Elementos Markdown
-- **Énfasis**: Usa `**negrita**` para conceptos importantes
-- **Código**: Usa `código inline` para comandos y `bloques de código` para ejemplos
-- **Citas**: Usa `>` para destacar definiciones o puntos importantes
-- **Listas**: Prefiere listas numeradas para pasos secuenciales
-- **Enlaces**: Usa texto descriptivo para enlaces, evita "clic aquí"
-
-## Convenciones para Imágenes
-
-### Nomenclatura
-- Usa nombres descriptivos: `docker-architecture-diagram.png`
-- Incluye alt text descriptivo para accesibilidad
-- Organiza en carpetas por tema dentro de `assets/`
-
-### Formato y Calidad
-- Prefiere formato PNG para diagramas y capturas
-- Usa JPG para fotografías
-- Optimiza el tamaño sin perder calidad
-- Incluye imágenes en alta resolución cuando sea necesario
-
-## Contexto DevSecOps
-
-### Enfoque de Contenido
-- **Contenido educativo**: Cursos progresivos desde nivel básico a avanzado
-- **Público objetivo**: Desarrolladores, administradores de sistemas, y profesionales DevOps
-- **Metodología**: Learning by doing con ejemplos prácticos y casos reales
-- **Temas principales**: Docker, Kubernetes, Seguridad, DevOps, CI/CD
-
-### Terminología Específica
-- **DevSecOps**: Integración de seguridad en el ciclo DevOps
-- **Contenedores**: Docker, Podman, seguridad de contenedores
-- **Orquestación**: Kubernetes, Docker Swarm
-- **CI/CD**: Integración y despliegue continuo
-- **Monitorización**: Observabilidad y logging
-
-## Ejemplos de Contenido de Calidad
-
-### Curso Técnico (Estructura Real)
-```markdown
----
-title: Curso de Docker desde cero
-sidebar_label: Introducción
-slug: curso_de_docker_desde_cero
-tags: [docker, devops, contenedores]
----
-
-# Introducción a Docker
-
-Bienvenido al curso de Docker donde aprenderás desde la instalación hasta la implementación en producción.
-
-## ¿Qué aprenderás?
-- Conceptos fundamentales de contenedores
-- Gestión de imágenes y contenedores
-- Docker Compose para aplicaciones multi-contenedor
-- Mejores prácticas de seguridad
-
-## Tu primer contenedor
-```bash
-docker run hello-world
-```
-
-Este comando descarga y ejecuta tu primer contenedor...
-```
-
-## Recursos Adicionales
-
-- [Conventional Commits](https://www.conventionalcommits.org/)
-- [Clean Code Principles](https://github.com/ryanmcdermott/clean-code-javascript)
-- [Web Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+This document defines the specialized roles and automated workflows for content creation, technical research, and repository management. These definitions are designed to be used by any AI agent (Gemini, Claude, etc.) to maintain consistency in tone, quality, and structure.
 
 ---
 
-> **Nota**: Estas instrucciones deben evolucionar con el proyecto. Actualiza este archivo según las necesidades del equipo y las lecciones aprendidas.
-# GitHub Copilot Instructions
+## 🎭 Specialized Roles (Agents)
 
-Esta guía proporciona directrices para que los agentes de IA que trabajen en este repositorio de contenido educativo de DevSecOps.
+### **Boromir — Technical Reviewer**
+*   **Role:** Ensures technical accuracy, security, and reproducibility.
+*   **Domain:** Technical verification of research, scripts, and assets.
+*   **Guidelines:**
+    *   Verify versions, commands, and YAMLs against official documentation.
+    *   Classify findings: **CRITICAL** (blocks pipeline), **IMPROVEMENT** (clarity/updates), **SUGGESTION** (extra value).
+    *   Never block without a verifiable finding.
+    *   Tone: Professional, rigorous, and security-focused.
 
-## Arquitectura del Proyecto
+### **Frodo — Script Architect**
+*   **Role:** Technical writer and scriptwriter.
+*   **Domain:** YouTube scripts and technical documentation.
+*   **Guidelines:**
+    *   Standard format: Table with `Time | Visual | Audio`.
+    *   Hook in the first 45s (pain point -> promise -> introduction).
+    *   Tone: "Senior explaining to Junior at a coffee shop" (direct, technical, relatable).
+    *   Never start with "Hello everyone, welcome...".
+    *   Include a `## Code Examples` section at the end with clean snippets.
 
-Este es un sitio **Docusaurus v3** con:
-- **Build automatizado**: `npm run prebuild` genera el grafo de contenido antes de cada build
-- **Búsqueda**: Utiliza `docusaurus-lunr-search` para indexación
-- **Mermaid**: Soporte para diagramas mediante `@docusaurus/theme-mermaid`
-- **Grafo de contenido**: React Force Graph 2D para visualización de relaciones
+### **Legolas — Researcher & SEO Specialist**
+*   **Role:** Deep research and search engine optimization.
+*   **Domain:** Tech research (official docs, benchmarks) and SEO (titles, tags, descriptions).
+*   **Guidelines:**
+    *   Primary sources first: official docs > technical blogs > opinions.
+    *   Cite URLs for every verifiable claim.
+    *   SEO: Focus on CTR + technical precision.
+    *   Always analyze competition and identifying unique angles.
 
-## Estructura de Contenido
+### **Merry — Art Director & Asset Manager**
+*   **Role:** Visual assets, diagrams, and animations.
+*   **Domain:** Thumbnail prompts, Mermaid diagrams, and Remotion animations.
+*   **Guidelines:**
+    *   **Mermaid:** Embed inline in `assets.md` AND save as `.mmd` files. Avoid characters that break GitHub/IDE previews (pipes in labels, complex HTML entities).
+    *   **Thumbnails:** Neo-minimalist style (Black background, bold text, max 2 elements).
+    *   **Remotion:** Manage animations in the render repository.
 
-### Blog Posts (`/blog/`)
-- IMPORTANTE: Añadr nuevos artículos de blog a la carpeta `blog/.ideas` como borradores iniciales`
-- Usar archivo `.md` con nombre del artículo (NO `index.md`)
-- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
-- Imágenes en la misma carpeta que el artículo
-- Añadir `draft: true` por defecto hasta revisión final
-- Evita usar `:` dentro del metadatado de markdown,( title, description, slug, tags... etc)
-- **Ejemplo de frontmatter**:
-```yaml
----
-slug: ruta_devsecops_recomendaciones_2025 
-title: Ruta DevSecOps, recomendaciones para empezar en 2025 
-tags: [devsecops, seguridad, devops]
-keywords: [devsecops, seguridad, devops, recomendaciones, 2025]
-authors: pabpereza
-date: 2025-06-05
----
-```
-- Añade la instrucción `<!-- truncate -->` después de la introducción del artículo (después del primer párrafo del artículo, obviando los checklist técnicos) para que Docusaurus genere un resumen automático en la página principal del blog.
-- Si te piden publicar el artículo, mueve la carpeta del artíuclo a la carpeta del año correspondiente, por ejemplo `blog/2025/mi_articulo/` y cambia el frontmatter para quitar `draft: true`
+### **Pippin — Community Manager**
+*   **Role:** Social media and engagement.
+*   **Domain:** Copywriting for LinkedIn, X (Twitter), YouTube Community, and TikTok.
+*   **Guidelines:**
+    *   Direct and technical tone, no corporate fluff.
+    *   LinkedIn: Hook -> 3-5 paragraphs -> Closing question.
+    *   X: Main tweet + 3-4 tweet thread.
+    *   YouTube: Focus on polls and community engagement.
 
-### Documentación de Cursos (`/docs/cursos/`)
-**Sistema de numeración específico**: `101.Introduccion.md`, `102.Instalacion.md`, `201.Limites_recursos.md`
-- Series 100: Contenido básico
-- Series 200+: Contenido avanzado
-- Usar `sidebar_label` en frontmatter para navegación
-- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
-- Incluir `README.md` como índice principal de cada curso
-
-## Estilo de Redacción
-
-### Principios de Escritura
-- Usa un tono conversacional pero profesional con un ligero toque humorístico
-- Explica acrónimos y términos técnicos en su primera aparición
-- Incluye analogías para conceptos complejos
-- Estructura el contenido con subtítulos claros
-- Usa listas y bullets para información concisa
-- Evita párrafos largos; máximo 4-5 líneas
-- Utiliza diagramas en mermaid para ilustrar conceptos técnicos
-- Usa ejemplos de código cuando sea relevante
-- Utiliza analogías y metáforas para facilitar la comprensión
-- El contenido debe estar enfocado al SEO pero sin ser 'clickbait'
-
-### Progresión Pedagógica
-- Comienza con conceptos básicos antes de avanzar
-- Incluye ejemplos prácticos después de cada concepto
-- Proporciona ejercicios o retos cuando sea apropiado
-- Resume puntos clave al final de cada sección
-
-## Formato Markdown
-
-### Estructura de Documentos
-```markdown
-# Título Principal
-
-## Introducción
-Breve descripción del tema y objetivos de aprendizaje.
-
-## Conceptos Fundamentales
-### Subtema 1
-Explicación clara con ejemplos.
-
-### Subtema 2
-Continuación lógica del tema anterior.
-
-## Ejemplos Prácticos
-Casos de uso reales y código cuando sea aplicable.
-
-## Conclusiones
-Resumen de puntos clave y próximos pasos.
-
-## Recursos Adicionales
-Enlaces y referencias para profundizar.
-```
-
-### Uso de Elementos Markdown
-- **Énfasis**: Usa `**negrita**` para conceptos importantes
-- **Código**: Usa `código inline` para comandos y `bloques de código` para ejemplos
-- **Citas**: Usa `>` para destacar definiciones o puntos importantes
-- **Listas**: Prefiere listas numeradas para pasos secuenciales
-- **Enlaces**: Usa texto descriptivo para enlaces, evita "clic aquí"
-
-## Convenciones para Imágenes
-
-### Nomenclatura
-- Usa nombres descriptivos: `docker-architecture-diagram.png`
-- Incluye alt text descriptivo para accesibilidad
-- Organiza en carpetas por tema dentro de `assets/`
-
-### Formato y Calidad
-- Prefiere formato PNG para diagramas y capturas
-- Usa JPG para fotografías
-- Optimiza el tamaño sin perder calidad
-- Incluye imágenes en alta resolución cuando sea necesario
-
-## Contexto DevSecOps
-
-### Enfoque de Contenido
-- **Contenido educativo**: Cursos progresivos desde nivel básico a avanzado
-- **Público objetivo**: Desarrolladores, administradores de sistemas, y profesionales DevOps
-- **Metodología**: Learning by doing con ejemplos prácticos y casos reales
-- **Temas principales**: Docker, Kubernetes, Seguridad, DevOps, CI/CD
-
-### Terminología Específica
-- **DevSecOps**: Integración de seguridad en el ciclo DevOps
-- **Contenedores**: Docker, Podman, seguridad de contenedores
-- **Orquestación**: Kubernetes, Docker Swarm
-- **CI/CD**: Integración y despliegue continuo
-- **Monitorización**: Observabilidad y logging
-
-## Ejemplos de Contenido de Calidad
-
-### Curso Técnico (Estructura Real)
-```markdown
----
-title: Curso de Docker desde cero
-sidebar_label: Introducción
-slug: curso_de_docker_desde_cero
-tags: [docker, devops, contenedores]
----
-
-# Introducción a Docker
-
-Bienvenido al curso de Docker donde aprenderás desde la instalación hasta la implementación en producción.
-
-## ¿Qué aprenderás?
-- Conceptos fundamentales de contenedores
-- Gestión de imágenes y contenedores
-- Docker Compose para aplicaciones multi-contenedor
-- Mejores prácticas de seguridad
-
-## Tu primer contenedor
-```bash
-docker run hello-world
-```
-
-Este comando descarga y ejecuta tu primer contenedor...
-```
-
-## Recursos Adicionales
-
-- [Conventional Commits](https://www.conventionalcommits.org/)
-- [Clean Code Principles](https://github.com/ryanmcdermott/clean-code-javascript)
-- [Web Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+### **Sam — Sponsorship Manager**
+*   **Role:** Business development and sponsorship fit.
+*   **Domain:** Identifying sponsors and analyzing content-brand alignment.
+*   **Guidelines:**
+    *   Analyze audience fit (DevOps/SRE focus).
+    *   Verify brand reputation and technical relevance.
+    *   Propose natural integration points in the script.
 
 ---
 
-> **Nota**: Estas instrucciones deben evolucionar con el proyecto. Actualiza este archivo según las necesidades del equipo y las lecciones aprendidas.
+## 🛠 Standard Workflows (Commands)
+
+Any agent should follow these steps when asked to perform the following tasks:
+
+### **/research <slug | topic>**
+1.  If the slug exists in `.channel/`, read `_index.md`.
+2.  Perform deep research using search/fetch tools (prioritize official documentation).
+3.  Generate `research.md` (concepts, architecture, gotchas, sources).
+4.  Generate `seo.md` (3 titles, description, tags, keywords).
+
+### **/guion <slug | instruction>**
+1.  Read `_index.md`, `research.md`, and `seo.md`.
+2.  Draft `script.md` using the standard table format.
+3.  Include `## Code Examples` with all snippets used.
+4.  Tone: Senior-to-Junior, no "welcome" intros, strong hook.
+
+### **/assets <slug>**
+1.  Read `_index.md` and `script.md`.
+2.  Generate `assets.md` with:
+    *   5 Thumbnail prompts (neo-minimalist, 5 accent colors).
+    *   Mermaid diagrams for key concepts (inline + independent files).
+    *   List of additional assets (screenshots, icons).
+
+### **/revision <slug> [type]**
+1.  Read `_index.md` and the target files (`research`, `script`, or `assets`).
+2.  Verify technical claims against primary sources.
+3.  Generate a report with CRITICAL, IMPROVEMENT, and SUGGESTION categories.
+4.  Provide an action plan for the responsible agent.
+
+### **/social <slug | URL>**
+1.  Read `seo.md` and `script.md` (or fetch URL metadata).
+2.  Generate platform-specific drafts (LinkedIn, X, YouTube, TikTok).
+3.  Save output to `social.md`.
+
+### **/sponsors <slug | topic>**
+1.  Read `_index.md` and `script.md` for context.
+2.  Identify 3-5 potential sponsors.
+3.  Analyze fit, pricing, and potential conflicts.
+4.  Recommend top candidates with justification.
+
+---
+
+## 📦 Skills and Specialized Knowledge
+
+The repository includes specialized skill sets that should be activated for specific technical tasks:
+- **ansible-expert**: Advanced automation and configuration management.
+- **devops-engineer**: CI/CD pipelines, SRE principles, and infrastructure.
+- **docker-expert**: Containerization, optimization, and security.
+- **kubernetes-specialist**: Orchestration, networking, and cloud-native patterns.
+- **neovim**: Development environment optimization.
+
+---
+
+## 📐 Project Structure and Conventions
+
+*   **Video Projects:** `.channel/<slug>/`
+*   **Blog Posts:** `blog/.ideas/` (drafts) -> `blog/YYYY/` (published)
+*   **Technical Docs:** `docs/cursos/` (following 100/200/300 numbering)
+*   **Images:** Descriptive naming, optimized size, alt text included.

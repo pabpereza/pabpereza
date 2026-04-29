@@ -1,5 +1,5 @@
 ---
-title: Laboratorios y Ejercicios Prácticos
+title: Laboratorios
 sidebar_label: 💻 Labs
 sidebar_position: 15
 ---
@@ -71,255 +71,222 @@ Cada módulo del curso tiene ejercicios asociados. Están organizados por dificu
 
 ## 📚 Laboratorios por Módulo
 
-### Módulo 1: Fundamentos
-**Archivo**: Los ejercicios están incluidos directamente en [01-fundamentos.md](../01-fundamentos.md)
+### Capítulo 1: Introducción, Fundamentos e Instalación
+**Archivo**: Los ejercicios están incluidos en [101.Introduccion.md](./101.Introduccion.md)
 
 **Ejercicios disponibles:**
-- 🟢 Verificar conectividad con comandos ad-hoc
-- 🟢 Explorar módulos básicos desde la línea de comandos
-- 🟢 Recopilar información del sistema con el módulo `setup`
-
-**Qué practicarás:**
-- Comandos ad-hoc básicos
-- Módulos ping, command, shell
-- Facts de Ansible
-
----
-
-### Módulo 2: Instalación y Configuración
-**Archivo**: Los ejercicios están incluidos en [02-instalacion.md](../02-instalacion.md)
-
-**Ejercicios disponibles:**
-- 🟢 Instalar Ansible en tu distribución
+- 🟢 Instalar Ansible en tu distribución (apt, dnf, pip)
 - 🟢 Crear y configurar `ansible.cfg` personalizado
-- 🟢 Configurar SSH para automatización
+- 🟢 Configurar SSH sin contraseña hacia los managed nodes
+- 🟢 Verificar conectividad con `ansible all -m ping`
+- 🟢 Recopilar información del sistema con el módulo `setup`
 - 🟡 Resolver problemas comunes de conectividad
 
 **Qué practicarás:**
 - Instalación en diferentes distribuciones
-- Configuración del archivo ansible.cfg
+- Configuración del archivo `ansible.cfg`
+- Comandos ad-hoc básicos (`ping`, `command`, `setup`)
+- Facts de Ansible
 - Troubleshooting de SSH
 
 ---
 
-### Módulo 3: Inventarios
-**Archivo**: Los ejercicios están incluidos en [03-inventarios.md](../03-inventarios.md)
+### Capítulo 2: Inventarios y Hosts
+**Archivo**: Los ejercicios están incluidos en [102.Inventarios.md](./102.Inventarios.md)
 
 **Ejercicios disponibles:**
 - 🟢 Crear inventario estático en formato INI
 - 🟢 Convertir inventario a formato YAML
 - 🟡 Organizar hosts en grupos y subgrupos
 - 🟡 Definir variables de inventario por host y grupo
-- 🔴 Implementar inventario dinámico básico
+- 🟡 Lanzar comandos ad-hoc filtrando por grupos
+- 🔴 Implementar inventario dinámico con AWS EC2 (`aws_ec2`)
+- 🔴 Combinar inventario estático on-prem con uno dinámico de cloud
 
 **Qué practicarás:**
 - Sintaxis de inventarios INI y YAML
 - Jerarquía de grupos
 - Variables de inventario
+- Inventory plugins (`aws_ec2`, `azure_rm`, `gcp_compute`)
 - Patrones de selección de hosts
 
 ---
 
-### Módulo 4: Playbooks
-**Archivo**: Los ejercicios están incluidos en [04-playbooks.md](../04-playbooks.md)
+### Capítulo 3: Playbooks y YAML
+**Archivo**: Los ejercicios están incluidos en [103.Playbooks.md](./103.Playbooks.md)
 
 **Ejercicios disponibles:**
 - 🟢 Crear tu primer playbook funcional
-- 🟢 Usar handlers para gestionar servicios
-- 🟡 Implementar condicionales con `when`
-- 🟡 Trabajar con loops para automatizar tareas repetitivas
+- 🟢 Validar sintaxis YAML correcta
 - 🟡 Usar tags para ejecución selectiva
 - 🔴 Crear playbook completo de despliegue de aplicación web
 
 **Qué practicarás:**
-- Sintaxis YAML correcta
-- Estructura de playbooks
-- Tasks, handlers, y notificaciones
-- Condicionales y loops
+- Sintaxis YAML estricta
+- Estructura de playbooks (plays, tasks)
+- Ejecución con `ansible-playbook`
 - Tags y ejecución parcial
 
 ---
 
-### Módulo 5: Módulos
-**Archivo**: Los ejercicios están incluidos en [05-modulos.md](../05-modulos.md)
+### Capítulo 4: Módulos e Idempotencia
+**Archivo**: Los ejercicios están incluidos en [104.Modulos_idempotencia.md](./104.Modulos_idempotencia.md)
 
 **Ejercicios disponibles:**
-- 🟢 Gestionar paquetes con apt/yum
-- 🟢 Manipular archivos y directorios
-- 🟢 Administrar servicios del sistema
-- 🟡 Gestionar usuarios y grupos
-- 🟡 Configurar firewall con ufw
-- 🔴 Crear playbook de hardening básico de seguridad
+- 🟢 Gestionar paquetes con `apt`/`dnf`
+- 🟢 Manipular archivos y directorios con `file` y `copy`
+- 🟢 Administrar servicios del sistema con `service`
+- 🟡 Gestionar usuarios y grupos con `user`
+- 🟡 Probar idempotencia: lanzar el mismo playbook dos veces y comprobar `changed=0`
+- 🟡 Usar `--check` y `--diff` para simular ejecuciones
+- 🔴 Hacer idempotente un comando crudo con `creates`/`removes`/`changed_when`
 
 **Qué practicarás:**
-- Módulos de gestión de paquetes
-- Módulos de sistema de archivos
-- Módulos de servicios
-- Módulos de usuarios y permisos
-- Módulos de red y seguridad
+- Módulos de paquetes, archivos, servicios y usuarios
+- Diferencia entre módulos idempotentes y no idempotentes
+- Validación de idempotencia con `--check`
+- Patrones para domesticar `command`/`shell`
 
 ---
 
-### Módulo 6: Variables y Facts
-**Archivo**: Los ejercicios están incluidos en [06-variables.md](../06-variables.md)
+### Capítulo 5: Variables y Control de Flujo
+**Archivo**: Los ejercicios están incluidos en [105.Variables_control_flujo.md](./105.Variables_control_flujo.md)
 
 **Ejercicios disponibles:**
 - 🟢 Definir y usar variables en playbooks
 - 🟢 Acceder a facts del sistema
-- 🟡 Entender precedencia de variables
+- 🟢 Usar handlers con `notify`/`listen`
+- 🟡 Implementar condicionales con `when`
+- 🟡 Trabajar con `loop` (listas, dicts, `subelements`)
+- 🟡 Reintentos con `until`/`retries`/`delay`
 - 🟡 Registrar resultados de tasks con `register`
-- 🔴 Crear playbook dinámico basado en facts
+- 🟡 Entender precedencia de variables
+- 🔴 Crear playbook dinámico cross-platform usando facts
 
 **Qué practicarás:**
 - Definición de variables en múltiples niveles
-- Uso de facts de Ansible
-- Filtros de Jinja2
-- Variables especiales
-- Debug y troubleshooting con variables
+- Facts de Ansible y filtros Jinja2
+- Condicionales y bucles
+- Handlers y reacciones a cambios
+- Debug y troubleshooting con `register`
 
 ---
 
-### Módulo 7: Roles
-**Archivo**: Los ejercicios están incluidos en [07-roles.md](../07-roles.md)
+### Capítulo 6: Roles, Templates y Galaxy
+**Archivo**: Los ejercicios están incluidos en [106.Roles.md](./106.Roles.md)
 
 **Ejercicios disponibles:**
 - 🟢 Crear estructura de rol con `ansible-galaxy init`
+- 🟢 Crear templates Jinja2 básicos con variables
+- 🟢 Buscar e instalar roles de Ansible Galaxy
 - 🟡 Desarrollar rol completo para aplicación web
-- 🟡 Gestionar dependencias entre roles
-- 🔴 Crear rol reutilizable con variables parametrizadas
+- 🟡 Usar condicionales y loops dentro de templates
+- 🟡 Aplicar filtros útiles de Jinja2
+- 🟡 Gestionar dependencias con `requirements.yml`
+- 🟡 Dividir playbook monolítico con `include_tasks`/`import_tasks`
+- 🟡 Crear playbook maestro con `import_playbook`
+- 🔴 Generar configuraciones complejas (Nginx, Apache) con templates
+- 🔴 Crear rol reutilizable con variables parametrizadas y publicarlo
+- 🔴 Estructurar un proyecto Ansible profesional con buenas prácticas
 
 **Qué practicarás:**
 - Estructura de directorios de roles
-- Organización de tasks, handlers, templates, files
-- Variables de roles y defaults
-- Dependencias entre roles
-
----
-
-### Módulo 8: Templates (Jinja2)
-**Archivo**: Los ejercicios están incluidos en [08-templates.md](../08-templates.md)
-
-**Ejercicios disponibles:**
-- 🟢 Crear templates básicos con variables
-- 🟡 Usar condicionales en templates
-- 🟡 Implementar loops en templates
-- 🟡 Aplicar filtros útiles de Jinja2
-- 🔴 Generar configuraciones complejas (Nginx, Apache)
-
-**Qué practicarás:**
 - Sintaxis de templates Jinja2
-- Variables y expresiones
-- Condicionales y loops
-- Filtros y tests
-- Plantillas de configuración realistas
+- Comandos de `ansible-galaxy` y collections
+- Diferencia entre `import` (estático) e `include` (dinámico)
+- Layout de proyectos reales
 
 ---
 
-### Módulo 9: Ansible Galaxy
-**Archivo**: Los ejercicios están incluidos en [09-ansible-galaxy.md](../09-ansible-galaxy.md)
+### Capítulo 7: Seguridad y Credenciales
+**Archivo**: Los ejercicios están incluidos en [107.Seguridad.md](./107.Seguridad.md)
 
 **Ejercicios disponibles:**
-- 🟢 Buscar roles en Galaxy
-- 🟢 Instalar y usar roles de la comunidad
-- 🟡 Gestionar dependencias con requirements.yml
-- 🔴 Publicar tu propio rol en Galaxy
-
-**Qué practicarás:**
-- Comandos de ansible-galaxy
-- Instalación de roles de terceros
-- Gestión de versiones
-- Contribución a la comunidad
-
----
-
-### Módulo 10: Buenas Prácticas
-**Archivo**: Los ejercicios están incluidos en [10-buenas-practicas.md](../10-buenas-practicas.md)
-
-**Ejercicios disponibles:**
-- 🟢 Estructurar proyecto Ansible profesional
-- 🟢 Cifrar secretos con Ansible Vault
-- 🟡 Implementar testing con ansible-lint
-- 🟡 Validar idempotencia de playbooks
-- 🔴 Crear pipeline CI/CD para Ansible
-
-**Qué practicarás:**
-- Estructura de proyectos reales
-- Gestión de secretos con Vault
-- Testing y validación
-- Integración con CI/CD
-- Documentación y mantenibilidad
-
----
-
-### Módulo 11: Manejo de Errores
-**Archivo**: Los ejercicios están incluidos en [11-manejo-errores.md](../11-manejo-errores.md)
-
-**Ejercicios disponibles:**
-- 🟢 Usar `ignore_errors` para tareas opcionales
-- 🟡 Implementar `block/rescue/always` para rollback de despliegues
-- 🟡 Controlar fallos con `failed_when` y `changed_when`
-- 🟡 Validar requisitos con `assert` antes de actuar
-- 🔴 Crear despliegue resiliente con rollback automático
-
-**Qué practicarás:**
-- Manejo estructurado de errores (try/catch/finally)
-- Control fino de qué es un fallo y qué es un cambio
-- Reintentos inteligentes con `retries` y `until`
-- Validaciones previas al despliegue
-
----
-
-### Módulo 12: Ansible Vault
-**Archivo**: Los ejercicios están incluidos en [12-vault.md](../12-vault.md)
-
-**Ejercicios disponibles:**
-- 🟢 Crear y editar archivos cifrados
+- 🟢 Crear y editar archivos cifrados con Ansible Vault
 - 🟢 Cifrar variables inline con `encrypt_string`
-- 🟡 Implementar el patrón profesional vars.yml + vault.yml
-- 🟡 Configurar Vault IDs por entorno
-- 🔴 Integrar Vault con sistemas externos de secretos
+- 🟢 Generar una clave SSH dedicada al deploy y distribuirla
+- 🟡 Implementar el patrón profesional `vars.yml` + `vault.yml`
+- 🟡 Configurar Vault IDs por entorno (dev/staging/prod)
+- 🟡 Usar `no_log` para silenciar tareas con secretos
+- 🟡 Configurar `ssh-agent` y bastion host
+- 🔴 Integrar Vault con sistemas externos (HashiCorp Vault, AWS Secrets Manager)
+- 🔴 Implementar rotación de claves SSH sin downtime
 
 **Qué practicarás:**
 - Comandos de Ansible Vault (create, edit, view, rekey)
 - Patrón de separación de variables públicas y secretas
-- Múltiples contraseñas por entorno
-- Uso de `no_log` para proteger la salida
+- Gestión segura de claves SSH
+- `no_log` y anti-patterns de credenciales
 
 ---
 
-### Módulo 13: Include, Import y Control Avanzado
-**Archivo**: Los ejercicios están incluidos en [13-include-import.md](../13-include-import.md)
+### Capítulo 8: Entornos Reales y Proyecto Final
+**Archivo**: Los ejercicios están incluidos en [108.Entornos_reales.md](./108.Entornos_reales.md)
 
 **Ejercicios disponibles:**
-- 🟢 Dividir playbook monolítico en archivos de tareas
-- 🟡 Usar `include_tasks` dinámico para multi-OS
-- 🟡 Crear playbook maestro con `import_playbook`
-- 🟡 Implementar `delegate_to` para zero-downtime deployments
-- 🔴 Orquestar despliegue multi-tier con serial y canary
-
-**Qué practicarás:**
-- Diferencia entre import (estático) e include (dinámico)
-- Delegación de tareas a otros hosts
-- Despliegue en lotes (rolling updates)
-- Tareas asíncronas para operaciones largas
-
----
-
-### Módulo 14: Depuración y Troubleshooting
-**Archivo**: Los ejercicios están incluidos en [14-depuracion.md](../14-depuracion.md)
-
-**Ejercicios disponibles:**
-- 🟢 Usar niveles de verbosidad para diagnosticar
+- 🟢 Usar `ignore_errors` para tareas opcionales
 - 🟢 Inspeccionar variables con el módulo `debug`
-- 🟡 Simular ejecuciones con `--check` y `--diff`
+- 🟢 Usar niveles de verbosidad para diagnosticar (`-v` a `-vvvv`)
+- 🟡 Implementar `block`/`rescue`/`always` para rollback
+- 🟡 Controlar fallos con `failed_when` y `changed_when`
+- 🟡 Validar requisitos con `assert` antes de actuar
 - 🟡 Diagnosticar errores comunes de conexión y permisos
+- 🟡 Implementar `delegate_to` para tareas centralizadas
+- 🔴 Crear despliegue resiliente con rollback automático
 - 🔴 Encontrar y corregir errores en un playbook roto
+- 🔴 **Proyecto final**: desplegar la stack completa NotaStack con roles, Vault e inventarios separados por entorno
 
 **Qué practicarás:**
-- Niveles de verbosidad (-v a -vvvv)
-- Módulo debug y registro de variables
-- Herramientas: ansible-config, ansible-inventory, ansible-console
+- Manejo estructurado de errores (try/catch/finally)
+- Reintentos y validaciones previas
 - Método sistemático de depuración
+- Despliegue en lotes (rolling updates)
+- Integración de todo lo aprendido en un proyecto real
+
+---
+
+### Capítulo 9: Ansible y Contenedores
+**Archivo**: Los ejercicios están incluidos en [109.Contenedores.md](./109.Contenedores.md)
+
+**Ejercicios disponibles:**
+- 🟢 Instalar la colección `community.docker` y el SDK de Python
+- 🟢 Desplegar un contenedor Nginx con `docker_container`
+- 🟡 Bootstrap completo de un host Docker (instalar Docker + desplegar stack)
+- 🟡 Orquestar un stack Compose desde Ansible con `docker_compose_v2`
+- 🟡 Aplicar manifiestos Kubernetes con `kubernetes.core.k8s`
+- 🟡 Renderizar manifiestos K8s con plantillas Jinja2
+- 🟡 Instalar charts Helm desde Ansible
+- 🔴 Levantar un clúster K3s de 1 master + N workers desde cero
+- 🔴 Desplegar la misma stack en VMs y en K8s con un único playbook
+
+**Qué practicarás:**
+- Colecciones `community.docker` y `kubernetes.core`
+- Construcción y push de imágenes
+- Despliegues híbridos (VMs + contenedores + K8s)
+- Helm desde Ansible
+
+---
+
+### Capítulo 10: Ansible en DevOps y CI/CD
+**Archivo**: Los ejercicios están incluidos en [110.CICD.md](./110.CICD.md)
+
+**Ejercicios disponibles:**
+- 🟢 Validar playbooks con `ansible-lint`
+- 🟢 Inyectar secretos en GitHub Actions con `secrets`
+- 🟡 Crear pipeline declarativa de Jenkins que ejecute un playbook
+- 🟡 Crear workflow de GitHub Actions con multi-entorno (staging → prod)
+- 🟡 Implementar un reusable workflow para varios entornos
+- 🟡 Probar roles con `molecule`
+- 🔴 Implementar rolling update con `serial` y healthchecks
+- 🔴 Implementar despliegue blue-green con cambio de balanceador
+- 🔴 Implementar canary con validación de métricas en Prometheus
+- 🔴 Pipeline completa: PR → lint → staging → tag → prod con aprobación manual
+
+**Qué practicarás:**
+- Pipelines en Jenkins y GitHub Actions
+- Gestión de secretos en CI/CD
+- Estrategias de despliegue (rolling, blue-green, canary)
+- Testing con `ansible-lint` y `molecule`
 
 ---
 
@@ -400,7 +367,6 @@ Estos laboratorios se actualizan constantemente. Suscríbete al [canal de YouTub
 
 ¿Tienes dudas con los ejercicios? ¿Quieres compartir tu solución?
 
-- **Discord**: Únete a nuestra comunidad (enlace en el canal)
 - **GitHub**: Comparte tus soluciones y proyectos
 - **YouTube**: Deja comentarios en los videos del curso
 
@@ -422,6 +388,6 @@ Guarda todos tus playbooks, roles y proyectos en un repositorio Git. Serán una 
 
 **¡Manos a la obra! 🛠️**
 
-Empieza por el [Módulo 1: Fundamentos](../01-fundamentos.md) y ve avanzando módulo por módulo. Recuerda: la práctica constante es la clave para dominar Ansible.
+Empieza por el [Capítulo 1: Introducción, Fundamentos e Instalación](./101.Introduccion.md) y ve avanzando capítulo por capítulo. Recuerda: la práctica constante es la clave para dominar Ansible.
 
 **¡Feliz automatización! 🚀**

@@ -67,15 +67,11 @@ Al terminar serás capaz de:
 * [🧩 4. Módulos e Idempotencia](./104.Modulos_idempotencia.md) — Módulos esenciales y por qué la idempotencia importa
 * [🔀 5. Variables y Control de Flujo](./105.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers
 
-### 🔵 Bloque II — Modularidad y Seguridad
+### 🔵 Bloque II — Modularidad, seguridad y Ansible en producción
 *Estructura tu código y protege tus secretos.*
 
 * [🎭 6. Roles, Templates y Galaxy](./106.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
 * [🔐 7. Seguridad y Credenciales](./107.Seguridad.md) — Vault, claves SSH y variables sensibles
-
-### 🔴 Bloque III — Ansible en Producción
-*Lleva Ansible al mundo real: contenedores, K8s y CI/CD.*
-
 * [🏭 8. Entornos Reales y Proyecto Final](./108.Entornos_reales.md) — Linux, despliegues, troubleshooting y proyecto NotaStack
 * [🐳 9. Ansible y Contenedores](./109.Contenedores.md) — Docker y Kubernetes con Ansible
 * [🚀 10. Ansible en DevOps y CI/CD](./110.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue

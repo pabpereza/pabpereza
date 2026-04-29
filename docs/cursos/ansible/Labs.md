@@ -372,7 +372,7 @@ Estos laboratorios se actualizan constantemente. Suscríbete al [canal de YouTub
 
 ---
 
-## 🏆 Certificado de Finalización
+## 🏆 Certificado de finalización, tu portafolio
 
 Al completar todos los laboratorios del curso, habrás desarrollado habilidades sólidas en:
 - Automatización de infraestructura

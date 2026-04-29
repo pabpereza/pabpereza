@@ -1,5 +1,5 @@
 ---
-title: 🤖 Curso Ansible Gratuito - Automatización IT desde Cero
+title: ⚙️ Curso Ansible Gratuito - Automatización IT desde Cero
 description: >-
   Curso completo de Ansible gratuito en español. Desde los fundamentos
   de la automatización IT hasta integración con Docker, Kubernetes y
@@ -23,10 +23,10 @@ tags:
   - automatizacion
   - iac
   - cursos
-sidebar_label: 🤖 Ansible
+sidebar_label: ⚙️ Ansible
 ---
 
-# Curso Ansible: Automatización IT 🤖
+# Curso Ansible: Automatización IT ⚙️
 
 **¡Este curso está en desarrollo activo! Sígueme aquí o en YouTube para recibir actualizaciones del curso.**
 

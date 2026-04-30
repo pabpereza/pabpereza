@@ -61,7 +61,7 @@ Al terminar serás capaz de:
 ### 🟢 Bloque I — Fundamentos
 *Pon en marcha tu entorno y comprende la filosofía de Ansible.*
 
-* [🚀 1. Introducción, Fundamentos e Instalación](./101.Introduccion.md) — ¿Qué es Ansible, arquitectura sin agentes y primer entorno
+* [🚀 1. Introducción, Fundamentos e Instalación](./101.Introduccion.mdx) — ¿Qué es Ansible, arquitectura sin agentes y primer entorno
 * [📋 2. Inventarios y Hosts](./102.Inventarios.md) — Estáticos, dinámicos (AWS/Azure/GCP) y comandos ad-hoc
 * [📜 3. Playbooks y YAML](./103.Playbooks.md) — Sintaxis, estructura y ejecución
 * [🧩 4. Módulos e Idempotencia](./104.Modulos_idempotencia.md) — Módulos esenciales y por qué la idempotencia importa

@@ -127,10 +127,10 @@ graph LR
     A -->|SSH directo| C[Server 2]
     A -->|SSH directo| D[Server 3]
 
-    style A fill:#4ecdc4,stroke:#333,stroke-width:3px
-    style B fill:#a8dadc
-    style C fill:#a8dadc
-    style D fill:#a8dadc
+    style A fill:#4ecdc4,stroke:#333,stroke-width:3px,color:#000
+    style B fill:#a8dadc,color:#000
+    style C fill:#a8dadc,color:#000
+    style D fill:#a8dadc,color:#000
 ```
 
 **Beneficios:**
@@ -145,10 +145,10 @@ graph LR
     A <-->|Pull periódico| C[Agent en Server 2]
     A <-->|Pull periódico| D[Agent en Server 3]
 
-    style A fill:#ffadad,stroke:#333,stroke-width:3px
-    style B fill:#ffd6a5
-    style C fill:#ffd6a5
-    style D fill:#ffd6a5
+    style A fill:#ffadad,stroke:#333,stroke-width:3px,color:#000
+    style B fill:#ffd6a5,color:#000
+    style C fill:#ffd6a5,color:#000
+    style D fill:#ffd6a5,color:#000
 ```
 
 **Inconvenientes:**
@@ -245,11 +245,11 @@ graph TD
     A -->|HTTPS API| G
     A -->|SSH/API| H
 
-    style A fill:#4ecdc4,stroke:#333,stroke-width:3px
-    style E fill:#a8dadc
-    style F fill:#a8dadc
-    style G fill:#a8dadc
-    style H fill:#a8dadc
+    style A fill:#4ecdc4,stroke:#333,stroke-width:3px,color:#000
+    style E fill:#a8dadc,color:#000
+    style F fill:#a8dadc,color:#000
+    style G fill:#a8dadc,color:#000
+    style H fill:#a8dadc,color:#000
 ```
 
 #### 1. **Control Node (Nodo de Control)**
@@ -441,7 +441,7 @@ Este curso está estructurado en módulos progresivos:
 Suscríbete al canal de YouTube para recibir la notificación.
 :::
 
-### 1.1. ¿qué es ansible? iac y evolución
+### ¿qué es ansible? iac y evolución
 
 #### 🎻 La analogía: el director de orquesta
 Imagina que tienes que dirigir una orquesta de 100 músicos.
@@ -457,7 +457,7 @@ graph TD
     A[SysAdmin] -->|SSH Manual| S1[Servidor 1]
     A -->|SSH Manual| S2[Servidor 2]
     A -->|SSH Manual| S3[Servidor 3]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style A fill:#f9f,stroke:#333,stroke-width:2px,color:#000
     end
 
     subgraph "Enfoque Ansible"
@@ -465,8 +465,8 @@ graph TD
     C -->|SSH Paralelo| D1[Servidor 1]
     C -->|SSH Paralelo| D2[Servidor 2]
     C -->|SSH Paralelo| D3[Servidor 3]
-    style B fill:#4ecdc4,stroke:#333,stroke-width:2px
-    style C fill:#ff6b6b,stroke:#333,stroke-width:2px
+    style B fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#000
     end
 ```
 
@@ -507,7 +507,7 @@ service nginx start
 *   Escala masivamente: gestiona 1 o 1000 servidores con el mismo esfuerzo.
 
 
-### 1.2. Arquitectura "Agentless"
+### Arquitectura "Agentless"
 
 #### 🕵️ La Analogía: La Llave Maestra
 Imagina que eres un consultor que visita oficinas.
@@ -557,7 +557,7 @@ Esto reduce drásticamente la carga administrativa y los agujeros de seguridad, 
 *   Es más seguro y ligero al no dejar procesos corriendo en segundo plano.
 
 
-### 1.3. Idempotencia
+### Idempotencia
 
 #### 💡 La Analogía: El Interruptor de la Luz
 Entras en una habitación y quieres luz.
@@ -575,8 +575,8 @@ flowchart LR
     D --> E[Estado Final Alcanzado]
     C --> E
 
-    style C fill:#a8dadc,stroke:#333
-    style D fill:#ffadad,stroke:#333
+    style C fill:#a8dadc,stroke:#333,color:#000
+    style D fill:#ffadad,stroke:#333,color:#000
 ```
 
 #### 📘 Explicación Técnica
@@ -606,7 +606,7 @@ ok: [servidor1]       <-- Ansible verifica y no hace nada. Estado: OK (Verde)
 *   Ansible te informa si hubo cambios (`changed`) o si ya estaba todo correcto (`ok`).
 
 
-### 1.4. Nodo de Control vs Nodos Gestionados
+### Nodo de Control vs Nodos Gestionados
 
 #### 🎮 La Analogía: La Consola y el Personaje
 *   **Nodo de Control:** Es tu mando de la consola. Desde aquí envías las órdenes. Es donde está tu inteligencia.
@@ -675,7 +675,7 @@ ansible all -i hosts.ini -m ping
 Prepara tu entorno de trabajo para empezar a automatizar.
 
 
-### 2.1. requisitos previos (python)
+### requisitos previos (python)
 
 #### ⛽ La analogía: el combustible
 Imagina que Ansible es un **Ferrari** 🏎️. Es rápido, potente y rojo (bueno, el logo es negro y blanco, pero ya me entiendes).
@@ -716,7 +716,7 @@ python --version
 
 Si ves un número, ¡estás listo para repostar e instalar el Ferrari!
 
-### 2.2. Instalación (Ubuntu/RHEL/macOS)
+### Instalación (Ubuntu/RHEL/macOS)
 
 Vamos a instalar Ansible en tu **Nodo de Control**. Recuerda que **NO** necesitas instalar nada en los servidores que vas a gestionar (agentless, ¿recuerdas?).
 
@@ -809,7 +809,7 @@ ansible [core 2.14.x]
 
 ¡Listo! Ya tienes el poder de la automatización en tus manos.
 
-### 2.3. Archivo ansible.cfg
+### Archivo ansible.cfg
 
 Ansible funciona "out of the box", pero para trabajar como un profesional, necesitas configurarlo a tu gusto.
 
@@ -830,10 +830,10 @@ flowchart TD
     F -- SÍ --> G[Usa ~/.ansible.cfg]
     F -- NO --> H[Usa Global /etc/ansible/ansible.cfg]
 
-    style C fill:#ff6b6b,stroke:#333
-    style E fill:#ffd93d,stroke:#333
-    style G fill:#6bcf7f,stroke:#333
-    style H fill:#4ecdc4,stroke:#333
+    style C fill:#ff6b6b,stroke:#333,color:#000
+    style E fill:#ffd93d,stroke:#333,color:#000
+    style G fill:#6bcf7f,stroke:#333,color:#000
+    style H fill:#4ecdc4,stroke:#333,color:#000
 ```
 
 #### 💡 Best Practice
@@ -873,7 +873,7 @@ become_ask_pass = False
 
 Con esto, Ansible sabrá dónde mirar y cómo comportarse sin que tengas que pasarle mil parámetros por línea de comandos.
 
-### 2.4. Laboratorio Práctico
+### Laboratorio Práctico
 
 Para aprender Ansible necesitas romper cosas. Y mejor romper un entorno de pruebas que el servidor de producción de tu empresa (créeme, no quieres esa llamada un viernes por la tarde).
 

@@ -15,7 +15,7 @@ Hoy quería partir de una reflexión que lleva semanas en mi cabeza. Me encanta 
 Parece que el futuro consistirá en humanos latigando a IAs para que hagan todo por nosotros. 
 TODO: Meme latigo simpsons
 
-Ahora en serio, seguramente no sea tan drástico, pero si es cierto que la IA esta cambiando nuestra forma de trabajar, aprender y relacionarnos con la tecnología y esto puede tener un impacto psicológico importante en nosotros.
+Ahora en serio, seguramente no sea tan drástico, pero si es cierto que la IA nos esta cambiando: nuestra forma de trabajar, aprender y relacionarnos con la tecnología. Esto puede tener un impacto psicológico importante en nosotros.
 
 Últimamente me he sentido más agotado, menos creativo, con menos ganas de aprender cosas nuevas y una sensación de niebla mental que estaba afectando a mi concentración. Por esto mismo, me propuse investigar más a fondo si esto era solo una sensación mía o podría ser un fenómeno más generalizado.
 

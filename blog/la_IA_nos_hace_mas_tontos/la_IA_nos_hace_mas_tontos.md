@@ -1,8 +1,8 @@
 ---
-date: 2026-05-04
+date: 2026-05-14
 title: "¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?"
-linkTitle: ""
 tags: [IA, inteligencia artificial, tecnología, reflexión]
+keywords: [IA, inteligencia artificial, impacto psicológico, productividad, creatividad, aprendizaje, salud mental]
 description: "En este artículo reflexionamos sobre cómo la inteligencia artificial puede afectar nuestra percepción de nosotros mismos y si realmente nos hace más tontos o simplemente nos desafía a adaptarnos a un nuevo entorno tecnológico."
 ---
 

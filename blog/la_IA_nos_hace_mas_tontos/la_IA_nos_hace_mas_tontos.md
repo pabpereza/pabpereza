@@ -16,7 +16,7 @@ Dentro vídeo: https://youtu.be/osQ428dX0b4
 [![Vídeo del montaje](https://img.youtube.com/vi/osQ428dX0b4/maxresdefault.jpg)](https://youtu.be/osQ428dX0b4)
 
 
-<!-- trucate -->
+<!-- truncate -->
 
 Parece que el futuro consistirá en humanos latigando a IAs para que hagan todo por nosotros. 
 ![Meme latigo IA](meme_latigo_ia.gif)

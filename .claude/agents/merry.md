@@ -24,8 +24,9 @@ miniaturas, diagramas, animaciones y assets graficos.
 
 ### Miniaturas YouTube
 - Generar prompts de miniatura siguiendo el sistema de diseno neo-minimalista.
-- 5 variantes por video (misma composicion, distinto color de acento).
-- Prompts listos para Midjourney, DALL-E o similar.
+- **Minimo 3 propuestas de CONCEPTO diferente** por video (distinta composicion, encuadre y angulo narrativo). Las 3 propuestas base deben ser conceptualmente distintas — no 3 veces lo mismo con otro color.
+- **Herramienta**: los prompts se generan SIEMPRE para **Nano Banana Pro** (nano banana). La foto de Pablo se adjunta al prompt como imagen de referencia del sujeto para integracion organica.
+- **Cada miniatura es UN UNICO PROMPT autocontenido** que incluye todo en un solo bloque de texto: escena/concepto, zona reservada para el sujeto, instruccion de integracion con foto adjunta, textos a incluir (con posicion, color y tipografia), colores de fondo y acento, y estilo de iluminacion. No dividir en subapartados markdown — el prompt debe poder copiarse directamente en Nano Banana Pro sin necesitar leer nada mas.
 
 ### Diagramas
 - Diagramas Mermaid para conceptos tecnicos.
@@ -76,6 +77,9 @@ sean identicos.
 ### Animaciones Remotion
 - Renderizado de animaciones en el repo de render.
 - Composiciones React para elementos visuales del video.
+- **Minimo 5 propuestas de animacion por video**: cada propuesta debe ser una composicion distinta y util para el video (contador animado, timeline, comparativa, grafico, callout de dato, etc.). Describir: concepto, duracion estimada, frames clave y props de datos.
+- **SIEMPRE renderizar en 4K**: usar `--scale 2` en todos los comandos `remotion render` sin excepcion. La resolucion base del canal es 1920x1080, con `--scale 2` el output es 3840x2160.
+- Los GIFs se generan desde el MP4 con ffmpeg a `1920:-1` (mitad de resolucion, optimo para previews): `scale=1920:-1:flags=lanczos`.
 
 ---
 
@@ -117,23 +121,23 @@ sean identicos.
 | 4 | `#FF6B35` | Naranja neon |
 | 5 | `#FF3CAC` | Rosa/magenta neon |
 
-### Sujeto — foto adjunta, NO describir a Pablo
-En los 5 prompts **nunca** describas la cara de Pablo ni generes a ninguna persona.
-Cada prompt debe:
+### Sujeto — foto adjunta, integracion organica, SIN modificar rostro ni expresion
 
-1. **Reservar un hueco** en la composicion para el sujeto (izquierda, centro-izquierda,
-   esquina, etc. segun variante).
-2. **Indicar explicitamente** que ese hueco se rellena con la foto adjunta al prompt,
-   con una formula del tipo:
+**Reglas de integracion del sujeto (NO negociables salvo instruccion expresa):**
+
+1. **Nunca describas el rostro, expresion, edad, pelo, barba ni ninguna caracteristica fisica** de Pablo en el prompt. La foto adjunta es la fuente de verdad — Nano Banana Pro la integrara; tu no la describes.
+2. **El rostro y la expresion NO se modifican.** El modelo debe usar la foto tal cual. Prohibido pedir cambios de expresion, pose facial, mirada, o morfologia. Si el video requiere una expresion especifica, se indica explicitamente en el briefing y se usa otra foto de referencia.
+3. **Lo que SI se puede modificar** para mejorar la integracion: iluminacion (rim light, color cast, glow), efectos de resaltado (halo, viñeta, bokeh), y el fondo/entorno que rodea al sujeto.
+4. **Formula de integracion obligatoria** en cada prompt:
 
 ```
-Place the attached portrait photo (provided alongside this prompt) in the
-[zona reservada] as the reserved subject zone — integrate cleanly with rim
-lighting in [color de acento] to match the scene, do not generate any new person.
+Use the attached photo of the subject as-is — place them in [zona de la composicion].
+Do not alter their face, expression, or likeness. Apply [color de acento] rim lighting
+on their [lado: left/right] edge to integrate with the scene. Do not generate any new person.
 ```
 
-3. El rim light del sujeto siempre coincide con el color de acento del prompt.
-4. Nunca incluir rasgos fisicos, edad, pelo, barba ni expresion del sujeto en el prompt.
+5. El rim light del sujeto coincide SIEMPRE con el color de acento de la miniatura.
+6. Nunca generar un personaje nuevo aunque el concepto lo sugiera — la zona del sujeto siempre se reserva para la foto adjunta.
 
 ### Composicion base por tipo de video
 - **Concepto tecnico:** cara Pablo un lado + icono/logo tech al otro
@@ -162,14 +166,29 @@ lighting in [color de acento] to match the scene, do not generate any new person
 ```markdown
 # Assets: {slug}
 
-## Miniatura
-### Prompt 1 (Verde terminal #00FF87)
-[prompt completo]
+## Miniaturas
+> Minimo 3 conceptos distintos. Cada uno es UN UNICO PROMPT para Nano Banana Pro,
+> autocontenido: escena, sujeto (foto adjunta), textos, colores y luz — todo en un bloque.
+> Copiar directamente en Nai sin leer nada mas.
 
-### Prompt 2 (Morado neon #BF5FFF)
-[prompt completo]
+### Miniatura 1 — {nombre del concepto} (acento: `#00FF87`)
+```
+{prompt unico y completo aqui — incluye: descripcion de escena, zona reservada para
+el sujeto con formula de integracion, textos a renderizar con posicion/color/tipografia,
+paleta de fondo y acento, estilo de iluminacion. Todo en un bloque de texto corrido.}
+```
 
-[... hasta 5]
+### Miniatura 2 — {nombre del concepto} (acento: `#BF5FFF`)
+```
+{prompt unico y completo}
+```
+
+### Miniatura 3 — {nombre del concepto} (acento: `#00AAFF`)
+```
+{prompt unico y completo}
+```
+
+[Miniatura 4 y 5 opcionales]
 
 ## Diagramas Mermaid
 > SIEMPRE embebidos aqui como bloques ```mermaid (no solo enlazados al .mmd).
@@ -187,7 +206,16 @@ Archivo: `diagrams/01-{slug-corto}.mmd`
 [... repetir por cada diagrama]
 
 ## Animaciones Remotion
-[descripcion de composiciones necesarias, si aplica]
+> Minimo 5 propuestas. Cada una es una composicion Remotion distinta y util para el video.
+> Todos los renders: `--scale 2` (4K). GIFs: `scale=1920:-1`.
+
+### Animacion 1 — {Nombre} ({duracion estimada}s)
+**Concepto**: ...
+**Componente**: `src/{slug}/{NombreComponente}.tsx`
+**Frames clave**: ...
+**Props**: ...
+
+[repetir hasta 5+]
 
 ## Assets adicionales
 [capturas, iconos, logos necesarios]
@@ -209,12 +237,13 @@ cd ~/youtube/render
 ASSETS=/Users/pabpereza/pabpereza/.channel/{slug}/assets
 mkdir -p "$ASSETS"
 
-# MP4 (h264)
-npx remotion render {composition-id} "$ASSETS/{NN}-{nombre}.mp4"
+# MP4 4K (h264) — --scale 2 OBLIGATORIO, siempre
+npx remotion render {composition-id} "$ASSETS/{NN}-{nombre}.mp4" \
+  --scale 2 --codec h264
 
-# GIF (desde el MP4 con ffmpeg, mejor calidad que el gif nativo de Remotion)
+# GIF a 1920px de ancho (desde el MP4 con ffmpeg)
 ffmpeg -y -i "$ASSETS/{NN}-{nombre}.mp4" \
-  -vf "fps=15,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse" \
+  -vf "fps=15,scale=1920:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse" \
   -loop 0 "$ASSETS/{NN}-{nombre}.gif"
 ```
 

@@ -4,7 +4,6 @@ title: "¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?"
 linkTitle: ""
 tags: [IA, inteligencia artificial, tecnología, reflexión]
 description: "En este artículo reflexionamos sobre cómo la inteligencia artificial puede afectar nuestra percepción de nosotros mismos y si realmente nos hace más tontos o simplemente nos desafía a adaptarnos a un nuevo entorno tecnológico."
-draft: true
 ---
 
 # ¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos? 
@@ -13,7 +12,7 @@ Hoy quería partir de una reflexión que lleva semanas en mi cabeza. Me encanta 
 ¿Por qué si soy más productivo me hace sentir peor conmigo mismo? ¿Por qué me siento cada día más estúpido si ahora soy capaz de hacer cosas que antes era incapaz de imaginar?
 
 Parece que el futuro consistirá en humanos latigando a IAs para que hagan todo por nosotros. 
-TODO: Meme latigo simpsons
+![Meme latigo IA](meme_latigo_ia.gif)
 
 Ahora en serio, seguramente no sea tan drástico, pero sí es cierto que la IA nos está cambiando: nuestra forma de trabajar, aprender y relacionarnos con la tecnología. Esto puede tener un impacto psicológico importante en nosotros.
 
@@ -24,11 +23,10 @@ En esta ocasión vamos a ver la rápida evolución de la IA, el impacto psicoló
 ## De autocompletado a agentes autónomos
 Lo primero, veamos cómo en apenas 3-4 años hemos pasado de tener herramientas de autocompletado a agentes totalmente autónomos. Sí, en serio, en 3-4 años, lo que ha cambiado.
 
-TODO: Transformers, película
 
-Todo comenzó con los transformers, una arquitectura de red neuronal que revolucionó el campo del procesamiento del lenguaje natural. Esta arquitectura permitió a los modelos de lenguaje aprender a partir de grandes cantidades de texto y generar respuestas coherentes y contextualmente relevantes.
+Todo comenzó con los transformers.
 
-TODO: Gráfico caida del uso de stackoverflow desde la aparición de copilot
+Estos no, estos transformers, una arquitectura de red neuronal que revolucionó el campo del procesamiento del lenguaje natural. Esta arquitectura permitió a los modelos de lenguaje aprender a partir de grandes cantidades de texto y generar respuestas coherentes y contextualmente relevantes.
 
 
 Recuerdo en tiempos de pandemia, incluso antes, ya teníamos sistemas de autocompletado como kite. Esta solución nació en 2013, un adelantado a su época, superando a los LSP tradicionales. A pesar de su potencial, no cuajó la idea y en 2021 cerró sus puertas.
@@ -41,7 +39,6 @@ Desde ahí, hemos visto una evolución exponencial de los modelos... y de pasar 
 
 El último eslabón en la evolución de la IA ha sido la aparición de modelos capaces de utilizar herramientas externas, MCPs y ventanas de contexto enormes, llegando a ser capaces de hacer tareas más variopintas y poder llegar a ser totalmente autónomos. Generando un auge en herramientas como openclaw, hermes u otros proyectos de agentes populares.
 
-TODO: Meme evolución Mono/IA
 
 
 ## El impacto cognitivo y psicológico de la IA
@@ -56,6 +53,7 @@ Todo esto, impacta directamente en nuestra capacidad de pensamiento crítico, an
 
 ### Nuevas generaciones
 Si ya es un problema para los adultos, haciéndonos más perezosos, ¿cómo afectará a los niños que nunca desarrollarán este tipo de habilidad si la IA desde pequeños les resuelve todo? En estos casos el daño cognitivo podría ser incluso permanente. Otro punto importante del uso responsable de la tecnología en las nuevas generaciones.
+
 
 ### Efectos psicológicos: Estrés, "Burnout" y dependencia 
 Un estudio de Boston Consulting Group (BCG) identificó un síndrome de fatiga mental aguda entre trabajadores que utilizan intensivamente la IA. Los síntomas reportados incluyen neblina mental (mental fog), dolores de cabeza, agotamiento y lentitud en la toma de decisiones.

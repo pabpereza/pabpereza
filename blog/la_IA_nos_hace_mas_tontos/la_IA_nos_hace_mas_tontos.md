@@ -11,8 +11,16 @@ Hoy quería partir de una reflexión que lleva semanas en mi cabeza. Me encanta 
 
 ¿Por qué si soy más productivo me hace sentir peor conmigo mismo? ¿Por qué me siento cada día más estúpido si ahora soy capaz de hacer cosas que antes era incapaz de imaginar?
 
+Dentro vídeo: https://youtu.be/osQ428dX0b4
+
+[![Vídeo del montaje](https://img.youtube.com/vi/osQ428dX0b4/maxresdefault.jpg)](https://youtu.be/osQ428dX0b4)
+
+
+<!-- trucate -->
+
 Parece que el futuro consistirá en humanos latigando a IAs para que hagan todo por nosotros. 
 ![Meme latigo IA](meme_latigo_ia.gif)
+
 
 Ahora en serio, seguramente no sea tan drástico, pero sí es cierto que la IA nos está cambiando: nuestra forma de trabajar, aprender y relacionarnos con la tecnología. Esto puede tener un impacto psicológico importante en nosotros.
 

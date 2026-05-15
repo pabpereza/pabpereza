@@ -12,16 +12,16 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 ## Últimos vídeos publicados
 <p align=center>
 
+<a href='https://youtu.be/osQ428dX0b4' target='_blank'>
+  <img height='140px' src='https://img.youtube.com/vi/osQ428dX0b4/mqdefault.jpg' />
+</a>
+
 <a href='https://youtu.be/6p-z8ozXlqM' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/6p-z8ozXlqM/mqdefault.jpg' />
 </a>
 
 <a href='https://youtu.be/ncb2MhGjz5c' target='_blank'>
   <img height='140px' src='https://img.youtube.com/vi/ncb2MhGjz5c/mqdefault.jpg' />
-</a>
-
-<a href='https://youtu.be/o8OXJbRTj5Q' target='_blank'>
-  <img height='140px' src='https://img.youtube.com/vi/o8OXJbRTj5Q/mqdefault.jpg' />
 </a>
 
 </p>
@@ -50,6 +50,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
+- [¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?](https://pabpereza.dev/blog/la_IA_nos_hace_mas_tontos/la_IA_nos_hace_mas_tontos)
 - [Migrar de Ingress a Gateway API en Kubernetes sin downtime](https://pabpereza.dev/blog/migrar_ingress_a_gateway_api_kubernetes)
 - [Instala tu propio asistente IA en 10 minutos con OpenClaw](https://pabpereza.dev/blog/openclaw-instalacion-primeros-pasos)
 - [ZimaBoard 2: Análisis a fondo y Guía de Despliegue (Tu homelab en serio)](https://pabpereza.dev/blog/2026/zimaboard2_nas_casero/zimaborad2_nas_casero)
@@ -59,7 +60,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 - [HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)](https://pabpereza.dev/blog/homelab-1-rack)
 - [Kubeastronaut, mi experiencia y todas las dudas](https://pabpereza.dev/blog/2025/kubeastronaut_cncf/kubeastronaut_cncf)
 - [Depurar builds de Docker en VS Code como un profesional](https://pabpereza.dev/blog/debug_docker_build_vscode)
-- [LocalStack, dudas comunes y cómo usarlo con terraform](https://pabpereza.dev/blog/localstack_terraform_mas_dudas)
 
 
 ---

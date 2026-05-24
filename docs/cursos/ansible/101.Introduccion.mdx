@@ -76,8 +76,8 @@ Mantén la coherencia en todos tus servidores. Si tienes 100 servidores web, ase
 
 **Ejemplo práctico:**
 ```yaml
-- name: Configurar servidores web uniformemente
-  hosts: webservers
+- name: Configurar servidores uniformemente
+  hosts: servers
   tasks:
     - name: Instalar Nginx
       apt:
@@ -275,16 +275,16 @@ Un archivo (INI, YAML o script dinámico) que lista tus hosts y los agrupa.
 
 **Ejemplo (`hosts.ini`):**
 ```ini
-[webservers]
-web1.ejemplo.com
-web2.ejemplo.com
+[madrid]
+target1 ansible_host=localhost ansible_port=55000
+target2 ansible_host=localhost ansible_port=55001
 
-[databases]
-db.ejemplo.com
+[barcelona]
+target3 ansible_host=localhost ansible_port=55002
 
-[production:children]
-webservers
-databases
+[servers:children]
+madrid
+barcelona
 ```
 
 #### 4. **Módulos (Modules)**
@@ -412,11 +412,7 @@ Este curso está estructurado en módulos progresivos:
 - ✅ Integración con CI/CD
 - ✅ Futuro de Ansible y tendencias
 
-#### **Proyectos Prácticos**
-- 🛠️ Configurar un cluster web completo (Nginx + PHP-FPM)
-- 🛠️ Desplegar una aplicación Dockerizada
-- 🛠️ Hardening de servidores (seguridad)
-- 🛠️ Backup automático multi-servidor
+Todos ellos acompañados de una parte práctica, como debe ser.
 
 ### 🚀 ¿Por qué Aprender Ansible en 2026?
 
@@ -650,12 +646,16 @@ graph TD
 
 **Inventario (`hosts.ini`):**
 ```ini
-[webservers]
-192.168.1.10
-192.168.1.11
+[madrid]
+target1 ansible_host=localhost ansible_port=55000
+target2 ansible_host=localhost ansible_port=55001
 
-[dbservers]
-db.produccion.local
+[barcelona]
+target3 ansible_host=localhost ansible_port=55002
+
+[servers:children]
+madrid
+barcelona
 ```
 
 **Comando desde el Nodo de Control:**
@@ -676,19 +676,7 @@ ansible all -i hosts.ini -m ping
 Prepara tu entorno de trabajo para empezar a automatizar.
 
 
-### requisitos previos (python)
-
-#### ⛽ La analogía: el combustible
-Imagina que Ansible es un **Ferrari** 🏎️. Es rápido, potente y rojo (bueno, el logo es negro y blanco, pero ya me entiendes).
-Para que ese Ferrari arranque, necesita gasolina. En el mundo de Ansible, esa gasolina es **Python**.
-
-Sin Python, Ansible es solo un montón de código bonito que no hace nada.
-
-#### 🐍 ¿Por qué Python?
-Ansible está escrito en Python. Cuando ejecutas un comando, Ansible:
-1.  Convierte tus instrucciones (YAML) en pequeños programas de Python (módulos).
-2.  Envía esos programas al servidor destino.
-3.  Necesita un intérprete de Python en el destino para ejecutarlos.
+### Requisitos previos (python)
 
 #### 📋 Requisitos técnicos
 
@@ -702,18 +690,6 @@ Son las máquinas que vas a controlar.
 *   **Python:** Necesitan tener Python instalado (versión 2.7+ o 3.5+).
 *   **SSH:** Acceso vía SSH y credenciales válidas.
 
-:::warning Ojo con Python 2
-Aunque Ansible soporta Python 2.7 en los nodos gestionados, es una versión obsoleta (End of Life). Siempre que puedas, asegúrate de que tus servidores tengan **Python 3**.
-:::
-
-#### 🔍 Cómo verificar tu versión
-Abre tu terminal y comprueba si tienes "gasolina":
-
-```bash
-python3 --version
-# O si usas python 2
-python --version
-```
 
 Si ves un número, ¡estás listo para repostar e instalar el Ferrari!
 
@@ -810,7 +786,36 @@ ansible [core 2.14.x]
 
 ¡Listo! Ya tienes el poder de la automatización en tus manos.
 
-### Archivo ansible.cfg
+### 1.Laboratorio Práctico
+
+Para aprender Ansible necesitas romper cosas. Y mejor romper un entorno de pruebas que el servidor de producción de tu empresa.
+
+Vamos a montar un entorno local usando **Docker**. Si no sabes de docker o simplemente quieres repasar, te recuerdo que tienes un [curso completo de Docker aquí](../docker/README.md)
+
+He creado un repositorio que automatiza el proceso, por lo que no tienes que saber nada. Si prefieres montártelo por tu cuenta, también puedes replicarlo con 3 VMs a las que tengas permisos de administrador y acceso SSH.
+
+Clona el repositorio [pabpereza/ansible-laboratory](https://github.com/pabpereza/ansible-laboratory).
+```bash
+git clone https://github.com/pabpereza/ansible-laboratory.git
+```
+
+Dale permisos de ejecución al script de setup:
+```bash
+cd ansible-laboratory
+chmod +x setup.sh
+```
+
+Ejecuta el script para montar el laboratorio y sigue los pasos del menú interactivo:
+```bash
+./setup.sh
+```
+
+Para este curso, te recomiendo usar la opción **Local**, esta requiere tener Docker instalado. Te dará a elegir el número de targets (o servidores), te recomiendo 3 para el curso.
+
+Además, si no quieres usar tu host como nodo de control, el script te da la opción de montar un contenedor extra que hará de nodo de control y lenvanta una instalacia de VS Code Server para que puedas editar tus playbooks desde el navegador y no manches tu entorno local.
+
+
+### 2. Archivo ansible.cfg
 
 Ansible funciona "out of the box", pero para trabajar como un profesional, necesitas configurarlo a tu gusto.
 
@@ -853,7 +858,7 @@ Crea un archivo llamado `ansible.cfg` en tu carpeta de proyecto con este conteni
 inventory = ./hosts
 
 # Usuario con el que te conectas a los servidores remotos
-remote_user = pabpereza
+remote_user = ansible 
 
 # Desactiva la comprobación de huellas SSH (útil para laboratorios, CUIDADO en prod)
 host_key_checking = False
@@ -874,83 +879,37 @@ become_ask_pass = False
 
 Con esto, Ansible sabrá dónde mirar y cómo comportarse sin que tengas que pasarle mil parámetros por línea de comandos.
 
-### Laboratorio Práctico
 
-Para aprender Ansible necesitas romper cosas. Y mejor romper un entorno de pruebas que el servidor de producción de tu empresa (créeme, no quieres esa llamada un viernes por la tarde).
-
-Vamos a montar un entorno local usando **Docker**. Es rápido, ligero y gratis.
-
-#### 🐳 Opción: Docker Compose (Recomendada)
-
-Simularemos 3 máquinas:
-1.  **Control Node:** Tu máquina con Ansible (o un contenedor con Ansible).
-2.  **Web:** Un servidor Ubuntu que gestionaremos.
-3.  **Db:** Otro servidor Ubuntu que gestionaremos.
-
-##### 1. Estructura de archivos
-Crea una carpeta `ansible-lab` y dentro este archivo `docker-compose.yml`:
-
-```yaml
-version: '3'
-
-services:
-  # Simulamos el servidor WEB
-  ubuntu-web:
-    image: paramrod/ubuntu-ssh-enabled:latest # Imagen con SSH server listo
-    container_name: ubuntu-web
-    hostname: webserver
-    ports:
-      - "2222:22" # Exponemos SSH en puerto 2222
-    networks:
-      - ansible-net
-
-  # Simulamos el servidor DB
-  ubuntu-db:
-    image: paramrod/ubuntu-ssh-enabled:latest
-    container_name: ubuntu-db
-    hostname: dbserver
-    ports:
-      - "2223:22" # Exponemos SSH en puerto 2223
-    networks:
-      - ansible-net
-
-networks:
-  ansible-net:
-    driver: bridge
-```
-
-##### 2. Levantar el laboratorio
-```bash
-docker compose up -d
-```
 
 ##### 3. Crear tu inventario
-Crea un archivo llamado `hosts` (o `inventory`) en la misma carpeta:
+Crea un archivo llamado `hosts.ini` (o `inventory`) en la misma carpeta. Recuerda ajustar esta información con los puertos que te haya puesto automáticamente el script de setup para cada target.
 
 ```ini
-[webservers]
-# Conectamos a localhost puerto 2222 que redirige al contenedor
-ubuntu-web ansible_host=localhost ansible_port=2222 ansible_user=ansible ansible_ssh_pass=password
+[servers]
+target1 ansible_port=55000 ansible_host=localhost
+target2 ansible_port=55001 ansible_host=localhost
+target3 ansible_port=55002 ansible_host=localhost
 
-[dbservers]
-ubuntu-db ansible_host=localhost ansible_port=2223 ansible_user=ansible ansible_ssh_pass=password
+[all:vars]
+# Conectamos a localhost y cada host usa un puerto distinto redirigido al contenedor
+ansible_user=ansible
+ansible_ssh_pass=ansible # Contraseña por defecto del laboratorio, en producción usarías claves SSH o Ansible Vault para esto, lo veremos más adelante.
 ```
 
-:::note Credenciales
-La imagen `paramrod/ubuntu-ssh-enabled` es una imagen pública preparada para labs con usuario `ansible` y contraseña `password`. ¡No usar en producción!
-:::
+
 
 ##### 4. ¡Prueba de fuego! 🔥
 Ejecuta tu primer comando ad-hoc para ver si hay conexión (ping):
 
 ```bash
-ansible all -i hosts -m ping
+ansible all -i hosts.ini -m ping
 ```
 
 Si ves algo verde que dice `"ping": "pong"`, ¡felicidades! 🎉 Tienes tu laboratorio de Ansible funcionando.
 
+
 #### 🧹 Limpieza
-Cuando termines de jugar, apaga todo para liberar recursos:
+Cuando termines de jugar, puedes ir a docker y parar todos los contenedores. Si quieres eliminar o reinstalar el laboratorio. Sigue el menú interactivo: 
 ```bash
-docker compose down
+./setup.sh
 ```

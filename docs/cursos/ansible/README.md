@@ -72,9 +72,10 @@ Al terminar serás capaz de:
 
 * [🎭 6. Roles, Templates y Galaxy](./106.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
 * [🔐 7. Seguridad y Credenciales](./107.Seguridad.md) — Vault, claves SSH y variables sensibles
-* [🏭 8. Entornos Reales y Proyecto Final](./108.Entornos_reales.md) — Linux, despliegues, troubleshooting y proyecto NotaStack
+* [🔧 8. Errores y depuración](./108.Entornos_reales.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks
 * [🐳 9. Ansible y Contenedores](./109.Contenedores.md) — Docker y Kubernetes con Ansible
 * [🚀 10. Ansible en DevOps y CI/CD](./110.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
+* [🏗️ 11. Proyecto Final NotaStack](./111.Proyecto_real.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
 
 ## 🎬 Equivalencia con el canal de YouTube
 

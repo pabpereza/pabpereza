@@ -72,7 +72,6 @@ El uso más lógico para este dispositivo es convertirlo en el centro de datos d
 La ZimaBoard 2 incluye puertos SATA nativos (alimentación + datos). Esto es un plus, porque estoy montando algo similar con la raspberry y necesitas alimentación externa para los discos, lo que complica el cableado y la fiabilidad.
 
 Esta parte de cableado, se ve mejor en el vídeo: 
-TODO:
 
 ### RAID 1 vs. RAID 5: La eterna duda
 

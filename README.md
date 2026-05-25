@@ -50,7 +50,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
-- [¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?](https://pabpereza.dev/blog/la_IA_nos_hace_mas_tontos/la_IA_nos_hace_mas_tontos)
+- [¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?](https://pabpereza.dev/blog/2026/la_IA_nos_hace_mas_tontos/la_IA_nos_hace_mas_tontos)
 - [Migrar de Ingress a Gateway API en Kubernetes sin downtime](https://pabpereza.dev/blog/migrar_ingress_a_gateway_api_kubernetes)
 - [Instala tu propio asistente IA en 10 minutos con OpenClaw](https://pabpereza.dev/blog/openclaw-instalacion-primeros-pasos)
 - [ZimaBoard 2: Análisis a fondo y Guía de Despliegue (Tu homelab en serio)](https://pabpereza.dev/blog/2026/zimaboard2_nas_casero/zimaborad2_nas_casero)

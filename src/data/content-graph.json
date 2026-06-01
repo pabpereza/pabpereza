@@ -1,199 +1,133 @@
 {
   "nodes": [
     {
-      "id": "/docs/cursos/ansible/0_introduccion",
-      "title": "0. Introducción",
+      "id": "/docs/cursos/ansible/1_introduccion_fundamentos_e_instalacion",
+      "title": "1. Introducción, Fundamentos e Instalación",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/0_introduccion",
-      "slug": null,
+      "description": "Aprende qué es Ansible, su arquitectura sin agentes, cómo se instala y por qué es la herramienta de automatización IT más popular del ecosistema DevOps. Curso gratuito en español.",
+      "url": "/docs/cursos/ansible/1_introduccion_fundamentos_e_instalacion",
+      "slug": "introduccion_a_ansible_curso_completo",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/1_fundamentos",
-      "title": "1. Fundamentos",
+      "id": "/docs/cursos/ansible/2_inventarios_y_hosts",
+      "title": "2. Inventarios y Hosts",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/1_fundamentos",
-      "slug": null,
+      "description": "Aprende a gestionar tus hosts con inventarios estáticos en INI/YAML, generar inventarios dinámicos desde la nube (AWS, Azure, GCP) y ejecutar comandos ad-hoc para tareas puntuales en Ansible.",
+      "url": "/docs/cursos/ansible/2_inventarios_y_hosts",
+      "slug": "ansible_inventarios_dinamicos_y_estaticos",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/2_instalacion",
-      "title": "2. Instalación",
+      "id": "/docs/cursos/ansible/3_playbooks_y_yaml",
+      "title": "3. Playbooks y YAML",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/2_instalacion",
-      "slug": null,
+      "description": "Domina la sintaxis YAML, la estructura de un playbook, plays, tasks y la ejecución con ansible-playbook. El corazón de la automatización con Ansible.",
+      "url": "/docs/cursos/ansible/3_playbooks_y_yaml",
+      "slug": "ansible_playbooks_yaml_sintaxis",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/3_inventarios",
-      "title": "3. Inventarios",
+      "id": "/docs/cursos/ansible/4_modulos_e_idempotencia",
+      "title": "4. Módulos e Idempotencia",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/3_inventarios",
-      "slug": null,
+      "description": "Conoce los módulos esenciales y avanzados de Ansible (apt, yum, copy, template, service, user, file...) y entiende el principio de idempotencia que garantiza ejecuciones seguras y repetibles.",
+      "url": "/docs/cursos/ansible/4_modulos_e_idempotencia",
+      "slug": "ansible_modulos_idempotencia",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/4_playbooks",
-      "title": "4. Playbooks",
+      "id": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
+      "title": "5. Variables y Control de Flujo",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/4_playbooks",
-      "slug": null,
+      "description": "Aprende a usar variables, facts, condicionales (when), bucles (loop) y handlers en Ansible para crear playbooks dinámicos y reactivos a cambios en tu infraestructura.",
+      "url": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
+      "slug": "ansible_variables_condicionales_bucles_handlers",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/5_modulos",
-      "title": "5. Módulos",
+      "id": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
+      "title": "6. Roles, Templates y Galaxy",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/5_modulos",
-      "slug": null,
+      "description": "Aprende a estructurar tu código Ansible con roles reutilizables, generar configuraciones dinámicas con plantillas Jinja2 y publicar o consumir roles desde Ansible Galaxy. Buenas prácticas incluidas.",
+      "url": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
+      "slug": "ansible_roles_templates_galaxy",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/6_variables",
-      "title": "6. Variables",
+      "id": "/docs/cursos/ansible/7_seguridad_y_credenciales",
+      "title": "7. Seguridad y Credenciales",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/6_variables",
-      "slug": null,
+      "description": "Cifra secretos con Ansible Vault, gestiona claves SSH de forma segura y maneja variables sensibles sin exponerlas en tu repositorio. Buenas prácticas de seguridad para Ansible.",
+      "url": "/docs/cursos/ansible/7_seguridad_y_credenciales",
+      "slug": "ansible_seguridad_vault_ssh_credenciales",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/7_roles",
-      "title": "7. Roles",
+      "id": "/docs/cursos/ansible/8_errores_y_depuracion",
+      "title": "8. Errores y depuración",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/7_roles",
-      "slug": null,
+      "description": "Manejo de errores con block/rescue/always, depuración con --check, --diff y módulo debug, y técnicas de troubleshooting para diagnosticar y resolver problemas en playbooks reales de Ansible.",
+      "url": "/docs/cursos/ansible/8_errores_y_depuracion",
+      "slug": "ansible_errores_depuracion",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/8_templates",
-      "title": "8. Templates",
+      "id": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "title": "9. Ansible y Contenedores",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/8_templates",
-      "slug": "templates-jinja2-ansible",
+      "description": "Integra Ansible con Docker y Kubernetes. Automatiza la gestión de contenedores, despliega imágenes, orquesta clústeres K8s y reemplaza scripts bash por playbooks idempotentes en tu flujo de contenedores.",
+      "url": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "slug": "ansible_docker_kubernetes_contenedores",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/9_ansible_galaxy",
-      "title": "9. Ansible Galaxy",
+      "id": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
+      "title": "10. Ansible en DevOps y CI/CD",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/9_ansible_galaxy",
-      "slug": null,
+      "description": "Integra Ansible en tus pipelines de CI/CD. Aprende a ejecutar playbooks desde Jenkins y GitHub Actions, gestionar secretos en pipelines y diseñar estrategias de despliegue (rolling, blue-green, canary).",
+      "url": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
+      "slug": "ansible_cicd_jenkins_github_actions",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/10_buenas_practicas",
-      "title": "10. Buenas prácticas",
+      "id": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "title": "11. Proyecto Final NotaStack",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/10_buenas_practicas",
-      "slug": "buenas-practicas-ansible",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/11_manejo_de_errores",
-      "title": "11. Manejo de errores",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/11_manejo_de_errores",
-      "slug": null,
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/12_ansible_vault",
-      "title": "12. Ansible Vault",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/12_ansible_vault",
-      "slug": null,
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/13_include_e_import",
-      "title": "13. Include e Import",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/13_include_e_import",
-      "slug": null,
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/14_depuracion",
-      "title": "14. Depuración",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/14_depuracion",
-      "slug": null,
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/15_proyecto_final",
-      "title": "15. Proyecto Final",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/15_proyecto_final",
-      "slug": "proyecto-final-ansible",
+      "description": "Proyecto integrador del curso de Ansible. Despliega una aplicación web completa con base de datos PostgreSQL, backend Flask, proxy inverso Nginx y monitorización, usando roles, Vault e inventarios separados por entorno.",
+      "url": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "slug": "ansible_proyecto_final_notastack",
       "val": 10,
       "connected": true
     },
     {
       "id": "/docs/cursos/ansible",
-      "title": "Ansible",
+      "title": "⚙️ Ansible",
       "type": "content",
       "category": "docs",
-      "description": "Aprende a automatizar tu infraestructura con Ansible desde cero. Gestión de configuraciones, despliegues y orquestación sin agentes.",
+      "description": "Curso completo de Ansible gratuito en español. Desde los fundamentos de la automatización IT hasta integración con Docker, Kubernetes y pipelines CI/CD (Jenkins, GitHub Actions). Con ejemplos prácticos y proyecto final.",
       "url": "/docs/cursos/ansible",
-      "slug": "curso_ansible",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/labs",
-      "title": "💻 Labs",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/ansible/labs",
       "slug": null,
       "val": 10,
       "connected": true
@@ -628,17 +562,6 @@
       "connected": false
     },
     {
-      "id": "/docs/cursos/docker/plan_renombrado",
-      "title": "plan_renombrado",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/docker/plan_renombrado",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
       "id": "/docs/cursos/kubernetes/1_introduccion",
       "title": "1. Introducción",
       "type": "content",
@@ -980,158 +903,158 @@
       "connected": true
     },
     {
+      "id": "/docs/cursos/mysql/comandos_basicos",
+      "title": "Comandos Básicos",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende los comandos esenciales de MySQL para gestionar bases de datos, tablas y registros desde la terminal.",
+      "url": "/docs/cursos/mysql/comandos_basicos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/clausulas_y_operadores",
+      "title": "Cláusulas y Operadores",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina las cláusulas WHERE, ORDER BY, GROUP BY y LIMIT para realizar consultas precisas en MySQL.",
+      "url": "/docs/cursos/mysql/clausulas_y_operadores",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/modificacion_de_datos",
+      "title": "Modificación de Datos",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía detallada sobre cómo insertar, actualizar y eliminar registros en MySQL de forma segura y eficiente.",
+      "url": "/docs/cursos/mysql/modificacion_de_datos",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/joins_y_combinaciones",
+      "title": "Joins y Combinaciones",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a relacionar tablas en MySQL mediante JOINs. Ejemplos prácticos de INNER JOIN, LEFT JOIN y más.",
+      "url": "/docs/cursos/mysql/joins_y_combinaciones",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/funciones",
+      "title": "Funciones",
+      "type": "content",
+      "category": "docs",
+      "description": "Mejora tus consultas con funciones nativas de MySQL para manipular números, cadenas de texto y fechas.",
+      "url": "/docs/cursos/mysql/funciones",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/variables",
+      "title": "Variables",
+      "type": "content",
+      "category": "docs",
+      "description": "Cómo declarar y utilizar variables en MySQL para optimizar procesos y configuraciones en tiempo de ejecución.",
+      "url": "/docs/cursos/mysql/variables",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/procedimientos_y_funciones",
+      "title": "Procedimientos y Funciones",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear procedimientos (Stored Procedures) y funciones personalizadas para automatizar tareas en MySQL.",
+      "url": "/docs/cursos/mysql/procedimientos_y_funciones",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/cursores",
+      "title": "Cursores",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía avanzada sobre el uso de cursores en MySQL para procesar conjuntos de datos de forma iterativa.",
+      "url": "/docs/cursos/mysql/cursores",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/triggers",
+      "title": "Triggers",
+      "type": "content",
+      "category": "docs",
+      "description": "Todo sobre los triggers en MySQL: cómo automatizar acciones ante eventos INSERT, UPDATE o DELETE.",
+      "url": "/docs/cursos/mysql/triggers",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/cifrado_y_seguridad",
+      "title": "Cifrado y Seguridad",
+      "type": "content",
+      "category": "docs",
+      "description": "Protege la información sensible en MySQL utilizando técnicas de cifrado con y sin reversibilidad (SHA1, AES).",
+      "url": "/docs/cursos/mysql/cifrado_y_seguridad",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/gestion_de_usuarios",
+      "title": "Gestión de Usuarios",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear, modificar y eliminar usuarios en MySQL, incluyendo el bloqueo de cuentas para mejorar la seguridad.",
+      "url": "/docs/cursos/mysql/gestion_de_usuarios",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/permisos_y_privilegios",
+      "title": "Permisos y Privilegios",
+      "type": "content",
+      "category": "docs",
+      "description": "Configura privilegios de acceso en MySQL. Aprende a usar GRANT y REVOKE para asegurar tus bases de datos.",
+      "url": "/docs/cursos/mysql/permisos_y_privilegios",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/mysql/exportar_e_importar",
+      "title": "Exportar e Importar",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía práctica para realizar backups y restauraciones de MySQL utilizando mysqldump y la terminal.",
+      "url": "/docs/cursos/mysql/exportar_e_importar",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
       "id": "/docs/cursos/mysql",
       "title": "🐬 MySQL",
       "type": "content",
       "category": "docs",
-      "description": "Aprende a gestionar bases de datos MySQL desde cero, incluyendo instalación, configuración y administración.",
+      "description": "Curso completo de MySQL gratuito en español. Desde los fundamentos de SQL  hasta la administración avanzada, optimización de consultas y seguridad.",
       "url": "/docs/cursos/mysql",
-      "slug": "mysql",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/cifrar_descifrar",
-      "title": "cifrar_descifrar",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/cifrar_descifrar",
       "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/clausulas_operadores",
-      "title": "clausulas_operadores",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/clausulas_operadores",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/comandos_basicos",
-      "title": "comandos_basicos",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/comandos_basicos",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/combinacion_joins",
-      "title": "combinacion_joins",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/combinacion_joins",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/cursores",
-      "title": "cursores",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/cursores",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/export_import",
-      "title": "export_import",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/export_import",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/funciones_en_consultas",
-      "title": "funciones_en_consultas",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/funciones_en_consultas",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/modificacion_datos",
-      "title": "modificacion_datos",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/modificacion_datos",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/permisos",
-      "title": "permisos",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/permisos",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/procedimientos_funciones",
-      "title": "procedimientos_funciones",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/procedimientos_funciones",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/sql_variables",
-      "title": "sql_variables",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/sql_variables",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/triggers",
-      "title": "triggers",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/triggers",
-      "slug": null,
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/docs/cursos/mysql/usuarios",
-      "title": "usuarios",
-      "type": "content",
-      "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/mysql/usuarios",
-      "slug": null,
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/docs/cursos/vim/1_introduccion_a_vim",
@@ -1794,6 +1717,17 @@
       "connected": false
     },
     {
+      "id": "/blog/la_IA_nos_hace_mas_tontos",
+      "title": "¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?",
+      "type": "content",
+      "category": "blog",
+      "description": "En este artículo reflexionamos sobre cómo la inteligencia artificial puede afectar nuestra percepción de nosotros mismos y si realmente nos hace más tontos o simplemente nos desafía a adaptarnos a un nuevo entorno tecnológico.",
+      "url": "/blog/la_IA_nos_hace_mas_tontos",
+      "slug": null,
+      "val": 6,
+      "connected": false
+    },
+    {
       "id": "/blog/migrar_ingress_a_gateway_api",
       "title": "Migrar de Ingress a Gateway API en Kubernetes sin downtime",
       "type": "content",
@@ -1840,218 +1774,113 @@
   ],
   "links": [
     {
-      "source": "/docs/cursos/ansible/0_introduccion",
-      "target": "/docs/cursos/ansible/1_fundamentos",
+      "source": "/docs/cursos/ansible/1_introduccion_fundamentos_e_instalacion",
+      "target": "/docs/cursos/docker",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/3_inventarios",
+      "source": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "target": "/docs/cursos/docker",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/8_templates",
+      "source": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "target": "/docs/cursos/kubernetes",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/9_ansible_galaxy",
+      "source": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "target": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/13_include_e_import",
+      "source": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
+      "target": "/docs/cursos/ansible",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/12_ansible_vault",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/2_inventarios_y_hosts",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/11_manejo_de_errores",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/14_depuracion",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/7_seguridad_y_credenciales",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/4_playbooks",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/3_playbooks_y_yaml",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/5_modulos",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/4_modulos_e_idempotencia",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/6_variables",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/7_roles",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/15_proyecto_final",
-      "target": "/docs/cursos/ansible/10_buenas_practicas",
+      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/8_errores_y_depuracion",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/0_introduccion",
+      "target": "/docs/cursos/ansible/1_introduccion_fundamentos_e_instalacion",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/1_fundamentos",
+      "target": "/docs/cursos/ansible/2_inventarios_y_hosts",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/2_instalacion",
+      "target": "/docs/cursos/ansible/3_playbooks_y_yaml",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/3_inventarios",
+      "target": "/docs/cursos/ansible/4_modulos_e_idempotencia",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/4_playbooks",
+      "target": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/5_modulos",
+      "target": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/6_variables",
+      "target": "/docs/cursos/ansible/7_seguridad_y_credenciales",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/7_roles",
+      "target": "/docs/cursos/ansible/8_errores_y_depuracion",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/8_templates",
+      "target": "/docs/cursos/ansible/9_ansible_y_contenedores",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/9_ansible_galaxy",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/10_buenas_practicas",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/11_manejo_de_errores",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/12_ansible_vault",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/13_include_e_import",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/14_depuracion",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/15_proyecto_final",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/1_fundamentos",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/2_instalacion",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/3_inventarios",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/4_playbooks",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/5_modulos",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/6_variables",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/7_roles",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/8_templates",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/9_ansible_galaxy",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/10_buenas_practicas",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/11_manejo_de_errores",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/12_ansible_vault",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/13_include_e_import",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/labs",
-      "target": "/docs/cursos/ansible/14_depuracion",
+      "target": "/docs/cursos/ansible/11_proyecto_final_notastack",
       "type": "internal_link"
     },
     {
@@ -2462,6 +2291,71 @@
     {
       "source": "/docs/cursos/kubernetes",
       "target": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/comandos_basicos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/clausulas_y_operadores",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/modificacion_de_datos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/joins_y_combinaciones",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/funciones",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/variables",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/procedimientos_y_funciones",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/cursores",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/triggers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/cifrado_y_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/gestion_de_usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/permisos_y_privilegios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/mysql",
+      "target": "/docs/cursos/mysql/exportar_e_importar",
       "type": "internal_link"
     },
     {

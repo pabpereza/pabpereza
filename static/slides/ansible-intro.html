@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansible — Introducción | pabpereza.dev</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+
+  <style>
+    /* ── Brand palette ─────────────────────────────────── */
+    :root {
+      --pp-purple:  #5417be;
+      --pp-blue:    #377df6;
+      --pp-teal:    #4ecdc4;
+      --pp-red:     #ff6b6b;
+      --pp-bg:      #0d1117;
+      --pp-surface: rgba(255,255,255,0.05);
+      --pp-border:  rgba(255,255,255,0.10);
+      --pp-text:    #e6edf3;
+      --pp-muted:   #8b949e;
+      --grad:       linear-gradient(135deg, var(--pp-purple), var(--pp-blue));
+    }
+
+    /* ── Base ──────────────────────────────────────────── */
+    .reveal-viewport { background: var(--pp-bg); }
+    .reveal { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--pp-text); }
+    .reveal .slides section { text-align: left; }
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; letter-spacing: -0.02em; }
+
+    /* ── Accent headings ───────────────────────────────── */
+    .reveal h1 { font-size: 2.4em; font-weight: 800; }
+    .reveal h2 { font-size: 1.6em; font-weight: 700;
+                 background: var(--grad); -webkit-background-clip: text;
+                 -webkit-text-fill-color: transparent; background-clip: text; }
+    .reveal h3 { font-size: 0.95em; color: var(--pp-teal); font-weight: 600;
+                 margin-top: 0; margin-bottom: 0.3em; }
+
+    /* ── Cover slide ───────────────────────────────────── */
+    .slide-cover { text-align: center !important; }
+    .slide-cover .logo-wrap { margin-bottom: 1rem; }
+    .slide-cover .logo-wrap img { height: 60px; filter: drop-shadow(0 0 20px var(--pp-blue)); }
+    .slide-cover h1 { font-size: 3em; background: var(--grad);
+                      -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .slide-cover .subtitle { font-size: 1.2em; color: var(--pp-muted); margin-top: 0.5rem; }
+    .slide-cover .pill { display: inline-block; padding: 4px 14px;
+                         border-radius: 20px; font-size: .75em; font-weight: 600;
+                         background: var(--grad); margin: 0.2rem; }
+
+    /* ── Cards / Glass boxes ───────────────────────────── */
+    .card {
+      background: var(--pp-surface);
+      border: 1px solid var(--pp-border);
+      border-radius: 12px;
+      padding: 0.65rem 0.9rem;
+      backdrop-filter: blur(8px);
+    }
+    .card p { margin: 0.15em 0; }
+    .card-highlight {
+      border-color: var(--pp-blue);
+      box-shadow: 0 0 20px rgba(55,125,246,0.15);
+    }
+    .card-danger  { border-color: var(--pp-red);  box-shadow: 0 0 20px rgba(255,107,107,0.15); }
+    .card-teal    { border-color: var(--pp-teal); box-shadow: 0 0 20px rgba(78,205,196,0.15); }
+
+    /* ── Grid helpers ──────────────────────────────────── */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .7rem; }
+    .grid-2-1 { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; }
+
+    /* ── Badges ────────────────────────────────────────── */
+    .badge { display: inline-flex; align-items: center; gap: .3rem;
+             padding: 3px 10px; border-radius: 20px; font-size: .7em; font-weight: 700; }
+    .badge-green  { background: rgba(46,160,67,.25); color: #3fb950; border: 1px solid #3fb950; }
+    .badge-red    { background: rgba(255,107,107,.2); color: var(--pp-red); border: 1px solid var(--pp-red); }
+    .badge-yellow { background: rgba(255,200,0,.2); color: #ffc800; border: 1px solid #ffc800; }
+    .badge-blue   { background: rgba(55,125,246,.2); color: var(--pp-blue); border: 1px solid var(--pp-blue); }
+
+    /* ── Tag line ──────────────────────────────────────── */
+    .tag-line { font-size: .85em; color: var(--pp-muted); margin-top: -.4em; margin-bottom: .6em; }
+
+    /* ── Comparison table ──────────────────────────────── */
+    .cmp-table { width: 100%; border-collapse: collapse; font-size: .7em; }
+    .cmp-table th { background: var(--grad); color: white; padding: 6px 8px; text-align: center; }
+    .cmp-table td { padding: 6px 8px; border-bottom: 1px solid var(--pp-border); text-align: center; }
+    .cmp-table tr:hover td { background: rgba(255,255,255,.04); }
+    .cmp-table .hl { background: rgba(55,125,246,.12); font-weight: 700; }
+    .cmp-table td:first-child { text-align: left; color: var(--pp-muted); }
+
+    /* ── Timeline / flow ───────────────────────────────── */
+    .flow-row { display: flex; align-items: center; gap: .6rem; margin: .4rem 0; font-size: .82em; }
+    .flow-node { padding: 5px 11px; border-radius: 8px; font-weight: 600; white-space: nowrap; }
+    .flow-arrow { color: var(--pp-muted); font-size: 1.2em; }
+    .node-blue   { background: rgba(55,125,246,.2); border: 1px solid var(--pp-blue); }
+    .node-teal   { background: rgba(78,205,196,.2); border: 1px solid var(--pp-teal); }
+    .node-purple { background: rgba(84,23,190,.4); border: 1px solid var(--pp-purple); }
+    .node-red    { background: rgba(255,107,107,.2); border: 1px solid var(--pp-red); }
+
+    /* ── Mermaid diagrams ──────────────────────────────── */
+    .mermaid { font-size: 13px !important; }
+    .mermaid svg { max-height: 210px; width: 100% !important; }
+
+    /* ── Code blocks ───────────────────────────────────── */
+    .reveal pre { font-size: .55em; border-radius: 10px; overflow-x: auto;
+                  box-shadow: 0 4px 20px rgba(0,0,0,.4); }
+    .reveal code { border-radius: 4px; }
+
+    /* ── Stats ─────────────────────────────────────────── */
+    .stat-big { font-size: 2.2em; font-weight: 800;
+                background: var(--grad); -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; }
+    .stat-label { font-size: .75em; color: var(--pp-muted); margin-top: -.3em; }
+
+    /* ── Progress bar ──────────────────────────────────── */
+    .reveal .progress { background: rgba(255,255,255,.1); }
+    .reveal .progress span { background: var(--pp-blue); }
+
+    /* ── Emoji list ────────────────────────────────────── */
+    .reveal ul { list-style: none; padding: 0; }
+    .reveal ul li { padding-left: 1.5em; position: relative; margin: 0.25em 0; }
+    .reveal ul li::before { content: "▸"; position: absolute; left: 0; color: var(--pp-blue); }
+
+    /* ── Divider line ──────────────────────────────────── */
+    .divider { height: 2px; background: var(--grad);
+               border-radius: 2px; margin: .4rem 0; }
+
+    /* ── Checklist ─────────────────────────────────────── */
+    .checklist li::before { content: "✓"; color: #3fb950; }
+    .checklist-x li::before { content: "✗"; color: var(--pp-red); }
+
+    /* ── Branding footer (solo portada y cierre) ─────── */
+    .slide-footer { position: absolute; bottom: 1rem; right: 1.5rem;
+                    font-size: .55em; color: var(--pp-muted); }
+  </style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 1 — COVER
+════════════════════════════════════════════════════════ -->
+<section class="slide-cover" data-background-gradient="radial-gradient(ellipse at 30% 50%, rgba(84,23,190,0.25) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(55,125,246,0.15) 0%, transparent 50%), #0d1117">
+  <div class="logo-wrap">
+    <img src="/img/logo.png" alt="pabpereza.dev">
+  </div>
+  <h1>Ansible</h1>
+  <p class="subtitle">Automatización de infraestructura sin drama</p>
+  <div style="margin-top:1.5rem">
+    <span class="pill">Open Source</span>
+    <span class="pill">Agentless</span>
+    <span class="pill">YAML</span>
+    <span class="pill">DevOps</span>
+  </div>
+  <p style="margin-top:2rem; font-size:.75em; color:var(--pp-muted)">
+    pabpereza.dev/docs/cursos/ansible
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 2 — PROBLEMA
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>El problema que resuelve</h2>
+  <p class="tag-line">¿Qué pasa cuando tienes que gestionar 100 servidores?</p>
+
+  <div class="grid-3" style="margin-top:1rem">
+    <div class="card card-danger fragment">
+      <div style="font-size:1.8em; text-align:center">😰</div>
+      <h3 style="text-align:center; color:var(--pp-red)">SSH manual</h3>
+      <p style="font-size:.75em; color:var(--pp-muted)">Conectas servidor por servidor. Si tienes 100, buena suerte.</p>
+    </div>
+    <div class="card fragment" style="border-color:var(--pp-muted)">
+      <div style="font-size:1.8em; text-align:center">🤔</div>
+      <h3 style="text-align:center; color:var(--pp-muted)">Bash scripts</h3>
+      <p style="font-size:.75em; color:var(--pp-muted)">Frágiles, no idempotentes. Ejecutas dos veces y explota.</p>
+    </div>
+    <div class="card card-teal fragment">
+      <div style="font-size:1.8em; text-align:center">🎯</div>
+      <h3 style="text-align:center; color:var(--pp-teal)">Ansible</h3>
+      <p style="font-size:.75em; color:var(--pp-muted)">Defines el estado deseado. Ansible se encarga del resto.</p>
+    </div>
+  </div>
+
+  <div class="card fragment" style="margin-top:0.8rem; border-color:var(--pp-blue)">
+    <div class="flow-row" style="justify-content:center; gap:1.5rem">
+      <div>
+        <div style="color:var(--pp-red); font-size:.85em; text-align:center">Scripts caóticos</div>
+        <div class="flow-node node-red" style="text-align:center">Imperativo</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div>
+        <div style="color:var(--pp-blue); font-size:.85em; text-align:center">Ansible</div>
+        <div class="flow-node node-blue" style="text-align:center">YAML legible</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div>
+        <div style="color:var(--pp-teal); font-size:.85em; text-align:center">Resultado</div>
+        <div class="flow-node node-teal" style="text-align:center">Infra predecible</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 3 — QUÉ ES ANSIBLE
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>¿Qué es Ansible?</h2>
+  <p class="tag-line">Plataforma open-source · Red Hat · 2012</p>
+
+  <div class="grid-2" style="margin-top:0.6rem; font-size:0.88em">
+    <div>
+      <div class="card fragment" style="margin-bottom:.5rem">
+        <h3>⚙️ Gestión de configuración</h3>
+        <p style="font-size:.78em; color:var(--pp-muted)">100 servidores web con la misma config de Nginx, mismos certs SSL y políticas de seguridad.</p>
+      </div>
+      <div class="card fragment" style="margin-bottom:.5rem">
+        <h3>🚀 Despliegue de aplicaciones</h3>
+        <p style="font-size:.78em; color:var(--pp-muted)">Integra con Jenkins, GitLab CI o GitHub Actions para deployments automáticos.</p>
+      </div>
+      <div class="card fragment">
+        <h3>☁️ Gestión de la nube</h3>
+        <p style="font-size:.78em; color:var(--pp-muted)">Aprovisiona recursos en AWS, Azure, GCP y más.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card fragment" style="margin-bottom:.5rem">
+        <h3>🎼 Orquestación</h3>
+        <p style="font-size:.78em; color:var(--pp-muted)">Coordina bases de datos, balanceadores y servidores de app en el orden correcto.</p>
+      </div>
+      <div class="card fragment" style="margin-bottom:.5rem">
+        <h3>🛡️ Cumplimiento</h3>
+        <p style="font-size:.78em; color:var(--pp-muted)">Audita y aplica PCI-DSS, HIPAA, SOC2 de forma automática y auditable.</p>
+      </div>
+      <div class="card fragment">
+        <h3>🔄 Disaster Recovery</h3>
+        <p style="font-size:.78em; color:var(--pp-muted)">Reconstruye toda tu infra en minutos. El desastre se convierte en inconveniente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 4 — LA ANALOGÍA
+════════════════════════════════════════════════════════ -->
+<section data-background-gradient="radial-gradient(ellipse at 20% 50%, rgba(84,23,190,0.2) 0%, transparent 60%), #0d1117">
+  <h2>La analogía del director de orquesta</h2>
+
+  <div class="grid-3" style="margin-top:0.8rem">
+    <div class="card card-danger fragment">
+      <div style="text-align:center; font-size:1.8em">👤</div>
+      <h3 style="color:var(--pp-red); text-align:center">SysAdmin manual</h3>
+      <p style="font-size:.75em; color:var(--pp-muted)">Va músico por músico diciéndole qué nota tocar. Se vuelve loco y la música suena fatal.</p>
+    </div>
+    <div class="card fragment" style="border-color:var(--pp-muted)">
+      <div style="text-align:center; font-size:1.8em">📄</div>
+      <h3 style="color:var(--pp-muted); text-align:center">Scripts</h3>
+      <p style="font-size:.75em; color:var(--pp-muted)">Les da una partitura pero si un músico se pierde, la canción se rompe entera.</p>
+    </div>
+    <div class="card card-teal fragment">
+      <div style="text-align:center; font-size:1.8em">🎼</div>
+      <h3 style="color:var(--pp-teal); text-align:center">Ansible</h3>
+      <p style="font-size:.75em; color:var(--pp-muted)">Eres el director. Defines el <strong>estado deseado</strong>. Ansible corrige a los músicos que desafinan.</p>
+    </div>
+  </div>
+
+  <div class="card card-highlight fragment" style="margin-top:1rem; text-align:center">
+    <p style="margin:0; font-size:.9em">
+      El <strong>Playbook</strong> es tu partitura maestra.<br>
+      <span style="color:var(--pp-muted); font-size:.9em">Tú defines el estado — Ansible se encarga de que todos lleguen ahí.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 5 — IMPERATIVO VS DECLARATIVO
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Imperativo vs Declarativo</h2>
+  <p class="tag-line">El cambio de mentalidad más importante</p>
+
+  <div class="grid-2" style="margin-top:0.6rem">
+    <div>
+      <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.3rem">
+        <span class="badge badge-red">❌ Bash — Imperativo</span>
+      </div>
+      <pre><code class="language-bash"># Si ejecutas esto 2 veces → puede fallar
+apt-get install -y nginx
+service nginx start
+echo "server_name myapp;" >> /etc/nginx.conf</code></pre>
+      <p style="font-size:.7em; color:var(--pp-red); margin-top:.3rem">Problema: no idempotente. Estado final impredecible.</p>
+    </div>
+    <div>
+      <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.3rem">
+        <span class="badge badge-green">✓ Ansible — Declarativo</span>
+      </div>
+      <pre><code class="language-yaml">- name: Asegurar Nginx instalado
+  apt:
+    name: nginx
+    state: present
+- name: Asegurar Nginx corriendo
+  service:
+    name: nginx
+    state: started
+    enabled: yes</code></pre>
+      <p style="font-size:.7em; color:#3fb950; margin-top:.3rem">100 ejecuciones, mismo resultado.</p>
+    </div>
+  </div>
+
+  <div class="card card-highlight fragment" style="margin-top:0.4rem; padding:0.35rem 0.9rem">
+    <p style="margin:0; font-size:.82em; text-align:center">
+      🔁 <strong>Idempotencia</strong>: mismo resultado, ejecutes el playbook una o cien veces.
+      <span style="color:var(--pp-muted)"> Si Nginx ya está, Ansible no toca nada.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 6 — COMPARATIVA
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Ansible vs la competencia</h2>
+  <p class="tag-line">Chef · Puppet · SaltStack</p>
+
+  <table class="cmp-table" style="margin-top:.6rem">
+    <thead>
+      <tr>
+        <th>Característica</th>
+        <th class="hl">Ansible</th>
+        <th>Chef</th>
+        <th>Puppet</th>
+        <th>SaltStack</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Agentes</td>
+        <td class="hl"><span class="badge badge-green">✓ Agentless</span></td>
+        <td><span class="badge badge-red">✗ Sí</span></td>
+        <td><span class="badge badge-red">✗ Sí</span></td>
+        <td><span class="badge badge-red">✗ Sí</span></td>
+      </tr>
+      <tr>
+        <td>Lenguaje</td>
+        <td class="hl">YAML</td>
+        <td>Ruby DSL</td>
+        <td>DSL propio</td>
+        <td>YAML + Python</td>
+      </tr>
+      <tr>
+        <td>Curva aprendizaje</td>
+        <td class="hl"><span class="badge badge-green">🟢 Baja</span></td>
+        <td><span class="badge badge-red">🔴 Alta</span></td>
+        <td><span class="badge badge-yellow">🟡 Media</span></td>
+        <td><span class="badge badge-yellow">🟡 Media</span></td>
+      </tr>
+      <tr>
+        <td>Modelo</td>
+        <td class="hl">Push</td>
+        <td>Pull</td>
+        <td>Pull</td>
+        <td>Push/Pull</td>
+      </tr>
+      <tr>
+        <td>SSH nativo</td>
+        <td class="hl"><span class="badge badge-green">✓ Sí</span></td>
+        <td><span class="badge badge-red">✗ No</span></td>
+        <td><span class="badge badge-red">✗ No</span></td>
+        <td><span class="badge badge-yellow">Opcional</span></td>
+      </tr>
+      <tr>
+        <td>Tiempo productivo</td>
+        <td class="hl" style="color:#3fb950">1–2 días</td>
+        <td>2–4 semanas</td>
+        <td>2–4 semanas</td>
+        <td>1–2 semanas</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 7 — AGENTLESS
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Agentless — la gran ventaja</h2>
+  <p class="tag-line">Si tiene SSH, puedes gestionarlo. Así de simple.</p>
+
+  <div class="grid-2" style="margin-top:.6rem; align-items:start">
+    <div>
+      <div class="badge badge-green" style="margin-bottom:.4rem; font-size:.8em">✓ Ansible (SSH directo)</div>
+      <div class="mermaid">
+graph LR
+    A["Control Node"] -->|SSH| B["Server 1"]
+    A -->|SSH| C["Server 2"]
+    A -->|SSH| D["Server 3"]
+    style A fill:#1a3a5c,stroke:#377df6,color:#e6edf3
+    style B fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+    style C fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+    style D fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+      </div>
+    </div>
+    <div>
+      <div class="badge badge-red" style="margin-bottom:.4rem; font-size:.8em">✗ Chef / Puppet (agentes)</div>
+      <div class="mermaid">
+graph LR
+    M["Master"] <-->|Pull periodico| B2["Agent + Server 1"]
+    M <-->|Pull periodico| C2["Agent + Server 2"]
+    M <-->|Pull periodico| D2["Agent + Server 3"]
+    style M fill:#3a1a1a,stroke:#ff6b6b,color:#e6edf3
+    style B2 fill:#2a1a1a,stroke:#ff6b6b,color:#e6edf3
+    style C2 fill:#2a1a1a,stroke:#ff6b6b,color:#e6edf3
+    style D2 fill:#2a1a1a,stroke:#ff6b6b,color:#e6edf3
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2 fragment" style="margin-top:.7rem">
+    <div class="card card-teal">
+      <ul class="checklist" style="font-size:.78em; margin:0">
+        <li>Sin software adicional en tus servidores</li>
+        <li>Menor superficie de ataque</li>
+        <li>Arranque inmediato desde zero</li>
+      </ul>
+    </div>
+    <div class="card card-danger">
+      <ul class="checklist-x" style="font-size:.78em; margin:0">
+        <li>Instalar y mantener agentes</li>
+        <li>Agentes consumen CPU y RAM</li>
+        <li>Si falla el agente, pierdes el nodo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 8 — PUSH VS PULL
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Push vs Pull</h2>
+  <p class="tag-line">Dos filosofías distintas para gestionar cambios</p>
+
+  <div class="grid-2" style="margin-top:0.8rem; align-items:stretch">
+    <div class="card card-highlight">
+      <h3 style="color:var(--pp-blue)">🚀 Push (Ansible)</h3>
+      <div class="divider"></div>
+      <ul style="font-size:.78em; margin:0">
+        <li><strong>Tú</strong> decides cuándo se ejecutan los cambios</li>
+        <li>Control total del timing</li>
+        <li>Ideal para CI/CD y deployments bajo demanda</li>
+        <li>Cambios inmediatos y visibles</li>
+      </ul>
+      <div style="margin-top:.6rem; padding:.4rem .7rem; background:rgba(55,125,246,.1); border-radius:8px; font-size:.72em; color:var(--pp-muted)">
+        📌 Mejor para: despliegues puntuales, cambios críticos, pipelines CI/CD
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--pp-muted)">🔄 Pull (Chef/Puppet)</h3>
+      <div class="divider" style="background:var(--pp-muted)"></div>
+      <ul style="font-size:.78em; margin:0">
+        <li>Los agentes consultan periódicamente al master</li>
+        <li>Cambios eventuales (cada ~30 min)</li>
+        <li>Puede autocurarse sin intervención</li>
+        <li>Ideal para infraestructura masiva</li>
+      </ul>
+      <div style="margin-top:.6rem; padding:.4rem .7rem; background:rgba(255,255,255,.05); border-radius:8px; font-size:.72em; color:var(--pp-muted)">
+        📌 Mejor para: infra masiva que debe autocorregirse continuamente
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 9 — ARQUITECTURA
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Arquitectura de Ansible</h2>
+  <p class="tag-line">Qué hay dentro del motor</p>
+
+  <div class="mermaid" style="margin-top:.4rem">
+graph TD
+    subgraph CN["Control Node (tu maquina)"]
+        A["Ansible CLI / Playbook"]
+        B["Inventario (hosts)"]
+        C["Modulos Python"]
+        D["Plugins"]
+    end
+    subgraph MN["Managed Nodes (infraestructura)"]
+        E["Linux Server"]
+        F["Windows Server"]
+        G["Cloud API AWS/Azure"]
+        H["Network Device"]
+    end
+    A -->|SSH| E
+    A -->|WinRM| F
+    A -->|HTTPS API| G
+    A -->|SSH o API| H
+    style A fill:#1a2a4a,stroke:#377df6,color:#e6edf3
+    style E fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+    style F fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+    style G fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+    style H fill:#1a3a2a,stroke:#4ecdc4,color:#e6edf3
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 10 — COMPONENTES
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Componentes clave</h2>
+
+  <div class="grid-2" style="margin-top:0.6rem; align-items:start">
+    <div>
+      <div class="card fragment" style="margin-bottom:.5rem">
+        <h3>📝 Inventario</h3>
+        <pre style="font-size:.5em; margin:.3rem 0 0"><code class="language-ini">[madrid]
+target1 ansible_host=192.168.1.10
+target2 ansible_host=192.168.1.11
+
+[barcelona]
+target3 ansible_host=192.168.1.20
+
+[servers:children]
+madrid
+barcelona</code></pre>
+      </div>
+      <div class="card fragment">
+        <h3>🎼 Playbooks</h3>
+        <p style="font-size:.78em; color:var(--pp-muted); margin:.1rem 0">Archivos YAML que definen el <strong>estado deseado</strong>. La "receta" que Ansible ejecuta.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card fragment" style="margin-bottom:.5rem">
+        <h3>🧩 Módulos (+3.000)</h3>
+        <div style="display:flex; flex-wrap:wrap; gap:.3rem; margin-top:.4rem">
+          <span class="badge badge-blue">apt / yum</span>
+          <span class="badge badge-blue">service</span>
+          <span class="badge badge-blue">file / copy</span>
+          <span class="badge badge-blue">user / group</span>
+          <span class="badge badge-blue">docker_container</span>
+          <span class="badge badge-blue">k8s</span>
+          <span class="badge badge-blue">aws_ec2</span>
+        </div>
+      </div>
+      <div class="card fragment">
+        <h3>🔌 Plugins</h3>
+        <ul style="font-size:.78em; margin:0">
+          <li><strong>Connection</strong>: SSH, WinRM, Docker, kubectl</li>
+          <li><strong>Inventory</strong>: AWS EC2, Azure, GCP</li>
+          <li><strong>Filter</strong>: transformaciones Jinja2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 11 — FLUJO DE EJECUCIÓN
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Flujo de ejecución</h2>
+  <p class="tag-line">Lo que pasa cuando lanzas <code>ansible-playbook site.yml</code></p>
+
+  <div style="margin-top:0.8rem">
+    <div class="flow-row fragment">
+      <div class="flow-node node-purple">1. Usuario</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">Ejecuta <code>ansible-playbook site.yml</code></div>
+    </div>
+    <div class="flow-row fragment">
+      <div class="flow-node node-blue">2. Ansible CLI</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">Lee el inventario y resuelve la lista de hosts</div>
+    </div>
+    <div class="flow-row fragment">
+      <div class="flow-node node-blue">3. Compilación</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">Compila los módulos Python necesarios</div>
+    </div>
+    <div class="flow-row fragment">
+      <div class="flow-node node-teal">4. SSH</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">Transfiere el módulo al nodo gestionado</div>
+    </div>
+    <div class="flow-row fragment">
+      <div class="flow-node node-teal">5. Ejecución</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">El nodo ejecuta el módulo localmente</div>
+    </div>
+    <div class="flow-row fragment">
+      <div class="flow-node node-blue">6. Resultado</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">Devuelve JSON con el resultado (ok / changed / failed)</div>
+    </div>
+    <div class="flow-row fragment">
+      <div class="flow-node node-purple">7. Limpieza</div>
+      <div class="flow-arrow">→</div>
+      <div style="font-size:.85em; color:var(--pp-muted)">Elimina el módulo temporal del nodo</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 12 — INSTALACIÓN
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Instalación en 3 pasos</h2>
+  <p class="tag-line">Linux / macOS / WSL — Windows nativo no soportado</p>
+
+  <div class="grid-3" style="margin-top:0.8rem; margin-bottom:.7rem">
+    <div class="card fragment" style="text-align:center">
+      <div style="font-size:1.8em">1️⃣</div>
+      <h3 style="color:var(--pp-blue); text-align:center">Python 3.8+</h3>
+      <pre style="font-size:.55em"><code class="language-bash">python3 --version</code></pre>
+    </div>
+    <div class="card fragment" style="text-align:center">
+      <div style="font-size:1.8em">2️⃣</div>
+      <h3 style="color:var(--pp-blue); text-align:center">Instalar</h3>
+      <pre style="font-size:.55em"><code class="language-bash">pip install ansible</code></pre>
+    </div>
+    <div class="card fragment" style="text-align:center">
+      <div style="font-size:1.8em">3️⃣</div>
+      <h3 style="color:var(--pp-blue); text-align:center">Verificar</h3>
+      <pre style="font-size:.55em"><code class="language-bash">ansible --version</code></pre>
+    </div>
+  </div>
+
+  <div class="fragment">
+    <h3>Primer test — el "Hello World" de Ansible</h3>
+    <pre><code class="language-bash"># Ping al localhost
+ansible localhost -m ping
+
+# Output esperado:
+# localhost | SUCCESS => {"ping": "pong"}</code></pre>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 13 — PRERREQUISITOS
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>¿Qué necesitas para el curso?</h2>
+
+  <div class="grid-2" style="margin-top:0.6rem; font-size:0.85em">
+    <div>
+      <h3 style="color:#3fb950; margin-bottom:.3rem">✅ Esenciales</h3>
+      <div class="card card-teal" style="font-size:.80em; margin-bottom:.3rem">
+        <ul class="checklist" style="margin:0">
+          <li>Linux básico: terminal, <code>ls</code>, <code>cd</code>, <code>vim</code></li>
+          <li>SSH: conectarte a un servidor remoto</li>
+          <li>YAML: sintaxis básica (se ve en el curso)</li>
+        </ul>
+      </div>
+
+      <h3 style="color:#ffc800; margin-bottom:.2rem">🟡 Útiles (no bloqueantes)</h3>
+      <div class="card" style="border-color:#ffc800; font-size:.80em">
+        <ul style="margin:0">
+          <li style="color:var(--pp-muted)">Git — control de versiones para playbooks</li>
+          <li style="color:var(--pp-muted)">Docker — para practicar sin riesgo</li>
+          <li style="color:var(--pp-muted)">Cloud básico (AWS/Azure conceptos)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom:.3rem">🖥️ Entorno de práctica</h3>
+      <div class="card card-highlight" style="font-size:.82em; margin-bottom:.5rem">
+        <div style="margin-bottom:.4rem"><span class="badge badge-blue">Opción A</span> VirtualBox + Ubuntu Server</div>
+        <div style="margin-bottom:.4rem"><span class="badge badge-green">Opción B</span> Contenedores Docker <em style="color:var(--pp-muted)">(recomendado)</em></div>
+        <div><span class="badge badge-yellow">Opción C</span> VPS en la nube (AWS free tier)</div>
+      </div>
+      <div class="card fragment" style="font-size:.78em; border-color:#3fb950">
+        <pre style="font-size:.85em; margin:0"><code class="language-bash">python3 --version  # >= 3.8
+ssh -V             # OpenSSH instalado
+ssh-keygen -t ed25519</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 14 — POR QUÉ ANSIBLE EN 2026
+════════════════════════════════════════════════════════ -->
+<section data-background-gradient="radial-gradient(ellipse at 80% 50%, rgba(55,125,246,0.2) 0%, transparent 60%), #0d1117">
+  <h2>¿Por qué aprender Ansible en 2026?</h2>
+
+  <div class="grid-3" style="margin-top:0.8rem; text-align:center">
+    <div class="card fragment">
+      <div class="stat-big">+40%</div>
+      <div class="stat-label">de ofertas DevOps<br>mencionan Ansible</div>
+    </div>
+    <div class="card fragment">
+      <div class="stat-big">3.000+</div>
+      <div class="stat-label">módulos oficiales<br>incluidos</div>
+    </div>
+    <div class="card fragment">
+      <div class="stat-big">+25%</div>
+      <div class="stat-label">salario vs profesionales<br>sin automatización</div>
+    </div>
+  </div>
+
+  <div class="grid-2 fragment" style="margin-top:.8rem">
+    <div class="card">
+      <h3>🏢 Quién lo usa</h3>
+      <div style="display:flex; flex-wrap:wrap; gap:.3rem; margin-top:.4rem">
+        <span class="badge badge-blue">Red Hat</span>
+        <span class="badge badge-blue">NASA</span>
+        <span class="badge badge-blue">Apple</span>
+        <span class="badge badge-blue">Cisco</span>
+        <span class="badge badge-blue">Bloomberg</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🔮 Futuro</h3>
+      <ul style="font-size:.78em; margin:0">
+        <li><strong>Event-Driven Ansible</strong>: reacciona a eventos automáticamente</li>
+        <li><strong>Ansible + Kubernetes</strong>: Operators cloud-native</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 15 — ROADMAP DEL CURSO
+════════════════════════════════════════════════════════ -->
+<section data-background-color="#0d1117">
+  <h2>Roadmap del curso</h2>
+  <p class="tag-line">De cero a automatizar como un pro</p>
+
+  <div class="grid-2" style="margin-top:0.8rem">
+    <div>
+      <div class="card card-highlight" style="margin-bottom:.7rem">
+        <h3 style="color:var(--pp-blue)">🌱 Fundamentos — módulos 1–6</h3>
+        <ul class="checklist" style="font-size:.78em; margin:0">
+          <li>Arquitectura y conceptos core</li>
+          <li>Instalación en distintos sistemas</li>
+          <li>Inventarios y comandos ad-hoc</li>
+          <li>Playbooks efectivos</li>
+          <li>Variables, facts y templating</li>
+          <li>Condicionales, bucles y errores</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card card-teal">
+        <h3 style="color:var(--pp-teal)">🚀 Avanzado — módulos 7–9</h3>
+        <ul class="checklist" style="font-size:.78em; margin:0">
+          <li>Roles y estructura modular</li>
+          <li>Ansible Vault — secretos seguros</li>
+          <li>Jinja2 templates avanzados</li>
+          <li>Ansible Tower / AWX (GUI)</li>
+          <li>Integración con CI/CD</li>
+          <li>Event-Driven Ansible</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card fragment" style="margin-top:.7rem; text-align:center; border-color:var(--pp-purple)">
+    <p style="margin:0; font-size:.85em">
+      Cada módulo incluye <strong>parte práctica</strong> — como debe ser 💪
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SLIDE 16 — CLOSING
+════════════════════════════════════════════════════════ -->
+<section class="slide-cover" data-background-gradient="radial-gradient(ellipse at 50% 50%, rgba(84,23,190,0.35) 0%, transparent 70%), radial-gradient(ellipse at 80% 20%, rgba(55,125,246,0.2) 0%, transparent 50%), #0d1117">
+  <div class="logo-wrap">
+    <img src="/img/logo.png" alt="pabpereza.dev">
+  </div>
+  <h1 style="font-size:2.2em">¿Listo para automatizar?</h1>
+  <p style="color:var(--pp-muted); margin-top:.5rem">El siguiente capítulo: Inventarios y comandos ad-hoc</p>
+
+  <div style="margin-top:1.5rem; display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap">
+    <a href="https://pabpereza.dev/docs/cursos/ansible" target="_blank"
+       style="padding:10px 24px; background:var(--grad); border-radius:8px; color:white; text-decoration:none; font-weight:600; font-size:.85em">
+      📚 Documentación del curso
+    </a>
+    <a href="https://www.youtube.com/@Pabpereza" target="_blank"
+       style="padding:10px 24px; background:rgba(255,255,255,.08); border:1px solid var(--pp-border); border-radius:8px; color:white; text-decoration:none; font-weight:600; font-size:.85em">
+      ▶️ Canal YouTube
+    </a>
+  </div>
+
+  <p style="margin-top:2.5rem; font-size:.65em; color:var(--pp-muted)">
+    pabpereza.dev · @pabpereza
+  </p>
+</section>
+
+</div><!-- /slides -->
+</div><!-- /reveal -->
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'dark',
+    themeVariables: {
+      darkMode: true,
+      background: '#0d1117',
+      primaryColor: '#1a2a4a',
+      primaryTextColor: '#e6edf3',
+      primaryBorderColor: '#377df6',
+      lineColor: '#377df6',
+      secondaryColor: '#1a3a2a',
+      tertiaryColor: '#2a1a3a',
+      fontSize: '13px',
+    },
+    flowchart: { curve: 'basis', htmlLabels: true },
+  });
+
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'slide',
+    transitionSpeed: 'default',
+    backgroundTransition: 'fade',
+    width: 1200,
+    height: 700,
+    margin: 0.04,
+    center: false,
+    plugins: [ RevealHighlight, RevealNotes ],
+  });
+
+  // Render Mermaid after Reveal is ready and on each slide change
+  Reveal.on('ready', () => {
+    mermaid.run({ querySelector: '.mermaid' });
+  });
+
+  Reveal.on('slidechanged', (event) => {
+    const nodes = event.currentSlide.querySelectorAll('.mermaid');
+    if (nodes.length > 0) {
+      // Clear previously rendered SVGs so mermaid can re-render
+      nodes.forEach(n => {
+        if (n.querySelector('svg')) {
+          n.removeAttribute('data-processed');
+          n.innerHTML = n.getAttribute('data-original') || n.innerHTML;
+        }
+      });
+      mermaid.run({ nodes });
+    }
+  });
+
+  // Store original mermaid source before first render
+  document.querySelectorAll('.mermaid').forEach(n => {
+    n.setAttribute('data-original', n.innerHTML);
+  });
+</script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 slug: mi_ruta_devsecops_reflexiones_recomendaciones_2025
 title: Mi ruta DevSecOps y aprendizaje personal a fecha de 2025 
 tags: [devsecops, reflexiones]
+keywords: [ruta devsecops, cómo ser devsecops, carrera devsecops, aprender devsecops, devsecops 2025]
 authors: pabpereza
 date: 2025-04-15
 ---

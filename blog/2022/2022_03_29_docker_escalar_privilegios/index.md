@@ -3,6 +3,7 @@ date: 2022-03-29
 title: "Escalar privilegios en docker"
 slug: "escalar_privilegios_en_docker"
 tags: [docker, privilegios]
+keywords: [escalar privilegios docker, seguridad docker contenedores, docker privileged, root en docker, vulnerabilidades docker configuracion]
 authors: pabpereza 
 ---
 

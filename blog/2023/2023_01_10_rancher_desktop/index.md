@@ -3,6 +3,7 @@ date: 2021-10-24
 title: "La alternativa a Docker que estabas buscando - Rancher Desktop"
 slug: "rancher_desktop"
 tags: [docker,devops]
+keywords: [rancher desktop alternativa docker, rancher desktop mac windows, docker desktop gratis, kubernetes local rancher, nerdctl rancher]
 authors: pabpereza
 image: rancher_desktop_panel.png
 ---

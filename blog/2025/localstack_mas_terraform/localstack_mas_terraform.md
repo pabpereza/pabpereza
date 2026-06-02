@@ -2,6 +2,7 @@
 slug: localstack_terraform_mas_dudas 
 title: LocalStack, dudas comunes y cómo usarlo con terraform
 description: Una guía para resolver dudas comunes al usar LocalStack con Terraform y las del vídeo anterior
+keywords: [localstack terraform, simular aws local, localstack tutorial, terraform aws local, pruebas aws sin cuenta]
 authors: pabpereza
 date: 2025-10-22
 ---

@@ -8,15 +8,18 @@ description: >-
 image: 'https://pabpereza.dev/img/banner_ansible.png'
 keywords:
   - ansible
-  - curso ansible
-  - tutorial ansible
-  - aprender ansible
-  - automatización
+  - curso ansible desde cero
+  - tutorial ansible completo
+  - aprender ansible español
+  - automatización IT ansible
   - infraestructura como código
-  - iac
-  - devops
-  - ansible español
+  - iac ansible
+  - devops ansible
   - ansible gratuito
+  - ansible para principiantes
+  - ansible avanzado
+  - agentless automation
+  - ansible playbooks tutorial
 tags:
   - ansible
   - devops

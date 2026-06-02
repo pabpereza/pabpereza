@@ -2,6 +2,7 @@
 slug: verifica_mejora_dockerfiles 
 title: Verifica y mejora tus dockerfiles 
 tags: [ dockerfile, docker, contenedores]
+keywords: [buenas practicas dockerfile, hadolint dockerfile, verificar dockerfile, linter docker, mejores practicas docker]
 authors: pabpereza
 date: 2023-07-12
 ---

@@ -2,6 +2,7 @@
 slug: kubectx_kubens_kubernetes_context 
 title: "Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente" 
 tags: [selfhosting, kubernetes, kubectx, kubens]
+keywords: [kubectx, kubens, cambiar contexto kubernetes, cambiar namespace kubernetes, kubectl context, herramientas kubernetes productividad]
 authors: pabpereza
 date: 2025-07-18
 description: "Aprende a usar Kubectx y Kubens para cambiar de contexto y namespace en Kubernetes de forma rápida y sencilla. Mejora tu flujo de trabajo con estos comandos útiles." 

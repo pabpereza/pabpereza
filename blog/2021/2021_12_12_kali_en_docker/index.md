@@ -3,6 +3,7 @@ date: 2021-11-01
 title: "Kali en Docker recopilación"
 slug: "kalilinux_en_docker"
 tags: [docker,kalilinux,seguridad]
+keywords: [kali linux docker, ejecutar kali linux contenedor, kali linux imagen docker, pentesting docker, hacking docker]
 authors: pabpereza
 ---
 

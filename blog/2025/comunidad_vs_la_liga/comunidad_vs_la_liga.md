@@ -3,6 +3,7 @@ date: 2025-09-17
 title: "Comunidad vs La Liga: El Verdadero Duelo del Fútbol"
 slug: comunidad_vs_la_liga
 tags: [comunidad]
+keywords: [la liga bloqueo internet, libertad internet españa, bloqueo DNS la liga, comunidad tecnológica]
 description: "La batalla de la comunidad contra La Liga de fútbol y la libertad de la red en España."
 ---
 

@@ -2,7 +2,8 @@
 date: 2021-11-10
 title: "Linux en Windows - Windows Subsystem Linux"
 slug: "linux_en_windows_WSL"
-tags: []
+tags: [linux, windows, wsl]
+keywords: [wsl linux windows, windows subsystem linux, wsl2 windows 11, linux en windows sin maquina virtual, instalar wsl2]
 authors: pabpereza
 ---
 

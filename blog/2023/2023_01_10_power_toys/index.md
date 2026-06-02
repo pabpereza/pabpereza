@@ -3,6 +3,7 @@ date: "2023-01-10"
 title: "PowerToys"
 slug: "powertoys_windows"
 tags: [windows, productividad]
+keywords: [powertoys windows, microsoft powertoys, herramientas productividad windows, powertoys tutorial, windows 10 11 utilidades]
 authors: pabpereza
 image: power_toys_banner.jpg
 ---

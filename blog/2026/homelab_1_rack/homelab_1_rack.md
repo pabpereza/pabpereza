@@ -1,7 +1,8 @@
 ---
 slug: homelab-1-rack 
 title: HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1) 
-tags: [youtube, comunidad, especial, 20k]
+tags: [homelab, raspberry, comunidad]
+keywords: [homelab rack raspberry pi, montar rack 10 pulgadas, homelab casero, servidor casero rack, homelab devops]
 authors: pabpereza
 date: 2026-01-06
 image: https://pabpereza.dev/assets/images/montaje-1529b59f9ff4634f064acdf42d0e1296.jpeg

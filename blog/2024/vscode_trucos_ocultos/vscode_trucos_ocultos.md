@@ -1,7 +1,8 @@
 ---
 slug: vscode_vale_para_todo
 title: VSCode lo tiene TODO 
-tags: [ contenedores]
+tags: [vscode, productividad, desarrollo]
+keywords: [trucos vscode, vscode funcionalidades ocultas, visual studio code tips, vscode tutorial avanzado, extensiones vscode]
 authors: pabpereza
 date: 2024-11-18
 ---

@@ -2,6 +2,7 @@
 slug: especial-5000-subscriptores 
 title: ¡Especial 5000 subscriptores en Youtube! 
 tags: [youtube, comunidad]
+keywords: [pabpereza youtube, canal devops youtube, contenido devops español, 5000 suscriptores, devops youtuber]
 authors: pabpereza
 date: 2024-09-07
 image: 5k.jpeg

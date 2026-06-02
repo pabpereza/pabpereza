@@ -7,17 +7,19 @@ description: >-
 image: 'https://pabpereza.dev/img/banner_kubernetes.png'
 keywords:
   - kubernetes
-  - curso kubernetes
-  - tutorial kubernetes
-  - aprender kubernetes
+  - curso kubernetes desde cero
+  - tutorial kubernetes completo
+  - aprender kubernetes español
   - certificación CKA
   - certificación CKAD
   - certificación CKS
-  - contenedores
-  - devops
-  - orquestación
-  - gratuito
-  - español
+  - contenedores orquestación
+  - devops kubernetes
+  - k8s tutorial
+  - kubernetes gratuito
+  - kubernetes español
+  - administración kubernetes
+  - kubernetes para principiantes
 tags:
   - kubernetes
   - devops

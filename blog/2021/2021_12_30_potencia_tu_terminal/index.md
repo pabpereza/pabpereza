@@ -3,6 +3,7 @@ date: 2021-12-30
 title: "Potencia tu terminal"
 slug: "potencia_tu_terminal"
 tags: [bash, zsh, terminal]
+keywords: [zsh oh-my-zsh, personalizar terminal, potenciar terminal linux, zsh tutorial, terminal productividad]
 authors: pabpereza
 ---
 

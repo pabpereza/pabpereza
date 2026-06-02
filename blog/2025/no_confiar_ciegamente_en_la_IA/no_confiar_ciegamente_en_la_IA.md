@@ -2,6 +2,7 @@
 slug: no_confiar_ciegamente_en_la_IA
 title: "Jamás confíes ciegamente en la IA, y menos para tu infraestructura"
 tags: [IA, devops, docker]
+keywords: [no confiar IA infraestructura, riesgos IA devops, IA errores docker, limitaciones inteligencia artificial, IA en produccion riesgos]
 authors: pabpereza
 date: 2025-08-20
 ---

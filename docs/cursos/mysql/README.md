@@ -5,15 +5,18 @@ description: >-
   hasta la administración avanzada, optimización de consultas y seguridad.
 keywords:
   - mysql
-  - curso mysql
-  - tutorial mysql
-  - aprender mysql
-  - sql
-  - bases de datos
-  - dba
-  - backend
-  - gratuito
-  - español
+  - curso mysql desde cero
+  - tutorial mysql completo
+  - aprender mysql español
+  - sql bases de datos
+  - administración mysql
+  - dba mysql
+  - backend mysql
+  - mysql gratuito
+  - mysql para principiantes
+  - mysql avanzado
+  - mariadb mysql
+  - optimización consultas mysql
 tags:
   - mysql
   - sql

@@ -9,12 +9,18 @@ tags:
   - cursos
 keywords:
   - devops
-  - curso devops
-  - ci/cd
-  - automatización
+  - curso devops desde cero
+  - qué es devops
+  - ci/cd devops
+  - automatización devops
   - infraestructura como código
-  - contenedores
-  - orquestación
+  - contenedores devops
+  - orquestación devops
+  - cultura devops
+  - devops para principiantes
+  - devsecops
+  - sre devops
+  - devops español
 ---
 
 # Curso DevOps: Fundamentos y Buenas Prácticas 🚀

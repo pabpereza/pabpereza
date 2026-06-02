@@ -8,9 +8,17 @@ tags:
   - cursos
 keywords:
   - docker
-  - curso docker
-  - contenedores
+  - curso docker desde cero
+  - tutorial docker completo
+  - aprender docker en español
+  - contenedores docker
   - devops
+  - docker gratis
+  - docker para principiantes
+  - docker avanzado
+  - dockerizar aplicaciones
+  - containers
+  - docker compose kubernetes
 ---
 
 # Curso Docker

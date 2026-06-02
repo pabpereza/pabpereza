@@ -2,6 +2,7 @@
 slug: secretos_docker_buenas_practicas 
 title: Secretos en Docker y mejores prácticas 
 tags: [secretos, docker, seguridad, devops]
+keywords: [secretos docker, docker secrets, variables entorno seguras docker, gestionar contraseñas docker, docker compose secrets, vault docker]
 authors: pabpereza
 image: https://img.youtube.com/vi/od3rUhL_P3Q/maxresdefault.jpg 
 date: 2024-09-10

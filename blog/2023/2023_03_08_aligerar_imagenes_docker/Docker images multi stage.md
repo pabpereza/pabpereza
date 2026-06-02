@@ -3,6 +3,7 @@ date: 2023-03-08
 title: Aligerar imágenes Docker
 slug: aligerar_imagenes_docker
 tags: [docker]
+keywords: [aligerar imagenes docker, reducir tamaño imagen docker, multi-stage docker, docker imagen ligera, optimizar imagen docker, distroless docker]
 authors: pabpereza
 image: https://img.youtube.com/vi/QVcLTxmcJ8s/maxresdefault.jpg
 ---

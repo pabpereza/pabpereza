@@ -217,7 +217,7 @@ const config = {
       },
       themeConfig: {
         metadata: [
-          { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, Blog'},
+          { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, blog, ansible, contenedores, containers, orquestación, ci/cd, pipelines, infraestructura como código, iac, linux, terminal, vim, neovim, mysql, sql, bases de datos, sre, cloud native, cncf, certificación cka, certificación ckad, homelab, raspberry pi, automatización, cursos gratis, español, aprender docker, aprender kubernetes, aprender ansible, devsecops español, docker tutorial, kubernetes tutorial'},
           { name: 'twitter:card', content: 'summary'},
           { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
         ],

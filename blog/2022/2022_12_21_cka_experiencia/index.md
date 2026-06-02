@@ -3,6 +3,7 @@ date: 2022-12-21
 title: "CKA: Mi experiencia"
 slug: "CKA_mi_experiencia"
 tags: [kubernetes]
+keywords: [CKA certificacion kubernetes, certified kubernetes administrator, experiencia CKA, preparar CKA, linux foundation kubernetes]
 authors: pabpereza 
 banner: https://images.credly.com/size/680x680/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png
 ---

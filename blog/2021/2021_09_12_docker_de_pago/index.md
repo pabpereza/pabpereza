@@ -3,6 +3,7 @@ date: 2021-09-12
 title: "¿Docker desktop de pago?"
 slug: "docker_desktop_de_pago"
 tags: [docker, noticia]
+keywords: [docker desktop de pago, docker suscripción empresa, alternativas docker desktop, docker gratis empresas, docker license change]
 authors: pabpereza 
 ---
 

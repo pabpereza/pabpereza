@@ -3,6 +3,7 @@ date: 2023-3-07
 title: Diagramas com código 
 slug: diagramas-como-codigo 
 tags: [devops]
+keywords: [diagramas como codigo, mermaid diagrams, plantuml, diagrams as code, documentar arquitectura, gitops diagrams]
 authors: pabpereza
 image: https://img.youtube.com/vi/Gvt0iRxg99I/maxresdefault.jpg
 ---

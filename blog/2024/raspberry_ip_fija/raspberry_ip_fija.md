@@ -2,6 +2,7 @@
 slug: raspberry-ip-fija
 title: Raspberry Pi con IP fija
 tags: [ raspberry, redes]
+keywords: [raspberry pi ip fija, ip estatica raspberry, configurar red raspberry, raspberry pi ip fija linux, dhcp raspberry]
 authors: pabpereza
 date: 2024-12-18
 ---

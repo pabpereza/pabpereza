@@ -3,6 +3,7 @@ date: 2022-12-01
 title: "Crea y comparte copias de seguridad en docker"
 slug: "crea_y_comparte_backups_en_docker"
 tags: [docker, noticia]
+keywords: [backups docker volumen, copias seguridad docker desktop, compartir volumen docker, persistencia datos docker, docker backup tutorial]
 authors: pabpereza 
 ---
 

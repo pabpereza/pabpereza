@@ -2,6 +2,7 @@
 slug: hadolint-verificar-mejorar-dockerfile
 title: Verifica y mejora tus dockerfiles 
 tags: [ dockerfile, docker, contenedores]
+keywords: [hadolint dockerfile, linter dockerfile, verificar dockerfile, mejores practicas dockerfile, docker lint herramienta]
 authors: pabpereza
 date: 2023-09-16
 ---

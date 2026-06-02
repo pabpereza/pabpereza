@@ -10,11 +10,17 @@ tags:
   - cursos
 keywords:
   - vim
+  - neovim
   - tmux
-  - curso vim
+  - curso vim desde cero
   - productividad terminal
-  - editor de texto
+  - editor de texto modal
   - terminal multiplexer
+  - vim tutorial español
+  - aprender vim
+  - astronvim nvim
+  - vim para devops
+  - vim para desarrolladores
 ---
 
 # Curso Vim + Tmux: Productividad Terminal Extrema ⚡️

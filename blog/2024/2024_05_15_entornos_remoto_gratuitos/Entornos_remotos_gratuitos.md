@@ -2,6 +2,7 @@
 slug: entornos-remotos-gratuitos
 title: Entornos de desarrollo remotos y gratuitos
 tags: [desarrollo, docker, linux, github,aws, gitpod]
+keywords: [entornos desarrollo remoto, github codespaces gratis, gitpod gratis, aws cloud9, desarrollo remoto nube, docker online gratis]
 authors: pabpereza
 image: https://img.youtube.com/vi/CIZhk8FG0Ng/maxresdefault.jpg
 date: 2024-05-15

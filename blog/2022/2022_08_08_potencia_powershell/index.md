@@ -3,6 +3,7 @@ date: 2022-08-08
 title: "Potencia PowerShell"
 slug: "potencia_powershell"
 tags: [powershell, terminal]
+keywords: [powershell oh-my-posh, personalizar powershell, powershell productividad, terminal windows, powershell tutorial]
 authors: pabpereza
 ---
 

@@ -61,7 +61,7 @@ Bienvenido al curso de Ansible. En esta introducción descubrirás qué es Ansib
 - **Orquestación**: Coordinar tareas complejas entre múltiples sistemas
 - **Aprovisionamiento**: Configurar infraestructura desde cero
 
-#### La Filosofía: Simplicidad y Potencia
+#### La filosofía: simplicidad y potencia
 ```
 Complejidad tradicional → Ansible → Simplicidad radical
       ↓                      ↓              ↓
@@ -70,9 +70,9 @@ Complejidad tradicional → Ansible → Simplicidad radical
 
 Ansible fue creado en 2012 por Michael DeHaan con un objetivo claro: hacer la automatización IT accesible para todos, no solo para expertos en programación. En 2015 fue adquirido por Red Hat (ahora IBM), consolidándose como estándar de la industria.
 
-### 🌟 Casos de Uso Principales
+### 🌟 Casos de uso principales
 
-#### 1. Gestión de Configuración
+#### 1. Gestión de configuración
 Mantén la coherencia en todos tus servidores. Si tienes 100 servidores web, asegúrate de que todos tengan la misma configuración de Nginx, los mismos certificados SSL y las mismas políticas de seguridad.
 
 **Ejemplo práctico:**
@@ -92,24 +92,24 @@ Mantén la coherencia en todos tus servidores. Si tienes 100 servidores web, ase
         proto: tcp
 ```
 
-#### 2. Despliegue Continuo (CI/CD)
+#### 2. Despliegue continuo (CI/CD)
 Integra Ansible en tus pipelines de Jenkins, GitLab CI o GitHub Actions para desplegar aplicaciones de forma automatizada y consistente.
 
-#### 3. Orquestación Multi-Tier
+#### 3. Orquestación multi-tier
 Coordina despliegues complejos que involucran bases de datos, load balancers, servidores de aplicación y más, en el orden correcto.
 
-#### 4. Gestión de la Nube
+#### 4. Gestión de la nube
 Aprovisiona y gestiona recursos en AWS, Azure, Google Cloud, OpenStack y otras plataformas cloud.
 
-#### 5. Cumplimiento y Auditoría
+#### 5. Cumplimiento y auditoría
 Garantiza que tu infraestructura cumple con estándares de seguridad (PCI-DSS, HIPAA, SOC2) aplicando configuraciones de forma automática y auditable.
 
-#### 6. Disaster Recovery
+#### 6. Disaster recovery
 Automatiza la reconstrucción completa de tu infraestructura en minutos, convirtiendo un desastre en un inconveniente menor.
 
-### ⚔️ Ansible vs Otras Herramientas (Chef, Puppet, SaltStack)
+### ⚔️ Ansible vs otras herramientas (Chef, Puppet, SaltStack)
 
-#### Comparativa Rápida
+#### Comparativa rápida
 
 | Característica | Ansible | Chef | Puppet | SaltStack |
 |----------------|---------|------|--------|-----------|
@@ -122,7 +122,7 @@ Automatiza la reconstrucción completa de tu infraestructura en minutos, convirt
 
 #### Ventajas de Ansible
 
-##### 1. **Sin Agentes (Agentless)**
+##### 1. **Sin agentes (Agentless)**
 ```mermaid
 graph LR
     A[Ansible Control Node] -->|SSH directo| B[Server 1]
@@ -158,7 +158,7 @@ graph LR
 - Los agentes consumen recursos (CPU, RAM)
 - Si el agente falla, pierdes control del servidor
 
-##### 2. **YAML Legible**
+##### 2. **YAML legible**
 Ansible usa YAML, un formato de datos human-readable que puedes entender aunque no sepas programar.
 
 **Ansible (YAML):**
@@ -202,7 +202,7 @@ service { 'apache2':
 - **Push (Ansible)**: Despliegues puntuales, CI/CD, cambios críticos inmediatos
 - **Pull (Chef/Puppet)**: Infraestructura masiva que debe autocurarse continuamente
 
-##### 4. **Curva de Aprendizaje**
+##### 4. **Curva de aprendizaje**
 
 **Tiempo para ser productivo:**
 - **Ansible**: 🟢 1-2 días (si sabes SSH y YAML básico)
@@ -222,9 +222,9 @@ Ansible no siempre es la mejor opción:
 
 ✅ **La mayoría de los demás casos**: Ansible es la opción más pragmática.
 
-### 🏗️ Arquitectura de Ansible: Visión General
+### 🏗️ Arquitectura de Ansible: visión general
 
-#### Componentes Principales
+#### Componentes principales
 
 ```mermaid
 graph TD
@@ -254,7 +254,7 @@ graph TD
     style H fill:#a8dadc,color:#000
 ```
 
-#### 1. **Control Node (Nodo de Control)**
+#### 1. **Control Node (nodo de control)**
 Es donde instalas y ejecutas Ansible. Puede ser:
 - Tu portátil local
 - Un servidor bastión/jump host
@@ -265,7 +265,7 @@ Es donde instalas y ejecutas Ansible. Puede ser:
 - Python 3.8+
 - Ansible instalado (`pip install ansible`)
 
-#### 2. **Managed Nodes (Nodos Gestionados)**
+#### 2. **Managed Nodes (nodos gestionados)**
 Los sistemas que automatizas. **No necesitan Ansible instalado**, solo:
 - **Linux/Unix**: SSH habilitado + Python 2.7 o 3.5+
 - **Windows**: WinRM habilitado + PowerShell 3.0+
@@ -306,7 +306,7 @@ Extensiones que amplían las capacidades de Ansible:
 - **Inventory plugins**: AWS EC2, Azure, GCP, VMware
 - **Filter plugins**: Transformaciones de datos (Jinja2)
 
-#### Flujo de Ejecución
+#### Flujo de ejecución
 
 ```mermaid
 sequenceDiagram
@@ -326,26 +326,26 @@ sequenceDiagram
     CLI-->>User: Mostrar resultados
 ```
 
-### 📋 Prerrequisitos para este Curso
+### 📋 Prerrequisitos para este curso
 
-#### Conocimientos Recomendados
+#### Conocimientos recomendados
 
-##### Esenciales (Debes tener)
+##### Esenciales (debes tener)
 - ✅ **Linux básico**: Navegación por terminal, comandos básicos (ls, cd, cat, vim/nano)
 - ✅ **SSH**: Saber conectarte a un servidor remoto (`ssh user@host`)
 - ✅ **YAML básico**: Entender la sintaxis (o aprender en el curso)
 
-##### Útiles (Ayudan mucho)
+##### Útiles (ayudan mucho)
 - 🟡 **Git**: Control de versiones para tus playbooks
 - 🟡 **Docker**: Para practicar sin romper nada
 - 🟡 **Cloud básico**: AWS/Azure/GCP conceptos generales
 
-##### No Necesarios (Los aprenderás aquí)
+##### No necesarios (los aprenderás aquí)
 - ❌ Programación avanzada
 - ❌ Experiencia previa con IaC
 - ❌ Certificaciones
 
-#### Entorno de Práctica
+#### Entorno de práctica
 
 Para seguir el curso necesitarás:
 
@@ -373,7 +373,7 @@ Para seguir el curso necesitarás:
    - Claves SSH generadas (`ssh-keygen`)
    - Acceso sin contraseña configurado (ssh-copy-id)
 
-#### Verificación de Prerrequisitos
+#### Verificación de prerrequisitos
 
 Antes de empezar, verifica que tienes todo listo:
 
@@ -393,11 +393,11 @@ echo "clave: valor" > test.yml && cat test.yml
 
 Si todos estos comandos funcionan, ¡estás listo! 🎉
 
-### 🎓 Qué Aprenderás en este Curso
+### 🎓 Qué aprenderás en este curso
 
 Este curso está estructurado en módulos progresivos:
 
-#### **Fundamentos** (Módulos 1-6)
+#### **Fundamentos** (módulos 1-6)
 - ✅ Arquitectura y conceptos core
 - ✅ Instalación en diferentes sistemas
 - ✅ Inventarios y comandos ad-hoc
@@ -405,7 +405,7 @@ Este curso está estructurado en módulos progresivos:
 - ✅ Variables, facts y templating
 - ✅ Condicionales, bucles y manejo de errores
 
-#### **Avanzado** (Módulos 7-9)
+#### **Avanzado** (módulos 7-9)
 - ✅ Roles y estructura modular
 - ✅ Ansible Vault (secretos seguros)
 - ✅ Jinja2 templates avanzados
@@ -415,19 +415,19 @@ Este curso está estructurado en módulos progresivos:
 
 Todos ellos acompañados de una parte práctica, como debe ser.
 
-### 🚀 ¿Por qué Aprender Ansible en 2026?
+### 🚀 ¿Por qué aprender Ansible en 2026?
 
-#### Demanda Laboral
+#### Demanda laboral
 - **+40% de ofertas DevOps** mencionan Ansible (Stack Overflow 2025)
 - **Salarios**: DevOps Engineers con Ansible ganan 15-25% más que sin automatización
 - **Empresas**: Usado por Red Hat, NASA, Apple, Cisco, Bloomberg
 
-#### Comunidad y Ecosistema
+#### Comunidad y ecosistema
 - **100,000+ Ansible roles** en Ansible Galaxy
 - **3,000+ módulos** oficiales + miles de colecciones comunitarias
 - **Documentación exhaustiva** y comunidad activa en GitHub
 
-#### Futuro-Proof
+#### Futuro-proof
 - **Ansible Automation Platform 2.x** (Red Hat) con soporte empresarial
 - **Event-Driven Ansible**: Reacciona automáticamente a eventos (próxima generación)
 - **Integración con Kubernetes**: Ansible Operator para gestionar apps cloud-native
@@ -468,7 +468,7 @@ graph TD
     end
 ```
 
-#### 📘 Explicación Técnica
+#### 📘 Explicación técnica
 Ansible es una herramienta de **Infraestructura como Código (IaC)** open-source que automatiza el aprovisionamiento de software, la gestión de configuraciones y el despliegue de aplicaciones.
 
 A diferencia de los scripts tradicionales que son **imperativos** (haz esto, luego esto, luego esto), Ansible tiende a ser **declarativo**. Tú defines el **estado final deseado** (quiero que Nginx esté instalado y corriendo) y Ansible se encarga de los pasos necesarios para llegar ahí.
@@ -507,12 +507,12 @@ service nginx start
 
 ### Arquitectura "Agentless"
 
-#### 🕵️ La Analogía: La Llave Maestra
+#### 🕵️ La analogía: la llave maestra
 Imagina que eres un consultor que visita oficinas.
 *   **Con Agente (Puppet/Chef):** Tienes que instalar un robot en cada oficina antes de poder trabajar. Si el robot se rompe, no puedes hacer nada.
 *   **Agentless (Ansible):** Usas la puerta estándar (SSH) que ya tienen todas las oficinas. Solo necesitas la llave (credenciales) para entrar, hacer tu trabajo y salir sin dejar rastro.
 
-#### 🧠 Concepto Visual
+#### 🧠 Concepto visual
 
 ```mermaid
 sequenceDiagram
@@ -530,7 +530,7 @@ sequenceDiagram
     Note over Managed: El servidor queda limpio
 ```
 
-#### 📘 Explicación Técnica
+#### 📘 Explicación técnica
 Ansible es **Agentless**. No requiere instalar ningún software adicional en los nodos que vas a gestionar (ni demonios, ni bases de datos).
 
 Utiliza protocolos estándar existentes:
@@ -539,13 +539,13 @@ Utiliza protocolos estándar existentes:
 
 Esto reduce drásticamente la carga administrativa y los agujeros de seguridad, ya que no hay un "agente de Ansible" escuchando en un puerto extraño que debas parchear.
 
-#### 💻 Requisitos Técnicos
+#### 💻 Requisitos técnicos
 
-**En el Nodo de Control (Tu PC):**
+**En el nodo de control (tu PC):**
 *   Python instalado.
 *   Ansible instalado.
 
-**En los Nodos Gestionados (Servidores):**
+**En los nodos gestionados (servidores):**
 *   Python instalado (para ejecutar los módulos que envía Ansible).
 *   Acceso SSH habilitado.
 
@@ -557,13 +557,13 @@ Esto reduce drásticamente la carga administrativa y los agujeros de seguridad, 
 
 ### Idempotencia
 
-#### 💡 La Analogía: El Interruptor de la Luz
+#### 💡 La analogía: el interruptor de la luz
 Entras en una habitación y quieres luz.
 *   Si el interruptor está apagado, lo pulsas -> **Cambio de estado (Luz ON)**.
 *   Si el interruptor ya está encendido, lo miras y no haces nada -> **Estado mantenido (Luz ON)**.
 *   Si pulsas el interruptor 50 veces hacia la posición "ON", el resultado es el mismo: la luz está encendida y no explota la bombilla. Eso es **idempotencia**.
 
-#### 🧠 Concepto Visual
+#### 🧠 Concepto visual
 
 ```mermaid
 flowchart LR
@@ -577,12 +577,12 @@ flowchart LR
     style D fill:#ffadad,stroke:#333,color:#000
 ```
 
-#### 📘 Explicación Técnica
+#### 📘 Explicación técnica
 La **idempotencia** es la propiedad de realizar una operación varias veces sin cambiar el resultado más allá de la aplicación inicial.
 
 En Ansible, la mayoría de los módulos son idempotentes. Si ejecutas un playbook 100 veces, Ansible solo realizará cambios la primera vez. Las 99 veces restantes verificará que el estado es correcto y reportará "OK" (sin cambios). Esto es vital para la estabilidad.
 
-#### 💻 Caso Práctico
+#### 💻 Caso práctico
 
 Supongamos que queremos crear un usuario 'deployer'.
 
@@ -604,13 +604,13 @@ ok: [servidor1]       <-- Ansible verifica y no hace nada. Estado: OK (Verde)
 *   Ansible te informa si hubo cambios (`changed`) o si ya estaba todo correcto (`ok`).
 
 
-### Nodo de Control vs Nodos Gestionados
+### Nodo de control vs nodos gestionados
 
-#### 🎮 La Analogía: La Consola y el Personaje
+#### 🎮 La analogía: la consola y el personaje
 *   **Nodo de Control:** Es tu mando de la consola. Desde aquí envías las órdenes. Es donde está tu inteligencia.
 *   **Nodos Gestionados:** Son los personajes del videojuego. Reciben las órdenes y actúan. Pueden ser guerreros (Linux), magos (Windows) o incluso el entorno (Routers).
 
-#### 🧠 Concepto Visual
+#### 🧠 Concepto visual
 
 ```mermaid
 graph TD
@@ -631,7 +631,7 @@ graph TD
     A -->|SSH/API| F
 ```
 
-#### 📘 Explicación Técnica
+#### 📘 Explicación técnica
 
 1.  **Nodo de Control (Control Node):**
     *   Es la máquina donde instalas y ejecutas Ansible.
@@ -643,7 +643,7 @@ graph TD
     *   No necesitan Ansible instalado.
     *   Se organizan en un **Inventario**.
 
-#### 💻 Configuración Típica
+#### 💻 Configuración típica
 
 **Inventario (`hosts.ini`):**
 ```ini
@@ -659,7 +659,7 @@ madrid
 barcelona
 ```
 
-**Comando desde el Nodo de Control:**
+**Comando desde el nodo de control:**
 ```bash
 # Hacemos ping a todos los nodos del inventario
 ansible all -i hosts.ini -m ping
@@ -698,7 +698,7 @@ Si ves un número, ¡estás listo para repostar e instalar el Ferrari!
 
 Vamos a instalar Ansible en tu **Nodo de Control**. Recuerda que **NO** necesitas instalar nada en los servidores que vas a gestionar (agentless, ¿recuerdas?).
 
-#### 📦 Guía de Instalación por S.O.
+#### 📦 Guía de instalación por S.O.
 
 Elige tu sistema operativo y sigue los pasos.
 
@@ -787,7 +787,7 @@ ansible [core 2.14.x]
 
 ¡Listo! Ya tienes el poder de la automatización en tus manos.
 
-### 1.Laboratorio Práctico
+### 1. Laboratorio práctico
 
 Para aprender Ansible necesitas romper cosas. Y mejor romper un entorno de pruebas que el servidor de producción de tu empresa.
 
@@ -820,7 +820,7 @@ Además, si no quieres usar tu host como nodo de control, el script te da la opc
 
 Ansible funciona "out of the box", pero para trabajar como un profesional, necesitas configurarlo a tu gusto.
 
-#### 🧠 Precedencia de Configuración
+#### 🧠 Precedencia de configuración
 
 Ansible es muy flexible buscando su configuración. No hay un solo sitio, busca en varios lugares en un orden específico. **El primero que encuentra, gana.**
 
@@ -843,13 +843,13 @@ flowchart TD
     style H fill:#4ecdc4,stroke:#333,color:#000
 ```
 
-#### 💡 Best Practice
+#### 💡 Best practice
 La mejor práctica es tener un archivo `ansible.cfg` **en la carpeta de tu proyecto**.
 *   Así, la configuración viaja con tu código (Git).
 *   Tus compañeros tendrán la misma configuración que tú.
 *   Evitas romper otros proyectos si cambias la configuración global.
 
-#### 📝 Ejemplo de ansible.cfg Básico
+#### 📝 Ejemplo de ansible.cfg básico
 
 Crea un archivo llamado `ansible.cfg` en tu carpeta de proyecto con este contenido recomendado para empezar:
 

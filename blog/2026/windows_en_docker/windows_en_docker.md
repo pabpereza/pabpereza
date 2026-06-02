@@ -3,6 +3,7 @@ slug: windows-en-docker-kvm
 title: "Windows en Docker: Cómo ejecutar Windows 11 dentro de un contenedor"
 authors: [pabpereza]
 tags: [docker, windows, kvm, devops, laboratorio]
+keywords: [windows en docker, ejecutar windows 11 docker, dockur windows, windows contenedor docker, windows docker kvm]
 date: 2026-01-22
 ---
 

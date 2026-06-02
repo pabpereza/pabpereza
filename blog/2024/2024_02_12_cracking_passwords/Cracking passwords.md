@@ -2,7 +2,8 @@
 date: 2024-02-12
 title: Cracking de contraseñas con Hashcat
 slug: cracking_passwords_hashcat 
-tags: [docker]
+tags: [docker, seguridad, hacking]
+keywords: [hashcat cracking contraseñas, romper hashes hashcat, seguridad contraseñas, passkey alternativa, hashcat tutorial]
 authors: pabpereza
 image: https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg
 ---

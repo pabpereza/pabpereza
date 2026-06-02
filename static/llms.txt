@@ -1,15 +1,28 @@
 # Pabpereza
 
-> Plataforma educativa en español creada por Pablo Pérez-Aradros, especializada en DevOps, ciberseguridad (DevSecOps) y desarrollo. Incluye cursos completos, artículos de blog y documentación técnica. El contenido acompaña a los vídeos del canal de YouTube @Pabpereza.
+> Plataforma educativa gratuita en español creada por Pablo Pérez-Aradros, especializada en DevOps, DevSecOps, ciberseguridad, contenedores y desarrollo. Incluye cursos completos, artículos de blog y documentación técnica complementaria al canal de YouTube @Pabpereza (20.000+ suscriptores).
 
-Pablo Pérez-Aradros es un especialista en ciberseguridad enfocado en DevSecOps, actualmente en el equipo CISO de Banco Santander (CIB). Su filosofía es "Si quieres dominar algo, enséñalo" (Feynman). El sitio web sirve como documentación escrita complementaria a su contenido en vídeo.
+Pablo Pérez-Aradros es especialista en ciberseguridad y DevSecOps, actualmente en el equipo CISO de Banco Santander (CIB). Posee las certificaciones CKA (Certified Kubernetes Administrator), CKAD (Certified Kubernetes Application Developer) y el reconocimiento Kubeastronaut de la CNCF. Su filosofía es "Si quieres dominar algo, enséñalo" (método Feynman).
+
+El sitio combina documentación escrita de calidad con vídeos prácticos en YouTube. Cubre Docker, Kubernetes, Ansible, DevOps, CI/CD, seguridad de contenedores (DevSecOps), MySQL y Vim/Neovim. Todo el contenido está en español, orientado a developers, SysAdmins y profesionales TI hispanohablantes con nivel intermedio-avanzado.
+
+## Tecnologías y temas cubiertos
+
+- **Docker**: instalación, Dockerfiles, multi-stage builds, distroless, redes, volúmenes, Docker Compose, Docker Swarm, buildx, seguridad, producción
+- **Kubernetes (k8s)**: arquitectura, pods, deployments, services, ingress, Gateway API, RBAC, autoscaling (HPA/VPA), Helm, CRDs, seguridad, CKA/CKAD/CKS
+- **Ansible**: inventarios, playbooks, módulos, idempotencia, roles, Galaxy, Vault, CI/CD, Docker/Kubernetes
+- **DevOps**: cultura, CI/CD, IaC, Terraform, monitoreo, observabilidad, SRE, microservicios
+- **DevSecOps**: SAST, DAST, análisis imágenes, secretos, compliance, seguridad en pipeline
+- **MySQL**: consultas, joins, procedimientos almacenados, triggers, cursores, usuarios, permisos
+- **Vim/Neovim**: modos, tmux, AstroNvim, VSCode integration
+- **Homelab**: Raspberry Pi, rack 10", ZimaBoard, self-hosting
 
 ## Cursos
 
-- [Curso de Docker desde cero](https://pabpereza.dev/docs/cursos/docker/curso_de_docker_desde_cero): Curso completo de Docker: instalación, imágenes, contenedores, Dockerfiles, redes, volúmenes, Docker Compose, Swarm y producción
-- [Curso de Kubernetes](https://pabpereza.dev/docs/cursos/kubernetes/introduccion_a_kubernetes_guia_completa_para_principiantes): Curso completo de Kubernetes: pods, servicios, deployments, ingress, RBAC, autoscaling, Helm, CRDs, seguridad y mantenimiento
-- [Curso de DevOps](https://pabpereza.dev/docs/cursos/devops/Introduccion): Fundamentos de DevOps: cultura, metodologías, Git, contenedores, microservicios, IaC, CI/CD, testing, monitoreo y SRE
-- [Curso de Ansible](https://pabpereza.dev/docs/cursos/ansible/curso_ansible): Curso de Ansible: instalación, inventarios, variables, módulos, playbooks, roles, templates Jinja2 y buenas prácticas
+- [Curso de Docker desde cero](https://pabpereza.dev/docs/cursos/docker/curso_de_docker_desde_cero): Curso completo gratuito de Docker en español: instalación, imágenes, contenedores, Dockerfiles, multi-stage builds, distroless, redes, volúmenes, Docker Compose, Swarm, buildx y producción
+- [Curso de Kubernetes](https://pabpereza.dev/docs/cursos/kubernetes/introduccion_a_kubernetes_guia_completa_para_principiantes): Curso completo gratuito de Kubernetes en español: pods, servicios, deployments, ingress, Gateway API, RBAC, autoscaling (HPA/VPA), Helm, CRDs, seguridad y hardening
+- [Curso de DevOps](https://pabpereza.dev/docs/cursos/devops/Introduccion): Fundamentos de DevOps en español: cultura, metodologías ágiles, Git avanzado, contenedores, microservicios, IaC, CI/CD, testing, monitoreo y SRE
+- [Curso de Ansible](https://pabpereza.dev/docs/cursos/ansible): Curso completo de Ansible: automatización IT, inventarios estáticos y dinámicos, playbooks, módulos, idempotencia, roles, Vault, CI/CD con Jenkins y GitHub Actions, y proyecto final real
 - [Curso de MySQL](https://pabpereza.dev/docs/cursos/mysql/mysql): Curso de MySQL: consultas, joins, procedimientos, triggers, cursores, usuarios y permisos
 - [Curso de Vim](https://pabpereza.dev/docs/cursos/vim/introduccion_vim): Vim, tmux, integración con VSCode y configuración como IDE con AstroNvim
 
@@ -89,18 +102,17 @@ Pablo Pérez-Aradros es un especialista en ciberseguridad enfocado en DevSecOps,
 
 ## Ansible - Lecciones
 
-- [Introducción a Ansible](https://pabpereza.dev/docs/cursos/ansible/introduccion-ansible)
-- [Instalación](https://pabpereza.dev/docs/cursos/ansible/instalacion)
-- [Fundamentos](https://pabpereza.dev/docs/cursos/ansible/fundamentos)
-- [Inventarios](https://pabpereza.dev/docs/cursos/ansible/inventarios)
-- [Variables](https://pabpereza.dev/docs/cursos/ansible/variables)
-- [Módulos](https://pabpereza.dev/docs/cursos/ansible/modulos)
-- [Playbooks](https://pabpereza.dev/docs/cursos/ansible/playbooks)
-- [Roles](https://pabpereza.dev/docs/cursos/ansible/roles)
-- [Templates Jinja2](https://pabpereza.dev/docs/cursos/ansible/templates-jinja2-ansible)
-- [Ansible Galaxy](https://pabpereza.dev/docs/cursos/ansible/ansible-galaxy)
-- [Buenas prácticas](https://pabpereza.dev/docs/cursos/ansible/buenas-practicas-ansible)
-- [Laboratorios](https://pabpereza.dev/docs/cursos/ansible/labs)
+- [Introducción a Ansible: fundamentos e instalación](https://pabpereza.dev/docs/cursos/ansible/introduccion_a_ansible_curso_completo): Qué es Ansible, arquitectura agentless, instalación y primeros pasos
+- [Inventarios estáticos y dinámicos](https://pabpereza.dev/docs/cursos/ansible/ansible_inventarios_dinamicos_y_estaticos): Gestión de hosts, grupos, inventarios INI y YAML, comandos ad-hoc
+- [Playbooks y YAML](https://pabpereza.dev/docs/cursos/ansible/ansible_playbooks_yaml_sintaxis): Sintaxis YAML, estructura de playbooks, tasks y handlers
+- [Idempotencia y módulos avanzados](https://pabpereza.dev/docs/cursos/ansible/ansible_modulos_idempotencia): Módulos de producción, idempotencia, gestión de paquetes, servicios y ficheros
+- [Variables, facts y control de flujo](https://pabpereza.dev/docs/cursos/ansible/ansible_variables_condicionales_bucles_handlers): Variables, facts, condicionales, bucles y handlers avanzados
+- [Ansible y contenedores: Docker y Kubernetes](https://pabpereza.dev/docs/cursos/ansible/ansible_docker_kubernetes_contenedores): Automatización con módulos Docker y Kubernetes desde Ansible
+- [Roles y Ansible Galaxy](https://pabpereza.dev/docs/cursos/ansible/ansible_roles_templates_galaxy): Estructura de roles, templates Jinja2, Ansible Galaxy y colecciones
+- [Seguridad: Vault, SSH y credenciales](https://pabpereza.dev/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales): Ansible Vault, gestión segura de contraseñas y claves SSH
+- [Errores y depuración](https://pabpereza.dev/docs/cursos/ansible/ansible_errores_depuracion): Manejo de errores, debug, verbose y estrategias de troubleshooting
+- [Ansible en CI/CD: Jenkins y GitHub Actions](https://pabpereza.dev/docs/cursos/ansible/ansible_cicd_jenkins_github_actions): Integración de Ansible en pipelines de integración continua
+- [Proyecto final: desplegando NotaStack](https://pabpereza.dev/docs/cursos/ansible/ansible_proyecto_final_notastack): Proyecto real completo desplegando una aplicación con Ansible
 
 ## MySQL - Lecciones
 

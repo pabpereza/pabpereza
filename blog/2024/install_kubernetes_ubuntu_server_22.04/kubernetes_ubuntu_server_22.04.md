@@ -2,6 +2,7 @@
 slug: instalacion_kubernetes_ubuntu_server_22.04 
 title: Instalación de Kubernetes en Ubuntu Server 22.04 LTS 
 tags: [kubernetes, ubuntu]
+keywords: [instalar kubernetes ubuntu 22.04, kubernetes ubuntu server, kubeadm ubuntu server, cluster kubernetes produccion, kubernetes bare metal]
 authors: pabpereza
 date: 2024-09-01
 image: https://img.youtube.com/vi/y_c_tPXusqM/maxresdefault.jpg

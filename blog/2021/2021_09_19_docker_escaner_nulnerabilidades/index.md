@@ -4,6 +4,7 @@ title: "Analizar la seguridad de las imágenes de Docker"
 slug: "analizar_seguridad_docker"
 authors: pabpereza
 tags: [docker, seguridad]
+keywords: [seguridad imagenes docker, scanner vulnerabilidades docker, trivy docker, snyk docker, analizar seguridad contenedores, CVE docker]
 ---
 
 En anteriores vídeos he hablado acerca de la seguridad a la hora de crear imágenes pero hay un aspecto más crítico y fundamental que se suele obviar al construir imágenes. Estas, contienen software en forma de librerías del sistema que también pueden ser vulnerables. Pero, ¿como podemos revisar esa seguridad?

@@ -3,6 +3,7 @@ date: 2021-12-12
 title: "Errores comunes en Git"
 slug: "errores_comunes_git"
 tags: [git, errores, video, desarrollo]
+keywords: [errores comunes git, git reset, git revert, git merge conflict, solucionar errores git, git tutorial]
 authors: pabpereza
 image: git_banner.png
 ---

@@ -3,6 +3,7 @@ date: "2022-02-27"
 title: "Raspberry Pi Touchscreen 7"
 slug: "raspberry_pi_touchscreen_7_pulgadas"
 tags: [raspberry]
+keywords: [raspberry pi touchscreen, pantalla tactil raspberry, raspberry pi 7 pulgadas, raspberry pi accesorios, raspberry pi display]
 authors: pabpereza
 ---
 

@@ -1,0 +1,186 @@
+---
+# Ejercicio 2: Gestión de firewall y políticas de seguridad
+# Gestiona reglas UFW, fail2ban y sudoers sobre target1 y target2.
+# Conceptos: múltiples plays, group_vars, loop con dicts, when, register,
+#             block/rescue, failed_when, changed_when, handlers
+
+# ── PLAY 1: Firewall y fail2ban en todos los servidores ───────────────────
+- name: Aplicar políticas de firewall
+  hosts: target1,target2
+  become: yes
+  any_errors_fatal: false
+
+  vars:
+    # Puertos permitidos por defecto en todos los hosts
+    base_allowed_ports:
+      - { port: "22",  proto: tcp, comment: "SSH"   }
+      - { port: "123", proto: udp, comment: "NTP"   }
+
+    fail2ban_jails:
+      - name: sshd
+        enabled: "true"
+        maxretry: 5
+        bantime: 3600
+        findtime: 600
+      - name: nginx-http-auth
+        enabled: "true"
+        maxretry: 3
+        bantime: 7200
+        findtime: 300
+
+  tasks:
+
+    - name: Instalar UFW y fail2ban
+      apt:
+        name:
+          - ufw
+          - fail2ban
+        state: present
+        update_cache: yes
+
+    # ── UFW ──────────────────────────────────────────────────────────────
+    - name: Resetear reglas UFW a estado limpio
+      ufw:
+        state: reset
+
+    - name: Política por defecto — denegar entrada, permitir salida
+      ufw:
+        direction: "{{ item.direction }}"
+        default: "{{ item.policy }}"
+      loop:
+        - { direction: incoming, policy: deny  }
+        - { direction: outgoing, policy: allow }
+
+    - name: Aplicar puertos base permitidos
+      ufw:
+        rule: allow
+        port: "{{ item.port }}"
+        proto: "{{ item.proto }}"
+        comment: "{{ item.comment }}"
+      loop: "{{ base_allowed_ports }}"
+
+    - name: Permitir HTTP/HTTPS solo en target2 (servidor web)
+      ufw:
+        rule: allow
+        port: "{{ item }}"
+        proto: tcp
+      loop:
+        - "80"
+        - "443"
+      when: inventory_hostname == "target2"
+
+    - name: Habilitar UFW
+      ufw:
+        state: enabled
+
+    # ── FAIL2BAN ─────────────────────────────────────────────────────────
+    - name: Desplegar configuración de jails de fail2ban
+      copy:
+        dest: /etc/fail2ban/jail.d/ansible-managed.conf
+        mode: '0644'
+        content: |
+          {% for jail in fail2ban_jails %}
+          [{{ jail.name }}]
+          enabled  = {{ jail.enabled }}
+          maxretry = {{ jail.maxretry }}
+          bantime  = {{ jail.bantime }}
+          findtime = {{ jail.findtime }}
+
+          {% endfor %}
+      notify: Recargar fail2ban
+
+    - name: Arrancar y habilitar fail2ban
+      service:
+        name: fail2ban
+        state: started
+        enabled: yes
+
+    # ── VERIFICACIÓN ─────────────────────────────────────────────────────
+    - name: Comprobar estado de UFW
+      command: ufw status verbose
+      register: ufw_status
+      changed_when: false
+
+    - name: Mostrar reglas activas
+      debug:
+        var: ufw_status.stdout_lines
+
+  handlers:
+    - name: Recargar fail2ban
+      service:
+        name: fail2ban
+        state: reloaded
+
+
+# ── PLAY 2: Políticas de sudo y usuarios privilegiados ───────────────────
+- name: Gestionar políticas de acceso privilegiado
+  hosts: target1,target2
+  become: yes
+
+  vars_files:
+    - vars/usuarios_vault.yml    # usuarios y contraseñas cifrados con Vault
+
+  vars:
+    sudo_policies:
+      - user: deployer
+        commands: "/usr/bin/systemctl restart nginx, /usr/bin/systemctl reload nginx"
+        nopasswd: yes
+      - user: backup_agent
+        commands: "/usr/bin/mysqldump, /usr/bin/pg_dump"
+        nopasswd: yes
+
+    ops_users:
+      - name: deployer
+        groups: ["www-data"]
+        shell: /bin/bash
+      - name: backup_agent
+        groups: []
+        shell: /usr/sbin/nologin
+
+  tasks:
+
+    - name: Crear usuarios operacionales
+      user:
+        name: "{{ item.name }}"
+        groups: "{{ item.groups }}"
+        shell: "{{ item.shell }}"
+        state: present
+        create_home: yes
+      loop: "{{ ops_users }}"
+
+    - name: Desplegar políticas de sudo granulares
+      copy:
+        dest: "/etc/sudoers.d/{{ item.user }}"
+        mode: '0440'
+        content: "{{ item.user }} ALL=(ALL) {{ 'NOPASSWD: ' if item.nopasswd else '' }}{{ item.commands }}\n"
+        validate: "visudo -cf %s"
+      loop: "{{ sudo_policies }}"
+
+    - name: Bloquear cuentas de sistema sin shell válida
+      block:
+        - name: Obtener lista de usuarios con UID < 1000
+          shell: "awk -F: '($3 < 1000 && $3 != 0) {print $1}' /etc/passwd"
+          register: system_users
+          changed_when: false
+
+        - name: Asegurar que los usuarios de sistema tienen nologin
+          user:
+            name: "{{ item }}"
+            shell: /usr/sbin/nologin
+          loop: "{{ system_users.stdout_lines }}"
+          when:
+            - item != "sync"        # sync necesita /bin/sync
+            - item != "shutdown"
+            - item != "halt"
+          failed_when: false
+
+      rescue:
+        - name: Error gestionando usuarios de sistema
+          debug:
+            msg: "No se pudieron bloquear algunos usuarios de sistema en {{ inventory_hostname }}"
+
+    - name: Verificar que no hay usuarios con contraseña vacía
+      shell: "awk -F: '($2 == \"\" ) {print $1}' /etc/shadow"
+      register: empty_passwords
+      changed_when: false
+      failed_when: empty_passwords.stdout | length > 0

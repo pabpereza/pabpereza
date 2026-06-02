@@ -3,6 +3,7 @@ date: 2024-11-21
 title: Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker 
 slug: servidor-compartido-npm-proxy-docker 
 tags: [docker, nginx, proxy]
+keywords: [nginx proxy manager docker, servidor https docker, proxy inverso docker, multiple webs un servidor, npm docker compose]
 authors: pabpereza
 image: https://img.youtube.com/vi/WCSdh37Z6Wk/maxresdefault.jpg 
 ---

@@ -3,6 +3,7 @@ date: 2023-10-07
 title: Gitleaks, detecta secretos en tu repositorio de git 
 slug: gitleaks_secretos_git_repositorio_detectar 
 tags: [git,seguridad]
+keywords: [gitleaks git secretos, detectar secretos git, secretos expuestos repositorio, pre-commit gitleaks, devsecops git seguridad]
 authors: pabpereza
 image: https://img.youtube.com/vi/zHJdDT7XWkc/maxresdefault.jpg
 ---

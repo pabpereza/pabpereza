@@ -73,10 +73,10 @@ Al terminar serás capaz de:
 ### 🔵 Bloque II — Modularidad, seguridad y Ansible en producción
 *Estructura tu código y protege tus secretos.*
 
-* [🎭 6. Roles, Templates y Galaxy](./106.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
-* [🔐 7. Seguridad y Credenciales](./107.Seguridad.md) — Vault, claves SSH y variables sensibles
-* [🔧 8. Errores y depuración](./108.Errores_depuracion.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks
-* [🐳 9. Ansible y Contenedores](./109.Contenedores.md) — Docker y Kubernetes con Ansible
+* [🐳 6. Ansible y Contenedores](./106.Contenedores.md) — Docker y Kubernetes con Ansible
+* [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
+* [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Vault, claves SSH y variables sensibles
+* [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks
 * [🚀 10. Ansible en DevOps y CI/CD](./110.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
 * [🏗️ 11. Proyecto Final NotaStack](./111.Proyecto_real.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
 

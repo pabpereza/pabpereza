@@ -68,12 +68,12 @@ Al terminar serás capaz de:
 * [📋 2. Inventarios y Hosts](./102.Inventarios.md) — Estáticos, dinámicos (AWS/Azure/GCP) y comandos ad-hoc
 * [📜 3. Playbooks y YAML](./103.Playbooks.md) — Sintaxis, estructura y ejecución
 * [🧩 4. Módulos e Idempotencia](./104.Modulos_idempotencia.md) — Módulos esenciales y por qué la idempotencia importa
-* [🔀 5. Variables y Control de Flujo](./105.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers
+* [🐳 5. Ansible y Contenedores](./105.Contenedores.md) — Docker y Kubernetes con Ansible
 
 ### 🔵 Bloque II — Modularidad, seguridad y Ansible en producción
-*Estructura tu código y protege tus secretos.*
+*Estructura tu código y protege tus secretos, desplegando servicios en contenedores.*
 
-* [🐳 6. Ansible y Contenedores](./106.Contenedores.md) — Docker y Kubernetes con Ansible
+* [🔀 6. Variables y Control de Flujo](./106.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers
 * [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
 * [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Vault, claves SSH y variables sensibles
 * [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks

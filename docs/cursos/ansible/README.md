@@ -1,5 +1,5 @@
 ---
-title: ⚙️ Curso Ansible Gratuito - Automatización IT desde Cero
+title: ⚙️ Curso Ansible gratuito - automatización IT desde cero
 description: >-
   Curso completo de Ansible gratuito en español. Desde los fundamentos
   de la automatización IT hasta integración con Docker, Kubernetes y
@@ -78,7 +78,7 @@ Al terminar serás capaz de:
 * [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Vault, claves SSH y variables sensibles
 * [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks
 * [🚀 10. Ansible en DevOps y CI/CD](./110.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
-* [🏗️ 11. Proyecto Final NotaStack](./111.Proyecto_real.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
+* [🏗️ 11. Proyecto Final](./111.Proyecto_final.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
 
 ## 🎬 Equivalencia con el canal de YouTube
 

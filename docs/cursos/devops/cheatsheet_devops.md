@@ -121,7 +121,7 @@ terraform validate
 # playbook.yml
 ---
 - hosts: webservers
-  become: yes
+  become: true
   vars:
     http_port: 80
     max_clients: 200

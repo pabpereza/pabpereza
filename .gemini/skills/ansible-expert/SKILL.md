@@ -160,7 +160,7 @@ if __name__ == '__main__':
 ---
 - name: Configure web servers
   hosts: webservers
-  become: yes
+  become: true
   vars:
     app_port: 8080
     app_user: webapp
@@ -204,7 +204,7 @@ if __name__ == '__main__':
 ---
 - name: Deploy application
   hosts: webservers
-  become: yes
+  become: true
   vars:
     app_name: myapp
     app_version: "{{ version | default('latest') }}"
@@ -433,7 +433,7 @@ http {
 ---
 - name: Configure web servers
   hosts: webservers
-  become: yes
+  become: true
   roles:
     - role: webserver
       vars:

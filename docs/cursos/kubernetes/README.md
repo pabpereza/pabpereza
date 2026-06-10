@@ -57,7 +57,7 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 
 **⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
-# 📚 Índice del Curso
+## 📚 Índice del Curso {#índice}
 
 ### 🟢 Nivel Básico - Fundamentos de Kubernetes
 *Aprende los conceptos esenciales de Kubernetes desde cero*
@@ -92,37 +92,37 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 ### 🔵 Kubernetes para Administradores (Especialización CKA)
 *Administración avanzada de clusters y preparación para certificación CKA*
 
-* 🔧 Mantenimiento, backup y restauración de un clúster
-* 🔍 Troubleshooting del cluster
-* 🔐 APIs, TLS y seguridad avanzada
-* 📜 Certificados y autenticación
-* 💾 Volúmenes y almacenamiento custom
-* ⚙️ CRDs y Operators
-* 🏢 High Availability y Disaster Recovery
-* 📋 Preparación examen CKA
+* [🔧 Mantenimiento, backup y restauración de un clúster](./201.Mantenimiento_backup.md) - Operaciones críticas
+* [🔍 Troubleshooting del cluster](./202.Troubleshooting_cluster.md) - Diagnóstico de nodos y componentes
+* [🔐 APIs, TLS y seguridad avanzada](./203.APIs_TLS_seguridad.md) - Protegiendo el API server
+* [📜 Certificados y autenticación](./204.Certificados_autenticacion.md) - PKI del cluster
+* [💾 Volúmenes y almacenamiento custom](./205.Almacenamiento_avanzado.md) - CSI, Longhorn y Rook-Ceph
+* [⚙️ CRDs y Operators](./206.CRDs_operators.md) - Extendiendo Kubernetes
+* [🏢 High Availability y Disaster Recovery](./207.HA_disaster_recovery.md) - Clusters resilientes
+* [📋 Preparación examen CKA](./208.Preparacion_CKA.md) - Estrategia y simulacros
 
 ### 🟡 Kubernetes para Desarrolladores (Especialización CKAD)
 *Desarrollo de aplicaciones en Kubernetes y preparación para certificación CKAD*
 
-* 🏗️ Pods e initContainers
-* 🤝 Multi-container pods, sidecars, ambassador y adapter
-* 🔄 Canary y blue-green deployments
-* 🌐 CoreDNS, servicios y DNS
-* 🕸️ Service mesh
-* 🐛 Troubleshooting de aplicaciones
-* 📋 Preparación examen CKAD
+* [🏗️ Pods e initContainers](./301.Pods_initcontainers.md) - Inicialización de aplicaciones
+* [🤝 Multi-container pods, sidecars, ambassador y adapter](./302.Multicontainer_sidecars.md) - Patrones multi-contenedor
+* [🔄 Canary y blue-green deployments](./303.Canary_bluegreen.md) - Estrategias de despliegue
+* [🌐 CoreDNS, servicios y DNS](./304.CoreDNS_DNS.md) - Resolución de nombres
+* [🕸️ Service mesh](./305.Service_mesh.md) - Istio y Linkerd
+* [🐛 Troubleshooting de aplicaciones](./306.Troubleshooting_aplicaciones.md) - Depuración de workloads
+* [📋 Preparación examen CKAD](./307.Preparacion_CKAD.md) - Estrategia y simulacros
 
 ### 🔴 Seguridad en Kubernetes (Especialización CKS)
 *Seguridad avanzada en Kubernetes y preparación para certificación CKS*
 
-* 📊 CIS Benchmarks
-* 🏃 Runtime class
-* 🛡️ Network policies avanzadas
-* ⚡ Admission controllers
-* 🔒 Apparmor y Seccomp
-* 🦅 Falco
-* 📋 OPA
-* 📋 Preparación examen CKS
+* [📊 CIS Benchmarks](./401.CIS_benchmarks.md) - Auditoría con kube-bench
+* [🏃 Runtime class](./402.Runtime_class.md) - gVisor y Kata Containers
+* [🛡️ Network policies avanzadas](./403.Network_policies_avanzadas.md) - Microsegmentación
+* [⚡ Admission controllers](./404.Admission_controllers.md) - Validación y mutación
+* [🔒 Apparmor y Seccomp](./405.Apparmor_seccomp.md) - Perfiles de seguridad
+* [🦅 Falco](./406.Falco.md) - Detección de amenazas en runtime
+* [📋 OPA](./407.OPA.md) - Políticas como código con Gatekeeper
+* [📋 Preparación examen CKS](./408.Preparacion_CKS.md) - Estrategia y simulacros
 
 
 

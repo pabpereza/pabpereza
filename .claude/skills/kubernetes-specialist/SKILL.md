@@ -4,7 +4,7 @@ description: Use when deploying or managing Kubernetes workloads. Invoke to crea
 license: MIT
 metadata:
   author: https://github.com/Jeffallan
-  version: "1.1.0"
+  version: "1.2.0"
   domain: infrastructure
   triggers: Kubernetes, K8s, kubectl, Helm, container orchestration, pod deployment, RBAC, NetworkPolicy, Ingress, StatefulSet, Operator, CRD, CustomResourceDefinition, ArgoCD, Flux, GitOps, Istio, Linkerd, service mesh, multi-cluster, cost optimization, VPA, spot instances
   role: specialist
@@ -14,6 +14,38 @@ metadata:
 ---
 
 # Kubernetes Specialist
+
+## Convenciones de este repositorio (IMPORTANTE)
+
+El curso de Kubernetes vive en `docs/cursos/kubernetes/`. Todo contenido nuevo o revisado debe respetar estas convenciones:
+
+### Estructura y formato del curso
+- **Numeración**: `1XX.Nombre.md` para el bloque común/básico (101-126). Las especializaciones (CKA, CKAD, CKS) se definen en el índice del `README.md` del curso — consultar ahí antes de crear ficheros nuevos.
+- **Frontmatter obligatorio**: `title`, `description`, `keywords` (lista, 8-12 entradas SEO), `sidebar_label` (`N. Título corto`), `tags` (incluir la certificación si aplica: `CKA`, `CKAD`, `CKS`), `image: 'https://pabpereza.dev/img/banner_kubernetes.png'` y `slug` (snake_case derivado del título). **Nunca** usar `:` dentro de los valores del frontmatter.
+- **Cierre de cada lección** (footer fijo):
+  ```markdown
+  ---
+  * Lista de vídeos en Youtube: [Curso Kubernetes](https://www.youtube.com/playlist?list=PLQhxXeq1oc2k9MFcKxqXy5GV4yy7wqSma)
+
+  [Volver al índice](README.md#índice)
+  ```
+- **Idioma y tono**: español, conversacional pero profesional, con analogías para conceptos complejos. Párrafos de máximo 4-5 líneas. Explicar acrónimos en su primera aparición.
+- **Diagramas**: usar Mermaid para ilustrar conceptos (arquitectura, flujos de tráfico, ciclos de vida).
+- **Enlaces internos**: relativos entre lecciones (`./108.Deployments.md`).
+
+### Enfoque a certificaciones (CKA, CKAD, CKS)
+- Todo el contenido debe preparar para los exámenes oficiales de la CNCF. Incluir en cada lección los comandos `kubectl` que se usan en el examen.
+- **Los exámenes son prácticos y con tiempo limitado**: los comandos imperativos (`kubectl run`, `kubectl create deployment ... --dry-run=client -o yaml`, `kubectl expose`) son válidos y recomendables en este contexto, aunque en producción se prefiera YAML declarativo.
+- Incluir trucos de examen donde aplique: generación de YAML con `--dry-run=client -o yaml`, uso de `kubectl explain`, alias `k`, búsqueda en `kubernetes.io/docs` (única documentación permitida en el examen).
+- Marcar con claridad qué temas pertenecen a cada certificación.
+
+### Versiones y características actuales (no enseñar contenido obsoleto)
+- Asumir **Kubernetes v1.33+** y `containerd` como runtime. Repositorios de paquetes en `pkgs.k8s.io` (los antiguos `apt.kubernetes.io` / `packages.cloud.google.com` están retirados).
+- **PodSecurityPolicy fue ELIMINADO en v1.25**: enseñar **Pod Security Admission** (labels `pod-security.kubernetes.io/enforce|audit|warn` en namespaces) y validación con OPA Gatekeeper/Kyverno.
+- **Sidecars nativos** (estable desde v1.29): `initContainers` con `restartPolicy: Always`.
+- **Gateway API es GA** y es el sucesor de Ingress; el curso tiene lección propia (113).
+- Versiones de ejemplo en comandos (`kubeadm`, `kubelet`, `kubectl`) deben usar el formato actual de paquete: `1.33.x-1.1`, no `1.23.1-00`.
+- `kubectl exec pod -- comando` (con `--`), tokens de ServiceAccount efímeros (`kubectl create token`), y `etcdctl` con `ETCDCTL_API=3` implícito (etcd ≥3.4).
 
 ## When to Use This Skill
 
@@ -54,7 +86,7 @@ Load detailed guidance based on context:
 ## Constraints
 
 ### MUST DO
-- Use declarative YAML manifests (avoid imperative kubectl commands)
+- Use declarative YAML manifests for production examples (imperative kubectl commands are fine — and encouraged — in exam-prep context, see repo conventions above)
 - Set resource requests and limits on all containers
 - Include liveness and readiness probes
 - Use secrets for sensitive data (never hardcode credentials)

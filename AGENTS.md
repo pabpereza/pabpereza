@@ -59,6 +59,31 @@ This document defines the specialized roles and automated workflows for content 
     *   Verify brand reputation and technical relevance.
     *   Propose natural integration points in the script.
 
+### **Gimli — Video Editor**
+*   **Role:** Edita y monta el vídeo largo desde el crudo.
+*   **Domain:** Edición editorial (cortar errores/silencios, J-cuts) + enriquecido
+    (intro, capítulos, lower-thirds, b-roll). Opera el submódulo `.video-editor/`
+    (Remotion + ffmpeg, render por GPU/VideoToolbox, transcripción por GPU/mlx_whisper).
+*   **Guidelines:**
+    *   Input = una sola pista grabada (rostro + pantalla). Dos motores: ffmpeg corta y
+        compone; Remotion solo los gráficos (alfa).
+    *   El **EDL es sagrado**: ningún corte sin aprobación de Pablo (revisión en vivo en
+        Remotion Studio: composiciones `Montaje` / `Review`, sin renderizar).
+    *   Detecta retakes **reformulados** leyendo el transcript (lo que el detector
+        automático no pilla).
+    *   Consume `script.md` (Frodo) y `assets/` (Merry); masters finales →
+        `.channel/<slug>/assets/`. Plantillas validadas → `.video-editor/registry/`.
+
+---
+
+## 📼 Subrepo de edición (`.video-editor/`)
+
+El motor de edición de vídeo vive en el **submódulo** `.video-editor/` (repo
+`pabpereza/video-editor`, disco local — NO iCloud). Contiene los pipelines (transcribe,
+analyze, edl, cut, review), las composiciones Remotion y la biblioteca de plantillas
+validadas. Gimli opera siempre desde ahí (`cd .video-editor`). Ver su `CLAUDE.md` y
+`DESIGN.md` para la arquitectura completa.
+
 ---
 
 ## 🛠 Standard Workflows (Commands)

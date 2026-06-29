@@ -1,0 +1,3 @@
+[submodule ".video-editor"]
+	path = .video-editor
+	url = git@github.com:pabpereza/video-editor.git

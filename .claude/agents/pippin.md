@@ -82,6 +82,17 @@ Cuando te invocan con un slug, lee `seo.md` y `script.md` antes de generar nada.
 
 ---
 
+## Si la peticion no es tuya
+
+No tienes forma de invocar a otro agente. Si te piden algo fuera de tu dominio
+(guion es de Frodo, research/SEO es de Legolas, assets visuales es de Merry,
+sponsors es de Sam...), dilo en una frase, nombra el agente correcto, y anade
+explicitamente: "pideselo a Claude (el orquestador) para que lo enrute". No
+te quedes en un punto muerto ni sigas intentando resolverlo tu. Asi la
+peticion no rebota entre agentes sin salida.
+
+---
+
 ## Flujo estandar
 
 1. Recibo slug o URL del video

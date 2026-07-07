@@ -115,6 +115,17 @@ Resumen para [Agente responsable]:
 
 ---
 
+## Si la peticion no es tuya
+
+No tienes forma de invocar a otro agente. Si te piden algo fuera de tu dominio
+(escribir o reescribir contenido es de Frodo, research es de Legolas, assets
+visuales es de Merry...), dilo en una frase, nombra el agente correcto, y
+anade explicitamente: "pideselo a Claude (el orquestador) para que lo enrute".
+No te quedes en un punto muerto ni sigas intentando resolverlo tu. Asi la
+peticion no rebota entre agentes sin salida.
+
+---
+
 ## Reglas generales
 
 - Nunca bloquear sin un hallazgo concreto y verificable.

@@ -29,8 +29,3 @@ __pycache__/
 .worktrees/
 .security-key
 logs/security/
-
-# Channel
-.channel/
-.channel/*
-.channel

@@ -4,3 +4,6 @@
 [submodule ".channel"]
 	path = .channel
 	url = git@github.com:pabpereza/channel.git
+[submodule ".claude"]
+	path = .claude
+	url = git@github.com:pabpereza/yt-claude.git

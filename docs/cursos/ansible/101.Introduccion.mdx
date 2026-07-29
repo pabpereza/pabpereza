@@ -874,8 +874,6 @@ become = True
 become_method = sudo
 # Usuario al que elevar (root)
 become_user = root
-# Pedir contraseña de sudo (False si tienes SSH keys configuradas sin pass)
-become_ask_pass = False
 ```
 
 Con esto, Ansible sabrá dónde mirar y cómo comportarse sin que tengas que pasarle mil parámetros por línea de comandos.

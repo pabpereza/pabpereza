@@ -33,7 +33,7 @@ sidebar_label: ⚙️ Ansible
 
 **¡Este curso está en desarrollo activo! Sígueme aquí o en YouTube para recibir actualizaciones del curso.**
 
-<!-- ![Banner Ansible](img/banner_ansible.png) -->
+![Banner Ansible](img/banner_ansible.png)
 
 ## 🚀 ¿Qué aprenderás en este curso?
 
@@ -77,16 +77,20 @@ Al terminar serás capaz de:
 * [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
 * [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Vault, claves SSH y variables sensibles
 * [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks
-* [🚀 10. Ansible en DevOps y CI/CD](./110.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
-* [🏗️ 11. Proyecto Final](./111.Proyecto_final.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
+* [🏗️ 10. Proyecto Final](./110.Proyecto_final.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
+
+### 🟣 Bloque III — Ansible Intermedio
+*Fuera del núcleo introductorio de 10 vídeos: contenido de nivel avanzado que se irá ampliando.*
+
+* [🚀 21. Ansible en DevOps y CI/CD](./201.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
 
 ## 🎬 Equivalencia con el canal de YouTube
 
-Cada capítulo de este curso corresponde a **un vídeo** en el canal. Diez capítulos, diez vídeos: ni más, ni menos. Esto facilita seguirlo tanto leyendo como viendo, y te permite saltar a cualquier tema sin perder el hilo.
+Cada capítulo de este curso corresponde a **un vídeo** en el canal. Esto facilita seguirlo tanto leyendo como viendo, y te permite saltar a cualquier tema sin perder el hilo.
 
 ## 🚀 ¡Comienza ahora!
 
-1. **⭐ Dale estrella al repositorio para apoyar el proyecto**
+1. **⭐ Dale estrella al repositorio para apoyar el proyecto [Pabpereza](https://github.com/pabpereza/pabpereza) **
 2. **🔔 Suscríbete al [canal de YouTube](https://www.youtube.com/@Pabpereza?sub_confirmation=1)**
 3. **📖 Empieza con la [Introducción a Ansible](./101.Introduccion.mdx)**
 

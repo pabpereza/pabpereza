@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "/docs/cursos/ansible/1_introduccion_fundamentos_e_instalacion",
-      "title": "1. Introducción, Fundamentos e Instalación",
+      "title": "1. Introducción, fundamentos e instalación",
       "type": "content",
       "category": "docs",
       "description": "Aprende qué es Ansible, su arquitectura sin agentes, cómo se instala y por qué es la herramienta de automatización IT más popular del ecosistema DevOps. Curso gratuito en español.",
@@ -13,7 +13,7 @@
     },
     {
       "id": "/docs/cursos/ansible/2_inventarios_y_hosts",
-      "title": "2. Inventarios y Hosts",
+      "title": "2. Inventarios y hosts",
       "type": "content",
       "category": "docs",
       "description": "Aprende a gestionar tus hosts con inventarios estáticos en INI/YAML, generar inventarios dinámicos desde la nube (AWS, Azure, GCP) y ejecutar comandos ad-hoc para tareas puntuales en Ansible.",
@@ -34,90 +34,90 @@
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/4_modulos_e_idempotencia",
-      "title": "4. Módulos e Idempotencia",
+      "id": "/docs/cursos/ansible/4_idempotencia_y_modulos_avanzados",
+      "title": "4. Idempotencia y módulos avanzados",
       "type": "content",
       "category": "docs",
-      "description": "Conoce los módulos esenciales y avanzados de Ansible (apt, yum, copy, template, service, user, file...) y entiende el principio de idempotencia que garantiza ejecuciones seguras y repetibles.",
-      "url": "/docs/cursos/ansible/4_modulos_e_idempotencia",
+      "description": "Domina la idempotencia real con --check, --diff, changed_when y failed_when. Aprende template con Jinja2, lineinfile, command/shell seguros y módulos de aprovisionamiento para despliegues de producción.",
+      "url": "/docs/cursos/ansible/4_idempotencia_y_modulos_avanzados",
       "slug": "ansible_modulos_idempotencia",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
-      "title": "5. Variables y Control de Flujo",
-      "type": "content",
-      "category": "docs",
-      "description": "Aprende a usar variables, facts, condicionales (when), bucles (loop) y handlers en Ansible para crear playbooks dinámicos y reactivos a cambios en tu infraestructura.",
-      "url": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
-      "slug": "ansible_variables_condicionales_bucles_handlers",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
-      "title": "6. Roles, Templates y Galaxy",
-      "type": "content",
-      "category": "docs",
-      "description": "Aprende a estructurar tu código Ansible con roles reutilizables, generar configuraciones dinámicas con plantillas Jinja2 y publicar o consumir roles desde Ansible Galaxy. Buenas prácticas incluidas.",
-      "url": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
-      "slug": "ansible_roles_templates_galaxy",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/7_seguridad_y_credenciales",
-      "title": "7. Seguridad y Credenciales",
-      "type": "content",
-      "category": "docs",
-      "description": "Cifra secretos con Ansible Vault, gestiona claves SSH de forma segura y maneja variables sensibles sin exponerlas en tu repositorio. Buenas prácticas de seguridad para Ansible.",
-      "url": "/docs/cursos/ansible/7_seguridad_y_credenciales",
-      "slug": "ansible_seguridad_vault_ssh_credenciales",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/8_errores_y_depuracion",
-      "title": "8. Errores y depuración",
-      "type": "content",
-      "category": "docs",
-      "description": "Manejo de errores con block/rescue/always, depuración con --check, --diff y módulo debug, y técnicas de troubleshooting para diagnosticar y resolver problemas en playbooks reales de Ansible.",
-      "url": "/docs/cursos/ansible/8_errores_y_depuracion",
-      "slug": "ansible_errores_depuracion",
-      "val": 10,
-      "connected": true
-    },
-    {
-      "id": "/docs/cursos/ansible/9_ansible_y_contenedores",
-      "title": "9. Ansible y Contenedores",
+      "id": "/docs/cursos/ansible/5_ansible_y_contenedores",
+      "title": "5. Ansible y contenedores",
       "type": "content",
       "category": "docs",
       "description": "Integra Ansible con Docker y Kubernetes. Automatiza la gestión de contenedores, despliega imágenes, orquesta clústeres K8s y reemplaza scripts bash por playbooks idempotentes en tu flujo de contenedores.",
-      "url": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "url": "/docs/cursos/ansible/5_ansible_y_contenedores",
       "slug": "ansible_docker_kubernetes_contenedores",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
-      "title": "10. Ansible en DevOps y CI/CD",
+      "id": "/docs/cursos/ansible/6_variables_y_control_de_flujo",
+      "title": "6. Variables y control de flujo",
       "type": "content",
       "category": "docs",
-      "description": "Integra Ansible en tus pipelines de CI/CD. Aprende a ejecutar playbooks desde Jenkins y GitHub Actions, gestionar secretos en pipelines y diseñar estrategias de despliegue (rolling, blue-green, canary).",
-      "url": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
-      "slug": "ansible_cicd_jenkins_github_actions",
+      "description": "Domina el sistema de variables de Ansible (group_vars, host_vars, precedencia), los facts autodescubiertos, register y patrones avanzados de when, loop y handlers para playbooks verdaderamente dinámicos.",
+      "url": "/docs/cursos/ansible/6_variables_y_control_de_flujo",
+      "slug": "ansible_variables_condicionales_bucles_handlers",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "title": "11. Proyecto Final NotaStack",
+      "id": "/docs/cursos/ansible/7_roles_y_galaxy",
+      "title": "7. Roles y Galaxy",
       "type": "content",
       "category": "docs",
-      "description": "Proyecto integrador del curso de Ansible. Despliega una aplicación web completa con base de datos PostgreSQL, backend Flask, proxy inverso Nginx y monitorización, usando roles, Vault e inventarios separados por entorno.",
-      "url": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "slug": "ansible_proyecto_final_notastack",
+      "description": "Aprende a estructurar tu código Ansible con roles reutilizables, gestionar dependencias con requirements.yml y publicar o consumir roles y colecciones desde Ansible Galaxy.",
+      "url": "/docs/cursos/ansible/7_roles_y_galaxy",
+      "slug": "ansible_roles_templates_galaxy",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/ansible/8_seguridad_y_credenciales",
+      "title": "8. Seguridad y credenciales",
+      "type": "content",
+      "category": "docs",
+      "description": "Cifra secretos con Ansible Vault, gestiona claves SSH de forma segura y maneja variables sensibles sin exponerlas en tu repositorio. Buenas prácticas de seguridad para Ansible.",
+      "url": "/docs/cursos/ansible/8_seguridad_y_credenciales",
+      "slug": "ansible_seguridad_vault_ssh_credenciales",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/ansible/9_errores_y_depuracion",
+      "title": "9. Errores y depuración",
+      "type": "content",
+      "category": "docs",
+      "description": "Manejo de errores con block/rescue/always, depuración con --check, --diff y módulo debug, y técnicas de troubleshooting para diagnosticar y resolver problemas en playbooks reales de Ansible.",
+      "url": "/docs/cursos/ansible/9_errores_y_depuracion",
+      "slug": "ansible_errores_depuracion",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/ansible/10_proyecto_final",
+      "title": "10. Proyecto final",
+      "type": "content",
+      "category": "docs",
+      "description": "Proyecto integrador del curso de Ansible. Despliega la aplicación quotes en una infraestructura real de tres servidores con balanceo de carga, secretos cifrados con Vault y bastionado de firewall.",
+      "url": "/docs/cursos/ansible/10_proyecto_final",
+      "slug": "ansible_proyecto_final_infraestructura_quotes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/ansible/21_ansible_en_devops_y_cicd",
+      "title": "21. Ansible en DevOps y CI/CD",
+      "type": "content",
+      "category": "docs",
+      "description": "Integra Ansible en tus pipelines de CI/CD. Aprende a ejecutar playbooks desde Jenkins y GitHub Actions, gestionar secretos en pipelines y diseñar estrategias de despliegue (rolling, blue-green, canary).",
+      "url": "/docs/cursos/ansible/21_ansible_en_devops_y_cicd",
+      "slug": "ansible_cicd_jenkins_github_actions",
       "val": 10,
       "connected": true
     },
@@ -848,48 +848,257 @@
       "connected": true
     },
     {
-      "id": "/docs/cursos/kubernetes/27_mantenimiento",
-      "title": "27. Mantenimiento",
+      "id": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "title": "201. Mantenimiento y backup",
       "type": "content",
       "category": "docs",
-      "description": "Guía completa de mantenimiento de clusters Kubernetes. Aprende backup de etcd, actualización de versiones, troubleshooting y operaciones críticas para administradores.",
-      "url": "/docs/cursos/kubernetes/27_mantenimiento",
+      "description": "Guía completa de mantenimiento de clusters Kubernetes. Aprende backup y restauración de etcd, actualización de versiones con kubeadm y operaciones críticas para administradores.",
+      "url": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
       "slug": "mantenimiento_de_kubernetes_backup_actualizacion_y_troubleshooting",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
-      "id": "/docs/cursos/kubernetes/28_recursos_personalizados",
-      "title": "28. Recursos Personalizados",
+      "id": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "title": "202. Troubleshooting del cluster",
       "type": "content",
       "category": "docs",
-      "description": "Aprende a crear y gestionar Custom Resource Definitions (CRD) en Kubernetes para extender la funcionalidad del cluster con recursos personalizados.",
-      "url": "/docs/cursos/kubernetes/28_recursos_personalizados",
-      "slug": "custom_resource_definitions_crd_en_kubernetes_recursos_personalizados",
-      "val": 6,
-      "connected": false
+      "description": "Aprende a diagnosticar y reparar clusters de Kubernetes - nodos NotReady, kubelet, static pods, componentes del control plane y problemas de red para la certificación CKA.",
+      "url": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "slug": "troubleshooting_del_cluster_de_kubernetes_diagnostico_nodos_componentes",
+      "val": 10,
+      "connected": true
     },
     {
-      "id": "/docs/cursos/kubernetes/29_pods_y_sidecars",
-      "title": "29. Pods y sidecars",
+      "id": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "title": "203. APIs y TLS",
       "type": "content",
       "category": "docs",
-      "description": "Domina los patrones multi-container en Kubernetes con Pods y Sidecars. Aprende init containers, ambassador y adapter patterns para aplicaciones avanzadas.",
-      "url": "/docs/cursos/kubernetes/29_pods_y_sidecars",
-      "slug": "pods_y_sidecars_en_kubernetes_multi_container_patterns",
-      "val": 6,
-      "connected": false
+      "description": "Aprende a asegurar el API server de Kubernetes - TLS, puertos y flags críticos, acceso a la API, versionado de APIs y deprecaciones para la certificación CKA.",
+      "url": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "slug": "apis_tls_y_seguridad_avanzada_en_kubernetes_protegiendo_api_server",
+      "val": 10,
+      "connected": true
     },
     {
-      "id": "/docs/cursos/kubernetes/30_almacenamiento",
-      "title": "30. Almacenamiento",
+      "id": "/docs/cursos/kubernetes/204_certificados",
+      "title": "204. Certificados",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/kubernetes/30_almacenamiento",
+      "description": "Aprende a gestionar la PKI de Kubernetes - certificados de kubeadm, renovación, caducidades, CSR API y autenticación de usuarios y componentes para la certificación CKA.",
+      "url": "/docs/cursos/kubernetes/204_certificados",
+      "slug": "certificados_y_autenticacion_en_kubernetes_gestion_pki_cluster",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/205_almacenamiento_avanzado",
+      "title": "205. Almacenamiento avanzado",
+      "type": "content",
+      "category": "docs",
+      "description": "Almacenamiento avanzado en Kubernetes para administradores - drivers CSI, Longhorn, Rook-Ceph, NFS, local PV, snapshots, clones y expansión de volúmenes para la certificación CKA.",
+      "url": "/docs/cursos/kubernetes/205_almacenamiento_avanzado",
       "slug": "kubernetes_almacenamiento",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/206_crds_y_operators",
+      "title": "206. CRDs y Operators",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a crear y gestionar Custom Resource Definitions (CRD) y Operators en Kubernetes para extender la funcionalidad del cluster con recursos personalizados y automatización.",
+      "url": "/docs/cursos/kubernetes/206_crds_y_operators",
+      "slug": "custom_resource_definitions_crd_en_kubernetes_recursos_personalizados",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "title": "207. HA y Disaster Recovery",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a diseñar clusters de Kubernetes en alta disponibilidad - control plane multi-master, etcd stacked vs external, balanceadores, PodDisruptionBudgets y estrategias de disaster recovery para la certificación CKA.",
+      "url": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "slug": "high_availability_y_disaster_recovery_en_kubernetes_clusters_resilientes",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "title": "208. Preparación examen CKA",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía definitiva para aprobar el examen CKA (Certified Kubernetes Administrator) - temario oficial, estrategia de examen, trucos de kubectl, simuladores y recursos de práctica.",
+      "url": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "slug": "preparacion_del_examen_cka_estrategia_temario_y_simulacros",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "title": "301. Pods e initContainers",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los init containers en Kubernetes para inicializar aplicaciones - orden de ejecución, casos de uso, espera de dependencias y diferencias con contenedores normales para la certificación CKAD.",
+      "url": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "slug": "pods_e_init_containers_en_kubernetes_inicializacion_de_aplicaciones",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/302_multicontainer_y_sidecars",
+      "title": "302. Multi-container y sidecars",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los patrones multi-container en Kubernetes con Pods y Sidecars. Aprende sidecars nativos, ambassador y adapter patterns para aplicaciones avanzadas.",
+      "url": "/docs/cursos/kubernetes/302_multicontainer_y_sidecars",
+      "slug": "pods_y_sidecars_en_kubernetes_multi_container_patterns",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "title": "303. Canary y blue-green",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende estrategias de despliegue avanzadas en Kubernetes - canary releases, blue-green deployments, rolling updates y despliegue progresivo con ejemplos prácticos para la certificación CKAD.",
+      "url": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "slug": "canary_y_blue_green_deployments_en_kubernetes_estrategias_de_despliegue",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "title": "304. CoreDNS y DNS",
+      "type": "content",
+      "category": "docs",
+      "description": "Entiende el DNS de Kubernetes a fondo - CoreDNS, nombres de servicios y pods, resolución entre namespaces, headless services, dnsPolicy y troubleshooting de DNS para la certificación CKAD.",
+      "url": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "slug": "coredns_servicios_y_dns_en_kubernetes_resolucion_de_nombres",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/305_service_mesh",
+      "title": "305. Service mesh",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre qué es un service mesh y cuándo usarlo - Istio, Linkerd, sidecars, mTLS, traffic management y observabilidad entre microservicios en Kubernetes para la certificación CKAD.",
+      "url": "/docs/cursos/kubernetes/305_service_mesh",
+      "slug": "service_mesh_en_kubernetes_istio_linkerd_y_mtls",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "title": "306. Troubleshooting de apps",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a depurar aplicaciones en Kubernetes - CrashLoopBackOff, ImagePullBackOff, pods Pending, OOMKilled, kubectl debug y problemas de services para la certificación CKAD.",
+      "url": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "slug": "troubleshooting_de_aplicaciones_en_kubernetes_depuracion_de_workloads",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "title": "307. Preparación examen CKAD",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía definitiva para aprobar el examen CKAD (Certified Kubernetes Application Developer) - temario oficial, estrategia de examen, comandos imperativos, simuladores y recursos de práctica.",
+      "url": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "slug": "preparacion_del_examen_ckad_estrategia_temario_y_simulacros",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "title": "401. CIS Benchmarks",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a auditar la seguridad de tu cluster de Kubernetes con los CIS Benchmarks y kube-bench - hardening del API server, kubelet, etcd y remediación de hallazgos para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "slug": "cis_benchmarks_en_kubernetes_auditoria_de_seguridad_con_kube_bench",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/402_runtime_class",
+      "title": "402. Runtime class",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a aislar cargas de trabajo sensibles en Kubernetes con RuntimeClass - gVisor (runsc), Kata Containers, sandboxing de contenedores y cuándo usar cada runtime para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/402_runtime_class",
+      "slug": "runtimeclass_en_kubernetes_sandboxing_con_gvisor_y_kata_containers",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/403_network_policies_avanzadas",
+      "title": "403. Network policies avanzadas",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina las Network Policies avanzadas en Kubernetes - default deny, egress, combinación de selectores, políticas de DNS, CiliumNetworkPolicy y patrones de microsegmentación para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/403_network_policies_avanzadas",
+      "slug": "network_policies_avanzadas_en_kubernetes_microsegmentacion",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/404_admission_controllers",
+      "title": "404. Admission controllers",
+      "type": "content",
+      "category": "docs",
+      "description": "Domina los admission controllers de Kubernetes - validating y mutating webhooks, ImagePolicyWebhook, Pod Security Admission y ValidatingAdmissionPolicy para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/404_admission_controllers",
+      "slug": "admission_controllers_en_kubernetes_validacion_y_mutacion_de_recursos",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "title": "405. AppArmor y Seccomp",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a restringir contenedores con AppArmor y Seccomp en Kubernetes - perfiles de seguridad, RuntimeDefault, syscalls, capabilities y hardening de pods para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "slug": "apparmor_y_seccomp_en_kubernetes_perfiles_de_seguridad_del_kernel",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/406_falco",
+      "title": "406. Falco",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a detectar amenazas en tiempo real con Falco - reglas, syscalls, análisis de eventos sospechosos, personalización de reglas y respuesta a incidentes en Kubernetes para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/406_falco",
+      "slug": "falco_en_kubernetes_deteccion_de_amenazas_en_runtime",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/407_opa_gatekeeper",
+      "title": "407. OPA Gatekeeper",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a imponer políticas en Kubernetes con OPA Gatekeeper - ConstraintTemplates, Constraints, lenguaje Rego, auditoría y comparación con Kyverno para la certificación CKS.",
+      "url": "/docs/cursos/kubernetes/407_opa_gatekeeper",
+      "slug": "opa_gatekeeper_en_kubernetes_politicas_como_codigo",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "title": "408. Preparación examen CKS",
+      "type": "content",
+      "category": "docs",
+      "description": "Guía definitiva para aprobar el examen CKS (Certified Kubernetes Security Specialist) - temario oficial, estrategia, herramientas (trivy, kube-bench, falco), simuladores y recursos de práctica.",
+      "url": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "slug": "preparacion_del_examen_cks_estrategia_temario_y_simulacros",
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/docs/cursos/kubernetes",
@@ -1779,58 +1988,68 @@
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "source": "/docs/cursos/ansible/5_ansible_y_contenedores",
       "target": "/docs/cursos/docker",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "source": "/docs/cursos/ansible/5_ansible_y_contenedores",
       "target": "/docs/cursos/kubernetes",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/9_ansible_y_contenedores",
-      "target": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
+      "source": "/docs/cursos/ansible/7_roles_y_galaxy",
+      "target": "/docs/cursos/ansible/4_idempotencia_y_modulos_avanzados",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/10_ansible_en_devops_y_cicd",
-      "target": "/docs/cursos/ansible",
+      "source": "/docs/cursos/ansible/9_errores_y_depuracion",
+      "target": "/docs/cursos/ansible/4_idempotencia_y_modulos_avanzados",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "source": "/docs/cursos/ansible/10_proyecto_final",
       "target": "/docs/cursos/ansible/2_inventarios_y_hosts",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "target": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "target": "/docs/cursos/ansible/7_seguridad_y_credenciales",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "source": "/docs/cursos/ansible/10_proyecto_final",
       "target": "/docs/cursos/ansible/3_playbooks_y_yaml",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "target": "/docs/cursos/ansible/4_modulos_e_idempotencia",
+      "source": "/docs/cursos/ansible/10_proyecto_final",
+      "target": "/docs/cursos/ansible/4_idempotencia_y_modulos_avanzados",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "target": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
+      "source": "/docs/cursos/ansible/10_proyecto_final",
+      "target": "/docs/cursos/ansible/5_ansible_y_contenedores",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/ansible/11_proyecto_final_notastack",
-      "target": "/docs/cursos/ansible/8_errores_y_depuracion",
+      "source": "/docs/cursos/ansible/10_proyecto_final",
+      "target": "/docs/cursos/ansible/6_variables_y_control_de_flujo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/10_proyecto_final",
+      "target": "/docs/cursos/ansible/8_seguridad_y_credenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/10_proyecto_final",
+      "target": "/docs/cursos/ansible/9_errores_y_depuracion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/10_proyecto_final",
+      "target": "/docs/cursos/ansible/21_ansible_en_devops_y_cicd",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/21_ansible_en_devops_y_cicd",
+      "target": "/docs/cursos/ansible",
       "type": "internal_link"
     },
     {
@@ -1850,37 +2069,37 @@
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/4_modulos_e_idempotencia",
+      "target": "/docs/cursos/ansible/4_idempotencia_y_modulos_avanzados",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/5_variables_y_control_de_flujo",
+      "target": "/docs/cursos/ansible/5_ansible_y_contenedores",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/6_roles_templates_y_galaxy",
+      "target": "/docs/cursos/ansible/6_variables_y_control_de_flujo",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/7_seguridad_y_credenciales",
+      "target": "/docs/cursos/ansible/7_roles_y_galaxy",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/8_errores_y_depuracion",
+      "target": "/docs/cursos/ansible/8_seguridad_y_credenciales",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/9_ansible_y_contenedores",
+      "target": "/docs/cursos/ansible/9_errores_y_depuracion",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/11_proyecto_final_notastack",
+      "target": "/docs/cursos/ansible/10_proyecto_final",
       "type": "internal_link"
     },
     {
@@ -2130,6 +2349,11 @@
     },
     {
       "source": "/docs/cursos/kubernetes/9_daemonsets_y_statefulsets",
+      "target": "/docs/cursos/kubernetes/11_services",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/9_daemonsets_y_statefulsets",
       "target": "/docs/cursos/kubernetes/16_almacenamiento_persistente",
       "type": "internal_link"
     },
@@ -2150,6 +2374,11 @@
     },
     {
       "source": "/docs/cursos/kubernetes/12_ingress_controller",
+      "target": "/docs/cursos/kubernetes/25_helm",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/12_ingress_controller",
       "target": "/docs/cursos/kubernetes/15_secrets_y_configmaps",
       "type": "internal_link"
     },
@@ -2166,6 +2395,621 @@
     {
       "source": "/docs/cursos/kubernetes/16_almacenamiento_persistente",
       "target": "/docs/cursos/docker/10_volumenes_y_archivos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/19_seguridad",
+      "target": "/docs/cursos/kubernetes/20_usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/19_seguridad",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/19_seguridad",
+      "target": "/docs/cursos/kubernetes/404_admission_controllers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/19_seguridad",
+      "target": "/docs/cursos/kubernetes/407_opa_gatekeeper",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/19_seguridad",
+      "target": "/docs/cursos/kubernetes/403_network_policies_avanzadas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/20_usuarios",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/22_scheduling",
+      "target": "/docs/cursos/kubernetes/23_taints_y_tolerations",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/23_taints_y_tolerations",
+      "target": "/docs/cursos/kubernetes/3_instalacion_productiva",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/24_logs",
+      "target": "/docs/cursos/kubernetes/9_daemonsets_y_statefulsets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/24_logs",
+      "target": "/docs/cursos/kubernetes/20_usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/25_helm",
+      "target": "/docs/cursos/kubernetes/8_deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "target": "/docs/cursos/kubernetes/5_manifiestos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "target": "/docs/cursos/kubernetes/24_logs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "target": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "target": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "target": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "target": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "target": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "target": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "target": "/docs/cursos/kubernetes/19_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "target": "/docs/cursos/kubernetes/204_certificados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "target": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/204_certificados",
+      "target": "/docs/cursos/kubernetes/20_usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/204_certificados",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/205_almacenamiento_avanzado",
+      "target": "/docs/cursos/kubernetes/16_almacenamiento_persistente",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/206_crds_y_operators",
+      "target": "/docs/cursos/kubernetes/13_gateway_api",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/206_crds_y_operators",
+      "target": "/docs/cursos/kubernetes/205_almacenamiento_avanzado",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "target": "/docs/cursos/kubernetes/3_instalacion_productiva",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "target": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "target": "/docs/cursos/kubernetes/22_scheduling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "target": "/docs/cursos/kubernetes/14_healthchecks_y_probes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/24_logs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/14_healthchecks_y_probes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/2_arquitectura",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/3_instalacion_productiva",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/204_certificados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/11_services",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/12_ingress_controller",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/13_gateway_api",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/19_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/6_pods",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/8_deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/17_rangos_y_quotas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/18_autoscaling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/22_scheduling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/23_taints_y_tolerations",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/16_almacenamiento_persistente",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/205_almacenamiento_avanzado",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "target": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "target": "/docs/cursos/kubernetes/6_pods",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "target": "/docs/cursos/kubernetes/302_multicontainer_y_sidecars",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/302_multicontainer_y_sidecars",
+      "target": "/docs/cursos/kubernetes/305_service_mesh",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "target": "/docs/cursos/kubernetes/8_deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "target": "/docs/cursos/kubernetes/13_gateway_api",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "target": "/docs/cursos/kubernetes/11_services",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "target": "/docs/cursos/kubernetes/9_daemonsets_y_statefulsets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/305_service_mesh",
+      "target": "/docs/cursos/kubernetes/19_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/305_service_mesh",
+      "target": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "target": "/docs/cursos/kubernetes/23_taints_y_tolerations",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "target": "/docs/cursos/kubernetes/22_scheduling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "target": "/docs/cursos/kubernetes/15_secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "target": "/docs/cursos/kubernetes/14_healthchecks_y_probes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "target": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/6_pods",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/9_daemonsets_y_statefulsets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/10_jobs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/302_multicontainer_y_sidecars",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/16_almacenamiento_persistente",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/8_deployments",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/25_helm",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/14_healthchecks_y_probes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/24_logs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/15_secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/17_rangos_y_quotas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/18_autoscaling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/20_usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/19_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/11_services",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/12_ingress_controller",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "target": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "target": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "target": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "target": "/docs/cursos/kubernetes/15_secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/402_runtime_class",
+      "target": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/402_runtime_class",
+      "target": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/402_runtime_class",
+      "target": "/docs/cursos/kubernetes/22_scheduling",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/403_network_policies_avanzadas",
+      "target": "/docs/cursos/kubernetes/305_service_mesh",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/404_admission_controllers",
+      "target": "/docs/cursos/kubernetes/17_rangos_y_quotas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/404_admission_controllers",
+      "target": "/docs/cursos/kubernetes/305_service_mesh",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/404_admission_controllers",
+      "target": "/docs/cursos/kubernetes/407_opa_gatekeeper",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "target": "/docs/cursos/kubernetes/19_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "target": "/docs/cursos/kubernetes/406_falco",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "target": "/docs/cursos/kubernetes/404_admission_controllers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/403_network_policies_avanzadas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/12_ingress_controller",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/20_usuarios",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/21_rbac",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/204_certificados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/402_runtime_class",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/19_seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/404_admission_controllers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/407_opa_gatekeeper",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/15_secrets_y_configmaps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/305_service_mesh",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/406_falco",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/24_logs",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
+      "target": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
       "type": "internal_link"
     },
     {
@@ -2291,6 +3135,121 @@
     {
       "source": "/docs/cursos/kubernetes",
       "target": "/docs/cursos/kubernetes/26_dashboards_y_herramientas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/201_mantenimiento_y_backup",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/202_troubleshooting_del_cluster",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/203_apis_y_tls",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/204_certificados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/205_almacenamiento_avanzado",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/206_crds_y_operators",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/207_ha_y_disaster_recovery",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/208_preparacion_examen_cka",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/301_pods_e_initcontainers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/302_multicontainer_y_sidecars",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/303_canary_y_bluegreen",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/304_coredns_y_dns",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/305_service_mesh",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/306_troubleshooting_de_apps",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/307_preparacion_examen_ckad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/401_cis_benchmarks",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/402_runtime_class",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/403_network_policies_avanzadas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/404_admission_controllers",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/405_apparmor_y_seccomp",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/406_falco",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/407_opa_gatekeeper",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/408_preparacion_examen_cks",
       "type": "internal_link"
     },
     {

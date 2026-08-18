@@ -90,7 +90,7 @@ Cada capítulo de este curso corresponde a **un vídeo** en el canal. Esto facil
 
 ## 🚀 ¡Comienza ahora!
 
-1. **⭐ Dale estrella al repositorio para apoyar el proyecto [Pabpereza](https://github.com/pabpereza/pabpereza) **
+1. **⭐ Dale estrella al repositorio para apoyar el proyecto [Pabpereza](https://github.com/pabpereza/pabpereza)**
 2. **🔔 Suscríbete al [canal de YouTube](https://www.youtube.com/@Pabpereza?sub_confirmation=1)**
 3. **📖 Empieza con la [Introducción a Ansible](./101.Introduccion.mdx)**
 

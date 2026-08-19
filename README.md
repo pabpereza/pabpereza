@@ -1,7 +1,5 @@
 ![](./static/img/banner_slim.webp)
 
-[![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCGfKISiN7usAdxvcGivm_OA?style=for-the-badge&logo=youtube&label=Suscriptores)](https://www.youtube.com/c/pabpereza?sub_confirmation=1)
-[![YouTube Views](https://img.shields.io/youtube/channel/views/UCGfKISiN7usAdxvcGivm_OA?style=for-the-badge&logo=youtube&label=Visitas)](https://www.youtube.com/c/pabpereza)
 [![GitHub Stars](https://img.shields.io/github/stars/pabpereza/pabpereza?style=for-the-badge&logo=github&label=Estrellas)](https://github.com/pabpereza/pabpereza)
 [![GitHub Followers](https://img.shields.io/github/followers/pabpereza?style=for-the-badge&logo=github&label=Seguidores)](https://github.com/pabpereza)
 

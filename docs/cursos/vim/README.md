@@ -23,7 +23,7 @@ keywords:
   - vim para desarrolladores
 ---
 
-# Curso Vim + Tmux: Productividad Terminal Extrema ⚡️
+# Curso Vim + Tmux: Productividad Terminal Extrema
 
 **¡Domina el terminal como un ninja! Aprende a trabajar a la velocidad del pensamiento con Vim y Tmux**
 

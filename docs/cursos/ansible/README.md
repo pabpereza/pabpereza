@@ -29,7 +29,7 @@ tags:
 sidebar_label: ⚙️ Ansible
 ---
 
-# Curso Ansible: Automatización IT ⚙️
+# Curso Ansible: Automatización IT
 
 **¡Este curso está en desarrollo activo! Sígueme aquí o en YouTube para recibir actualizaciones del curso.**
 
@@ -59,7 +59,7 @@ Al terminar serás capaz de:
 
 **⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
-# 📚 Índice del Curso
+# Índice del Curso
 
 ### 🟢 Bloque I — Fundamentos
 *Pon en marcha tu entorno y comprende la filosofía de Ansible.*

@@ -51,7 +51,7 @@ Dominar MySQL es una de las habilidades más demandadas en el sector IT. Este cu
 
 **⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
-# 📚 Índice del Curso
+# Índice del Curso
 
 ### 🟢 Nivel Básico - Fundamentos de MySQL
 *Aprende los conceptos esenciales y manipulación de datos básica*

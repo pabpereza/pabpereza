@@ -23,7 +23,7 @@ keywords:
   - devops español
 ---
 
-# Curso DevOps: Fundamentos y Buenas Prácticas 🚀
+# Curso DevOps: Fundamentos y Buenas Prácticas
 
 **¡Domina la cultura y herramientas DevOps para acelerar el desarrollo y despliegue de software!**
 

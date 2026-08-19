@@ -55,7 +55,7 @@ Al terminar serás capaz de:
 - Integrar Ansible en pipelines de Jenkins y GitHub Actions
 - Aplicar estrategias de despliegue (rolling, blue-green, canary)
 
-> Todo el curso estará disponible en mi [**CANAL DE YOUTUBE**](https://www.youtube.com/@Pabpereza), un vídeo por capítulo, con explicaciones prácticas y código real.
+> Todo el curso estará disponible en mi [**LISTA DE REPRODUCCIÓN DE YOUTUBE**](https://www.youtube.com/playlist?list=PLYBkVGIKe6Nk), un vídeo por capítulo, con explicaciones prácticas y código real.
 
 **⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 

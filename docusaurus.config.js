@@ -132,11 +132,6 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
-            className: 'header-youtube-link',
-            position: 'right',
-          },
-          {
             href: 'https://github.com/pabpereza/pabpereza',
             className: 'header-github-link',
             position: 'right',

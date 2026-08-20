@@ -147,23 +147,6 @@ html.plugin-pages nav {
 }
 
 
-/* Youtube icon */
-.header-youtube-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("/img/social/youtube-logo.svg");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-youtube-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-
 /* X icon */
 .header-x-link::before {
   content: '';

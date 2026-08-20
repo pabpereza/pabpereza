@@ -104,9 +104,8 @@ const config = {
             to: '/blog', label: 'Blog', position: 'left'
           },
           {
-            to: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
+            type: 'custom-youtubeSubscriberBadge',
             position: 'left',
-            label: 'Youtube'
           },          {
             href: 'https://twitter.com/pabpereza',
             className: 'header-x-link',

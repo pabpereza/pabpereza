@@ -1,0 +1,49 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 100%;
+  padding: 0 var(--ifm-navbar-item-padding-horizontal);
+  color: var(--ifm-navbar-link-color);
+  font-weight: 500;
+  transition: color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+.badge:hover {
+  color: var(--ifm-navbar-link-hover-color);
+  text-decoration: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url('/img/social/youtube-logo.svg');
+  mask-image: url('/img/social/youtube-logo.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 0, 0, 0.15);
+  color: #ff4d4d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+[data-theme='dark'] .count {
+  background: rgba(255, 0, 0, 0.22);
+  color: #ff6b6b;
+}

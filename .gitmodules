@@ -7,3 +7,6 @@
 [submodule ".claude"]
 	path = .claude
 	url = git@github.com:pabpereza/yt-claude.git
+[submodule ".certifications"]
+	path = .certifications
+	url = git@github.com:pabpereza/certifications.git

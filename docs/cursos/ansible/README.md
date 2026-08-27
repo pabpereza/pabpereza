@@ -5,7 +5,7 @@ description: >-
   de la automatización IT hasta integración con Docker, Kubernetes y
   pipelines CI/CD (Jenkins, GitHub Actions). Con ejemplos prácticos
   y proyecto final.
-image: 'https://pabpereza.dev/img/banner_ansible.png'
+image: 'https://pabpereza.dev/img/banner_ansible.jpg'
 keywords:
   - ansible
   - curso ansible desde cero
@@ -33,7 +33,7 @@ sidebar_label: ⚙️ Ansible
 
 **¡Este curso está en desarrollo activo! Sígueme aquí o en YouTube para recibir actualizaciones del curso.**
 
-![Banner Ansible](img/banner_ansible.png)
+![Banner del curso de Ansible gratuito en español](img/banner_ansible.webp)
 
 ## 🚀 ¿Qué aprenderás en este curso?
 
@@ -77,7 +77,7 @@ Al terminar serás capaz de:
 * [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Reutilización con Jinja2, Ansible Galaxy y buenas prácticas
 * [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Vault, claves SSH y variables sensibles
 * [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when, debug y troubleshooting de playbooks
-* [🏗️ 10. Proyecto Final](./110.Proyecto_final.md) — Despliega una app completa (Flask + PostgreSQL + Nginx) con roles, Vault y monitorización
+* [🏗️ 10. Proyecto Final](./110.Proyecto_final.md) — Despliega la app *quotes* en tres servidores con balanceo Nginx, roles, Vault y firewall
 
 ### 🟣 Bloque III — Ansible Intermedio
 *Fuera del núcleo introductorio de 10 vídeos: contenido de nivel avanzado que se irá ampliando.*

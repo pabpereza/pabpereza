@@ -71,6 +71,7 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Monitorización con Docker](#monitorizacion_docker) TODO
 * [Logs y centralización](#logs_docker) TODO
 * [Kubernetes con Docker](#kubernetes_docker) TODO
+* [Automatiza despliegues Docker con Ansible](/docs/cursos/ansible/ansible_docker_kubernetes_contenedores) — capítulo del [curso de Ansible](/docs/cursos/ansible)
 
 ### Seguridad:
 * [Analizar vulnerabilidades en las imágenes](#seguridad-imagenes) TODO

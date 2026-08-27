@@ -126,6 +126,11 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 
 
 
+## 🔗 Cursos relacionados
+
+* [🐳 Curso de Docker](/docs/cursos/docker) — la base de contenedores sobre la que se apoya Kubernetes
+* [⚙️ Curso de Ansible](/docs/cursos/ansible) — automatiza el aprovisionamiento de nodos y el despliegue en Kubernetes con [`kubernetes.core`](/docs/cursos/ansible/ansible_docker_kubernetes_contenedores)
+
 ## 🚀 ¡Comienza Ahora!
 
 1. **⭐ Dale estrella a este repositorio para apoyar el proyecto**

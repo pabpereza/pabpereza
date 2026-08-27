@@ -62,6 +62,7 @@ Todo el curso estará disponible en vídeo en esta [LISTA DE YOUTUBE](https://yo
 * [Pipelines de CI/CD](302.Pipelines.md)
 * [Testing automatizado](303.Testing.md)
 * [Deployment strategies](304.Deployment_strategies.md)
+* [Automatización de infraestructura con Ansible](/docs/cursos/ansible) — curso completo aparte, con un vídeo por capítulo
 
 ### 🚀 Nivel Avanzado
 * [Contenedores y orquestación](401.Contenedores.md)

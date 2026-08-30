@@ -249,6 +249,23 @@ const config = {
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
     require.resolve('docusaurus-lunr-search'),
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // Slugs antiguos del curso de Ansible aun indexados en Google (ver
+          // .channel/ansible/seo-auditoria-2026-08-27.md, hallazgo D4)
+          {
+            from: '/docs/cursos/ansible/curso_ansible',
+            to: '/docs/cursos/ansible',
+          },
+          {
+            from: '/docs/cursos/ansible/ansible_entornos_reales_proyecto_final',
+            to: '/docs/cursos/ansible/ansible_proyecto_final_infraestructura_quotes',
+          },
+        ],
+      },
+    ],
   ],
 };
 

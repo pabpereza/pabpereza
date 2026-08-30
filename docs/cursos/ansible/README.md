@@ -1,10 +1,9 @@
 ---
-title: ⚙️ Curso Ansible gratuito - automatización IT desde cero
+title: Curso de Ansible desde cero - gratis y en español
 description: >-
-  Curso completo de Ansible gratuito en español. Desde los fundamentos
-  de la automatización IT hasta integración con Docker, Kubernetes y
-  pipelines CI/CD (Jenkins, GitHub Actions). Con ejemplos prácticos
-  y proyecto final.
+  Curso de Ansible gratuito y en español, de cero a producción. 11 capítulos
+  con inventarios, playbooks, roles, Vault, Docker, Kubernetes y CI/CD, con
+  vídeo.
 image: 'https://pabpereza.dev/img/banner_ansible.jpg'
 keywords:
   - ansible
@@ -59,7 +58,7 @@ Al terminar serás capaz de:
 
 **⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
-# Índice del Curso
+## Índice del curso
 
 ### 🟢 Bloque I — Fundamentos
 *Pon en marcha tu entorno y comprende la filosofía de Ansible.*

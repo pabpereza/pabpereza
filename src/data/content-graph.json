@@ -16,7 +16,7 @@
       "title": "2. Inventarios y hosts",
       "type": "content",
       "category": "docs",
-      "description": "Aprende a gestionar tus hosts con inventarios estáticos en INI/YAML, generar inventarios dinámicos desde la nube (AWS, Azure, GCP) y ejecutar comandos ad-hoc para tareas puntuales en Ansible.",
+      "description": "Gestiona tus hosts con inventarios estáticos en INI y YAML, inventarios dinámicos en AWS, Azure y GCP, y comandos ad-hoc. Capítulo 2 del curso de Ansible.",
       "url": "/docs/cursos/ansible/ansible_inventarios_dinamicos_y_estaticos",
       "slug": "ansible_inventarios_dinamicos_y_estaticos",
       "val": 10,
@@ -27,7 +27,7 @@
       "title": "3. Playbooks y YAML",
       "type": "content",
       "category": "docs",
-      "description": "Domina la sintaxis YAML, la estructura de un playbook, plays, tasks y la ejecución con ansible-playbook. El corazón de la automatización con Ansible.",
+      "description": "Aprende a escribir tu primer playbook de Ansible paso a paso. Sintaxis YAML, plays, tasks, handlers, when, loops y tags, con ejemplos reales explicados.",
       "url": "/docs/cursos/ansible/ansible_playbooks_yaml_sintaxis",
       "slug": "ansible_playbooks_yaml_sintaxis",
       "val": 10,
@@ -49,7 +49,7 @@
       "title": "5. Ansible y contenedores",
       "type": "content",
       "category": "docs",
-      "description": "Integra Ansible con Docker y Kubernetes. Automatiza la gestión de contenedores, despliega imágenes, orquesta clústeres K8s y reemplaza scripts bash por playbooks idempotentes en tu flujo de contenedores.",
+      "description": "Automatiza Docker y Kubernetes con Ansible. Despliega contenedores con community.docker, orquesta clústeres con kubernetes.core y olvida los scripts bash.",
       "url": "/docs/cursos/ansible/ansible_docker_kubernetes_contenedores",
       "slug": "ansible_docker_kubernetes_contenedores",
       "val": 10,
@@ -60,7 +60,7 @@
       "title": "6. Variables y control de flujo",
       "type": "content",
       "category": "docs",
-      "description": "Domina el sistema de variables de Ansible (group_vars, host_vars, precedencia), los facts autodescubiertos, register y patrones avanzados de when, loop y handlers para playbooks verdaderamente dinámicos.",
+      "description": "Variables, facts, group_vars, host_vars, register y precedencia en Ansible, más when, loop y handlers avanzados para playbooks dinámicos. Con ejemplos.",
       "url": "/docs/cursos/ansible/ansible_variables_condicionales_bucles_handlers",
       "slug": "ansible_variables_condicionales_bucles_handlers",
       "val": 10,
@@ -71,7 +71,7 @@
       "title": "7. Roles y Galaxy",
       "type": "content",
       "category": "docs",
-      "description": "Tutorial de roles en Ansible: estructura de un rol, ansible-galaxy init, dependencias con requirements.yml y cómo publicar o consumir roles y colecciones desde Ansible Galaxy. Con ejemplos en español.",
+      "description": "Crea roles de Ansible desde cero con ansible-galaxy init, organiza tasks, handlers y templates, y reutiliza roles y colecciones de Ansible Galaxy.",
       "url": "/docs/cursos/ansible/ansible_roles_templates_galaxy",
       "slug": "ansible_roles_templates_galaxy",
       "val": 10,
@@ -82,7 +82,7 @@
       "title": "8. Seguridad y credenciales",
       "type": "content",
       "category": "docs",
-      "description": "Cifra secretos con Ansible Vault, gestiona claves SSH de forma segura y maneja variables sensibles sin exponerlas en tu repositorio. Buenas prácticas de seguridad para Ansible.",
+      "description": "Cifra secretos con Ansible Vault paso a paso, gestiona claves SSH y variables sensibles sin exponerlas en Git. Buenas prácticas de seguridad en Ansible.",
       "url": "/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales",
       "slug": "ansible_seguridad_vault_ssh_credenciales",
       "val": 10,
@@ -93,7 +93,7 @@
       "title": "9. Errores y depuración",
       "type": "content",
       "category": "docs",
-      "description": "Manejo de errores con block/rescue/always, depuración con --check, --diff y módulo debug, y técnicas de troubleshooting para diagnosticar y resolver problemas en playbooks reales de Ansible.",
+      "description": "Depura playbooks de Ansible con block, rescue, always, failed_when, el módulo debug y los modos --check y -vvv. Errores comunes y cómo diagnosticarlos.",
       "url": "/docs/cursos/ansible/ansible_errores_depuracion",
       "slug": "ansible_errores_depuracion",
       "val": 10,
@@ -104,7 +104,7 @@
       "title": "10. Proyecto final",
       "type": "content",
       "category": "docs",
-      "description": "Proyecto integrador del curso de Ansible. Despliega la aplicación quotes en una infraestructura real de tres servidores con balanceo de carga, secretos cifrados con Vault y bastionado de firewall.",
+      "description": "Proyecto final del curso de Ansible. Despliega una app en tres servidores con Nginx como balanceador, Docker Compose, secretos en Vault y firewall UFW.",
       "url": "/docs/cursos/ansible/ansible_proyecto_final_infraestructura_quotes",
       "slug": "ansible_proyecto_final_infraestructura_quotes",
       "val": 10,
@@ -115,7 +115,7 @@
       "title": "21. Ansible en DevOps y CI/CD",
       "type": "content",
       "category": "docs",
-      "description": "Integra Ansible en tus pipelines de CI/CD. Aprende a ejecutar playbooks desde Jenkins y GitHub Actions, gestionar secretos en pipelines y diseñar estrategias de despliegue (rolling, blue-green, canary).",
+      "description": "Integra Ansible en tus pipelines. Ejecuta playbooks desde Jenkins y GitHub Actions, gestiona secretos y aplica despliegues rolling, blue-green y canary.",
       "url": "/docs/cursos/ansible/ansible_cicd_jenkins_github_actions",
       "slug": "ansible_cicd_jenkins_github_actions",
       "val": 10,
@@ -126,7 +126,7 @@
       "title": "⚙️ Ansible",
       "type": "content",
       "category": "docs",
-      "description": "Curso completo de Ansible gratuito en español. Desde los fundamentos de la automatización IT hasta integración con Docker, Kubernetes y pipelines CI/CD (Jenkins, GitHub Actions). Con ejemplos prácticos y proyecto final.",
+      "description": "Curso de Ansible gratuito y en español, de cero a producción. 11 capítulos con inventarios, playbooks, roles, Vault, Docker, Kubernetes y CI/CD, con vídeo.",
       "url": "/docs/cursos/ansible",
       "slug": null,
       "val": 10,
@@ -337,6 +337,28 @@
       "category": "docs",
       "description": "",
       "url": "/docs/cursos/devops/herramientas",
+      "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "title": "1. Qué es DevSecOps",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre qué es DevSecOps, en qué se diferencia realmente de DevOps, qué significa shift-left security y cómo se ve un pipeline con la seguridad integrada de principio a fin. El punto de partida del curso.",
+      "url": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "slug": "que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops",
+      "title": "🛡️ DevSecOps",
+      "type": "content",
+      "category": "docs",
+      "description": "Curso completo de DevSecOps gratuito en español. Aprende a integrar seguridad en tu pipeline con gitleaks, Semgrep, Trivy, Checkov, Cosign, Vault y OWASP ZAP, con laboratorios sencillos que puedes reproducir en tu propia máquina.",
+      "url": "/docs/cursos/devsecops",
       "slug": null,
       "val": 10,
       "connected": true
@@ -1376,45 +1398,45 @@
       "connected": false
     },
     {
-      "id": "/blog/raspberry_ip_fija",
+      "id": "/blog/3-cosas-que-obsesionan-a-los-devops",
       "title": "3 cosas que obsesionan a los DevOps",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/raspberry_ip_fija",
+      "url": "/blog/3-cosas-que-obsesionan-a-los-devops",
       "slug": "3-cosas-que-obsesionan-a-los-devops",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/5_trucos_para_construir_node_mas_rapidos",
+      "id": "/blog/5_trucos_para_construir_node_mas_rapido",
       "title": "5 trucos para construir aplicaciones Node más rápido",
       "type": "content",
       "category": "blog",
       "description": "Descubre 5 trucos para optimizar la construcción de aplicaciones Node.js, mejorando la velocidad y eficiencia en el desarrollo.",
-      "url": "/blog/5_trucos_para_construir_node_mas_rapidos",
+      "url": "/blog/5_trucos_para_construir_node_mas_rapido",
       "slug": "5_trucos_para_construir_node_mas_rapido",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/aligerar_contenedores_seguridad",
+      "id": "/blog/aligerar_contenedores_mejorar_seguridad",
       "title": "Técnicas para aligerar contenedores y mejorar su seguridad",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/aligerar_contenedores_seguridad",
+      "url": "/blog/aligerar_contenedores_mejorar_seguridad",
       "slug": "aligerar_contenedores_mejorar_seguridad",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/docker_vs_podman_rancher",
+      "id": "/blog/docker:_vs_podman_rancher_2025_quien_ganara",
       "title": "Docker vs Podman vd Rancher en 2025, ¿cuál es la herramienta definitiva?",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/docker_vs_podman_rancher",
+      "url": "/blog/docker:_vs_podman_rancher_2025_quien_ganara",
       "slug": "docker:_vs_podman_rancher_2025_quien_ganara",
       "val": 6,
       "connected": false
@@ -1431,353 +1453,353 @@
       "connected": false
     },
     {
-      "id": "/blog/registros_contenedores",
+      "id": "/blog/Tu propio registry privado",
       "title": "Registros de contenedores y alternativas a Dockerhub",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/registros_contenedores",
+      "url": "/blog/Tu propio registry privado",
       "slug": "Tu propio registry privado",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/.ideas/tu_propio_homelab",
+      "id": "/blog/tu_propio_homelab",
       "title": "Crea tu propio homelab en 2025",
       "type": "content",
       "category": "blog",
       "description": "Crea tu propio homelab en 2025",
-      "url": "/blog/.ideas/tu_propio_homelab",
+      "url": "/blog/tu_propio_homelab",
       "slug": "tu_propio_homelab",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2021/2021_09_12_docker_de_pago",
+      "id": "/blog/docker_desktop_de_pago",
       "title": "¿Docker desktop de pago?",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2021/2021_09_12_docker_de_pago",
+      "url": "/blog/docker_desktop_de_pago",
       "slug": "docker_desktop_de_pago",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2021/2021_09_19_docker_escaner_nulnerabilidades",
+      "id": "/blog/analizar_seguridad_docker",
       "title": "Analizar la seguridad de las imágenes de Docker",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2021/2021_09_19_docker_escaner_nulnerabilidades",
+      "url": "/blog/analizar_seguridad_docker",
       "slug": "analizar_seguridad_docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2021/2021_11_10_wsl_y_windows_11",
+      "id": "/blog/linux_en_windows_WSL",
       "title": "Linux en Windows - Windows Subsystem Linux",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2021/2021_11_10_wsl_y_windows_11",
+      "url": "/blog/linux_en_windows_WSL",
       "slug": "linux_en_windows_WSL",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/errores_git",
+      "id": "/blog/errores_comunes_git",
       "title": "Errores comunes en Git",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/errores_git",
+      "url": "/blog/errores_comunes_git",
       "slug": "errores_comunes_git",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2021/2021_12_12_kali_en_docker",
+      "id": "/blog/kalilinux_en_docker",
       "title": "Kali en Docker recopilación",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2021/2021_12_12_kali_en_docker",
+      "url": "/blog/kalilinux_en_docker",
       "slug": "kalilinux_en_docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2021/2021_12_30_potencia_tu_terminal",
+      "id": "/blog/potencia_tu_terminal",
       "title": "Potencia tu terminal",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2021/2021_12_30_potencia_tu_terminal",
+      "url": "/blog/potencia_tu_terminal",
       "slug": "potencia_tu_terminal",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2022/2022_02_27_raspberry_touchscreen",
+      "id": "/blog/raspberry_pi_touchscreen_7_pulgadas",
       "title": "Raspberry Pi Touchscreen 7",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2022/2022_02_27_raspberry_touchscreen",
+      "url": "/blog/raspberry_pi_touchscreen_7_pulgadas",
       "slug": "raspberry_pi_touchscreen_7_pulgadas",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2022/2022_03_29_docker_escalar_privilegios",
+      "id": "/blog/escalar_privilegios_en_docker",
       "title": "Escalar privilegios en docker",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2022/2022_03_29_docker_escalar_privilegios",
+      "url": "/blog/escalar_privilegios_en_docker",
       "slug": "escalar_privilegios_en_docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2022/2022_08_08_potencia_powershell",
+      "id": "/blog/potencia_powershell",
       "title": "Potencia PowerShell",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2022/2022_08_08_potencia_powershell",
+      "url": "/blog/potencia_powershell",
       "slug": "potencia_powershell",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2022/2022_08_29_pentesting_desde_contenedor",
+      "id": "/blog/pentesting_desde_un_contenedor",
       "title": "Pentesting desde un contenedor",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2022/2022_08_29_pentesting_desde_contenedor",
+      "url": "/blog/pentesting_desde_un_contenedor",
       "slug": "pentesting_desde_un_contenedor",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2022/2022_12_01_docker_backups",
+      "id": "/blog/crea_y_comparte_backups_en_docker",
       "title": "Crea y comparte copias de seguridad en docker",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2022/2022_12_01_docker_backups",
+      "url": "/blog/crea_y_comparte_backups_en_docker",
       "slug": "crea_y_comparte_backups_en_docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2022/2022_12_21_cka_experiencia",
+      "id": "/blog/CKA_mi_experiencia",
       "title": "CKA: Mi experiencia",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2022/2022_12_21_cka_experiencia",
+      "url": "/blog/CKA_mi_experiencia",
       "slug": "CKA_mi_experiencia",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2023/2023_01_10_power_toys",
+      "id": "/blog/powertoys_windows",
       "title": "PowerToys",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2023/2023_01_10_power_toys",
+      "url": "/blog/powertoys_windows",
       "slug": "powertoys_windows",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2023/2023_01_10_rancher_desktop",
+      "id": "/blog/rancher_desktop",
       "title": "La alternativa a Docker que estabas buscando - Rancher Desktop",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2023/2023_01_10_rancher_desktop",
+      "url": "/blog/rancher_desktop",
       "slug": "rancher_desktop",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2023/2023_03_08_aligerar_imagenes_docker",
+      "id": "/blog/aligerar_imagenes_docker",
       "title": "Aligerar imágenes Docker",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2023/2023_03_08_aligerar_imagenes_docker",
+      "url": "/blog/aligerar_imagenes_docker",
       "slug": "aligerar_imagenes_docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/buenas_practicas_docker",
+      "id": "/blog/verifica_mejora_dockerfiles",
       "title": "Verifica y mejora tus dockerfiles",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/buenas_practicas_docker",
+      "url": "/blog/verifica_mejora_dockerfiles",
       "slug": "verifica_mejora_dockerfiles",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/diagramas_codigo",
+      "id": "/blog/diagramas-como-codigo",
       "title": "Diagramas com código",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/diagramas_codigo",
+      "url": "/blog/diagramas-como-codigo",
       "slug": "diagramas-como-codigo",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2023/gitleaks",
+      "id": "/blog/gitleaks_secretos_git_repositorio_detectar",
       "title": "Gitleaks, detecta secretos en tu repositorio de git",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2023/gitleaks",
+      "url": "/blog/gitleaks_secretos_git_repositorio_detectar",
       "slug": "gitleaks_secretos_git_repositorio_detectar",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/hadoolint_verificar_dockerfiles",
+      "id": "/blog/hadolint-verificar-mejorar-dockerfile",
       "title": "Verifica y mejora tus dockerfiles",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/hadoolint_verificar_dockerfiles",
+      "url": "/blog/hadolint-verificar-mejorar-dockerfile",
       "slug": "hadolint-verificar-mejorar-dockerfile",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2023/zerotier",
+      "id": "/blog/zerotier-cli-linux-instalacion",
       "title": "ZeroTier - Qué es y Cómo Instalar su CLI en Linux",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2023/zerotier",
+      "url": "/blog/zerotier-cli-linux-instalacion",
       "slug": "zerotier-cli-linux-instalacion",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/2024/2024_02_12_cracking_passwords",
+      "id": "/blog/cracking_passwords_hashcat",
       "title": "Cracking de contraseñas con Hashcat",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/2024/2024_02_12_cracking_passwords",
+      "url": "/blog/cracking_passwords_hashcat",
       "slug": "cracking_passwords_hashcat",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/Macos_en_docker",
+      "id": "/blog/mac-os-en-docker",
       "title": "Ejecuta Mac OS en Docker",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/Macos_en_docker",
+      "url": "/blog/mac-os-en-docker",
       "slug": "mac-os-en-docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/Entornos_remotos_gratuitos",
+      "id": "/blog/entornos-remotos-gratuitos",
       "title": "Entornos de desarrollo remotos y gratuitos",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/Entornos_remotos_gratuitos",
+      "url": "/blog/entornos-remotos-gratuitos",
       "slug": "entornos-remotos-gratuitos",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/kalilinux_wsl_interfaz_grafica",
+      "id": "/blog/kalilinux-wsl-interfaz-grafica",
       "title": "Ejecutar Kali Linux en WSL con interfaz gráfica",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/kalilinux_wsl_interfaz_grafica",
+      "url": "/blog/kalilinux-wsl-interfaz-grafica",
       "slug": "kalilinux-wsl-interfaz-grafica",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/secretos_docker",
+      "id": "/blog/secretos_docker_buenas_practicas",
       "title": "Secretos en Docker y mejores prácticas",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/secretos_docker",
+      "url": "/blog/secretos_docker_buenas_practicas",
       "slug": "secretos_docker_buenas_practicas",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/especial_5000_subcriptores",
+      "id": "/blog/especial-5000-subscriptores",
       "title": "¡Especial 5000 subscriptores en Youtube!",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/especial_5000_subcriptores",
+      "url": "/blog/especial-5000-subscriptores",
       "slug": "especial-5000-subscriptores",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/kubernetes_ubuntu_server_22.04",
+      "id": "/blog/instalacion_kubernetes_ubuntu_server_22.04",
       "title": "Instalación de Kubernetes en Ubuntu Server 22.04 LTS",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/kubernetes_ubuntu_server_22.04",
+      "url": "/blog/instalacion_kubernetes_ubuntu_server_22.04",
       "slug": "instalacion_kubernetes_ubuntu_server_22.04",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/servidor_compartido_npm_proxy_docker",
+      "id": "/blog/servidor-compartido-npm-proxy-docker",
       "title": "Servidor compartido para webs con HTTPS en 2 comandos con NPM Proxy y Docker",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/servidor_compartido_npm_proxy_docker",
+      "url": "/blog/servidor-compartido-npm-proxy-docker",
       "slug": "servidor-compartido-npm-proxy-docker",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/raspberry_ip_fija",
+      "id": "/blog/raspberry-ip-fija",
       "title": "Raspberry Pi con IP fija",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/raspberry_ip_fija",
+      "url": "/blog/raspberry-ip-fija",
       "slug": "raspberry-ip-fija",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/vscode_trucos_ocultos",
+      "id": "/blog/vscode_vale_para_todo",
       "title": "VSCode lo tiene TODO",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/vscode_trucos_ocultos",
+      "url": "/blog/vscode_vale_para_todo",
       "slug": "vscode_vale_para_todo",
       "val": 6,
       "connected": false
@@ -1805,34 +1827,34 @@
       "connected": false
     },
     {
-      "id": "/blog/debug_docker_build",
+      "id": "/blog/debug_docker_build_vscode",
       "title": "Depurar builds de Docker en VS Code como un profesional",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/debug_docker_build",
+      "url": "/blog/debug_docker_build_vscode",
       "slug": "debug_docker_build_vscode",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/devsecops_recomendaciones_2025",
+      "id": "/blog/ruta_devsecops_recomendaciones_2025",
       "title": "Ruta DevSecOps, recomendaciones para empezar en 2025",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/devsecops_recomendaciones_2025",
+      "url": "/blog/ruta_devsecops_recomendaciones_2025",
       "slug": "ruta_devsecops_recomendaciones_2025",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/blog/docker_model",
+      "id": "/blog/docker_model_ai_mcp",
       "title": "¿Ollama killer?, Modelos de IA en Docker Desktop",
       "type": "content",
       "category": "blog",
       "description": "En este artículo, exploraremos cómo ejecutar modelos de IA como Llama o deepseek en Docker Desktop, gracias a la nueva funcionalidad de docker model.",
-      "url": "/blog/docker_model",
+      "url": "/blog/docker_model_ai_mcp",
       "slug": "docker_model_ai_mcp",
       "val": 6,
       "connected": false
@@ -1849,34 +1871,34 @@
       "connected": false
     },
     {
-      "id": "/blog/kubectx_kubens",
+      "id": "/blog/kubectx_kubens_kubernetes_context",
       "title": "Kubectx y Kubens: Cambia de contexto y namespace en Kubernetes fácilmente",
       "type": "content",
       "category": "blog",
       "description": "Aprende a usar Kubectx y Kubens para cambiar de contexto y namespace en Kubernetes de forma rápida y sencilla. Mejora tu flujo de trabajo con estos comandos útiles.",
-      "url": "/blog/kubectx_kubens",
+      "url": "/blog/kubectx_kubens_kubernetes_context",
       "slug": "kubectx_kubens_kubernetes_context",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/localstack_mas_terraform",
+      "id": "/blog/localstack_terraform_mas_dudas",
       "title": "LocalStack, dudas comunes y cómo usarlo con terraform",
       "type": "content",
       "category": "blog",
       "description": "Una guía para resolver dudas comunes al usar LocalStack con Terraform y las del vídeo anterior",
-      "url": "/blog/localstack_mas_terraform",
+      "url": "/blog/localstack_terraform_mas_dudas",
       "slug": "localstack_terraform_mas_dudas",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/mi_ruta_devsecops_2025",
+      "id": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
       "title": "Mi ruta DevSecOps y aprendizaje personal a fecha de 2025",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/mi_ruta_devsecops_2025",
+      "url": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
       "slug": "mi_ruta_devsecops_reflexiones_recomendaciones_2025",
       "val": 10,
       "connected": true
@@ -1893,12 +1915,12 @@
       "connected": false
     },
     {
-      "id": "/blog/apple_container",
+      "id": "/blog/apple_container_analisis_contenedores_macos",
       "title": "Apple Container - La apuesta de Apple por los contenedores nativos en macOS",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/apple_container",
+      "url": "/blog/apple_container_analisis_contenedores_macos",
       "slug": "apple_container_analisis_contenedores_macos",
       "val": 6,
       "connected": false
@@ -1915,12 +1937,12 @@
       "connected": false
     },
     {
-      "id": "/blog/homelab_1_rack",
+      "id": "/blog/homelab-1-rack",
       "title": "HomeLab - Montando mi primer Rack de 10\" con Raspberry Pi (Parte 1)",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/homelab_1_rack",
+      "url": "/blog/homelab-1-rack",
       "slug": "homelab-1-rack",
       "val": 6,
       "connected": false
@@ -1937,34 +1959,34 @@
       "connected": false
     },
     {
-      "id": "/blog/migrar_ingress_a_gateway_api",
+      "id": "/blog/migrar_ingress_a_gateway_api_kubernetes",
       "title": "Migrar de Ingress a Gateway API en Kubernetes sin downtime",
       "type": "content",
       "category": "blog",
       "description": "Guía práctica para migrar Ingress a Gateway API en Kubernetes paso a paso con ingress2gateway, NGINX Gateway Fabric y convivencia gradual sin cortes",
-      "url": "/blog/migrar_ingress_a_gateway_api",
+      "url": "/blog/migrar_ingress_a_gateway_api_kubernetes",
       "slug": "migrar_ingress_a_gateway_api_kubernetes",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/blog/2026/openclaw-instalacion",
+      "id": "/blog/openclaw-instalacion-primeros-pasos",
       "title": "Instala tu propio asistente IA en 10 minutos con OpenClaw",
       "type": "content",
       "category": "blog",
       "description": "Guía paso a paso para instalar OpenClaw, conectarlo a Telegram y configurar un asistente IA personal que vive en tu máquina, te conoce y puede actuar sobre tus herramientas.",
-      "url": "/blog/2026/openclaw-instalacion",
+      "url": "/blog/openclaw-instalacion-primeros-pasos",
       "slug": "openclaw-instalacion-primeros-pasos",
       "val": 6,
       "connected": false
     },
     {
-      "id": "/blog/windows_en_docker",
+      "id": "/blog/windows-en-docker-kvm",
       "title": "Windows en Docker: Cómo ejecutar Windows 11 dentro de un contenedor",
       "type": "content",
       "category": "blog",
       "description": "",
-      "url": "/blog/windows_en_docker",
+      "url": "/blog/windows-en-docker-kvm",
       "slug": "windows-en-docker-kvm",
       "val": 6,
       "connected": false
@@ -1982,6 +2004,11 @@
     }
   ],
   "links": [
+    {
+      "source": "/docs/cursos/ansible/introduccion_a_ansible_curso_completo",
+      "target": "/docs/cursos/ansible",
+      "type": "internal_link"
+    },
     {
       "source": "/docs/cursos/ansible/introduccion_a_ansible_curso_completo",
       "target": "/docs/cursos/docker",
@@ -2054,7 +2081,17 @@
     },
     {
       "source": "/docs/cursos/ansible",
-      "target": "/docs/cursos/ansible/introduccion_a_ansible_curso_completo",
+      "target": "/docs/cursos/docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible",
+      "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible",
+      "target": "/docs/cursos/devops",
       "type": "internal_link"
     },
     {
@@ -2104,11 +2141,6 @@
     },
     {
       "source": "/docs/cursos/devops/Gestion_configuraciones",
-      "target": "/docs/cursos/ansible",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/devops",
       "target": "/docs/cursos/ansible",
       "type": "internal_link"
     },
@@ -2203,6 +2235,51 @@
       "type": "internal_link"
     },
     {
+      "source": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "target": "/blog/ruta_devsecops_recomendaciones_2025",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "target": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "target": "/docs/cursos/devops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "target": "/docs/cursos/devops/Seguridad",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/ansible",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "type": "internal_link"
+    },
+    {
       "source": "/docs/cursos/docker/conceptos_basicos_de_docker_imagenes_contenedores_y_dockerfiles",
       "target": "/docs/cursos/docker/curso_de_docker_desde_cero",
       "type": "internal_link"
@@ -2245,11 +2322,6 @@
     {
       "source": "/docs/cursos/docker/docker_en_produccion",
       "target": "/docs/cursos/docker/instalacion_de_docker_desktop_y_docker_engine_explicados",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/docker",
-      "target": "/docs/cursos/ansible",
       "type": "internal_link"
     },
     {
@@ -2395,6 +2467,11 @@
     {
       "source": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
       "target": "/docs/cursos/kubernetes/secrets_y_configmaps_en_kubernetes_gestion_de_configuracion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
+      "target": "/blog/migrar_ingress_a_gateway_api_kubernetes",
       "type": "internal_link"
     },
     {
@@ -3034,11 +3111,6 @@
     },
     {
       "source": "/docs/cursos/kubernetes",
-      "target": "/docs/cursos/ansible",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/kubernetes",
       "target": "/docs/cursos/kubernetes/arquitectura_de_kubernetes_control_plane_y_workers_explicados",
       "type": "internal_link"
     },
@@ -3373,13 +3445,8 @@
       "type": "internal_link"
     },
     {
-      "source": "/blog/devsecops_recomendaciones_2025",
-      "target": "/blog/mi_ruta_devsecops_2025",
-      "type": "internal_link"
-    },
-    {
-      "source": "/blog/migrar_ingress_a_gateway_api",
-      "target": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
+      "source": "/blog/ruta_devsecops_recomendaciones_2025",
+      "target": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
       "type": "internal_link"
     }
   ]

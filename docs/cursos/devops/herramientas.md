@@ -1,3 +1,26 @@
+---
+title: Herramientas DevOps esenciales - stack recomendado por nivel y empresa
+description: >-
+  El ecosistema DevOps organizado por categorías, con recomendaciones según el
+  tamaño de tu equipo y tu nivel. Qué aprender primero y qué puede esperar.
+keywords:
+  - herramientas devops
+  - stack devops
+  - mejores herramientas devops
+  - que aprender devops
+  - ecosistema devops
+  - herramientas ci cd
+  - herramientas iac
+  - herramientas monitorizacion
+  - comparativa herramientas devops
+  - roadmap herramientas devops
+sidebar_label: 17. Herramientas
+tags:
+  - devops
+  - herramientas
+image: 'https://pabpereza.dev/img/banner_devops.png'
+slug: herramientas_devops_esenciales_stack_recomendado_por_nivel_y_empresa
+---
 # Herramientas Esenciales de DevOps 🛠️
 
 Guía completa de las herramientas más importantes del ecosistema DevOps, organizadas por categoría y nivel de experiencia.

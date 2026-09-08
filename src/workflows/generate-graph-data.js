@@ -9,7 +9,12 @@ function createDocusaurusUrl(filePath, rootDir, frontmatter = {}) {
   const relativePath = path.relative(rootDir, filePath);
   
   if (relativePath.startsWith('blog/')) {
-    // Para blog posts, mantener lógica existente
+    // El slug del frontmatter manda: es la URL que publica Docusaurus. Sin él,
+    // derivarla de la carpeta/fichero deja el nodo apuntando a un 404.
+    if (frontmatter.slug) {
+      return `/blog/${frontmatter.slug}`;
+    }
+
     const blogPath = relativePath.replace('blog/', '');
     const dirName = path.dirname(blogPath);
     const fileName = path.basename(blogPath, path.extname(blogPath));
@@ -19,7 +24,7 @@ function createDocusaurusUrl(filePath, rootDir, frontmatter = {}) {
     }
     return `/blog/${fileName}`;
   } else if (relativePath.startsWith('docs/')) {
-    // Para docs, usar la estructura de directorios + sidebar_label
+    // Para docs, usar la estructura de directorios + slug del frontmatter
     const docPath = relativePath.replace('docs/', '');
     const dirParts = path.dirname(docPath).split('/').filter(part => part !== '.');
     
@@ -35,26 +40,18 @@ function createDocusaurusUrl(filePath, rootDir, frontmatter = {}) {
       return `/docs/${dirParts.join('/')}`;
     }
     
-    // Usar sidebar_label si está disponible, sino usar el nombre del archivo limpio
-    let urlSegment = frontmatter.sidebar_label;
-    if (!urlSegment) {
-      // Fallback: limpiar el nombre del archivo
-      urlSegment = fileName.replace(/^\d+\./, ''); // Remover prefijo numérico
+    // El slug del frontmatter es la URL real que genera Docusaurus: usarlo tal cual.
+    // Sin él, la URL se construye desde sidebar_label (ej. "8. Seguridad" -> "8_seguridad"),
+    // que NO coincide con la ruta publicada y deja el nodo del grafo apuntando a un 404.
+    if (frontmatter.slug) {
+      return `/docs/${[...dirParts, frontmatter.slug].join('/')}`;
     }
-    
-    // Convertir a formato URL (estilo Docusaurus con guiones bajos)
-    urlSegment = urlSegment
-      .toLowerCase()
-      .normalize('NFD')                // Normalizar caracteres acentuados
-      .replace(/[\u0300-\u036f]/g, '') // Remover diacríticos (tildes, acentos)
-      .replace(/\s+/g, '_')            // Espacios a guiones bajos (estilo Docusaurus)
-      .replace(/[^a-z0-9_]/g, '')      // Remover caracteres especiales excepto guiones bajos
-      .replace(/_+/g, '_')             // Múltiples guiones bajos a uno solo
-      .replace(/^_|_$/g, '');          // Remover guiones bajos al inicio/final
-    
-    // Construir URL final
-    const allParts = [...dirParts, urlSegment];
-    return `/docs/${allParts.join('/')}`;
+
+    // Sin slug, Docusaurus deriva la URL del nombre del archivo quitando el prefijo
+    // numérico y CONSERVANDO las mayúsculas (101.Introduccion.md -> /Introduccion).
+    const urlSegment = fileName.replace(/^\d+\./, '');
+
+    return `/docs/${[...dirParts, urlSegment].join('/')}`;
   }
   
   return null;

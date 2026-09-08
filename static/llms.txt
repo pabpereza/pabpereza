@@ -12,7 +12,7 @@ El sitio combina documentación escrita de calidad con vídeos prácticos en You
 - **Kubernetes (k8s)**: arquitectura, pods, deployments, services, ingress, Gateway API, RBAC, autoscaling (HPA/VPA), Helm, CRDs, seguridad, CKA/CKAD/CKS
 - **Ansible**: inventarios, playbooks, módulos, idempotencia, roles, Galaxy, Vault, CI/CD, Docker/Kubernetes
 - **DevOps**: cultura, CI/CD, IaC, Terraform, monitoreo, observabilidad, SRE, microservicios
-- **DevSecOps**: SAST, DAST, análisis imágenes, secretos, compliance, seguridad en pipeline
+- **DevSecOps**: shift-left, gitleaks, SAST con Semgrep, SCA, escaneo de imágenes con Trivy, SBOM (Syft), firma (Cosign), seguridad en IaC (Checkov, OPA), Vault, DAST con OWASP ZAP, security gates y SARIF en CI/CD
 - **MySQL**: consultas, joins, procedimientos almacenados, triggers, cursores, usuarios, permisos
 - **Vim/Neovim**: modos, tmux, AstroNvim, VSCode integration
 - **Homelab**: Raspberry Pi, rack 10", ZimaBoard, self-hosting
@@ -21,7 +21,8 @@ El sitio combina documentación escrita de calidad con vídeos prácticos en You
 
 - [Curso de Docker desde cero](https://pabpereza.dev/docs/cursos/docker/curso_de_docker_desde_cero): Curso completo gratuito de Docker en español: instalación, imágenes, contenedores, Dockerfiles, multi-stage builds, distroless, redes, volúmenes, Docker Compose, Swarm, buildx y producción
 - [Curso de Kubernetes](https://pabpereza.dev/docs/cursos/kubernetes/introduccion_a_kubernetes_guia_completa_para_principiantes): Curso completo gratuito de Kubernetes en español: pods, servicios, deployments, ingress, Gateway API, RBAC, autoscaling (HPA/VPA), Helm, CRDs, seguridad y hardening
-- [Curso de DevOps](https://pabpereza.dev/docs/cursos/devops/Introduccion): Fundamentos de DevOps en español: cultura, metodologías ágiles, Git avanzado, contenedores, microservicios, IaC, CI/CD, testing, monitoreo y SRE
+- [Curso de DevOps](https://pabpereza.dev/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora): Fundamentos de DevOps en español: cultura, metodologías ágiles, Git avanzado, contenedores, microservicios, IaC, CI/CD, testing, monitoreo y SRE
+- [Curso de DevSecOps](https://pabpereza.dev/docs/cursos/devsecops): Curso completo gratuito de DevSecOps en español: detección de secretos con gitleaks, SAST con Semgrep, análisis de dependencias, escaneo y firma de imágenes, seguridad en Terraform, gestión de secretos con Vault, DAST con OWASP ZAP y pipeline completo en GitHub Actions
 - [Curso de Ansible](https://pabpereza.dev/docs/cursos/ansible): Curso completo de Ansible: automatización IT, inventarios estáticos y dinámicos, playbooks, módulos, idempotencia, roles, Vault, CI/CD con Jenkins y GitHub Actions, y proyecto final real
 - [Curso de MySQL](https://pabpereza.dev/docs/cursos/mysql/mysql): Curso de MySQL: consultas, joins, procedimientos, triggers, cursores, usuarios y permisos
 - [Curso de Vim](https://pabpereza.dev/docs/cursos/vim/introduccion_vim): Vim, tmux, integración con VSCode y configuración como IDE con AstroNvim
@@ -82,23 +83,37 @@ El sitio combina documentación escrita de calidad con vídeos prácticos en You
 
 ## DevOps - Lecciones
 
-- [Introducción a DevOps](https://pabpereza.dev/docs/cursos/devops/Introduccion)
-- [Herramientas DevOps](https://pabpereza.dev/docs/cursos/devops/herramientas)
-- [Cultura DevOps](https://pabpereza.dev/docs/cursos/devops/Cultura)
-- [Metodologías](https://pabpereza.dev/docs/cursos/devops/Metodologias)
-- [Git avanzado](https://pabpereza.dev/docs/cursos/devops/Git_avanzado)
-- [Contenedores](https://pabpereza.dev/docs/cursos/devops/Contenedores)
-- [Microservicios](https://pabpereza.dev/docs/cursos/devops/Microservicios)
-- [Infraestructura como código](https://pabpereza.dev/docs/cursos/devops/Infraestructura_codigo)
-- [Gestión de configuraciones](https://pabpereza.dev/docs/cursos/devops/Gestion_configuraciones)
-- [CI/CD Conceptos](https://pabpereza.dev/docs/cursos/devops/CICD_conceptos)
-- [Pipelines](https://pabpereza.dev/docs/cursos/devops/Pipelines)
-- [Estrategias de despliegue](https://pabpereza.dev/docs/cursos/devops/Deployment_strategies)
-- [Testing](https://pabpereza.dev/docs/cursos/devops/Testing)
-- [Monitoreo](https://pabpereza.dev/docs/cursos/devops/Monitoreo)
-- [Seguridad](https://pabpereza.dev/docs/cursos/devops/Seguridad)
-- [SRE](https://pabpereza.dev/docs/cursos/devops/SRE)
-- [Cheatsheet DevOps](https://pabpereza.dev/docs/cursos/devops/cheatsheet_devops)
+- [Qué es DevOps](https://pabpereza.dev/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora)
+- [Cultura DevOps](https://pabpereza.dev/docs/cursos/devops/cultura_devops_modelo_calms_y_como_romper_los_silos_entre_equipos)
+- [Git avanzado](https://pabpereza.dev/docs/cursos/devops/git_avanzado_para_devops_gitflow_conventional_commits_y_releases)
+- [Metodologías ágiles](https://pabpereza.dev/docs/cursos/devops/metodologias_agiles_y_devops_scrum_y_kanban_en_el_flujo_de_entrega)
+- [Infraestructura como código](https://pabpereza.dev/docs/cursos/devops/infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas)
+- [Gestión de configuraciones](https://pabpereza.dev/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift)
+- [Monitorización y observabilidad](https://pabpereza.dev/docs/cursos/devops/monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus)
+- [Seguridad y DevSecOps](https://pabpereza.dev/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto)
+- [Qué es CI/CD](https://pabpereza.dev/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados)
+- [Pipelines avanzados](https://pabpereza.dev/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables)
+- [Testing automatizado](https://pabpereza.dev/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga)
+- [Estrategias de despliegue](https://pabpereza.dev/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing)
+- [Contenedores](https://pabpereza.dev/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable)
+- [Microservicios](https://pabpereza.dev/docs/cursos/devops/microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos)
+- [SRE](https://pabpereza.dev/docs/cursos/devops/sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion)
+- [Cheatsheet DevOps](https://pabpereza.dev/docs/cursos/devops/cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd)
+- [Herramientas DevOps](https://pabpereza.dev/docs/cursos/devops/herramientas_devops_esenciales_stack_recomendado_por_nivel_y_empresa)
+
+## DevSecOps - Lecciones
+
+- [Qué es DevSecOps](https://pabpereza.dev/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro)
+- [Secretos en el código con gitleaks](https://pabpereza.dev/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial)
+- [Dependencias vulnerables y SCA](https://pabpereza.dev/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate)
+- [SAST con Semgrep](https://pabpereza.dev/docs/cursos/devsecops/sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube)
+- [Escaneo de imágenes con Trivy](https://pabpereza.dev/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates)
+- [SBOM y firma con Cosign](https://pabpereza.dev/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign)
+- [Seguridad en IaC con Checkov](https://pabpereza.dev/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa)
+- [Gestión de secretos con Vault](https://pabpereza.dev/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets)
+- [DAST con OWASP ZAP](https://pabpereza.dev/docs/cursos/devsecops/dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline)
+- [Pipeline DevSecOps completo](https://pabpereza.dev/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif)
+- [Cheatsheet DevSecOps](https://pabpereza.dev/docs/cursos/devsecops/cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign)
 
 ## Ansible - Lecciones
 

@@ -58,26 +58,25 @@ Durante todos los vídeos me apoyaré en este repositorio, donde encontrarás lo
 * [Límites y control de recursos](116.Limites_recursos.md) 
 * [Dockerfile: Buildx y Multiarquitectura ](117.Buildx_multiarquitectura.md) 
 * [Dockerfile: Multistage build](118.Multi_stage_y_distroless.md) 
-* [Dockerfile: Cache y optimización](#dockerfile_cache) TODO
+* **Dockerfile: Cache y optimización** *(próximamente)*
 * [Depurar imágenes ](118.Multi_stage_y_distroless.md) 
-* [Docker compose avanzado](#docker_compose_avanzado) TODO
-* [Redes avanzado](#redes_avanzado) TODO
-* [Volumenes y backups](#volumes_avanzado) TODO
-* [Migra tu aplicación a Docker y microservicios](#migra_tu_aplicacion) TODO
+* **Docker compose avanzado** *(próximamente)*
+* **Redes avanzado** *(próximamente)*
+* **Volumenes y backups** *(próximamente)*
+* **Migra tu aplicación a Docker y microservicios** *(próximamente)*
 
 ### DevOps:
-* [CI con Docker](#ci_docker) TODO
-* [CD con Docker](#cd_docker) TODO
-* [Monitorización con Docker](#monitorizacion_docker) TODO
-* [Logs y centralización](#logs_docker) TODO
-* [Kubernetes con Docker](#kubernetes_docker) TODO
+* **CI con Docker** *(próximamente)*
+* **CD con Docker** *(próximamente)*
+* **Monitorización con Docker** *(próximamente)*
+* **Logs y centralización** *(próximamente)*
+* **Kubernetes con Docker** *(próximamente)*
 * [Automatiza despliegues Docker con Ansible](/docs/cursos/ansible/ansible_docker_kubernetes_contenedores) — capítulo del [curso de Ansible](/docs/cursos/ansible)
 
 ### Seguridad:
-* [Analizar vulnerabilidades en las imágenes](#seguridad-imagenes) TODO
-* [Usuarios y permisos en Docker](#usuarios-permisos) TODO
-* [Namespaces, cgroups y seccomp](#namespaces-cgroups-seccomp) TODO
-* [Hardening entornos Docker](#hardening-docker) TODO
+* [Seguridad de imágenes](119.Seguridad_imagenes.md) — usuario no-root, read-only, capabilities y hardening
+* [Analizar vulnerabilidades en las imágenes](/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates) — capítulo del [curso de DevSecOps](/docs/cursos/devsecops)
+* **Namespaces, cgroups y seccomp** *(próximamente)*
 
 
 ## Contribuir

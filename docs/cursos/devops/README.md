@@ -1,131 +1,115 @@
 ---
-title: "♾️ DevOps"
+title: ♾️ Curso DevOps gratuito - cultura, CI/CD e infraestructura desde cero
+description: >-
+  Curso completo de DevOps gratuito en español. Cultura y metodologías, Git
+  avanzado, infraestructura como código con Terraform, CI/CD, testing,
+  estrategias de despliegue, contenedores, microservicios y SRE.
 image: 'https://pabpereza.dev/img/banner_devops.png'
-tags:
-  - devops
-  - ci/cd
-  - automatización
-  - infraestructura
-  - cursos
 keywords:
   - devops
   - curso devops desde cero
-  - qué es devops
-  - ci/cd devops
-  - automatización devops
-  - infraestructura como código
-  - contenedores devops
-  - orquestación devops
+  - tutorial devops completo
+  - aprender devops en español
+  - devops gratis
+  - ci cd
+  - infraestructura como codigo
   - cultura devops
+  - metricas dora
+  - sre
   - devops para principiantes
-  - devsecops
-  - sre devops
-  - devops español
+  - terraform ci cd
+  - devops paso a paso
+tags:
+  - devops
+  - ci-cd
+  - automatizacion
+  - infraestructura
+  - cursos
+sidebar_label: ♾️ DevOps
 ---
 
-# Curso DevOps: Fundamentos y Buenas Prácticas
+# Curso DevOps
 
-**¡Domina la cultura y herramientas DevOps para acelerar el desarrollo y despliegue de software!**
+**¡Este curso está en desarrollo! Puedes seguirme aquí o en YouTube para ver las actualizaciones.**
 
-TODO: Banner de curso
+Bienvenido al curso de DevOps gratuito y en español. Empieza desde cero, sin dar por hecho que sabes nada de CI/CD ni de infraestructura, y llega hasta un nivel intermedio.
 
-Bienvenidos al curso de DevOps más práctico en español. Este curso está diseñado para darte una base sólida en los principios, cultura y herramientas fundamentales de DevOps, con un enfoque hands-on y ejemplos reales.
+El curso está estructurado alrededor de una idea: DevOps no es un conjunto de herramientas, es una forma de trabajar en la que cultura, automatización y medición se refuerzan entre sí. Por eso empezamos por la cultura y no por Jenkins.
 
-## 🎯 ¿Por qué este curso?
+**⭐ Apoya este contenido gratuito [suscribiéndote en YouTube](https://www.youtube.com/@Pabpereza) y dando una estrella a [este repositorio](https://github.com/pabpereza/pabpereza).**
 
-- **Cultura DevOps**: Comprende la filosofía y metodologías antes que las herramientas
-- **Enfoque práctico**: Aprende haciendo con proyectos reales
-- **Herramientas esenciales**: Domina las tecnologías más demandadas
-- **Buenas prácticas**: Implementa desde el primer día estándares de la industria
-- **Career-focused**: Habilidades que las empresas buscan activamente
+## Índice del curso
 
-Todo el curso estará disponible en vídeo en esta [LISTA DE YOUTUBE](https://youtube.com/playlist?list=PLQhxXeq1oc2k-devops-course).
+### Fundamentos
+* [Qué es DevOps](101.Introduccion.md) — cultura, pilares CAMS y métricas DORA
+* [Cultura DevOps](102.Cultura.md) — el modelo CALMS y cómo romper los silos
+* [Git avanzado](103.Git_avanzado.md) — GitFlow, conventional commits y releases
+* [Metodologías ágiles](104.Metodologias.md) — Scrum y Kanban en el flujo de entrega
 
-**⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
+### Infraestructura
+* [Infraestructura como código](201.Infraestructura_codigo.md) — Terraform, módulos y state
+* [Gestión de configuraciones](202.Gestion_configuraciones.md) — Ansible, idempotencia y drift
+* [Monitorización y observabilidad](203.Monitoreo.md) — métricas, logs y trazas
+* [Seguridad y DevSecOps](204.Seguridad.md) — shift-left y el puente al curso de DevSecOps
 
-## 📚 Índice del Curso
+### Automatización
+* [Qué es CI/CD](301.CICD_conceptos.md) — integración, entrega y despliegue continuo
+* [Pipelines avanzados](302.Pipelines.md) — cache, matrices y workflows reutilizables
+* [Testing automatizado](303.Testing.md) — pirámide, cobertura y pruebas de carga
+* [Estrategias de despliegue](304.Deployment_strategies.md) — rolling, blue-green y canary
 
-### 🌟 Nivel Fundamentos
-* [Introducción: ¿Qué es DevOps realmente?](101.Introduccion.md)
-* [Cultura DevOps: Personas, procesos y herramientas](102.Cultura.md)
-* [Control de versiones con Git avanzado](103.Git_avanzado.md)
-* [Metodologías ágiles y DevOps](104.Metodologias.md)
+### Avanzado
+* [Contenedores](401.Contenedores.md) — la imagen como artefacto inmutable
+* [Microservicios](402.Microservicios.md) — patrones y cuándo NO usarlos
+* [SRE](403.SRE.md) — SLI, SLO, error budgets e incidentes
 
-### 🏗️ Nivel Infraestructura
-* [Infraestructura como Código (IaC)](201.Infraestructura_codigo.md)
-* [Gestión de configuraciones](202.Gestion_configuraciones.md)
-* [Monitoreo y observabilidad](203.Monitoreo.md)
-* [Seguridad en DevOps (DevSecOps)](204.Seguridad.md)
+### Referencia
+* [Cheatsheet DevOps](cheatsheet_devops.md) — comandos y snippets
+* [Herramientas esenciales](herramientas.md) — el stack por categorías
 
-### ⚙️ Nivel Automatización
-* [CI/CD: Conceptos y estrategias](301.CICD_conceptos.md)
-* [Pipelines de CI/CD](302.Pipelines.md)
-* [Testing automatizado](303.Testing.md)
-* [Deployment strategies](304.Deployment_strategies.md)
-* [Automatización de infraestructura con Ansible](/docs/cursos/ansible) — curso completo aparte, con un vídeo por capítulo
+## ¿Qué aprenderás?
 
-### 🚀 Nivel Avanzado
-* [Contenedores y orquestación](401.Contenedores.md)
-* [Microservicios y arquitectura](402.Microservicios.md)
-* [Site Reliability Engineering (SRE)](403.SRE.md)
+Al terminar el curso serás capaz de:
 
+- ✅ Explicar qué es DevOps sin recitar una lista de herramientas
+- ✅ Medir tu proceso de entrega con las métricas DORA
+- ✅ Trabajar con Git en equipo y automatizar releases
+- ✅ Gestionar infraestructura como código con Terraform
+- ✅ Diseñar pipelines de CI/CD que no tarden media hora
+- ✅ Elegir la estrategia de despliegue adecuada para cada caso
+- ✅ Montar monitorización que sirva para algo
+- ✅ Definir SLOs y gestionar incidentes sin buscar culpables
 
-## 🎯 ¿Qué aprenderás?
+## Requisitos previos
 
-Al finalizar este curso serás capaz de:
+- Linux a nivel de usuario y soltura con la línea de comandos
+- Git básico: clonar, ramas, commits
+- Nociones de desarrollo de software (no hace falta ser desarrollador)
+- Ganas de automatizar cosas que hoy haces a mano
 
-- ✅ Implementar cultura DevOps en equipos de desarrollo
-- ✅ Diseñar y gestionar pipelines de CI/CD eficientes
-- ✅ Automatizar procesos de desarrollo y despliegue
-- ✅ Gestionar infraestructura como código
-- ✅ Implementar prácticas de seguridad desde el desarrollo
-- ✅ Monitorear y optimizar aplicaciones en producción
-- ✅ Trabajar con contenedores y orquestación
-- ✅ Aplicar metodologías ágiles en contextos DevOps
+## Rutas de aprendizaje
 
-## 🛠️ Requisitos previos
+Después de este curso, o en paralelo:
 
-- Conocimientos básicos de sistemas operativos (Linux preferible)
-- Experiencia básica con línea de comandos
-- Conceptos fundamentales de desarrollo de software
-- Familiaridad con control de versiones (Git básico)
-- Ganas de automatizar y mejorar procesos
+- **🛡️ DevSecOps** — el siguiente paso natural: [Curso DevSecOps](../devsecops/README.md)
+- **🐳 Docker y contenedores** — [Curso Docker](../docker/README.md)
+- **⚓️ Kubernetes y orquestación** — [Curso Kubernetes](../kubernetes/README.md)
+- **⚙️ Ansible y automatización** — [Curso Ansible](../ansible/README.md)
 
-## 📋 Recursos adicionales
-- [Herramientas esenciales](herramientas.md)
-
-## 🧭 Rutas de aprendizaje
-
-Después de este curso, puedes especializarte en:
-
-- **🐳 Docker y Contenedores** - [Curso Docker](../docker/README.md)
-- **⚓️ Kubernetes y Orquestación** - [Curso Kubernetes](../kubernetes/README.md)
-- **☁️ Cloud Computing** - AWS, Azure, GCP (próximamente)
-- **🔧 Terraform** - Infraestructura como código (próximamente)
-- **📊 Prometheus y Grafana** - Monitoreo avanzado (próximamente)
-
-## 🏆 Certificaciones recomendadas
+## Certificaciones relacionadas
 
 - AWS Certified DevOps Engineer
 - Azure DevOps Engineer Expert
 - Google Cloud Professional DevOps Engineer
-- Docker Certified Associate
-- Kubernetes Certified Administrator (CKA)
+- Certified Kubernetes Administrator (CKA)
 
-## 🤝 Contribuir
+## Contribuir
 
-¿Encontraste un error o quieres sugerir una mejora? ¡Las contribuciones son bienvenidas!
+¿Has encontrado un error o quieres sugerir una mejora? Las contribuciones son bienvenidas:
 
 1. Abre un [issue](https://github.com/pabpereza/pabpereza/issues)
 2. Propón cambios mediante pull requests
-3. Comparte tu experiencia en los comentarios
-
-## 📞 Contacto
-
-- 🐦 Twitter: [@pabpereza](https://twitter.com/pabpereza)
-- 📺 YouTube: [pabpereza](https://youtube.com/pabpereza)
-- 💼 LinkedIn: [pabpereza](https://linkedin.com/in/pabpereza)
 
 ---
 
-**¡Comencemos a transformar la forma en que desarrollamos y desplegamos software! 🚀**
+**Empecemos a cambiar la forma en que desarrollamos y desplegamos software. ♾️**

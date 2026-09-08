@@ -1,6 +1,34 @@
-# DevOps Cheatsheet 📋
+---
+title: Cheatsheet DevOps - comandos y snippets de Git, Terraform y CI/CD
+description: >-
+  Referencia rápida con los comandos y fragmentos de configuración más usados
+  del curso de DevOps, listos para copiar y pegar.
+keywords:
+  - cheatsheet devops
+  - comandos devops
+  - chuleta devops
+  - comandos git
+  - comandos terraform
+  - snippets ci cd
+  - referencia rapida devops
+  - comandos linux devops
+  - github actions ejemplos
+  - devops resumen
+sidebar_label: 16. Cheatsheet
+tags:
+  - devops
+  - cheatsheet
+image: 'https://pabpereza.dev/img/banner_devops.png'
+slug: cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd
+---
+# Cheatsheet DevOps
 
-Referencia rápida de comandos, conceptos y mejores prácticas de DevOps.
+Referencia rápida de los comandos y fragmentos de configuración del curso.
+
+Para no duplicar contenido, cada tecnología tiene su propia hoja de referencia:
+
+- 🐳 [Cheatsheet de Docker](../docker/cheatsheet.md)
+- 🛡️ [Cheatsheet de DevSecOps](../devsecops/cheatsheet_devsecops.md) — gitleaks, Semgrep, Trivy, Checkov y Cosign
 
 ## 🔄 Git Avanzado
 
@@ -303,165 +331,6 @@ pipeline {
 }
 ```
 
-## 🐳 Docker Essentials
-
-### Dockerfile best practices
-```dockerfile
-# Multi-stage build
-FROM node:18-alpine AS builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-
-FROM node:18-alpine AS runtime
-RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nextjs -u 1001
-WORKDIR /app
-COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
-COPY --chown=nextjs:nodejs . .
-USER nextjs
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
-### Docker Commands
-```bash
-# Build y tag
-docker build -t myapp:latest .
-docker tag myapp:latest myapp:v1.0.0
-
-# Run con opciones
-docker run -d --name myapp -p 3000:3000 -e NODE_ENV=production myapp:latest
-
-# Logs y debugging
-docker logs -f myapp
-docker exec -it myapp /bin/sh
-
-# Cleanup
-docker system prune -a
-docker volume prune
-
-# Docker Compose
-docker-compose up -d
-docker-compose logs -f
-docker-compose down -v
-```
-
-### docker-compose.yml
-```yaml
-version: '3.8'
-services:
-  web:
-    build: .
-    ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=production
-      - DATABASE_URL=postgresql://user:pass@db:5432/myapp
-    depends_on:
-      - db
-    restart: unless-stopped
-  
-  db:
-    image: postgres:15
-    environment:
-      POSTGRES_DB: myapp
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    restart: unless-stopped
-
-volumes:
-  postgres_data:
-```
-
-## ☸️ Kubernetes Basics
-
-### Deployment YAML
-```yaml
-# deployment.yml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: myapp
-  labels:
-    app: myapp
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: myapp
-  template:
-    metadata:
-      labels:
-        app: myapp
-    spec:
-      containers:
-      - name: myapp
-        image: myapp:latest
-        ports:
-        - containerPort: 3000
-        env:
-        - name: NODE_ENV
-          value: "production"
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "100m"
-          limits:
-            memory: "256Mi"
-            cpu: "200m"
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 3000
-          initialDelaySeconds: 30
-          periodSeconds: 10
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: myapp-service
-spec:
-  selector:
-    app: myapp
-  ports:
-  - port: 80
-    targetPort: 3000
-  type: LoadBalancer
-```
-
-### kubectl Commands
-```bash
-# Aplicar configuraciones
-kubectl apply -f deployment.yml
-kubectl apply -f https://url-to-manifest.yaml
-
-# Ver recursos
-kubectl get pods
-kubectl get services
-kubectl get deployments
-kubectl get all -n namespace
-
-# Describir recursos
-kubectl describe pod <pod-name>
-kubectl describe service <service-name>
-
-# Logs y debugging
-kubectl logs -f <pod-name>
-kubectl exec -it <pod-name> -- /bin/bash
-
-# Escalado
-kubectl scale deployment myapp --replicas=5
-
-# Rolling update
-kubectl set image deployment/myapp myapp=myapp:v2.0.0
-
-# Port forwarding
-kubectl port-forward service/myapp-service 8080:80
-```
-
 ## 📊 Monitoring & Observability
 
 ### Prometheus Queries
@@ -529,45 +398,6 @@ output {
     index => "logs-%{+YYYY.MM.dd}"
   }
 }
-```
-
-## 🔒 Security (DevSecOps)
-
-### Security Scanning Commands
-```bash
-# Dependency scanning
-npm audit
-npm audit fix
-
-# SAST (Static Application Security Testing)
-bandit -r . # Python
-eslint --ext .js,.jsx ./ # JavaScript
-
-# Container scanning
-docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
-  aquasec/trivy image myapp:latest
-
-# Infrastructure scanning
-checkov -f main.tf
-tfsec .
-```
-
-### Secrets Management
-```bash
-# Using environment variables
-export DATABASE_URL="postgresql://user:pass@localhost/db"
-
-# Using Docker secrets
-echo "secret_password" | docker secret create db_password -
-
-# Using Kubernetes secrets
-kubectl create secret generic db-secret \
-  --from-literal=username=user \
-  --from-literal=password=pass
-
-# Using HashiCorp Vault
-vault kv put secret/myapp username=user password=pass
-vault kv get -field=password secret/myapp
 ```
 
 ## 🚨 Incident Response

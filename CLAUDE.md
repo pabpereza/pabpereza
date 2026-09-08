@@ -37,9 +37,33 @@ date: 2025-06-05
 **Sistema de numeración específico**: `101.Introduccion.md`, `102.Instalacion.md`, `201.Limites_recursos.md`
 - Series 100: Contenido básico
 - Series 200+: Contenido avanzado
-- Usar `sidebar_label` en frontmatter para navegación
-- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Incluir `README.md` como índice principal de cada curso
+
+**Frontmatter de un capítulo — 7 campos exactos:**
+
+```yaml
+---
+title: <título largo SEO, con acentos, separador " - " o coma. NUNCA ":">
+description: >-
+  <bloque folded, 2-3 líneas, sin ":">
+keywords:
+  - <9-16 keywords: término español, término inglés, comando literal,
+  - long-tail conversacional, comparativa "X vs Y", y cierre con
+  - "tutorial" / "paso a paso" / "buenas practicas">
+sidebar_label: <N>. <2-4 palabras>
+tags:
+  - <1-5, kebab-case si son compuestos>
+image: 'https://pabpereza.dev/img/banner_<curso>.png'
+slug: <snake_case, sin acentos ni ñ, frase SEO de 7-11 palabras>
+---
+```
+
+- **NUNCA `authors` ni `date` en cursos.** Son exclusivos de `/blog/`.
+- El `README.md` del curso lleva los mismos campos **menos `slug`**, y su `sidebar_label` empieza con emoji (es lo que da nombre a la categoría del sidebar, porque no hay ningún `_category_.json`).
+- La URL publicada es `pabpereza.dev/docs/cursos/<curso>/<slug>` (los slugs de raíz son solo del blog).
+- **Longitud objetivo: 90-250 líneas por capítulo.** Si te pasas de ahí, probablemente el capítulo debería partirse o el contenido pertenece a otro curso.
+- Tras cambiar cualquier `slug`, limpiar la caché o el build fallará con enlaces rotos falsos:
+  `rm -rf .docusaurus node_modules/.cache && npm run build`
 
 ### Canal de YouTube (`/.channel/`)
 Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, posts de RRSS, sponsors) viven en `.channel/<slug>/` de este repositorio. **No** buscar en `~/youtube/` ni fuera de este repo.
@@ -58,6 +82,7 @@ Cuando trabajes en contenido de un curso específico, utiliza la skill correspon
 |-------|------|-------|
 | Ansible | `/docs/cursos/ansible/` | `ansible-expert` |
 | DevOps | `/docs/cursos/devops/` | `devops-engineer` |
+| DevSecOps | `/docs/cursos/devsecops/` | `devops-engineer` + `docker-expert` |
 | Docker | `/docs/cursos/docker/` | `docker-expert` |
 | Kubernetes | `/docs/cursos/kubernetes/` | `kubernetes-specialist` |
 | MySQL | `/docs/cursos/mysql/` | `mysql` |

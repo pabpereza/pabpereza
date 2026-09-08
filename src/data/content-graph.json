@@ -144,167 +144,167 @@
       "connected": false
     },
     {
-      "id": "/docs/cursos/devops/Introduccion",
-      "title": "101.Introduccion",
+      "id": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
+      "title": "1. Introducción",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Introduccion",
-      "slug": null,
+      "description": "Descubre qué es DevOps realmente, por qué nació, cuáles son sus cuatro pilares y cómo se mide con las cuatro métricas DORA. El punto de partida del curso.",
+      "url": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
+      "slug": "que_es_devops_cultura_pilares_cams_y_metricas_dora",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Cultura",
-      "title": "102.Cultura",
+      "id": "/docs/cursos/devops/cultura_devops_modelo_calms_y_como_romper_los_silos_entre_equipos",
+      "title": "2. Cultura",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Cultura",
-      "slug": null,
+      "description": "La cultura es la parte de DevOps que no se compra. El modelo CALMS, por qué aparecen los silos entre desarrollo y operaciones, qué es la cultura sin culpables y los obstáculos reales de una transformación.",
+      "url": "/docs/cursos/devops/cultura_devops_modelo_calms_y_como_romper_los_silos_entre_equipos",
+      "slug": "cultura_devops_modelo_calms_y_como_romper_los_silos_entre_equipos",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Git_avanzado",
-      "title": "103.Git_avanzado",
+      "id": "/docs/cursos/devops/git_avanzado_para_devops_gitflow_conventional_commits_y_releases",
+      "title": "3. Git avanzado",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Git_avanzado",
-      "slug": null,
+      "description": "Las estrategias de branching comparadas, cuándo usar cada una, conventional commits, versionado semántico y cómo automatizar releases. Git es el punto de partida de todo pipeline.",
+      "url": "/docs/cursos/devops/git_avanzado_para_devops_gitflow_conventional_commits_y_releases",
+      "slug": "git_avanzado_para_devops_gitflow_conventional_commits_y_releases",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Metodologias",
-      "title": "104.Metodologias",
+      "id": "/docs/cursos/devops/metodologias_agiles_y_devops_scrum_y_kanban_en_el_flujo_de_entrega",
+      "title": "4. Metodologías",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Metodologias",
-      "slug": null,
+      "description": "Agile y DevOps no compiten, se complementan. Cómo integrar prácticas DevOps en Scrum y Kanban, qué debería incluir tu Definition of Done y por qué medir el flujo importa más que medir la velocidad.",
+      "url": "/docs/cursos/devops/metodologias_agiles_y_devops_scrum_y_kanban_en_el_flujo_de_entrega",
+      "slug": "metodologias_agiles_y_devops_scrum_y_kanban_en_el_flujo_de_entrega",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Infraestructura_codigo",
-      "title": "201.Infraestructura_codigo",
+      "id": "/docs/cursos/devops/infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas",
+      "title": "5. Infraestructura como código",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Infraestructura_codigo",
-      "slug": null,
+      "description": "Gestiona tu infraestructura con código en lugar de a mano. Terraform, módulos reutilizables, el fichero de estado y por qué es la pieza más delicada, y el flujo de trabajo en CI/CD.",
+      "url": "/docs/cursos/devops/infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas",
+      "slug": "infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Gestion_configuraciones",
-      "title": "202.Gestion_configuraciones",
+      "id": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
+      "title": "6. Gestión de configuraciones",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Gestion_configuraciones",
-      "slug": null,
+      "description": "Configuration as Code con Ansible. Qué es la idempotencia y por qué importa, la diferencia entre infraestructura mutable e inmutable, y cómo detectar el drift entre lo que definiste y lo que hay realmente.",
+      "url": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
+      "slug": "gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Monitoreo",
-      "title": "203.Monitoreo",
+      "id": "/docs/cursos/devops/monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus",
+      "title": "7. Monitorización",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Monitoreo",
-      "slug": null,
+      "description": "La diferencia entre monitorizar y observar, los cuatro golden signals, cómo montar un stack con Prometheus y Grafana y por qué la mayoría de las alertas que recibes no deberían existir.",
+      "url": "/docs/cursos/devops/monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus",
+      "slug": "monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Seguridad",
-      "title": "204.Seguridad",
+      "id": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "title": "8. Seguridad y DevSecOps",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Seguridad",
-      "slug": null,
+      "description": "Entiende por qué la seguridad no puede ser el último paso antes de producción, qué significa shift-left y qué herramientas cubren cada etapa del pipeline. El puente entre DevOps y DevSecOps.",
+      "url": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "slug": "seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/CICD_conceptos",
-      "title": "301.CICD_conceptos",
+      "id": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
+      "title": "9. CI/CD conceptos",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/CICD_conceptos",
-      "slug": null,
+      "description": "La diferencia real entre integración continua, entrega continua y despliegue continuo, las etapas de un pipeline, cómo elegir plataforma y qué hace falta antes de poder desplegar de forma automática.",
+      "url": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
+      "slug": "que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Pipelines",
-      "title": "302.Pipelines",
+      "id": "/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
+      "title": "10. Pipelines",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Pipelines",
-      "slug": null,
+      "description": "Cuando el pipeline básico se queda corto. Detección de cambios, cache de dependencias, matrices de build, paralelización de tests y workflows reutilizables para que tu CI no tarde media hora.",
+      "url": "/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
+      "slug": "pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Testing",
-      "title": "303.Testing",
+      "id": "/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
+      "title": "11. Testing",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Testing",
-      "slug": null,
+      "description": "Sin tests no hay entrega continua. La pirámide de testing, qué automatizar en cada nivel, por qué la cobertura engaña, cómo tratar los tests inestables y cuándo hacer pruebas de carga.",
+      "url": "/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
+      "slug": "testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Deployment_strategies",
-      "title": "304.Deployment_strategies",
+      "id": "/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
+      "title": "12. Estrategias de despliegue",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Deployment_strategies",
-      "slug": null,
+      "description": "Desplegar sin cortar el servicio. Las cinco estrategias principales comparadas, cuándo usar cada una, cómo hacer rollback y por qué las migraciones de base de datos son la parte difícil.",
+      "url": "/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
+      "slug": "estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Contenedores",
-      "title": "401.Contenedores",
+      "id": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "title": "13. Contenedores",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Contenedores",
-      "slug": null,
+      "description": "Qué aportan los contenedores al flujo DevOps. La imagen como artefacto inmutable, el registry, la promoción del mismo artefacto entre entornos y cuándo necesitas de verdad un orquestador.",
+      "url": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "slug": "contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/Microservicios",
-      "title": "402.Microservicios",
+      "id": "/docs/cursos/devops/microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos",
+      "title": "14. Microservicios",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/Microservicios",
-      "slug": null,
+      "description": "Los microservicios resuelven problemas de organización y crean problemas de operación. Patrones esenciales, comunicación entre servicios, consistencia de datos y por qué el monolito sigue siendo casi siempre mejor idea.",
+      "url": "/docs/cursos/devops/microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos",
+      "slug": "microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos",
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/SRE",
-      "title": "403.SRE",
+      "id": "/docs/cursos/devops/sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion",
+      "title": "15. SRE",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/SRE",
-      "slug": null,
+      "description": "Site Reliability Engineering explicado con las matemáticas incluidas. Cómo definir SLIs y SLOs, calcular tu error budget, gestionar incidentes sin buscar culpables y por qué el 100% de disponibilidad es un mal objetivo.",
+      "url": "/docs/cursos/devops/sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion",
+      "slug": "sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion",
       "val": 10,
       "connected": true
     },
@@ -313,31 +313,31 @@
       "title": "♾️ DevOps",
       "type": "content",
       "category": "docs",
-      "description": "",
+      "description": "Curso completo de DevOps gratuito en español. Cultura y metodologías, Git avanzado, infraestructura como código con Terraform, CI/CD, testing, estrategias de despliegue, contenedores, microservicios y SRE.",
       "url": "/docs/cursos/devops",
       "slug": null,
       "val": 10,
       "connected": true
     },
     {
-      "id": "/docs/cursos/devops/cheatsheet_devops",
-      "title": "cheatsheet_devops",
+      "id": "/docs/cursos/devops/cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd",
+      "title": "16. Cheatsheet",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/cheatsheet_devops",
-      "slug": null,
-      "val": 6,
-      "connected": false
+      "description": "Referencia rápida con los comandos y fragmentos de configuración más usados del curso de DevOps, listos para copiar y pegar.",
+      "url": "/docs/cursos/devops/cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd",
+      "slug": "cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd",
+      "val": 10,
+      "connected": true
     },
     {
-      "id": "/docs/cursos/devops/herramientas",
-      "title": "herramientas",
+      "id": "/docs/cursos/devops/herramientas_devops_esenciales_stack_recomendado_por_nivel_y_empresa",
+      "title": "17. Herramientas",
       "type": "content",
       "category": "docs",
-      "description": "",
-      "url": "/docs/cursos/devops/herramientas",
-      "slug": null,
+      "description": "El ecosistema DevOps organizado por categorías, con recomendaciones según el tamaño de tu equipo y tu nivel. Qué aprender primero y qué puede esperar.",
+      "url": "/docs/cursos/devops/herramientas_devops_esenciales_stack_recomendado_por_nivel_y_empresa",
+      "slug": "herramientas_devops_esenciales_stack_recomendado_por_nivel_y_empresa",
       "val": 10,
       "connected": true
     },
@@ -353,6 +353,105 @@
       "connected": true
     },
     {
+      "id": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "title": "2. Secretos en el código",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a encontrar contraseñas, tokens y claves API filtradas en tu repositorio con gitleaks, a bloquearlas antes del commit con un hook y a rotarlas correctamente cuando ya se han publicado.",
+      "url": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "slug": "detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
+      "title": "3. Dependencias y SCA",
+      "type": "content",
+      "category": "docs",
+      "description": "Descubre qué es el análisis de composición de software (SCA), cómo encontrar dependencias con vulnerabilidades conocidas en tu proyecto con Trivy y cómo automatizar sus actualizaciones con Dependabot o Renovate.",
+      "url": "/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
+      "slug": "analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube",
+      "title": "4. SAST",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende qué es el análisis estático de seguridad (SAST), cómo encontrar inyecciones y usos peligrosos en tu código con Semgrep sin ejecutarlo, y cómo escribir tus propias reglas cuando las de serie no llegan.",
+      "url": "/docs/cursos/devsecops/sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube",
+      "slug": "sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "title": "5. Imágenes de contenedor",
+      "type": "content",
+      "category": "docs",
+      "description": "Analiza tus imágenes Docker con Trivy, entiende de dónde salen los CVE de la imagen base, aprende a gestionar falsos positivos con trivyignore y a romper el pipeline automáticamente cuando aparece una vulnerabilidad crítica.",
+      "url": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "slug": "escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "title": "6. SBOM y firma",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende qué es un SBOM y cómo generarlo con Syft, y cómo firmar tus imágenes de contenedor con Cosign para demostrar que nadie las ha manipulado entre tu pipeline y producción.",
+      "url": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "slug": "sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "title": "7. Seguridad en IaC",
+      "type": "content",
+      "category": "docs",
+      "description": "Audita tu infraestructura como código antes de aplicarla. Detecta buckets públicos, puertos abiertos y bases de datos sin cifrar con Checkov, y escribe tus propias reglas de negocio con Rego y Conftest.",
+      "url": "/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "slug": "seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "title": "8. Secretos en producción",
+      "type": "content",
+      "category": "docs",
+      "description": "Saca las credenciales del código y llévalas a un gestor de secretos. Monta Vault en local, guarda y recupera secretos, y descubre cómo llegan hasta tus aplicaciones en Kubernetes con External Secrets.",
+      "url": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "slug": "gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline",
+      "title": "9. DAST",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende qué es el análisis dinámico de seguridad (DAST) y cómo atacar tu propia aplicación con OWASP ZAP para encontrar XSS, cabeceras ausentes y fugas de información que el análisis estático no puede ver.",
+      "url": "/docs/cursos/devsecops/dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline",
+      "slug": "dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "title": "10. Pipeline completo",
+      "type": "content",
+      "category": "docs",
+      "description": "Junta gitleaks, Semgrep, Trivy y Checkov en un único pipeline de GitHub Actions. Aprende a publicar los hallazgos en la pestaña Security con SARIF y a decidir qué debe romper el build y qué solo informar.",
+      "url": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "slug": "pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "val": 10,
+      "connected": true
+    },
+    {
       "id": "/docs/cursos/devsecops",
       "title": "🛡️ DevSecOps",
       "type": "content",
@@ -360,6 +459,17 @@
       "description": "Curso completo de DevSecOps gratuito en español. Aprende a integrar seguridad en tu pipeline con gitleaks, Semgrep, Trivy, Checkov, Cosign, Vault y OWASP ZAP, con laboratorios sencillos que puedes reproducir en tu propia máquina.",
       "url": "/docs/cursos/devsecops",
       "slug": null,
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/devsecops/cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign",
+      "title": "11. Cheatsheet",
+      "type": "content",
+      "category": "docs",
+      "description": "Referencia rápida con todos los comandos del curso de DevSecOps. Detección de secretos, SAST, análisis de dependencias, escaneo de imágenes, SBOM, firma, seguridad en IaC y DAST, listos para copiar y pegar.",
+      "url": "/docs/cursos/devsecops/cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign",
+      "slug": "cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign",
       "val": 10,
       "connected": true
     },
@@ -562,6 +672,17 @@
       "connected": true
     },
     {
+      "id": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "title": "19. Seguridad de imágenes",
+      "type": "content",
+      "category": "docs",
+      "description": "Endurece tus contenedores. Por qué no deben ejecutarse como root, cómo montar el sistema de ficheros en solo lectura, qué son las capabilities y cómo reducir la superficie de ataque de tus imágenes.",
+      "url": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "slug": "seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "val": 10,
+      "connected": true
+    },
+    {
       "id": "/docs/cursos/docker",
       "title": "🐳 Docker",
       "type": "content",
@@ -580,8 +701,8 @@
       "description": "",
       "url": "/docs/cursos/docker/cheatsheet",
       "slug": null,
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/docs/cursos/kubernetes/introduccion_a_kubernetes_guia_completa_para_principiantes",
@@ -1493,8 +1614,8 @@
       "description": "",
       "url": "/blog/analizar_seguridad_docker",
       "slug": "analizar_seguridad_docker",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/linux_en_windows_WSL",
@@ -1559,8 +1680,8 @@
       "description": "",
       "url": "/blog/escalar_privilegios_en_docker",
       "slug": "escalar_privilegios_en_docker",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/potencia_powershell",
@@ -1669,8 +1790,8 @@
       "description": "",
       "url": "/blog/gitleaks_secretos_git_repositorio_detectar",
       "slug": "gitleaks_secretos_git_repositorio_detectar",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/hadolint-verificar-mejorar-dockerfile",
@@ -1680,8 +1801,8 @@
       "description": "",
       "url": "/blog/hadolint-verificar-mejorar-dockerfile",
       "slug": "hadolint-verificar-mejorar-dockerfile",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/zerotier-cli-linux-instalacion",
@@ -1746,8 +1867,8 @@
       "description": "",
       "url": "/blog/secretos_docker_buenas_practicas",
       "slug": "secretos_docker_buenas_practicas",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/especial-5000-subscriptores",
@@ -2140,8 +2261,218 @@
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/devops/Gestion_configuraciones",
+      "source": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
+      "target": "/docs/cursos/devsecops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
+      "target": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
+      "target": "/docs/cursos/devops/cultura_devops_modelo_calms_y_como_romper_los_silos_entre_equipos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/git_avanzado_para_devops_gitflow_conventional_commits_y_releases",
+      "target": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/metodologias_agiles_y_devops_scrum_y_kanban_en_el_flujo_de_entrega",
+      "target": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas",
+      "target": "/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas",
+      "target": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
       "target": "/docs/cursos/ansible",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
+      "target": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
+      "target": "/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus",
+      "target": "/docs/cursos/devops/sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
+      "target": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
+      "target": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
+      "target": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
+      "target": "/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
+      "target": "/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
+      "target": "/docs/cursos/devsecops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
+      "target": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
+      "target": "/docs/cursos/devsecops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
+      "target": "/docs/cursos/devsecops/sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
+      "target": "/docs/cursos/devsecops/dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
+      "target": "/docs/cursos/kubernetes/canary_y_blue_green_deployments_en_kubernetes_estrategias_de_despliegue",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
+      "target": "/docs/cursos/kubernetes/service_mesh_en_kubernetes_istio_linkerd_y_mtls",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "target": "/docs/cursos/docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "target": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "target": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "target": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
+      "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos",
+      "target": "/docs/cursos/kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos",
+      "target": "/docs/cursos/devops/monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion",
+      "target": "/docs/cursos/devsecops",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devsecops",
       "type": "internal_link"
     },
     {
@@ -2156,82 +2487,97 @@
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Introduccion",
+      "target": "/docs/cursos/devops/que_es_devops_cultura_pilares_cams_y_metricas_dora",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Cultura",
+      "target": "/docs/cursos/devops/cultura_devops_modelo_calms_y_como_romper_los_silos_entre_equipos",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Git_avanzado",
+      "target": "/docs/cursos/devops/git_avanzado_para_devops_gitflow_conventional_commits_y_releases",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Metodologias",
+      "target": "/docs/cursos/devops/metodologias_agiles_y_devops_scrum_y_kanban_en_el_flujo_de_entrega",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Infraestructura_codigo",
+      "target": "/docs/cursos/devops/infraestructura_como_codigo_con_terraform_modulos_state_y_buenas_practicas",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Gestion_configuraciones",
+      "target": "/docs/cursos/devops/gestion_de_configuraciones_ansible_idempotencia_y_control_del_drift",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Monitoreo",
+      "target": "/docs/cursos/devops/monitorizacion_y_observabilidad_metricas_logs_y_trazas_con_prometheus",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Seguridad",
+      "target": "/docs/cursos/devops/seguridad_en_devops_que_es_devsecops_y_como_dar_el_salto",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/CICD_conceptos",
+      "target": "/docs/cursos/devops/que_es_ci_cd_integracion_entrega_y_despliegue_continuo_explicados",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Pipelines",
+      "target": "/docs/cursos/devops/pipelines_de_ci_cd_avanzados_cache_matrices_y_workflows_reutilizables",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Testing",
+      "target": "/docs/cursos/devops/testing_automatizado_en_ci_cd_piramide_cobertura_y_pruebas_de_carga",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Deployment_strategies",
+      "target": "/docs/cursos/devops/estrategias_de_despliegue_rolling_blue_green_canary_y_ab_testing",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Contenedores",
+      "target": "/docs/cursos/devops/contenedores_y_orquestacion_en_devops_la_imagen_como_artefacto_inmutable",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/Microservicios",
+      "target": "/docs/cursos/devops/microservicios_patrones_ventajas_y_cuando_no_deberias_usarlos",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/SRE",
+      "target": "/docs/cursos/devops/sre_sli_slo_error_budgets_y_gestion_de_incidentes_en_produccion",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/devops",
-      "target": "/docs/cursos/devops/herramientas",
+      "target": "/docs/cursos/devops/cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops",
+      "target": "/docs/cursos/devops/herramientas_devops_esenciales_stack_recomendado_por_nivel_y_empresa",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd",
+      "target": "/docs/cursos/docker/cheatsheet",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devops/cheatsheet_devops_comandos_y_snippets_de_git_terraform_y_ci_cd",
+      "target": "/docs/cursos/devsecops/cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign",
       "type": "internal_link"
     },
     {
@@ -2250,12 +2596,92 @@
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
-      "target": "/docs/cursos/devops/Seguridad",
+      "source": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "target": "/blog/gitleaks_secretos_git_repositorio_detectar",
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/devsecops",
+      "source": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "target": "/blog/secretos_docker_buenas_practicas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
+      "target": "/blog/analizar_seguridad_docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "target": "/blog/analizar_seguridad_docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "target": "/blog/escalar_privilegios_en_docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "target": "/blog/hadolint-verificar-mejorar-dockerfile",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "target": "/docs/cursos/docker/dockerfiles_multi_stage_y_distroless",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "target": "/docs/cursos/kubernetes/admission_controllers_en_kubernetes_validacion_y_mutacion_de_recursos",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "target": "/docs/cursos/kubernetes/opa_gatekeeper_en_kubernetes_politicas_como_codigo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "target": "/blog/secretos_docker_buenas_practicas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "target": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "target": "/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "target": "/blog/ruta_devsecops_recomendaciones_2025",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "target": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "target": "/docs/cursos/kubernetes/falco_en_kubernetes_deteccion_de_amenazas_en_runtime",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "target": "/docs/cursos/kubernetes/opa_gatekeeper_en_kubernetes_politicas_como_codigo",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "target": "/docs/cursos/kubernetes/preparacion_del_examen_cks_estrategia_temario_y_simulacros",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
       "target": "/docs/cursos/devops",
       "type": "internal_link"
     },
@@ -2277,6 +2703,56 @@
     {
       "source": "/docs/cursos/devsecops",
       "target": "/docs/cursos/devsecops/que_es_devsecops_shift_left_cultura_y_pipeline_seguro",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/detectar_secretos_en_el_codigo_con_gitleaks_pre_commit_e_historial",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/sast_analisis_estatico_de_codigo_con_semgrep_y_sonarqube",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/seguridad_en_terraform_e_iac_checkov_tfsec_y_policy_as_code_con_opa",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/gestion_de_secretos_en_produccion_con_hashicorp_vault_y_external_secrets",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/dast_con_owasp_zap_escanea_tu_aplicacion_en_ejecucion_desde_el_pipeline",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/pipeline_devsecops_completo_en_github_actions_security_gates_y_sarif",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/devsecops",
+      "target": "/docs/cursos/devsecops/cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign",
       "type": "internal_link"
     },
     {
@@ -2322,6 +2798,41 @@
     {
       "source": "/docs/cursos/docker/docker_en_produccion",
       "target": "/docs/cursos/docker/instalacion_de_docker_desktop_y_docker_engine_explicados",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "target": "/blog/escalar_privilegios_en_docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "target": "/blog/hadolint-verificar-mejorar-dockerfile",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "target": "/blog/secretos_docker_buenas_practicas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "target": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "target": "/docs/cursos/docker/dockerfiles_multi_stage_y_distroless",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
+      "target": "/docs/cursos/docker/limites_y_control_de_recursos_en_docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
       "type": "internal_link"
     },
     {
@@ -2412,6 +2923,11 @@
     {
       "source": "/docs/cursos/docker",
       "target": "/docs/cursos/docker/dockerfiles_multi_stage_y_distroless",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/docker",
+      "target": "/docs/cursos/docker/seguridad_de_imagenes_docker_usuario_no_root_read_only_y_capabilities",
       "type": "internal_link"
     },
     {

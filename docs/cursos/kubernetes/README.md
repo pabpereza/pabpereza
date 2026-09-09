@@ -35,9 +35,9 @@ sidebar_label: ⚓️ Kubernetes
 
 ![Banner Kubernetes](img/banner_kubernetes.png)
 
-## 🚀 ¿Qué aprenderás en este curso?
+## 🚀 ¿Qué aprenderemos en este curso?
 
-Bienvenido, este curso esta diseñado para llevarte desde cero hasta un nivel profesional. Teniendo en cuenta los principales supuestos:
+Bienvenido, este curso esta diseñado para llevarnos desde cero hasta un nivel profesional. Teniendo en cuenta los principales supuestos:
 
 - **Principiantes absolutos** que nunca han trabajado con Kubernetes
 - **Desarrolladores** que quieren aprender orquestación de contenedores
@@ -46,7 +46,7 @@ Bienvenido, este curso esta diseñado para llevarte desde cero hasta un nivel pr
 
 ### 🎓 Preparación para Certificaciones Oficiales
 
-Este curso te prepara completamente para las **tres certificaciones oficiales de Kubernetes**:
+Este curso nos prepara completamente para las **tres certificaciones oficiales de Kubernetes**:
 - **CKA (Certified Kubernetes Administrator)** - Para administradores
 - **CKAD (Certified Kubernetes Application Developer)** - Para desarrolladores  
 - **CKS (Certified Kubernetes Security Specialist)** - Para especialistas en seguridad
@@ -60,7 +60,7 @@ Este curso te prepara completamente para las **tres certificaciones oficiales de
 ## 📚 Índice del Curso {#índice}
 
 ### 🟢 Nivel Básico - Fundamentos de Kubernetes
-*Aprende los conceptos esenciales de Kubernetes desde cero*
+*Aprendemos los conceptos esenciales de Kubernetes desde cero*
 
 * [📖 Introducción a Kubernetes](./101.Introduccion.md) - ¿Qué es y por qué usarlo?
 * [🏗️ Arquitectura de Kubernetes](./102.Arquitectura.md) - Control Plane y Workers

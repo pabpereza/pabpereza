@@ -40,7 +40,7 @@ Bienvenido al curso de Ansible. Este primer capítulo cubre el bloque de fundame
 3. [Instalación y configuración](#instalación-y-configuración-️) — Requisitos, instalación paso a paso, primer ping, `ansible.cfg`.
 
 :::tip Vídeo asociado
-Cada capítulo del curso se corresponde con **un único vídeo** del [canal de YouTube](https://www.youtube.com/@Pabpereza). Si prefieres aprender en formato vídeo, aquí tienes el de este capítulo:
+Cada capítulo del curso se corresponde con **un único vídeo** del [canal de YouTube](https://www.youtube.com/@Pabpereza). Si preferimos aprender en formato vídeo, aquí tenemos el de este capítulo:
 :::
 
 [![¿Qué es Ansible y cómo funciona? (Instalación y Laboratorio) - Curso Ansible #1](https://img.youtube.com/vi/URK1t98tNEU/maxresdefault.jpg)](https://youtu.be/URK1t98tNEU)
@@ -51,7 +51,7 @@ Cada capítulo del curso se corresponde con **un único vídeo** del [canal de Y
 
 ## Introducción: ¿Qué es Ansible? 🚀
 
-Bienvenido al curso de Ansible. En esta introducción descubrirás qué es Ansible, por qué es una de las herramientas de automatización más populares del mundo DevOps, y cómo puede transformar la forma en que gestionas tu infraestructura.
+Bienvenido al curso de Ansible. En esta introducción descubrimos qué es Ansible, por qué es una de las herramientas de automatización más populares del mundo DevOps, y cómo puede transformar la forma en que gestionamos nuestra infraestructura.
 
 
 ### 🎯 ¿Qué es Ansible?
@@ -75,7 +75,7 @@ Ansible fue creado en 2012 por Michael DeHaan con un objetivo claro: hacer la au
 ### 🌟 Casos de uso principales
 
 #### 1. Gestión de configuración
-Mantén la coherencia en todos tus servidores. Si tienes 100 servidores web, asegúrate de que todos tengan la misma configuración de Nginx, los mismos certificados SSL y las mismas políticas de seguridad.
+Mantenemos la coherencia en todos nuestros servidores. Si tenemos 100 servidores web, nos aseguramos de que todos tengan la misma configuración de Nginx, los mismos certificados SSL y las mismas políticas de seguridad.
 
 **Ejemplo práctico:**
 ```yaml
@@ -95,19 +95,19 @@ Mantén la coherencia en todos tus servidores. Si tienes 100 servidores web, ase
 ```
 
 #### 2. Despliegue continuo (CI/CD)
-Integra Ansible en tus pipelines de Jenkins, GitLab CI o GitHub Actions para desplegar aplicaciones de forma automatizada y consistente.
+Integramos Ansible en nuestros pipelines de Jenkins, GitLab CI o GitHub Actions para desplegar aplicaciones de forma automatizada y consistente.
 
 #### 3. Orquestación multi-tier
-Coordina despliegues complejos que involucran bases de datos, load balancers, servidores de aplicación y más, en el orden correcto.
+Coordinamos despliegues complejos que involucran bases de datos, load balancers, servidores de aplicación y más, en el orden correcto.
 
 #### 4. Gestión de la nube
-Aprovisiona y gestiona recursos en AWS, Azure, Google Cloud, OpenStack y otras plataformas cloud.
+Aprovisionamos y gestionamos recursos en AWS, Azure, Google Cloud, OpenStack y otras plataformas cloud.
 
 #### 5. Cumplimiento y auditoría
-Garantiza que tu infraestructura cumple con estándares de seguridad (PCI-DSS, HIPAA, SOC2) aplicando configuraciones de forma automática y auditable.
+Garantizamos que nuestra infraestructura cumple con estándares de seguridad (PCI-DSS, HIPAA, SOC2) aplicando configuraciones de forma automática y auditable.
 
 #### 6. Disaster recovery
-Automatiza la reconstrucción completa de tu infraestructura en minutos, convirtiendo un desastre en un inconveniente menor.
+Automatizamos la reconstrucción completa de nuestra infraestructura en minutos, convirtiendo un desastre en un inconveniente menor.
 
 ### ⚔️ Ansible vs otras herramientas (Chef, Puppet, SaltStack)
 
@@ -138,9 +138,9 @@ graph LR
 ```
 
 **Beneficios:**
-- No necesitas instalar/mantener software adicional en tus servidores
+- No necesitamos instalar/mantener software adicional en nuestros servidores
 - Menor superficie de ataque (seguridad)
-- Arranque inmediato: si tiene SSH, puedes gestionarlo
+- Arranque inmediato: si tiene SSH, podemos gestionarlo
 
 **Chef/Puppet:**
 ```mermaid
@@ -156,12 +156,12 @@ graph LR
 ```
 
 **Inconvenientes:**
-- Debes instalar y mantener agentes en cada servidor
+- Debemos instalar y mantener agentes en cada servidor
 - Los agentes consumen recursos (CPU, RAM)
-- Si el agente falla, pierdes control del servidor
+- Si el agente falla, perdemos control del servidor
 
 ##### 2. **YAML legible**
-Ansible usa YAML, un formato de datos human-readable que puedes entender aunque no sepas programar.
+Ansible usa YAML, un formato de datos human-readable que podemos entender aunque no sepamos programar.
 
 **Ansible (YAML):**
 ```yaml
@@ -191,7 +191,7 @@ service { 'apache2':
 ##### 3. **Modelo Push vs Pull**
 
 **Ansible (Push):**
-- TÚ decides cuándo se ejecutan los cambios
+- NOSOTROS decidimos cuándo se ejecutan los cambios
 - Control total del timing
 - Ideal para CI/CD y despliegues bajo demanda
 
@@ -207,7 +207,7 @@ service { 'apache2':
 ##### 4. **Curva de aprendizaje**
 
 **Tiempo para ser productivo:**
-- **Ansible**: 🟢 1-2 días (si sabes SSH y YAML básico)
+- **Ansible**: 🟢 1-2 días (si sabemos SSH y YAML básico)
 - **SaltStack**: 🟡 1-2 semanas
 - **Chef**: 🔴 2-4 semanas (requiere conocimientos de Ruby)
 - **Puppet**: 🔴 2-4 semanas (requiere aprender su DSL)
@@ -218,9 +218,9 @@ Ansible no siempre es la mejor opción:
 
 ❌ **Infraestructura gigante (10,000+ nodos) con cambios frecuentes**: SaltStack es más rápido en ejecución masiva paralela.
 
-❌ **Necesitas un agente siempre monitorizando**: Puppet/Chef tienen agentes que pueden detectar drift (desviación) y autocorregir sin intervención manual.
+❌ **Necesitamos un agente siempre monitorizando**: Puppet/Chef tienen agentes que pueden detectar drift (desviación) y autocorregir sin intervención manual.
 
-❌ **Lógica de negocio compleja en Ruby**: Si tu equipo ya es experto en Ruby y Chef, migrar puede no aportar valor.
+❌ **Lógica de negocio compleja en Ruby**: Si nuestro equipo ya es experto en Ruby y Chef, migrar puede no aportar valor.
 
 ✅ **La mayoría de los demás casos**: Ansible es la opción más pragmática.
 
@@ -257,8 +257,8 @@ graph TD
 ```
 
 #### 1. **Control Node (nodo de control)**
-Es donde instalas y ejecutas Ansible. Puede ser:
-- Tu portátil local
+Es donde instalamos y ejecutamos Ansible. Puede ser:
+- Nuestro portátil local
 - Un servidor bastión/jump host
 - Un runner de CI/CD (Jenkins, GitHub Actions, GitLab Runner)
 
@@ -268,13 +268,13 @@ Es donde instalas y ejecutas Ansible. Puede ser:
 - Ansible instalado (`pip install ansible`)
 
 #### 2. **Managed Nodes (nodos gestionados)**
-Los sistemas que automatizas. **No necesitan Ansible instalado**, solo:
+Los sistemas que automatizamos. **No necesitan Ansible instalado**, solo:
 - **Linux/Unix**: SSH habilitado + Python 2.7 o 3.5+
 - **Windows**: WinRM habilitado + PowerShell 3.0+
 - **Dispositivos de red**: API REST o SSH
 
 #### 3. **Inventario (Inventory)**
-Un archivo (INI, YAML o script dinámico) que lista tus hosts y los agrupa.
+Un archivo (INI, YAML o script dinámico) que lista nuestros hosts y los agrupa.
 
 **Ejemplo (`hosts.ini`):**
 ```ini
@@ -300,7 +300,7 @@ Unidades de código reutilizable que ejecutan tareas específicas:
 - Más de 3,000 módulos incluidos + colecciones comunitarias
 
 #### 5. **Playbooks**
-Archivos YAML que definen el estado deseado de tu infraestructura. Son como "recetas" o "partituras" que Ansible ejecuta.
+Archivos YAML que definen el estado deseado de nuestra infraestructura. Son como "recetas" o "partituras" que Ansible ejecuta.
 
 #### 6. **Plugins**
 Extensiones que amplían las capacidades de Ansible:
@@ -332,26 +332,26 @@ sequenceDiagram
 
 #### Conocimientos recomendados
 
-##### Esenciales (debes tener)
+##### Esenciales (debemos tener)
 - ✅ **Linux básico**: Navegación por terminal, comandos básicos (ls, cd, cat, vim/nano)
-- ✅ **SSH**: Saber conectarte a un servidor remoto (`ssh user@host`)
+- ✅ **SSH**: Saber conectarnos a un servidor remoto (`ssh user@host`)
 - ✅ **YAML básico**: Entender la sintaxis (o aprender en el curso)
 
 ##### Útiles (ayudan mucho)
-- 🟡 **Git**: Control de versiones para tus playbooks
+- 🟡 **Git**: Control de versiones para nuestros playbooks
 - 🟡 **Docker**: Para practicar sin romper nada
 - 🟡 **Cloud básico**: AWS/Azure/GCP conceptos generales
 
-##### No necesarios (los aprenderás aquí)
+##### No necesarios (los aprenderemos aquí)
 - ❌ Programación avanzada
 - ❌ Experiencia previa con IaC
 - ❌ Certificaciones
 
 #### Entorno de práctica
 
-Para seguir el curso necesitarás:
+Para seguir el curso necesitaremos:
 
-1. **Un sistema de control (tu PC)**
+1. **Un sistema de control (nuestro PC)**
    - Linux, macOS o Windows con WSL
    - Python 3.8+ instalado
    - Editor de texto (VS Code recomendado con extensión YAML)
@@ -377,7 +377,7 @@ Para seguir el curso necesitarás:
 
 #### Verificación de prerrequisitos
 
-Antes de empezar, verifica que tienes todo listo:
+Antes de empezar, verificamos que tenemos todo listo:
 
 ```bash
 # ¿Tienes Python 3?
@@ -393,9 +393,9 @@ ssh usuario@ip_servidor  # Debe conectar sin errores
 echo "clave: valor" > test.yml && cat test.yml
 ```
 
-Si todos estos comandos funcionan, ¡estás listo! 🎉
+Si todos estos comandos funcionan, ¡estamos listos! 🎉
 
-### 🎓 Qué aprenderás en este curso
+### 🎓 Qué aprenderemos en este curso
 
 Este curso está estructurado en módulos progresivos:
 
@@ -444,10 +444,10 @@ Suscríbete al canal de YouTube para recibir la notificación.
 ### ¿qué es ansible? iac y evolución
 
 #### 🎻 La analogía: el director de orquesta
-Imagina que tienes que dirigir una orquesta de 100 músicos.
-*   **Método Manual (SysAdmin tradicional):** Vas músico por músico diciéndole qué nota tocar en cada momento. Te vuelves loco y la música suena fatal.
-*   **Scripts (Bash/Python):** Les das una partitura, pero si uno se pierde, la canción se rompe.
-*   **Ansible (IaC):** Eres el director. Tienes una partitura maestra (Playbook). Tú marcas el ritmo y el estado deseado ("¡Más fuerte los violines!"). Si un músico desafina, Ansible se encarga de corregirlo automáticamente para que coincida con la partitura.
+Imaginemos que tenemos que dirigir una orquesta de 100 músicos.
+*   **Método Manual (SysAdmin tradicional):** Vamos músico por músico diciéndole qué nota tocar en cada momento. Nos volvemos locos y la música suena fatal.
+*   **Scripts (Bash/Python):** Les damos una partitura, pero si uno se pierde, la canción se rompe.
+*   **Ansible (IaC):** Somos el director. Tenemos una partitura maestra (Playbook). Nosotros marcamos el ritmo y el estado deseado ("¡Más fuerte los violines!"). Si un músico desafina, Ansible se encarga de corregirlo automáticamente para que coincida con la partitura.
 
 #### 🧠 Concepto visual
 
@@ -473,7 +473,7 @@ graph TD
 #### 📘 Explicación técnica
 Ansible es una herramienta de **Infraestructura como Código (IaC)** open-source que automatiza el aprovisionamiento de software, la gestión de configuraciones y el despliegue de aplicaciones.
 
-A diferencia de los scripts tradicionales que son **imperativos** (haz esto, luego esto, luego esto), Ansible tiende a ser **declarativo**. Tú defines el **estado final deseado** (quiero que Nginx esté instalado y corriendo) y Ansible se encarga de los pasos necesarios para llegar ahí.
+A diferencia de los scripts tradicionales que son **imperativos** (haz esto, luego esto, luego esto), Ansible tiende a ser **declarativo**. Nosotros definimos el **estado final deseado** (queremos que Nginx esté instalado y corriendo) y Ansible se encarga de los pasos necesarios para llegar ahí.
 
 #### 💻 Código: Script vs Ansible
 
@@ -502,17 +502,17 @@ service nginx start
 ```
 
 #### 📝 Resumen
-*   Ansible permite definir tu infraestructura como código (IaC).
-*   Es declarativo: te centras en el "qué" (estado final), no en el "cómo".
+*   Ansible permite definir nuestra infraestructura como código (IaC).
+*   Es declarativo: nos centramos en el "qué" (estado final), no en el "cómo".
 *   Escala masivamente: gestiona 1 o 1000 servidores con el mismo esfuerzo.
 
 
 ### Arquitectura "Agentless"
 
 #### 🕵️ La analogía: la llave maestra
-Imagina que eres un consultor que visita oficinas.
-*   **Con Agente (Puppet/Chef):** Tienes que instalar un robot en cada oficina antes de poder trabajar. Si el robot se rompe, no puedes hacer nada.
-*   **Agentless (Ansible):** Usas la puerta estándar (SSH) que ya tienen todas las oficinas. Solo necesitas la llave (credenciales) para entrar, hacer tu trabajo y salir sin dejar rastro.
+Imaginemos que somos consultores que visitamos oficinas.
+*   **Con Agente (Puppet/Chef):** Tenemos que instalar un robot en cada oficina antes de poder trabajar. Si el robot se rompe, no podemos hacer nada.
+*   **Agentless (Ansible):** Usamos la puerta estándar (SSH) que ya tienen todas las oficinas. Solo necesitamos la llave (credenciales) para entrar, hacer nuestro trabajo y salir sin dejar rastro.
 
 #### 🧠 Concepto visual
 
@@ -533,7 +533,7 @@ sequenceDiagram
 ```
 
 #### 📘 Explicación técnica
-Ansible es **Agentless**. No requiere instalar ningún software adicional en los nodos que vas a gestionar (ni demonios, ni bases de datos).
+Ansible es **Agentless**. No requiere instalar ningún software adicional en los nodos que vamos a gestionar (ni demonios, ni bases de datos).
 
 Utiliza protocolos estándar existentes:
 *   **Linux/Unix:** SSH (Secure Shell).
@@ -543,7 +543,7 @@ Esto reduce drásticamente la carga administrativa y los agujeros de seguridad, 
 
 #### 💻 Requisitos técnicos
 
-**En el nodo de control (tu PC):**
+**En el nodo de control (nuestro PC):**
 *   Python instalado.
 *   Ansible instalado.
 
@@ -560,10 +560,10 @@ Esto reduce drásticamente la carga administrativa y los agujeros de seguridad, 
 ### Idempotencia
 
 #### 💡 La analogía: el interruptor de la luz
-Entras en una habitación y quieres luz.
-*   Si el interruptor está apagado, lo pulsas -> **Cambio de estado (Luz ON)**.
-*   Si el interruptor ya está encendido, lo miras y no haces nada -> **Estado mantenido (Luz ON)**.
-*   Si pulsas el interruptor 50 veces hacia la posición "ON", el resultado es el mismo: la luz está encendida y no explota la bombilla. Eso es **idempotencia**.
+Entramos en una habitación y queremos luz.
+*   Si el interruptor está apagado, lo pulsamos -> **Cambio de estado (Luz ON)**.
+*   Si el interruptor ya está encendido, lo miramos y no hacemos nada -> **Estado mantenido (Luz ON)**.
+*   Si pulsamos el interruptor 50 veces hacia la posición "ON", el resultado es el mismo: la luz está encendida y no explota la bombilla. Eso es **idempotencia**.
 
 #### 🧠 Concepto visual
 
@@ -582,7 +582,7 @@ flowchart LR
 #### 📘 Explicación técnica
 La **idempotencia** es la propiedad de realizar una operación varias veces sin cambiar el resultado más allá de la aplicación inicial.
 
-En Ansible, la mayoría de los módulos son idempotentes. Si ejecutas un playbook 100 veces, Ansible solo realizará cambios la primera vez. Las 99 veces restantes verificará que el estado es correcto y reportará "OK" (sin cambios). Esto es vital para la estabilidad.
+En Ansible, la mayoría de los módulos son idempotentes. Si ejecutamos un playbook 100 veces, Ansible solo realizará cambios la primera vez. Las 99 veces restantes verificará que el estado es correcto y reportará "OK" (sin cambios). Esto es vital para la estabilidad.
 
 #### 💻 Caso práctico
 
@@ -601,15 +601,15 @@ ok: [servidor1]       <-- Ansible verifica y no hace nada. Estado: OK (Verde)
 ```
 
 #### 📝 Resumen
-*   Idempotencia significa que puedes ejecutar el mismo código múltiples veces sin efectos secundarios negativos.
+*   Idempotencia significa que podemos ejecutar el mismo código múltiples veces sin efectos secundarios negativos.
 *   Garantiza la consistencia: el resultado final siempre es el estado deseado.
-*   Ansible te informa si hubo cambios (`changed`) o si ya estaba todo correcto (`ok`).
+*   Ansible nos informa si hubo cambios (`changed`) o si ya estaba todo correcto (`ok`).
 
 
 ### Nodo de control vs nodos gestionados
 
 #### 🎮 La analogía: la consola y el personaje
-*   **Nodo de Control:** Es tu mando de la consola. Desde aquí envías las órdenes. Es donde está tu inteligencia.
+*   **Nodo de Control:** Es nuestro mando de la consola. Desde aquí enviamos las órdenes. Es donde está nuestra inteligencia.
 *   **Nodos Gestionados:** Son los personajes del videojuego. Reciben las órdenes y actúan. Pueden ser guerreros (Linux), magos (Windows) o incluso el entorno (Routers).
 
 #### 🧠 Concepto visual
@@ -636,9 +636,9 @@ graph TD
 #### 📘 Explicación técnica
 
 1.  **Nodo de Control (Control Node):**
-    *   Es la máquina donde instalas y ejecutas Ansible.
-    *   Puede ser tu portátil, un servidor bastión o un runner de CI/CD (Jenkins/GitHub Actions).
-    *   **Limitación:** No soporta Windows nativo como nodo de control (debes usar WSL).
+    *   Es la máquina donde instalamos y ejecutamos Ansible.
+    *   Puede ser nuestro portátil, un servidor bastión o un runner de CI/CD (Jenkins/GitHub Actions).
+    *   **Limitación:** No soporta Windows nativo como nodo de control (debemos usar WSL).
 
 2.  **Nodos Gestionados (Managed Nodes):**
     *   Son los dispositivos que automatizas (Servidores, Nube, Redes).
@@ -676,33 +676,33 @@ ansible all -i hosts.ini -m ping
 
 ## Instalación y configuración ⚙️
 
-Prepara tu entorno de trabajo para empezar a automatizar.
+Preparamos nuestro entorno de trabajo para empezar a automatizar.
 
 
 ### Requisitos previos (python)
 
 #### 📋 Requisitos técnicos
 
-##### 1. En el nodo de control (tu ordenador)
-Es donde instalas Ansible.
+##### 1. En el nodo de control (nuestro ordenador)
+Es donde instalamos Ansible.
 *   **Sistema Operativo:** Linux, macOS, o WSL (Windows Subsystem for Linux). **No** soporta Windows nativo.
 *   **Python:** Versión 3.8 o superior recomendada.
 
-##### 2. En los nodos gestionados (tus servidores)
-Son las máquinas que vas a controlar.
+##### 2. En los nodos gestionados (nuestros servidores)
+Son las máquinas que vamos a controlar.
 *   **Python:** Necesitan tener Python instalado (versión 2.7+ o 3.5+).
 *   **SSH:** Acceso vía SSH y credenciales válidas.
 
 
-Si ves un número, ¡estás listo para repostar e instalar el Ferrari!
+Si vemos un número, ¡estamos listos para repostar e instalar el Ferrari!
 
 ### Instalación (Ubuntu/RHEL/macOS)
 
-Vamos a instalar Ansible en tu **Nodo de Control**. Recuerda que **NO** necesitas instalar nada en los servidores que vas a gestionar (agentless, ¿recuerdas?).
+Vamos a instalar Ansible en nuestro **Nodo de Control**. Recordemos que **NO** necesitamos instalar nada en los servidores que vamos a gestionar (agentless, ¿recordamos?).
 
 #### 📦 Guía de instalación por S.O.
 
-Elige tu sistema operativo y sigue los pasos.
+Elegimos nuestro sistema operativo y seguimos los pasos.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -743,7 +743,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="macos" label="macOS">
 
-    Si usas Mac, la forma más sencilla y limpia es usar **Homebrew**.
+    Si usamos Mac, la forma más sencilla y limpia es usar **Homebrew**.
 
     ```bash
     # Instalar Ansible con Brew
@@ -753,7 +753,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="pip" label="Python (Pip)">
 
-    Esta es una opción universal si tienes Python instalado. Es útil para entornos virtuales o si tu distro no tiene paquetes actualizados.
+    Esta es una opción universal si tenemos Python instalado. Es útil para entornos virtuales o si nuestra distro no tiene paquetes actualizados.
 
     ```bash
     # 1. Asegúrate de tener pip
@@ -772,13 +772,13 @@ import TabItem from '@theme/TabItem';
 
 #### ✅ Verificación
 
-Una vez termine la instalación, verifica que todo ha ido bien preguntándole a Ansible su versión:
+Una vez termine la instalación, verificamos que todo ha ido bien preguntándole a Ansible su versión:
 
 ```bash
 ansible --version
 ```
 
-Deberías ver una salida similar a esta:
+Deberíamos ver una salida similar a esta:
 ```text
 ansible [core 2.14.x]
   config file = /etc/ansible/ansible.cfg
@@ -787,40 +787,40 @@ ansible [core 2.14.x]
   python version = 3.10.x
 ```
 
-¡Listo! Ya tienes el poder de la automatización en tus manos.
+¡Listo! Ya tenemos el poder de la automatización en nuestras manos.
 
 ### 1. Laboratorio práctico
 
-Para aprender Ansible necesitas romper cosas. Y mejor romper un entorno de pruebas que el servidor de producción de tu empresa.
+Para aprender Ansible necesitamos romper cosas. Y mejor romper un entorno de pruebas que el servidor de producción de nuestra empresa.
 
-Vamos a montar un entorno local usando **Docker**. Si no sabes de docker o simplemente quieres repasar, te recuerdo que tienes un [curso completo de Docker aquí](../docker/README.md)
+Vamos a montar un entorno local usando **Docker**. Si no sabemos de docker o simplemente queremos repasar, recordamos que tenemos un [curso completo de Docker aquí](../docker/README.md)
 
-He creado un repositorio que automatiza el proceso, por lo que no tienes que saber nada. Si prefieres montártelo por tu cuenta, también puedes replicarlo con 3 VMs a las que tengas permisos de administrador y acceso SSH.
+He creado un repositorio que automatiza el proceso, por lo que no tenemos que saber nada. Si preferimos montárnoslo por nuestra cuenta, también podemos replicarlo con 3 VMs a las que tengamos permisos de administrador y acceso SSH.
 
 Clona el repositorio [pabpereza/ansible-laboratory](https://github.com/pabpereza/ansible-laboratory).
 ```bash
 git clone https://github.com/pabpereza/ansible-laboratory.git
 ```
 
-Dale permisos de ejecución al script de setup:
+Le damos permisos de ejecución al script de setup:
 ```bash
 cd ansible-laboratory
 chmod +x setup.sh
 ```
 
-Ejecuta el script para montar el laboratorio y sigue los pasos del menú interactivo:
+Ejecutamos el script para montar el laboratorio y seguimos los pasos del menú interactivo:
 ```bash
 ./setup.sh
 ```
 
-Para este curso, te recomiendo usar la opción **Local**, esta requiere tener Docker instalado. Te dará a elegir el número de targets (o servidores), te recomiendo 3 para el curso.
+Para este curso, recomendamos usar la opción **Local**, esta requiere tener Docker instalado. Nos dará a elegir el número de targets (o servidores); recomendamos 3 para el curso.
 
-Además, si no quieres usar tu host como nodo de control, el script te da la opción de montar un contenedor extra que hará de nodo de control y lenvanta una instalacia de VS Code Server para que puedas editar tus playbooks desde el navegador y no manches tu entorno local.
+Además, si no queremos usar nuestro host como nodo de control, el script nos da la opción de montar un contenedor extra que hará de nodo de control y lenvanta una instalacia de VS Code Server para que podamos editar nuestros playbooks desde el navegador y no manchemos nuestro entorno local.
 
 
 ### 2. Archivo ansible.cfg
 
-Ansible funciona "out of the box", pero para trabajar como un profesional, necesitas configurarlo a tu gusto.
+Ansible funciona "out of the box", pero para trabajar como un profesional, necesitamos configurarlo a nuestro gusto.
 
 #### 🧠 Precedencia de configuración
 
@@ -846,14 +846,14 @@ flowchart TD
 ```
 
 #### 💡 Best practice
-La mejor práctica es tener un archivo `ansible.cfg` **en la carpeta de tu proyecto**.
-*   Así, la configuración viaja con tu código (Git).
-*   Tus compañeros tendrán la misma configuración que tú.
-*   Evitas romper otros proyectos si cambias la configuración global.
+La mejor práctica es tener un archivo `ansible.cfg` **en la carpeta de nuestro proyecto**.
+*   Así, la configuración viaja con nuestro código (Git).
+*   Nuestros compañeros tendrán la misma configuración que nosotros.
+*   Evitamos romper otros proyectos si cambiamos la configuración global.
 
 #### 📝 Ejemplo de ansible.cfg básico
 
-Crea un archivo llamado `ansible.cfg` en tu carpeta de proyecto con este contenido recomendado para empezar:
+Creamos un archivo llamado `ansible.cfg` en nuestra carpeta de proyecto con este contenido recomendado para empezar:
 
 ```ini
 [defaults]
@@ -878,12 +878,12 @@ become_method = sudo
 become_user = root
 ```
 
-Con esto, Ansible sabrá dónde mirar y cómo comportarse sin que tengas que pasarle mil parámetros por línea de comandos.
+Con esto, Ansible sabrá dónde mirar y cómo comportarse sin que tengamos que pasarle mil parámetros por línea de comandos.
 
 
 
-##### 3. Crear tu inventario
-Crea un archivo llamado `hosts.ini` (o `inventory`) en la misma carpeta. Recuerda ajustar esta información con los puertos que te haya puesto automáticamente el script de setup para cada target.
+##### 3. Crear nuestro inventario
+Creamos un archivo llamado `hosts.ini` (o `inventory`) en la misma carpeta. Recordamos ajustar esta información con los puertos que nos haya puesto automáticamente el script de setup para cada target.
 
 ```ini
 [servers]
@@ -900,17 +900,17 @@ ansible_ssh_pass=ansible # Contraseña por defecto del laboratorio, en producci�
 
 
 ##### 4. ¡Prueba de fuego! 🔥
-Ejecuta tu primer comando ad-hoc para ver si hay conexión (ping):
+Ejecutamos nuestro primer comando ad-hoc para ver si hay conexión (ping):
 
 ```bash
 ansible all -i hosts.ini -m ping
 ```
 
-Si ves algo verde que dice `"ping": "pong"`, ¡felicidades! 🎉 Tienes tu laboratorio de Ansible funcionando.
+Si vemos algo verde que dice `"ping": "pong"`, ¡felicidades! 🎉 Tenemos nuestro laboratorio de Ansible funcionando.
 
 
 #### 🧹 Limpieza
-Cuando termines de jugar, puedes ir a docker y parar todos los contenedores. Si quieres eliminar o reinstalar el laboratorio. Sigue el menú interactivo: 
+Cuando terminemos de jugar, podemos ir a docker y parar todos los contenedores. Si queremos eliminar o reinstalar el laboratorio, seguimos el menú interactivo: 
 ```bash
 ./setup.sh
 ```

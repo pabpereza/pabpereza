@@ -296,4 +296,4 @@ tmux source-file ~/.tmux.conf
 
 ---
 
-**💡 Pro tip**: Crea aliases para tus sesiones más comunes. Por ejemplo: `alias dev='tmux new-session -d -s development || tmux attach -t development'`
+**💡 Pro tip**: Creemos aliases para nuestras sesiones más comunes. Por ejemplo: `alias dev='tmux new-session -d -s development || tmux attach -t development'`

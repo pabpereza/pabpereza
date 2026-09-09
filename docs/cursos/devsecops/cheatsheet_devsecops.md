@@ -30,7 +30,7 @@ slug: cheatsheet_devsecops_comandos_gitleaks_semgrep_trivy_checkov_cosign
 
 Todos los comandos del curso en una página. Ninguno necesita instalar nada más que Docker.
 
-Los ejemplos asumen que estás dentro del [repositorio de prácticas](https://github.com/pabpereza/devsecops-demo):
+Los ejemplos asumen que estamos dentro del [repositorio de prácticas](https://github.com/pabpereza/devsecops-demo):
 
 ```bash
 git clone https://github.com/pabpereza/devsecops-demo

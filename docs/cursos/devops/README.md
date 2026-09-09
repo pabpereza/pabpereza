@@ -32,7 +32,7 @@ sidebar_label: ♾️ DevOps
 
 **¡Este curso está en desarrollo! Puedes seguirme aquí o en YouTube para ver las actualizaciones.**
 
-Bienvenido al curso de DevOps gratuito y en español. Empieza desde cero, sin dar por hecho que sabes nada de CI/CD ni de infraestructura, y llega hasta un nivel intermedio.
+Bienvenido al curso de DevOps gratuito y en español. Empezamos desde cero, sin dar por hecho que sabemos nada de CI/CD ni de infraestructura, y llegamos hasta un nivel intermedio.
 
 El curso está estructurado alrededor de una idea: DevOps no es un conjunto de herramientas, es una forma de trabajar en la que cultura, automatización y medición se refuerzan entre sí. Por eso empezamos por la cultura y no por Jenkins.
 
@@ -67,12 +67,12 @@ El curso está estructurado alrededor de una idea: DevOps no es un conjunto de h
 * [Cheatsheet DevOps](cheatsheet_devops.md) — comandos y snippets
 * [Herramientas esenciales](herramientas.md) — el stack por categorías
 
-## ¿Qué aprenderás?
+## ¿Qué aprenderemos?
 
-Al terminar el curso serás capaz de:
+Al terminar el curso seremos capaces de:
 
 - ✅ Explicar qué es DevOps sin recitar una lista de herramientas
-- ✅ Medir tu proceso de entrega con las métricas DORA
+- ✅ Medir nuestro proceso de entrega con las métricas DORA
 - ✅ Trabajar con Git en equipo y automatizar releases
 - ✅ Gestionar infraestructura como código con Terraform
 - ✅ Diseñar pipelines de CI/CD que no tarden media hora

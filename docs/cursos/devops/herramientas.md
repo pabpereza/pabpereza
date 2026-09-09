@@ -211,4 +211,4 @@ Características:
 ```
 
 
-**Las herramientas evolucionan constantemente. Mantente actualizado y enfócate en entender conceptos antes que herramientas específicas.**
+**Las herramientas evolucionan constantemente. Mantengámonos actualizados y enfoquémonos en entender conceptos antes que herramientas específicas.**

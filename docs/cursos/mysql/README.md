@@ -30,9 +30,9 @@ sidebar_label: 🐬 MySQL
 
 **¡Este curso está diseñado para dominar uno de los motores de bases de datos más utilizados del mundo!**
 
-## 🚀 ¿Qué aprenderás en este curso?
+## 🚀 ¿Qué aprenderemos en este curso?
 
-Este curso te llevará de la mano por el ecosistema de MySQL, cubriendo desde la sintaxis básica de SQL hasta conceptos avanzados de programación en base de datos. Está enfocado a:
+Este curso nos llevará de la mano por el ecosistema de MySQL, cubriendo desde la sintaxis básica de SQL hasta conceptos avanzados de programación en base de datos. Está enfocado a:
 
 - **Desarrolladores Backend** que necesitan gestionar la persistencia de sus aplicaciones.
 - **Administradores de Sistemas** que buscan especializarse en la gestión de datos.
@@ -41,29 +41,29 @@ Este curso te llevará de la mano por el ecosistema de MySQL, cubriendo desde la
 
 ### 💼 Preparación para Carrera Profesional
 
-Dominar MySQL es una de las habilidades más demandadas en el sector IT. Este curso te prepara para:
+Dominar MySQL es una de las habilidades más demandadas en el sector IT. Este curso nos prepara para:
 - **Diseñar bases de datos** robustas y escalables.
 - **Optimizar el rendimiento** mediante el uso correcto de índices y procedimientos.
 - **Gestionar la seguridad** de los datos, usuarios y permisos.
 - **Automatizar tareas** mediante el uso de Triggers y Eventos.
 
-> Todo el curso está pensado para ser práctico, con ejemplos reales que puedes aplicar en tus proyectos personales o profesionales.
+> Todo el curso está pensado para ser práctico, con ejemplos reales que podemos aplicar en nuestros proyectos personales o profesionales.
 
 **⭐ Apoya mi contenido [siguiéndome en YouTube](https://www.youtube.com/@Pabpereza) y [GitHub](https://github.com/pabpereza/pabpereza), dando likes en los vídeos y una estrella a este repositorio.**
 
 # Índice del Curso
 
 ### 🟢 Nivel Básico - Fundamentos de MySQL
-*Aprende los conceptos esenciales y manipulación de datos básica*
+*Aprendemos los conceptos esenciales y manipulación de datos básica*
 
 * [⌨️ Comandos Básicos y CRUD](./101.Comandos_basicos.md) - Primeros pasos en la terminal
-* [🔍 Cláusulas y Operadores de Filtrado](./102.Clausulas_operadores.md) - Refinando tus búsquedas
+* [🔍 Cláusulas y Operadores de Filtrado](./102.Clausulas_operadores.md) - Refinando nuestras búsquedas
 * [📝 Modificación y Actualización de Datos](./103.Modificacion_datos.md) - INSERT, UPDATE y DELETE
 * [🔗 JOINS: Combinación de Tablas](./104.Combinacion_joins.md) - Relacionando información
 * [🔢 Funciones en Consultas SQL](./105.Funciones_en_consultas.md) - Agregación y manipulación
 
 ### 🔵 Nivel Intermedio - Programación y Lógica
-*Domina la lógica interna de MySQL y la automatización*
+*Dominamos la lógica interna de MySQL y la automatización*
 
 * [📦 Uso de Variables en MySQL](./106.Variables.md) - Almacenamiento temporal de datos
 * [⚙️ Procedimientos Almacenados y Funciones](./107.Procedimientos_y_funciones.md) - Reutilización de lógica
@@ -82,7 +82,7 @@ Dominar MySQL es una de las habilidades más demandadas en el sector IT. Este cu
 
 1. **⭐ Dale estrella a este repositorio para apoyar el proyecto**
 2. **🔔 Suscríbete al [canal de YouTube](https://www.youtube.com/@Pabpereza?sub_confirmation=1)**
-3. **📖 Comienza con los [Comandos Básicos](./101.Comandos_basicos.md)**
+3. **📖 Empezamos con los [Comandos Básicos](./101.Comandos_basicos.md)**
 
 ---
 

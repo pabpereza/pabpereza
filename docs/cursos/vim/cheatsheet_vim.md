@@ -293,4 +293,4 @@ Cualquier comando puede ser precedido por un número:
 
 ---
 
-**💡 Pro tip**: Imprime esta página y tenla cerca mientras aprendes. Con el tiempo no la necesitarás.
+**💡 Pro tip**: Imprimamos esta página y tengámosla cerca mientras aprendemos. Con el tiempo no la necesitaremos.

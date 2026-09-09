@@ -478,4 +478,4 @@ kubectl get events --field-selector reason=Failed
 
 ---
 
-**Este cheatsheet es una referencia rápida. Para implementaciones detalladas, consulta cada capítulo específico del curso.**
+**Este cheatsheet es una referencia rápida. Para implementaciones detalladas, consultemos cada capítulo específico del curso.**

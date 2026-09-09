@@ -25,17 +25,17 @@ keywords:
 
 # Curso Vim + Tmux: Productividad Terminal Extrema
 
-**¡Domina el terminal como un ninja! Aprende a trabajar a la velocidad del pensamiento con Vim y Tmux**
+**¡Dominemos el terminal como un ninja! Aprendamos a trabajar a la velocidad del pensamiento con Vim y Tmux**
 
 TODO: Banner de curso
 
-Bienvenidos al curso más completo de Vim y Tmux en español. Este curso está diseñado para transformarte de usuario de terminal básico a un verdadero maestro de la productividad en línea de comandos.
+Bienvenidos al curso más completo de Vim y Tmux en español. Este curso está diseñado para transformarnos de usuarios de terminal básicos a verdaderos maestros de la productividad en línea de comandos.
 
 ## 🎯 ¿Por qué este curso?
 
-- **Velocidad**: Aprende a editar texto y navegar por archivos más rápido que nunca
-- **Eficiencia**: Reduce el uso del mouse al mínimo y mantén tus manos en el teclado
-- **Productividad**: Gestiona múltiples proyectos, sesiones y ventanas como un profesional
+- **Velocidad**: Aprendamos a editar texto y navegar por archivos más rápido que nunca
+- **Eficiencia**: Reduzcamos el uso del mouse al mínimo y mantengamos nuestras manos en el teclado
+- **Productividad**: Gestionemos múltiples proyectos, sesiones y ventanas como profesionales
 - **Versatilidad**: Funciona en cualquier servidor, contenedor o sistema remoto
 - **Universal**: Vim está disponible en prácticamente cualquier sistema Unix/Linux
 
@@ -55,16 +55,16 @@ Todo el curso estará disponible en vídeo en esta [LISTA DE YOUTUBE](https://yo
 * [Cheatsheet Vim](cheatsheet_vim.md)
 * [Cheatsheet Tmux](cheatsheet_tmux.md)
 
-## 🎯 ¿Qué aprenderás?
+## 🎯 ¿Qué aprenderemos?
 
-Al finalizar este curso serás capaz de:
+Al finalizar este curso seremos capaces de:
 
 - ✅ Editar texto a velocidad profesional sin tocar el mouse
 - ✅ Navegar y gestionar proyectos complejos eficientemente
 - ✅ Configurar un entorno de desarrollo completo en terminal
 - ✅ Trabajar con múltiples sesiones y proyectos simultáneamente
 - ✅ Integrar Vim en workflows de DevOps y desarrollo
-- ✅ Personalizar tu entorno para máxima productividad
+- ✅ Personalizar nuestro entorno para máxima productividad
 
 ## 🛠️ Requisitos previos
 
@@ -88,4 +88,4 @@ TODO: Repositorio personal dotfiles
 3. Comparte tu experiencia en los comentarios
 
 
-**¡Comencemos a acelerar tu productividad en terminal! 🚀**
+**¡Comencemos a acelerar nuestra productividad en terminal! 🚀**

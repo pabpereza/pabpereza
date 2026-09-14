@@ -70,7 +70,7 @@ Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, po
 
 - Estructura por video: `.channel/<slug>/{research.md, script.md, assets.md, seo.md, social.md, thumbnails/, diagrams/}`
 - Las skills `/research`, `/guion`, `/assets`, `/revision`, `/social`, `/sponsors` operan sobre esta carpeta
-- **Edición de vídeo**: el agente **Gimli** y los comandos `/cortar` y `/montar` editan el vídeo largo desde el crudo. El motor vive en el submódulo `.video-editor/` (Remotion + ffmpeg, render por GPU). Los masters finales se escriben en `.channel/<slug>/assets/`. Ver `.video-editor/CLAUDE.md`.
+- **Edición de vídeo**: el agente **Gimli** y los comandos `/cortar` y `/montar` editan el vídeo largo desde el crudo (y **Bilbo** con `/shorts`, los verticales). El corte, montaje y render se hacen en **DaVinci Resolve Studio a través de su servidor MCP oficial** (`DaVinci_Resolve`, tools `mcp__DaVinci_Resolve__*`); el análisis (transcripción/EDL) y los gráficos alfa (Remotion) viven en el submódulo `.video-editor/`, cuyos pipelines Python de Resolve son módulos importables desde el MCP (nunca `python3 pipelines/*.py`). Los masters finales se escriben en `.channel/<slug>/assets/`. Ver `.video-editor/CLAUDE.md`.
 - Para videos ya publicados puede no quedar material provisional; en ese caso partir de la URL de YouTube (transcripción, metadatos) y reconstruir lo que se pida
 - Slug del proyecto = slug del video en YouTube (kebab-case)
 

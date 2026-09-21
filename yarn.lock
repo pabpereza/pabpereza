@@ -5031,10 +5031,10 @@ dot-prop@^6.0.1:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^17.3.1:
-  version "17.4.2"
-  resolved "https://registry.npmjs.org/dotenv/-/dotenv-17.4.2.tgz"
-  integrity sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==
+dotenv@^18.0.0:
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-18.0.0.tgz#a34cd3dd095fbfd46c282b835e380cd38f13b9e4"
+  integrity sha512-16YSUvsKtKbwrTbESvtTSZzzJUug6jdFdqiBFg9Q6Bk1JY9r0hAtrtTiWxdI9YrsgOTmkjZRdgU0n3LnwGpECw==
 
 dunder-proto@^1.0.1:
   version "1.0.1"

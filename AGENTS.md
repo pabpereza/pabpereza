@@ -1,147 +1,209 @@
-# Specialized Agents and Workflows (Agnostic Version)
+# GitHub Copilot Instructions
 
-This document defines the specialized roles and automated workflows for content creation, technical research, and repository management. These definitions are designed to be used by any AI agent (Gemini, Claude, etc.) to maintain consistency in tone, quality, and structure.
+Esta guía proporciona directrices para que los agentes de IA que trabajen en este repositorio de contenido educativo de DevSecOps.
+
+## Arquitectura del Proyecto
+
+Este es un sitio **Docusaurus v3** con:
+- **Build automatizado**: `npm run prebuild` genera el grafo de contenido antes de cada build
+- **Búsqueda**: Utiliza `docusaurus-lunr-search` para indexación
+- **Mermaid**: Soporte para diagramas mediante `@docusaurus/theme-mermaid`
+- **Grafo de contenido**: React Force Graph 2D para visualización de relaciones
+
+## Estructura de Contenido
+
+### Blog Posts (`/blog/`)
+- IMPORTANTE: Añadr nuevos artículos de blog a la carpeta `blog/.ideas` como borradores iniciales`
+- Usar archivo `.md` con nombre del artículo (NO `index.md`)
+- Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
+- Imágenes en la misma carpeta que el artículo
+- Añadir `draft: true` por defecto hasta revisión final
+- Evita usar `:` dentro del metadatado de markdown ( title, description, slug, tags... etc)
+- **Ejemplo de frontmatter**:
+```yaml
+---
+slug: ruta_devsecops_recomendaciones_2025
+title: Ruta DevSecOps, recomendaciones para empezar en 2025
+tags: [devsecops, seguridad, devops]
+keywords: [devsecops, seguridad, devops, recomendaciones, 2025]
+authors: pabpereza
+date: 2025-06-05
+---
+```
+- Añade la instrucción `<!-- truncate -->` después de la introducción del artículo (después del primer párrafo del artículo, obviando los checklist técnicos) para que Docusaurus genere un resumen automático en la página principal del blog.
+- Si te piden publicar el artículo, mueve la carpeta del artíuclo a la carpeta del año correspondiente, por ejemplo `blog/2025/mi_articulo/` y cambia el frontmatter para quitar `draft: true`
+
+### Documentación de Cursos (`/docs/cursos/`)
+**Sistema de numeración específico**: `101.Introduccion.md`, `102.Instalacion.md`, `201.Limites_recursos.md`
+- Series 100: Contenido básico
+- Series 200+: Contenido avanzado
+- Incluir `README.md` como índice principal de cada curso
+
+**Frontmatter de un capítulo — 7 campos exactos:**
+
+```yaml
+---
+title: <título largo SEO, con acentos, separador " - " o coma. NUNCA ":">
+description: >-
+  <bloque folded, 2-3 líneas, sin ":">
+keywords:
+  - <9-16 keywords: término español, término inglés, comando literal,
+  - long-tail conversacional, comparativa "X vs Y", y cierre con
+  - "tutorial" / "paso a paso" / "buenas practicas">
+sidebar_label: <N>. <2-4 palabras>
+tags:
+  - <1-5, kebab-case si son compuestos>
+image: 'https://pabpereza.dev/img/banner_<curso>.png'
+slug: <snake_case, sin acentos ni ñ, frase SEO de 7-11 palabras>
+---
+```
+
+- **NUNCA `authors` ni `date` en cursos.** Son exclusivos de `/blog/`.
+- El `README.md` del curso lleva los mismos campos **menos `slug`**, y su `sidebar_label` empieza con emoji (es lo que da nombre a la categoría del sidebar, porque no hay ningún `_category_.json`).
+- La URL publicada es `pabpereza.dev/docs/cursos/<curso>/<slug>` (los slugs de raíz son solo del blog).
+- **Longitud objetivo: 90-250 líneas por capítulo.** Si te pasas de ahí, probablemente el capítulo debería partirse o el contenido pertenece a otro curso.
+- Tras cambiar cualquier `slug`, limpiar la caché o el build fallará con enlaces rotos falsos:
+  `rm -rf .docusaurus node_modules/.cache && npm run build`
+
+### Canal de YouTube (`/.channel/`)
+Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, posts de RRSS, sponsors) viven en `.channel/<slug>/` de este repositorio. **No** buscar en `~/youtube/` ni fuera de este repo.
+
+- Estructura por video: `.channel/<slug>/{research.md, script.md, assets.md, seo.md, social.md, thumbnails/, diagrams/}`
+- Las skills `/research`, `/guion`, `/assets`, `/revision`, `/social`, `/sponsors` operan sobre esta carpeta
+- **Edición de vídeo**: el agente **Gimli** y los comandos `/cortar` y `/montar` editan el vídeo largo desde el crudo (y **Bilbo** con `/shorts`, los verticales). El corte, montaje y render se hacen en **DaVinci Resolve Studio a través de su servidor MCP oficial** (`DaVinci_Resolve`, tools `mcp__DaVinci_Resolve__*`); el análisis (transcripción/EDL) y los gráficos alfa (Remotion) viven en el submódulo `.video-editor/`, cuyos pipelines Python de Resolve son módulos importables desde el MCP (nunca `python3 pipelines/*.py`). Los masters finales se escriben en `.channel/<slug>/assets/`. Ver `.video-editor/CLAUDE.md`.
+- Para videos ya publicados puede no quedar material provisional; en ese caso partir de la URL de YouTube (transcripción, metadatos) y reconstruir lo que se pida
+- Slug del proyecto = slug del video en YouTube (kebab-case)
+
+## Skills por Curso
+
+Cuando trabajes en contenido de un curso específico, utiliza la skill correspondiente para obtener contexto experto en la materia:
+
+| Curso | Ruta | Skill |
+|-------|------|-------|
+| Ansible | `/docs/cursos/ansible/` | `ansible-expert` |
+| DevOps | `/docs/cursos/devops/` | `devops-engineer` |
+| DevSecOps | `/docs/cursos/devsecops/` | `devops-engineer` + `docker-expert` |
+| Docker | `/docs/cursos/docker/` | `docker-expert` |
+| Kubernetes | `/docs/cursos/kubernetes/` | `kubernetes-specialist` |
+| MySQL | `/docs/cursos/mysql/` | `mysql` |
+| Vim | `/docs/cursos/vim/` | `neovim` |
+
+## Estilo de Redacción
+
+### Principios de Escritura
+- Usa un tono conversacional pero profesional con un ligero toque humorístico
+- Explica acrónimos y términos técnicos en su primera aparición
+- Incluye analogías para conceptos complejos
+- Estructura el contenido con subtítulos claros
+- Usa listas y bullets para información concisa
+- Evita párrafos largos; máximo 4-5 líneas
+- Utiliza diagramas en mermaid para ilustrar conceptos técnicos
+- Usa ejemplos de código cuando sea relevante
+- Utiliza analogías y metáforas para facilitar la comprensión
+- El contenido debe estar enfocado al SEO pero sin ser 'clickbait'
+
+### Progresión Pedagógica
+- Comienza con conceptos básicos antes de avanzar
+- Incluye ejemplos prácticos después de cada concepto
+- Proporciona ejercicios o retos cuando sea apropiado
+- Resume puntos clave al final de cada sección
+
+## Formato Markdown
+
+### Estructura de Documentos
+```markdown
+# Título Principal
+
+## Introducción
+Breve descripción del tema y objetivos de aprendizaje.
+
+## Conceptos Fundamentales
+### Subtema 1
+Explicación clara con ejemplos.
+
+### Subtema 2
+Continuación lógica del tema anterior.
+
+## Ejemplos Prácticos
+Casos de uso reales y código cuando sea aplicable.
+
+## Conclusiones
+Resumen de puntos clave y próximos pasos.
+
+## Recursos Adicionales
+Enlaces y referencias para profundizar.
+```
+
+### Uso de Elementos Markdown
+- **Énfasis**: Usa `**negrita**` para conceptos importantes
+- **Código**: Usa `código inline` para comandos y `bloques de código` para ejemplos
+- **Citas**: Usa `>` para destacar definiciones o puntos importantes
+- **Listas**: Prefiere listas numeradas para pasos secuenciales
+- **Enlaces**: Usa texto descriptivo para enlaces, evita "clic aquí"
+
+## Convenciones para Imágenes
+
+### Nomenclatura
+- Usa nombres descriptivos: `docker-architecture-diagram.png`
+- Incluye alt text descriptivo para accesibilidad
+- Organiza en carpetas por tema dentro de `assets/`
+
+### Formato y Calidad
+- Prefiere formato PNG para diagramas y capturas
+- Usa JPG para fotografías
+- Optimiza el tamaño sin perder calidad
+- Incluye imágenes en alta resolución cuando sea necesario
+
+## Contexto DevSecOps
+
+### Enfoque de Contenido
+- **Contenido educativo**: Cursos progresivos desde nivel básico a avanzado
+- **Público objetivo**: Desarrolladores, administradores de sistemas, y profesionales DevOps
+- **Metodología**: Learning by doing con ejemplos prácticos y casos reales
+- **Temas principales**: Docker, Kubernetes, Seguridad, DevOps, CI/CD
+
+### Terminología Específica
+- **DevSecOps**: Integración de seguridad en el ciclo DevOps
+- **Contenedores**: Docker, Podman, seguridad de contenedores
+- **Orquestación**: Kubernetes, Docker Swarm
+- **CI/CD**: Integración y despliegue continuo
+- **Monitorización**: Observabilidad y logging
+
+## Ejemplos de Contenido de Calidad
+
+### Curso Técnico (Estructura Real)
+```markdown
+---
+title: Curso de Docker desde cero
+sidebar_label: Introducción
+slug: curso_de_docker_desde_cero
+tags: [docker, devops, contenedores]
+---
+
+# Introducción a Docker
+
+Bienvenido al curso de Docker donde aprenderás desde la instalación hasta la implementación en producción.
+
+## ¿Qué aprenderás?
+- Conceptos fundamentales de contenedores
+- Gestión de imágenes y contenedores
+- Docker Compose para aplicaciones multi-contenedor
+- Mejores prácticas de seguridad
+
+## Tu primer contenedor
+```bash
+docker run hello-world
+```
+
+Este comando descarga y ejecuta tu primer contenedor...
+```
+
+## Recursos Adicionales
+
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Clean Code Principles](https://github.com/ryanmcdermott/clean-code-javascript)
+- [Web Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ---
 
-## 🎭 Specialized Roles (Agents)
-
-### **Boromir — Technical Reviewer**
-*   **Role:** Ensures technical accuracy, security, and reproducibility.
-*   **Domain:** Technical verification of research, scripts, and assets.
-*   **Guidelines:**
-    *   Verify versions, commands, and YAMLs against official documentation.
-    *   Classify findings: **CRITICAL** (blocks pipeline), **IMPROVEMENT** (clarity/updates), **SUGGESTION** (extra value).
-    *   Never block without a verifiable finding.
-    *   Tone: Professional, rigorous, and security-focused.
-
-### **Frodo — Script Architect**
-*   **Role:** Technical writer and scriptwriter.
-*   **Domain:** YouTube scripts and technical documentation.
-*   **Guidelines:**
-    *   Standard format: Table with `Time | Visual | Audio`.
-    *   Hook in the first 45s (pain point -> promise -> introduction).
-    *   Tone: "Senior explaining to Junior at a coffee shop" (direct, technical, relatable).
-    *   Never start with "Hello everyone, welcome...".
-    *   Include a `## Code Examples` section at the end with clean snippets.
-
-### **Legolas — Researcher & SEO Specialist**
-*   **Role:** Deep research and search engine optimization.
-*   **Domain:** Tech research (official docs, benchmarks) and SEO (titles, tags, descriptions).
-*   **Guidelines:**
-    *   Primary sources first: official docs > technical blogs > opinions.
-    *   Cite URLs for every verifiable claim.
-    *   SEO: Focus on CTR + technical precision.
-    *   Always analyze competition and identifying unique angles.
-
-### **Merry — Art Director & Asset Manager**
-*   **Role:** Visual assets, diagrams, and animations.
-*   **Domain:** Thumbnail prompts, Mermaid diagrams, and Remotion animations.
-*   **Guidelines:**
-    *   **Mermaid:** Embed inline in `assets.md` AND save as `.mmd` files. Avoid characters that break GitHub/IDE previews (pipes in labels, complex HTML entities).
-    *   **Thumbnails:** Neo-minimalist style (Black background, bold text, max 2 elements).
-    *   **Remotion:** Manage animations in the render repository.
-
-### **Pippin — Community Manager**
-*   **Role:** Social media and engagement.
-*   **Domain:** Copywriting for LinkedIn, X (Twitter), YouTube Community, and TikTok.
-*   **Guidelines:**
-    *   Direct and technical tone, no corporate fluff.
-    *   LinkedIn: Hook -> 3-5 paragraphs -> Closing question.
-    *   X: Main tweet + 3-4 tweet thread.
-    *   YouTube: Focus on polls and community engagement.
-
-### **Sam — Sponsorship Manager**
-*   **Role:** Business development and sponsorship fit.
-*   **Domain:** Identifying sponsors and analyzing content-brand alignment.
-*   **Guidelines:**
-    *   Analyze audience fit (DevOps/SRE focus).
-    *   Verify brand reputation and technical relevance.
-    *   Propose natural integration points in the script.
-
-### **Gimli — Video Editor**
-*   **Role:** Edita y monta el vídeo largo desde el crudo.
-*   **Domain:** Edición editorial (cortar errores/silencios, J-cuts) + enriquecido
-    (intro, capítulos, lower-thirds, b-roll). Opera el submódulo `.video-editor/`
-    (Remotion + ffmpeg, render por GPU/VideoToolbox, transcripción por GPU/mlx_whisper).
-*   **Guidelines:**
-    *   Input = una sola pista grabada (rostro + pantalla). Dos motores: ffmpeg corta y
-        compone; Remotion solo los gráficos (alfa).
-    *   El **EDL es sagrado**: ningún corte sin aprobación de Pablo (revisión en vivo en
-        Remotion Studio: composiciones `Montaje` / `Review`, sin renderizar).
-    *   Detecta retakes **reformulados** leyendo el transcript (lo que el detector
-        automático no pilla).
-    *   Consume `script.md` (Frodo) y `assets/` (Merry); masters finales →
-        `.channel/<slug>/assets/`. Plantillas validadas → `.video-editor/registry/`.
-
----
-
-## 📼 Subrepo de edición (`.video-editor/`)
-
-El motor de edición de vídeo vive en el **submódulo** `.video-editor/` (repo
-`pabpereza/video-editor`, disco local — NO iCloud). Contiene los pipelines (transcribe,
-analyze, edl, cut, review), las composiciones Remotion y la biblioteca de plantillas
-validadas. Gimli opera siempre desde ahí (`cd .video-editor`). Ver su `CLAUDE.md` y
-`DESIGN.md` para la arquitectura completa.
-
----
-
-## 🛠 Standard Workflows (Commands)
-
-Any agent should follow these steps when asked to perform the following tasks:
-
-### **/research <slug | topic>**
-1.  If the slug exists in `.channel/`, read `_index.md`.
-2.  Perform deep research using search/fetch tools (prioritize official documentation).
-3.  Generate `research.md` (concepts, architecture, gotchas, sources).
-4.  Generate `seo.md` (3 titles, description, tags, keywords).
-
-### **/guion <slug | instruction>**
-1.  Read `_index.md`, `research.md`, and `seo.md`.
-2.  Draft `script.md` using the standard table format.
-3.  Include `## Code Examples` with all snippets used.
-4.  Tone: Senior-to-Junior, no "welcome" intros, strong hook.
-
-### **/assets <slug>**
-1.  Read `_index.md` and `script.md`.
-2.  Generate `assets.md` with:
-    *   5 Thumbnail prompts (neo-minimalist, 5 accent colors).
-    *   Mermaid diagrams for key concepts (inline + independent files).
-    *   List of additional assets (screenshots, icons).
-
-### **/revision <slug> [type]**
-1.  Read `_index.md` and the target files (`research`, `script`, or `assets`).
-2.  Verify technical claims against primary sources.
-3.  Generate a report with CRITICAL, IMPROVEMENT, and SUGGESTION categories.
-4.  Provide an action plan for the responsible agent.
-
-### **/social <slug | URL>**
-1.  Read `seo.md` and `script.md` (or fetch URL metadata).
-2.  Generate platform-specific drafts (LinkedIn, X, YouTube, TikTok).
-3.  Save output to `social.md`.
-
-### **/sponsors <slug | topic>**
-1.  Read `_index.md` and `script.md` for context.
-2.  Identify 3-5 potential sponsors.
-3.  Analyze fit, pricing, and potential conflicts.
-4.  Recommend top candidates with justification.
-
----
-
-## 📦 Skills and Specialized Knowledge
-
-The repository includes specialized skill sets that should be activated for specific technical tasks:
-- **ansible-expert**: Advanced automation and configuration management.
-- **devops-engineer**: CI/CD pipelines, SRE principles, and infrastructure.
-- **docker-expert**: Containerization, optimization, and security.
-- **kubernetes-specialist**: Orchestration, networking, and cloud-native patterns.
-- **neovim**: Development environment optimization.
-
----
-
-## 📐 Project Structure and Conventions
-
-*   **Video Projects:** `.channel/<slug>/`
-*   **Blog Posts:** `blog/.ideas/` (drafts) -> `blog/YYYY/` (published)
-*   **Technical Docs:** `docs/cursos/` (following 100/200/300 numbering)
-*   **Images:** Descriptive naming, optimized size, alt text included.
+> **Nota**: Estas instrucciones deben evolucionar con el proyecto. Actualiza este archivo según las necesidades del equipo y las lecciones aprendidas.

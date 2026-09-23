@@ -51,6 +51,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
+- [Monta tu propio WAF gratis en Docker con SafeLine](https://pabpereza.dev/blog/waf_gratis_en_docker_safeline)
 - [¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?](https://pabpereza.dev/blog/2026/la_IA_nos_hace_mas_tontos/la_IA_nos_hace_mas_tontos)
 - [Migrar de Ingress a Gateway API en Kubernetes sin downtime](https://pabpereza.dev/blog/migrar_ingress_a_gateway_api_kubernetes)
 - [Instala tu propio asistente IA en 10 minutos con OpenClaw](https://pabpereza.dev/blog/openclaw-instalacion-primeros-pasos)
@@ -60,7 +61,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 - [Apple Container - La apuesta de Apple por los contenedores nativos en macOS](https://pabpereza.dev/blog/apple_container_analisis_contenedores_macos)
 - [HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)](https://pabpereza.dev/blog/homelab-1-rack)
 - [Kubeastronaut, mi experiencia y todas las dudas](https://pabpereza.dev/blog/2025/kubeastronaut_cncf/kubeastronaut_cncf)
-- [Depurar builds de Docker en VS Code como un profesional](https://pabpereza.dev/blog/debug_docker_build_vscode)
 
 
 ---

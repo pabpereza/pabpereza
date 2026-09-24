@@ -7,7 +7,7 @@ Esta guía proporciona directrices para que los agentes de IA que trabajen en es
 Este es un sitio **Docusaurus v3** con:
 - **Build automatizado**: `npm run prebuild` genera el grafo de contenido antes de cada build
 - **Búsqueda**: Utiliza `docusaurus-lunr-search` para indexación
-- **Mermaid**: Soporte para diagramas mediante `@docusaurus/theme-mermaid`
+- **Mermaid**: `@docusaurus/theme-mermaid` sigue instalado solo por los artículos antiguos; no se usa en contenido nuevo (se sustituye por GIFs de animaciones)
 - **Grafo de contenido**: React Force Graph 2D para visualización de relaciones
 
 ## Estructura de Contenido
@@ -97,7 +97,7 @@ Cuando trabajes en contenido de un curso específico, utiliza la skill correspon
 - Estructura el contenido con subtítulos claros
 - Usa listas y bullets para información concisa
 - Evita párrafos largos; máximo 4-5 líneas
-- Utiliza diagramas en mermaid para ilustrar conceptos técnicos
+- **No uses Mermaid** en artículos nuevos. Para ilustrar conceptos técnicos usa el GIF web de las animaciones del vídeo asociado (las genera Merry en `.channel/<slug>/assets/`, `*-web.gif`), en la misma carpeta que el artículo o en `docs/cursos/<curso>/img/`
 - Usa ejemplos de código cuando sea relevante
 - Utiliza analogías y metáforas para facilitar la comprensión
 - El contenido debe estar enfocado al SEO pero sin ser 'clickbait'

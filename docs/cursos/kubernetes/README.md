@@ -65,29 +65,29 @@ Este curso nos prepara completamente para las **tres certificaciones oficiales d
 * [📖 Introducción a Kubernetes](./101.Introduccion.md) - ¿Qué es y por qué usarlo?
 * [🏗️ Arquitectura de Kubernetes](./102.Arquitectura.md) - Control Plane y Workers
 * [⚙️ Instalación con kubeadm](./103.Instalacion.md) - Cluster productivo
-* [🎮 Instalación sencilla, minikube y k3s](./104.Playgrounds.md) - Entornos de prueba
-* [📄 Manifiestos de Kubernetes](./105.Conceptos.md) - YAML y kubectl básico
-* [🐳 Pods y contenedores](./106.Pods.md) - Unidad básica de Kubernetes
-* [🏷️ Namespaces y recursos](./107.Namespaces.md) - Organización y aislamiento
-* [🚀 Deployment y ReplicaSet](./108.Deployments.md) - Gestión de aplicaciones
-* [⚡ DaemonSet y StatefulSet](./109.DSySS.md) - Aplicaciones especializadas
-* [⏰ Jobs y cronjobs](./110.Jobs.md) - Tareas programadas
-* [🌐 Servicios](./111.Services.md) - Comunicación entre pods
-* [🚪 Ingress](./112.Ingress_controller.md) - Exposición de servicios
-* [🎯 Gateway](./113.Gateway.md) - Gateway API moderna
-* [❤️ Probes y healthchecks](./114.Probes_live_readiness.md) - Monitoreo de salud
-* [🔐 Secrets y configmaps](./115.Secrets_configmaps.md) - Gestión de configuración
-* [💾 Almacenamiento](./116.Almacenamiento.md) - Persistent Volumes
-* [📊 Rangos y cuotas](./117.Rangos_quotas.md) - Límites de recursos
-* [📈 Autoescalado](./118.Autoscaling.md) - Escalado automático
-* [🔒 Seguridad](./119.Seguridad.md) - Fundamentos de seguridad
-* [👤 Usuarios y RBAC](./120.Usuarios.md) - Control de acceso
-* [🎭 Roles y ClusterRoles](./121.Roles.md) - Permisos granulares
-* [🎯 Scheduling y labels](./122.Scheduling_labels.md) - Programación de pods
-* [⚖️ Taints y tolerations](./123.Taints_tolerations.md) - Restricciones de nodos
-* [📝 Logging](./124.Logging.md) - Gestión de logs
-* [📦 Helm](./125.Helm.md) - Gestor de paquetes
-* [🖥️ Perfiles y herramientas visuales](./126.Perfiles_software_dashboard.md) - Dashboards
+* [🎮 Instalación sencilla, minikube y k3s](./103.Playgrounds.md) - Entornos de prueba
+* [📄 Manifiestos de Kubernetes](./104.Conceptos.md) - YAML y kubectl básico
+* [🐳 Pods y contenedores](./105.Pods.md) - Unidad básica de Kubernetes
+* [🏷️ Namespaces y recursos](./106.Namespaces.md) - Organización y aislamiento
+* [🚀 Deployment y ReplicaSet](./107.Deployments.md) - Gestión de aplicaciones
+* [⚡ DaemonSet y StatefulSet](./108.DSySS.md) - Aplicaciones especializadas
+* [⏰ Jobs y cronjobs](./109.Jobs.md) - Tareas programadas
+* [🌐 Servicios](./110.Services.md) - Comunicación entre pods
+* [🚪 Ingress](./111.Ingress_controller.md) - Exposición de servicios
+* [🎯 Gateway](./112.Gateway.md) - Gateway API moderna
+* [❤️ Probes y healthchecks](./113.Probes_live_readiness.md) - Monitoreo de salud
+* [🔐 Secrets y configmaps](./114.Secrets_configmaps.md) - Gestión de configuración
+* [💾 Almacenamiento](./115.Almacenamiento.md) - Persistent Volumes
+* [📊 Rangos y cuotas](./116.Rangos_quotas.md) - Límites de recursos
+* [📈 Autoescalado](./117.Autoscaling.md) - Escalado automático
+* [🔒 Seguridad](./118.Seguridad.md) - Fundamentos de seguridad
+* [👤 Usuarios y RBAC](./119.Usuarios.md) - Control de acceso
+* [🎭 Roles y ClusterRoles](./120.Roles.md) - Permisos granulares
+* [🎯 Scheduling y labels](./121.Scheduling_labels.md) - Programación de pods
+* [⚖️ Taints y tolerations](./122.Taints_tolerations.md) - Restricciones de nodos
+* [📝 Logging](./123.Logging.md) - Gestión de logs
+* [📦 Helm](./124.Helm.md) - Gestor de paquetes
+* [🖥️ Perfiles y herramientas visuales](./125.Perfiles_software_dashboard.md) - Dashboards
 
 ### 🔵 Kubernetes para Administradores (Especialización CKA)
 *Administración avanzada de clusters y preparación para certificación CKA*

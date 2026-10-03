@@ -84,6 +84,9 @@ function extractFileData(filePath, rootDir) {
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContent);
     
+    // Los borradores no se publican: enlazarlos daría un 404
+    if (data.draft === true) return null;
+    
     const url = createDocusaurusUrl(filePath, rootDir, data);
     const title = data.sidebar_label || data.title || path.basename(filePath, path.extname(filePath));
     
@@ -208,6 +211,8 @@ function scanDirectory(dirPath, extensions = ['.md', '.mdx']) {
         const stat = fs.statSync(fullPath);
         
         if (stat.isDirectory()) {
+          // Docusaurus ignora carpetas ocultas (p. ej. blog/.ideas): no generan página
+          if (item.startsWith('.')) continue;
           scanRecursive(fullPath);
         } else if (extensions.some(ext => item.endsWith(ext))) {
           results.push(fullPath);

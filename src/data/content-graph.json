@@ -739,7 +739,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/kubernetes_playgrounds_minikube_k3s_docker_desktop_y_entornos_de_prueba",
-      "title": "4. Instalaciones simples y playgrounds",
+      "title": "3 bis. Instalaciones simples y playgrounds",
       "type": "content",
       "category": "docs",
       "description": "Aprende a instalar Kubernetes en entornos locales y playgrounds gratuitos - Minikube, k3s, Docker Desktop, Rancher Desktop, Play with Kubernetes y más.",
@@ -750,7 +750,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/conceptos_basicos_y_kubectl_manifiestos_yaml_en_kubernetes",
-      "title": "5. Manifiestos",
+      "title": "4. Manifiestos",
       "type": "content",
       "category": "docs",
       "description": "Aprende los conceptos fundamentales de Kubernetes, cómo usar manifiestos YAML y dominar kubectl desde cero. Guía completa con ejemplos prácticos.",
@@ -761,7 +761,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/pods_en_kubernetes_guia_completa_desde_cero",
-      "title": "6. Pods",
+      "title": "5. Pods",
       "type": "content",
       "category": "docs",
       "description": "Aprende todo sobre Pods en Kubernetes - la unidad básica de ejecución. Cómo crear, gestionar y eliminar pods con ejemplos prácticos y mejores prácticas.",
@@ -772,7 +772,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/namespaces_y_contextos_en_kubernetes_organizacion_y_aislamiento",
-      "title": "7. Namespaces y Contextos",
+      "title": "6. Namespaces y Contextos",
       "type": "content",
       "category": "docs",
       "description": "Domina los Namespaces y Contextos en Kubernetes para organizar recursos y aislar aplicaciones. Guía completa con comandos y ejemplos prácticos.",
@@ -783,7 +783,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/deployments_en_kubernetes_rolling_updates_y_gestion_de_aplicaciones",
-      "title": "8. Deployments",
+      "title": "7. Deployments",
       "type": "content",
       "category": "docs",
       "description": "Domina Deployments en Kubernetes - rolling updates, rollbacks, scaling, estrategias de despliegue y gestión completa del ciclo de vida de aplicaciones.",
@@ -794,7 +794,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/daemonset_y_statefulset_en_kubernetes_guia_completa",
-      "title": "9. DaemonSets y StatefulSets",
+      "title": "8. DaemonSets y StatefulSets",
       "type": "content",
       "category": "docs",
       "description": "Aprende a gestionar DaemonSets y StatefulSets en Kubernetes para crear aplicaciones persistentes y distribuidas. Guía completa con ejemplos prácticos.",
@@ -805,7 +805,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/jobs_y_cronjobs_en_kubernetes_automatizacion_de_tareas",
-      "title": "10. Jobs",
+      "title": "9. Jobs",
       "type": "content",
       "category": "docs",
       "description": "Domina Jobs y CronJobs en Kubernetes para automatizar tareas batch y programadas. Aprende patrones de ejecución, backoffLimit y configuración avanzada.",
@@ -816,7 +816,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/servicios_en_kubernetes_clusterip_nodeport_y_loadbalancer",
-      "title": "11. Services",
+      "title": "10. Services",
       "type": "content",
       "category": "docs",
       "description": "Aprende a exponer aplicaciones en Kubernetes con Services. Domina ClusterIP, NodePort, LoadBalancer y endpoints con ejemplos prácticos.",
@@ -827,7 +827,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
-      "title": "12. Ingress Controller",
+      "title": "11. Ingress Controller",
       "type": "content",
       "category": "docs",
       "description": "Aprende Ingress Controllers en Kubernetes - instalación NGINX Ingress, configuración SSL/TLS, path-based routing y host-based routing con ejemplos prácticos.",
@@ -838,7 +838,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
-      "title": "13. Gateway API",
+      "title": "12. Gateway API",
       "type": "content",
       "category": "docs",
       "description": "Aprende a configurar Gateway API en Kubernetes para gestionar tráfico externo de forma avanzada. Guía completa con ejemplos prácticos y mejores prácticas.",
@@ -849,7 +849,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/health_checks_en_kubernetes_liveness_readiness_y_startup_probes",
-      "title": "14. Healthchecks y Probes",
+      "title": "13. Healthchecks y Probes",
       "type": "content",
       "category": "docs",
       "description": "Domina los Health Checks en Kubernetes con Liveness, Readiness y Startup Probes. Asegura la disponibilidad y rendimiento de tus aplicaciones.",
@@ -860,7 +860,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/secrets_y_configmaps_en_kubernetes_gestion_de_configuracion",
-      "title": "15. Secrets y ConfigMaps",
+      "title": "14. Secrets y ConfigMaps",
       "type": "content",
       "category": "docs",
       "description": "Aprende a gestionar configuraciones y datos sensibles en Kubernetes con Secrets y ConfigMaps. Guía completa con ejemplos y mejores prácticas de seguridad.",
@@ -871,7 +871,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/persistent_volumes_y_persistent_volume_claims_en_kubernetes",
-      "title": "16. Almacenamiento persistente",
+      "title": "15. Almacenamiento persistente",
       "type": "content",
       "category": "docs",
       "description": "Guía completa y práctica sobre los conceptos de almacenamiento en Kubernetes aprovisionamiento estático y dinámico con PV, PVC, StorageClass y el ecosistema CSI. Incluye diagramas, ejemplos YAML y cuotas.",
@@ -882,7 +882,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/resource_quotas_y_limit_ranges_en_kubernetes_gestion_de_recursos",
-      "title": "17. Rangos y Quotas",
+      "title": "16. Rangos y Quotas",
       "type": "content",
       "category": "docs",
       "description": "Aprende a gestionar recursos en Kubernetes con Resource Quotas y Limit Ranges. Controla CPU, memoria y almacenamiento en namespaces con ejemplos prácticos.",
@@ -893,7 +893,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/autoscaling_en_kubernetes_hpa_vpa_y_cluster_autoscaler",
-      "title": "18. Autoscaling",
+      "title": "17. Autoscaling",
       "type": "content",
       "category": "docs",
       "description": "Domina el autoscaling en Kubernetes con HPA, VPA y Cluster Autoscaler. Aprende escalado horizontal y vertical automático para aplicaciones en producción.",
@@ -904,7 +904,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
-      "title": "19. Seguridad",
+      "title": "18. Seguridad",
       "type": "content",
       "category": "docs",
       "description": "Aprende seguridad en Kubernetes - RBAC, Service Accounts, Network Policies, Pod Security Standards, admission controllers y hardening para certificación CKS.",
@@ -915,7 +915,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/usuarios_y_service_accounts_en_kubernetes_gestion_de_identidades",
-      "title": "20. Usuarios",
+      "title": "19. Usuarios",
       "type": "content",
       "category": "docs",
       "description": "Aprende a gestionar usuarios, Service Accounts y autenticación en Kubernetes. Configura certificados, tokens y contextos para acceso seguro al cluster.",
@@ -926,7 +926,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/rbac_en_kubernetes_roles_clusterroles_y_rolebindings",
-      "title": "21. RBAC",
+      "title": "20. RBAC",
       "type": "content",
       "category": "docs",
       "description": "Domina RBAC en Kubernetes con Roles, ClusterRoles y RoleBindings. Aprende control de acceso granular y permisos para certificación CKA y seguridad.",
@@ -937,7 +937,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/scheduling_avanzado_en_kubernetes_nodeselector_affinity_y_anti_affinity",
-      "title": "22. Scheduling",
+      "title": "21. Scheduling",
       "type": "content",
       "category": "docs",
       "description": "Aprende scheduling avanzado en Kubernetes con NodeSelector, Node Affinity, Pod Affinity y Anti-Affinity. Controla la ubicación de pods con labels y selectores.",
@@ -948,7 +948,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/taints_y_tolerations_en_kubernetes_control_avanzado_de_scheduling",
-      "title": "23. Taints y Tolerations",
+      "title": "22. Taints y Tolerations",
       "type": "content",
       "category": "docs",
       "description": "Domina Taints y Tolerations en Kubernetes para controlar dónde se ejecutan los pods. Aprende scheduling avanzado con ejemplos prácticos y casos de uso reales.",
@@ -959,7 +959,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/logging_en_kubernetes_gestion_de_logs_y_troubleshooting",
-      "title": "24. Logs",
+      "title": "23. Logs",
       "type": "content",
       "category": "docs",
       "description": "Aprende gestión completa de logs en Kubernetes - kubectl logs, agregación con ELK Stack, Fluentd, troubleshooting y debugging de aplicaciones en producción.",
@@ -970,7 +970,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/helm_para_kubernetes_gestion_de_aplicaciones_con_charts",
-      "title": "25. Helm",
+      "title": "24. Helm",
       "type": "content",
       "category": "docs",
       "description": "Aprende Helm para Kubernetes - instalación, creación de charts, gestión de releases, valores y plantillas. Simplifica despliegues complejos con el gestor de paquetes.",
@@ -981,7 +981,7 @@
     },
     {
       "id": "/docs/cursos/kubernetes/dashboards_y_herramientas_de_kubernetes_kubernetes_dashboard_k9s_lens",
-      "title": "26. Dashboards y Herramientas",
+      "title": "25. Dashboards y Herramientas",
       "type": "content",
       "category": "docs",
       "description": "Descubre las mejores herramientas visuales para Kubernetes - Dashboard oficial, k9s, Lens, kubectl plugins y herramientas de administración gráfica.",
@@ -1519,83 +1519,6 @@
       "connected": false
     },
     {
-      "id": "/blog/3-cosas-que-obsesionan-a-los-devops",
-      "title": "3 cosas que obsesionan a los DevOps",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/3-cosas-que-obsesionan-a-los-devops",
-      "slug": "3-cosas-que-obsesionan-a-los-devops",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/blog/5_trucos_para_construir_node_mas_rapido",
-      "title": "5 trucos para construir aplicaciones Node más rápido",
-      "type": "content",
-      "category": "blog",
-      "description": "Descubre 5 trucos para optimizar la construcción de aplicaciones Node.js, mejorando la velocidad y eficiencia en el desarrollo.",
-      "url": "/blog/5_trucos_para_construir_node_mas_rapido",
-      "slug": "5_trucos_para_construir_node_mas_rapido",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/blog/aligerar_contenedores_mejorar_seguridad",
-      "title": "Técnicas para aligerar contenedores y mejorar su seguridad",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/aligerar_contenedores_mejorar_seguridad",
-      "slug": "aligerar_contenedores_mejorar_seguridad",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/blog/docker:_vs_podman_rancher_2025_quien_ganara",
-      "title": "Docker vs Podman vd Rancher en 2025, ¿cuál es la herramienta definitiva?",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/docker:_vs_podman_rancher_2025_quien_ganara",
-      "slug": "docker:_vs_podman_rancher_2025_quien_ganara",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/blog/el_combo_perfecto",
-      "title": "El combo perfecto - Docker, VSCode, WSL, Linux y Windows 11.",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/el_combo_perfecto",
-      "slug": "el_combo_perfecto",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/blog/Tu propio registry privado",
-      "title": "Registros de contenedores y alternativas a Dockerhub",
-      "type": "content",
-      "category": "blog",
-      "description": "",
-      "url": "/blog/Tu propio registry privado",
-      "slug": "Tu propio registry privado",
-      "val": 6,
-      "connected": false
-    },
-    {
-      "id": "/blog/tu_propio_homelab",
-      "title": "Crea tu propio homelab en 2025",
-      "type": "content",
-      "category": "blog",
-      "description": "Crea tu propio homelab en 2025",
-      "url": "/blog/tu_propio_homelab",
-      "slug": "tu_propio_homelab",
-      "val": 6,
-      "connected": false
-    },
-    {
       "id": "/blog/docker_desktop_de_pago",
       "title": "¿Docker desktop de pago?",
       "type": "content",
@@ -2102,6 +2025,17 @@
       "connected": false
     },
     {
+      "id": "/blog/waf_gratis_en_docker_safeline",
+      "title": "Monta tu propio WAF gratis en Docker con SafeLine",
+      "type": "content",
+      "category": "blog",
+      "description": "",
+      "url": "/blog/waf_gratis_en_docker_safeline",
+      "slug": "waf_gratis_en_docker_safeline",
+      "val": 6,
+      "connected": false
+    },
+    {
       "id": "/blog/windows-en-docker-kvm",
       "title": "Windows en Docker: Cómo ejecutar Windows 11 dentro de un contenedor",
       "type": "content",
@@ -2148,6 +2082,26 @@
     {
       "source": "/docs/cursos/ansible/ansible_roles_templates_galaxy",
       "target": "/docs/cursos/ansible/ansible_modulos_idempotencia",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/ansible_roles_templates_galaxy",
+      "target": "/docs/cursos/ansible/ansible_playbooks_yaml_sintaxis",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales",
+      "target": "/docs/cursos/ansible/ansible_cicd_jenkins_github_actions",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales",
+      "target": "/docs/cursos/ansible/ansible_modulos_idempotencia",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/ansible/ansible_seguridad_vault_ssh_credenciales",
+      "target": "/docs/cursos/ansible/ansible_errores_depuracion",
       "type": "internal_link"
     },
     {

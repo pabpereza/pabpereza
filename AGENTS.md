@@ -17,6 +17,7 @@ Este es un sitio **Docusaurus v3** con:
 - Usar archivo `.md` con nombre del artículo (NO `index.md`)
 - Incluir metadatos con `slug`, `authors: pabpereza`, `tags`, `keywords`
 - Imágenes en la misma carpeta que el artículo
+- **Portada**: si la entrada acompaña a un vídeo, usa su miniatura como imagen de la entrada (`image: ./<slug>-miniatura.jpg` en el frontmatter, JPG ~1280 px en la carpeta del artículo)
 - Añadir `draft: true` por defecto hasta revisión final
 - Evita usar `:` dentro del metadatado de markdown ( title, description, slug, tags... etc)
 - **Ejemplo de frontmatter**:
@@ -82,7 +83,7 @@ Todo sale por el **MCP de Postiz** (siempre como borrador para que Pablo publiqu
 |------|----------|
 | Vídeo largo | YouTube, lo sube Pablo desde Resolve (no pasa por Postiz); Gandalf aplica el SEO |
 | Short | Instagram, TikTok y YouTube Shorts |
-| Artículo (blog o curso) | Traducido al inglés en `.channel/.crosspost/`, a Medium y dev.to con `canonical` a pabpereza.dev |
+| Artículo (blog o curso) | Traducido al inglés en `.channel/<slug>/crosspost.md` (carpeta del proyecto; se archiva con el resto de assets al cerrar el vídeo), a Medium y dev.to con `canonical` a pabpereza.dev |
 | Post puntual | X y Threads; Instagram si lleva foto; preguntar si también LinkedIn y Telegram |
 | Promo de vídeo nuevo | LinkedIn, X, Threads e Instagram; Comunidad de YouTube vía Gandalf (Chrome) |
 

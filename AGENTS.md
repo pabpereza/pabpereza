@@ -74,6 +74,20 @@ Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, po
 - Para videos ya publicados puede no quedar material provisional; en ese caso partir de la URL de YouTube (transcripción, metadatos) y reconstruir lo que se pida
 - Slug del proyecto = slug del video en YouTube (kebab-case)
 
+### Publicación en RRSS (Postiz)
+
+Todo sale por el **MCP de Postiz** (siempre como borrador para que Pablo publique o programe desde su UI), con el comando `/publicar <tipo>`. Detalle completo en `.claude/commands/publicar.md`.
+
+| Tipo | Destinos |
+|------|----------|
+| Vídeo largo | YouTube, lo sube Pablo desde Resolve (no pasa por Postiz); Gandalf aplica el SEO |
+| Short | Instagram, TikTok y YouTube Shorts |
+| Artículo (blog o curso) | Traducido al inglés en `.channel/.crosspost/`, a Medium y dev.to con `canonical` a pabpereza.dev |
+| Post puntual | X y Threads; Instagram si lleva foto; preguntar si también LinkedIn y Telegram |
+| Promo de vídeo nuevo | LinkedIn, X, Threads e Instagram; Comunidad de YouTube vía Gandalf (Chrome) |
+
+Los ficheros locales (MP4, fotos) se suben antes con `.channel/.management/postiz/postiz_upload.sh`.
+
 ## Skills por Curso
 
 Cuando trabajes en contenido de un curso específico, utiliza la skill correspondiente para obtener contexto experto en la materia:

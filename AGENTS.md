@@ -79,15 +79,18 @@ Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, po
 
 Todo sale por el **MCP de Postiz** (siempre como borrador para que Pablo publique o programe desde su UI), con el comando `/publicar <tipo>`. Detalle completo en `.claude/commands/publicar.md`.
 
+> **Provisional (2026-10-04)**: Instagram, Threads y TikTok aún no están operativos en Postiz, así que salen por el **MCP de Buffer** (también como borrador). El resto (X, LinkedIn, YouTube Shorts, Telegram) sigue en Postiz. Cuando Postiz tenga los tres listos, se elimina esta nota y la sección de Buffer de `publicar.md`.
+
 | Tipo | Destinos |
 |------|----------|
 | Vídeo largo | YouTube, lo sube Pablo desde Resolve (no pasa por Postiz); Gandalf aplica el SEO |
 | Short | Instagram, TikTok y YouTube Shorts |
-| Artículo (blog o curso) | Traducido al inglés en `.channel/<slug>/crosspost.md` (carpeta del proyecto; se archiva con el resto de assets al cerrar el vídeo), a Medium y dev.to con `canonical` a pabpereza.dev |
 | Post puntual | X y Threads; Instagram si lleva foto; preguntar si también LinkedIn y Telegram |
 | Promo de vídeo nuevo | LinkedIn, X, Threads e Instagram; Comunidad de YouTube vía Gandalf (Chrome) |
 
 Los ficheros locales (MP4, fotos) se suben antes con `.channel/.management/postiz/postiz_upload.sh`.
+
+**Navegador**: cuando un flujo necesite navegador (Postiz, Buffer, Medium, dev.to, YouTube Studio...), usa **siempre la extensión Claude in Chrome** (tools `mcp__claude-in-chrome__*`, con las sesiones de Pablo), nunca el navegador integrado. Opera sin quitarle el foco del ratón: JavaScript y lectura de página antes que clics y capturas, y API/MCP antes que navegador cuando exista.
 
 ## Skills por Curso
 

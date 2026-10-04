@@ -6,6 +6,7 @@ tags: [seguridad, docker, devsecops, waf, homelab]
 keywords: [waf gratis docker, safeline waf, firewall de aplicaciones web, waf self hosted, waf open source, proteger vps de ataques, bloquear sql injection, waf para homelab, dvwa, modsecurity alternativa, reverse proxy, owasp top 10]
 authors: pabpereza
 date: 2026-09-22
+image: ./safeline-waf-docker-miniatura.jpg
 ---
 
 Un campo de texto de una web cualquiera. Escribes una comilla, añades cuatro palabras y, de forma casi mágica, la base de datos te escupe todos los usuarios con sus contraseñas. No has entrado al servidor ni tienes credenciales: has lanzado una **inyección SQL** contra un formulario.

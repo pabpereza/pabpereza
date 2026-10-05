@@ -21,8 +21,14 @@ En la [propia página](https://www.kali.org/get-kali/) de Kali se puede ver la c
 
 
 # Vídeos explicativos
-https://youtu.be/yvfXt7Ndrvc 
+[https://youtu.be/yvfXt7Ndrvc](https://youtu.be/yvfXt7Ndrvc)
 
-https://youtu.be/qnsi1cnTK3A 
+[![Kali en Docker recopilación - parte 1](https://img.youtube.com/vi/yvfXt7Ndrvc/maxresdefault.jpg)](https://www.youtube.com/watch?v=yvfXt7Ndrvc)
 
-https://youtu.be/sVJ4iocUods 
+[https://youtu.be/qnsi1cnTK3A](https://youtu.be/qnsi1cnTK3A)
+
+[![Kali en Docker recopilación - parte 2](https://img.youtube.com/vi/qnsi1cnTK3A/maxresdefault.jpg)](https://www.youtube.com/watch?v=qnsi1cnTK3A)
+
+[https://youtu.be/sVJ4iocUods](https://youtu.be/sVJ4iocUods)
+
+[![Kali en Docker recopilación - parte 3](https://img.youtube.com/vi/sVJ4iocUods/maxresdefault.jpg)](https://www.youtube.com/watch?v=sVJ4iocUods)

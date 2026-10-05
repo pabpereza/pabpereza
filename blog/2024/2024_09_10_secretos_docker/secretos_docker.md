@@ -16,6 +16,9 @@ En este video podcast con Felipe Cruz del equipo de Docker ([TECHarlas 3 - Suppl
 <!-- truncate -->
 
 
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/od3rUhL_P3Q](https://youtu.be/od3rUhL_P3Q)
+
 [![](https://img.youtube.com/vi/od3rUhL_P3Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=od3rUhL_P3Q)
 
 # En tiempo de compilación/construcción

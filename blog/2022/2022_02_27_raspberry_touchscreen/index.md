@@ -17,7 +17,10 @@ Concretamente, me refiero a la pantalla táctil de 7 pulgadas que se puede monta
 ### Instalación y configuración
 En este vídeo he detallado el proceso de instalación y configuración de la pantalla táctil.
 
-https://youtu.be/eGZvo7AnO_U 
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/eGZvo7AnO_U](https://youtu.be/eGZvo7AnO_U)
+
+[![Raspberry Pi Touchscreen 7](https://img.youtube.com/vi/eGZvo7AnO_U/maxresdefault.jpg)](https://www.youtube.com/watch?v=eGZvo7AnO_U)
 
 #### Pasos de instalación:
 1. Conecta la pantalla táctil a la Raspberry Pi utilizando el cable DSI.

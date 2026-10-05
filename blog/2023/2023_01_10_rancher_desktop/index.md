@@ -13,9 +13,10 @@ Ya estuve explicando en este [artículo](/blog/2021/2021_09_12_docker_de_pago/in
 <!-- truncate -->
 
 Rancher Desktop se posiciona como una alternativa a tener en cuenta. Dentro vídeo <i class='fa fa-film'></i>
-https://youtu.be/LmKN4NvpR-4 
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/LmKN4NvpR-4](https://youtu.be/LmKN4NvpR-4)
 
-[![La alternativa a Docker que estabas buscando - Rancher Desktop](https://img.youtube.com/vi/LmKN4NvpR-4/maxresdefault.jpg)](https://youtu.be/LmKN4NvpR-4)
+[![La alternativa a Docker que estabas buscando - Rancher Desktop](https://img.youtube.com/vi/LmKN4NvpR-4/maxresdefault.jpg)](https://www.youtube.com/watch?v=LmKN4NvpR-4)
 
 
 ## ¿Qué es Rancher Desktop?

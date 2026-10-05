@@ -11,6 +11,9 @@ date: 2024-05-15
 # Entornos de desarrollo remotos y gratuitos 
 ¡Hola! A raíz del [curso de Docker que estoy realizando](https://pabpereza.dev/docs/cursos/docker), algunos me habéis preguntado la posibilidad de seguirlo en Android o dispositivos móviles. Ya sea porque no tengamos un ordenador, los recursos necesarios para instalar docker, o simplemente, por no querer instalarlo en nuestro equipo, quería estudiar varias alternativas para montar un entorno de desarrollo remoto y totalmente gratuito.
 
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/CIZhk8FG0Ng](https://youtu.be/CIZhk8FG0Ng)
+
 [![Entornos de desarrollo remotos y gratuitos](https://img.youtube.com/vi/CIZhk8FG0Ng/maxresdefault.jpg)](https://www.youtube.com/watch?v=CIZhk8FG0Ng)
 
 <!-- truncate -->

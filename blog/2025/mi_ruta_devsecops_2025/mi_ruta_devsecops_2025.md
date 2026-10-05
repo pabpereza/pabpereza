@@ -14,9 +14,10 @@ Primero os quería compartir lo que ha sido mi trayectoria personal y profesiona
 
 En la [segunda parte](../devsecops_recomendaciones_2025/devsecops_recomendaciones_2025.md), te hablaré de toda la tecnología que aprendí por el camino y como empezaría yo en 2025.
 
-Dentro vídeo: https://youtu.be/-liUjc-GKqQ
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/-liUjc-GKqQ](https://youtu.be/-liUjc-GKqQ)
 
-[![Mi ruta DevSecOps 2025](https://img.youtube.com/vi/-liUjc-GKqQ/maxresdefault.jpg)](https://youtu.be/-liUjc-GKqQ)
+[![Mi ruta DevSecOps 2025](https://img.youtube.com/vi/-liUjc-GKqQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=-liUjc-GKqQ)
 
 <!-- truncate -->
 

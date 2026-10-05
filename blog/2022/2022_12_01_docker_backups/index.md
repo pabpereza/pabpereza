@@ -21,6 +21,8 @@ Docker Desktop empezó a ofrecer extensiones hace unos meses. Estas extensiones 
 
 En este caso, la extensión que nos interesa es la de **Docker Backup**. Esta extensión nos permite crear copias de seguridad de los volúmenes de Docker y compartirlos con otros usuarios de diferentes formas. Dentro vídeo:
 
+[https://youtu.be/thqgLGMfsGw](https://youtu.be/thqgLGMfsGw)
+
 [![Docker backups](https://img.youtube.com/vi/thqgLGMfsGw/maxresdefault.jpg)](https://www.youtube.com/watch?v=thqgLGMfsGw)
 
 ## Instalación y configuración de Docker Backup

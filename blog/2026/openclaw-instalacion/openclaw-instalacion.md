@@ -11,8 +11,10 @@ keywords: [openclaw, asistente ia personal, self-hosted, instalar openclaw, tele
 Este post es la guía de instalación de OpenClaw — el gateway self-hosted que convierte cualquier modelo de IA en un asistente que te conoce, vive en tu máquina y puede actuar de verdad.
 
 
-Vídeo del montaje: https://youtu.be/tlJNyFxStDM
-    [![Vídeo del montaje](https://img.youtube.com/vi/tlJNyFxStDM/maxresdefault.jpg)](https://youtu.be/tlJNyFxStDM)
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/tlJNyFxStDM](https://youtu.be/tlJNyFxStDM)
+
+[![Vídeo del montaje](https://img.youtube.com/vi/tlJNyFxStDM/maxresdefault.jpg)](https://www.youtube.com/watch?v=tlJNyFxStDM)
 
 <!-- truncate -->
 

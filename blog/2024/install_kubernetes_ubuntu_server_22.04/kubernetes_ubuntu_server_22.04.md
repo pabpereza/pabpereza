@@ -9,6 +9,9 @@ image: https://img.youtube.com/vi/y_c_tPXusqM/maxresdefault.jpg
 ---
 
 
+Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+[https://youtu.be/y_c_tPXusqM](https://youtu.be/y_c_tPXusqM)
+
 [![Instalación de Kubernetes en Ubuntu Server 22.04 LTS](https://img.youtube.com/vi/y_c_tPXusqM/maxresdefault.jpg)](https://www.youtube.com/watch?v=y_c_tPXusqM)
 
 

@@ -11,7 +11,7 @@ date: 2025-10-22
 Publiqué un vídeo hace dos semanas sobre cómo utilizar LocalStack para simular los servicios de AWS en local. Sin duda un completo éxito pero surgieron muchas dudas en los comentarios que quería recopilar.
 
 Si no sabes de lo que te estoy hablando, te dejo el enlace al vídeo aquí: https://youtu.be/rcx47LMqMZU 
-[![](https://img.youtube.com/vi/rcx47LMqMZU/maxresdefault.jpg)](https://youtu.be/rcx47LMqMZU) 
+[![Vídeo anterior sobre LocalStack](https://img.youtube.com/vi/rcx47LMqMZU/maxresdefault.jpg)](https://www.youtube.com/watch?v=rcx47LMqMZU)
 
 Los puntos que trataremos son:
 * ¿Qué necesidad cubre realmente LocalStack?
@@ -46,7 +46,7 @@ No, LocalStack no tiene una interfaz gráfica propia. La interfaz de su versión
 
 También tenéis una extensión de Docker para esta labor, la vimos en este vídeo: https://youtu.be/oOTyDGPAq7g
 
-[![](https://img.youtube.com/vi/oOTyDGPAq7g/maxresdefault.jpg)](https://youtu.be/oOTyDGPAq7g)
+[![Vídeo relacionado en YouTube](https://img.youtube.com/vi/oOTyDGPAq7g/maxresdefault.jpg)](https://www.youtube.com/watch?v=oOTyDGPAq7g)
 
 
 ## ¿Qué ofrece la versión Pro de LocalStack?

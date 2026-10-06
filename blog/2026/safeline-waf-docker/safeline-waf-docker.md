@@ -15,7 +15,7 @@ En este artículo vamos a montar un **WAF** (*Web Application Firewall*) gratis 
 
 <!-- truncate -->
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/X0vm8cJ674w](https://youtu.be/X0vm8cJ674w)
 
 [![Monta tu propio WAF GRATIS y bloquea ataques reales (SafeLine en Docker)](https://img.youtube.com/vi/X0vm8cJ674w/maxresdefault.jpg)](https://www.youtube.com/watch?v=X0vm8cJ674w)

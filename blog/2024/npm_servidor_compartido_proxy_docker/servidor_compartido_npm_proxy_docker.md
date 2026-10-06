@@ -13,7 +13,7 @@ Es muy probable que tengas un servidor con un proveedor de hosting o cloud y qui
 
 <!-- truncate -->
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/WCSdh37Z6Wk](https://youtu.be/WCSdh37Z6Wk)
 
 [![Curso Docker - Introducción](https://img.youtube.com/vi/WCSdh37Z6Wk/maxresdefault.jpg)](https://www.youtube.com/watch?v=WCSdh37Z6Wk)

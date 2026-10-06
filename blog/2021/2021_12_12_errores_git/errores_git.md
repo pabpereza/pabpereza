@@ -19,7 +19,7 @@ procesos de desarrollo es muy habitual que se cometan ciertos errores al trabaja
 En este vídeo comento los que considero más comunes pero no dudes en contribuir si se te ocurre algún error que no se haya explicado.
 
 Dentro vídeo
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/9sK_is8ufbk](https://youtu.be/9sK_is8ufbk)
 
 [![Errores comunes en Git](https://img.youtube.com/vi/9sK_is8ufbk/maxresdefault.jpg)](https://www.youtube.com/watch?v=9sK_is8ufbk)

@@ -12,7 +12,7 @@ image: https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg
 
 Bueno, comenzaremos hablando sobre cómo se utilizan las contraseñas en nuestras actividades cotidianas. Desde el acceso a nuestros correos electrónicos hasta nuestras cuentas bancarias, las contraseñas juegan un papel crucial en la protección de nuestra información personal. Es verdad que todas las grandes compañias están trabajando en un nuevo estándar llamado passkey para que los usuarios finales no manejen credenciales, hablaré más adelante sobre esto. 
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/JgLxzj3MHEo](https://youtu.be/JgLxzj3MHEo)
 
 [![Cracking passwords with Hashcat](https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg)](https://www.youtube.com/watch?v=JgLxzj3MHEo)

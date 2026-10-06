@@ -25,7 +25,7 @@ Pero aquí viene la otra cara de la moneda, te doy tres argumentos por lo que si
 
 <!-- truncate -->
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/SH2qMXS4ID4](https://youtu.be/SH2qMXS4ID4)
 
 [![Vídeo del montaje](https://img.youtube.com/vi/SH2qMXS4ID4/maxresdefault.jpg)](https://www.youtube.com/watch?v=SH2qMXS4ID4)

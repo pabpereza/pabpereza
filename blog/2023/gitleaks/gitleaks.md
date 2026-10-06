@@ -12,7 +12,7 @@ image: https://img.youtube.com/vi/zHJdDT7XWkc/maxresdefault.jpg
 
 En el desarrollo de software moderno, **Git** se ha convertido en la herramienta fundamental para la gestión de versiones de código. Sin embargo, con su uso, surge un problema crítico de seguridad: la **exposición accidental de secretos** como tokens, claves API, contraseñas o claves SSH dentro de los repositorios. Esto puede abrir la puerta a ataques graves si estos secretos son filtrados y accedidos públicamente. Afortunadamente, herramientas como **Gitleaks** pueden ayudarnos a prevenir esta situación, ofreciendo una capa adicional de seguridad, tanto en entornos locales como en los procesos de CI/CD (integración y entrega continua).
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/zHJdDT7XWkc](https://youtu.be/zHJdDT7XWkc)
 
 [![Gitleaks, detecta secretos en tu repositorio de git](https://img.youtube.com/vi/zHJdDT7XWkc/maxresdefault.jpg)](https://www.youtube.com/watch?v=zHJdDT7XWkc)

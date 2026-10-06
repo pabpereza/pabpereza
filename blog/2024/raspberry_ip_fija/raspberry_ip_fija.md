@@ -17,7 +17,7 @@ Vamos a ver trés formas de hacerlo:
 
 <!-- truncate -->
 ---
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/AjPUraHm1rw](https://youtu.be/AjPUraHm1rw)
 
 [![Raspberry Pi con IP fija](https://img.youtube.com/vi/AjPUraHm1rw/maxresdefault.jpg)](https://www.youtube.com/watch?v=AjPUraHm1rw)

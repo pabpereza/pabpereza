@@ -14,7 +14,7 @@ Vamos a explorar las 15 funcionalidades menos conocidas de esta potente herramie
 
 <!-- truncate -->
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/pItQbWrAifE](https://youtu.be/pItQbWrAifE)
 
 [![VSCode lo tiene TODO](https://img.youtube.com/vi/pItQbWrAifE/maxresdefault.jpg)](https://www.youtube.com/watch?v=pItQbWrAifE)

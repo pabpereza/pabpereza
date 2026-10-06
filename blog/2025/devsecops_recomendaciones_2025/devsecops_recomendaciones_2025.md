@@ -16,7 +16,7 @@ Por último, matizar que esta es una opinión personal. Cada uno podría tener s
 
 Vamos a ver, una breve introducción a lo que es DevOps, luego veremos las tecnologías básicas para empezar y, por útlimo, hablaremos de los métodos de aprendizaje, certificaciones y demás.
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/2MP3DkiiyqE](https://youtu.be/2MP3DkiiyqE)
 
 [![Mi ruta DevSecOps 2025](https://img.youtube.com/vi/2MP3DkiiyqE/maxresdefault.jpg)](https://www.youtube.com/watch?v=2MP3DkiiyqE)

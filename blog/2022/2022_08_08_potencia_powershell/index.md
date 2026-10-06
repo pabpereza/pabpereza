@@ -18,7 +18,7 @@ Para esta ocasión, abordaremos el tema en sistemas Windows utilizando oh-my-pos
 * Información avanzada
 * Personalización con múltiples temas
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/kWIesAUhLAg](https://youtu.be/kWIesAUhLAg)
 
 [![Potencia PowerShell](https://img.youtube.com/vi/kWIesAUhLAg/maxresdefault.jpg)](https://www.youtube.com/watch?v=kWIesAUhLAg)

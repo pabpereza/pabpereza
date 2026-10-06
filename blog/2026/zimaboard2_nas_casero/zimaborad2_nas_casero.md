@@ -4,7 +4,7 @@ Si llevas tiempo en el canal, sabes que me encanta el "cacharreo". Pero hay una 
 
 Hoy analizamos la **ZimaBoard 2**. Sobre el papel, promete ser el eslabón perdido entre una Raspberry Pi y un servidor rack ruidoso. ¿Es solo diseño *cyberpunk* o hay una bestia x86 debajo del disipador? Vamos a destriparla siguiendo el flujo de trabajo real de un devops.
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/BhRj8hdtk84](https://youtu.be/BhRj8hdtk84)
 
 [![Vídeo del montaje](https://img.youtube.com/vi/BhRj8hdtk84/maxresdefault.jpg)](https://www.youtube.com/watch?v=BhRj8hdtk84)

@@ -17,7 +17,7 @@ Este es el problema real de Ingress: todo lo interesante depende de anotaciones 
 
 En este artículo vamos a ver cómo migrar un Ingress existente a **Gateway API**, el sucesor oficial de Ingress en Kubernetes, paso a paso y con una herramienta que automatiza buena parte del trabajo. Si todavía no tienes clara la teoría de Gateway API, te recomiendo leer antes el capítulo del curso de Kubernetes: [Gateway API en Kubernetes](/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso).
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/o8OXJbRTj5Q](https://youtu.be/o8OXJbRTj5Q)
 
 [![Vídeo del montaje](https://img.youtube.com/vi/o8OXJbRTj5Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=o8OXJbRTj5Q)

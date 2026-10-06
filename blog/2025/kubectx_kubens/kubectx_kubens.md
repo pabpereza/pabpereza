@@ -13,7 +13,7 @@ En este artículo, vamos a ver cómo usar Kubectx y Kubens para cambiar de conte
 
 Si lo prefieres en vídeo, aquí lo tienes en mi canal de Youtube: https://youtu.be/6lpkb9DM7tk
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/6lpkb9DM7tk](https://youtu.be/6lpkb9DM7tk)
 
 [![Kubectx y Kubens](https://img.youtube.com/vi/6lpkb9DM7tk/maxresdefault.jpg)](https://www.youtube.com/watch?v=6lpkb9DM7tk)

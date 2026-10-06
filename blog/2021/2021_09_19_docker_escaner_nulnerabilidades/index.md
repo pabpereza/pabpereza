@@ -10,7 +10,7 @@ keywords: [seguridad imagenes docker, scanner vulnerabilidades docker, trivy doc
 En anteriores vídeos he hablado acerca de la seguridad a la hora de crear imágenes pero hay un aspecto más crítico y fundamental que se suele obviar al construir imágenes. Estas, contienen software en forma de librerías del sistema que también pueden ser vulnerables. Pero, ¿como podemos revisar esa seguridad?
 <!-- truncate -->
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/XmGEMOgI9-g](https://youtu.be/XmGEMOgI9-g)
 
 [![Analizar la seguridad de las imágenes de Docker](https://img.youtube.com/vi/XmGEMOgI9-g/maxresdefault.jpg)](https://www.youtube.com/watch?v=XmGEMOgI9-g)

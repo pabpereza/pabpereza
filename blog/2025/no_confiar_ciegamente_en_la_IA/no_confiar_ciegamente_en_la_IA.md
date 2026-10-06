@@ -17,7 +17,7 @@ Tras revisarlo, nos dimos cuenta de que le estaban secuestrando la base de datos
 El problema fue que, confiando en el Docker Compose que generó una IA, expuso de forma indebida la base de datos y esto permitió a un ciberdelincuente entrar y robar toda la información.
 
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/y4ULg8tD8nQ](https://youtu.be/y4ULg8tD8nQ)
 
 [![Ver vídeo](https://img.youtube.com/vi/y4ULg8tD8nQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=y4ULg8tD8nQ)

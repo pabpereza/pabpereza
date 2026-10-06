@@ -15,7 +15,7 @@ Existen casos, ya sea por la complejidad de la aplicación, la cantidad de paque
 En este artículo, vamos a explorar cómo crear imágenes de Docker ligeras para optimizar el rendimiento y la eficiencia en el despliegue de aplicaciones.
 
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/QVcLTxmcJ8s](https://youtu.be/QVcLTxmcJ8s)
 
 [![Aligerar imágenes Docker](https://img.youtube.com/vi/QVcLTxmcJ8s/maxresdefault.jpg)](https://www.youtube.com/watch?v=QVcLTxmcJ8s)

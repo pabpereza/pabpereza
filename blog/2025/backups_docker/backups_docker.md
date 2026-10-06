@@ -15,7 +15,7 @@ Este tema puede ser algo tedioso, especialmente porque no existen herramientas n
 
 Sin embargo, yo abogo por un enfoque más limpio y eficiente: no se trata de hacer backups de los contenedores, sino de la información que realmente importa, es decir, de los volúmenes.
 
-Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
+🎥 Vídeo completo, utilicemos los capítulos de youtube para saltar a la sección que nos interese:
 [https://youtu.be/XFg_XPFyw34](https://youtu.be/XFg_XPFyw34)
 
 [![Backups de Docker](https://img.youtube.com/vi/XFg_XPFyw34/maxresdefault.jpg)](https://www.youtube.com/watch?v=XFg_XPFyw34)

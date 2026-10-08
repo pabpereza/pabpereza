@@ -1,6 +1,3 @@
-[submodule ".video-editor"]
-	path = .video-editor
-	url = git@github.com:pabpereza/video-editor.git
 [submodule ".channel"]
 	path = .channel
 	url = git@github.com:pabpereza/channel.git

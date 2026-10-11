@@ -208,6 +208,12 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        // Lenguajes que no vienen en el bundle por defecto de prism-react-renderer
+        additionalLanguages: [
+          'bash', 'docker', 'sql', 'ini', 'properties', 'hcl', 'powershell',
+          'groovy', 'ruby', 'nginx', 'toml', 'diff', 'rego', 'promql', 'vim',
+          'puppet', 'markup-templating', 'django', 'ignore',
+        ],
       },
       themeConfig: {
         metadata: [

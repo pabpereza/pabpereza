@@ -2029,7 +2029,7 @@
       "title": "Monta tu propio WAF gratis en Docker con SafeLine",
       "type": "content",
       "category": "blog",
-      "description": "",
+      "description": "Guía paso a paso para montar SafeLine WAF en Docker delante de tu VPS o homelab, entender cómo detecta ataques y bloquear SQL injection y XSS reales en un laboratorio propio.",
       "url": "/blog/waf_gratis_en_docker_safeline",
       "slug": "waf_gratis_en_docker_safeline",
       "val": 6,

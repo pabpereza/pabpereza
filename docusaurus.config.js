@@ -30,10 +30,24 @@ const config = {
     youtubeAPIKey: process.env.YOUTUBE_API_KEY,
   },
 
+  // Recomendado por Docusaurus: adelantar los cambios de v4 y builds con Rspack/SWC
+  // (@docusaurus/faster)
+  future: {
+    v4: true,
+    faster: true,
+  },
+
   onBrokenLinks: 'throw',
 
   markdown: {
     mermaid: true,
+    // future.v4 lo desactiva por defecto; el contenido usa comentarios HTML
+    // (<!-- truncate -->), admonitions y heading ids al estilo MDX1
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },

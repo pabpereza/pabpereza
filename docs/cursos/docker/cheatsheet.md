@@ -42,7 +42,7 @@ Para acceder al contenedor, además de crearlo, se puede hacer de dos maneras. U
 docker run -i -t b72889fa879c /bin/bash
 ```
 ``` shell
-docker run -i -t ubuntu:14.04 /bin/bash
+docker run -i -t ubuntu:26.04 /bin/bash
 ```
  
 El usuario también puede ponerle una etiqueta personalizada que haga referencia a una imagen instalada en su sistema.

@@ -2931,6 +2931,11 @@
     },
     {
       "source": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
+      "target": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
       "target": "/docs/cursos/kubernetes/helm_para_kubernetes_gestion_de_aplicaciones_con_charts",
       "type": "internal_link"
     },
@@ -2942,11 +2947,6 @@
     {
       "source": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
       "target": "/blog/migrar_ingress_a_gateway_api_kubernetes",
-      "type": "internal_link"
-    },
-    {
-      "source": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
-      "target": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
       "type": "internal_link"
     },
     {

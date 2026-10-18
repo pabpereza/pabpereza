@@ -907,7 +907,7 @@
       "title": "18. Seguridad",
       "type": "content",
       "category": "docs",
-      "description": "Aprende seguridad en Kubernetes - RBAC, Service Accounts, Network Policies, Pod Security Standards, admission controllers y hardening para certificación CKS.",
+      "description": "Aprende seguridad en Kubernetes con ejemplos y ejercicios - RBAC, Security Context, Pod Security Admission y Network Policies paso a paso, para certificación CKS.",
       "url": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
       "slug": "seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
       "val": 10,

@@ -907,9 +907,20 @@
       "title": "18. Seguridad",
       "type": "content",
       "category": "docs",
-      "description": "Aprende seguridad en Kubernetes con ejemplos y ejercicios - RBAC, Security Context, Pod Security Admission y Network Policies paso a paso, para certificación CKS.",
+      "description": "Aprende seguridad en Kubernetes con ejemplos y ejercicios - RBAC, Security Context y Pod Security Admission paso a paso, para certificación CKS.",
       "url": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
       "slug": "seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "val": 10,
+      "connected": true
+    },
+    {
+      "id": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
+      "title": "18 bis. Network Policies",
+      "type": "content",
+      "category": "docs",
+      "description": "Aprende a usar NetworkPolicies en Kubernetes con ejercicios paso a paso, default deny de entrada y salida, DNS, la trampa del AND frente al OR y el puerto del pod frente al del Service.",
+      "url": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
+      "slug": "network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "val": 10,
       "connected": true
     },
@@ -2941,12 +2952,22 @@
     },
     {
       "source": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
+      "target": "/docs/cursos/kubernetes/instalacion_de_kubernetes_cluster_completo_ubuntu_server_con_kubeadm",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/ingress_controller_en_kubernetes",
       "target": "/docs/cursos/kubernetes/secrets_y_configmaps_en_kubernetes_gestion_de_configuracion",
       "type": "internal_link"
     },
     {
       "source": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
       "target": "/blog/migrar_ingress_a_gateway_api_kubernetes",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/gateway_api_en_kubernetes_configuracion_y_uso",
+      "target": "/docs/cursos/kubernetes/instalacion_de_kubernetes_cluster_completo_ubuntu_server_con_kubeadm",
       "type": "internal_link"
     },
     {
@@ -2957,6 +2978,26 @@
     {
       "source": "/docs/cursos/kubernetes/persistent_volumes_y_persistent_volume_claims_en_kubernetes",
       "target": "/docs/cursos/docker/volumenes_persistencia_y_montaje_de_archivos_en_docker",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/persistent_volumes_y_persistent_volume_claims_en_kubernetes",
+      "target": "/docs/cursos/kubernetes/instalacion_de_kubernetes_cluster_completo_ubuntu_server_con_kubeadm",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/persistent_volumes_y_persistent_volume_claims_en_kubernetes",
+      "target": "/docs/cursos/kubernetes/kubernetes_almacenamiento",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/autoscaling_en_kubernetes_hpa_vpa_y_cluster_autoscaler",
+      "target": "/docs/cursos/kubernetes/jobs_y_cronjobs_en_kubernetes_automatizacion_de_tareas",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "target": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "type": "internal_link"
     },
     {
@@ -2980,8 +3021,18 @@
       "type": "internal_link"
     },
     {
-      "source": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "source": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "target": "/docs/cursos/kubernetes/network_policies_avanzadas_en_kubernetes_microsegmentacion",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
+      "target": "/docs/cursos/kubernetes/rbac_en_kubernetes_roles_clusterroles_y_rolebindings",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
+      "target": "/docs/cursos/kubernetes/usuarios_y_service_accounts_en_kubernetes_gestion_de_identidades",
       "type": "internal_link"
     },
     {
@@ -3086,7 +3137,7 @@
     },
     {
       "source": "/docs/cursos/kubernetes/kubernetes_almacenamiento",
-      "target": "/docs/cursos/kubernetes/persistent_volumes_y_persistent_volume_claims_en_kubernetes",
+      "target": "/docs/cursos/kubernetes/instalacion_de_kubernetes_cluster_completo_ubuntu_server_con_kubeadm",
       "type": "internal_link"
     },
     {
@@ -3176,7 +3227,7 @@
     },
     {
       "source": "/docs/cursos/kubernetes/preparacion_del_examen_cka_estrategia_temario_y_simulacros",
-      "target": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "target": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "type": "internal_link"
     },
     {
@@ -3266,7 +3317,7 @@
     },
     {
       "source": "/docs/cursos/kubernetes/service_mesh_en_kubernetes_istio_linkerd_y_mtls",
-      "target": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "target": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "type": "internal_link"
     },
     {
@@ -3407,6 +3458,11 @@
     {
       "source": "/docs/cursos/kubernetes/preparacion_del_examen_ckad_estrategia_temario_y_simulacros",
       "target": "/docs/cursos/kubernetes/coredns_servicios_y_dns_en_kubernetes_resolucion_de_nombres",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes/preparacion_del_examen_ckad_estrategia_temario_y_simulacros",
+      "target": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "type": "internal_link"
     },
     {
@@ -3667,6 +3723,11 @@
     {
       "source": "/docs/cursos/kubernetes",
       "target": "/docs/cursos/kubernetes/seguridad_en_kubernetes_guia_completa_de_hardening_y_best_practices",
+      "type": "internal_link"
+    },
+    {
+      "source": "/docs/cursos/kubernetes",
+      "target": "/docs/cursos/kubernetes/network_policies_en_kubernetes_controlar_el_trafico_entre_pods",
       "type": "internal_link"
     },
     {

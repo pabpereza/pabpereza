@@ -81,6 +81,7 @@ Este curso nos prepara completamente para las **tres certificaciones oficiales d
 * [📊 Rangos y cuotas](./116.Rangos_quotas.md) - Límites de recursos
 * [📈 Autoescalado](./117.Autoscaling.md) - Escalado automático
 * [🔒 Seguridad](./118.Seguridad.md) - Fundamentos de seguridad
+* [🧱 Network Policies](./118.Seguridad_network_policies.md) - Tráfico entre pods
 * [👤 Usuarios y RBAC](./119.Usuarios.md) - Control de acceso
 * [🎭 Roles y ClusterRoles](./120.Roles.md) - Permisos granulares
 * [🎯 Scheduling y labels](./121.Scheduling_labels.md) - Programación de pods

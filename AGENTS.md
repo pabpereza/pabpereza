@@ -86,7 +86,7 @@ Todo sale por el **MCP de Postiz** (siempre como borrador para que Pablo publiqu
 | Vídeo largo | YouTube, lo sube Pablo desde Resolve (no pasa por Postiz); Gandalf aplica el SEO |
 | Short | Instagram, TikTok y YouTube Shorts |
 | Post puntual | X y Threads; Instagram si lleva foto; preguntar si también LinkedIn y Telegram |
-| Promo de vídeo nuevo | LinkedIn, X, Threads e Instagram; Comunidad de YouTube vía Gandalf (Chrome) |
+| Promo de vídeo nuevo | LinkedIn, X, Threads, Instagram y Telegram; Comunidad de YouTube vía Chrome |
 
 Los ficheros locales (MP4, fotos) se suben antes con `.channel/.management/postiz/postiz_upload.sh`.
 
@@ -109,6 +109,7 @@ Cuando trabajes en contenido de un curso específico, utiliza la skill correspon
 ## Estilo de Redacción
 
 ### Principios de Escritura
+- **Antes de redactar cualquier artículo, guion o post, lee `.channel/_estilo_pablo.md`**: es el estilo de Pablo aprendido de sus ediciones reales y manda sobre las reglas genéricas de abajo
 - Usa un tono conversacional pero profesional con un ligero toque humorístico
 - Explica acrónimos y términos técnicos en su primera aparición
 - Incluye analogías para conceptos complejos

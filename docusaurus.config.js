@@ -283,6 +283,11 @@ const config = {
             from: '/docs/cursos/ansible/ansible_entornos_reales_proyecto_final',
             to: '/docs/cursos/ansible/ansible_proyecto_final_infraestructura_quotes',
           },
+          // Comunidad Sudoers by pabpereza; si cambia la invitacion, solo se toca aqui
+          {
+            from: '/discord',
+            to: 'https://discord.gg/CpHVzDAaBW',
+          },
         ],
       },
     ],

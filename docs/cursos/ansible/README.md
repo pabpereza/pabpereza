@@ -18,6 +18,8 @@ keywords:
   - iac ansible
   - devops ansible
   - ansible para principiantes
+  - ansible tutorial español
+  - para qué sirve ansible
   - ansible playbooks tutorial
 tags:
   - ansible
@@ -87,9 +89,9 @@ No necesitamos experiencia previa con Ansible ni saber programar. Con esto basta
 
 *Estructuramos nuestro código y protegemos nuestros secretos, desplegando servicios en contenedores.*
 
-* [🔀 6. Variables y Control de Flujo](./106.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers · vídeo próximamente
-* [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Roles reutilizables y Ansible Galaxy · vídeo próximamente
-* [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Ansible Vault, claves SSH y variables sensibles · vídeo próximamente
+* [🔀 6. Variables y Control de Flujo](./106.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers · [vídeo](https://youtu.be/VgIFJiAj0e4)
+* [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Roles reutilizables y Ansible Galaxy · [vídeo](https://youtu.be/5tH-uroFfW8)
+* [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Ansible Vault, claves SSH y variables sensibles · [vídeo](https://youtu.be/G_pQJY8ssFQ)
 * [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when y troubleshooting de playbooks · vídeo próximamente
 * [🏗️ 10. Proyecto Final](./110.Proyecto_final.md) — Despliega una app real en tres servidores con balanceo Nginx, roles, Vault y firewall · vídeo próximamente
 
@@ -110,7 +112,10 @@ Cada capítulo de este curso corresponde a **un vídeo** de la [lista de reprodu
 | 3. Playbooks y YAML | [Playbooks en Ansible](https://youtu.be/F1GwuMWBKzo) |
 | 4. Módulos e idempotencia | [Idempotencia y módulos avanzados](https://youtu.be/U7a61YZoqB0) |
 | 5. Ansible y contenedores | [Ansible + Docker + Kubernetes](https://youtu.be/7IoboMNhEYc) |
-| 6 a 10 y 21 | En grabación — publicación semanal |
+| 6. Variables y control de flujo | [Variables, facts y control de flujo](https://youtu.be/VgIFJiAj0e4) |
+| 7. Roles, templates y Galaxy | [Roles y Ansible Galaxy](https://youtu.be/5tH-uroFfW8) |
+| 8. Seguridad y credenciales | [Ansible Vault](https://youtu.be/G_pQJY8ssFQ) |
+| 9, 10 y 21 | En grabación — publicación semanal |
 
 > 🔔 El curso está en publicación activa: [suscríbete al canal](https://www.youtube.com/@Pabpereza?sub_confirmation=1) para recibir cada capítulo nuevo.
 

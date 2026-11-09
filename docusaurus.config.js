@@ -85,10 +85,7 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-          gtag: {
-            trackingID: 'G-40PL0BKGD3',
-            anonymizeIP: true,
-        },
+        // Analytics va en `plugins`, detrás de google-consent
       }),
 
     ],
@@ -181,8 +178,12 @@ const config = {
                 to: '/privacidad',
               },
               {
-                label: 'Polítiva de cookies',
+                label: 'Política de cookies',
                 to: '/cookies',
+              },
+              {
+                // Reabre el banner del CMP de Google para cambiar la elección
+                html: '<a class="footer__link-item" href="#" onclick="event.preventDefault(); window.googlefc = window.googlefc || {}; (googlefc.callbackQueue = googlefc.callbackQueue || []).push(function(){ googlefc.showRevocationMessage(); });">Gestionar cookies</a>',
               },
               {
                 label: 'Aviso legal',
@@ -229,45 +230,86 @@ const config = {
           'puppet', 'markup-templating', 'django', 'ignore',
         ],
       },
-      themeConfig: {
-        metadata: [
-          { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, blog, ansible, contenedores, containers, orquestación, ci/cd, pipelines, infraestructura como código, iac, linux, terminal, vim, neovim, mysql, sql, bases de datos, sre, cloud native, cncf, certificación cka, certificación ckad, homelab, raspberry pi, automatización, cursos gratis, español, aprender docker, aprender kubernetes, aprender ansible, devsecops español, docker tutorial, kubernetes tutorial'},
-          { name: 'twitter:card', content: 'summary'},
-          { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
-        ],
-        colorMode: {
-          disableSwitch: false,
-          respectPrefersColorScheme: true,
-         },
+      // Fallback global: description y keywords de cada página mandan sobre estas
+      metadata: [
+        { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, blog, ansible, contenedores, containers, orquestación, ci/cd, pipelines, infraestructura como código, iac, linux, terminal, vim, neovim, mysql, sql, bases de datos, sre, cloud native, cncf, certificación cka, certificación ckad, homelab, raspberry pi, automatización, cursos gratis, español, aprender docker, aprender kubernetes, aprender ansible, devsecops español, docker tutorial, kubernetes tutorial'},
+        { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
+      ],
+      colorMode: {
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
-      headTags: [
-        // Declare a <link> preconnect tag
-        {
-          tagName: 'link',
-          attributes: {
-            rel: 'preconnect',
-            href: 'https://pabpereza.dev',
+
+    }),
+  // headTags va en la raíz de la config: dentro de themeConfig se ignora
+  headTags: [
+    // Declare a <link> preconnect tag
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://pabpereza.dev',
+      },
+    },
+    // Datos estructurados globales (JSON-LD). Cursos y vídeos enlazan a
+    // estas entidades por su @id desde src/components/DocStructuredData
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Person',
+            '@id': 'https://pabpereza.dev/#pablo',
+            name: 'Pablo Pérez-Aradros',
+            alternateName: 'pabpereza',
+            jobTitle: 'Especialista en ciberseguridad y DevSecOps',
+            description: 'Divulgador de DevOps, DevSecOps, Docker y Kubernetes en español en YouTube y en pabpereza.dev.',
+            url: 'https://pabpereza.dev/',
+            image: 'https://pabpereza.dev/img/perfil-2024-transparent.png',
+            sameAs: [
+              'https://www.youtube.com/@Pabpereza',
+              'https://www.linkedin.com/in/pabpereza/',
+              'https://github.com/pabpereza',
+              'https://x.com/pabpereza',
+              'https://www.instagram.com/pabpereza/',
+            ],
+            hasCredential: [
+              { '@type': 'EducationalOccupationalCredential', name: 'Certified Kubernetes Administrator (CKA)', recognizedBy: { '@type': 'Organization', name: 'Cloud Native Computing Foundation' } },
+              { '@type': 'EducationalOccupationalCredential', name: 'Certified Kubernetes Application Developer (CKAD)', recognizedBy: { '@type': 'Organization', name: 'Cloud Native Computing Foundation' } },
+              { '@type': 'EducationalOccupationalCredential', name: 'Kubestronaut', recognizedBy: { '@type': 'Organization', name: 'Cloud Native Computing Foundation' } },
+            ],
+            knowsAbout: ['DevSecOps', 'DevOps', 'Docker', 'Kubernetes', 'Ansible', 'Ciberseguridad', 'CI/CD'],
           },
-        },
-        // Declare some json-ld structured data
-        {
-          tagName: 'script',
-          attributes: {
-            type: 'application/ld+json',
-          },
-          innerHTML: JSON.stringify({
-            '@context': 'https://schema.org/',
+          {
             '@type': 'Organization',
+            '@id': 'https://pabpereza.dev/#org',
             name: 'Pabpereza.dev',
             url: 'https://pabpereza.dev/',
             logo: 'https://pabpereza.dev/img/logo.png',
-          }),
-        },
-      ],
-
-    }),
+            founder: { '@id': 'https://pabpereza.dev/#pablo' },
+          },
+          {
+            '@type': 'WebSite',
+            '@id': 'https://pabpereza.dev/#web',
+            name: 'Pabpereza.dev',
+            url: 'https://pabpereza.dev/',
+            inLanguage: 'es',
+            publisher: { '@id': 'https://pabpereza.dev/#org' },
+            author: { '@id': 'https://pabpereza.dev/#pablo' },
+          },
+        ],
+      }),
+    },
+  ],
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
+    // El orden importa: el modo de consentimiento tiene que ir antes que gtag
+    ['./src/plugins/google-consent', { adsenseClient: 'ca-pub-2204030225179360' }],
+    ['@docusaurus/plugin-google-gtag', { trackingID: 'G-40PL0BKGD3' }],
     require.resolve('docusaurus-lunr-search'),
     [
       '@docusaurus/plugin-client-redirects',

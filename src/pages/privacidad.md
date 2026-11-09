@@ -23,7 +23,7 @@ Los datos recogidos en Pabpereza pueden ser utilizados con las siguientes finali
 
 El tratamiento de los datos personales del usuario se basa en:
 
-	•	Consentimiento: Al aceptar el uso de cookies y continuar navegando por el sitio web, el usuario consiente la recopilación y tratamiento de datos según lo descrito en esta política.
+	•	Consentimiento: Las cookies no técnicas (análisis, publicidad y vídeos de YouTube con sesión) solo se activan si el usuario las acepta en el aviso de cookies. Puede retirar o cambiar su consentimiento en cualquier momento desde el enlace "Gestionar cookies" del pie de página (ver la [Política de cookies](/cookies)).
 	•	Interés legítimo: Para el funcionamiento correcto del sitio web y la participación en programas de afiliados.
 
 5. Destinatarios de los Datos

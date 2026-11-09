@@ -1,5 +1,10 @@
 ---
-title: "\U0001F433 Docker"
+title: 🐳 Curso de Docker desde cero - gratis y en español
+description: >-
+  Curso completo de Docker gratuito en español, desde la instalación hasta
+  producción. Contenedores, imágenes, Dockerfile, multi-stage y distroless,
+  redes, volúmenes, Docker Compose, Swarm y buildx, con vídeo en cada capítulo.
+sidebar_label: 🐳 Docker
 image: 'https://pabpereza.dev/img/banner_docker.png'
 tags:
   - docker

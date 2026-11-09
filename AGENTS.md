@@ -40,7 +40,7 @@ date: 2025-06-05
 - Series 200+: Contenido avanzado
 - Incluir `README.md` como índice principal de cada curso
 
-**Frontmatter de un capítulo — 7 campos exactos:**
+**Frontmatter de un capítulo — 7 campos exactos (+ `youtube` si tiene vídeo):**
 
 ```yaml
 ---
@@ -56,9 +56,12 @@ tags:
   - <1-5, kebab-case si son compuestos>
 image: 'https://pabpereza.dev/img/banner_<curso>.png'
 slug: <snake_case, sin acentos ni ñ, frase SEO de 7-11 palabras>
+youtube: <ID de 11 caracteres del vídeo del capítulo, solo si lo tiene>
 ---
 ```
 
+- **Vídeo del capítulo: solo con `youtube:` en el frontmatter, nunca en el cuerpo.** El tema lo pinta debajo del `# título` (iframe oficial en carga diferida: youtube-nocookie sin consentimiento y youtube.com cuando el usuario acepta las cookies en el CMP de Google, para que funcione su Premium) y genera su JSON-LD `VideoObject` (ver `src/components/DocStructuredData`). Nada de bloques "🎥 Vídeo completo" ni miniaturas enlazadas. Tras añadir uno, `npm run update-videos` (en local, usa el token de `.channel/.management/youtube-api`) y commitear `src/data/youtube-videos.json`; si falta, el vídeo se ve pero sin JSON-LD. Varios vídeos en una página (READMEs, Playgrounds) siguen como enlaces normales.
+- **Un solo `# h1` por página**: el vídeo y el JSON-LD `Course` de los README cuelgan del h1.
 - **NUNCA `authors` ni `date` en cursos.** Son exclusivos de `/blog/`.
 - El `README.md` del curso lleva los mismos campos **menos `slug`**, y su `sidebar_label` empieza con emoji (es lo que da nombre a la categoría del sidebar, porque no hay ningún `_category_.json`).
 - La URL publicada es `pabpereza.dev/docs/cursos/<curso>/<slug>` (los slugs de raíz son solo del blog).

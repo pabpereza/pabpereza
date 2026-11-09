@@ -1,0 +1,303 @@
+{
+  "31gWvg81qGU": {
+    "title": "Inventario en Ansible: hosts, grupos y comandos ad-hoc - Curso Ansible #2",
+    "description": "Inventario de Ansible paso a paso: cómo organizar tus hosts y grupos en INI o YAML, apuntar a cada máquina con ansible_host, generar inventarios dinámicos desde AWS, Azure y GCP con sus plugins oficiales, y lanzar comandos ad-hoc para tareas puntuales sin escribir un playbook. Capítulo 2 del curso de Ansible desde cero.",
+    "publishedAt": "2026-08-04T16:00:25Z",
+    "duration": "PT16M5S",
+    "embeddable": true
+  },
+  "5CNQMeYUBPs": {
+    "title": "Gestión de imágenes - commit, save, load, tag, push a dockerhub - Curso Docker 9",
+    "description": "Como generar imágenes guardando el estado de un contenedor en ejecución con el comando docker commit, importar y exportar imágenes a disco, modificar sus nombres y tags o subir imágenes con el comando push a repositorios de dockerhub... un vídeo compacto y completo.",
+    "publishedAt": "2024-07-11T17:38:28Z",
+    "duration": "PT8M27S",
+    "embeddable": true
+  },
+  "5tH-uroFfW8": {
+    "title": "Roles en Ansible y Ansible Galaxy, tutorial paso a paso - Curso Ansible #7",
+    "description": "Roles de Ansible y Ansible Galaxy: cómo estructurar código reutilizable con roles, gestionar dependencias con requirements.yml y publicar o consumir roles y colecciones desde Galaxy. Aquí es donde tus playbooks dejan de ser scripts sueltos y empiezan a parecer un proyecto de verdad. Capítulo 7 del curso de Ansible desde cero.",
+    "publishedAt": "2026-09-17T15:44:45Z",
+    "duration": "PT34M36S",
+    "embeddable": true
+  },
+  "6p-z8ozXlqM": {
+    "title": "Docker Multi-Stage y Distroless: de 1GB a 2MB paso a paso",
+    "description": "¿Tu imagen Docker pesa 1GB o 2GB? No es normal, y en este video te explico por qué ocurre y cómo solucionarlo con dos técnicas que todo desarrollador debería conocer: multi-stage builds y distroless.",
+    "publishedAt": "2026-05-07T14:07:45Z",
+    "duration": "PT10M31S",
+    "embeddable": true
+  },
+  "7IoboMNhEYc": {
+    "title": "Ansible con Docker, Docker Compose y Kubernetes - Curso Ansible #5",
+    "description": "Ansible con Docker, Docker Compose y Kubernetes: gestión de contenedores, despliegue de imágenes, orquestación de clústeres K8s y por qué conviene cambiar tus scripts bash por playbooks idempotentes. Con esto cerramos el bloque de fundamentos. Capítulo 5 del curso de Ansible desde cero.",
+    "publishedAt": "2026-08-20T16:00:11Z",
+    "duration": "PT15M20S",
+    "embeddable": true
+  },
+  "8V-Knk76tWs": {
+    "title": "ConfigMaps y Secrets en Kubernetes: Variables de Entorno y Volúmenes | Curso Kubernetes #14",
+    "description": "¿ConfigMaps o Secrets en Kubernetes? 🔐📄  \nEn este vídeo te explico de manera sencilla y con ejemplos prácticos cómo funcionan los ConfigMaps y los  Secrets en Kubernetes, cuáles son sus diferencias y en qué situaciones deberías usar cada uno.",
+    "publishedAt": "2025-09-25T23:00:10Z",
+    "duration": "PT21M50S",
+    "embeddable": true
+  },
+  "8q5txsy3PAE": {
+    "title": "Entiende la Arquitectura de Kubernetes (Control Plane, Nodos, etcd) | Curso Kubernetes #02",
+    "description": "Repasamos la arquitectura de Kubernetes, sus componentes básicos y cada una de las piezas esenciales que lo hacen funcionar.",
+    "publishedAt": "2025-01-14T16:15:00Z",
+    "duration": "PT7M52S",
+    "embeddable": true
+  },
+  "A8oXDTDhZWU": {
+    "title": "Dockerfile y Docker build, construir imágenes, optimizar cache - Curso Docker 7",
+    "description": "Construcción de imágenes; exploración de los dockerfiles y sus principales instrucciones; optimizar el caché en el proceso de construcción y mucho más.",
+    "publishedAt": "2024-06-13T11:35:00Z",
+    "duration": "PT11M10S",
+    "embeddable": true
+  },
+  "APgKgrcibvs": {
+    "title": "Volúmenes, montaje de archivos y backups en Docker - Curso Docker  10",
+    "description": "Gestión de volúmenes, montaje de volúmenes y directorios, copiado de archivos y mucho más en este nuevo episodio del curso de Docker.",
+    "publishedAt": "2024-08-01T15:45:00Z",
+    "duration": "PT11M48S",
+    "embeddable": true
+  },
+  "AquOM-ISsnA": {
+    "title": "Introducción, docker vs VMs, OCI, casos de uso... - Curso Docker 1",
+    "description": "Primer episodio del curso de #docker,  se introduce docker, sus ventajas, diferencias frente a las máquinas virtuales y el estándar OCI.",
+    "publishedAt": "2024-05-02T15:45:00Z",
+    "duration": "PT11M45S",
+    "embeddable": true
+  },
+  "C5Zg08HkG6o": {
+    "title": "Control de Recursos en Kubernetes: ResourceQuota vs LimitRange | Curso Kubernetes #16",
+    "description": "¿Qué pasa si una aplicación tiene un bug y consume toda la RAM de tu clúster? En este vídeo aprendemos a proteger nuestra infraestructura mediante el control de recursos. Veremos:\n✅ ResourceQuota: Cómo establecer límites máximos de CPU, RAM y número de objetos (Pods, Services, PVCs) por cada Namespace.\n✅ LimitRange: Cómo definir valores por defecto y rangos permitidos para cada contenedor individualmente.\nAprenderás a evitar que un 'vecino ruidoso' tire el clúster y cómo obligar a los equipos a ",
+    "publishedAt": "2025-12-18T15:55:30Z",
+    "duration": "PT13M38S",
+    "embeddable": true
+  },
+  "D1YjrFoqg4Q": {
+    "title": "Cómo desplegar aplicaciones sin caídas (Deployments y ReplicaSets) | Curso Kubernetes #05",
+    "description": "En este episodio pasamos a la práctica gestionando el ciclo de vida completo de un Pod en Kubernetes. Aprenderás a crear Pods por CLI (kubectl run) y mediante manifiestos YAML. Además, veremos los comandos esenciales para el día a día de cualquier DevOps o SysAdmin: kubectl get pods, kubectl describe, cómo editar manifiestos en caliente con kubectl edit, y cómo depurar errores leyendo las trazas con kubectl logs.",
+    "publishedAt": "2025-03-13T17:00:14Z",
+    "duration": "PT14M48S",
+    "embeddable": true
+  },
+  "DJGkIhNxE94": {
+    "title": "Automatiza Tareas en Kubernetes con JOBS y CRONJOBS (Backups, Scripts) | Curso #09",
+    "description": "Aprende a ejecutar tareas puntuales y programadas en Kubernetes usando Jobs y CronJobs. Ideal para automatizar backups de bases de datos, migraciones, scripts de limpieza o envíos de emails",
+    "publishedAt": "2025-05-08T15:45:02Z",
+    "duration": "PT8M45S",
+    "embeddable": true
+  },
+  "F1GwuMWBKzo": {
+    "title": "Ansible Playbook tutorial en español: tu primer playbook YAML - Curso Ansible #3",
+    "description": "Tutorial de playbooks de Ansible en español: la sintaxis YAML, la estructura de un playbook (plays, tasks y handlers) y cómo ejecutarlo con ansible-playbook. Es el corazón de la automatización con Ansible, a partir de aquí todo lo demás se construye sobre playbooks. Capítulo 3 del curso de Ansible desde cero.",
+    "publishedAt": "2026-08-06T16:00:37Z",
+    "duration": "PT30M3S",
+    "embeddable": true
+  },
+  "G_pQJY8ssFQ": {
+    "title": "Ansible Vault tutorial: cifra secretos y credenciales - Curso Ansible #8",
+    "description": "Tutorial de Ansible Vault en español: cómo cifrar contraseñas, secretos y claves SSH en tus playbooks sin dejarlos expuestos en Git. Buenas prácticas DevSecOps imprescindibles antes de tocar producción. Capítulo 8 del curso de Ansible desde cero.",
+    "publishedAt": "2026-10-27T17:00:39Z",
+    "duration": "PT19M23S",
+    "embeddable": true
+  },
+  "ImLoqbY9DNA": {
+    "title": "Ejecución de contenedores, run, logs, puertos, procesos y más - Curso Docker 4",
+    "description": "Como ejecutar un contenedor, listar contenedores en ejecución, parar procesos, principales parámetros, redirección de puertos… y algunas opciones más, serán vistas en este vídeo en detalla como parte del curso de docker completo.",
+    "publishedAt": "2024-05-23T11:15:01Z",
+    "duration": "PT11M48S",
+    "embeddable": true
+  },
+  "JDVnWohX530": {
+    "title": "Deployments en Kubernetes: Escalar, Rolling Updates y Rollbacks  | Curso Kubernetes #07",
+    "description": "Aprende a gestionar Deployments en Kubernetes para lograr Alta Disponibilidad (High Availability) y actualizaciones sin cortes de servicio (Zero Downtime)",
+    "publishedAt": "2025-04-15T16:07:30Z",
+    "duration": "PT12M34S",
+    "embeddable": true
+  },
+  "LIramFKvf3E": {
+    "title": "Cómo Exponer tus Aplicaciones en Kubernetes (Services, ClusterIP y NodePort) | Curso Kubernetes #10",
+    "description": "¿Cómo accedes a una web desplegada en Kubernetes? Los Pods son efímeros y sus IPs cambian constantemente. La solución son los Services. En este vídeo aprenderás a exponer tus aplicaciones configurando los servicios más importantes",
+    "publishedAt": "2025-06-03T16:15:01Z",
+    "duration": "PT14M35S",
+    "embeddable": true
+  },
+  "MwnJn9tBaa0": {
+    "title": "Gateway API en Kubernetes: GatewayClass, HTTPRoute y más - Curso Kubernetes #12",
+    "description": "Gateway API es la evolución de Ingress en Kubernetes. En este capítulo 12 del curso de Kubernetes vemos qué es Gateway API, cómo funciona su modelo de recursos (GatewayClass, Gateway y HTTPRoute), por qué separa responsabilidades entre equipos de infra, operadores de cluster y desarrolladores, y cómo desplegar un ejemplo real con NGINX Gateway Fabric.",
+    "publishedAt": "2026-04-09T15:45:01Z",
+    "duration": "PT16M34S",
+    "embeddable": true
+  },
+  "PCzsfwL0z-Q": {
+    "title": "Health Checks en Kubernetes: Liveness, Readiness y Startup Probes | Curso Kubernetes #13",
+    "description": "Sin pruebas específicas sobre el estado de los pods, es dificil diagnosticar si un pod está funcionando correctamente o no. Para esto, Kubernetes nos ofrece las Probes.",
+    "publishedAt": "2025-08-06T15:45:02Z",
+    "duration": "PT19M22S",
+    "embeddable": true
+  },
+  "Q0AIECxW8Fo": {
+    "title": "Imágenes de contenedor, pull, layers, rmi, search, prune y más - Curso docker 6",
+    "description": "¿Cómo funciona una imágenes de contenedor?. Veremos las propiedades de las imágenes de docker, como descargarlas con el comando pull, entenderemos su sistema de capas o layer, las aprenderemos a borrar y a buscar en dockerhub.",
+    "publishedAt": "2024-06-06T11:45:03Z",
+    "duration": "PT10M51S",
+    "embeddable": true
+  },
+  "QhHzygBoN_8": {
+    "title": "HPA en Kubernetes: autoescalado de Pods por CPU y RAM | Curso Kubernetes #17",
+    "description": "¿Cómo hace Kubernetes para escalar automáticamente tus aplicaciones cuando hay pico de carga? En este vídeo aprenderás a configurar el Horizontal Pod Autoscaler (HPA) para escalar pods según métricas de CPU y RAM — sin intervención manual.",
+    "publishedAt": "2026-02-05T07:30:12Z",
+    "duration": "PT11M11S",
+    "embeddable": true
+  },
+  "U7a61YZoqB0": {
+    "title": "Ansible template Jinja2, lineinfile y --check: idempotencia real - Curso Ansible #4",
+    "description": "Template con Jinja2, lineinfile y --check/--diff en Ansible: cómo conseguir idempotencia real con changed_when y failed_when, usar command/shell de forma segura y aprovisionar con get_url y git, los módulos que de verdad usarás en producción. Capítulo 4 del curso de Ansible desde cero.",
+    "publishedAt": "2026-08-18T16:00:33Z",
+    "duration": "PT28M25S",
+    "embeddable": true
+  },
+  "U87QO6VxReA": {
+    "title": "Ingress en Kubernetes, entrada de tráfico ordenada a tu cluster - Curso Kubernetes #11",
+    "description": "¡Adiós a los NodePorts feos! En este vídeo aprendemos a usar Ingress para exponer nuestras aplicaciones en Kubernetes de forma profesional.",
+    "publishedAt": "2025-06-12T22:39:55Z",
+    "duration": "PT21M18S",
+    "embeddable": true
+  },
+  "URK1t98tNEU": {
+    "title": "¿Qué es Ansible y cómo funciona? (Instalación y Laboratorio) - Curso Ansible #1",
+    "description": "Arrancamos el Curso de Ansible desde cero 🚀 En este primer capítulo vemos qué es Ansible, por qué se ha convertido en la herramienta de automatización IT más usada en DevOps, su arquitectura sin agentes (push vs pull, control node y managed nodes), el concepto de idempotencia, y cómo dejarlo instalado y funcionando en tu equipo.",
+    "publishedAt": "2026-07-29T16:22:34Z",
+    "duration": "PT23M59S",
+    "embeddable": true
+  },
+  "VgIFJiAj0e4": {
+    "title": "Variables en Ansible: facts, group_vars, when y loop - Curso Ansible #6",
+    "description": "Variables y facts en Ansible: group_vars, host_vars, la precedencia de variables, los facts que Ansible descubre solo, register, y patrones avanzados de when, loop y handlers para playbooks realmente dinámicos. Arrancamos el bloque de producción. Capítulo 6 del curso de Ansible desde cero.",
+    "publishedAt": "2026-09-02T16:00:30Z",
+    "duration": "PT38M35S",
+    "embeddable": true
+  },
+  "ZS0isVTIVyI": {
+    "title": "Instalación de un Clúster de Kubernetes en Ubuntu (24.04 / 22.04) Paso a Paso | Curso Kubernetes #03",
+    "description": "Guía paso a paso para instalar y configurar un clúster productivo de Kubernetes desde cero utilizando Ubuntu Server (24.04, 22.04 o 20.04). En este tutorial aprenderás a configurar el Nodo Maestro (Control Plane) y los Nodos Worker utilizando kubeadm, kubelet, kubectl, containerd y Cilium como CNI.",
+    "publishedAt": "2025-01-22T16:15:01Z",
+    "duration": "PT19M32S",
+    "embeddable": true
+  },
+  "_aiO_0YjhOQ": {
+    "title": "Aísla y Organiza tus Apps con NAMESPACES y Contextos | Curso Kubernetes #06",
+    "description": "Aprende a organizar tu clúster de Kubernetes utilizando Namespaces. En este vídeo desmitificamos qué aísla y qué NO aísla un namespace (RBAC, cuotas y red). Además, te enseño de forma práctica cómo crear (kubectl create ns), listar y borrar namespaces, y el gran truco de productividad: cómo cambiar el namespace por defecto en tu kubeconfig usando contextos (kubectl config set-context) para no tener que escribir '-n' todo el tiempo.",
+    "publishedAt": "2025-03-25T16:45:02Z",
+    "duration": "PT9M35S",
+    "embeddable": true
+  },
+  "bd8EoJbKmwQ": {
+    "title": "ENTRYPOINT vs CMD, ARG y variables de entorno - Curso Docker 8",
+    "description": "Que instrucciones son mejor para definir el arranque de un contenedor, como variabilizar nuestros ficheros dockerfile con la intrucción ARG y como utilizar variables de entorno para modificar el comportamiento de un contenedor.",
+    "publishedAt": "2024-06-27T11:15:04Z",
+    "duration": "PT11M27S",
+    "embeddable": true
+  },
+  "bvUZuANQdhI": {
+    "title": "Orquestar servicios, balanceos de carga, rollbacks y updates con Swarm - Curso Docker 13",
+    "description": "Docker Swarm nos permite orquestar multiples contenedores en alta disponibilidad, balanceando la carga automáticamente, permitiéndonos escalar y gestionando servicios y despliegues de una forma similar a Docker Compose.",
+    "publishedAt": "2024-09-05T14:57:30Z",
+    "duration": "PT14M43S",
+    "embeddable": true
+  },
+  "cOFcLadQa70": {
+    "title": "Tu Primer POD y Manifiestos YAML con Kubectl | Curso Kubernetes #04",
+    "description": "Descubre los conceptos fundamentales de Kubernetes. En este tutorial aprenderás la diferencia entre Pods, Deployments y Services. Además, veremos cómo estructurar Manifiestos YAML desde cero, cómo configurar el fichero kubeconfig y cómo utilizar los comandos básicos de kubectl (como kubectl apply -f) para desplegar tu primer Pod en el clúster.",
+    "publishedAt": "2025-03-06T17:00:46Z",
+    "duration": "PT10M9S",
+    "embeddable": true
+  },
+  "cWm3_PZR7Os": {
+    "title": "Conceptos básicos, contenedor, imagen, dockerfile, dockerhub - Curso Docker 3",
+    "description": "Episodio del curso de #docker. Veremos los conceptos básicos de #contenedor #imagen #dockerfile y #dockerhub",
+    "publishedAt": "2024-05-16T11:45:03Z",
+    "duration": "PT8M23S",
+    "embeddable": true
+  },
+  "eh4YS9x9CDU": {
+    "title": "Puesta en producción, seguridad y buenas prácticas básicas - Curso docker 15",
+    "description": "Puesta en producción de una aplicación en linux con docker engine, aplicando buenas prácticas al compose, al despligue y al servidor linux. Esto nos permitirá mejorar la seguridad y la resiliencia de nuestras aplicaciones.",
+    "publishedAt": "2024-10-29T16:45:02Z",
+    "duration": "PT18M30S",
+    "embeddable": true
+  },
+  "eqxQGmem_bc": {
+    "title": "¿Qué es Kubernetes y por qué usarlo? (Ventajas) | Curso Kubernetes #1",
+    "description": "Curso completo de kubernetes, de cero a experto en el cual veremos todos los conocimientos de arquitectura, gestión de clusteres, despliegue y escalado de aplicaciones entre otras mil cosas.",
+    "publishedAt": "2025-01-08T16:45:04Z",
+    "duration": "PT7M18S",
+    "embeddable": true
+  },
+  "hXh_ej-hsMg": {
+    "title": "Construye, empaqueta y ejecuta tu primera app en un contenedor Docker - Curso Docker 14",
+    "description": "Construye, distribuye y despliega tu aplicación con Docker desde 0. Utilizando docker build, variables de entorno y docker compose, harás que tu aplicación se pueda ejecutar en cualquier lugar.",
+    "publishedAt": "2024-09-25T18:00:06Z",
+    "duration": "PT12M29S",
+    "embeddable": true
+  },
+  "iX91NRo9cg0": {
+    "title": "Volúmenes en Kubernetes: PV, PVC y StorageClass Explicados | Curso Kubernetes #15",
+    "description": "¿Se te reinicia un Pod y pierdes todos los datos? ¡Se acabó! En este tutorial dominamos la persistencia de datos y los Volúmenes en Kubernetes. Aprenderás a desacoplar el almacenamiento de tus aplicaciones entendiendo el flujo completo:\n✅ PV (Persistent Volume): El disco físico o de red.\n✅ PVC (Persistent Volume Claim): La \"reserva\" o petición de almacenamiento de tu Pod.\n✅ StorageClass y CSI: Aprovisionamiento dinámico para la nube (AWS EBS, EFS, etc.).",
+    "publishedAt": "2025-12-11T07:15:07Z",
+    "duration": "PT16M59S",
+    "embeddable": true
+  },
+  "lQoh9gaEvvc": {
+    "title": "Redes, principales tipos, segregación de red en Docker network - Curso Docker 11",
+    "description": "Revisado del comando docker network, que nos permite crear redes para conectar entre sí múltiples contenedores. También veremos los distintos tipos de redes que podemos crear, como ejecutar contenedores en estas redes, conectar y desconectar contenedores en caliente y, por último, gestionarlas (borrar con rm y prune).",
+    "publishedAt": "2024-08-15T16:15:02Z",
+    "duration": "PT7M54S",
+    "embeddable": true
+  },
+  "oR0nBx5C9DM": {
+    "title": "Docker Compose, orquestar múltiples contenedores y despliegue de servicios - Curso Docker 12",
+    "description": "Docker Compose nos permite orquestar multiples contenedores, volúmenes o redes con la declaración de un único fichero yaml.",
+    "publishedAt": "2024-08-29T18:11:42Z",
+    "duration": "PT16M22S",
+    "embeddable": true
+  },
+  "obALwLV-49U": {
+    "title": "Instalación Docker Desktop y Engine en Windows, Mac y Linux - Curso Docker 2",
+    "description": "En este episodio del curso de #docker  veremos con realizar la instalación en los principales sistemas operativos #linux #windows #macos",
+    "publishedAt": "2024-05-09T11:45:03Z",
+    "duration": "PT9M40S",
+    "embeddable": true
+  },
+  "uWngx9hg_uk": {
+    "title": "Docker CPU y memory limits: evita que un contenedor lo devore todo - Curso Docker 16",
+    "description": "Un contenedor sin límites de recursos puede tumbar el host entero. En este vídeo aprenderás a configurar CPU limits, memory limits y reservations en Docker — via docker run, docker-compose y docker update.",
+    "publishedAt": "2025-01-28T16:15:02Z",
+    "duration": "PT6M11S",
+    "embeddable": true
+  },
+  "umfTMXWgLlo": {
+    "title": "Docker multi-arquitectura: buildx para Apple Silicon y ARM - Curso Docker 17",
+    "description": "¿Tu imagen Docker funciona en tu Mac con chip  M pero falla en el servidor x86? ¿O al revés? Docker buildx resuelve esto: construye imágenes multi-arquitectura desde una sola máquina y publícalas en una sola referencia que funciona en cualquier plataforma.",
+    "publishedAt": "2025-04-03T14:30:35Z",
+    "duration": "PT7M6S",
+    "embeddable": true
+  },
+  "wlFP0krYphg": {
+    "title": "Gestión de contenedores, exec, conflictos, rm, prune y más - Curso Docker 5",
+    "description": "Ejecutar comandos en contenedores, solucionar conflictos, borrar o eliminar contenedores, usando comandos como docker rm, prune, exec, entre otros.",
+    "publishedAt": "2024-05-30T17:01:05Z",
+    "duration": "PT8M26S",
+    "embeddable": true
+  },
+  "zNEKiAy1F6Q": {
+    "title": "StatefulSet vs DaemonSet vs Deployment: ¿Cuándo usar cada uno? | Curso Kubernetes #08",
+    "description": "Descubre la diferencia definitiva entre Deployments, DaemonSets y StatefulSets en Kubernetes. En este tutorial analizamos cuándo y por qué utilizar cada controlador",
+    "publishedAt": "2025-04-22T18:24:12Z",
+    "duration": "PT9M16S",
+    "embeddable": true
+  }
+}

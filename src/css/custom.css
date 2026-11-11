@@ -214,3 +214,7 @@ html.plugin-pages nav {
 .plugin-pages a:hover::before {
   background-color: rgb(36, 36, 36);
 }
+/* Títulos de docs y blog centrados (antes salía de una regla global de about_me) */
+header {
+  text-align: center;
+}

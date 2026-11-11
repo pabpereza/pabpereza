@@ -16,7 +16,8 @@ p {
 	font-size: 1.2em;
 }
 
-header {
+/* Con clase: un selector de etiqueta suelto en un CSS Module se aplica a toda la web */
+.header {
 	text-align: center;
 	display: inline-block;
 }

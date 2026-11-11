@@ -12,7 +12,7 @@ import styles from './about_me.module.css';
 function AboutmePage() {
     const { siteConfig } = useDocusaurusContext();
     return (
-        <header>
+        <header className={styles.header}>
             <div className={styles.row}>
                 <div className={styles.col4}>
                     <img src="img/perfil-2024-transparent.png" alt="sample"></img> 

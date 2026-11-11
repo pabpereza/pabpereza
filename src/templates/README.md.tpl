@@ -1,10 +1,3 @@
-![](./static/img/banner_slim.webp)
-
-[![YouTube Subscribers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpabpereza%2Fmediakit%2Fmain%2Fsrc%2Fdata%2Fmetrics.json&query=%24.global.totalProfessionals&label=Suscriptores&style=for-the-badge&logo=youtube&color=FF0000)](https://www.youtube.com/c/pabpereza?sub_confirmation=1)
-[![YouTube Views](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpabpereza%2Fmediakit%2Fmain%2Fsrc%2Fdata%2Fmetrics.json&query=%24.channel.viewCount&label=Visitas&style=for-the-badge&logo=youtube&color=FF0000)](https://www.youtube.com/c/pabpereza)
-[![GitHub Stars](https://img.shields.io/github/stars/pabpereza/pabpereza?style=for-the-badge&logo=github&label=Estrellas)](https://github.com/pabpereza/pabpereza)
-[![GitHub Followers](https://img.shields.io/github/followers/pabpereza?style=for-the-badge&logo=github&label=Seguidores)](https://github.com/pabpereza)
-
 # Hello there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
 
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 

@@ -78,6 +78,11 @@ Los proyectos de video del canal (research, guiones, miniaturas, assets, SEO, po
 - Para videos ya publicados puede no quedar material provisional; en ese caso partir de la URL de YouTube (transcripción, metadatos) y reconstruir lo que se pida
 - Slug del proyecto = slug del video en YouTube (kebab-case)
 
+### Comunidad: Discord y planificación mensual (`.channel/.brand/`)
+
+- **Discord "Sudoers by pabpereza"**: todo lo del servidor vive en `.channel/.brand/discord/` (estructura, mensajes para publicar o fijar y la CLI `discord_api.py`, que habla con la API REST de Discord con el bot Sudo, sin MCP ni navegador). Trabaja siempre ahí; reglas en su `README.md` (simulacro antes de `--apply`, OK de Pablo para escribir, token fuera del repo).
+- **Planificación mensual**: `.channel/.brand/schedule/` tiene un `AAAA-MM.md` por mes con los recordatorios (directo, sesiones de Capitanes, votaciones, recursos de Navegantes, mantenimiento). Al iniciar sesión, el hook `SessionStart` imprime su estado (`estado.py`). Si hay algo **vencido o en los próximos 7 días**, coméntaselo a Pablo en una o dos líneas al empezar y sigue con lo que pida. Marca `[x]` solo lo que Pablo confirme o lo que hayas hecho y verificado. Si falta el fichero del mes, créalo desde `plantilla.md`.
+
 ### Publicación en RRSS (Postiz)
 
 Todo sale por el **MCP de Postiz** (siempre como borrador para que Pablo publique o programe desde su UI), con el comando `/publicar <tipo>`. Detalle completo en `.claude/commands/publicar.md`.

@@ -5,7 +5,7 @@
       "title": "1. Introducción, fundamentos e instalación",
       "type": "content",
       "category": "docs",
-      "description": "Aprende qué es Ansible, su arquitectura sin agentes, cómo se instala y por qué es la herramienta de automatización IT más popular del ecosistema DevOps. Curso gratuito en español.",
+      "description": "Qué es Ansible, para qué sirve y cómo funciona sin agentes. Instálalo en Linux, macOS o Windows con WSL y lanza tu primer ping. Con vídeo en español.",
       "url": "/docs/cursos/ansible/introduccion_a_ansible_curso_completo",
       "slug": "introduccion_a_ansible_curso_completo",
       "val": 10,
@@ -16,7 +16,7 @@
       "title": "2. Inventarios y hosts",
       "type": "content",
       "category": "docs",
-      "description": "Gestiona tus hosts con inventarios estáticos en INI y YAML, inventarios dinámicos en AWS, Azure y GCP, y comandos ad-hoc. Capítulo 2 del curso de Ansible.",
+      "description": "Cómo crear el inventario de Ansible en INI y YAML con grupos, ansible_host y variables, inventarios dinámicos en AWS y comandos ad-hoc. Con vídeo.",
       "url": "/docs/cursos/ansible/ansible_inventarios_dinamicos_y_estaticos",
       "slug": "ansible_inventarios_dinamicos_y_estaticos",
       "val": 10,
@@ -49,7 +49,7 @@
       "title": "5. Ansible y contenedores",
       "type": "content",
       "category": "docs",
-      "description": "Automatiza Docker y Kubernetes con Ansible. Despliega contenedores con community.docker, orquesta clústeres con kubernetes.core y olvida los scripts bash.",
+      "description": "Despliega contenedores con community.docker y Docker Compose y gestiona Kubernetes con kubernetes.core desde Ansible. Ejemplos reales y vídeo.",
       "url": "/docs/cursos/ansible/ansible_docker_kubernetes_contenedores",
       "slug": "ansible_docker_kubernetes_contenedores",
       "val": 10,
@@ -368,7 +368,7 @@
       "title": "3. Dependencias y SCA",
       "type": "content",
       "category": "docs",
-      "description": "Descubre qué es el análisis de composición de software (SCA), cómo encontrar dependencias con vulnerabilidades conocidas en tu proyecto con Trivy y cómo automatizar sus actualizaciones con Dependabot o Renovate.",
+      "description": "Trivy vs Dependabot, qué hace cada uno en el SCA. Escanea las dependencias de tu proyecto con trivy fs, entiende las transitivas y automatiza los parches con Dependabot o Renovate, con el pipeline de GitHub Actions listo.",
       "url": "/docs/cursos/devsecops/analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
       "slug": "analisis_de_dependencias_vulnerables_sca_con_trivy_dependabot_y_renovate",
       "val": 10,
@@ -390,7 +390,7 @@
       "title": "5. Imágenes de contenedor",
       "type": "content",
       "category": "docs",
-      "description": "Analiza tus imágenes Docker con Trivy, entiende de dónde salen los CVE de la imagen base, aprende a gestionar falsos positivos con trivyignore y a romper el pipeline automáticamente cuando aparece una vulnerabilidad crítica.",
+      "description": "Escanea imágenes Docker con trivy image paso a paso, entiende las severidades de los CVE, sube el informe SARIF a GitHub y rompe el pipeline solo con lo crítico. Incluye cómo fijar trivy-action por SHA tras su compromiso de 2026.",
       "url": "/docs/cursos/devsecops/escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
       "slug": "escanear_imagenes_de_contenedor_con_trivy_cves_severidades_y_gates",
       "val": 10,
@@ -401,7 +401,7 @@
       "title": "6. SBOM y firma",
       "type": "content",
       "category": "docs",
-      "description": "Aprende qué es un SBOM y cómo generarlo con Syft, y cómo firmar tus imágenes de contenedor con Cosign para demostrar que nadie las ha manipulado entre tu pipeline y producción.",
+      "description": "Qué es un SBOM (Software Bill of Materials), cómo generar el SBOM de una imagen Docker con syft en SPDX o CycloneDX y escanearlo con Trivy, y cómo firmar y verificar la imagen con cosign, con claves o sin ellas.",
       "url": "/docs/cursos/devsecops/sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
       "slug": "sbom_y_firma_de_imagenes_inventario_con_syft_y_firma_con_cosign",
       "val": 10,
@@ -687,7 +687,7 @@
       "title": "🐳 Docker",
       "type": "content",
       "category": "docs",
-      "description": "",
+      "description": "Curso completo de Docker gratuito en español, desde la instalación hasta producción. Contenedores, imágenes, Dockerfile, multi-stage y distroless, redes, volúmenes, Docker Compose, Swarm y buildx, con vídeo en cada capítulo.",
       "url": "/docs/cursos/docker",
       "slug": null,
       "val": 10,
@@ -2034,6 +2034,17 @@
       "slug": "openclaw-instalacion-primeros-pasos",
       "val": 6,
       "connected": false
+    },
+    {
+      "id": "/blog/resumen_vulnerabilidades_octubre_2026",
+      "title": "Octubre negro para la seguridad, resumen de vulnerabilidades de octubre de 2026",
+      "type": "content",
+      "category": "blog",
+      "description": "PHP2Shell, Node2Shell en Brotli, GitLab con CVSS 10, un Patch Tuesday de más de 1.400 CVEs, Next.js, LiteLLM troyanizado y el mayor robo cripto de la historia. Qué pasó y qué tienes que parchear.",
+      "url": "/blog/resumen_vulnerabilidades_octubre_2026",
+      "slug": "resumen_vulnerabilidades_octubre_2026",
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/waf_gratis_en_docker_safeline",
@@ -3978,6 +3989,11 @@
     {
       "source": "/blog/ruta_devsecops_recomendaciones_2025",
       "target": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
+      "type": "internal_link"
+    },
+    {
+      "source": "/blog/resumen_vulnerabilidades_octubre_2026",
+      "target": "/docs/cursos/devsecops",
       "type": "internal_link"
     }
   ]

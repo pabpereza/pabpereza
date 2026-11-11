@@ -117,11 +117,7 @@ const config = {
           {
             type: 'custom-youtubeSubscriberBadge',
             position: 'left',
-          },          {
-            href: 'https://twitter.com/pabpereza',
-            className: 'header-x-link',
-            position: 'right',
-          },
+          },          
           {
             href: 'https://www.instagram.com/pabpereza/',
             className: 'header-instagram-link',
@@ -130,16 +126,6 @@ const config = {
           {
             href: 'https://www.linkedin.com/in/pabpereza/',
             className: 'header-linkedin-link',
-            position: 'right',
-          },
-          {
-            href: 'https://www.tiktok.com/@pabpereza',
-            className: 'header-tiktok-link',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/pabpereza/pabpereza',
-            className: 'test',
             position: 'right',
           },
           {

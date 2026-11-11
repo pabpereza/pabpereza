@@ -296,6 +296,8 @@ const config = {
     // El orden importa: el modo de consentimiento tiene que ir antes que gtag
     ['./src/plugins/google-consent', { adsenseClient: 'ca-pub-2204030225179360' }],
     ['@docusaurus/plugin-google-gtag', { trackingID: 'G-40PL0BKGD3' }],
+    // /llms.txt generado en cada build desde el contenido real (cabecera en intro.md)
+    './src/plugins/llms-txt',
     require.resolve('docusaurus-lunr-search'),
     [
       '@docusaurus/plugin-client-redirects',

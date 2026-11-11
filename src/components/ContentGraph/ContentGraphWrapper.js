@@ -1,18 +1,18 @@
-import React, { Suspense } from 'react';
+import {lazy, Suspense} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const LazyContentGraph = React.lazy(() => import('./ContentGraph.js'));
+// El mapa dibuja en un <canvas> y pesa lo suyo: solo en el navegador y en
+// diferido, para no cargar la librería en páginas que no lo muestran
+const LazyContentGraph = lazy(() => import('./ContentGraph.js'));
 
-const ContentGraphWrapper = ({ isFullPage = false }) => {
+export default function ContentGraphWrapper(props) {
   return (
-    <BrowserOnly fallback={<div style={{ textAlign: 'center', padding: '2rem' }}>Cargando diagrama de contenido...</div>}>
+    <BrowserOnly>
       {() => (
-        <Suspense fallback={<div style={{ textAlign: 'center', padding: '2rem' }}>Cargando componente...</div>}>
-          <LazyContentGraph isFullPage={isFullPage} />
+        <Suspense fallback={null}>
+          <LazyContentGraph {...props} />
         </Suspense>
       )}
     </BrowserOnly>
   );
-};
-
-export default ContentGraphWrapper;
+}

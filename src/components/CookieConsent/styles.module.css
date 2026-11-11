@@ -36,7 +36,8 @@
   padding: 0.5rem 1rem;
   font: inherit;
   font-weight: 600;
-  color: #fff;
+  /* Texto oscuro sobre el verde neón del modo oscuro, blanco en el claro */
+  color: var(--ppz-on-primary, #fff);
   cursor: pointer;
   background: var(--ifm-color-primary);
   border: 0;

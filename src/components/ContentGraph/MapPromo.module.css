@@ -1,0 +1,63 @@
+.box {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  margin: 1rem 0 2rem;
+  overflow: hidden;
+  border: 1px solid var(--ppz-border);
+  border-radius: 14px;
+  background: var(--ppz-surface);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.lead {
+  margin: 0;
+  color: var(--ppz-muted);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.75rem;
+  margin: 0;
+}
+
+.stats dt {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ppz-accent);
+}
+
+.stats dd {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ppz-muted);
+}
+
+/* El mapa, de adorno: se funde con el texto por la izquierda */
+.preview {
+  display: block;
+  height: 340px;
+  border-left: 1px solid var(--ppz-border);
+  background: radial-gradient(ellipse at 60% 50%, var(--ppz-glow), transparent 70%);
+}
+
+@media screen and (max-width: 996px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+  .preview {
+    height: 280px;
+    border-left: 0;
+    border-top: 1px solid var(--ppz-border);
+  }
+}

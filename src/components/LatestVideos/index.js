@@ -1,48 +1,51 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import Stagger from '@site/src/components/Stagger';
+import videos from '@site/src/files/videos.json';
 import styles from './styles.module.css';
-import videos from '../../files/videos.json';
 
+// La API de YouTube devuelve los títulos con entidades HTML
+const decode = (text) =>
+  text
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&');
 
-const VideoList = videos.map(video => (
-  {
-  videoid: video.id.videoId,
-  title: video.snippet.title.substring(0, 100),
-  description: video.snippet.description.substring(0, 100),
-}));
+const dateFormat = new Intl.DateTimeFormat('es', {day: 'numeric', month: 'long', year: 'numeric'});
 
-// Let just 3 videos
-VideoList.length = 3;
-
-function Video({videoid, title,description }) {
+export default function LatestVideos() {
   return (
-    <div className={clsx('col col--4')}>
-        <a href={`https://youtu.be/${videoid}`} target='_blank' className='video-title'>
-          <div className="text--center featureImg">
-              <img width='90%' src={`https://img.youtube.com/vi/${videoid}/maxresdefault.jpg`} />
-          </div>
-          <div className="text--center padding-horiz--md">
-            <Heading as="h3">{title}...</Heading>
-             {/* <p>{description}...</p> */}
-          </div>
-        </a>
-    </div>
-  );
-}
-
-
-export default function LastVideos( YOUTUBE_API_KEY) {
- 
-  return (
-    <section className={styles.videos}>
+    <section className="ppz-section">
       <div className="container">
-        <h2>Últimos vídeos de Youtube</h2>
-        <p></p>
-        <div className="row">
-          {VideoList.map((props, idx) => (
-            <Video key={idx} {...props} />
-          ))}
+        <div className="ppz-section__head">
+          <h2>Últimos vídeos</h2>
+          <a className="ppz-more" href="https://www.youtube.com/@Pabpereza" target="_blank" rel="noopener noreferrer">
+            Ir al canal →
+          </a>
         </div>
+        <Stagger className={styles.featured}>
+          {videos.slice(0, 3).map(({id, snippet}, i) => (
+            <a
+              key={id.videoId}
+              className={`ppz-card ${styles.video} ${i === 0 ? styles.big : styles.small}`}
+              href={`https://youtu.be/${id.videoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.thumb}>
+                <img
+                  src={`https://img.youtube.com/vi/${id.videoId}/maxresdefault.jpg`}
+                  alt=""
+                  loading="lazy"
+                  width="1280"
+                  height="720"
+                />
+              </div>
+              <div className={styles.body}>
+                <h3>{decode(snippet.title)}</h3>
+                <span className="ppz-meta">{dateFormat.format(new Date(snippet.publishedAt))}</span>
+              </div>
+            </a>
+          ))}
+        </Stagger>
       </div>
     </section>
   );

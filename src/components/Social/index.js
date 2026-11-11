@@ -1,33 +1,32 @@
-import React from 'react';
 import styles from './styles.module.css';
 
-const SocialIconsRow = () => {
+const networks = [
+  {name: 'YouTube', icon: 'youtube', href: 'https://www.youtube.com/@Pabpereza'},
+  {name: 'Discord', icon: 'discord', href: '/discord'},
+  {name: 'LinkedIn', icon: 'linkedin', href: 'https://www.linkedin.com/in/pabpereza/'},
+  {name: 'Instagram', icon: 'instagram', href: 'https://www.instagram.com/pabpereza/'},
+  {name: 'X', icon: 'x-twitter', href: 'https://x.com/pabpereza'},
+  {name: 'TikTok', icon: 'tiktok', href: 'https://www.tiktok.com/@pabpereza'},
+];
+
+export default function SocialIconsRow() {
   return (
-    <section className={styles.socialsection}>
-          <h2>Sígueme en redes</h2>
-          <p>¡No te pierdas de nada! Sígueme en mis redes sociales para estar al tanto de todas las novedades. El contenido principal lo genero para Youtube. Estos vídeos largos, van acompañados de documentación escrita que se queda en esta web (recuerda que es un repositorio de GitHub modificable). También subo algún short en instagram y tiktok.</p>
-          <row className={styles.socialicons}>
-            <div>
-              <a href="https://www.tiktok.com/@pabpereza"><img className={styles.icon} src='/img/social/tiktok-logo.svg' ></img></a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/pabpereza/"><img className={styles.icon} src='/img/social/instagram-logo.svg' ></img></a>
-            </div>
-            <div>
-              <a href="https://www.youtube.com/c/pabpereza"><img className={styles.icon} src='/img/social/youtube-logo.svg' ></img></a>
-            </div>
-            <div>
-              <a href="https://twitter.com/pabpereza"><img className={styles.icon} src='/img/social/x-twitter-logo.svg' ></img></a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/pablo-pérez-aradros-calvo-516634109/"><img className={styles.icon} src='/img/social/linkedin-logo.svg' ></img></a>
-            </div>
-          </row>
+    <section className={`ppz-section ${styles.social}`}>
+      <div className="container">
+        <p>Los vídeos largos van a YouTube y su versión escrita se queda en esta web. Los shorts, en Instagram y TikTok.</p>
+        <ul className={styles.icons}>
+          {networks.map(({name, icon, href}) => (
+            <li key={name}>
+              <a href={href} target="_blank" rel="noopener noreferrer" aria-label={name} title={name}>
+                <span
+                  className={styles.icon}
+                  style={{'--icon': `url('/img/social/${icon}-logo.svg')`}}
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
-};
-
-export default SocialIconsRow;
-
-
-
+}

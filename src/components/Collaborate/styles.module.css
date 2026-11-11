@@ -1,0 +1,57 @@
+.box {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 1.5rem 2rem;
+  align-items: center;
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--ppz-border);
+  border-radius: 14px;
+  background: radial-gradient(ellipse 60% 120% at 0% 0%, var(--ppz-glow), transparent 70%), var(--ppz-surface);
+}
+
+/* Va dentro de un artículo de docs: se anulan los márgenes de su markdown */
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+}
+
+.text p {
+  margin: 0 0 1rem;
+  color: var(--ppz-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+}
+
+.stats dt {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ppz-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats dd {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ppz-muted);
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}

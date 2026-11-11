@@ -1,0 +1,200 @@
+.channel {
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ppz-accent);
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ifm-font-color-base) !important;
+}
+
+.price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ppz-muted);
+}
+
+.join {
+  margin-top: 2rem;
+}
+
+/* La almohadilla de cada canal se enciende en secuencia al entrar en pantalla
+   (--i lo pone .ppz-stagger en cada tarjeta) */
+:global(.is-in) .hash {
+  display: inline-block;
+  animation: hash 0.9s ease backwards;
+  animation-delay: calc(350ms + var(--i, 0) * 110ms);
+}
+
+@keyframes hash {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+    text-shadow: none;
+  }
+  45% {
+    opacity: 1;
+    transform: scale(1.5);
+    text-shadow: 0 0 14px var(--ppz-accent);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+}
+
+/* Nivel más alto: borde verde con un brillo que late */
+.top {
+  border-color: color-mix(in srgb, var(--ppz-accent) 55%, transparent);
+  animation: top-glow 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes top-glow {
+  from {
+    box-shadow: 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 0 26px var(--ppz-glow);
+  }
+}
+
+/* Chat simulado de la cabecera */
+.chat {
+  margin: 0;
+  padding: 0.75rem 1rem 0.6rem;
+  text-align: left;
+  background: var(--ppz-surface);
+  border: 1px solid var(--ppz-border);
+  border-radius: 14px;
+}
+
+.chatHead {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid var(--ppz-border);
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 700;
+}
+
+.hashStatic {
+  color: var(--ppz-accent);
+}
+
+.msg {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+/* Los mensajes van llegando cuando el chat entra en pantalla */
+:global(.is-in) .msg {
+  animation: msg 0.45s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  animation-delay: calc(0.6s + var(--i) * 1.4s);
+}
+
+.msg strong {
+  font-size: 0.9rem;
+}
+
+.msg p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.reaction {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--ppz-accent) 50%, transparent);
+  background: color-mix(in srgb, var(--ppz-accent) 12%, transparent);
+  font-size: 0.85rem;
+}
+
+:global(.is-in) .reaction {
+  animation: pop 0.4s cubic-bezier(0.3, 1.7, 0.5, 1) both;
+  animation-delay: calc(0.6s + 2 * 1.4s + 0.8s);
+}
+
+.chat figcaption {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--ppz-muted);
+  text-align: right;
+}
+
+@keyframes msg {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.is-in) .hash,
+  .top,
+  :global(.is-in) .msg,
+  :global(.is-in) .reaction {
+    animation: none;
+  }
+}
+
+/* Canales a la izquierda y chat de ejemplo a la derecha, mitad y mitad */
+.discordRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  /* Las dos mitades miden lo mismo de alto: manda la más alta (el chat) */
+  align-items: stretch;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr; /* las fichas se reparten todo el alto disponible */
+  gap: 0.75rem;
+}
+
+.channelCard {
+  justify-content: center;
+  padding: 0.9rem 1rem;
+}
+
+.chatWrap {
+  display: flex;
+}
+
+.chatWrap .chat {
+  flex: 1;
+}
+
+.channelCard h3 {
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 996px) {
+  .discordRow {
+    grid-template-columns: 1fr;
+  }
+}

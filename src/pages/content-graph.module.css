@@ -1,0 +1,5 @@
+/* El mapa ocupa toda la ventana bajo el navbar */
+.page {
+  height: calc(100vh - var(--ifm-navbar-height));
+  height: calc(100dvh - var(--ifm-navbar-height));
+}

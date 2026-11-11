@@ -1,4 +1,10 @@
 ---
+title: Cheatsheet de Docker - comandos esenciales de un vistazo
+description: >-
+  Chuleta de comandos de Docker para el día a día. Descargar y gestionar
+  imágenes, arrancar, parar y borrar contenedores, limpieza y permisos del
+  grupo docker, listos para copiar.
+sidebar_label: Cheatsheet
 keywords: [docker, comandos docker, cheatsheet docker, docker tutorial, docker desde cero, docker para principiantes, docker avanzado, docker en producción, gestión de contenedores, gestión de imágenes, volúmenes docker, redes docker]
 ---
 

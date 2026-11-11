@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useActivePlugin, useDoc} from '@docusaurus/plugin-content-docs/client';
+import {useCookieConsent} from '@site/src/components/CookieConsent/consent';
 import videos from '@site/src/data/youtube-videos.json';
 import styles from './styles.module.css';
 
@@ -15,60 +16,19 @@ function JsonLd({data}) {
   );
 }
 
-// Google Advertising Products en la Global Vendor List del TCF (incluye YouTube)
-const GOOGLE_TCF_VENDOR = 755;
-
-// ¿Ha aceptado el usuario las cookies de Google en el CMP (src/plugins/
-// google-consent)? Se lee del API estándar del TCF; fuera del RGPD
-// (gdprApplies false) no hace falta consentimiento. Si el CMP no llega a
-// cargar (bloqueador de anuncios, AdSense desactivado), se queda en false.
-function useGoogleConsent() {
-  const [granted, setGranted] = useState(false);
-  useEffect(() => {
-    let listenerId;
-    let retries = 20;
-    let timer;
-    const attach = () => {
-      if (typeof window.__tcfapi !== 'function') {
-        if (retries-- > 0) timer = setTimeout(attach, 500);
-        return;
-      }
-      window.__tcfapi('addEventListener', 2, (tcData, success) => {
-        if (!success || !tcData) return;
-        listenerId = tcData.listenerId;
-        if (tcData.gdprApplies === false) {
-          setGranted(true);
-        } else if (['tcloaded', 'useractioncomplete'].includes(tcData.eventStatus)) {
-          setGranted(Boolean(
-            tcData.purpose?.consents?.[1] && tcData.vendor?.consents?.[GOOGLE_TCF_VENDOR],
-          ));
-        }
-      });
-    };
-    attach();
-    return () => {
-      clearTimeout(timer);
-      if (listenerId !== undefined && typeof window.__tcfapi === 'function') {
-        window.__tcfapi('removeEventListener', 2, () => {}, listenerId);
-      }
-    };
-  }, []);
-  return granted;
-}
-
 // Vídeo del frontmatter (`youtube: <id>`), iframe oficial cargado en diferido,
 // más su VideoObject:
 // - Sin consentimiento: youtube-nocookie (modo de privacidad mejorada). El
 //   vídeo sigue en la página, que es lo que necesita Google para indexarlo.
-// - Con consentimiento: youtube.com, que reconoce la sesión del usuario y su
+// - Con consentimiento (aviso de cookies propio): youtube.com, que reconoce la sesión del usuario y su
 //   YouTube Premium.
 // Si el vídeo aún no está en youtube-videos.json (npm run update-videos), se
 // pinta el iframe igualmente pero sin JSON-LD, que necesita fecha y duración.
 function Video({id, fallbackTitle}) {
   const video = videos[id];
   const title = video?.title ?? fallbackTitle;
-  const consent = useGoogleConsent();
-  const host = consent ? 'www.youtube.com' : 'www.youtube-nocookie.com';
+  const consent = useCookieConsent();
+  const host = consent === 'granted' ? 'www.youtube.com' : 'www.youtube-nocookie.com';
   return (
     <>
       {video && (

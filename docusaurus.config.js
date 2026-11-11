@@ -86,7 +86,7 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        // Analytics va en `plugins`, detrás de google-consent
+        // Analytics va en `plugins`, detrás de cookie-consent
       }),
 
     ],
@@ -218,8 +218,8 @@ const config = {
                 to: '/cookies',
               },
               {
-                // Reabre el banner del CMP de Google para cambiar la elección
-                html: '<a class="footer__link-item" href="#" onclick="event.preventDefault(); window.googlefc = window.googlefc || {}; (googlefc.callbackQueue = googlefc.callbackQueue || []).push(function(){ googlefc.showRevocationMessage(); });">Gestionar cookies</a>',
+                // Reabre el aviso de cookies (src/components/CookieConsent)
+                html: '<a class="footer__link-item" href="#" onclick="event.preventDefault(); window.dispatchEvent(new Event(\'cookie-consent-open\'));">Gestionar cookies</a>',
               },
               {
                 label: 'Aviso legal',
@@ -329,7 +329,7 @@ const config = {
   themes: [ '@docusaurus/theme-mermaid'],
   plugins: [
     // El orden importa: el modo de consentimiento tiene que ir antes que gtag
-    ['./src/plugins/google-consent', { adsenseClient: 'ca-pub-2204030225179360' }],
+    './src/plugins/cookie-consent',
     ['@docusaurus/plugin-google-gtag', { trackingID: 'G-40PL0BKGD3' }],
     // /llms.txt generado en cada build desde el contenido real (cabecera en intro.md)
     './src/plugins/llms-txt',

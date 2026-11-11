@@ -6,6 +6,7 @@ tags: [seguridad, devsecops, vulnerabilidades, cve]
 keywords: [octubre negro seguridad, vulnerabilidades octubre 2026, resumen cve octubre 2026, php2shell, node2shell, brotli cve-2026-111497, gitlab cvss 10, patch tuesday octubre 2026, next.js vulnerabilidad, litellm comprometido, binance hackeo, cisa kev, que parchear]
 authors: pabpereza
 date: 2026-11-09
+image: ./resumen_vulnerabilidades_octubre_2026-miniatura.jpg
 ---
 
 Octubre ha sido un mes negro para la seguridad. Este año el Black Friday se ha adelantado, y lo que venía de oferta eran CVEs. En cuatro semanas hemos tenido un RCE sin login en el intérprete de PHP explotado antes de ser público, un fallo en Brotli que tumba Node.js, .NET y Python a la vez, dos CVSS 10 en GitLab, un Patch Tuesday de más de 1.400 CVEs, una librería de IA troyanizada en PyPI y Docker Hub y, para rematar, el mayor robo cripto de la historia.

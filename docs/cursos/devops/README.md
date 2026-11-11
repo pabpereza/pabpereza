@@ -30,8 +30,6 @@ sidebar_label: ♾️ DevOps
 
 # Curso DevOps
 
-**¡Este curso está en desarrollo! Puedes seguirme aquí o en YouTube para ver las actualizaciones.**
-
 Bienvenido al curso de DevOps gratuito y en español. Empezamos desde cero, sin dar por hecho que sabemos nada de CI/CD ni de infraestructura, y llegamos hasta un nivel intermedio.
 
 El curso está estructurado alrededor de una idea: DevOps no es un conjunto de herramientas, es una forma de trabajar en la que cultura, automatización y medición se refuerzan entre sí. Por eso empezamos por la cultura y no por Jenkins.

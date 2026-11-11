@@ -31,8 +31,6 @@ sidebar_label: ⚓️ Kubernetes
 
 # Curso Kubernetes - De grumete a almirante
 
-**¡Este curso está en desarrollo activo! Sígueme aquí o en Youtube para recibir actualizaciones semanales del curso.**
-
 ![Banner Kubernetes](img/banner_kubernetes.png)
 
 ## 🚀 ¿Qué aprenderemos en este curso?

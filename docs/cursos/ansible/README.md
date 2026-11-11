@@ -92,14 +92,14 @@ No necesitamos experiencia previa con Ansible ni saber programar. Con esto basta
 * [🔀 6. Variables y Control de Flujo](./106.Variables_control_flujo.md) — Variables, facts, condicionales, bucles y handlers · [vídeo](https://youtu.be/VgIFJiAj0e4)
 * [🎭 7. Roles, Templates y Galaxy](./107.Roles.md) — Roles reutilizables y Ansible Galaxy · [vídeo](https://youtu.be/5tH-uroFfW8)
 * [🔐 8. Seguridad y Credenciales](./108.Seguridad.md) — Ansible Vault, claves SSH y variables sensibles · [vídeo](https://youtu.be/G_pQJY8ssFQ)
-* [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when y troubleshooting de playbooks · vídeo próximamente
-* [🏗️ 10. Proyecto Final](./110.Proyecto_final.md) — Despliega una app real en tres servidores con balanceo Nginx, roles, Vault y firewall · vídeo próximamente
+* [🔧 9. Errores y depuración](./109.Errores_depuracion.md) — block/rescue/always, failed_when y troubleshooting de playbooks
+* [🏗️ 10. Proyecto Final](./110.Proyecto_final.md) — Despliega una app real en tres servidores con balanceo Nginx, roles, Vault y firewall
 
 ### 🟣 Bloque III — Ansible Intermedio
 
-*Fuera del núcleo introductorio de 10 vídeos: contenido de nivel avanzado que se irá ampliando.*
+*Fuera del núcleo introductorio de 10 vídeos: contenido de nivel avanzado.*
 
-* [🚀 21. Ansible en CI/CD](./201.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue · vídeo próximamente
+* [🚀 21. Ansible en CI/CD](./201.CICD.md) — Jenkins, GitHub Actions y estrategias de despliegue
 
 ## El curso en vídeo
 

@@ -31,8 +31,6 @@ sidebar_label: 🛡️ DevSecOps
 
 # Curso DevSecOps
 
-**¡Este curso está en desarrollo! Puedes seguirme aquí o en YouTube para ver las actualizaciones semanales.**
-
 Bienvenido al curso de DevSecOps gratuito y en español. La idea es sencilla: coger un pipeline normal y corriente e ir metiéndole seguridad en cada etapa, sin convertirlo en un infierno de burocracia que el equipo acabe saltándose.
 
 No vamos a hablar de seguridad en abstracto. En cada capítulo hay una herramienta, un comando y un fallo real que encontrar. Todos los laboratorios se ejecutan en nuestra máquina con un `docker run` de una línea: no necesitamos cluster, ni cuenta de cloud, ni credenciales de nada.

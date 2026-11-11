@@ -1,25 +1,20 @@
-/* Header */
-
-html {
-	background-image: (url("/img/fondo.jpg")); ;
-}	
-
-h2 {
-	font-size: 2.2em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-
-p {
-	font-size: 1.2em;
-}
-
-/* Con clase: un selector de etiqueta suelto en un CSS Module se aplica a toda la web */
+/* Todo cuelga de .header: un selector de etiqueta suelto en un CSS Module se
+   aplica a toda la web, no solo a esta página */
 .header {
 	text-align: center;
 	display: inline-block;
+}
+
+.header h2 {
+	font-size: 2.2em;
+}
+
+.header h3 {
+	font-size: 1.5em;
+}
+
+.header p {
+	font-size: 1.2em;
 }
 
 .row {

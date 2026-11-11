@@ -1,0 +1,106 @@
+/* La columna mide lo mismo que el artículo (ver custom.css): dentro, el mapa
+   local y el índice se pegan arriba y el botón de plegar, abajo */
+.column {
+  --toggle-height: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  display: flex;
+  flex-direction: column;
+  /* Deja sitio al botón, que ocupa el borde inferior de la ventana */
+  max-height: calc(100vh - var(--ifm-navbar-height) - var(--toggle-height) - 2rem);
+  margin-bottom: 1rem;
+}
+
+/* El índice original deja de ser fijo por su cuenta y, si no cabe, hace
+   scroll dentro del hueco que queda bajo el mapa local */
+.toc {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.toc > * {
+  position: static;
+  max-height: none;
+}
+
+/* Botón de plegar: pegado al borde inferior de la ventana. Lleva las clases
+   de botón de Infima y estas mismas reglas que el del menú izquierdo
+   (collapseSidebarButton del tema), así que se ven iguales */
+.toggle {
+  position: sticky;
+  bottom: 0;
+  flex: none;
+  display: block;
+  width: 100%;
+  height: var(--toggle-height);
+  margin: auto 0 0;
+  background-color: var(--docusaurus-collapse-button-bg);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 0;
+}
+
+.toggle:hover,
+.toggle:focus {
+  background-color: var(--docusaurus-collapse-button-bg-hover);
+}
+
+/* El botón se prolonga hasta el borde derecho de la ventana, como el del
+   menú izquierdo llega hasta el suyo. El contenido va centrado con un ancho
+   máximo, así que el hueco varía: la prolongación es más ancha de la cuenta y
+   .main-wrapper la recorta en el borde (overflow-x: clip, en custom.css) */
+.toggle {
+  border-right-width: 0;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: 100%;
+  width: 100vw;
+  background-color: inherit;
+  border: solid var(--ifm-toc-border-color);
+  border-width: 1px 0;
+}
+
+/* El icono original apunta a la derecha («plegar hacia la derecha») */
+.toggle svg {
+  margin-top: 4px;
+}
+
+.iconHidden {
+  transform: rotate(180deg);
+}
+
+/* Plegada: solo queda un botón flotante abajo a la derecha, para no estorbar */
+:global(html[data-toc-hidden]) .toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  width: var(--toggle-height);
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  /* Opaco: flota sobre el contenido */
+  background-color: var(--ppz-surface);
+  border-right-width: 1px;
+}
+
+:global(html[data-toc-hidden]) .toggle::after {
+  content: none;
+}
+
+:global(html[data-toc-hidden]) .toggle:hover,
+:global(html[data-toc-hidden]) .toggle:focus {
+  border-color: var(--ppz-accent);
+}

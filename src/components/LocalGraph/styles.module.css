@@ -1,0 +1,93 @@
+.box {
+  flex: none;
+  margin-bottom: 1rem;
+  border: 1px solid var(--ppz-border);
+  border-radius: 12px;
+  background: var(--ppz-surface);
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.6rem 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ppz-muted);
+}
+
+.head a {
+  display: flex;
+  padding: 0.2rem;
+  border-radius: 6px;
+  color: var(--ppz-muted);
+}
+
+.head a:hover {
+  color: var(--ppz-accent);
+  background: var(--ppz-border);
+}
+
+.head svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.graph {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* La caja se adapta al ancho de la columna; el dibujo crece con ella hasta
+     este tope y, a partir de ahí, queda centrado */
+  max-height: 260px;
+}
+
+.line,
+.lineOn {
+  stroke: var(--ppz-border);
+  stroke-width: 1;
+  transition: stroke 0.15s ease;
+}
+
+.lineOn {
+  stroke: var(--ppz-accent);
+  stroke-width: 1.5;
+}
+
+.node {
+  transition: r 0.15s ease;
+  cursor: pointer;
+}
+
+/* Aro de la página actual */
+.ring {
+  fill: none;
+  stroke: var(--ppz-accent);
+  stroke-width: 1.5;
+}
+
+.caption {
+  margin: 0;
+  padding: 0 0.75rem 0.55rem;
+  min-height: 2.6em; /* dos líneas: no salta al pasar por títulos largos */
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: var(--ppz-muted);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .line,
+  .lineOn,
+  .node {
+    transition: none;
+  }
+}

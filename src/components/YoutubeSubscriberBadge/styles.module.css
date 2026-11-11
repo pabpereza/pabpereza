@@ -36,14 +36,18 @@
   align-items: center;
   padding: 0.1rem 0.5rem;
   border-radius: 999px;
-  background: rgba(255, 0, 0, 0.15);
-  color: #ff4d4d;
+  background: color-mix(in srgb, var(--ppz-accent) 14%, transparent);
+  color: var(--ppz-accent);
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
-[data-theme='dark'] .count {
-  background: rgba(255, 0, 0, 0.22);
-  color: #ff6b6b;
+
+/* En móvil no cabe junto al buscador (quedaba tapado): se queda solo en el
+   menú lateral */
+@media screen and (max-width: 996px) {
+  :global(.navbar__items--right) .badge {
+    display: none;
+  }
 }

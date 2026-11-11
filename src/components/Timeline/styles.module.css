@@ -1,0 +1,129 @@
+.wrap {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  border-left: 2px solid var(--ppz-border);
+}
+
+.timeline li {
+  position: relative;
+  padding-bottom: 1.25rem;
+}
+
+/* Punto de cada etapa, centrado sobre la línea */
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: calc(-1.5rem - 7px);
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ppz-accent);
+}
+
+.timeline h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem;
+  transition: color 0.3s ease;
+}
+
+.timeline p {
+  color: var(--ppz-muted);
+  margin: 0;
+}
+
+.active h3 {
+  color: var(--ppz-accent);
+}
+
+/* Puntero: un círculo de 30px centrado sobre la línea (x = 1px) y sobre el
+   punto de la etapa activa (0.35rem + 6px por debajo del inicio del <li>) */
+.marker {
+  position: absolute;
+  left: -14px;
+  top: calc(0.35rem + 6px - 15px);
+  width: 30px;
+  height: 30px;
+  transition: transform 0.55s cubic-bezier(0.45, 0, 0.3, 1);
+  pointer-events: none;
+}
+
+.hop {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--ppz-accent);
+  background: var(--ifm-background-color);
+  box-shadow: 0 0 12px var(--ppz-glow);
+  animation: hop 0.55s ease-in-out;
+}
+
+/* Durante el salto es un punto; al caer, se convierte en el icono */
+.pointer,
+.icon {
+  grid-area: 1 / 1;
+}
+
+.pointer {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ppz-accent);
+  animation: pointer-out 0.9s ease-in both;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: var(--ppz-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: icon-in 0.9s cubic-bezier(0.3, 1.6, 0.5, 1) both;
+}
+
+/* El salto describe un arco hacia la izquierda de la línea */
+@keyframes hop {
+  0% {
+    transform: translateX(0) scale(0.7);
+  }
+  50% {
+    transform: translateX(-16px) scale(0.7);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes pointer-out {
+  0%,
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes icon-in {
+  0%,
+  60% {
+    opacity: 0;
+    transform: scale(0) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}

@@ -1,16 +1,17 @@
-import React from 'react';
 import Layout from '@theme/Layout';
-import ContentGraphWrapper from '@site/src/components/ContentGraph/ContentGraphWrapper';
+import ContentGraph from '@site/src/components/ContentGraph';
+import styles from './content-graph.module.css';
 
 export default function ContentGraphPage() {
   return (
     <Layout
-      title="Diagrama de Contenido"
-      description="Vista interactiva minimalista del contenido relacionado por enlaces internos - Cursos y Blog de Pabpereza"
-    >
-      <div style={{ width: '100%', height: '100vh', margin: 0, padding: '20px 0' }}>
-        <ContentGraphWrapper isFullPage={true} />
-      </div>
+      title="Mapa de contenido"
+      description="Mapa interactivo de los cursos y artículos de pabpereza.dev y de cómo enlazan entre sí. Busca una página, filtra por curso y salta a lo que te interese."
+      noFooter>
+      <main className={styles.page}>
+        <h1 className="ppz-sr">Mapa de contenido</h1>
+        <ContentGraph />
+      </main>
     </Layout>
   );
 }

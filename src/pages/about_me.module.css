@@ -1,69 +1,78 @@
-/* Todo cuelga de .header: un selector de etiqueta suelto en un CSS Module se
-   aplica a toda la web, no solo a esta página */
-.header {
-	text-align: center;
-	display: inline-block;
+/* Todo cuelga de clases propias: un selector de etiqueta suelto en un CSS Module
+   se aplica a toda la web, no solo a esta página */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: center;
+  gap: 3rem;
 }
 
-.header h2 {
-	font-size: 2.2em;
+.splitReverse {
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
 }
 
-.header h3 {
-	font-size: 1.5em;
+.name {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0.5rem 0 0.25rem;
 }
 
-.header p {
-	font-size: 1.2em;
+.tagline {
+  font-size: 1.3rem;
+  color: var(--ppz-muted);
 }
 
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 2.5em;
-	width: 100%;
-	margin: auto;
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ppz-border);
 }
 
-.col8 {
-	text-align: justify;
+.stats dt {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ppz-accent);
+  /* Cifras de ancho fijo: no bailan mientras cuentan */
+  font-variant-numeric: tabular-nums;
 }
 
-@media screen and (min-width: 1300px) {
-    .row {
-        max-width: 1300px;
-		padding: 0em;
-    }
+.stats dd {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ppz-muted);
 }
 
-@media (min-width: 992px) {
-	.col4 {
-		flex: 0 0 40%;
-		max-width: 40%;
-	}
+@media screen and (max-width: 996px) {
+  .split,
+  .splitReverse {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-	.col8 {
-		flex: 0 0 60%;
-		max-width: 60%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		padding: 1.5em;
-	}
+  /* En móvil la imagen de tecnologías va antes que el texto, como la de perfil */
+  .splitReverse > :last-child {
+    order: -1;
+  }
 }
 
-@media (max-width: 991.98px) {
-	.col8, .col4 {
-		flex: 0 0 100%;
-		max-width: 100%;
-	}
-
-	.col8 {
-		padding: 0em;
-	}
-
-	.row {
-		padding: 2.5em;
-	}
+.quote {
+  margin: 1.5rem 0 0;
+  border-left-color: var(--ppz-accent);
 }
 
+.quote p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 0 0.25rem;
+}
+
+.quote cite {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--ppz-muted);
+}

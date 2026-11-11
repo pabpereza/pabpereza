@@ -1,65 +1,140 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Estilos globales. Docusaurus usa Infima; aquí se redefinen sus variables y
+ * se añaden las piezas compartidas por las páginas propias (clases .ppz-*).
  */
 
-/* You can override the default Infima variables here. */
+/* ---------- Tipografía ---------- */
+
+/* Geist y Geist Mono (las de las animaciones del canal), servidas desde el
+   propio sitio en static/fonts: sin peticiones a terceros. Licencia OFL. */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/geist-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/geist-latin-ext-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/geist-mono-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 :root {
-  --ifm-color-primary: rgb(84, 23, 190);
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-font-family-base: 'Geist', system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-family-monospace: 'Geist Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+/* ---------- Paleta ---------- */
+
+/* Modo claro: el verde de marca oscurecido para que se lea sobre blanco. Los
+   enlaces de texto van un punto más oscuros que los botones para llegar a 4,5:1 */
+:root {
+  --ifm-color-primary: #00935a;
+  --ifm-color-primary-dark: #008451;
+  --ifm-color-primary-darker: #007d4d;
+  --ifm-color-primary-darkest: #00673f;
+  --ifm-color-primary-light: #00a263;
+  --ifm-color-primary-lighter: #00a967;
+  --ifm-color-primary-lightest: #00bf75;
+  --ifm-link-color: #007a45;
+  --ifm-link-hover-color: #00673f;
   --ifm-code-font-size: 95%;
+  --ifm-navbar-shadow: none;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ppz-surface: #f0f7f3;
+  --ppz-border: rgba(0, 60, 30, 0.14);
+  --ppz-muted: #56605b;
+  --ppz-glow: rgba(0, 200, 110, 0.22);
+  --ppz-accent: #007a45;
+  --ppz-on-primary: #ffffff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Modo oscuro: negro y verde neón, los mismos que las animaciones del canal */
 [data-theme='dark'] {
-  --ifm-color-primary: rgb(55, 125, 246);
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #00ff87;
+  --ifm-color-primary-dark: #00e679;
+  --ifm-color-primary-darker: #00d972;
+  --ifm-color-primary-darkest: #00b35e;
+  --ifm-color-primary-light: #1aff93;
+  --ifm-color-primary-lighter: #26ff99;
+  --ifm-color-primary-lightest: #4dffab;
+  /* El neón se reserva para botones, titulares y hovers; los enlaces de
+     lectura van en un verde más suave para no cansar en páginas largas */
+  --ifm-link-color: #4ade9a;
+  --ifm-link-hover-color: #00ff87;
+  --ifm-background-color: #0a0a0a;
+  --ifm-background-surface-color: #111312;
+  --ifm-navbar-background-color: #0a0a0a;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+
+  --ppz-surface: #121514;
+  --ppz-border: rgba(255, 255, 255, 0.1);
+  --ppz-muted: #a3aca7;
+  --ppz-glow: rgba(0, 255, 135, 0.2);
+  --ppz-accent: #00ff87;
+  --ppz-on-primary: #0a0a0a;
 }
 
-html.plugin-pages {
-  background-image: url('/img/fondo.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  --ifm-navbar-link-color: white !important;
-  color: white;
+.button--primary,
+.button--primary:hover {
+  color: var(--ppz-on-primary);
 }
 
-html.plugin-pages footer {
-  background: rgba(0, 0, 0, 0.2) ;
-  backdrop-filter: blur(25px);
-  border-radius: 15px;
+/* ---------- Navbar y pie ---------- */
+
+.navbar {
+  border-bottom: 1px solid var(--ppz-border);
 }
 
-html.plugin-pages nav {
-  background-color: transparent;
-  border-radius: 15px;
+.navbar__title {
+  font-family: var(--ifm-font-family-monospace);
+  letter-spacing: -0.02em;
 }
 
-
+/* Solo en escritorio: con backdrop-filter el menú lateral del móvil queda
+   recortado a la altura del navbar */
 @media screen and (min-width: 997px) {
-
-  html.plugin-pages nav {
-    background-color: transparent;
-    backdrop-filter: blur(25px);
+  .navbar {
+    background-color: color-mix(in srgb, var(--ifm-navbar-background-color) 60%, transparent);
+    backdrop-filter: blur(14px);
   }
 }
 
+.dropdown-separator {
+  margin: 0.3rem 0;
+  border: 0;
+  border-top: 1px solid var(--ppz-border);
+}
 
+.footer {
+  border-top: 1px solid var(--ppz-border);
+}
 
-/* Github icon */
+/* El pie es oscuro también en modo claro */
+.footer--dark {
+  --ifm-footer-background-color: #0a0a0a;
+}
+
+/* Icono de GitHub del navbar */
 .header-github-link::before {
   content: '';
   width: 24px;
@@ -75,146 +150,407 @@ html.plugin-pages nav {
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
-
-/* Github icon */
-.header-github-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-github-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-
-
-/* Github icon */
-.header-github-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-github-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-
-
-
-/* Tiktok icon */
-.header-tiktok-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("/img/social/tiktok-logo.svg");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-tiktok-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-
-/* Instagram icon */
-.header-instagram-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("/img/social/instagram-logo.svg");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-instagram-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-
-/* X icon */
-.header-x-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("/img/social/x-twitter-logo.svg");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-x-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-/* Linkedin icon */
-.header-linkedin-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("/img/social/linkedin-logo.svg");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-linkedin-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-/* Diagram icon */
-.header-diagram-link::before {
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("/img/social/diagram-logo.svg");
-  transition: background-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-.header-diagram-link:hover::before {
-  background-color: var(--ifm-navbar-link-hover-color);
-}
-
-.video-title {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0.5rem 0;
-}
-
-.video-title:hover {
-  color: rgb(36, 36, 36);
-  font-weight: 600;
-}
-
-.plugin-pages a:hover {
-  color: rgb(36, 36, 36);
-}
-
-.plugin-pages a:hover::before {
-  background-color: rgb(36, 36, 36);
-}
-/* Títulos de docs y blog centrados (antes salía de una regla global de about_me) */
+/* Títulos de docs y blog centrados */
 header {
   text-align: center;
+}
+
+/* ---------- Piezas de las páginas propias (home, comunidad, sobre mí) ---------- */
+
+/* Primer bloque de las páginas propias: se mete por debajo del navbar para
+   que el halo verde se vea a través de su transparencia */
+.ppz-glow {
+  position: relative;
+  overflow: hidden;
+  margin-top: calc(-1 * var(--ifm-navbar-height));
+}
+
+.ppz-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: min(100%, 34rem);
+  background: radial-gradient(ellipse 55% 100% at 50% 0%, var(--ppz-glow), transparent 75%);
+  pointer-events: none;
+}
+
+.ppz-glow > * {
+  position: relative;
+}
+
+.ppz-section.ppz-glow {
+  padding-top: calc(3rem + var(--ifm-navbar-height));
+}
+
+.ppz-hero {
+  padding: calc(5.5rem + var(--ifm-navbar-height)) 0 4rem;
+  text-align: center;
+}
+
+.ppz-hero h1 {
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0.75rem auto 1rem;
+  max-width: 22ch;
+}
+
+.ppz-hero h1 em {
+  font-style: normal;
+  color: var(--ppz-accent);
+}
+
+.ppz-lead {
+  font-size: 1.2rem;
+  color: var(--ppz-muted);
+  max-width: 44rem;
+  margin: 0 auto 2rem;
+}
+
+.ppz-eyebrow {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  color: var(--ppz-accent);
+  margin: 0;
+}
+
+.ppz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.ppz-section {
+  padding: 3rem 0;
+}
+
+.ppz-section__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ppz-section__head h2 {
+  font-size: 1.7rem;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.ppz-section__intro {
+  color: var(--ppz-muted);
+  max-width: 46rem;
+  margin: -0.75rem 0 1.5rem;
+}
+
+.ppz-more {
+  color: var(--ppz-accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ppz-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.ppz-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.ppz-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background: var(--ppz-surface);
+  border: 1px solid var(--ppz-border);
+  border-radius: 14px;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+a.ppz-card:hover,
+.ppz-card--link:hover {
+  border-color: var(--ppz-accent);
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.ppz-card h3 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.ppz-card p {
+  color: var(--ppz-muted);
+  margin: 0;
+}
+
+.ppz-card ul {
+  color: var(--ppz-muted);
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.ppz-meta {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  color: var(--ppz-muted);
+}
+
+.ppz-card .ppz-cta {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-weight: 600;
+  color: var(--ppz-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppz-card {
+    transition: none;
+  }
+
+  a.ppz-card:hover,
+  .ppz-card--link:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .ppz-hero {
+    padding: calc(3.5rem + var(--ifm-navbar-height)) 0 2.5rem;
+  }
+
+  .ppz-section.ppz-glow {
+    padding-top: calc(2rem + var(--ifm-navbar-height));
+  }
+
+  .ppz-section {
+    padding: 2rem 0;
+  }
+}
+
+/* Tarjeta que, al pasar el ratón o recibir el foco, se cubre con la acción
+   que va a ocurrir al pulsarla ("Ir al canal →") */
+.ppz-card--reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.ppz-card__action {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ppz-accent);
+  background: color-mix(in srgb, var(--ppz-surface) 88%, transparent);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.ppz-card--reveal:focus-visible .ppz-card__action {
+  opacity: 1;
+  transform: none;
+}
+
+/* Solo con ratón: en pantallas táctiles el hover se queda pegado tras tocar */
+@media (hover: hover) {
+  .ppz-card--reveal:hover .ppz-card__action {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppz-card__action {
+    transition: none;
+  }
+}
+
+/* ---------- Movimiento ---------- */
+
+/* Entrada escalonada (componente Stagger): los hijos suben y aparecen uno
+   tras otro. `backwards` y no `both`: al terminar mandan los estilos normales
+   y el hover de las tarjetas sigue funcionando */
+.ppz-stagger > :nth-child(2) { --i: 1; }
+.ppz-stagger > :nth-child(3) { --i: 2; }
+.ppz-stagger > :nth-child(4) { --i: 3; }
+.ppz-stagger > :nth-child(5) { --i: 4; }
+.ppz-stagger > :nth-child(6) { --i: 5; }
+.ppz-stagger > :nth-child(7) { --i: 6; }
+.ppz-stagger > :nth-child(8) { --i: 7; }
+
+.ppz-stagger--armed:not(.is-in) > * {
+  opacity: 0;
+}
+
+.ppz-stagger--armed.is-in > * {
+  animation: ppz-rise 0.55s cubic-bezier(0.2, 0.7, 0.3, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+
+/* Variante en escalera: cada hijo llega desde más abajo y más tarde */
+.ppz-stagger--stairs.ppz-stagger--armed.is-in > * {
+  animation-name: ppz-stairs;
+  animation-duration: 0.7s;
+  animation-delay: calc(var(--i, 0) * 170ms);
+}
+
+@keyframes ppz-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+@keyframes ppz-stairs {
+  from {
+    opacity: 0;
+    transform: translateY(calc(30px + var(--i, 0) * 28px));
+  }
+}
+
+/* El halo de la cabecera respira muy despacio */
+.ppz-glow::before {
+  transform-origin: 50% 0;
+  animation: ppz-breathe 9s ease-in-out infinite alternate;
+}
+
+@keyframes ppz-breathe {
+  from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+/* Texto solo para lectores de pantalla */
+.ppz-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppz-glow::before {
+    animation: none;
+  }
+}
+
+/* ---------- Columna derecha (mapa local e índice) ---------- */
+
+/* La celda es flex para que la columna mida lo mismo que el artículo: así su
+   botón de plegar puede pegarse al borde inferior de la ventana durante todo
+   el scroll */
+.col:has(> .ppz-toc-column) {
+  display: flex;
+}
+
+/* Sin esto, un artículo con bloques de código anchos empuja la columna a la
+   línea de abajo */
+.row:has(> .col > .ppz-toc-column) {
+  flex-wrap: nowrap;
+}
+
+.col:has(+ .col > .ppz-toc-column) {
+  min-width: 0;
+}
+
+/* En los cursos, la columna derecha va pegada al borde de la ventana y el
+   artículo, centrado en el espacio que queda, con el ancho máximo por defecto
+   de Docusaurus (tres cuartos de su caja: 990px en pantallas grandes).
+   La columna mide el 17% del espacio disponible (la ventana menos el menú
+   izquierdo), entre 240px y 380px.
+   El tema centra artículo y columna juntos en una caja de ancho máximo; aquí
+   la caja ocupa toda la ventana para que la columna pueda ir al borde. En
+   ventanas pequeñas, todo es igual que con el tema (75% y 25%) */
+html.plugin-docs {
+  --ppz-doc-width: var(--ifm-container-width);
+}
+
+@media (min-width: 1440px) {
+  html.plugin-docs {
+    --ppz-doc-width: var(--ifm-container-width-xl);
+  }
+}
+
+html.plugin-docs .container:has(> .row > .col > .ppz-toc-column) {
+  max-width: none;
+}
+
+html.plugin-docs .col:has(> .ppz-toc-column) {
+  flex: 0 0 clamp(min(25%, 240px), 17%, 380px);
+  max-width: none;
+}
+
+html.plugin-docs .col:has(+ .col > .ppz-toc-column) {
+  flex: 1 1 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Plegada (la pliega el botón de src/theme/TOC, que marca
+   <html data-toc-hidden>) no ocupa sitio: solo queda su botón, flotando abajo
+   a la derecha, y el artículo se queda con su hueco */
+html[data-toc-hidden] .col:has(> .ppz-toc-column) {
+  flex: 0 0 0;
+  max-width: 0;
+  padding: 0;
+}
+
+html[data-toc-hidden] .col:has(+ .col > .ppz-toc-column) {
+  flex: 1 1 0;
+}
+
+/* En los cursos, sin columna, el artículo usa el ancho de la caja, centrado */
+html[data-toc-hidden].plugin-docs .col:has(+ .col > .ppz-toc-column) {
+  flex: 0 1 var(--ppz-doc-width);
+}
+
+/* El tema fija el ancho del artículo con `max-width: 75% !important` dentro
+   de una capa CSS. Entre reglas !important ganan las capas declaradas antes,
+   así que el desbloqueo va en la primera capa de Docusaurus (infima) */
+@layer docusaurus.infima {
+  /* Artículo de curso: el tope por defecto de Docusaurus, tres cuartos de la
+     caja (990px en pantallas grandes) */
+  html.plugin-docs .col:has(+ .col > .ppz-toc-column) {
+    max-width: calc(0.75 * var(--ppz-doc-width)) !important;
+  }
+
+  html[data-toc-hidden] .col:has(+ .col > .ppz-toc-column) {
+    max-width: none !important;
+  }
+}
+
+/* Recorta en el borde de la ventana la prolongación del botón de plegar de
+   la columna derecha. `clip`, no `hidden`: no rompe los elementos fijos al
+   hacer scroll */
+.main-wrapper {
+  overflow-x: clip;
+}
+
+/* Miniaturas de YouTube dentro de los artículos (las enlazadas a mano en
+   READMEs y entradas): a todo el ancho, como el vídeo de cada capítulo */
+.markdown img[src*='img.youtube.com'],
+.markdown img[src*='ytimg.com'] {
+  width: 100%;
+  height: auto;
 }

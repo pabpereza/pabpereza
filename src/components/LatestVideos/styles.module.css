@@ -1,79 +1,152 @@
+.video {
+  padding: 0;
+  overflow: hidden;
+}
 
-  .videos {
-      display: flex;
-      align-items: center;
-      padding: 1rem 0;
-      width: 100%;
-      color: white;
+/* Miniatura: zoom suave y botón de play al pasar el ratón por la tarjeta */
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.thumb::before,
+.thumb::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Círculo */
+.thumb::before {
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  background: color-mix(in srgb, #0a0a0a 70%, transparent);
+  border: 2px solid var(--ppz-accent);
+  backdrop-filter: blur(4px);
+  transform: scale(0.7);
+}
+
+/* Triángulo */
+.thumb::after {
+  margin: -11px 0 0 -6px;
+  border-style: solid;
+  border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent #00ff87;
+  transform: scale(0.7);
+}
+
+.video:hover .thumb img,
+.video:focus-visible .thumb img {
+  transform: scale(1.06);
+}
+
+.video:hover .thumb::before,
+.video:hover .thumb::after,
+.video:focus-visible .thumb::before,
+.video:focus-visible .thumb::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thumb img,
+  .thumb::before,
+  .thumb::after {
+    transition: none;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1.25rem 1.25rem;
+}
+
+/* El último vídeo, grande a la izquierda; los dos anteriores, apilados a la
+   derecha y ocupando entre los dos la misma altura */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.big {
+  grid-row: span 2;
+}
+
+.big h3 {
+  font-size: 1.35rem;
+}
+
+/* Los pequeños van en horizontal: miniatura a la izquierda, a toda la altura */
+.small {
+  flex-direction: row;
+  gap: 0;
+  min-height: 0;
+}
+
+.small .thumb {
+  flex: none;
+  align-self: stretch;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+}
+
+.small .thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.small .body {
+  justify-content: center;
+  min-width: 0;
+  padding: 1rem 1.25rem;
+}
+
+.small h3 {
+  font-size: 1.05rem;
+}
+
+/* En pantallas estrechas, los tres apilados y en vertical */
+@media screen and (max-width: 996px) {
+  .featured {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
   }
 
-
-  .videos a:hover {
-    --ifm-link-hover-color: #e5adfa;
-  }
-  
-  a:hover {
-    text-decoration: none;
+  .big {
+    grid-row: auto;
   }
 
-  .videos h2 {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  
+  .small {
+    flex-direction: column;
   }
-  
-  .videos h3 {
-    text-align: center;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-  
-  }
-  .videos p {
-    margin: 0rem 0rem auto;
-    text-align: center;
-    color: white;
-    margin-bottom: 1rem;
-  }
-  
-  .featureImg {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
-  }
-  
-  .videos img {
-    width: 100%;
+
+  .small .thumb img {
+    position: static;
     height: auto;
-    object-fit: cover; /* Escalar la imagen para que cubra todo el contenedor */
-    border-radius: 10px;
   }
-  
-  
-  
-  @media screen and (max-width: 996px) {
-  
-  
-    .videos p {
-      margin: 0 3rem auto;
-      text-align: center;
-      color: white;
-      margin-bottom: 3rem;
-    }
-    
-  } 
-  
-  
-  @media screen and (max-width: 570px) {
-  
-    .videos p {
-      margin: 0 1rem auto;
-      text-align: center;
-      color: white;
-      margin-bottom: 3rem;
-    }
-  
-     
-  } 
+
+  .small .body {
+    padding: 0 1.25rem 1.25rem;
+  }
+}

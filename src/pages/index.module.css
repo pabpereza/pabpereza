@@ -1,25 +1,67 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* "cacharreando" se teclea letra a letra, solo con CSS: cada letra está en el
+   HTML desde el principio y aparece cuando le toca, con el cursor detrás */
+.typed {
+  white-space: nowrap;
+}
 
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.letter {
   position: relative;
-  overflow: hidden;
-  background: transparent;
-  color: white;
+  display: inline-block;
+  /* `backwards`: oculta la letra solo hasta que le toca; después la animación
+     deja de aplicarse y la letra se ve con su estilo normal. Con `both` y una
+     duración tan corta, Chrome dejaba algunas letras ocultas para siempre */
+  animation: type 1ms linear backwards;
+  animation-delay: calc(700ms + var(--i) * 90ms);
 }
 
-.heroBanner a {
-  margin: 0 10px;
+/* Cursor: cada letra enseña el suyo solo durante su turno */
+.letter::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0.14em;
+  bottom: 0.1em;
+  width: 0.07em;
+  margin-left: 0.04em;
+  background: currentColor;
+  opacity: 0;
+  animation: caret 90ms step-end;
+  animation-delay: calc(700ms + var(--i) * 90ms);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* El de la última letra se queda parpadeando */
+.letter:last-child::after {
+  animation: blink 1s step-end infinite;
+  animation-delay: calc(700ms + var(--i) * 90ms);
+}
+
+@keyframes type {
+  from,
+  to {
+    opacity: 0;
   }
 }
- 
+
+@keyframes caret {
+  from,
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .letter,
+  .letter::after,
+  .letter:last-child::after {
+    animation: none;
+  }
+}

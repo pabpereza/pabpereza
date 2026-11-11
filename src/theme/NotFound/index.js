@@ -8,23 +8,24 @@ const MAILTO_BASE = 'mailto:pabloperezaradros@gmail.com?subject=Error%20404';
 
 const pageStyles = `
 .notfound-root{
-  --bg:#0a0f1d;
-  --fg:#e6edf7;
-  --muted:#8ea3c2;
-  --accent:#4cc2ff;
+  /* Paleta del sitio: negro y verde neón (el sable morado del easter egg se queda) */
+  --bg:#0a0a0a;
+  --fg:#e8eeea;
+  --muted:#a3aca7;
+  --accent:#00ff87;
   --accent2:#b993ff;
   --danger:#ff6b6b;
-  --card:#0f1730cc;
-  --grid:rgba(120,160,255,.12);
-  --glow:#73e0ff;
+  --card:#121514cc;
+  --grid:rgba(0,255,135,.12);
+  --glow:#00ff87;
   --scene-url:none;
   min-height:100vh;
   width:100%;
   margin:0;
   padding:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Inter, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: var(--ifm-font-family-base);
   color:var(--fg);
-  background: radial-gradient(1200px 600px at 70% -20%, #1a2444 0%, #0a0f1d 45%), var(--bg);
+  background: radial-gradient(1200px 600px at 50% -20%, rgba(0,255,135,.22) 0%, #0a0a0a 55%), var(--bg);
   display:grid;
   place-items:center;
   overflow-y:auto;
@@ -68,10 +69,10 @@ const pageStyles = `
 .notfound-root .card{
   background: var(--card);
   backdrop-filter: blur(8px);
-  border: 1px solid #243562;
+  border: 1px solid rgba(255,255,255,.1);
   border-radius: 20px;
   padding: clamp(20px, 4vw, 36px);
-  box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 40px rgba(115,224,255,.10) inset;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 40px rgba(0,255,135,.07) inset;
 }
 .notfound-root .title{
   display:flex;
@@ -85,11 +86,11 @@ const pageStyles = `
   letter-spacing:.02em;
   font-size: clamp(38px, 6vw, 72px);
   line-height:1;
-  background: linear-gradient(90deg, #fff, #bfe7ff 30%, #d7c9ff 60%, #fff);
+  background: linear-gradient(90deg, #fff, #b8ffd9 30%, #00ff87 60%, #fff);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  text-shadow: 0 0 18px rgba(115,224,255,.25);
+  text-shadow: 0 0 18px rgba(0,255,135,.25);
 }
 .notfound-root .subtitle{
   margin:8px 0 0;
@@ -98,18 +99,18 @@ const pageStyles = `
 }
 .notfound-root .terminal{
   margin-top:22px;
-  border:1px solid #2a3d6d;
+  border:1px solid rgba(255,255,255,.12);
   border-radius:14px;
   overflow:hidden;
-  background:#0d1430d9;
+  background:#0d0f0ed9;
 }
 .notfound-root .term-bar{
   display:flex;
   gap:8px;
   align-items:center;
   padding:10px 12px;
-  background:#0b1230;
-  border-bottom:1px solid #233563;
+  background:#111312;
+  border-bottom:1px solid rgba(255,255,255,.1);
 }
 .notfound-root .dot{
   width:10px;
@@ -121,10 +122,10 @@ const pageStyles = `
 .notfound-root .dot.green{background:#27c93f;}
 .notfound-root .term-body{
   padding:16px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: var(--ifm-font-family-monospace);
 }
 .notfound-root .prompt{
-  color:#6ef0ff;
+  color:#00ff87;
 }
 .notfound-root .input{
   display:inline-block;
@@ -135,7 +136,7 @@ const pageStyles = `
   display:inline-block;
   width:8px;
   height:1.1em;
-  background:#9adfff;
+  background:#00ff87;
   margin-left:2px;
   vertical-align:middle;
   animation: blink 1s steps(1) infinite;
@@ -149,9 +150,9 @@ const pageStyles = `
   margin:18px 0 0;
   padding:12px 16px;
   border-left:3px solid var(--accent);
-  background: rgba(76,194,255,.08);
+  background: rgba(0,255,135,.07);
   border-radius: 0 10px 10px 0;
-  color:#d7e7ff;
+  color:#dfeee6;
 }
 .notfound-root blockquote footer{
   color:var(--muted);
@@ -167,13 +168,13 @@ const pageStyles = `
 .notfound-root .btn{
   appearance:none;
   border:none;
-  border-radius:999px;
+  border-radius:8px;
   padding:12px 18px;
   font-weight:700;
   letter-spacing:.2px;
-  color:#051028;
-  background:linear-gradient(180deg, #9adfff, #4cc2ff);
-  box-shadow:0 8px 22px rgba(76,194,255,.35);
+  color:#0a0a0a;
+  background:#00ff87;
+  box-shadow:0 8px 22px rgba(0,255,135,.25);
   cursor:pointer;
   text-decoration:none;
   display:inline-flex;
@@ -182,18 +183,18 @@ const pageStyles = `
 }
 .notfound-root .btn:hover{
   transform: translateY(-1px);
-  box-shadow:0 10px 26px rgba(76,194,255,.45);
+  box-shadow:0 10px 26px rgba(0,255,135,.35);
 }
 .notfound-root .btn.secondary{
-  color:#e8e8ff;
-  background:linear-gradient(180deg, #3a4b7a, #2a3a64);
-  box-shadow:0 8px 22px rgba(0,0,0,.35);
-  border:1px solid #42578c;
+  color:#e8eeea;
+  background:transparent;
+  box-shadow:none;
+  border:1px solid rgba(255,255,255,.3);
 }
 .notfound-root .saber{
   width:min(450px, 46vw);
   height:auto;
-  filter: drop-shadow(0 0 16px rgba(115,224,255,.45));
+  filter: drop-shadow(0 0 16px rgba(0,255,135,.45));
 }
 .notfound-root .blade{
   transform-origin:left center;
@@ -251,11 +252,11 @@ const pageStyles = `
 .notfound-root .scene{
   position:relative;
   margin:22px 0 0;
-  border:1px dashed #2b4378;
+  border:1px dashed rgba(255,255,255,.18);
   border-radius:14px;
   min-height:180px;
   overflow:hidden;
-  background:#0c1430 center/cover no-repeat;
+  background:#0d0f0e center/cover no-repeat;
   background-image: var(--scene-url);
 }
 .notfound-root .scene::after{
@@ -264,7 +265,7 @@ const pageStyles = `
   inset:auto 0 0 0;
   padding:10px 12px;
   background: linear-gradient(180deg, transparent, rgba(0,0,0,.55));
-  color:#d9e7ff;
+  color:#dfeee6;
   font-size:13px;
   letter-spacing:.2px;
 }
@@ -275,7 +276,7 @@ const pageStyles = `
   text-align:center;
 }
 .notfound-root a{
-  color:#9adfff;
+  color:#4ade9a;
 }
 @media (prefers-reduced-motion: reduce){
   .notfound-root .stars,
@@ -493,8 +494,8 @@ export default function NotFound() {
               <svg className="saber" viewBox="0 0 500 90" role="img" aria-label="Sable de luz encendido">
                 <defs>
                   <linearGradient id="bladeGradient" x1="0" x2="1">
-                    <stop offset="0%" stopColor="#d0f7ff" />
-                    <stop offset="100%" stopColor="#70e3ff" />
+                    <stop offset="0%" stopColor="#d9ffe9" />
+                    <stop offset="100%" stopColor="#4dffab" />
                   </linearGradient>
                   <linearGradient id="bladeGradientPurple" x1="0" x2="1">
                     <stop offset="0%" stopColor="#f5e6ff" />
@@ -520,7 +521,7 @@ export default function NotFound() {
                   opacity=".95"
                   ref={bladeRef}
                 />
-                <rect x="120" y="20" width="360" height="50" rx="10" fill="#b8f1ff" opacity=".18" />
+                <rect x="120" y="20" width="360" height="50" rx="10" fill="#b8ffd9" opacity=".18" />
               </svg>
               <div>
                 <h1 id="notfound-title">404 — Archivo no encontrado</h1>
@@ -533,26 +534,26 @@ export default function NotFound() {
                 <span className="dot red" />
                 <span className="dot yellow" />
                 <span className="dot green" />
-                <span style={{marginLeft: '8px', color: '#c8d8ff', opacity: 0.8}}>/archives/jedi</span>
+                <span style={{marginLeft: '8px', color: '#c9d6cf', opacity: 0.8}}>/archives/jedi</span>
               </div>
               <div className="term-body" aria-live="polite">
                 <div>
                   <span className="prompt">jedi@coruscant</span>
                   :
-                  <span style={{color: '#7fa3ff'}}>~</span>$ buscar{' '}
+                  <span style={{color: '#4ade9a'}}>~</span>$ buscar{' '}
                   <span style={{color: '#b993ff'}}>{`"${currentPath}"`}</span>
                 </div>
-                <div style={{marginTop: '6px', color: '#a7c7ff'}}>
+                <div style={{marginTop: '6px', color: '#b6c4bc'}}>
                   ⟶ Resultado:{' '}
                   <span style={{color: 'var(--danger)', fontWeight: 700}}>no encontrado</span> (código: 404)
                 </div>
-                <div style={{marginTop: '6px', color: '#6bd1ff'}}>
+                <div style={{marginTop: '6px', color: '#4ade9a'}}>
                   Sugerencia: revisa el <em>holomapa</em> o vuelve al <em>templo</em>.
                 </div>
                 <div style={{marginTop: '12px'}}>
                   <span className="prompt">jedi@coruscant</span>
                   :
-                  <span style={{color: '#7fa3ff'}}>~</span>$ <span className="input" aria-hidden="true">Introduce la contraseña ;)</span>
+                  <span style={{color: '#4ade9a'}}>~</span>$ <span className="input" aria-hidden="true">Introduce la contraseña ;)</span>
                   <span className="cursor" aria-hidden="true" />
                 </div>
               </div>

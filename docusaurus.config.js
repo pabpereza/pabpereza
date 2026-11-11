@@ -6,12 +6,13 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 import 'dotenv/config';
+import courses from './src/data/courses.js';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Pabpereza',
   tagline: 'Blog, cursos y documentación de Pabpereza DevSecOps',
-  favicon: 'img/logo_icon.png',
+  favicon: 'img/logo_nav.png',
 
   // Set the production url of your site here
   url: 'https://pabpereza.dev',
@@ -95,7 +96,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/banner_web.webp',
+      image: 'img/social-card.jpg',
       docs: {
         sidebar: {
           hideable: true,
@@ -103,39 +104,46 @@ const config = {
         }
       },
       navbar: {
-        title: 'PPZ - Pabpereza',
-        hideOnScroll: true,
+        title: 'pabpereza',
+        logo: {
+          alt: 'Logo de pabpereza',
+          src: 'img/logo_nav.png',
+          width: 32,
+          height: 32,
+        },
         items: [
+          {
+            type: 'dropdown',
+            label: 'Cursos',
+            to: '/docs/cursos',
+            position: 'left',
+            items: [
+              ...courses.map(({id, emoji, name}) => ({
+                label: `${emoji} ${name}`,
+                to: `/docs/cursos/${id}`,
+              })),
+              {type: 'html', value: '<hr class="dropdown-separator">'},
+              {label: 'Todos los cursos', to: '/docs/cursos'},
+              {label: 'Mapa de contenido', to: '/content-graph'},
+            ],
+          },
+          {
+            to: '/blog', label: 'Blog', position: 'left'
+          },
+          {
+            to: '/comunidad', label: 'Comunidad', position: 'left'
+          },
           {
             to: '/about_me', label: 'Sobre mí', position: 'left'
           },
           {
-            to: '/docs/cursos', label: 'Cursos', position: 'left'
-          },          {
-            to: '/blog', label: 'Blog', position: 'left'
-          },
-          {
             type: 'custom-youtubeSubscriberBadge',
-            position: 'left',
-          },          
-          {
-            href: 'https://www.instagram.com/pabpereza/',
-            className: 'header-instagram-link',
-            position: 'right',
-          },
-          {
-            href: 'https://www.linkedin.com/in/pabpereza/',
-            className: 'header-linkedin-link',
             position: 'right',
           },
           {
             href: 'https://github.com/pabpereza/pabpereza',
             className: 'header-github-link',
-            position: 'right',
-          },
-          {
-            to: '/content-graph',
-            className: 'header-diagram-link',
+            'aria-label': 'Repositorio en GitHub',
             position: 'right',
           },
         ],
@@ -151,9 +159,51 @@ const config = {
                 to: '/docs/cursos',
               },
               {
-                label: 'Youtube',
-                to: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
-              }
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'Mapa de contenido',
+                to: '/content-graph',
+              },
+            ],
+          },
+          {
+            title: 'Comunidad',
+            items: [
+              {
+                label: 'Discord y membresía',
+                to: '/comunidad',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@Pabpereza?sub_confirmation=1',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/pabpereza/pabpereza',
+              },
+            ],
+          },
+          {
+            title: 'Redes',
+            items: [
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/pabpereza/',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/pabpereza/',
+              },
+              {
+                label: 'X',
+                href: 'https://x.com/pabpereza',
+              },
+              {
+                label: 'TikTok',
+                href: 'https://www.tiktok.com/@pabpereza',
+              },
             ],
           },
           {
@@ -177,34 +227,8 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Blog',
-                href: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/pabpereza/pabpereza',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/in/pabpereza/',
-              },
-              {
-                label: 'X - Twitter',
-                href: 'https://x.com/pabpereza',
-              },
-            ],
-          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Pabpereza. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} Pablo Pérez-Aradros · Hecho con Docusaurus`,
       },
       prism: {
         theme: prismThemes.github,
@@ -229,6 +253,17 @@ const config = {
     }),
   // headTags va en la raíz de la config: dentro de themeConfig se ignora
   headTags: [
+    // La fuente de los titulares se pide cuanto antes para que no salten al cargar
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/geist-latin-wght-normal.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
+    },
     // Declare a <link> preconnect tag
     {
       tagName: 'link',
@@ -298,6 +333,9 @@ const config = {
     ['@docusaurus/plugin-google-gtag', { trackingID: 'G-40PL0BKGD3' }],
     // /llms.txt generado en cada build desde el contenido real (cabecera en intro.md)
     './src/plugins/llms-txt',
+    './src/plugins/course-stats',
+    './src/plugins/channel-metrics',
+    './src/plugins/latest-posts',
     require.resolve('docusaurus-lunr-search'),
     [
       '@docusaurus/plugin-client-redirects',

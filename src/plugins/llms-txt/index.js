@@ -10,14 +10,32 @@ const COURSE_ORDER = ['docker', 'kubernetes', 'devops', 'devsecops', 'ansible', 
 const PAGES = [
   ['Sobre mí', '/about_me', 'Información sobre Pablo Pérez-Aradros'],
   ['Grafo de contenido', '/content-graph', 'Visualización interactiva de relaciones entre contenidos'],
-  ['Política de privacidad', '/privacidad', 'Política de privacidad del sitio'],
-  ['Política de cookies', '/cookies', 'Política de cookies'],
-  ['Aviso legal', '/aviso-legal', 'Aviso legal del sitio'],
 ];
+
+// Índices sin contenido propio: no se listan
+const SKIP_DOCS = ['cursos/cursos', 'notas/notas'];
+const MAX_EXCERPT = 220;
 
 // "🐳 Curso de Docker..." -> "Curso de Docker..."
 const stripEmoji = (text) => text.replace(/^[^\p{L}\p{N}]+/u, '').trim();
 const oneLine = (text) => (text ?? '').replace(/\s+/g, ' ').trim();
+
+// Si no hay description en el frontmatter, Docusaurus la saca de la primera
+// línea de texto, sea lo que sea: se recorta a la última frase que quepa y, si
+// no es prosa (una fila de tabla), se descarta.
+function excerpt(text) {
+  const flat = oneLine(text);
+  if (flat.length <= MAX_EXCERPT) return flat;
+  const cut = flat.slice(0, MAX_EXCERPT);
+  const end = cut.lastIndexOf('. ');
+  return end > 80 ? cut.slice(0, end + 1) : `${cut.slice(0, cut.lastIndexOf(' '))}…`;
+}
+const isProse = (text) => text !== '' && !text.startsWith('|');
+function describe({frontMatter, description}) {
+  if (frontMatter?.description) return frontMatter.description;
+  const auto = oneLine(description);
+  return isProse(auto) ? excerpt(auto) : '';
+}
 
 function link(siteUrl, title, permalink, description) {
   const desc = oneLine(description);
@@ -34,7 +52,7 @@ function buildLlmsTxt({siteUrl, docs, blogPosts, intro}) {
   for (const doc of docs) {
     const match = doc.id.match(/^cursos\/([^/]+)\/(.+)$/);
     if (!match) {
-      if (doc.id !== 'cursos/cursos') otherDocs.push(doc);
+      if (!SKIP_DOCS.includes(doc.id)) otherDocs.push(doc);
       continue;
     }
     const [, course, rest] = match;
@@ -50,7 +68,7 @@ function buildLlmsTxt({siteUrl, docs, blogPosts, intro}) {
   out.push('## Cursos', '');
   for (const c of courseNames) {
     const {readme} = courses[c];
-    out.push(link(siteUrl, stripEmoji(readme.title), readme.permalink, readme.description));
+    out.push(link(siteUrl, stripEmoji(readme.title), readme.permalink, describe(readme)));
   }
   out.push('');
 
@@ -61,7 +79,7 @@ function buildLlmsTxt({siteUrl, docs, blogPosts, intro}) {
     const file = (doc) => path.basename(doc.source);
     lessons.sort((a, b) => file(a).localeCompare(file(b), 'es', {numeric: true}));
     out.push(`## ${stripEmoji(readme.frontMatter.sidebar_label ?? readme.title)} - Lecciones`, '');
-    for (const doc of lessons) out.push(link(siteUrl, doc.title, doc.permalink, doc.description));
+    for (const doc of lessons) out.push(link(siteUrl, doc.title, doc.permalink, describe(doc)));
     out.push('');
   }
 
@@ -70,11 +88,11 @@ function buildLlmsTxt({siteUrl, docs, blogPosts, intro}) {
     .map((p) => p.metadata)
     .filter((m) => !m.unlisted && !m.frontMatter?.draft)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
-  for (const m of posts) out.push(link(siteUrl, m.title, m.permalink, m.description));
+  for (const m of posts) out.push(link(siteUrl, m.title, m.permalink, describe(m)));
   out.push('');
 
   out.push('## Optional', '');
-  for (const doc of otherDocs) out.push(link(siteUrl, doc.title, doc.permalink, doc.description));
+  for (const doc of otherDocs) out.push(link(siteUrl, doc.title, doc.permalink, describe(doc)));
   for (const [title, permalink, description] of PAGES) out.push(link(siteUrl, title, permalink, description));
   out.push('');
 

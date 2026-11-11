@@ -4,6 +4,7 @@ title: Cracking de contraseñas con Hashcat
 slug: cracking_passwords_hashcat 
 tags: [docker, seguridad, hacking]
 keywords: [hashcat cracking contraseñas, romper hashes hashcat, seguridad contraseñas, passkey alternativa, hashcat tutorial]
+description: Cómo se almacenan las contraseñas como hashes, cómo los consigue un atacante y cómo ponerlos a prueba con Hashcat para comprobar si tus secretos aguantan.
 authors: pabpereza
 image: https://img.youtube.com/vi/JgLxzj3MHEo/maxresdefault.jpg
 ---

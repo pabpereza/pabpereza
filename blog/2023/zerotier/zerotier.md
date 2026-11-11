@@ -3,6 +3,7 @@ slug: zerotier-cli-linux-instalacion
 title: ZeroTier - Qué es y Cómo Instalar su CLI en Linux 
 tags: [ redes, linux]
 keywords: [zerotier linux, vpn zerotier, instalar zerotier cli, red privada virtual zerotier, zerotier tutorial]
+description: Qué es ZeroTier, en qué se diferencia de una VPN tradicional y cómo instalar y configurar su CLI en Linux para unir tus equipos a una red privada virtual.
 authors: pabpereza
 date: 2023-01-19
 ---

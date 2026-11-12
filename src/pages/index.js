@@ -64,7 +64,7 @@ function Community() {
             <p>Servidor abierto para resolver dudas y hablar de DevOps, seguridad, cloud, sysadmin, homelab e IA con más gente del gremio.</p>
             <span className="ppz-cta">Entrar al Discord →</span>
           </a>
-          <Link className="ppz-card" to="/comunidad#membresia">
+          <Link className="ppz-card" to="/membresia">
             <h3>Membresía de YouTube</h3>
             <p>Tres niveles para apoyar el canal: acceso anticipado, el research y el diario de cada vídeo, y el directo mensual.</p>
             <span className="ppz-cta">Ver los niveles →</span>

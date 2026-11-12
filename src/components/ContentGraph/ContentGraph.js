@@ -1,4 +1,4 @@
-import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
 import Link from '@docusaurus/Link';
 import {useColorMode} from '@docusaurus/theme-common';
 import ForceGraph2D from 'react-force-graph-2d';
@@ -6,6 +6,8 @@ import {forceCollide, forceX, forceY} from 'd3-force';
 import raw from '@site/src/data/content-graph.json';
 import {GROUP, GROUPS, clean, groupOf} from './groups';
 import styles from './ContentGraph.module.css';
+
+const TOOLS_KEY = 'ppz-graph-tools';
 
 // Mapa de contenido: cada página es un punto y cada enlace interno entre dos
 // páginas, una línea. Las páginas se agrupan por curso (cada curso en su
@@ -82,6 +84,24 @@ export default function ContentGraph({preview = false}) {
   const [picked, setPicked] = useState(() => new Set()); // grupos marcados en la leyenda
   const pickedRef = useRef(picked); // el valor al día, para dos pulsaciones seguidas
   const [query, setQuery] = useState('');
+  // Buscador y filtros plegables. Abiertos por defecto; si el usuario los
+  // pliega, se recuerda durante la sesión del navegador
+  const [toolsOpen, setToolsOpen] = useState(() => {
+    try {
+      return sessionStorage.getItem(TOOLS_KEY) !== 'closed';
+    } catch {
+      return true;
+    }
+  });
+  const toggleTools = () =>
+    setToolsOpen((open) => {
+      try {
+        sessionStorage.setItem(TOOLS_KEY, open ? 'closed' : 'open');
+      } catch {
+        // Sin almacenamiento (modo privado estricto): solo vale para esta visita
+      }
+      return !open;
+    });
   const [settled, setSettled] = useState(false); // ya se hizo el primer encuadre
 
   // El lienzo ocupa su caja y la sigue si cambia de tamaño
@@ -211,6 +231,32 @@ export default function ContentGraph({preview = false}) {
     <div className={`${styles.root} ${preview ? styles.preview : ''}`}>
       {!preview && (
         <div className={styles.toolbar}>
+          <button
+            type="button"
+            className={styles.toolsToggle}
+            aria-expanded={toolsOpen}
+            aria-controls="ppz-graph-tools"
+            aria-label={toolsOpen ? 'Ocultar el buscador y los filtros' : 'Mostrar el buscador y los filtros'}
+            title={toolsOpen ? 'Ocultar filtros' : 'Mostrar filtros'}
+            onClick={toggleTools}
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M4 7h10M18 7h2M4 17h4M12 17h8"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <circle cx="16" cy="7" r="2" fill="none" stroke="currentColor" strokeWidth="2" />
+              <circle cx="10" cy="17" r="2" fill="none" stroke="currentColor" strokeWidth="2" />
+            </svg>
+          </button>
+          <div
+            id="ppz-graph-tools"
+            className={`${styles.tools} ${toolsOpen ? '' : styles.toolsHidden}`}
+            inert={toolsOpen ? undefined : ''}
+          >
           <div className={styles.search}>
             <input
               type="search"
@@ -246,6 +292,7 @@ export default function ContentGraph({preview = false}) {
                 {name}
               </button>
             ))}
+          </div>
           </div>
         </div>
       )}
@@ -305,7 +352,7 @@ export default function ContentGraph({preview = false}) {
       )}
 
       {!preview && selected && (
-        <aside className={styles.panel}>
+        <Panel>
           <button type="button" className={styles.close} onClick={() => setSelected(null)} aria-label="Cerrar">
             ×
           </button>
@@ -336,8 +383,62 @@ export default function ContentGraph({preview = false}) {
               </ul>
             </>
           )}
-        </aside>
+        </Panel>
       )}
     </div>
+  );
+}
+
+// Ficha lateral que cambia de alto con suavidad al pasar de una página a
+// otra. CSS no sabe animar hasta «el alto de su contenido» (height: auto),
+// así que se mide el contenido y se le da a la ficha un alto fijo que sí se
+// puede animar. El alto ya sale recortado al hueco disponible (el mismo tope
+// que el max-height del CSS): si no, al crecer la animación apuntaría más
+// allá del tope y se pararía en seco al chocar con él
+function Panel({children}) {
+  const box = useRef(null);
+  const inner = useRef(null);
+  const [height, setHeight] = useState(null);
+  const measureRef = useRef(null);
+
+  // Al cambiar de página se mide en el mismo pintado, sin esperar al
+  // observador (que puede tardar un fotograma o más en avisar)
+  useLayoutEffect(() => {
+    measureRef.current?.();
+  }, [children]);
+
+  useEffect(() => {
+    const aside = box.current;
+    const content = inner.current;
+    const area = aside?.offsetParent;
+    if (!aside || !content || !area) return undefined;
+
+    const measure = () => {
+      // En el móvil la ficha sube desde abajo con su propio tope (55 %) y
+      // se queda con el alto automático del CSS
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        setHeight(null);
+        return;
+      }
+      const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      const room = area.clientHeight - aside.offsetTop - 1.5 * rem;
+      // + el borde de la ficha, 1px arriba y 1px abajo
+      setHeight(Math.min(content.offsetHeight + 2, room));
+    };
+
+    measureRef.current = measure;
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(content);
+    observer.observe(area);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <aside ref={box} className={styles.panel} style={height ? {height} : undefined}>
+      <div ref={inner} className={styles.panelInner}>
+        {children}
+      </div>
+    </aside>
   );
 }

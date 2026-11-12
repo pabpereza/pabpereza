@@ -1,9 +1,15 @@
 .box {
   flex: none;
-  margin-bottom: 1rem;
-  border: 1px solid var(--ppz-border);
-  border-radius: 12px;
-  background: var(--ppz-surface);
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--ppz-glass-line);
+  border-radius: 18px;
+  /* Cristal, como la píldora del menú (variables en custom.css) */
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 30%),
+    var(--ppz-glass-bg-soft);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
   overflow: hidden;
 }
 

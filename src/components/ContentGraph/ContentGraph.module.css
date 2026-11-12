@@ -36,7 +36,11 @@
 .toolbar {
   --control-height: 2.2rem;
   position: absolute;
-  inset: 0.75rem 0.75rem auto;
+  /* Misma caja que la píldora del menú superior (ancho máximo centrado, con
+     su margen lateral): el buscador arranca donde empieza la píldora */
+  inset: calc(var(--ppz-graph-top, 0px) + 0.75rem)
+    max(var(--ifm-navbar-padding-horizontal), calc((100% - var(--ifm-container-width-xl)) / 2))
+    auto;
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
@@ -47,6 +51,75 @@
 
 .toolbar > * {
   pointer-events: auto;
+}
+
+/* Botón que pliega el buscador y los filtros: círculo de cristal a la
+   izquierda del buscador */
+.toolsToggle {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-height);
+  height: var(--control-height);
+  padding: 0;
+  color: var(--ifm-font-color-base);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.toolsToggle:hover,
+.toolsToggle[aria-expanded='true'] {
+  color: var(--ppz-accent);
+}
+
+.toolsToggle:hover {
+  border-color: var(--ppz-accent);
+}
+
+/* Buscador y filtros: se pliegan hacia el botón */
+.tools {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  transform-origin: left center;
+  transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.3s;
+}
+
+.toolsHidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-0.75rem) scale(0.98);
+}
+
+.tools,
+.toolsHidden {
+  pointer-events: none;
+}
+
+.tools > * {
+  pointer-events: auto;
+}
+
+.toolsHidden > * {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools {
+    transition: none;
+  }
 }
 
 .search {
@@ -67,10 +140,19 @@
   font: inherit;
   font-size: 0.9rem;
   color: var(--ifm-font-color-base);
-  background: color-mix(in srgb, var(--ppz-surface) 88%, transparent);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--ppz-border);
-  border-radius: 8px;
+  /* Cristal (variables en custom.css) */
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  border-radius: 999px;
+}
+
+.search input {
+  padding: 0 1rem;
 }
 
 .search input:focus {
@@ -89,10 +171,14 @@
   position: absolute;
   inset: calc(100% + 0.3rem) 0 auto;
   padding: 0.3rem;
-  background: var(--ppz-surface);
-  border: 1px solid var(--ppz-border);
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  border-radius: 16px;
 }
 
 .results button,
@@ -108,7 +194,7 @@
   color: var(--ifm-font-color-base);
   background: none;
   border: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -139,9 +225,13 @@
   font: inherit;
   font-size: 0.8rem;
   color: var(--ifm-font-color-base);
-  background: color-mix(in srgb, var(--ppz-surface) 88%, transparent);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--ppz-border);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
   border-radius: 999px;
   cursor: pointer;
 }
@@ -153,7 +243,9 @@
 .chip[aria-pressed='true'] {
   color: var(--ppz-accent);
   border-color: var(--ppz-accent);
-  background: color-mix(in srgb, var(--ppz-accent) 14%, var(--ppz-surface));
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    color-mix(in srgb, var(--ppz-accent) 16%, var(--ppz-glass-bg));
 }
 
 .hint {
@@ -167,18 +259,34 @@
   pointer-events: none;
 }
 
-/* Ficha de la página seleccionada */
+/* Ficha de la página seleccionada: mide lo que su contenido y, si no cabe,
+   llega hasta el borde inferior (con su margen) y hace scroll dentro */
 .panel {
   position: absolute;
-  inset: 4.5rem 0.75rem 0.75rem auto;
+  inset: calc(var(--ppz-graph-top, 0px) + 4.5rem) 1.5rem auto auto;
+  max-height: calc(100% - var(--ppz-graph-top, 0px) - 4.5rem - 1.5rem);
   z-index: 3;
-  width: min(21rem, calc(100% - 1.5rem));
-  padding: 1rem;
+  width: min(21rem, calc(100% - 3rem));
   overflow-y: auto;
-  background: color-mix(in srgb, var(--ppz-surface) 92%, transparent);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--ppz-border);
-  border-radius: 14px;
+  transition: height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  border-radius: 22px;
+}
+
+.panelInner {
+  padding: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel {
+    transition: none;
+  }
 }
 
 .panel h2 {

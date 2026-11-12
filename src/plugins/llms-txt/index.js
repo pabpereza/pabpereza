@@ -9,7 +9,8 @@ const COURSE_ORDER = ['docker', 'kubernetes', 'devops', 'devsecops', 'ansible', 
 
 const PAGES = [
   ['Sobre mí', '/about_me', 'Información sobre Pablo Pérez-Aradros'],
-  ['Comunidad', '/comunidad', 'Discord Sudoers by pabpereza y niveles de la membresía de YouTube'],
+  ['Comunidad', '/comunidad', 'Discord Sudoers by pabpereza, abierto a todo el mundo'],
+  ['Membresía', '/membresia', 'Niveles de la membresía de YouTube del canal y lo que incluye cada uno'],
   ['Grafo de contenido', '/content-graph', 'Visualización interactiva de relaciones entre contenidos'],
 ];
 

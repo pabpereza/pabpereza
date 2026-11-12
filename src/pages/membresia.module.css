@@ -1,0 +1,41 @@
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ifm-font-color-base) !important;
+}
+
+.price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ppz-muted);
+}
+
+.join {
+  margin-top: 2rem;
+}
+
+.discordNote {
+  margin-top: 1.5rem;
+  color: var(--ppz-muted);
+}
+
+/* Nivel más alto: borde verde con un brillo que late */
+.top {
+  border-color: color-mix(in srgb, var(--ppz-accent) 55%, transparent);
+  animation: top-glow 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes top-glow {
+  from {
+    box-shadow: 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 0 26px var(--ppz-glow);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .top {
+    animation: none;
+  }
+}

@@ -15,7 +15,7 @@ export default function MapPromo() {
   ];
 
   return (
-    <div className={styles.box}>
+    <div className={`ppz-glare ${styles.box}`}>
       <div className={styles.text}>
         <p className={styles.lead}>
           Cada punto es una página y cada línea, un enlace entre dos. Sirve para ver de un vistazo

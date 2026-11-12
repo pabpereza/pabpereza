@@ -44,15 +44,19 @@ export default function TOCWithLocalGraph(props) {
       {!hidden && (
         <div className={styles.sticky}>
           <LocalGraph />
-          <div className={styles.toc}>
-            <TOC {...props} />
+          {/* La tarjeta no hace scroll (su destello de borde se quedaría
+              atrás); el scroll va dentro */}
+          <div className={`ppz-glare ppz-glare--soft ${styles.tocCard}`}>
+            <div className={styles.toc}>
+              <TOC {...props} />
+            </div>
           </div>
         </div>
       )}
       {/* Mismas clases e icono que el botón del menú izquierdo, para que sean idénticos */}
       <button
         type="button"
-        className={`button button--secondary button--outline ${styles.toggle}`}
+        className={`button button--secondary button--outline ppz-glare ppz-glare--soft ${styles.toggle}`}
         onClick={toggle}
         aria-label={label}
         title={label}

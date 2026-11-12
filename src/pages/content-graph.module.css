@@ -1,5 +1,9 @@
-/* El mapa ocupa toda la ventana bajo el navbar */
+/* El mapa ocupa toda la ventana y se mete por debajo del menú flotante, que
+   deja ver el grafo a través del cristal. --ppz-graph-top baja los controles
+   del mapa para que no queden tapados por el menú */
 .page {
-  height: calc(100vh - var(--ifm-navbar-height));
-  height: calc(100dvh - var(--ifm-navbar-height));
+  --ppz-graph-top: var(--ifm-navbar-height);
+  margin-top: calc(-1 * var(--ifm-navbar-height));
+  height: 100vh;
+  height: 100dvh;
 }

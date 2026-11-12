@@ -13,17 +13,57 @@
   top: calc(var(--ifm-navbar-height) + 1rem);
   display: flex;
   flex-direction: column;
-  /* Deja sitio al botón, que ocupa el borde inferior de la ventana */
-  max-height: calc(100vh - var(--ifm-navbar-height) - var(--toggle-height) - 2rem);
+  /* Deja sitio al botón, que va abajo con su margen */
+  max-height: calc(100vh - var(--ifm-navbar-height) - var(--toggle-height) - 3rem);
   margin-bottom: 1rem;
 }
 
 /* El índice original deja de ser fijo por su cuenta y, si no cabe, hace
-   scroll dentro del hueco que queda bajo el mapa local */
+   scroll dentro del hueco que queda bajo el mapa local. Va en una tarjeta de
+   cristal que mide lo que su contenido (variables en custom.css) */
+.tocCard {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid var(--ppz-glass-line);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 30%),
+    var(--ppz-glass-bg-soft);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+}
+
 .toc {
-  flex: 1;
   min-height: 0;
   overflow-y: auto;
+  padding: 0.6rem 0.4rem;
+}
+
+/* Dentro de la tarjeta sobra la línea vertical del índice original. El
+   índice de Docusaurus va a 0,8rem (12,8px), poco legible en una columna
+   estrecha y sobre cristal: un poco más grande, con más interlineado y el
+   sangrado de los subapartados más corto para que quepa más por línea */
+.toc :global(.table-of-contents) {
+  border-left: 0;
+  font-size: 0.875rem;
+}
+
+.toc :global(.table-of-contents__link) {
+  display: block;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--ifm-font-color-base) 78%, transparent);
+}
+
+.toc :global(.table-of-contents__link:hover),
+.toc :global(.table-of-contents__link--active) {
+  color: var(--ppz-accent);
+}
+
+.toc :global(.table-of-contents ul) {
+  padding-left: 0.6rem;
 }
 
 .toc > * {
@@ -31,45 +71,32 @@
   max-height: none;
 }
 
-/* Botón de plegar: pegado al borde inferior de la ventana. Lleva las clases
-   de botón de Infima y estas mismas reglas que el del menú izquierdo
-   (collapseSidebarButton del tema), así que se ven iguales */
+/* Botón de plegar: una pastilla de cristal que se queda abajo, con aire
+   respecto al borde de la ventana */
 .toggle {
   position: sticky;
-  bottom: 0;
+  bottom: 0.75rem;
   flex: none;
   display: block;
   width: 100%;
   height: var(--toggle-height);
-  margin: auto 0 0;
-  background-color: var(--docusaurus-collapse-button-bg);
-  border: 1px solid var(--ifm-toc-border-color);
-  border-radius: 0;
+  margin: auto 0 0.75rem;
+  border: 1px solid var(--ppz-glass-line);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 55%),
+    var(--ppz-glass-bg-soft);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
 }
 
 .toggle:hover,
 .toggle:focus {
-  background-color: var(--docusaurus-collapse-button-bg-hover);
-}
-
-/* El botón se prolonga hasta el borde derecho de la ventana, como el del
-   menú izquierdo llega hasta el suyo. El contenido va centrado con un ancho
-   máximo, así que el hueco varía: la prolongación es más ancha de la cuenta y
-   .main-wrapper la recorta en el borde (overflow-x: clip, en custom.css) */
-.toggle {
-  border-right-width: 0;
-}
-
-.toggle::after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: 100%;
-  width: 100vw;
-  background-color: inherit;
-  border: solid var(--ifm-toc-border-color);
-  border-width: 1px 0;
+  border-color: var(--ppz-accent);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 55%),
+    var(--ppz-glass-bg-soft);
 }
 
 /* El icono original apunta a la derecha («plegar hacia la derecha») */
@@ -90,14 +117,15 @@
   width: var(--toggle-height);
   margin: 0;
   padding: 0;
-  border-radius: 8px;
-  /* Opaco: flota sobre el contenido */
-  background-color: var(--ppz-surface);
-  border-right-width: 1px;
-}
-
-:global(html[data-toc-hidden]) .toggle::after {
-  content: none;
+  border-radius: 50%;
+  /* Cristal: flota sobre el contenido (variables en custom.css) */
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
 }
 
 :global(html[data-toc-hidden]) .toggle:hover,

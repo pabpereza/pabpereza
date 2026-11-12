@@ -3,22 +3,6 @@
   color: var(--ppz-accent);
 }
 
-.price {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--ifm-font-color-base) !important;
-}
-
-.price span {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--ppz-muted);
-}
-
-.join {
-  margin-top: 2rem;
-}
-
 /* La almohadilla de cada canal se enciende en secuencia al entrar en pantalla
    (--i lo pone .ppz-stagger en cada tarjeta) */
 :global(.is-in) .hash {
@@ -41,21 +25,6 @@
   100% {
     transform: scale(1);
     text-shadow: none;
-  }
-}
-
-/* Nivel más alto: borde verde con un brillo que late */
-.top {
-  border-color: color-mix(in srgb, var(--ppz-accent) 55%, transparent);
-  animation: top-glow 3.2s ease-in-out infinite alternate;
-}
-
-@keyframes top-glow {
-  from {
-    box-shadow: 0 0 0 transparent;
-  }
-  to {
-    box-shadow: 0 0 26px var(--ppz-glow);
   }
 }
 
@@ -152,7 +121,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   :global(.is-in) .hash,
-  .top,
   :global(.is-in) .msg,
   :global(.is-in) .reaction {
     animation: none;
@@ -163,12 +131,28 @@
 .discordRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  /* Las dos mitades miden lo mismo de alto: manda la más alta (el chat) */
+  grid-template-areas:
+    'intro counts'
+    'cards chat';
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  /* Fichas y chat miden lo mismo de alto: manda el más alto */
   align-items: stretch;
 }
 
+.discordIntro {
+  grid-area: intro;
+  margin: 0;
+}
+
+/* Los contadores se apoyan abajo, justo encima del chat */
+.countsCell {
+  grid-area: counts;
+  align-self: end;
+}
+
 .channels {
+  grid-area: cards;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr; /* las fichas se reparten todo el alto disponible */
@@ -181,7 +165,10 @@
 }
 
 .chatWrap {
+  grid-area: chat;
   display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .chatWrap .chat {
@@ -196,5 +183,57 @@
 @media screen and (max-width: 996px) {
   .discordRow {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      'intro'
+      'cards'
+      'counts'
+      'chat';
+  }
+}
+
+/* Miembros totales y conectados, encima del widget */
+.counts {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ppz-muted);
+}
+
+.counts strong {
+  color: var(--ifm-font-color-base);
+}
+
+.online::before {
+  content: '';
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: #23a55a; /* verde de "en línea" de Discord */
+}
+
+/* Llamada a la membresía al final de la página */
+.memberCta {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.memberCta h2 {
+  margin-bottom: 0.4rem;
+}
+
+.memberCta p {
+  margin: 0;
+  max-width: 44rem;
+}
+
+@media screen and (max-width: 996px) {
+  .memberCta {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

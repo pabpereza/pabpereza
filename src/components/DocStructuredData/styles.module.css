@@ -4,7 +4,8 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   margin: 1rem 0 1.5rem;
-  border-radius: var(--ifm-global-radius);
+  /* Esquinas redondeadas, en la familia de las tarjetas y el cristal */
+  border-radius: 18px;
   overflow: hidden;
   background: var(--ifm-color-emphasis-200);
 }

@@ -80,7 +80,7 @@ export default function LocalGraph() {
   const total = neighbors.length + hiddenCount;
 
   return (
-    <div className={styles.box}>
+    <div className={`ppz-glare ppz-glare--soft ${styles.box}`}>
       <div className={styles.head}>
         <span>Mapa local</span>
         <Link

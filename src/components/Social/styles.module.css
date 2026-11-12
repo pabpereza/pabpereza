@@ -35,6 +35,7 @@
 .icon {
   width: 28px;
   height: 28px;
+  transform: scale(var(--scale, 1));
   background-color: currentColor;
   -webkit-mask: var(--icon) center / contain no-repeat;
   mask: var(--icon) center / contain no-repeat;

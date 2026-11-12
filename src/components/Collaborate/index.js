@@ -17,7 +17,7 @@ export default function Collaborate() {
   ];
 
   return (
-    <aside className={styles.box}>
+    <aside className={`ppz-glare ${styles.box}`}>
       <div className={styles.text}>
         <h2 className={styles.title}>Gratis y abierto, gracias a quien lo apoya</h2>
         <p>

@@ -1,50 +1,15 @@
 import Stagger from '@site/src/components/Stagger';
 import Layout from '@theme/Layout';
-import useBrokenLinks from '@docusaurus/useBrokenLinks';
+import {useEffect, useState} from 'react';
+import Link from '@docusaurus/Link';
+import {useHistory} from '@docusaurus/router';
 import styles from './comunidad.module.css';
 
 const DISCORD_URL = '/discord';
-const JOIN_URL = 'https://www.youtube.com/@pabpereza/join';
+const DISCORD_INVITE = 'CpHVzDAaBW';
 
 const channels = ['#dudas', '#devops', '#seguridad', '#cloud', '#sysadmin', '#homelab', '#ia-y-agentes', '#empleo-y-carrera'];
 
-const tiers = [
-  {
-    name: 'Hacedor de contenedores',
-    emoji: '🐳',
-    price: '1,99 €',
-    summary: 'Para quien quiere echar una mano al canal.',
-    perks: [
-      'Acceso anticipado a los vídeos nuevos',
-      'Insignias de timón y emojis propios',
-      'Respuestas por audio a tus comentarios',
-      'Prioridad al responder comentarios',
-    ],
-  },
-  {
-    name: 'Navegante de Pods',
-    emoji: '🚢',
-    price: '4,99 €',
-    summary: 'Todo lo anterior, más la cocina del canal.',
-    perks: [
-      'Diario de producción de cada vídeo',
-      'Research completo, incluido lo que no entra en el montaje',
-      'Versiones sin cortar',
-      'Votas el próximo vídeo',
-    ],
-  },
-  {
-    name: 'Capitán de Clústeres',
-    emoji: '⚓',
-    price: '9,99 €',
-    summary: 'Todo lo anterior, y además mandas tú.',
-    top: true,
-    perks: [
-      'Eliges el tema y los casos del directo mensual',
-      'Contacto directo conmigo',
-    ],
-  },
-];
 
 // Conversación inventada, con nombres genéricos, para enseñar de un vistazo
 // el tono del servidor. No reproduce mensajes de miembros reales.
@@ -69,7 +34,7 @@ const chat = [
 
 function Chat() {
   return (
-    <figure className={styles.chat}>
+    <figure className={`ppz-glare ${styles.chat}`}>
       <div className={styles.chatHead}>
         <span className={styles.hashStatic}>#</span> general
       </div>
@@ -90,13 +55,46 @@ function Chat() {
   );
 }
 
+// Miembros totales y conectados, de la API pública de invitaciones (sin token ni cookies, y
+// Discord permite la petición desde pabpereza.dev). Si falla, no se pinta
+function useDiscordCounts() {
+  const [counts, setCounts] = useState(null);
+  useEffect(() => {
+    fetch(`https://discord.com/api/v10/invites/${DISCORD_INVITE}?with_counts=true`, {credentials: 'omit'})
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.approximate_member_count) {
+          setCounts({total: data.approximate_member_count, online: data.approximate_presence_count ?? 0});
+        }
+      })
+      .catch(() => {});
+  }, []);
+  return counts;
+}
+
+function DiscordCounts() {
+  const counts = useDiscordCounts();
+  if (!counts) return null;
+  const fmt = (n) => n.toLocaleString('es-ES');
+  return (
+    <p className={styles.counts}>
+      <span><strong>{fmt(counts.total)}</strong> {counts.total === 1 ? 'miembro' : 'miembros'}</span>
+      <span className={styles.online}><strong>{fmt(counts.online)}</strong> {counts.online === 1 ? 'conectado' : 'conectados'}</span>
+    </p>
+  );
+}
+
 export default function Comunidad() {
-  // La home enlaza a /comunidad#membresia y Docusaurus valida los anclajes
-  useBrokenLinks().collectAnchor('membresia');
+  // La membresía tenía antes su sección aquí (/comunidad#membresia). Los
+  // enlaces antiguos que ya circulan acaban en su página propia
+  const history = useHistory();
+  useEffect(() => {
+    if (window.location.hash === '#membresia') history.replace('/membresia');
+  }, [history]);
   return (
     <Layout
-      title="Comunidad - Discord Sudoers y membresía de YouTube"
-      description="Únete a Sudoers by pabpereza, el Discord abierto del canal sobre DevOps, seguridad y homelab, y conoce los tres niveles de la membresía de YouTube.">
+      title="Comunidad - Discord Sudoers by pabpereza"
+      description="Únete a Sudoers by pabpereza, el Discord abierto del canal para hablar de DevOps, seguridad, cloud y homelab, resolver dudas y enseñar lo que has montado.">
       <header className="ppz-hero ppz-glow">
         <div className="container">
           <p className="ppz-eyebrow">Sudoers by pabpereza</p>
@@ -109,9 +107,9 @@ export default function Comunidad() {
             <a className="button button--primary button--lg" href={DISCORD_URL} target="_blank" rel="noopener noreferrer">
               Entrar al Discord
             </a>
-            <a className="button button--secondary button--outline button--lg" href="#membresia">
+            <Link className="button button--secondary button--outline button--lg" to="/membresia">
               Ver la membresía
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -121,11 +119,17 @@ export default function Comunidad() {
             <div className="ppz-section__head">
               <h2>Discord, abierto a todo el mundo</h2>
             </div>
-            <p className="ppz-section__intro">
-              No hace falta ser miembro para entrar. Preséntate, pregunta lo que se te haya
-              atascado o enseña lo que has montado. Estos son algunos de los canales.
-            </p>
+            {/* Rejilla de dos filas: arriba, la intro (izquierda) y los
+                contadores de Discord (derecha); abajo, las fichas de canales
+                y el chat de ejemplo, con el mismo alto */}
             <div className={styles.discordRow}>
+              <p className={`ppz-section__intro ${styles.discordIntro}`}>
+                No hace falta ser miembro para entrar. Preséntate, pregunta lo que se te haya
+                atascado o enseña lo que has montado. Estos son algunos de los canales.
+              </p>
+              <div className={styles.countsCell}>
+                <DiscordCounts />
+              </div>
               <Stagger className={styles.channels}>
                 {channels.map((name) => (
                   <a
@@ -150,65 +154,21 @@ export default function Comunidad() {
           </div>
         </section>
 
-        <section className="ppz-section" id="membresia">
-          <div className="container">
-            <div className="ppz-section__head">
-              <h2>Membresía de YouTube</h2>
-            </div>
-            <p className="ppz-section__intro">
-              El contenido del canal y los cursos son y seguirán siendo gratuitos. La membresía
-              es la forma de apoyarlo, con tres niveles. Cada uno incluye lo de los anteriores.
-            </p>
-            <Stagger className="ppz-grid ppz-grid--3 ppz-stagger--stairs">
-              {tiers.map(({name, emoji, price, summary, perks, top}) => (
-                <div key={name} className={`ppz-card ${top ? styles.top : ''}`}>
-                  <h3>{emoji} {name}</h3>
-                  <p className={styles.price}>
-                    {price} <span>/ mes</span>
-                  </p>
-                  <p>{summary}</p>
-                  <ul>
-                    {perks.map((perk) => <li key={perk}>{perk}</li>)}
-                  </ul>
-                </div>
-              ))}
-            </Stagger>
-            <div className={`ppz-actions ${styles.join}`}>
-              <a className="button button--primary button--lg" href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-                Hacerme miembro
-              </a>
-            </div>
-          </div>
-        </section>
-
         <section className="ppz-section">
           <div className="container">
-            <div className="ppz-section__head">
-              <h2>Cómo encaja todo</h2>
+            <div className={`ppz-card ${styles.memberCta}`}>
+              <div>
+                <h2>¿Quieres apoyar el canal?</h2>
+                <p>
+                  La membresía de YouTube tiene tres niveles, desde acceso anticipado a los vídeos
+                  hasta elegir el tema del directo mensual. Con ella llegan los canales de miembros
+                  del Discord.
+                </p>
+              </div>
+              <Link className="button button--primary button--lg" to="/membresia">
+                Ver la membresía
+              </Link>
             </div>
-            <Stagger className="ppz-grid ppz-grid--3">
-              <div className="ppz-card">
-                <h3>Tu rol en Discord</h3>
-                <p>
-                  Conecta tu cuenta de YouTube en Discord y el rol de tu nivel se asigna solo.
-                  Los pasos están en #bienvenida.
-                </p>
-              </div>
-              <div className="ppz-card">
-                <h3>Canales de miembros</h3>
-                <p>
-                  El diario, el research y las animaciones de cada vídeo se publican en canales
-                  del servidor reservados a Navegantes y Capitanes.
-                </p>
-              </div>
-              <div className="ppz-card">
-                <h3>Directo mensual</h3>
-                <p>
-                  Una vez al mes hay directo, público para todo el mundo. El tema y los casos
-                  los eligen los Capitanes.
-                </p>
-              </div>
-            </Stagger>
           </div>
         </section>
       </main>

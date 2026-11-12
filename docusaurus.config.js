@@ -62,6 +62,15 @@ const config = {
     locales: ['es'],
   },
 
+  clientModules: [
+    // Pastilla de cristal que se desliza bajo los enlaces del menú
+    './src/clientModules/navHoverPill.js',
+    // Ancho de la píldora en el blog, marcado tras pintar para que se anime
+    './src/clientModules/navWidth.js',
+    // Luz verde de fondo que sigue al scroll
+    './src/clientModules/ambientLight.js',
+  ],
+
   presets: [
     [
       'classic',
@@ -134,6 +143,9 @@ const config = {
             to: '/comunidad', label: 'Comunidad', position: 'left'
           },
           {
+            to: '/membresia', label: 'Membresía', position: 'left'
+          },
+          {
             to: '/about_me', label: 'Sobre mí', position: 'left'
           },
           {
@@ -172,8 +184,12 @@ const config = {
             title: 'Comunidad',
             items: [
               {
-                label: 'Discord y membresía',
+                label: 'Discord',
                 to: '/comunidad',
+              },
+              {
+                label: 'Membresía',
+                to: '/membresia',
               },
               {
                 label: 'YouTube',

@@ -48,7 +48,7 @@ function Video({id, fallbackTitle}) {
           }}
         />
       )}
-      <div className={styles.video}>
+      <div className={`ppz-glare ppz-glare--soft ${styles.video}`}>
         {video?.embeddable === false ? (
           // Inserción desactivada en YouTube: miniatura enlazada al vídeo
           <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">

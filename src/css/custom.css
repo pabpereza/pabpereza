@@ -63,7 +63,7 @@
   --ppz-surface: #f0f7f3;
   --ppz-border: rgba(0, 60, 30, 0.14);
   --ppz-muted: #56605b;
-  --ppz-glow: rgba(0, 200, 110, 0.22);
+  --ppz-glow: rgba(0, 200, 110, 0.38);
   --ppz-accent: #007a45;
   --ppz-on-primary: #ffffff;
 }
@@ -105,18 +105,306 @@
   border-bottom: 1px solid var(--ppz-border);
 }
 
+/* En pantallas anchas el menú no va de borde a borde: se alinea con la caja
+   del contenido para que el logo no se quede pegado a la esquina. En los
+   cursos no, porque su menú lateral sí va pegado al borde.
+   El ancho sale del relleno lateral de .navbar (y no de un max-width) para
+   poder animarlo al pasar de los cursos al resto y al revés: ver el bloque
+   del menú flotante */
+@media screen and (min-width: 997px) {
+  .navbar {
+    padding-left: var(--ppz-nav-gutter);
+    padding-right: var(--ppz-nav-gutter);
+  }
+
+  :root {
+    --ppz-nav-gutter: max(
+      var(--ifm-navbar-padding-horizontal),
+      calc((100% - var(--ifm-container-width-xl)) / 2)
+    );
+  }
+
+  /* Antes de que cargue el JavaScript (src/clientModules/navWidth.js, que
+     marca <html data-ppz-nav>), los cursos se reconocen por su clase */
+  html.plugin-docs:not([data-ppz-nav]) {
+    --ppz-nav-gutter: var(--ifm-navbar-padding-horizontal);
+  }
+}
+
+/* Ningún enlace del menú se parte en dos líneas. Entre 997px (donde aparece
+   el menú de escritorio) y 1200px no caben todos con el relleno normal */
+.navbar__item,
+.navbar__link {
+  white-space: nowrap;
+}
+
+@media (min-width: 997px) and (max-width: 1199px) {
+  .navbar__item {
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+  }
+}
+
 .navbar__title {
   font-family: var(--ifm-font-family-monospace);
   letter-spacing: -0.02em;
 }
 
-/* Solo en escritorio: con backdrop-filter el menú lateral del móvil queda
+/* ---------- Cristal ("liquid glass") ----------
+   Solo para lo que flota sobre el contenido (menú, desplegables, avisos,
+   paneles y controles del mapa), nunca para el contenido en sí. Todas las
+   capas usan estas variables para que el cristal sea el mismo en toda la web */
+:root {
+  --ppz-glass-bg: rgba(255, 255, 255, 0.72);
+  --ppz-glass-edge: rgba(255, 255, 255, 0.7);
+  --ppz-glass-line: rgba(0, 40, 20, 0.1);
+  --ppz-glass-shine: rgba(255, 255, 255, 0.55);
+  --ppz-glass-shadow: 0 10px 30px -10px rgba(0, 30, 15, 0.18), 0 2px 6px rgba(0, 30, 15, 0.06);
+  --ppz-glass-filter: blur(18px) saturate(180%);
+  /* Cristal más transparente para los laterales de cursos y blog: detrás
+     solo tienen el fondo y su luz, así que pueden dejarla ver más sin que el
+     texto pierda legibilidad */
+  --ppz-glass-bg-soft: rgba(255, 255, 255, 0.38);
+  --ppz-glass-shine-soft: rgba(255, 255, 255, 0.35);
+}
+
+[data-theme='dark'] {
+  --ppz-glass-bg-soft: rgba(14, 17, 16, 0.3);
+  --ppz-glass-shine-soft: rgba(255, 255, 255, 0.06);
+  --ppz-glass-bg: rgba(14, 17, 16, 0.6);
+  --ppz-glass-edge: rgba(255, 255, 255, 0.16);
+  --ppz-glass-line: rgba(255, 255, 255, 0.08);
+  --ppz-glass-shine: rgba(255, 255, 255, 0.1);
+  --ppz-glass-shadow: 0 12px 34px -10px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Quien tenga activado "reducir transparencia" en el sistema ve capas opacas */
+@media (prefers-reduced-motion: reduce) {
+  .navbar {
+    transition: none !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --ppz-glass-bg: #ffffff;
+    --ppz-glass-bg-soft: #ffffff;
+    --ppz-glass-filter: none;
+  }
+
+  [data-theme='dark'] {
+    --ppz-glass-bg: #121514;
+    --ppz-glass-bg-soft: #121514;
+  }
+}
+
+/* Los módulos CSS de los componentes repiten estas mismas cuatro reglas con
+   las variables; esta clase es para el JSX y los elementos del tema */
+.ppz-glass {
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+}
+
+/* ---------- Menú flotante de cristal (escritorio) ----------
+   La barra deja de ir pegada arriba de borde a borde y pasa a ser una píldora
+   flotante. El contenedor .navbar queda transparente y la píldora es
+   .navbar__inner. El cristal va en su ::before y no en ella: un
+   backdrop-filter dentro de otro solo desenfoca a su padre, y así el
+   desplegable de Cursos (que va dentro) también ve la página de detrás.
+   Solo en escritorio: con backdrop-filter el menú lateral del móvil queda
    recortado a la altura del navbar */
 @media screen and (min-width: 997px) {
-  .navbar {
-    background-color: color-mix(in srgb, var(--ifm-navbar-background-color) 60%, transparent);
-    backdrop-filter: blur(14px);
+  :root {
+    /* Alto total de la franja del menú (píldora + aire alrededor). Docusaurus
+       lo usa para el sticky de los menús laterales y el ancla de los títulos,
+       y las cabeceras propias para meterse por debajo */
+    --ifm-navbar-height: 4.5rem;
+    --ifm-navbar-padding-vertical: 0.6rem;
+    --ppz-pill-pad: 0.9rem;
   }
+
+  .navbar {
+    background: transparent;
+    border-bottom: 0;
+    box-shadow: none;
+    /* Al navegar entre los cursos (píldora a todo el ancho) y el resto (más
+       compacta) la píldora se estira o encoge con un rebote elástico */
+    transition: padding 0.75s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Al ensanchar (entrar en los cursos) sin rebote: si se pasa de largo, se
+     sale de la pantalla. El navegador usa la curva del estado de llegada, así
+     que esta vale para ir a los cursos y la de arriba para salir de ellos */
+  html[data-ppz-nav='wide'] .navbar {
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* La franja del menú es transparente: los clics y arrastres alrededor de la
+     píldora llegan a la página (por ejemplo, al mapa de contenido) */
+  .navbar {
+    pointer-events: none;
+  }
+
+  .navbar__inner {
+    pointer-events: auto;
+    position: relative;
+    isolation: isolate;
+    height: 100%;
+    padding: 0 var(--ppz-pill-pad);
+  }
+
+  .navbar__inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 999px;
+    border: 1px solid var(--ppz-glass-line);
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+      var(--ppz-glass-bg);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    box-shadow:
+      inset 0 1px 0 var(--ppz-glass-edge),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+      var(--ppz-glass-shadow);
+  }
+
+  /* Desplegable de Cursos: cristal que cuelga de la píldora */
+  .navbar .dropdown__menu {
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 18px;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine), transparent 40%),
+      var(--ppz-glass-bg);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    border: 1px solid var(--ppz-glass-line);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  }
+
+  .navbar .dropdown__link {
+    border-radius: 10px;
+  }
+
+  /* Pastilla que se desliza bajo los enlaces (src/clientModules/navHoverPill.js).
+     Va por encima del cristal de la píldora y por debajo del texto */
+  .ppz-nav-pill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 999px;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine), transparent 60%),
+      color-mix(in srgb, var(--ifm-font-color-base) 7%, transparent);
+    border: 1px solid var(--ppz-glass-line);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge);
+    pointer-events: none;
+    opacity: 0;
+    transition:
+      transform 0.45s cubic-bezier(0.34, 1.35, 0.64, 1),
+      width 0.45s cubic-bezier(0.34, 1.35, 0.64, 1),
+      opacity 0.2s ease;
+  }
+
+  .ppz-nav-pill[data-visible='true'] {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 997px) and (prefers-reduced-motion: reduce) {
+  .ppz-nav-pill {
+    transition: opacity 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .ppz-nav-pill {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 997px) {
+
+  /* Puente invisible sobre el hueco entre «Cursos» y el desplegable: sin él,
+     al bajar el ratón se pierde el hover en esos píxeles y el menú se cierra
+     antes de llegar. Va en el elemento del menú y no en el desplegable, que
+     recorta lo que sobresale (overflow: auto) */
+  .navbar .dropdown--hoverable::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 1rem;
+  }
+}
+
+/* ---------- Cristal, bloque 2: controles pequeños ---------- */
+
+/* Buscador del menú: una cápsula hundida dentro de la píldora (sombra
+   interior arriba y brillo en el canto de abajo, al revés que el cristal
+   que sobresale) */
+.navbar__search-input {
+  background-color: color-mix(in srgb, var(--ifm-font-color-base) 6%, transparent);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.14),
+    inset 0 -1px 0 var(--ppz-glass-edge);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar__search-input:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--ppz-accent) 60%, transparent);
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.14),
+    0 0 0 3px color-mix(in srgb, var(--ppz-accent) 22%, transparent);
+}
+
+/* Botones secundarios de las cabeceras ("Ver el canal", "Ver la
+   membresía"...): sin contorno, con relleno de cristal */
+.ppz-actions .button--secondary.button--outline {
+  color: var(--ifm-font-color-base);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ppz-actions .button--secondary.button--outline:hover {
+  color: var(--ppz-accent);
+  border-color: color-mix(in srgb, var(--ppz-accent) 45%, transparent);
+  transform: translateY(-1px);
+}
+
+/* Etiquetas de los artículos: cápsulas de cristal */
+a[href*='/blog/tags/'][class*='tag_'] {
+  border-radius: 999px;
+  border: 1px solid var(--ppz-glass-line);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 60%),
+    color-mix(in srgb, var(--ppz-surface) 70%, transparent);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a[href*='/blog/tags/'][class*='tag_']:hover {
+  color: var(--ppz-accent);
+  border-color: color-mix(in srgb, var(--ppz-accent) 45%, transparent);
+  text-decoration: none;
 }
 
 .dropdown-separator {
@@ -132,6 +420,57 @@
 /* El pie es oscuro también en modo claro */
 .footer--dark {
   --ifm-footer-background-color: #0a0a0a;
+}
+
+/* Pie de cristal, a juego con la píldora del menú: una tarjeta flotante con
+   el mismo ancho que el menú (el mismo margen lateral, --ppz-nav-gutter) y
+   esquinas muy redondeadas. Es oscuro en los dos temas, así que su cristal
+   también: deja ver desenfocada la luz verde del fondo */
+.footer {
+  --ppz-footer-gutter: 0.75rem;
+  margin: 3rem var(--ppz-footer-gutter) var(--ppz-footer-gutter);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 30%),
+    rgba(10, 12, 11, 0.78);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  backdrop-filter: blur(18px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 18px 40px -18px rgba(0, 0, 0, 0.45);
+}
+
+/* En modo claro el pie es de cristal blanco, como la píldora del menú. El
+   estilo «dark» del pie (config) fija colores claros para el texto: aquí se
+   devuelven a los del tema */
+[data-theme='light'] .footer--dark {
+  --ifm-footer-background-color: transparent;
+  --ifm-footer-color: var(--ifm-font-color-base);
+  --ifm-footer-title-color: var(--ifm-font-color-base);
+  --ifm-footer-link-color: var(--ppz-muted);
+  --ifm-footer-link-hover-color: var(--ppz-accent);
+  border-color: var(--ppz-glass-line);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 30%),
+    var(--ppz-glass-bg);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+}
+
+@media screen and (min-width: 997px) {
+  .footer {
+    --ppz-footer-gutter: var(--ppz-nav-gutter);
+    margin-bottom: 1rem;
+    border-radius: 32px;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .footer {
+    background: var(--ppz-glass-bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
 }
 
 /* Icono de GitHub del navbar */
@@ -219,6 +558,17 @@ header {
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
+}
+
+/* En el móvil los botones van uno debajo de otro: con el mismo ancho, en vez
+   de cada uno el de su texto */
+@media screen and (max-width: 600px) {
+  .ppz-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 20rem;
+    margin-inline: auto;
+  }
 }
 
 .ppz-section {
@@ -478,7 +828,7 @@ a.ppz-card:hover,
    artículo, centrado en el espacio que queda, con el ancho máximo por defecto
    de Docusaurus (tres cuartos de su caja: 990px en pantallas grandes).
    La columna mide el 17% del espacio disponible (la ventana menos el menú
-   izquierdo), entre 240px y 380px.
+   izquierdo), entre 260px y 380px.
    El tema centra artículo y columna juntos en una caja de ancho máximo; aquí
    la caja ocupa toda la ventana para que la columna pueda ir al borde. En
    ventanas pequeñas, todo es igual que con el tema (75% y 25%) */
@@ -497,7 +847,7 @@ html.plugin-docs .container:has(> .row > .col > .ppz-toc-column) {
 }
 
 html.plugin-docs .col:has(> .ppz-toc-column) {
-  flex: 0 0 clamp(min(25%, 240px), 17%, 380px);
+  flex: 0 0 clamp(min(25%, 260px), 17%, 380px);
   max-width: none;
 }
 
@@ -547,10 +897,321 @@ html[data-toc-hidden].plugin-docs .col:has(+ .col > .ppz-toc-column) {
   overflow-x: clip;
 }
 
+/* El mismo halo verde de las cabeceras propias (.ppz-glow) arriba del resto
+   de páginas: blog, cursos y demás. Sube por debajo del menú para verse a
+   través de la píldora, y va detrás del contenido. `clip` en horizontal no
+   recorta lo que sobresale en vertical */
+.main-wrapper:not(:has(.ppz-glow)) {
+  position: relative;
+}
+
+.main-wrapper:not(:has(.ppz-glow))::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--ifm-navbar-height));
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 34rem;
+  background: radial-gradient(ellipse 55% 100% at 50% 0%, var(--ppz-glow), transparent 75%);
+  pointer-events: none;
+}
+
 /* Miniaturas de YouTube dentro de los artículos (las enlazadas a mano en
    READMEs y entradas): a todo el ancho, como el vídeo de cada capítulo */
 .markdown img[src*='img.youtube.com'],
 .markdown img[src*='ytimg.com'] {
   width: 100%;
   height: auto;
+}
+
+/* ---------- Blog ---------- */
+
+/* Como en los cursos: el menú de entradas va pegado al borde izquierdo de la
+   ventana (alineado con la píldora del menú, que aquí también va a todo el
+   ancho), el índice del artículo al derecho y el contenido, centrado en el
+   hueco que queda. El blog se reconoce por su menú de entradas
+   (aside.col--3 > nav.sidebar_*), porque el listado no marca <html>.
+   El ancho de la píldora lo marca src/clientModules/navWidth.js en
+   <html data-ppz-nav> al terminar de navegar, para que se anime; antes de que
+   cargue el JavaScript vale lo que diga el HTML (:has) */
+@media (min-width: 997px) {
+  html:not([data-ppz-nav]):has(.main-wrapper aside.col--3 > nav[class*='sidebar_']),
+  html[data-ppz-nav='wide'] {
+    --ppz-nav-gutter: var(--ifm-navbar-padding-horizontal);
+  }
+
+
+  /* Caja a todo el ancho. Su relleno (1rem) compensa el margen negativo de
+     la fila, así que las tarjetas quedan al ras de la píldora */
+  .main-wrapper .container:has(> .row > aside.col--3 > nav[class*='sidebar_']) {
+    max-width: none;
+  }
+
+  /* Mismo ancho de tarjeta que el menú de los cursos (300px menos el margen
+     del borde) */
+  .main-wrapper .row > aside.col--3:has(> nav[class*='sidebar_']) {
+    flex: 0 0 316px;
+    max-width: 316px;
+  }
+
+  .main-wrapper .row > aside.col--3:has(> nav[class*='sidebar_']) + main {
+    flex: 1 1 0;
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Índice del artículo: el mismo ancho que en los cursos, en el borde */
+  .main-wrapper .row:has(> aside.col--3 > nav[class*='sidebar_']) > .col:has(> .ppz-toc-column) {
+    flex: 0 0 clamp(260px, 17%, 380px);
+    max-width: none;
+  }
+
+  html[data-toc-hidden] .main-wrapper .row:has(> aside.col--3 > nav[class*='sidebar_']) > .col:has(> .ppz-toc-column) {
+    flex: 0 0 0;
+    max-width: 0;
+    padding: 0;
+  }
+}
+
+/* ---------- Luz de fondo que sigue al scroll ----------
+   Capa fija detrás de toda la web con un foco verde muy suave que cruza la
+   ventana en diagonal, de arriba a la izquierda a abajo a la derecha, según
+   el avance del scroll. La variable la
+   pone src/clientModules/ambientLight.js. Solo se ve en los huecos: tarjetas,
+   código y paneles opacos quedan por encima */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: radial-gradient(
+    42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+    color-mix(in srgb, var(--ppz-glow) 85%, transparent),
+    transparent 70%
+  );
+}
+
+/* ---------- Destello en los bordes de las tarjetas ----------
+   Cuando la luz del fondo pasa por detrás de una tarjeta opaca, su borde se
+   ilumina en la zona que toca la luz. El truco: el anillo del borde lleva un
+   degradado con background-attachment: fixed, así que se coloca respecto a
+   la ventana con las mismas coordenadas que la luz (body::before) y solo se
+   ve la parte del anillo que cae dentro del foco. La máscara deja visible
+   solo el anillo de 1px. Sin JavaScript extra: usa la misma --ppz-scroll */
+:root {
+  --ppz-glare: rgba(0, 170, 95, 0.9);
+}
+
+[data-theme='dark'] {
+  --ppz-glare: rgba(0, 255, 135, 0.85);
+}
+
+.ppz-card,
+.footer {
+  position: relative;
+}
+
+/* Sin especificidad: si el elemento ya se posiciona por su cuenta (el botón
+   de plegar es sticky o fixed), manda lo suyo */
+:where(.ppz-glare) {
+  position: relative;
+}
+
+.ppz-card::after,
+.ppz-glare::after,
+.theme-code-block::after,
+.footer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: radial-gradient(
+      42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+      var(--ppz-glare),
+      transparent 55%
+    )
+    fixed;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+  pointer-events: none;
+}
+
+/* El menú y el pie destellan también, pero muy poco: son cristal y van
+   siempre a la vista, así que el brillo se queda en una insinuación */
+.footer::after {
+  opacity: 0.45;
+}
+
+@media screen and (min-width: 997px) {
+  .navbar__inner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    padding: 1.5px;
+    border-radius: 999px;
+    background: radial-gradient(
+        42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+        var(--ppz-glare),
+        transparent 55%
+      )
+      fixed;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+}
+
+/* ---------- Cristal en los menús laterales (escritorio) ----------
+   Mismo cristal que la píldora del menú: tarjetas flotantes con las esquinas
+   redondeadas y separadas de los bordes de la ventana */
+@media screen and (min-width: 997px) {
+  /* Menú izquierdo de los cursos: tarjeta alineada con el borde de la
+     píldora, bajo ella, que llega hasta abajo con su margen */
+  .theme-doc-sidebar-container {
+    border-right: 0 !important;
+  }
+
+  .theme-doc-sidebar-container [class*='sidebarViewport_'] {
+    box-sizing: border-box;
+    padding: var(--ifm-navbar-height) 0 0.75rem var(--ifm-navbar-padding-horizontal);
+  }
+
+  /* El tema le da al menú el ancho entero de la columna (300px): con el
+     margen de la tarjeta se saldría, y la columna lo recorta (clip-path) */
+  .theme-doc-sidebar-container [class*='sidebar_'] {
+    width: auto;
+    padding-top: 0.5rem;
+    border: 1px solid var(--ppz-glass-line);
+    border-radius: 22px;
+    overflow: hidden;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 25%),
+      var(--ppz-glass-bg-soft);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  }
+
+  /* El botón de plegar pasa a ser el pie de la tarjeta */
+  .theme-doc-sidebar-container [class*='collapseSidebarButton_'] {
+    border: 0;
+    border-top: 1px solid var(--ppz-glass-line);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .theme-doc-sidebar-container [class*='collapseSidebarButton_']:hover {
+    background: color-mix(in srgb, var(--ifm-font-color-base) 6%, transparent);
+  }
+
+  /* Menú del blog (lista de entradas): tarjeta de cristal que se queda fija
+     al hacer scroll y, si no cabe, hace scroll dentro */
+  .main-wrapper aside.col--3 > nav[class*='sidebar_'] {
+    /* El tema la pega a 2rem bajo el menú; abajo deja otros 0,75rem */
+    max-height: calc(100vh - var(--ifm-navbar-height) - 2.75rem);
+    padding: 1.1rem 1.1rem 0.5rem;
+    border: 1px solid var(--ppz-glass-line);
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 25%),
+      var(--ppz-glass-bg-soft);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  }
+}
+
+/* Destello suave en los laterales de cristal (cursos y blog), como en el
+   menú y el pie. Los del índice, el mapa local y el botón de plegar llevan
+   la clase .ppz-glare en el JSX; aquí van los del tema */
+/* Tarjetas de contenido (y cajas con .ppz-glare, como el chat de Discord):
+   algo por debajo del máximo */
+.ppz-card::after,
+.ppz-glare::after {
+  opacity: 0.8;
+}
+
+.ppz-glare--soft::after,
+.theme-code-block::after {
+  opacity: 0.45;
+}
+
+@media screen and (min-width: 997px) {
+  .theme-doc-sidebar-container [class*='sidebar_'] {
+    position: relative;
+  }
+
+  .theme-doc-sidebar-container [class*='sidebar_']::after,
+  .main-wrapper aside.col--3:has(> nav[class*='sidebar_'])::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    padding: 1.5px;
+    border-radius: 22px;
+    background: radial-gradient(
+        42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+        var(--ppz-glare),
+        transparent 55%
+      )
+      fixed;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  /* El menú del blog hace scroll por dentro, y un anillo dentro de él se iría
+     con el contenido. Así que el anillo va en su columna (aside), fijo con la
+     misma posición y alto que la tarjeta: los dos se pegan igual al hacer
+     scroll. Para que midan lo mismo, la tarjeta tiene alto fijo (la lista de
+     entradas siempre lo llena) */
+  .main-wrapper aside.col--3 > nav[class*='sidebar_'] {
+    height: calc(100vh - var(--ifm-navbar-height) - 2.75rem);
+  }
+
+  .main-wrapper aside.col--3:has(> nav[class*='sidebar_'])::after {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + 2rem);
+    display: block;
+    height: calc(100vh - var(--ifm-navbar-height) - 2.75rem);
+    margin-top: calc(-1 * (100vh - var(--ifm-navbar-height) - 2.75rem));
+  }
+}
+
+/* Esquinas redondeadas en los bloques de código (el radio va en una
+   variable de Infima que también usa el código en línea: se cambia solo
+   dentro de los bloques) y en los vídeos incrustados a mano en artículos */
+.theme-code-block {
+  /* Para el destello del borde (ver .ppz-glare) */
+  position: relative;
+  --ifm-code-border-radius: 14px;
+  /* El <pre> lee su radio de otra variable, resuelta ya en :root */
+  --ifm-pre-border-radius: 14px;
+}
+
+.markdown iframe {
+  border-radius: 18px;
 }

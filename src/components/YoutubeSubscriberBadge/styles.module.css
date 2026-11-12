@@ -16,8 +16,10 @@
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  /* El dibujo del logo es más ancho que alto: a 22px su altura visual iguala
+     la del texto y la de los iconos de GitHub y del tema (24px, redondos) */
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
   display: inline-block;
   background-color: currentColor;

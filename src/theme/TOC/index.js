@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {flushSync} from 'react-dom';
 import {morph} from '@site/src/utils/morph';
 import TOC from '@theme-original/TOC';
@@ -25,7 +25,15 @@ export default function TOCWithLocalGraph(props) {
     }
   }, []);
 
+  // La primera vez no se toca: <html> ya llega marcado desde la carga
+  // (src/clientModules/tocState.js) y el estado inicial (desplegado) aún no
+  // ha leído la elección guardada; si no, el artículo daría un salto
+  const firstRun = useRef(true);
   useEffect(() => {
+    if (firstRun.current) {
+      firstRun.current = false;
+      return;
+    }
     document.documentElement.toggleAttribute('data-toc-hidden', hidden);
   }, [hidden]);
 

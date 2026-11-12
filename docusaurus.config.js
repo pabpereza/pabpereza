@@ -71,6 +71,10 @@ const config = {
     './src/clientModules/ambientLight.js',
     // El botón de plegar el menú de los cursos se encoge hasta el redondo
     './src/clientModules/docSidebarMorph.js',
+    // Columna del índice plegada o no, marcada en <html> desde la carga
+    './src/clientModules/tocState.js',
+    // En el menú ancho, la píldora se parte en dos burbujas al bajar
+    './src/clientModules/navSplit.js',
   ],
 
   presets: [

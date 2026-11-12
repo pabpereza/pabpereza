@@ -1002,6 +1002,17 @@ html[data-toc-hidden].plugin-docs .col:has(+ .col > .ppz-toc-column) {
     max-width: none;
   }
 
+  /* Listados del blog (sin índice a la derecha): un hueco invisible del
+     mismo ancho que la columna del índice, para que el contenido quede
+     centrado en el mismo sitio que en un artículo y no salte al abrirlo.
+     Si el usuario tiene el índice plegado (se recuerda entre visitas y
+     src/clientModules/tocState.js lo marca en <html> desde la carga), los
+     artículos usan todo el ancho y el listado tampoco deja el hueco */
+  html:not([data-toc-hidden]) .main-wrapper .row:has(> aside.col--3 > nav[class*='sidebar_']):not(:has(> .col > .ppz-toc-column))::after {
+    content: '';
+    flex: 0 0 clamp(260px, 17%, 380px);
+  }
+
   html[data-toc-hidden] .main-wrapper .row:has(> aside.col--3 > nav[class*='sidebar_']) > .col:has(> .ppz-toc-column) {
     flex: 0 0 0;
     max-width: 0;
@@ -1546,5 +1557,98 @@ html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--text 
 @media (prefers-reduced-motion: reduce) {
   .pagination-nav__link:hover {
     transform: none;
+  }
+}
+
+/* ---------- Píldora partida (menú ancho: cursos y blog) ----------
+   src/clientModules/navSplit.js: al bajar, la píldora se separa en dos
+   burbujas como una gota que se parte, y al subir se vuelven a fundir.
+   Mientras dura (clase .ppz-split-active), el cristal de la píldora deja de
+   ser su ::before y pasa a una sola capa recortada con un trazado que el
+   módulo anima (clip-path), con un SVG encima para el borde y el destello.
+   Unida del todo, vuelve la píldora de siempre */
+@media screen and (min-width: 997px) {
+  .navbar__inner.ppz-split-active::before,
+  .navbar__inner.ppz-split-active::after {
+    content: none;
+  }
+
+  .ppz-nav-glass,
+  .ppz-nav-outline,
+  .ppz-nav-shadow {
+    display: none;
+  }
+
+  /* Sombra de las burbujas (la píldora entera la lleva en su ::before) */
+  .ppz-split-active > .ppz-nav-shadow {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .ppz-nav-shadow-shape {
+    fill: rgba(0, 30, 15, 0.22);
+  }
+
+  [data-theme='dark'] .ppz-nav-shadow-shape {
+    fill: rgba(0, 0, 0, 0.75);
+  }
+
+  .ppz-split-active > .ppz-nav-glass {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+      var(--ppz-glass-bg);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge);
+    pointer-events: none;
+  }
+
+  .ppz-split-active > .ppz-nav-outline {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .ppz-nav-outline-line {
+    fill: none;
+    stroke: var(--ppz-glass-line);
+    stroke-width: 1;
+  }
+
+  .ppz-nav-outline-glare {
+    fill: none;
+    stroke: url(#ppz-nav-glare);
+    stroke-width: 1.5;
+    opacity: 0.45;
+  }
+
+  .ppz-nav-glare-stop {
+    stop-color: var(--ppz-glare);
+  }
+
+  /* Partida, el hueco del medio deja pasar los clics a la página: solo los
+     enlaces de cada grupo los recogen (el grupo de la izquierda se estira
+     hasta el centro) */
+  .navbar__inner.ppz-split-active {
+    pointer-events: none;
+  }
+
+  .navbar__inner.ppz-split-active .navbar__items > * {
+    pointer-events: auto;
   }
 }

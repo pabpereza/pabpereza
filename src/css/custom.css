@@ -1485,3 +1485,66 @@ html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--text 
 ::view-transition-new(root) {
   animation-duration: 0.3s;
 }
+
+/* ---------- Cristal en «Entradas más antiguas» y anterior/siguiente ----------
+   Los enlaces de paginación del blog y los de capítulo anterior/siguiente de
+   los cursos (.pagination-nav__link) pasan de caja con borde a tarjeta de
+   cristal redondeada, con su destello suave en el borde */
+.pagination-nav__link {
+  position: relative;
+  border: 1px solid var(--ppz-glass-line);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pagination-nav__link {
+  /* Tan ancho como su texto, no la mitad de la fila: cada uno a su lado */
+  width: fit-content;
+  max-width: 100%;
+  justify-self: start;
+}
+
+.pagination-nav__link--next {
+  justify-self: end;
+  margin-left: auto;
+}
+
+.pagination-nav__link:hover {
+  border-color: color-mix(in srgb, var(--ppz-accent) 45%, transparent);
+  transform: translateY(-1px);
+}
+
+.pagination-nav__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: radial-gradient(
+      42rem circle at var(--ppz-lx, 15%) var(--ppz-ly, 20%),
+      var(--ppz-glare),
+      transparent 55%
+    )
+    fixed;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pagination-nav__link:hover {
+    transform: none;
+  }
+}

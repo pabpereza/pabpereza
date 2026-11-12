@@ -6,6 +6,7 @@ tags: [aws, cloud, devops, testing, ia]
 keywords: [aws emulator, emulador aws local, probar aws en local, aws sin cuenta, aws emulator tutorial, aws emulator skill, aws emulator vs localstack, localstack alternativa, aws cli endpoint local, testing aws ci, agentes ia aws, aws emulator telemetria]
 authors: pabpereza
 date: 2026-11-12
+image: ./aws_emulator-portada.jpg
 ---
 
 AWS acaba de sacar **AWS Emulator**, un emulador oficial de sus APIs que corre en tu máquina, es gratis y no necesita cuenta de AWS. Lanzas el binario, apuntas la AWS CLI o tu SDK a él y tus `create-bucket`, `put-item` o `send-message` responden en milisegundos sin tocar la nube ni la tarjeta de crédito.

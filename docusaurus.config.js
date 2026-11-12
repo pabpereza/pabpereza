@@ -69,6 +69,8 @@ const config = {
     './src/clientModules/navWidth.js',
     // Luz verde de fondo que sigue al scroll
     './src/clientModules/ambientLight.js',
+    // El botón de plegar el menú de los cursos se encoge hasta el redondo
+    './src/clientModules/docSidebarMorph.js',
   ],
 
   presets: [

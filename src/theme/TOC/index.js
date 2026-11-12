@@ -1,4 +1,6 @@
 import {useEffect, useState} from 'react';
+import {flushSync} from 'react-dom';
+import {morph} from '@site/src/utils/morph';
 import TOC from '@theme-original/TOC';
 import LocalGraph from '@site/src/components/LocalGraph';
 import styles from './styles.module.css';
@@ -27,9 +29,14 @@ export default function TOCWithLocalGraph(props) {
     document.documentElement.toggleAttribute('data-toc-hidden', hidden);
   }, [hidden]);
 
+  // La pastilla se convierte en el botón redondo (y al revés) con una
+  // transición de vista: ver src/utils/morph.js
   const toggle = () => {
     const next = !hidden;
-    setHidden(next);
+    morph(() => {
+      flushSync(() => setHidden(next));
+      document.documentElement.toggleAttribute('data-toc-hidden', next);
+    });
     try {
       localStorage.setItem(STORAGE_KEY, String(next));
     } catch {

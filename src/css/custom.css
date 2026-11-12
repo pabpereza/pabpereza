@@ -434,21 +434,47 @@ a[href*='/blog/tags/'][class*='tag_']:hover {
 
 /* Pie de cristal, a juego con la píldora del menú: una tarjeta flotante con
    el mismo ancho que el menú (el mismo margen lateral, --ppz-nav-gutter) y
-   esquinas muy redondeadas. Es oscuro en los dos temas, así que su cristal
-   también: deja ver desenfocada la luz verde del fondo */
+   esquinas muy redondeadas. Mismo cristal que la píldora (mismas variables,
+   así que también la misma transparencia): deja ver desenfocada la luz
+   verde del fondo */
 .footer {
   --ppz-footer-gutter: 0.75rem;
   margin: 3rem var(--ppz-footer-gutter) var(--ppz-footer-gutter);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--ppz-glass-line);
   border-radius: 22px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 30%),
-    rgba(10, 12, 11, 0.78);
-  -webkit-backdrop-filter: blur(18px) saturate(180%);
-  backdrop-filter: blur(18px) saturate(180%);
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 18px 40px -18px rgba(0, 0, 0, 0.45);
+    inset 0 1px 0 var(--ppz-glass-edge),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+    var(--ppz-glass-shadow);
+}
+
+/* En oscuro, texto e iconos del menú y del pie en blanco puro (el tema los
+   deja en un gris claro, 227-235): un pelín más de contraste sobre el
+   cristal */
+[data-theme='dark'] {
+  --ifm-navbar-link-color: #ffffff;
+}
+
+/* El botón de tema no usa esa variable */
+[data-theme='dark'] .navbar [class*='toggleButton_'] {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer--dark {
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-title-color: #ffffff;
+}
+
+/* Los enlaces del pie, con el mismo peso que los del menú (500): sobre el
+   cristal oscuro el blanco se lee más nítido */
+.footer__link-item {
+  font-weight: 500;
 }
 
 /* En modo claro el pie es de cristal blanco, como la píldora del menú. El
@@ -460,11 +486,6 @@ a[href*='/blog/tags/'][class*='tag_']:hover {
   --ifm-footer-title-color: var(--ifm-font-color-base);
   --ifm-footer-link-color: var(--ppz-muted);
   --ifm-footer-link-hover-color: var(--ppz-accent);
-  border-color: var(--ppz-glass-line);
-  background:
-    linear-gradient(180deg, var(--ppz-glass-shine), transparent 30%),
-    var(--ppz-glass-bg);
-  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
 }
 
 @media screen and (min-width: 997px) {
@@ -963,6 +984,9 @@ html[data-toc-hidden].plugin-docs .col:has(+ .col > .ppz-toc-column) {
   .main-wrapper .row > aside.col--3:has(> nav[class*='sidebar_']) {
     flex: 0 0 316px;
     max-width: 316px;
+    /* Anula el margen superior de la caja (2rem) solo en la columna, para
+       que la tarjeta empiece a la misma altura que en los cursos */
+    margin-top: -2rem;
   }
 
   .main-wrapper .row > aside.col--3:has(> nav[class*='sidebar_']) + main {
@@ -987,10 +1011,11 @@ html[data-toc-hidden].plugin-docs .col:has(+ .col > .ppz-toc-column) {
 
 /* ---------- Luz de fondo que sigue al scroll ----------
    Capa fija detrás de toda la web con un foco verde muy suave que cruza la
-   ventana en diagonal, de arriba a la izquierda a abajo a la derecha, según
-   el avance del scroll. La variable la
-   pone src/clientModules/ambientLight.js. Solo se ve en los huecos: tarjetas,
-   código y paneles opacos quedan por encima */
+   ventana en diagonal según el avance del scroll: sale cerca de una esquina
+   de arriba (izquierda o derecha, al azar en cada página) y baja a la del
+   lado contrario; en páginas largas, en zigzag. La posición (--ppz-lx,
+   --ppz-ly) la calcula src/clientModules/ambientLight.js. Solo se ve en los
+   huecos: tarjetas, código y paneles opacos quedan por encima */
 body::before {
   content: '';
   position: fixed;
@@ -998,7 +1023,7 @@ body::before {
   z-index: -2;
   pointer-events: none;
   background: radial-gradient(
-    42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+    42rem circle at var(--ppz-lx, 15%) var(--ppz-ly, 20%),
     color-mix(in srgb, var(--ppz-glow) 85%, transparent),
     transparent 70%
   );
@@ -1010,7 +1035,8 @@ body::before {
    degradado con background-attachment: fixed, así que se coloca respecto a
    la ventana con las mismas coordenadas que la luz (body::before) y solo se
    ve la parte del anillo que cae dentro del foco. La máscara deja visible
-   solo el anillo de 1px. Sin JavaScript extra: usa la misma --ppz-scroll */
+   solo el anillo de 1px. Sin JavaScript extra: usa la misma posición de la luz
+   (--ppz-lx / --ppz-ly) */
 :root {
   --ppz-glare: rgba(0, 170, 95, 0.9);
 }
@@ -1041,7 +1067,7 @@ body::before {
   padding: 1.5px;
   border-radius: inherit;
   background: radial-gradient(
-      42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+      42rem circle at var(--ppz-lx, 15%) var(--ppz-ly, 20%),
       var(--ppz-glare),
       transparent 55%
     )
@@ -1071,7 +1097,7 @@ body::before {
     padding: 1.5px;
     border-radius: 999px;
     background: radial-gradient(
-        42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+        42rem circle at var(--ppz-lx, 15%) var(--ppz-ly, 20%),
         var(--ppz-glare),
         transparent 55%
       )
@@ -1103,14 +1129,26 @@ body::before {
     padding: var(--ifm-navbar-height) 0 0.75rem var(--ifm-navbar-padding-horizontal);
   }
 
-  /* El tema le da al menú el ancho entero de la columna (300px): con el
-     margen de la tarjeta se saldría, y la columna lo recorta (clip-path) */
+  /* Como la columna derecha: el menú es una tarjeta de cristal y el botón de
+     plegar, una pastilla aparte debajo, separada por un hueco. El contenedor
+     (.sidebar_*) solo los apila. El tema le da el ancho entero de la columna
+     (300px): con el margen se saldría, y la columna lo recorta (clip-path) */
   .theme-doc-sidebar-container [class*='sidebar_'] {
+    position: relative;
     width: auto;
+    padding-top: 0;
+    gap: 0.75rem;
+  }
+
+  /* La tarjeta mide lo que su contenido (si no cabe, hace scroll dentro) y
+     el botón se queda abajo del todo, como el de la columna derecha */
+  .theme-doc-sidebar-container .menu {
+    flex: 0 1 auto;
+    min-height: 0;
+    anchor-name: --ppz-doc-menu;
     padding-top: 0.5rem;
     border: 1px solid var(--ppz-glass-line);
     border-radius: 22px;
-    overflow: hidden;
     background:
       linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 25%),
       var(--ppz-glass-bg-soft);
@@ -1119,23 +1157,34 @@ body::before {
     box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
   }
 
-  /* El botón de plegar pasa a ser el pie de la tarjeta */
   .theme-doc-sidebar-container [class*='collapseSidebarButton_'] {
-    border: 0;
-    border-top: 1px solid var(--ppz-glass-line);
-    border-radius: 0;
-    background: transparent;
+    flex: none;
+    margin-top: auto;
+    border: 1px solid var(--ppz-glass-line);
+    border-radius: 999px;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 55%),
+      var(--ppz-glass-bg-soft);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
   }
 
-  .theme-doc-sidebar-container [class*='collapseSidebarButton_']:hover {
-    background: color-mix(in srgb, var(--ifm-font-color-base) 6%, transparent);
+  .theme-doc-sidebar-container [class*='collapseSidebarButton_']:hover,
+  .theme-doc-sidebar-container [class*='collapseSidebarButton_']:focus {
+    border-color: var(--ppz-accent);
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine-soft), transparent 55%),
+      var(--ppz-glass-bg-soft);
   }
 
   /* Menú del blog (lista de entradas): tarjeta de cristal que se queda fija
      al hacer scroll y, si no cabe, hace scroll dentro */
   .main-wrapper aside.col--3 > nav[class*='sidebar_'] {
-    /* El tema la pega a 2rem bajo el menú; abajo deja otros 0,75rem */
-    max-height: calc(100vh - var(--ifm-navbar-height) - 2.75rem);
+    /* Pegada justo bajo la píldora, a la misma altura que el menú de los
+       cursos (el tema la dejaba 2rem más abajo); abajo deja 0,75rem */
+    top: var(--ifm-navbar-height);
+    max-height: calc(100vh - var(--ifm-navbar-height) - 0.75rem);
     padding: 1.1rem 1.1rem 0.5rem;
     border: 1px solid var(--ppz-glass-line);
     border-radius: 22px;
@@ -1164,11 +1213,8 @@ body::before {
 }
 
 @media screen and (min-width: 997px) {
-  .theme-doc-sidebar-container [class*='sidebar_'] {
-    position: relative;
-  }
-
   .theme-doc-sidebar-container [class*='sidebar_']::after,
+  .theme-doc-sidebar-container [class*='collapseSidebarButton_']::after,
   .main-wrapper aside.col--3:has(> nav[class*='sidebar_'])::after {
     content: '';
     position: absolute;
@@ -1177,7 +1223,7 @@ body::before {
     padding: 1.5px;
     border-radius: 22px;
     background: radial-gradient(
-        42rem circle at calc(15% + var(--ppz-scroll, 0) * 70%) calc(20% + var(--ppz-scroll, 0) * 60%),
+        42rem circle at var(--ppz-lx, 15%) var(--ppz-ly, 20%),
         var(--ppz-glare),
         transparent 55%
       )
@@ -1193,21 +1239,46 @@ body::before {
     pointer-events: none;
   }
 
+  /* Menú de los cursos: el anillo va en el contenedor (el menú hace scroll
+     por dentro y se lo llevaría) y se ajusta a la tarjeta con posicionamiento
+     por ancla, porque la tarjeta mide lo que su contenido. Sin soporte de
+     anclas (Firefox, por ahora) la tarjeta se queda sin destello. El botón
+     lleva su propio anillo, redondo */
+  .theme-doc-sidebar-container [class*='sidebar_']::after {
+    display: none;
+  }
+
+  @supports (anchor-name: --a) {
+    .theme-doc-sidebar-container [class*='sidebar_']::after {
+      display: block;
+      position-anchor: --ppz-doc-menu;
+      inset: auto;
+      top: anchor(top);
+      bottom: anchor(bottom);
+      left: anchor(left);
+      right: anchor(right);
+    }
+  }
+
+  .theme-doc-sidebar-container [class*='collapseSidebarButton_']::after {
+    border-radius: 999px;
+  }
+
   /* El menú del blog hace scroll por dentro, y un anillo dentro de él se iría
      con el contenido. Así que el anillo va en su columna (aside), fijo con la
      misma posición y alto que la tarjeta: los dos se pegan igual al hacer
      scroll. Para que midan lo mismo, la tarjeta tiene alto fijo (la lista de
      entradas siempre lo llena) */
   .main-wrapper aside.col--3 > nav[class*='sidebar_'] {
-    height: calc(100vh - var(--ifm-navbar-height) - 2.75rem);
+    height: calc(100vh - var(--ifm-navbar-height) - 0.75rem);
   }
 
   .main-wrapper aside.col--3:has(> nav[class*='sidebar_'])::after {
     position: sticky;
-    top: calc(var(--ifm-navbar-height) + 2rem);
+    top: var(--ifm-navbar-height);
     display: block;
-    height: calc(100vh - var(--ifm-navbar-height) - 2.75rem);
-    margin-top: calc(-1 * (100vh - var(--ifm-navbar-height) - 2.75rem));
+    height: calc(100vh - var(--ifm-navbar-height) - 0.75rem);
+    margin-top: calc(-1 * (100vh - var(--ifm-navbar-height) - 0.75rem));
   }
 }
 
@@ -1323,4 +1394,94 @@ html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--text 
 :focus-visible {
   outline: 2px solid var(--ppz-accent);
   outline-offset: 2px;
+}
+
+/* ---------- Menú de los cursos plegado: botón flotante arriba ----------
+   Al plegarlo, el tema deja una franja de 30px de alto completo con la flecha
+   en el centro. En su lugar: la columna no ocupa nada (el artículo se queda
+   con el hueco) y solo queda un botón redondo de cristal abajo a la
+   izquierda, a juego con el de la columna derecha (abajo a la derecha) */
+@media screen and (min-width: 997px) {
+  :root {
+    --doc-sidebar-hidden-width: 0px;
+  }
+
+  /* La columna recorta lo que sobresale (clip-path): plegada, el botón
+     flotante tiene que poder verse */
+  .theme-doc-sidebar-container[class*='docSidebarContainerHidden_'] {
+    clip-path: none;
+  }
+
+  .theme-doc-sidebar-container [class*='expandButton_'] {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 10;
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--ppz-glass-line);
+    border-radius: 50%;
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+      var(--ppz-glass-bg);
+    -webkit-backdrop-filter: var(--ppz-glass-filter);
+    backdrop-filter: var(--ppz-glass-filter);
+    box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+    cursor: pointer;
+  }
+
+  .theme-doc-sidebar-container [class*='expandButton_']:hover,
+  .theme-doc-sidebar-container [class*='expandButton_']:focus {
+    border-color: var(--ppz-accent);
+    background:
+      linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+      var(--ppz-glass-bg);
+  }
+}
+
+/* ---------- Plegar los laterales: de pastilla a botón redondo ----------
+   Transición de vista (src/utils/morph.js y src/clientModules/
+   docSidebarMorph.js): el navegador empareja el botón de antes y el de
+   después por su nombre y anima su posición y tamaño. El grupo va recortado
+   en forma de píldora, así la pastilla larga se encoge hasta el círculo sin
+   deformarse, y el icono se queda centrado (object-fit: none). El resto de la
+   página cambia con un fundido corto */
+@media screen and (min-width: 997px) {
+  /* Cada nombre solo puede estar en un elemento a la vez: con el menú
+     plegado, la pastilla sigue en el DOM (oculta), así que solo la nombramos
+     con el menú abierto */
+  .theme-doc-sidebar-container:not([class*='docSidebarContainerHidden_']) [class*='collapseSidebarButton_'],
+  .theme-doc-sidebar-container [class*='expandButton_'] {
+    view-transition-name: ppz-doc-toggle;
+  }
+
+  .ppz-toc-column > button {
+    view-transition-name: ppz-toc-toggle;
+  }
+}
+
+::view-transition-group(ppz-doc-toggle),
+::view-transition-group(ppz-toc-toggle) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 999px;
+  overflow: clip;
+}
+
+::view-transition-old(ppz-doc-toggle),
+::view-transition-new(ppz-doc-toggle),
+::view-transition-old(ppz-toc-toggle),
+::view-transition-new(ppz-toc-toggle) {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  object-position: center;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
 }

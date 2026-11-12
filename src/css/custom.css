@@ -66,6 +66,16 @@
   --ppz-glow: rgba(0, 200, 110, 0.38);
   --ppz-accent: #007a45;
   --ppz-on-primary: #ffffff;
+
+  /* Accesibilidad: los estados activos (página actual en el menú, laterales,
+     migas de pan...) usan por defecto el verde primario, que en claro se
+     queda en 3,5-3,9:1 sobre blanco. Con el acento llegan a 5,5:1. En oscuro
+     el acento es el mismo neón de siempre */
+  --ifm-navbar-link-hover-color: var(--ppz-accent);
+  --ifm-menu-color-active: var(--ppz-accent);
+  --ifm-breadcrumb-color-active: var(--ppz-accent);
+  --ifm-pagination-color-active: var(--ppz-accent);
+  --ifm-tabs-color-active: var(--ppz-accent);
 }
 
 /* Modo oscuro: negro y verde neón, los mismos que las animaciones del canal */
@@ -1214,4 +1224,103 @@ body::before {
 
 .markdown iframe {
   border-radius: 18px;
+}
+
+/* ---------- Cristal en los resultados del buscador ----------
+   El buscador (docusaurus-lunr-search) solo funciona con el build de
+   producción. Su panel de resultados pasa a ser una tarjeta de cristal como
+   el desplegable de Cursos: sin la flecha, con las filas transparentes, la
+   fila activa teñida de verde y el texto encontrado subrayado en verde. El
+   plugin fija colores con !important en modo oscuro y su CSS carga después del
+   nuestro, de ahí los !important y el prefijo html[data-theme] body */
+html[data-theme] body .algolia-autocomplete .ds-dropdown-menu {
+  margin-top: 0.6rem;
+  padding: 0.4rem;
+  overflow: hidden;
+  border: 1px solid var(--ppz-glass-line);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 20%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+}
+
+html[data-theme] body .algolia-autocomplete .ds-dropdown-menu::before {
+  display: none;
+}
+
+html[data-theme] body .algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
+  border-radius: 14px;
+  background: transparent;
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion,
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--category-header,
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--wrapper,
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-footer {
+  background: transparent !important;
+  color: var(--ifm-font-color-base) !important;
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  border-bottom: 1px solid var(--ppz-glass-line);
+  color: var(--ppz-accent) !important;
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
+  border-radius: 12px;
+}
+
+html[data-theme] body .algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
+  background: color-mix(in srgb, var(--ppz-accent) 12%, transparent) !important;
+  box-shadow: inset 2px 0 0 var(--ppz-accent);
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+  color: var(--ppz-muted);
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column::before,
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--content::before {
+  background: var(--ppz-glass-line);
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+  background: color-mix(in srgb, var(--ppz-accent) 18%, transparent);
+  border-radius: 3px;
+}
+
+html[data-theme] body .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
+  background: transparent;
+  box-shadow: inset 0 -2px 0 0 var(--ppz-accent);
+}
+
+/* ---------- Accesibilidad ---------- */
+
+/* Entrada activa del menú del blog: el tema la fuerza al verde primario con
+   !important dentro de una capa CSS. Entre reglas !important ganan las capas
+   declaradas antes, así que va en la primera de Docusaurus (como el ancho
+   del artículo de los cursos) */
+@layer docusaurus.infima {
+  [class*='sidebarItemLinkActive_'] {
+    color: var(--ppz-accent) !important;
+  }
+}
+
+/* Los enlaces dentro del texto no se distinguen solo por el color: llevan
+   subrayado fino (WCAG 1.4.1). Solo los de párrafos, listas, tablas y citas:
+   no los de tarjetas, botones o anclas de los títulos */
+.markdown :is(p, li, td, th, blockquote) a:not(.button):not(.hash-link):not(:is(.ppz-card, .ppz-glare) a) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+/* Anillo de foco propio para el teclado: verde y separado del borde, para
+   que se vea igual sobre el cristal, las tarjetas y el fondo */
+:focus-visible {
+  outline: 2px solid var(--ppz-accent);
+  outline-offset: 2px;
 }

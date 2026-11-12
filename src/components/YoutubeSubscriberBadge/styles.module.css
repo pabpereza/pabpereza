@@ -45,6 +45,11 @@
   line-height: 1.4;
 }
 
+/* En claro, con el 14 % el texto se quedaba en 4,4:1: fondo más pálido */
+:global([data-theme='light']) .count {
+  background: color-mix(in srgb, var(--ppz-accent) 7%, transparent);
+}
+
 
 /* En móvil no cabe junto al buscador (quedaba tapado): se queda solo en el
    menú lateral */

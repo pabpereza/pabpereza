@@ -1944,8 +1944,8 @@
       "description": "Una guía para resolver dudas comunes al usar LocalStack con Terraform y las del vídeo anterior",
       "url": "/blog/localstack_terraform_mas_dudas",
       "slug": "localstack_terraform_mas_dudas",
-      "val": 6,
-      "connected": false
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
@@ -1979,6 +1979,17 @@
       "slug": "apple_container_analisis_contenedores_macos",
       "val": 6,
       "connected": false
+    },
+    {
+      "id": "/blog/aws_emulator_probar_aws_en_local_gratis",
+      "title": "AWS Emulator, el emulador oficial para probar AWS en local gratis y sin cuenta",
+      "type": "content",
+      "category": "blog",
+      "description": "AWS lanza AWS Emulator, un emulador local y gratuito de sus APIs escrito por agentes de IA. Qué es, la skill que trae para agentes, cómo configurarlo para las primeras pruebas y qué limitaciones tiene.",
+      "url": "/blog/aws_emulator_probar_aws_en_local_gratis",
+      "slug": "aws_emulator_probar_aws_en_local_gratis",
+      "val": 10,
+      "connected": true
     },
     {
       "id": "/blog/entrar_en_it_2026",
@@ -3989,6 +4000,11 @@
     {
       "source": "/blog/ruta_devsecops_recomendaciones_2025",
       "target": "/blog/mi_ruta_devsecops_reflexiones_recomendaciones_2025",
+      "type": "internal_link"
+    },
+    {
+      "source": "/blog/aws_emulator_probar_aws_en_local_gratis",
+      "target": "/blog/localstack_terraform_mas_dudas",
       "type": "internal_link"
     },
     {

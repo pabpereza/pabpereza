@@ -261,9 +261,13 @@ const config = {
         { name: 'keywords', content: 'devsecops, devops, programación, docker, kubernetes, seguridad, blog, ansible, contenedores, containers, orquestación, ci/cd, pipelines, infraestructura como código, iac, linux, terminal, vim, neovim, mysql, sql, bases de datos, sre, cloud native, cncf, certificación cka, certificación ckad, homelab, raspberry pi, automatización, cursos gratis, español, aprender docker, aprender kubernetes, aprender ansible, devsecops español, docker tutorial, kubernetes tutorial'},
         { name: 'description', content: 'Blog, cursos y documentación de DevOps, Seguridad, programación, docker, kubernetes y mucho más.'},
       ],
+      // Oscuro por defecto: quien no haya elegido tema con el botón del menú
+      // ve la web en oscuro, aunque su sistema esté en claro. Si lo cambia,
+      // se recuerda su elección
       colorMode: {
+        defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
 
     }),

@@ -49,6 +49,7 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 </p>
 
 ## Últimas entradas del blog
+- [AWS Emulator, el emulador oficial para probar AWS en local gratis y sin cuenta](https://pabpereza.dev/blog/aws_emulator_probar_aws_en_local_gratis)
 - [Octubre negro para la seguridad, resumen de vulnerabilidades de octubre de 2026](https://pabpereza.dev/blog/resumen_vulnerabilidades_octubre_2026)
 - [Monta tu propio WAF gratis en Docker con SafeLine](https://pabpereza.dev/blog/waf_gratis_en_docker_safeline)
 - [¿La IA nos atonta? ¿Nos hace sentir peor con nosotros mismos?](https://pabpereza.dev/blog/2026/la_IA_nos_hace_mas_tontos/la_IA_nos_hace_mas_tontos)
@@ -58,7 +59,6 @@ Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especi
 - [Cómo entrar en IT en 2026 - realidad, retos y oportunidades](https://pabpereza.dev/blog/entrar_en_it_2026)
 - [Windows en Docker: Cómo ejecutar Windows 11 dentro de un contenedor](https://pabpereza.dev/blog/windows-en-docker-kvm)
 - [Apple Container - La apuesta de Apple por los contenedores nativos en macOS](https://pabpereza.dev/blog/apple_container_analisis_contenedores_macos)
-- [HomeLab - Montando mi primer Rack de 10" con Raspberry Pi (Parte 1)](https://pabpereza.dev/blog/homelab-1-rack)
 
 
 ---

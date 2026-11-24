@@ -5,6 +5,13 @@
 [![GitHub Stars](https://img.shields.io/github/stars/pabpereza/pabpereza?style=for-the-badge&logo=github&label=Estrellas)](https://github.com/pabpereza/pabpereza)
 [![GitHub Followers](https://img.shields.io/github/followers/pabpereza?style=for-the-badge&logo=github&label=Seguidores)](https://github.com/pabpereza)
 
+<a href="https://certdirectory.io/profile/pablo-perez-aradros?utm_source=github&utm_medium=readme">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://certdirectory.io/badge/pablo-perez-aradros.svg?theme=dark">
+    <img alt="CertDirectory" src="https://certdirectory.io/badge/pablo-perez-aradros.svg">
+  </picture>
+</a>
+
 Mi nombre es Pablo Pérez-Aradros, soy un entusiasta de la ciberseguridad especializado en procesos de desarrollo como DevSecOps. Parte de mi tiempo, lo dedico a la formación y divulgación, a través de mi canal de youtube y mi página web. 
 
 ## Últimos vídeos publicados

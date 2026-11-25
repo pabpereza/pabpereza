@@ -47,7 +47,7 @@ La historia tiene de todo:
 - El **23 de octubre** PHP avisa de un tercer fallo, **CVE-2026-115560**, mucho menos probable de explotar (solo si tu aplicación cambia `session.serialize_handler` con `ini_set()`). A día de hoy **sigue sin parche**; la mitigación es poner `session.upload_progress.enabled=0`.
 - El **26 de octubre** CISA mete los dos CVE principales en su catálogo **KEV** (*Known Exploited Vulnerabilities*, la lista de fallos que se están explotando de verdad).
 
-Y lo más llamativo: PHP no solo está en tus servidores web. Se ha explotado en **firewalls de Palo Alto** encadenado con un fallo del kernel para conseguir root, y hay avisos para appliances de Cisco, Citrix, F5 y Siemens. Ese eslabón que ni sabías que tenías.
+Y lo más llamativo: PHP no solo está en tus servidores web. Se ha explotado en **firewalls de Palo Alto** encadenado con un fallo del kernel para conseguir root, y Cisco, Citrix, F5, Fortinet y Siemens han tenido que parchear sus appliances (en estos, sin explotación confirmada). Ese eslabón que ni sabías que tenías.
 
 <!-- TODO: enlace al vídeo largo cuando se publique (slug provisional cadena-de-suministro-software-php2shell) -->
 > 🎥 Por qué un parche que sale el 21 de octubre no llega a todos a la vez, y quién mantiene cada eslabón entre php-src y tu contenedor, lo veremos a fondo en el próximo vídeo del canal sobre la cadena de suministro de software.
@@ -125,9 +125,9 @@ Fuente: [blog de Python](https://blog.python.org/2026/10/python-31022-31117/).
 
 ## LiteLLM, la cadena de suministro vuelve a romperse
 
-El **21 de octubre** apareció en PyPI una versión **1.107.0 de LiteLLM troyanizada**, la librería que mucha gente usa como pasarela hacia los distintos modelos de IA. No solo en PyPI: las imágenes de Docker Hub y GHCR con los tags `v1.107.0` y `latest` también estaban infectadas. Estuvo disponible unas 2-3 horas.
+El **21 de octubre** apareció en PyPI una versión **1.107.0 de LiteLLM troyanizada**, la librería que mucha gente usa como pasarela hacia los distintos modelos de IA. No solo en PyPI: las imágenes de Docker Hub y GHCR con los tags `v1.107.0` y `latest` también estaban infectadas. Estuvo disponible unas 2 horas.
 
-Los atacantes entraron con tokens de GitHub robados a tres mantenedores y lanzaron el pipeline de release desde un clon del repositorio. El código de GitHub está limpio; lo envenenado era lo publicado. El malware se instalaba para ejecutarse **cada vez que arrancaba Python** y se llevaba claves de nube, API keys de proveedores de IA y secretos de la base de datos. En pocas horas ya se estaban usando credenciales de AWS robadas.
+Los atacantes entraron con tokens de GitHub robados a tres mantenedores y lanzaron el pipeline de release desde un fork con un nombre casi idéntico al de la organización (`Berri-AI` en vez de `BerriAI`). El código de GitHub está limpio; lo envenenado era lo publicado. El malware se instalaba para ejecutarse **cada vez que arrancaba Python** y se llevaba claves de nube, API keys de proveedores de IA y secretos de la base de datos. En pocas horas ya se estaban usando credenciales de AWS robadas.
 
 Es el **segundo compromiso de LiteLLM este año** (el anterior fue en marzo).
 

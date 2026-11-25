@@ -1,5 +1,6 @@
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import useBrokenLinks from '@docusaurus/useBrokenLinks';
 import {usePluginData} from '@docusaurus/useGlobalData';
 
 import CountUp from '@site/src/components/CountUp';
@@ -42,6 +43,8 @@ function Stats() {
 }
 
 export default function AboutMe() {
+  // /links enlaza a #contacto: el build solo conoce las anclas que se declaran
+  useBrokenLinks().collectAnchor('contacto');
   return (
     <Layout
       title="Sobre mí - Pablo Pérez-Aradros, DevSecOps y divulgación"

@@ -1,0 +1,162 @@
+/* Página "link in bio": una columna estrecha y centrada, pensada para el móvil.
+   Todo cuelga de clases propias (ver la nota de about_me.module.css) */
+.page {
+  flex: 1;
+  padding: calc(2.5rem + var(--ifm-navbar-height)) 1rem 3rem;
+}
+
+.column {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--ppz-accent) 14%, transparent),
+    0 0 44px -6px var(--ppz-glow),
+    var(--ppz-glass-shadow);
+}
+
+.name {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: clamp(1.7rem, 7vw, 2.1rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0 0 0.5rem;
+}
+
+.name em {
+  font-style: normal;
+  color: var(--ppz-accent);
+}
+
+.subtitle {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.95rem;
+  color: var(--ppz-muted);
+  margin: 0 0 0.75rem;
+}
+
+.quote {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ppz-muted);
+  margin: 0;
+}
+
+.group {
+  margin-top: 1.5rem;
+}
+
+.groupTitle {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ppz-accent);
+  margin: 0 0 0.6rem 1.25rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Botón de cristal, con las mismas cuatro reglas que .ppz-glass */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  color: var(--ifm-font-color-base);
+  background:
+    linear-gradient(180deg, var(--ppz-glass-shine), transparent 55%),
+    var(--ppz-glass-bg);
+  -webkit-backdrop-filter: var(--ppz-glass-filter);
+  backdrop-filter: var(--ppz-glass-filter);
+  border: 1px solid var(--ppz-glass-line);
+  box-shadow: inset 0 1px 0 var(--ppz-glass-edge), var(--ppz-glass-shadow);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  border-color: color-mix(in srgb, var(--ppz-accent) 55%, transparent);
+  transform: translateY(-2px);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.hint {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  color: var(--ppz-muted);
+  overflow-wrap: anywhere;
+}
+
+.arrow {
+  flex: none;
+  color: var(--ppz-accent);
+  transition: transform 0.15s ease;
+}
+
+.button:hover .arrow {
+  transform: translateX(3px);
+}
+
+.social {
+  margin-top: 2rem;
+}
+
+/* Siete iconos en una sola fila también en un móvil de 360 px */
+.social ul {
+  gap: 0.15rem;
+}
+
+.social a {
+  padding: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .arrow {
+    transition: none;
+  }
+
+  .button:hover,
+  .button:focus-visible,
+  .button:hover .arrow {
+    transform: none;
+  }
+}

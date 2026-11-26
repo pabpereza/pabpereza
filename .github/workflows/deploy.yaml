@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
+  # readme.yaml lo lanza tras su commit [bot]: un push con GITHUB_TOKEN no dispara otros workflows
+  workflow_dispatch:
   push:
     branches:
       - main

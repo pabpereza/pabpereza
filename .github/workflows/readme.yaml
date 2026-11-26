@@ -13,6 +13,9 @@ jobs:
     generate_readme:
         runs-on: ubuntu-latest
         timeout-minutes: 10
+        permissions:
+          contents: write
+          actions: write
     
         steps:
         - name: Checkout repository
@@ -24,8 +27,6 @@ jobs:
             python-version: '3.13'
     
         - name: Run script
-          env:
-            YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           run: |
             rm -rf src/files/*
             touch src/files/blog_posts.json
@@ -37,8 +38,16 @@ jobs:
             git config user.email pabloperezaradros@gmail.com
             git add src/files/
             git add README.md
-            git commit -m "[bot] Update files with latest videos" || echo "No changes to commit"
-            git push origin main
+            if git commit -m "[bot] Update files with latest videos"; then
+              git push origin main
+              # La web (bloque "Últimos vídeos") lee src/files/videos.json: redesplegar
+              gh workflow run deploy.yaml --ref main
+            else
+              echo "No changes to commit"
+            fi
+          env:
+            YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+            GH_TOKEN: ${{ github.token }}
 
 
     generate_snake:
